@@ -14,6 +14,11 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         <div className="mb-5 h-2 w-12 bg-[var(--accent)]" />
         <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">German grammar practice · A1–B2</p>
         <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">Pick a topic</h1>
+        <p className="mt-4 max-w-xl text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+          Play straight away, no account needed.{" "}
+          <Link href="/auth/sign-up" className="underline underline-offset-2">Sign up</Link> to save
+          your answers, see your progress and practise the words you keep getting wrong.
+        </p>
       </div>
 
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

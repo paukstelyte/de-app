@@ -54,6 +54,13 @@ function ErrorText({ error }: { error: string | null }) {
   ) : null;
 }
 
+// Supabase's wording for the common cases is technical; everything else is shown as-is.
+const FRIENDLY_ERRORS: Record<string, string> = {
+  "Invalid login credentials": "Wrong email or password.",
+  "Email not confirmed": "Please confirm your email first. Check your inbox for the link.",
+  "User already registered": "An account with this email already exists. Try logging in.",
+};
+
 /** Runs a Supabase auth call with shared loading/error state. */
 function useAuthAction() {
   const [error, setError] = useState<string | null>(null);
@@ -63,7 +70,7 @@ function useAuthAction() {
     setError(null);
     const { error } = await action();
     setIsLoading(false);
-    if (error) setError(error.message);
+    if (error) setError(FRIENDLY_ERRORS[error.message] ?? error.message);
     else onSuccess?.();
   }
   return { error, setError, isLoading, run };

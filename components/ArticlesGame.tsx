@@ -11,6 +11,7 @@ import { usePracticeSession } from "@/lib/flashcards/usePracticeSession";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
 import { StatusBadge } from "@/components/StatusBadge";
 import { RULE_TEXT_BY_ID } from "@/lib/flashcards/storage";
+import { CORRECT_STREAK_TO_CLEAR, percent } from "@/lib/progress";
 
 const buttonBase =
   "rounded-lg border px-4 py-3 text-sm font-medium capitalize transition-colors";
@@ -85,11 +86,11 @@ export function ArticlesGame({
   return (
     <div className="flex flex-col gap-10">
       <div className="grid gap-10 lg:grid-cols-[240px_1fr] lg:items-start">
-      <aside className="flex flex-col gap-5 lg:pt-3">
+      <aside className="flex flex-col gap-5 max-lg:order-last lg:pt-3">
         <div>
           <div className="mb-5 h-2 w-12 bg-[var(--accent)]" />
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">German article practice / 01</p>
-          <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">die · der · das</h1>
+          <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">der · die · das</h1>
           <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
             Learn German noun articles and the rules behind them.
           </p>
@@ -98,10 +99,11 @@ export function ArticlesGame({
         <div className="border-t border-[var(--line)] pt-4">
           <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">How to use</h2>
           <ul className="mt-3 list-disc space-y-2 pl-4 text-xs leading-5 text-zinc-600 dark:text-zinc-400">
-            <li>Guess der, die, or das, then click the card to flip it.</li>
+            <li>Pick der, die or das. The card flips to show the rule behind the answer.</li>
+            <li>Tap the card or press Enter to go to the next word.</li>
             <li>
-              After {ROUND_SIZE} cards, choose to learn from your mistakes or
-              jump to the next deck. Score keeps counting.
+              After {ROUND_SIZE} words, replay the ones you missed or start the
+              next {ROUND_SIZE}. Overall accuracy keeps counting until you restart.
             </li>
             <li>
               Full reference: <Link href="/rules" className="underline underline-offset-2">The Rules</Link>.
@@ -148,9 +150,15 @@ export function ArticlesGame({
             </h2>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               This deck: {deckScore.correct}/{deckScore.total}
-              {deckScore.total > 0 &&
-                ` (${Math.round((deckScore.correct / deckScore.total) * 100)}%)`}
+              {deckScore.total > 0 && ` (${percent(deckScore)}%)`}
             </p>
+            {mistakesOnly && queue && troubleIds && (
+              <p className="max-w-sm text-sm text-zinc-600 dark:text-zinc-400">
+                {queue.filter((id) => !troubleIds.includes(id)).length} of {queue.length} words
+                cleared from your list. A word leaves it after {CORRECT_STREAK_TO_CLEAR} correct
+                answers in a row.
+              </p>
+            )}
             <div className="flex flex-wrap justify-center gap-3">
               {wrongThisPass.length > 0 && (
                 <button
@@ -209,18 +217,16 @@ export function ArticlesGame({
       </div>
       </div>
 
+      {!mistakesOnly && (
       <section className="grid grid-cols-3 gap-px border border-[var(--line)] bg-[var(--line)]">
         <Stat label="Decks played" value={decksPlayed} />
         <Stat label="Mistakes fixed" value={mistakesLearned} />
         <Stat
           label="Overall accuracy"
-          value={
-            baseStats.total > 0
-              ? `${Math.round((baseStats.correct / baseStats.total) * 100)}%`
-              : "—"
-          }
+          value={baseStats.total > 0 ? `${percent(baseStats)}%` : "—"}
         />
       </section>
+      )}
     </div>
   );
 }
@@ -262,6 +268,9 @@ function Game({
 
   return (
     <div className="flex flex-col gap-3">
+      <p role="status" className="sr-only">
+        {chosen && (isCorrect ? "Correct!" : `Not quite. It's ${card.article} ${card.noun}.`)}
+      </p>
       <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
         <span>{positionLabel}</span>
         <span>{scoreLabel}</span>
@@ -296,6 +305,8 @@ function Game({
                 <button
                   key={article}
                   type="button"
+                  // Each new card puts keyboard focus back on the answers.
+                  autoFocus={article === ARTICLES[0]}
                   onClick={() => onChoose(article, card.id, card.article)}
                   className={`${buttonBase} ${buttonIdle}`}
                 >
@@ -351,9 +362,19 @@ function Game({
               </div>
             )}
 
-            <p className="text-xs text-zinc-400 dark:text-zinc-500">
-              Click anywhere to continue →
-            </p>
+            {/* Clicking anywhere on the card advances too; this button is what
+                keyboard and screen-reader users land on after answering. */}
+            <button
+              type="button"
+              autoFocus
+              onClick={(event) => {
+                event.stopPropagation();
+                onAdvance();
+              }}
+              className="self-center rounded text-xs text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300"
+            >
+              Tap or press Enter to continue →
+            </button>
           </div>
         )}
       </div>

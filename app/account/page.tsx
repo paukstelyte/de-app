@@ -4,6 +4,8 @@ import { LogoutButton } from "@/components/auth-forms";
 import { DeleteAccountForm } from "@/components/delete-account-form";
 import { CONFIRM_WORD } from "@/lib/account";
 
+export const metadata = { title: "Account" };
+
 const panel = "border border-[var(--line)] bg-[var(--paper)] p-5 sm:p-6";
 const heading =
   "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";

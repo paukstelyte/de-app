@@ -49,9 +49,10 @@ The app runs locally at `localhost:3000`. Do not swap any part of this stack.
 * At round end: "Learn from your mistakes (N)" (recap of just this round's misses, itself capped to those cards) or "Next 30 words" (fresh deck) — never auto-loops into recap.
 * "This deck: X/Y" score is scoped to the current deck only and resets every new deck; recap answers don't count toward it.
 * Restart gives a fresh deck and resets session-wide stats; "Next 30 words" only resets the per-deck score.
-* Session-wide stats (bottom of home page): Decks played, Mistakes fixed (a base-round miss later answered correctly in recap), Overall accuracy % (base-deck answers only).
-* Each card is a flip: the noun + der/die/das buttons on the front; picking one flips it in place (correct green, wrong red) to reveal the rule and any exception — no separate panel, no "next" button.
-* Click anywhere on a flipped card to advance.
+* Session-wide stats (bottom of the game page, hidden in "Practise my mistakes" mode): Decks played, Mistakes fixed (a base-round miss later answered correctly in recap), Overall accuracy % (base-deck answers only).
+* Each card is a flip: the noun + der/die/das buttons on the front; picking one flips it in place (correct green, wrong red) to reveal the rule and any exception — no separate panel, no big "next" button.
+* Click anywhere on a flipped card to advance. The small "Tap or press Enter to continue" hint is a real button that receives focus after answering, and the first answer button is focused on each new card, so the game is fully keyboard-playable. The result is announced to screen readers via a `role="status"` live region.
+* On phones the card comes first; the intro/how-to sidebar moves below it.
 * A card is auto-flagged "needs practice" after 2 wrong answers in a row (shown as a badge) — not explained in the on-screen "how to use" copy.
 * Every answer shows the grammar rule; exceptions are explained too, not just the base rule.
 * The specific suffix/prefix a rule hinges on (e.g. **-ung**, **Ge-**) is bolded wherever it appears, on both the flashcard and the `/rules` page.

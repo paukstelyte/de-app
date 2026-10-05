@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { FlashcardsProvider } from "@/lib/flashcards/context";
 import { ThemeProvider } from "@/lib/theme/context";
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DE-app — German grammar practice",
+  title: { default: "DE-app — German grammar practice", template: "%s · DE-app" },
   description:
     "Practise German grammar, A1–B2, and learn from your own mistakes.",
 };
@@ -33,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col text-zinc-900 dark:text-zinc-50">
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <Script id="theme-init" strategy="beforeInteractive">{THEME_INIT_SCRIPT}</Script>
         <ThemeProvider>
           <FlashcardsProvider>
             <NavBar auth={<AuthButton />} />

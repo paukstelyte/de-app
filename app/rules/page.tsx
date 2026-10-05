@@ -2,6 +2,7 @@ import rules from "@/lib/flashcards/data/rules.json";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
 import { PrintButton } from "@/components/PrintButton";
 
+
 interface RuleException {
   noun: string;
   article: "der" | "die" | "das";
@@ -44,9 +45,7 @@ function bareNoun(noun: string): string {
   return noun.replace(/^(der|die|das)\s+/i, "");
 }
 
-export const metadata = {
-  title: "The Rules — die·der·das",
-};
+export const metadata = { title: "The Rules" };
 
 export default function RulesPage() {
   const groups: Record<Rule["article"], Rule[]> = { der: [], die: [], das: [] };
@@ -120,7 +119,7 @@ function PrintRules({ groups }: { groups: Record<Rule["article"], Rule[]> }) {
               </span>
             </h2>
             <span className="text-[9px] text-zinc-400">
-              die·der·das — rules reference
+              DE-app — der · die · das rules
             </span>
           </header>
           <div className="grid grid-cols-3 gap-x-4 gap-y-2.5">

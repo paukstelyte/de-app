@@ -7,6 +7,8 @@ import { getArticlesProgress } from "@/lib/attempts";
 import { percent, type Score } from "@/lib/progress";
 import { TOPICS } from "@/lib/topics";
 
+export const metadata = { title: "Your progress" };
+
 const CARDS = new Map(loadFlashcards().map((c) => [c.id, c]));
 const RULE_TITLES = new Map(rules.map((r) => [r.id, r.title]));
 const TROUBLE_SHOWN = 30;
