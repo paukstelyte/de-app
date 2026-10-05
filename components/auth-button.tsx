@@ -8,8 +8,14 @@ export async function AuthButton() {
   const email = data?.claims?.email;
 
   return email ? (
-    <div className="flex items-center gap-2 text-sm">
-      <span className="hidden text-zinc-500 sm:inline">{email}</span>
+    <div className="flex items-center gap-1 text-sm">
+      <Link
+        href="/progress"
+        className="whitespace-nowrap rounded-full px-2.5 py-1.5 font-medium text-zinc-600 transition-colors hover:bg-black/5 sm:px-3 dark:text-zinc-400 dark:hover:bg-white/10"
+      >
+        Progress
+      </Link>
+      <span className="hidden text-zinc-500 lg:inline">{email}</span>
       <LogoutButton />
     </div>
   ) : (

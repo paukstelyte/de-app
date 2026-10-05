@@ -153,7 +153,7 @@ function PrintRules({ groups }: { groups: Record<Rule["article"], Rule[]> }) {
 
 function RuleCard({ rule }: { rule: Rule }) {
   return (
-    <div className="rounded-xl border border-zinc-200 p-5 dark:border-zinc-800">
+    <div id={rule.id} className="scroll-mt-24 rounded-xl border border-zinc-200 p-5 dark:border-zinc-800">
       <div className="flex flex-wrap items-center gap-2">
         <span
           className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium capitalize ${ARTICLE_STYLES[rule.article]}`}

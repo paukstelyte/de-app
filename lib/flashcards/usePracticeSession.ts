@@ -1,6 +1,6 @@
 import { useMemo, useReducer } from "react";
 import type { Article, Flashcard } from "./types";
-import { buildPracticeOrder } from "./practice";
+import { buildPracticeOrder, ROUND_SIZE, shuffle } from "./practice";
 
 interface RoundScore {
   correct: number;
@@ -128,7 +128,11 @@ function sessionReducer(state: SessionState, action: Action): SessionState {
  * session stats) so the page component only has to render it. */
 export function usePracticeSession(
   cards: Flashcard[],
-  recordAnswer: (id: string, wasCorrect: boolean) => void,
+  recordAnswer: (id: string, article: Article, wasCorrect: boolean) => void,
+  /** Logged-in only: the user's saved trouble words. */
+  troubleIds?: string[],
+  /** "Practise my mistakes": rounds are built from `troubleIds` only. */
+  mistakesOnly = false,
 ) {
   const [state, dispatch] = useReducer(sessionReducer, initialState);
 
@@ -138,7 +142,11 @@ export function usePracticeSession(
   // the current round).
   const hasCards = cards.length > 0;
   const baseOrder = useMemo(
-    () => (hasCards ? buildPracticeOrder(cards) : null),
+    () => {
+      if (!hasCards) return null;
+      if (mistakesOnly) return shuffle(troubleIds ?? []).slice(0, ROUND_SIZE);
+      return buildPracticeOrder(cards, troubleIds);
+    },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [state.round, hasCards],
   );
@@ -150,7 +158,7 @@ export function usePracticeSession(
   function choose(article: Article, cardId: string, correctArticle: Article) {
     if (state.chosen) return;
     const wasCorrect = article === correctArticle;
-    recordAnswer(cardId, wasCorrect);
+    recordAnswer(cardId, article, wasCorrect);
     dispatch({ type: "choose", article, wasCorrect, cardId });
   }
 
