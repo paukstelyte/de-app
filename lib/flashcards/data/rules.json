@@ -1,0 +1,530 @@
+[
+  {
+    "id": "der-agent-er",
+    "article": "der",
+    "title": "Agent nouns ending in -er",
+    "matchType": "suffix",
+    "suffixes": ["-er"],
+    "description": "Nouns formed from a verb stem to name 'the person who does X' (an agent noun) almost always take der, e.g. lehren → der Lehrer. This is far more reliable than the bare -er ending in general, which is only masculine about 60% of the time overall.",
+    "examples": ["Lehrer", "Bäcker", "Fahrer", "Spieler", "Arbeiter", "Sänger", "Schwimmer", "Maler"],
+    "exceptions": [
+      { "noun": "das Fenster", "article": "das", "note": "Ends in -er but is not an agent noun (window), so it falls outside this rule and is neuter instead." },
+      { "noun": "die Mutter", "article": "die", "note": "A non-agentive -er word (mother) that is feminine, showing the rule only reliably applies to true agent/doer nouns." },
+      { "noun": "das Wasser", "article": "das", "note": "Common -er noun (water) that is neuter, not an agent noun." }
+    ]
+  },
+  {
+    "id": "der-ling",
+    "article": "der",
+    "title": "Nouns ending in -ling",
+    "matchType": "suffix",
+    "suffixes": ["-ling"],
+    "description": "Nouns ending in -ling, often naming a person or young creature characterized by a quality, are almost always masculine.",
+    "examples": ["Schmetterling", "Frühling", "Lehrling", "Sperling", "Zwilling", "Feigling", "Häuptling", "Liebling"],
+    "exceptions": [
+      { "noun": "die Reling", "article": "die", "note": "A loanword (ship's railing) from Dutch/English that happens to end in -ling but is feminine — one of the few genuine exceptions." }
+    ]
+  },
+  {
+    "id": "der-ismus",
+    "article": "der",
+    "title": "Nouns ending in -ismus",
+    "matchType": "suffix",
+    "suffixes": ["-ismus"],
+    "description": "Nouns borrowed from Greek/Latin with the ending -ismus, usually naming ideologies, movements, or conditions, are reliably masculine with essentially no exceptions.",
+    "examples": ["Realismus", "Journalismus", "Kapitalismus", "Optimismus", "Tourismus", "Organismus", "Sozialismus", "Pessimismus"],
+    "exceptions": []
+  },
+  {
+    "id": "der-or",
+    "article": "der",
+    "title": "Nouns ending in -or",
+    "matchType": "suffix",
+    "suffixes": ["-or"],
+    "description": "Nouns ending in -or, many borrowed from Latin and often naming people, instruments, or abstract agents, are usually masculine.",
+    "examples": ["Autor", "Doktor", "Motor", "Faktor", "Professor", "Traktor", "Direktor", "Investor"],
+    "exceptions": [
+      { "noun": "das Tor", "article": "das", "note": "A native German word (gate/goal) that happens to end in -or but is neuter, not a Latin loanword." },
+      { "noun": "das Labor", "article": "das", "note": "Short for Laboratorium; neuter despite the -or ending." },
+      { "noun": "das Chlor", "article": "das", "note": "Chemical element name (chlorine) — neuter, following the chemical-elements rule instead." }
+    ]
+  },
+  {
+    "id": "der-us",
+    "article": "der",
+    "title": "Nouns ending in -us",
+    "matchType": "suffix",
+    "suffixes": ["-us"],
+    "description": "Nouns of Greek/Latin origin ending in -us are usually masculine.",
+    "examples": ["Zirkus", "Fokus", "Bonus", "Modus", "Kaktus", "Rhythmus", "Campus", "Bus"],
+    "exceptions": [
+      { "noun": "das Genus", "article": "das", "note": "Grammatical term (gender) — neuter despite the -us ending." },
+      { "noun": "das Korpus", "article": "das", "note": "A body of texts — neuter, a grammar/linguistics loanword exception." },
+      { "noun": "das Tempus", "article": "das", "note": "Grammatical tense — neuter, part of a small cluster of neuter grammar terms in -us." }
+    ]
+  },
+  {
+    "id": "der-ant-and",
+    "article": "der",
+    "title": "Nouns ending in -ant or -and",
+    "matchType": "suffix",
+    "suffixes": ["-ant", "-and"],
+    "description": "Nouns ending in -ant or -and, frequently naming a person who performs or undergoes an action (often from Latin participle forms), are usually masculine.",
+    "examples": ["Konsonant", "Praktikant", "Lieferant", "Musikant", "Demonstrant", "Doktorand", "Diplomand", "Elefant"],
+    "exceptions": [
+      { "noun": "das Restaurant", "article": "das", "note": "French loanword ending in -ant that is neuter, not an agent noun." },
+      { "noun": "das Croissant", "article": "das", "note": "Another French food loanword ending in -ant that is neuter rather than masculine." }
+    ]
+  },
+  {
+    "id": "der-eur",
+    "article": "der",
+    "title": "Nouns ending in -eur/-ör",
+    "matchType": "suffix",
+    "suffixes": ["-eur", "-ör"],
+    "description": "Nouns borrowed from French with the agent-noun ending -eur (sometimes -ör in older spellings) typically name a person and are masculine.",
+    "examples": ["Ingenieur", "Friseur", "Redakteur", "Amateur", "Masseur", "Chauffeur", "Kontrolleur", "Regisseur"],
+    "exceptions": [
+      { "noun": "das Abenteuer", "article": "das", "note": "Looks like it ends in -eur but is actually the unrelated native word Aben-teuer (adventure); neuter." },
+      { "noun": "die Couleur", "article": "die", "note": "French loanword (color/character, used for fraternity colors) that is feminine rather than masculine." }
+    ]
+  },
+  {
+    "id": "der-calendar",
+    "article": "der",
+    "title": "Days, months, and seasons",
+    "matchType": "semantic",
+    "category": "calendar units (days, months, seasons)",
+    "description": "Names of the days of the week, months of the year, and the four seasons are masculine.",
+    "examples": ["Montag", "Dienstag", "Mittwoch", "Januar", "Februar", "Winter", "Sommer", "Herbst"],
+    "exceptions": [
+      { "noun": "das Jahr", "article": "das", "note": "The year itself is neuter, even though it belongs to the calendar-units family." },
+      { "noun": "die Woche", "article": "die", "note": "The week is feminine, unlike the masculine day and month names." },
+      { "noun": "die Nacht", "article": "die", "note": "Night is feminine, not masculine, despite belonging to the time-of-day family." },
+      { "noun": "das Frühjahr", "article": "das", "note": "An alternative word for 'spring' that is neuter, contrasting with the standard masculine der Frühling." }
+    ]
+  },
+  {
+    "id": "der-directions-weather",
+    "article": "der",
+    "title": "Compass directions and precipitation",
+    "matchType": "semantic",
+    "category": "compass directions & weather/precipitation",
+    "description": "The four cardinal directions and most words for falling weather/precipitation are masculine. This covers precipitation specifically, not weather vocabulary in general, which is mixed.",
+    "examples": ["Norden", "Süden", "Osten", "Westen", "Regen", "Schnee", "Hagel", "Nebel"],
+    "exceptions": [
+      { "noun": "die Sonne", "article": "die", "note": "Sunshine is feminine, not masculine, despite being a common weather word." },
+      { "noun": "die Wolke", "article": "die", "note": "Cloud is feminine, breaking the weather-is-masculine tendency." },
+      { "noun": "das Eis", "article": "das", "note": "Ice is neuter, not masculine." },
+      { "noun": "das Gewitter", "article": "das", "note": "Thunderstorm is neuter; the general word das Wetter (weather) itself is also neuter." }
+    ]
+  },
+  {
+    "id": "der-alcohol",
+    "article": "der",
+    "title": "Alcoholic drinks",
+    "matchType": "semantic",
+    "category": "alcoholic beverages",
+    "description": "Most names of alcoholic drinks are masculine.",
+    "examples": ["Wein", "Sekt", "Schnaps", "Wodka", "Gin", "Whisky", "Rum", "Cognac"],
+    "exceptions": [
+      { "noun": "das Bier", "article": "das", "note": "Beer is the single most famous exception to the 'alcoholic drinks are masculine' rule; it is neuter." },
+      { "noun": "die Bowle", "article": "die", "note": "A wine/fruit punch is feminine because it follows the common '-e ending is usually feminine' pattern instead." }
+    ]
+  },
+  {
+    "id": "der-car-brands",
+    "article": "der",
+    "title": "Car brand names",
+    "matchType": "semantic",
+    "category": "car brand/make names",
+    "description": "When a manufacturer's name is used to mean 'a car of that make,' it takes der, following the gender of der Wagen (car).",
+    "examples": ["BMW", "Audi", "Mercedes", "Porsche", "Opel", "Volkswagen", "Ford", "Toyota"],
+    "exceptions": [
+      { "noun": "die BMW", "article": "die", "note": "The same brand name takes die instead when it refers to a BMW motorcycle, following die Maschine/das Motorrad conventions rather than der Wagen." },
+      { "noun": "die Ente", "article": "die", "note": "The nickname for the Citroën 2CV ('duck') is feminine because it follows the everyday word Ente, not the car-brand rule." }
+    ]
+  },
+  {
+    "id": "der-male-persons",
+    "article": "der",
+    "title": "Male persons and their roles",
+    "matchType": "semantic",
+    "category": "male people/roles",
+    "description": "Nouns referring to male people or family roles are masculine, matching natural (biological) gender.",
+    "examples": ["Mann", "Vater", "Bruder", "Sohn", "Arzt", "König", "Freund", "Lehrer"],
+    "exceptions": [
+      { "noun": "das Mitglied", "article": "das", "note": "'Member' is neuter regardless of the person's sex — grammatical gender doesn't always track the referent's sex." },
+      { "noun": "das Kind", "article": "das", "note": "'Child' is neuter regardless of sex." },
+      { "noun": "die Person", "article": "die", "note": "'Person' is grammatically feminine no matter who is being referred to, including men." }
+    ]
+  },
+  {
+    "id": "die-ung",
+    "article": "die",
+    "title": "Nouns ending in -ung",
+    "matchType": "suffix",
+    "suffixes": ["-ung"],
+    "description": "Nouns formed from verbs with the ending -ung, usually describing an action or its result, are always feminine — one of the most reliable rules in German.",
+    "examples": ["Zeitung", "Meinung", "Wohnung", "Kleidung", "Übung", "Rechnung", "Hoffnung", "Prüfung"],
+    "exceptions": []
+  },
+  {
+    "id": "die-heit-keit",
+    "article": "die",
+    "title": "Nouns ending in -heit or -keit",
+    "matchType": "suffix",
+    "suffixes": ["-heit", "-keit"],
+    "description": "Abstract nouns formed with -heit or -keit, usually from adjectives, are always feminine.",
+    "examples": ["Freiheit", "Gesundheit", "Schönheit", "Möglichkeit", "Einigkeit", "Süßigkeit", "Wahrheit", "Klugheit"],
+    "exceptions": []
+  },
+  {
+    "id": "die-schaft",
+    "article": "die",
+    "title": "Nouns ending in -schaft",
+    "matchType": "suffix",
+    "suffixes": ["-schaft"],
+    "description": "Nouns ending in -schaft, often naming collectives, states, or relationships, are always feminine.",
+    "examples": ["Freundschaft", "Mannschaft", "Wissenschaft", "Gesellschaft", "Landschaft", "Botschaft", "Herrschaft", "Leidenschaft"],
+    "exceptions": []
+  },
+  {
+    "id": "die-tion-sion",
+    "article": "die",
+    "title": "Nouns ending in -tion or -sion",
+    "matchType": "suffix",
+    "suffixes": ["-tion", "-sion"],
+    "description": "Nouns borrowed from Latin/French with the endings -tion or -sion, common in formal and academic vocabulary, are always feminine.",
+    "examples": ["Nation", "Situation", "Explosion", "Diskussion", "Information", "Organisation", "Version", "Aktion"],
+    "exceptions": []
+  },
+  {
+    "id": "die-taet",
+    "article": "die",
+    "title": "Nouns ending in -tät",
+    "matchType": "suffix",
+    "suffixes": ["-tät"],
+    "description": "Nouns ending in -tät, borrowed from Latin abstract nouns in -tas, are always feminine.",
+    "examples": ["Universität", "Realität", "Qualität", "Identität", "Aktivität", "Elektrizität", "Kapazität", "Nationalität"],
+    "exceptions": []
+  },
+  {
+    "id": "die-ie",
+    "article": "die",
+    "title": "Nouns ending in -ie",
+    "matchType": "suffix",
+    "suffixes": ["-ie"],
+    "description": "Nouns ending in -ie, many borrowed from Greek/Latin abstract or scientific vocabulary, are usually feminine.",
+    "examples": ["Familie", "Energie", "Biologie", "Fantasie", "Kopie", "Industrie", "Philosophie", "Theorie"],
+    "exceptions": [
+      { "noun": "das Genie", "article": "das", "note": "'Genius' is neuter despite the -ie ending." },
+      { "noun": "der Yuppie", "article": "der", "note": "An English loanword referring to a person; masculine rather than feminine because it names a person type." }
+    ]
+  },
+  {
+    "id": "die-ik",
+    "article": "die",
+    "title": "Nouns ending in -ik",
+    "matchType": "suffix",
+    "suffixes": ["-ik"],
+    "description": "Nouns ending in -ik, especially names of academic fields and disciplines, are usually feminine.",
+    "examples": ["Musik", "Politik", "Fabrik", "Physik", "Grammatik", "Technik", "Mathematik", "Logik"],
+    "exceptions": [
+      { "noun": "der Katholik", "article": "der", "note": "Refers to a male Catholic person, so it is masculine rather than following the -ik-is-feminine pattern." }
+    ]
+  },
+  {
+    "id": "die-in",
+    "article": "die",
+    "title": "Nouns ending in -in for female people/animals",
+    "matchType": "suffix",
+    "suffixes": ["-in"],
+    "description": "Adding -in to a masculine noun for a person or animal creates the feminine counterpart, which is always feminine.",
+    "examples": ["Lehrerin", "Ärztin", "Studentin", "Königin", "Freundin", "Chefin", "Löwin", "Kollegin"],
+    "exceptions": [
+      { "noun": "der Termin", "article": "der", "note": "'Appointment' ends in -in but is an unrelated masculine word, not a feminine-agent form." },
+      { "noun": "das Bulletin", "article": "das", "note": "French loanword ending in -in that is neuter, unrelated to the feminizing suffix." },
+      { "noun": "der Rubin", "article": "der", "note": "'Ruby' ends in -in but is masculine — the ending here is coincidental, not the feminizing suffix." }
+    ]
+  },
+  {
+    "id": "die-ur",
+    "article": "die",
+    "title": "Nouns ending in -ur",
+    "matchType": "suffix",
+    "suffixes": ["-ur"],
+    "description": "Nouns ending in -ur, many borrowed from Latin/French abstract and technical vocabulary, are usually feminine.",
+    "examples": ["Kultur", "Natur", "Literatur", "Struktur", "Figur", "Temperatur", "Zensur", "Frisur"],
+    "exceptions": [
+      { "noun": "das Abitur", "article": "das", "note": "The school-leaving exam is neuter despite the -ur ending." },
+      { "noun": "der Purpur", "article": "der", "note": "'Purple/crimson' is masculine, not feminine." },
+      { "noun": "der Flur", "article": "der", "note": "'Hallway/corridor' is masculine, a common everyday exception to the -ur pattern." }
+    ]
+  },
+  {
+    "id": "die-enz-anz",
+    "article": "die",
+    "title": "Nouns ending in -enz or -anz",
+    "matchType": "suffix",
+    "suffixes": ["-enz", "-anz"],
+    "description": "Abstract nouns borrowed from Latin with the endings -enz or -anz are always feminine.",
+    "examples": ["Konferenz", "Existenz", "Intelligenz", "Distanz", "Toleranz", "Substanz", "Konsequenz", "Eleganz"],
+    "exceptions": []
+  },
+  {
+    "id": "die-e-ending",
+    "article": "die",
+    "title": "Nouns ending in -e",
+    "matchType": "suffix",
+    "suffixes": ["-e"],
+    "description": "Many native German nouns ending in -e are feminine — roughly 90% of them — making it a useful but imperfect first guess rather than a firm rule.",
+    "examples": ["Blume", "Lampe", "Katze", "Decke", "Tasche", "Schule", "Straße", "Sonne"],
+    "exceptions": [
+      { "noun": "der Käse", "article": "der", "note": "'Cheese' ends in -e but is masculine." },
+      { "noun": "das Auge", "article": "das", "note": "'Eye' ends in -e but is neuter." },
+      { "noun": "das Ende", "article": "das", "note": "'End' ends in -e but is neuter." },
+      { "noun": "der Junge", "article": "der", "note": "'Boy' ends in -e but is masculine, matching natural gender rather than the suffix pattern." },
+      { "noun": "das Interesse", "article": "das", "note": "'Interest' ends in -e but is neuter." }
+    ]
+  },
+  {
+    "id": "die-trees-flowers-fruits",
+    "article": "die",
+    "title": "Trees, flowers, and fruits",
+    "matchType": "semantic",
+    "category": "trees, flowers, and fruits",
+    "description": "Most native names of trees, flowers, and fruits are feminine.",
+    "examples": ["Eiche", "Tanne", "Birke", "Rose", "Tulpe", "Nelke", "Kirsche", "Pflaume"],
+    "exceptions": [
+      { "noun": "der Apfel", "article": "der", "note": "Apple is masculine — it ends in -el, which pulls it into the masculine -el pattern instead." },
+      { "noun": "der Ahorn", "article": "der", "note": "Maple is one of the best-known masculine tree exceptions." },
+      { "noun": "der Löwenzahn", "article": "der", "note": "Dandelion is masculine, not feminine." },
+      { "noun": "der Mohn", "article": "der", "note": "Poppy is masculine." },
+      { "noun": "der Flieder", "article": "der", "note": "Lilac is masculine, ending in -er like many masculine nouns." }
+    ]
+  },
+  {
+    "id": "die-rivers",
+    "article": "die",
+    "title": "German, Austrian, and Swiss rivers",
+    "matchType": "semantic",
+    "category": "domestic (German-speaking) rivers",
+    "description": "Most rivers within German-speaking countries are feminine. This is only a strong tendency, not an absolute rule — river gender is largely historical and often has to be memorized individually.",
+    "examples": ["Donau", "Elbe", "Mosel", "Weser", "Oder", "Isar", "Spree", "Saale"],
+    "exceptions": [
+      { "noun": "der Rhein", "article": "der", "note": "The Rhine, one of the most important German rivers, is masculine, not feminine." },
+      { "noun": "der Main", "article": "der", "note": "The Main river is masculine." },
+      { "noun": "der Neckar", "article": "der", "note": "The Neckar river is masculine." }
+    ]
+  },
+  {
+    "id": "die-female-persons",
+    "article": "die",
+    "title": "Female persons and their roles",
+    "matchType": "semantic",
+    "category": "female people/roles",
+    "description": "Nouns referring to female people or family roles are feminine, matching natural (biological) gender.",
+    "examples": ["Frau", "Mutter", "Tochter", "Schwester", "Ärztin", "Königin", "Freundin", "Kollegin"],
+    "exceptions": [
+      { "noun": "das Mädchen", "article": "das", "note": "'Girl' is neuter, not feminine, because the diminutive suffix -chen always overrides natural gender and forces neuter." },
+      { "noun": "das Fräulein", "article": "das", "note": "The old-fashioned word for 'young lady/miss' is neuter for the same reason: the -lein diminutive suffix forces neuter." },
+      { "noun": "das Weib", "article": "das", "note": "An old/blunt word for 'woman' that is neuter rather than feminine, an irregular historical holdover." }
+    ]
+  },
+  {
+    "id": "das-chen-lein",
+    "article": "das",
+    "title": "Diminutives ending in -chen or -lein",
+    "matchType": "suffix",
+    "suffixes": ["-chen", "-lein"],
+    "description": "Adding the diminutive suffix -chen or -lein to any noun always makes it neuter, regardless of the original noun's gender. This override is essentially exceptionless.",
+    "examples": ["Mädchen", "Hündchen", "Kätzchen", "Röslein", "Bäumchen", "Häuschen", "Tischlein", "Brötchen"],
+    "exceptions": []
+  },
+  {
+    "id": "das-um",
+    "article": "das",
+    "title": "Nouns ending in -um",
+    "matchType": "suffix",
+    "suffixes": ["-um"],
+    "description": "Nouns borrowed from Latin with the ending -um are usually neuter.",
+    "examples": ["Museum", "Zentrum", "Datum", "Album", "Praktikum", "Studium", "Individuum", "Gremium"],
+    "exceptions": [
+      { "noun": "der Konsum", "article": "der", "note": "'Consumption' is masculine despite the -um ending." },
+      { "noun": "der Rum", "article": "der", "note": "'Rum' happens to end in the letters -um but is masculine, not an instance of the Latin -um suffix." }
+    ]
+  },
+  {
+    "id": "das-ment",
+    "article": "das",
+    "title": "Nouns ending in -ment",
+    "matchType": "suffix",
+    "suffixes": ["-ment"],
+    "description": "Nouns borrowed from Latin/French with the ending -ment are usually neuter.",
+    "examples": ["Experiment", "Instrument", "Element", "Argument", "Dokument", "Testament", "Fundament", "Kompliment"],
+    "exceptions": [
+      { "noun": "der Moment", "article": "der", "note": "Meaning 'a point in time,' this common word is masculine (das Moment exists separately with the more technical meaning 'factor/momentum')." },
+      { "noun": "der Zement", "article": "der", "note": "'Cement' is masculine, not neuter." }
+    ]
+  },
+  {
+    "id": "das-tum",
+    "article": "das",
+    "title": "Nouns ending in -tum",
+    "matchType": "suffix",
+    "suffixes": ["-tum"],
+    "description": "Abstract nouns ending in -tum, often naming states, systems, or collectives, are usually neuter. This is a strong tendency rather than an absolute rule, since two very common -tum words are masculine.",
+    "examples": ["Eigentum", "Christentum", "Wachstum", "Königtum", "Judentum", "Altertum", "Brauchtum", "Fürstentum"],
+    "exceptions": [
+      { "noun": "der Reichtum", "article": "der", "note": "'Wealth' is masculine, one of the two best-known exceptions to the -tum-is-neuter pattern." },
+      { "noun": "der Irrtum", "article": "der", "note": "'Error/mistake' is masculine, the other well-known exception." }
+    ]
+  },
+  {
+    "id": "das-ge-prefix",
+    "article": "das",
+    "title": "Collective nouns with the Ge- prefix",
+    "matchType": "suffix",
+    "suffixes": ["ge-"],
+    "description": "Nouns formed with the collective prefix Ge- (often also ending in -e), naming a group or repeated activity, are usually neuter. There are around twenty common exceptions.",
+    "examples": ["Gebäude", "Gebirge", "Gemüse", "Geschirr", "Gepäck", "Getränk", "Gefühl", "Gerede"],
+    "exceptions": [
+      { "noun": "der Gedanke", "article": "der", "note": "'Thought' is masculine, not neuter, despite the Ge- prefix." },
+      { "noun": "der Geschmack", "article": "der", "note": "'Taste' is masculine, an exception to the Ge-is-neuter pattern." },
+      { "noun": "die Geschichte", "article": "die", "note": "'Story/history' is feminine, not neuter." },
+      { "noun": "die Gefahr", "article": "die", "note": "'Danger' is feminine despite starting with Ge-." }
+    ]
+  },
+  {
+    "id": "das-infinitives",
+    "article": "das",
+    "title": "Nominalized (verb) infinitives",
+    "matchType": "suffix",
+    "suffixes": ["-en"],
+    "description": "Any verb's bare infinitive can be turned into a noun (capitalized, used like the English '-ing' form: essen → das Essen), and the result is always neuter, with no exceptions.",
+    "examples": ["Essen", "Leben", "Lesen", "Schreiben", "Schwimmen", "Rauchen", "Singen", "Lernen"],
+    "exceptions": []
+  },
+  {
+    "id": "das-icht",
+    "article": "das",
+    "title": "Nouns ending in -icht",
+    "matchType": "suffix",
+    "suffixes": ["-icht"],
+    "description": "A cluster of common native German nouns ending in -icht are neuter.",
+    "examples": ["Licht", "Gesicht", "Gewicht", "Gedicht", "Dickicht", "Kehricht"],
+    "exceptions": [
+      { "noun": "die Sicht", "article": "die", "note": "'View/sight' ends in -icht but is feminine." },
+      { "noun": "die Pflicht", "article": "die", "note": "'Duty' ends in -icht but is feminine." }
+    ]
+  },
+  {
+    "id": "das-o",
+    "article": "das",
+    "title": "Nouns ending in -o",
+    "matchType": "suffix",
+    "suffixes": ["-o"],
+    "description": "Nouns ending in -o, mostly modern loanwords, are usually neuter.",
+    "examples": ["Auto", "Büro", "Kino", "Radio", "Foto", "Konto", "Piano", "Solo"],
+    "exceptions": [
+      { "noun": "der Euro", "article": "der", "note": "The currency name is masculine despite ending in -o." },
+      { "noun": "der Espresso", "article": "der", "note": "The Italian coffee loanword is masculine." },
+      { "noun": "die Avocado", "article": "die", "note": "This Spanish food loanword ending in -o is feminine, not neuter." }
+    ]
+  },
+  {
+    "id": "das-ma",
+    "article": "das",
+    "title": "Nouns ending in -ma",
+    "matchType": "suffix",
+    "suffixes": ["-ma"],
+    "description": "Nouns of Greek origin ending in -ma are usually neuter.",
+    "examples": ["Thema", "Drama", "Schema", "Klima", "Komma", "Trauma", "Dilemma", "Prisma"],
+    "exceptions": [
+      { "noun": "die Firma", "article": "die", "note": "'Company/firm' ends in -ma but is feminine, one of the best-known exceptions." },
+      { "noun": "der Pyjama", "article": "der", "note": "This loanword ends in -ma but is masculine, not neuter." }
+    ]
+  },
+  {
+    "id": "das-nis-sal",
+    "article": "das",
+    "title": "Nouns ending in -nis or -sal",
+    "matchType": "suffix",
+    "suffixes": ["-nis", "-sal"],
+    "description": "Roughly two-thirds of nouns ending in -nis (and most ending in -sal) are neuter, but a substantial minority of -nis words are feminine instead — this is a lean, not a reliable rule, so each word should be checked individually.",
+    "examples": ["Ergebnis", "Geheimnis", "Zeugnis", "Gefängnis", "Verständnis", "Schicksal"],
+    "exceptions": [
+      { "noun": "die Kenntnis", "article": "die", "note": "'Knowledge' ends in -nis but is feminine, part of the large feminine minority in this group." },
+      { "noun": "die Erlaubnis", "article": "die", "note": "'Permission' ends in -nis but is feminine." },
+      { "noun": "die Erkenntnis", "article": "die", "note": "'Realization/insight' ends in -nis but is feminine." },
+      { "noun": "die Wildnis", "article": "die", "note": "'Wilderness' ends in -nis but is feminine." }
+    ]
+  },
+  {
+    "id": "das-metals",
+    "article": "das",
+    "title": "Metals and chemical elements",
+    "matchType": "semantic",
+    "category": "metals & chemical elements",
+    "description": "Names of metals and chemical elements are usually neuter.",
+    "examples": ["Gold", "Silber", "Eisen", "Kupfer", "Aluminium", "Blei", "Zink", "Chlor"],
+    "exceptions": [
+      { "noun": "der Stahl", "article": "der", "note": "Steel (technically an alloy, not a pure element) is masculine." },
+      { "noun": "die Bronze", "article": "die", "note": "Bronze (an alloy) is feminine, following the -e ending pattern instead." },
+      { "noun": "der Schwefel", "article": "der", "note": "Sulfur is masculine, ending in -el like many masculine nouns." },
+      { "noun": "der Phosphor", "article": "der", "note": "Phosphorus is masculine, following the -or ending pattern instead of the metals/elements pattern." }
+    ]
+  },
+  {
+    "id": "das-colors",
+    "article": "das",
+    "title": "Colors used as nouns",
+    "matchType": "semantic",
+    "category": "colors (as abstract nouns)",
+    "description": "When a color adjective is used as a noun (e.g. 'the blue of the sky'), it is always neuter.",
+    "examples": ["Rot", "Blau", "Grün", "Gelb", "Weiß", "Schwarz", "Orange", "Lila"],
+    "exceptions": []
+  },
+  {
+    "id": "das-countries-cities",
+    "article": "das",
+    "title": "Countries, continents, and cities",
+    "matchType": "semantic",
+    "category": "countries, continents, and cities",
+    "description": "Most country, continent, and city names are grammatically neuter and normally used without any article at all (e.g. simply 'Deutschland,' not 'das Deutschland'). A closed list of countries takes a different, obligatory article instead.",
+    "examples": ["Deutschland", "Frankreich", "Italien", "Spanien", "Afrika", "Berlin", "Kanada", "Japan"],
+    "exceptions": [
+      { "noun": "die Schweiz", "article": "die", "note": "Switzerland is feminine and always used with the article, unlike most countries." },
+      { "noun": "die Türkei", "article": "die", "note": "Turkey is feminine and always takes an article, like other countries ending in -ei." },
+      { "noun": "der Iran", "article": "der", "note": "Iran is masculine and always takes an article." },
+      { "noun": "der Irak", "article": "der", "note": "Iraq is masculine and always takes an article." },
+      { "noun": "die USA", "article": "die", "note": "Used only in the plural (die Vereinigten Staaten), unlike the singular neuter default for most countries." }
+    ]
+  },
+  {
+    "id": "das-young-beings",
+    "article": "das",
+    "title": "Young people and baby animals",
+    "matchType": "semantic",
+    "category": "young people & baby animals",
+    "description": "Many nouns for young/immature humans and animals are neuter, even when the adult form has a different gender.",
+    "examples": ["Kind", "Baby", "Fohlen", "Ferkel", "Lamm", "Kalb", "Küken", "Junges"],
+    "exceptions": [
+      { "noun": "der Welpe", "article": "der", "note": "'Puppy' is masculine, not neuter, despite naming a baby animal." },
+      { "noun": "die Larve", "article": "die", "note": "'Larva/grub' (an immature insect) is feminine, not neuter." }
+    ]
+  },
+  {
+    "id": "das-letters",
+    "article": "das",
+    "title": "Letters of the alphabet",
+    "matchType": "semantic",
+    "category": "letters of the alphabet",
+    "description": "Individual letters of the alphabet, used as nouns, are neuter.",
+    "examples": ["A", "B", "C", "M", "Ypsilon", "Zett"],
+    "exceptions": [
+      { "noun": "der Buchstabe", "article": "der", "note": "The generic word for 'letter' (as in 'a letter of the alphabet') is itself masculine, not neuter." }
+    ]
+  }
+]

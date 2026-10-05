@@ -1,0 +1,6974 @@
+[
+  {
+    "id": "seed-0",
+    "noun": "Lehrer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-1",
+    "noun": "Bäcker",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-2",
+    "noun": "Fahrer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-3",
+    "noun": "Spieler",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-4",
+    "noun": "Arbeiter",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-5",
+    "noun": "Sänger",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-6",
+    "noun": "Schwimmer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-7",
+    "noun": "Maler",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-8",
+    "noun": "Fenster",
+    "article": "das",
+    "exception": "Ends in -er but is not an agent noun (window), so it falls outside this rule and is neuter instead.",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-9",
+    "noun": "Mutter",
+    "article": "die",
+    "exception": "A non-agentive -er word (mother) that is feminine, showing the rule only reliably applies to true agent/doer nouns.",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-10",
+    "noun": "Wasser",
+    "article": "das",
+    "exception": "Common -er noun (water) that is neuter, not an agent noun.",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-11",
+    "noun": "Vater",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-12",
+    "noun": "Bruder",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-13",
+    "noun": "Fehler",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-14",
+    "noun": "Leider",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-15",
+    "noun": "Körper",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-16",
+    "noun": "Mörder",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-17",
+    "noun": "Meister",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-18",
+    "noun": "Ärger",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-19",
+    "noun": "Partner",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-20",
+    "noun": "Finger",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-21",
+    "noun": "Hunger",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-22",
+    "noun": "Näher",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-23",
+    "noun": "Computer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-24",
+    "noun": "Richter",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-25",
+    "noun": "Meter",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-26",
+    "noun": "Keller",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-27",
+    "noun": "Großvater",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-28",
+    "noun": "Sommer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-29",
+    "noun": "Koffer",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-30",
+    "noun": "Amerikaner",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-31",
+    "noun": "Wichser",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-agent-er"
+  },
+  {
+    "id": "seed-32",
+    "noun": "Schmetterling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-33",
+    "noun": "Frühling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-34",
+    "noun": "Lehrling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-35",
+    "noun": "Findling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-36",
+    "noun": "Zwilling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-37",
+    "noun": "Feigling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-38",
+    "noun": "Häuptling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-39",
+    "noun": "Liebling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-40",
+    "noun": "Reling",
+    "article": "die",
+    "exception": "A loanword (ship's railing) from Dutch/English that happens to end in -ling but is feminine — one of the few genuine exceptions.",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-41",
+    "noun": "Darling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-42",
+    "noun": "Sterling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-43",
+    "noun": "Häftling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-44",
+    "noun": "Eindringling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-45",
+    "noun": "Schilling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-46",
+    "noun": "Flüchtling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-47",
+    "noun": "Neuling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-48",
+    "noun": "Schwächling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-49",
+    "noun": "Fäustling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-50",
+    "noun": "Sträfling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-51",
+    "noun": "Schädling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-52",
+    "noun": "Säugling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-53",
+    "noun": "Riesling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-54",
+    "noun": "Vierling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-55",
+    "noun": "Fiesling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-56",
+    "noun": "Winzling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-57",
+    "noun": "Mischling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-58",
+    "noun": "Drilling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-59",
+    "noun": "Setzling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-60",
+    "noun": "Publikumsliebling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-61",
+    "noun": "Neuankömmling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-62",
+    "noun": "Sprössling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-63",
+    "noun": "Sonderling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling"
+  },
+  {
+    "id": "seed-64",
+    "noun": "Realismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-65",
+    "noun": "Journalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-66",
+    "noun": "Kapitalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-67",
+    "noun": "Optimismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-68",
+    "noun": "Tourismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-69",
+    "noun": "Organismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-70",
+    "noun": "Sozialismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-71",
+    "noun": "Pessimismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-72",
+    "noun": "Terrorismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-73",
+    "noun": "Kommunismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-74",
+    "noun": "Rassismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-75",
+    "noun": "Mechanismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-76",
+    "noun": "Individualismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-77",
+    "noun": "Vandalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-78",
+    "noun": "Egoismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-79",
+    "noun": "Patriotismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-80",
+    "noun": "Faschismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-81",
+    "noun": "Zynismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-82",
+    "noun": "Autismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-83",
+    "noun": "Kannibalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-84",
+    "noun": "Buddhismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-85",
+    "noun": "Alkoholismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-86",
+    "noun": "Idealismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-87",
+    "noun": "Feminismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-88",
+    "noun": "Imperialismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-89",
+    "noun": "Perfektionismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-90",
+    "noun": "Magnetismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-91",
+    "noun": "Impressionismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-92",
+    "noun": "Sadismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-93",
+    "noun": "Katholizismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-94",
+    "noun": "Sexismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-95",
+    "noun": "Altruismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus"
+  },
+  {
+    "id": "seed-96",
+    "noun": "Autor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-97",
+    "noun": "Doktor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-98",
+    "noun": "Motor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-99",
+    "noun": "Faktor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-100",
+    "noun": "Professor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-101",
+    "noun": "Traktor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-102",
+    "noun": "Direktor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-103",
+    "noun": "Investor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-104",
+    "noun": "Tor",
+    "article": "das",
+    "exception": "A native German word (gate/goal) that happens to end in -or but is neuter, not a Latin loanword.",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-105",
+    "noun": "Labor",
+    "article": "das",
+    "exception": "Short for Laboratorium; neuter despite the -or ending.",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-106",
+    "noun": "Moor",
+    "article": "das",
+    "exception": "Moor (bog/moorland) is neuter, not masculine, despite ending in -or.",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-107",
+    "noun": "Major",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-108",
+    "noun": "Inspektor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-109",
+    "noun": "Senator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-110",
+    "noun": "Junior",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-111",
+    "noun": "Humor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-112",
+    "noun": "Pastor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-113",
+    "noun": "Sektor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-114",
+    "noun": "Tumor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-115",
+    "noun": "Tresor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-116",
+    "noun": "Chor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-117",
+    "noun": "Generator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-118",
+    "noun": "Monitor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-119",
+    "noun": "Rektor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-120",
+    "noun": "Terror",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-121",
+    "noun": "Senior",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-122",
+    "noun": "Signor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-123",
+    "noun": "Horror",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-124",
+    "noun": "Mentor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-125",
+    "noun": "Korridor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-126",
+    "noun": "Reaktor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-127",
+    "noun": "Sponsor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or"
+  },
+  {
+    "id": "seed-128",
+    "noun": "Zirkus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-129",
+    "noun": "Fokus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-130",
+    "noun": "Bonus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-131",
+    "noun": "Modus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-132",
+    "noun": "Kaktus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-133",
+    "noun": "Rhythmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-134",
+    "noun": "Campus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-135",
+    "noun": "Bus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-136",
+    "noun": "Virus",
+    "article": "das",
+    "exception": "Virus is neuter in standard German despite the -us ending — one of the best-known everyday exceptions to this rule.",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-137",
+    "noun": "Plus",
+    "article": "das",
+    "exception": "Plus (an advantage, a 'plus point') is neuter, not masculine, despite ending in -us.",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-138",
+    "noun": "Minus",
+    "article": "das",
+    "exception": "Minus (a deficit/shortfall) is neuter, not masculine, despite ending in -us.",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-139",
+    "noun": "Voraus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-140",
+    "noun": "Applaus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-141",
+    "noun": "Status",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-142",
+    "noun": "Luxus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-143",
+    "noun": "Orgasmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-144",
+    "noun": "Minibus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-145",
+    "noun": "Sarkasmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-146",
+    "noun": "Krokus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-147",
+    "noun": "Radius",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-148",
+    "noun": "Oktopus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-149",
+    "noun": "Enthusiasmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-150",
+    "noun": "Bambus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-151",
+    "noun": "Hummus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-152",
+    "noun": "Zyklus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-153",
+    "noun": "Hokuspokus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-154",
+    "noun": "Algorithmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-155",
+    "noun": "Globus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-156",
+    "noun": "Couscous",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-157",
+    "noun": "Papyrus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-158",
+    "noun": "Schulbus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-159",
+    "noun": "Diskus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us"
+  },
+  {
+    "id": "seed-160",
+    "noun": "Konsonant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-161",
+    "noun": "Praktikant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-162",
+    "noun": "Lieferant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-163",
+    "noun": "Musikant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-164",
+    "noun": "Demonstrant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-165",
+    "noun": "Doktorand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-166",
+    "noun": "Diplomand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-167",
+    "noun": "Elefant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-168",
+    "noun": "Restaurant",
+    "article": "das",
+    "exception": "French loanword ending in -ant that is neuter, not an agent noun.",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-169",
+    "noun": "Croissant",
+    "article": "das",
+    "exception": "Another French food loanword ending in -ant that is neuter rather than masculine.",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-170",
+    "noun": "Stand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-171",
+    "noun": "Verstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-172",
+    "noun": "Sergeant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-173",
+    "noun": "Zustand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-174",
+    "noun": "Strand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-175",
+    "noun": "Kommandant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-176",
+    "noun": "Widerstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-177",
+    "noun": "Grant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-178",
+    "noun": "Leutnant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-179",
+    "noun": "Abstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-180",
+    "noun": "Brand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-181",
+    "noun": "Bestand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-182",
+    "noun": "Brillant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-183",
+    "noun": "Aufstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-184",
+    "noun": "Vorstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-185",
+    "noun": "Ruhestand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-186",
+    "noun": "Elegant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-187",
+    "noun": "Verband",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-188",
+    "noun": "Anstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-189",
+    "noun": "Gegenstand",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-190",
+    "noun": "Mandant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-191",
+    "noun": "Informant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and"
+  },
+  {
+    "id": "seed-192",
+    "noun": "Ingenieur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-193",
+    "noun": "Friseur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-194",
+    "noun": "Redakteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-195",
+    "noun": "Amateur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-196",
+    "noun": "Masseur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-197",
+    "noun": "Chauffeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-198",
+    "noun": "Kontrolleur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-199",
+    "noun": "Regisseur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-200",
+    "noun": "Abenteuer",
+    "article": "das",
+    "exception": "Looks like it ends in -eur but is actually the unrelated native word Aben-teuer (adventure); neuter.",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-201",
+    "noun": "Couleur",
+    "article": "die",
+    "exception": "French loanword (color/character, used for fraternity colors) that is feminine rather than masculine.",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-202",
+    "noun": "Gouverneur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-203",
+    "noun": "Kommandeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-204",
+    "noun": "Stör",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-205",
+    "noun": "Deserteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-206",
+    "noun": "Frisör",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-207",
+    "noun": "Chefredakteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-208",
+    "noun": "Chefingenieur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-209",
+    "noun": "Charmeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-210",
+    "noun": "Likör",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-211",
+    "noun": "Eierlikör",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-212",
+    "noun": "Voyeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-213",
+    "noun": "Dompteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-214",
+    "noun": "Monteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-215",
+    "noun": "Coiffeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-216",
+    "noun": "Graveur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-217",
+    "noun": "Akteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-218",
+    "noun": "Installateur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-219",
+    "noun": "Bauingenieur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-220",
+    "noun": "Konstrukteur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-221",
+    "noun": "Elektroingenieur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-222",
+    "noun": "Importeur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-223",
+    "noun": "Jongleur",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-eur"
+  },
+  {
+    "id": "seed-224",
+    "noun": "Montag",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-225",
+    "noun": "Dienstag",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-226",
+    "noun": "Mittwoch",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-227",
+    "noun": "Januar",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-228",
+    "noun": "Februar",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-229",
+    "noun": "Winter",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-230",
+    "noun": "Herbst",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-231",
+    "noun": "Jahr",
+    "article": "das",
+    "exception": "The year itself is neuter, even though it belongs to the calendar-units family.",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-232",
+    "noun": "Woche",
+    "article": "die",
+    "exception": "The week is feminine, unlike the masculine day and month names.",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-233",
+    "noun": "Nacht",
+    "article": "die",
+    "exception": "Night is feminine, not masculine, despite belonging to the time-of-day family.",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-234",
+    "noun": "Frühjahr",
+    "article": "das",
+    "exception": "An alternative word for 'spring' that is neuter, contrasting with the standard masculine der Frühling.",
+    "ruleId": "der-calendar"
+  },
+  {
+    "id": "seed-235",
+    "noun": "Norden",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-236",
+    "noun": "Süden",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-237",
+    "noun": "Osten",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-238",
+    "noun": "Westen",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-239",
+    "noun": "Regen",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-240",
+    "noun": "Schnee",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-241",
+    "noun": "Hagel",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-242",
+    "noun": "Nebel",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-243",
+    "noun": "Sonne",
+    "article": "die",
+    "exception": "Sunshine is feminine, not masculine, despite being a common weather word.",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-244",
+    "noun": "Wolke",
+    "article": "die",
+    "exception": "Cloud is feminine, breaking the weather-is-masculine tendency.",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-245",
+    "noun": "Eis",
+    "article": "das",
+    "exception": "Ice is neuter, not masculine.",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-246",
+    "noun": "Gewitter",
+    "article": "das",
+    "exception": "Thunderstorm is neuter; the general word das Wetter (weather) itself is also neuter.",
+    "ruleId": "der-directions-weather"
+  },
+  {
+    "id": "seed-247",
+    "noun": "Wein",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-248",
+    "noun": "Sekt",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-249",
+    "noun": "Schnaps",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-250",
+    "noun": "Wodka",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-251",
+    "noun": "Gin",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-252",
+    "noun": "Whisky",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-253",
+    "noun": "Rum",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-254",
+    "noun": "Cognac",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-255",
+    "noun": "Bier",
+    "article": "das",
+    "exception": "Beer is the single most famous exception to the 'alcoholic drinks are masculine' rule; it is neuter.",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-256",
+    "noun": "Bowle",
+    "article": "die",
+    "exception": "A wine/fruit punch is feminine because it follows the common '-e ending is usually feminine' pattern instead.",
+    "ruleId": "der-alcohol"
+  },
+  {
+    "id": "seed-257",
+    "noun": "BMW",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-258",
+    "noun": "Audi",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-259",
+    "noun": "Mercedes",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-260",
+    "noun": "Porsche",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-261",
+    "noun": "Opel",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-262",
+    "noun": "Volkswagen",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-263",
+    "noun": "Ford",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-264",
+    "noun": "Toyota",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-265",
+    "noun": "Ente",
+    "article": "die",
+    "exception": "The nickname for the Citroën 2CV ('duck') is feminine because it follows the everyday word Ente, not the car-brand rule.",
+    "ruleId": "der-car-brands"
+  },
+  {
+    "id": "seed-266",
+    "noun": "Mann",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-267",
+    "noun": "Sohn",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-268",
+    "noun": "Arzt",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-269",
+    "noun": "König",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-270",
+    "noun": "Freund",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-271",
+    "noun": "Mitglied",
+    "article": "das",
+    "exception": "'Member' is neuter regardless of the person's sex — grammatical gender doesn't always track the referent's sex.",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-272",
+    "noun": "Kind",
+    "article": "das",
+    "exception": "'Child' is neuter regardless of sex.",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-273",
+    "noun": "Person",
+    "article": "die",
+    "exception": "'Person' is grammatically feminine no matter who is being referred to, including men.",
+    "ruleId": "der-male-persons"
+  },
+  {
+    "id": "seed-274",
+    "noun": "Zeitung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-275",
+    "noun": "Meinung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-276",
+    "noun": "Wohnung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-277",
+    "noun": "Kleidung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-278",
+    "noun": "Übung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-279",
+    "noun": "Rechnung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-280",
+    "noun": "Hoffnung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-281",
+    "noun": "Prüfung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-282",
+    "noun": "Ahnung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-283",
+    "noun": "Entschuldigung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-284",
+    "noun": "Verzeihung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-285",
+    "noun": "Entscheidung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-286",
+    "noun": "Bewegung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-287",
+    "noun": "Verbindung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-288",
+    "noun": "Richtung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-289",
+    "noun": "Beziehung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-290",
+    "noun": "Überraschung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-291",
+    "noun": "Regierung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-292",
+    "noun": "Achtung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-293",
+    "noun": "Lösung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-294",
+    "noun": "Verantwortung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-295",
+    "noun": "Erfahrung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-296",
+    "noun": "Erinnerung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-297",
+    "noun": "Erklärung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-298",
+    "noun": "Übersetzung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-299",
+    "noun": "Vorstellung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-300",
+    "noun": "Unterstützung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-301",
+    "noun": "Deckung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-302",
+    "noun": "Untersuchung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-303",
+    "noun": "Beerdigung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-304",
+    "noun": "Bedeutung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-305",
+    "noun": "Abteilung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung"
+  },
+  {
+    "id": "seed-306",
+    "noun": "Freiheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-307",
+    "noun": "Gesundheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-308",
+    "noun": "Schönheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-309",
+    "noun": "Möglichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-310",
+    "noun": "Einigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-311",
+    "noun": "Süßigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-312",
+    "noun": "Wahrheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-313",
+    "noun": "Klugheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-314",
+    "noun": "Sicherheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-315",
+    "noun": "Vergangenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-316",
+    "noun": "Gelegenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-317",
+    "noun": "Aufmerksamkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-318",
+    "noun": "Krankheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-319",
+    "noun": "Hoheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-320",
+    "noun": "Gerechtigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-321",
+    "noun": "Einheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-322",
+    "noun": "Menschheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-323",
+    "noun": "Dunkelheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-324",
+    "noun": "Öffentlichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-325",
+    "noun": "Angelegenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-326",
+    "noun": "Wirklichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-327",
+    "noun": "Ewigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-328",
+    "noun": "Kindheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-329",
+    "noun": "Fähigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-330",
+    "noun": "Geschwindigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-331",
+    "noun": "Anwesenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-332",
+    "noun": "Kleinigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-333",
+    "noun": "Persönlichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-334",
+    "noun": "Weisheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-335",
+    "noun": "Einsamkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-336",
+    "noun": "Dummheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-337",
+    "noun": "Dankbarkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit"
+  },
+  {
+    "id": "seed-338",
+    "noun": "Freundschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-339",
+    "noun": "Mannschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-340",
+    "noun": "Wissenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-341",
+    "noun": "Gesellschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-342",
+    "noun": "Landschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-343",
+    "noun": "Botschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-344",
+    "noun": "Herrschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-345",
+    "noun": "Leidenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-346",
+    "noun": "Nachbarschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-347",
+    "noun": "Gemeinschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-348",
+    "noun": "Wirtschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-349",
+    "noun": "Staatsanwaltschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-350",
+    "noun": "Schwangerschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-351",
+    "noun": "Gewerkschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-352",
+    "noun": "Gastfreundschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-353",
+    "noun": "Partnerschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-354",
+    "noun": "Bruderschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-355",
+    "noun": "Bereitschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-356",
+    "noun": "Gefangenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-357",
+    "noun": "Rechenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-358",
+    "noun": "Bekanntschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-359",
+    "noun": "Kundschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-360",
+    "noun": "Meisterschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-361",
+    "noun": "Eigenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-362",
+    "noun": "Landwirtschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-363",
+    "noun": "Verwandtschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-364",
+    "noun": "Mitgliedschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-365",
+    "noun": "Telefongesellschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-366",
+    "noun": "Erbschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-367",
+    "noun": "Fluggesellschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-368",
+    "noun": "Belegschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-369",
+    "noun": "Präsidentschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft"
+  },
+  {
+    "id": "seed-370",
+    "noun": "Nation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-371",
+    "noun": "Situation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-372",
+    "noun": "Explosion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-373",
+    "noun": "Diskussion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-374",
+    "noun": "Information",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-375",
+    "noun": "Organisation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-376",
+    "noun": "Version",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-377",
+    "noun": "Aktion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-378",
+    "noun": "Mission",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-379",
+    "noun": "Position",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-380",
+    "noun": "Operation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-381",
+    "noun": "Station",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-382",
+    "noun": "Reaktion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-383",
+    "noun": "Lektion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-384",
+    "noun": "Revolution",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-385",
+    "noun": "Munition",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-386",
+    "noun": "Vision",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-387",
+    "noun": "Tradition",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-388",
+    "noun": "Generation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-389",
+    "noun": "Kaution",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-390",
+    "noun": "Action",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-391",
+    "noun": "Krankenstation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-392",
+    "noun": "Kommunikation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-393",
+    "noun": "Zivilisation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-394",
+    "noun": "Kombination",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-395",
+    "noun": "Division",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-396",
+    "noun": "Option",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-397",
+    "noun": "Infektion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-398",
+    "noun": "Föderation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-399",
+    "noun": "Illusion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-400",
+    "noun": "Produktion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-401",
+    "noun": "Pension",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion"
+  },
+  {
+    "id": "seed-402",
+    "noun": "Universität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-403",
+    "noun": "Realität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-404",
+    "noun": "Qualität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-405",
+    "noun": "Identität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-406",
+    "noun": "Aktivität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-407",
+    "noun": "Elektrizität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-408",
+    "noun": "Kapazität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-409",
+    "noun": "Nationalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-410",
+    "noun": "Majestät",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-411",
+    "noun": "Loyalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-412",
+    "noun": "Autorität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-413",
+    "noun": "Priorität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-414",
+    "noun": "Spezialität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-415",
+    "noun": "Integrität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-416",
+    "noun": "Immunität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-417",
+    "noun": "Fakultät",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-418",
+    "noun": "Kriminalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-419",
+    "noun": "Sexualität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-420",
+    "noun": "Pubertät",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-421",
+    "noun": "Stabilität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-422",
+    "noun": "Formalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-423",
+    "noun": "Intimität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-424",
+    "noun": "Kreativität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-425",
+    "noun": "Normalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-426",
+    "noun": "Brutalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-427",
+    "noun": "Solidarität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-428",
+    "noun": "Intensität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-429",
+    "noun": "Radioaktivität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-430",
+    "noun": "Nervosität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-431",
+    "noun": "Homosexualität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-432",
+    "noun": "Anonymität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-433",
+    "noun": "Popularität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet"
+  },
+  {
+    "id": "seed-434",
+    "noun": "Familie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-435",
+    "noun": "Energie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-436",
+    "noun": "Biologie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-437",
+    "noun": "Fantasie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-438",
+    "noun": "Kopie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-439",
+    "noun": "Industrie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-440",
+    "noun": "Philosophie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-441",
+    "noun": "Theorie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-442",
+    "noun": "Genie",
+    "article": "das",
+    "exception": "'Genius' is neuter despite the -ie ending.",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-443",
+    "noun": "Hippie",
+    "article": "der",
+    "exception": "Hippie is masculine, not feminine, despite the -ie ending — an English loanword referring to a person, similar to der Yuppie.",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-444",
+    "noun": "Magie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-445",
+    "noun": "Marie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-446",
+    "noun": "Serie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-447",
+    "noun": "Linie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-448",
+    "noun": "Technologie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-449",
+    "noun": "Therapie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-450",
+    "noun": "Bestie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-451",
+    "noun": "Tragödie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-452",
+    "noun": "Strategie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-453",
+    "noun": "Melodie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-454",
+    "noun": "Zeremonie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-455",
+    "noun": "Autopsie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-456",
+    "noun": "Galaxie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-457",
+    "noun": "Studie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-458",
+    "noun": "Demokratie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-459",
+    "noun": "Regie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-460",
+    "noun": "Batterie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-461",
+    "noun": "Akademie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-462",
+    "noun": "Kompanie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-463",
+    "noun": "Galerie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-464",
+    "noun": "Ironie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-465",
+    "noun": "Garantie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie"
+  },
+  {
+    "id": "seed-466",
+    "noun": "Musik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-467",
+    "noun": "Politik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-468",
+    "noun": "Fabrik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-469",
+    "noun": "Physik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-470",
+    "noun": "Grammatik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-471",
+    "noun": "Technik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-472",
+    "noun": "Mathematik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-473",
+    "noun": "Logik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-474",
+    "noun": "Katholik",
+    "article": "der",
+    "exception": "Refers to a male Catholic person, so it is masculine rather than following the -ik-is-feminine pattern.",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-475",
+    "noun": "Panik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-476",
+    "noun": "Klinik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-477",
+    "noun": "Republik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-478",
+    "noun": "Klaviermusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-479",
+    "noun": "Kritik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-480",
+    "noun": "Rockmusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-481",
+    "noun": "Plastik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-482",
+    "noun": "Taktik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-483",
+    "noun": "Romantik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-484",
+    "noun": "Popmusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-485",
+    "noun": "Tanzmusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-486",
+    "noun": "Karibik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-487",
+    "noun": "Statistik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-488",
+    "noun": "Elektronik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-489",
+    "noun": "Ethik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-490",
+    "noun": "Keramik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-491",
+    "noun": "Optik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-492",
+    "noun": "Orchestermusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-493",
+    "noun": "Automatik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-494",
+    "noun": "Orgelmusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-495",
+    "noun": "Jazzmusik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-496",
+    "noun": "Dynamik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-497",
+    "noun": "Hektik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik"
+  },
+  {
+    "id": "seed-498",
+    "noun": "Lehrerin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-499",
+    "noun": "Ärztin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-500",
+    "noun": "Studentin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-501",
+    "noun": "Königin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-502",
+    "noun": "Freundin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-503",
+    "noun": "Chefin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-504",
+    "noun": "Löwin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-505",
+    "noun": "Kollegin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-506",
+    "noun": "Termin",
+    "article": "der",
+    "exception": "'Appointment' ends in -in but is an unrelated masculine word, not a feminine-agent form.",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-507",
+    "noun": "Bulletin",
+    "article": "das",
+    "exception": "French loanword ending in -in that is neuter, unrelated to the feminizing suffix.",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-508",
+    "noun": "Rubin",
+    "article": "der",
+    "exception": "'Ruby' ends in -in but is masculine — the ending here is coincidental, not the feminizing suffix.",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-509",
+    "noun": "Prinzessin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-510",
+    "noun": "Medizin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-511",
+    "noun": "Sekretärin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-512",
+    "noun": "Schauspielerin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-513",
+    "noun": "Patientin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-514",
+    "noun": "Heroin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-515",
+    "noun": "Assistentin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-516",
+    "noun": "Anwältin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-517",
+    "noun": "Gräfin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-518",
+    "noun": "Herrin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-519",
+    "noun": "Zeugin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-520",
+    "noun": "Partnerin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-521",
+    "noun": "Disziplin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-522",
+    "noun": "Lügnerin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-523",
+    "noun": "Göttin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-524",
+    "noun": "Kellnerin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-525",
+    "noun": "Nachbarin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-526",
+    "noun": "Polizistin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-527",
+    "noun": "Agentin",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-in"
+  },
+  {
+    "id": "seed-528",
+    "noun": "Kultur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-529",
+    "noun": "Natur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-530",
+    "noun": "Literatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-531",
+    "noun": "Struktur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-532",
+    "noun": "Figur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-533",
+    "noun": "Temperatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-534",
+    "noun": "Zensur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-535",
+    "noun": "Frisur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-536",
+    "noun": "Abitur",
+    "article": "das",
+    "exception": "The school-leaving exam is neuter despite the -ur ending.",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-537",
+    "noun": "Schwur",
+    "article": "der",
+    "exception": "Schwur (an oath/vow) is masculine, not feminine, despite the -ur ending.",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-538",
+    "noun": "Flur",
+    "article": "der",
+    "exception": "'Hallway/corridor' is masculine, a common everyday exception to the -ur pattern.",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-539",
+    "noun": "Spur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-540",
+    "noun": "Tour",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-541",
+    "noun": "Korrektur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-542",
+    "noun": "Kreatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-543",
+    "noun": "Agentur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-544",
+    "noun": "Reparatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-545",
+    "noun": "Spritztour",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-546",
+    "noun": "Schnur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-547",
+    "noun": "Prozedur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-548",
+    "noun": "Architektur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-549",
+    "noun": "Signatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-550",
+    "noun": "Skulptur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-551",
+    "noun": "Infrastruktur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-552",
+    "noun": "Tastatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-553",
+    "noun": "Kandidatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-554",
+    "noun": "Inventur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-555",
+    "noun": "Diktatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-556",
+    "noun": "Glasur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-557",
+    "noun": "Klausur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-558",
+    "noun": "Körpertemperatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-559",
+    "noun": "Statur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur"
+  },
+  {
+    "id": "seed-560",
+    "noun": "Konferenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-561",
+    "noun": "Existenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-562",
+    "noun": "Intelligenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-563",
+    "noun": "Distanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-564",
+    "noun": "Toleranz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-565",
+    "noun": "Substanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-566",
+    "noun": "Konsequenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-567",
+    "noun": "Eleganz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-568",
+    "noun": "Exzellenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-569",
+    "noun": "Konkurrenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-570",
+    "noun": "Allianz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-571",
+    "noun": "Pressekonferenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-572",
+    "noun": "Lizenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-573",
+    "noun": "Frequenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-574",
+    "noun": "Eminenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-575",
+    "noun": "Präsenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-576",
+    "noun": "Sequenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-577",
+    "noun": "Arroganz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-578",
+    "noun": "Audienz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-579",
+    "noun": "Ambulanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-580",
+    "noun": "Herzfrequenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-581",
+    "noun": "Effizienz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-582",
+    "noun": "Residenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-583",
+    "noun": "Bilanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-584",
+    "noun": "Kompetenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-585",
+    "noun": "Essenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-586",
+    "noun": "Ignoranz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-587",
+    "noun": "Demenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-588",
+    "noun": "Tendenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-589",
+    "noun": "Inkompetenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-590",
+    "noun": "Korrespondenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-591",
+    "noun": "Referenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz"
+  },
+  {
+    "id": "seed-592",
+    "noun": "Blume",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-593",
+    "noun": "Lampe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-594",
+    "noun": "Katze",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-595",
+    "noun": "Decke",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-596",
+    "noun": "Tasche",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-597",
+    "noun": "Schule",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-598",
+    "noun": "Straße",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-599",
+    "noun": "Käse",
+    "article": "der",
+    "exception": "'Cheese' ends in -e but is masculine.",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-600",
+    "noun": "Auge",
+    "article": "das",
+    "exception": "'Eye' ends in -e but is neuter.",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-601",
+    "noun": "Ende",
+    "article": "das",
+    "exception": "'End' ends in -e but is neuter.",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-602",
+    "noun": "Junge",
+    "article": "der",
+    "exception": "'Boy' ends in -e but is masculine, matching natural gender rather than the suffix pattern.",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-603",
+    "noun": "Interesse",
+    "article": "das",
+    "exception": "'Interest' ends in -e but is neuter.",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-604",
+    "noun": "Bitte",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-605",
+    "noun": "Liebe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-606",
+    "noun": "Denke",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-607",
+    "noun": "Warte",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-608",
+    "noun": "Scheiße",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-609",
+    "noun": "Hilfe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-610",
+    "noun": "Frage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-611",
+    "noun": "Sage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-612",
+    "noun": "Idee",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-613",
+    "noun": "Ruhe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-614",
+    "noun": "Geschichte",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-615",
+    "noun": "Seite",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-616",
+    "noun": "Chance",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-617",
+    "noun": "Sorge",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-618",
+    "noun": "Waffe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-619",
+    "noun": "Rede",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-620",
+    "noun": "Stunde",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-621",
+    "noun": "Menge",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-622",
+    "noun": "Hölle",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-623",
+    "noun": "Stelle",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-e-ending"
+  },
+  {
+    "id": "seed-624",
+    "noun": "Eiche",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-625",
+    "noun": "Tanne",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-626",
+    "noun": "Birke",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-627",
+    "noun": "Rose",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-628",
+    "noun": "Tulpe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-629",
+    "noun": "Nelke",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-630",
+    "noun": "Kirsche",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-631",
+    "noun": "Pflaume",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-632",
+    "noun": "Apfel",
+    "article": "der",
+    "exception": "Apple is masculine — it ends in -el, which pulls it into the masculine -el pattern instead.",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-633",
+    "noun": "Ahorn",
+    "article": "der",
+    "exception": "Maple is one of the best-known masculine tree exceptions.",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-634",
+    "noun": "Löwenzahn",
+    "article": "der",
+    "exception": "Dandelion is masculine, not feminine.",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-635",
+    "noun": "Mohn",
+    "article": "der",
+    "exception": "Poppy is masculine.",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-636",
+    "noun": "Flieder",
+    "article": "der",
+    "exception": "Lilac is masculine, ending in -er like many masculine nouns.",
+    "ruleId": "die-trees-flowers-fruits"
+  },
+  {
+    "id": "seed-637",
+    "noun": "Donau",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-638",
+    "noun": "Elbe",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-639",
+    "noun": "Mosel",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-640",
+    "noun": "Weser",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-641",
+    "noun": "Oder",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-642",
+    "noun": "Isar",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-643",
+    "noun": "Spree",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-644",
+    "noun": "Saale",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-645",
+    "noun": "Rhein",
+    "article": "der",
+    "exception": "The Rhine, one of the most important German rivers, is masculine, not feminine.",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-646",
+    "noun": "Main",
+    "article": "der",
+    "exception": "The Main river is masculine.",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-647",
+    "noun": "Neckar",
+    "article": "der",
+    "exception": "The Neckar river is masculine.",
+    "ruleId": "die-rivers"
+  },
+  {
+    "id": "seed-648",
+    "noun": "Frau",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-649",
+    "noun": "Tochter",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-650",
+    "noun": "Schwester",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-651",
+    "noun": "Mädchen",
+    "article": "das",
+    "exception": "'Girl' is neuter, not feminine, because the diminutive suffix -chen always overrides natural gender and forces neuter.",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-652",
+    "noun": "Fräulein",
+    "article": "das",
+    "exception": "The old-fashioned word for 'young lady/miss' is neuter for the same reason: the -lein diminutive suffix forces neuter.",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-653",
+    "noun": "Weib",
+    "article": "das",
+    "exception": "An old/blunt word for 'woman' that is neuter rather than feminine, an irregular historical holdover.",
+    "ruleId": "die-female-persons"
+  },
+  {
+    "id": "seed-654",
+    "noun": "Hündchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-655",
+    "noun": "Kätzchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-656",
+    "noun": "Vöglein",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-657",
+    "noun": "Bäumchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-658",
+    "noun": "Häuschen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-659",
+    "noun": "Sternchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-660",
+    "noun": "Brötchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-661",
+    "noun": "Sprechen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-662",
+    "noun": "Bisschen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-663",
+    "noun": "Lachen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-664",
+    "noun": "Erreichen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-665",
+    "noun": "Zeichen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-666",
+    "noun": "Verbrechen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-667",
+    "noun": "Schätzchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-668",
+    "noun": "Versprechen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-669",
+    "noun": "Kochen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-670",
+    "noun": "Rauchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-671",
+    "noun": "Waschen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-672",
+    "noun": "Riechen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-673",
+    "noun": "Auftauchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-674",
+    "noun": "Spielchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-675",
+    "noun": "Anzeichen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-676",
+    "noun": "Märchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-677",
+    "noun": "Hühnchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-678",
+    "noun": "Fischen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-679",
+    "noun": "Würstchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-680",
+    "noun": "Kaninchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-681",
+    "noun": "Kennzeichen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-682",
+    "noun": "Päckchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-683",
+    "noun": "Blümchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-684",
+    "noun": "Nickerchen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-685",
+    "noun": "Stechen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-chen-lein"
+  },
+  {
+    "id": "seed-686",
+    "noun": "Museum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-687",
+    "noun": "Zentrum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-688",
+    "noun": "Datum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-689",
+    "noun": "Album",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-690",
+    "noun": "Praktikum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-691",
+    "noun": "Studium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-692",
+    "noun": "Individuum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-693",
+    "noun": "Gremium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-694",
+    "noun": "Konsum",
+    "article": "der",
+    "exception": "'Consumption' is masculine despite the -um ending.",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-695",
+    "noun": "Publikum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-696",
+    "noun": "Universum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-697",
+    "noun": "Eigentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-698",
+    "noun": "Einkaufszentrum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-699",
+    "noun": "Stipendium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-700",
+    "noun": "Ministerium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-701",
+    "noun": "Morphium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-702",
+    "noun": "Medium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-703",
+    "noun": "Imperium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-704",
+    "noun": "Serum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-705",
+    "noun": "Territorium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-706",
+    "noun": "Stadium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-707",
+    "noun": "Außenministerium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-708",
+    "noun": "Parfum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-709",
+    "noun": "Wachstum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-710",
+    "noun": "Justizministerium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-711",
+    "noun": "Verteidigungsministerium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-712",
+    "noun": "Aquarium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-713",
+    "noun": "Minimum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-714",
+    "noun": "Visum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-715",
+    "noun": "Opium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-716",
+    "noun": "Präsidium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-717",
+    "noun": "Maximum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um"
+  },
+  {
+    "id": "seed-718",
+    "noun": "Experiment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-719",
+    "noun": "Instrument",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-720",
+    "noun": "Element",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-721",
+    "noun": "Argument",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-722",
+    "noun": "Dokument",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-723",
+    "noun": "Testament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-724",
+    "noun": "Fundament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-725",
+    "noun": "Kompliment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-726",
+    "noun": "Moment",
+    "article": "der",
+    "exception": "Meaning 'a point in time,' this common word is masculine (das Moment exists separately with the more technical meaning 'factor/momentum').",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-727",
+    "noun": "Zement",
+    "article": "der",
+    "exception": "'Cement' is masculine, not neuter.",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-728",
+    "noun": "Apartment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-729",
+    "noun": "Medikament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-730",
+    "noun": "Department",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-731",
+    "noun": "Management",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-732",
+    "noun": "Regiment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-733",
+    "noun": "Parlament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-734",
+    "noun": "Temperament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-735",
+    "noun": "Engagement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-736",
+    "noun": "Appartement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-737",
+    "noun": "Statement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-738",
+    "noun": "Arrangement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-739",
+    "noun": "Entertainment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-740",
+    "noun": "Equipment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-741",
+    "noun": "Monument",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-742",
+    "noun": "Abonnement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-743",
+    "noun": "Ornament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-744",
+    "noun": "Fragment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-745",
+    "noun": "Segment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-746",
+    "noun": "Überraschungsmoment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-747",
+    "noun": "Establishment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-748",
+    "noun": "Sortiment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-749",
+    "noun": "Musikinstrument",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment"
+  },
+  {
+    "id": "seed-750",
+    "noun": "Christentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-751",
+    "noun": "Königtum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-752",
+    "noun": "Judentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-753",
+    "noun": "Altertum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-754",
+    "noun": "Brauchtum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-755",
+    "noun": "Fürstentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-756",
+    "noun": "Reichtum",
+    "article": "der",
+    "exception": "'Wealth' is masculine, one of the two best-known exceptions to the -tum-is-neuter pattern.",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-757",
+    "noun": "Irrtum",
+    "article": "der",
+    "exception": "'Error/mistake' is masculine, the other well-known exception.",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-758",
+    "noun": "Ultimatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-759",
+    "noun": "Geburtsdatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-760",
+    "noun": "Heiligtum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-761",
+    "noun": "Privateigentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-762",
+    "noun": "Verfallsdatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-763",
+    "noun": "Heldentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-764",
+    "noun": "Bauerntum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-765",
+    "noun": "Präteritum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-766",
+    "noun": "Staatseigentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-767",
+    "noun": "Ausstellungsdatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-768",
+    "noun": "Außenseitertum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-769",
+    "noun": "Quantum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-770",
+    "noun": "Haltbarkeitsdatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-771",
+    "noun": "Depositum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-772",
+    "noun": "Schrifttum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-773",
+    "noun": "Verbrauchsdatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-774",
+    "noun": "Kaisertum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-775",
+    "noun": "Postskriptum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-776",
+    "noun": "Bürgertum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-777",
+    "noun": "Verfalldatum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-778",
+    "noun": "Wirtschaftswachstum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-779",
+    "noun": "Diktum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-780",
+    "noun": "Heidentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-781",
+    "noun": "Faktum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum"
+  },
+  {
+    "id": "seed-782",
+    "noun": "Gebäude",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-783",
+    "noun": "Gebirge",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-784",
+    "noun": "Gemüse",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-785",
+    "noun": "Geschirr",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-786",
+    "noun": "Gepäck",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-787",
+    "noun": "Getränk",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-788",
+    "noun": "Gefühl",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-789",
+    "noun": "Gerede",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-790",
+    "noun": "Gedanke",
+    "article": "der",
+    "exception": "'Thought' is masculine, not neuter, despite the Ge- prefix.",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-791",
+    "noun": "Geschmack",
+    "article": "der",
+    "exception": "'Taste' is masculine, an exception to the Ge-is-neuter pattern.",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-792",
+    "noun": "Gefahr",
+    "article": "die",
+    "exception": "'Danger' is feminine despite starting with Ge-.",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-793",
+    "noun": "Geld",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-794",
+    "noun": "Gestern",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-795",
+    "noun": "Gesicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-796",
+    "noun": "Gefängnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-797",
+    "noun": "Geschehen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-798",
+    "noun": "Geschäft",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-799",
+    "noun": "Geschenk",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-800",
+    "noun": "Gericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-801",
+    "noun": "Geheimnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-802",
+    "noun": "Gesetz",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-803",
+    "noun": "Gespräch",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-804",
+    "noun": "Gehirn",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-805",
+    "noun": "Gewissen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-806",
+    "noun": "Genießen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-807",
+    "noun": "Gegenteil",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-808",
+    "noun": "Gerät",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-809",
+    "noun": "Gebiet",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-810",
+    "noun": "Gewehr",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-811",
+    "noun": "Geräusch",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-812",
+    "noun": "Gedächtnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix"
+  },
+  {
+    "id": "seed-813",
+    "noun": "Essen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-814",
+    "noun": "Leben",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-815",
+    "noun": "Lesen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-816",
+    "noun": "Schreiben",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-817",
+    "noun": "Schwimmen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-818",
+    "noun": "Singen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-819",
+    "noun": "Lernen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-infinitives"
+  },
+  {
+    "id": "seed-820",
+    "noun": "Licht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-821",
+    "noun": "Gewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-822",
+    "noun": "Gedicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-823",
+    "noun": "Dickicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-824",
+    "noun": "Kindergesicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-825",
+    "noun": "Sicht",
+    "article": "die",
+    "exception": "'View/sight' ends in -icht but is feminine.",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-826",
+    "noun": "Pflicht",
+    "article": "die",
+    "exception": "'Duty' ends in -icht but is feminine.",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-827",
+    "noun": "Angesicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-828",
+    "noun": "Gleichgewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-829",
+    "noun": "Tageslicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-830",
+    "noun": "Sonnenlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-831",
+    "noun": "Blitzlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-832",
+    "noun": "Kriegsgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-833",
+    "noun": "Rampenlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-834",
+    "noun": "Mondlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-835",
+    "noun": "Augenlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-836",
+    "noun": "Schwergewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-837",
+    "noun": "Kerzenlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-838",
+    "noun": "Militärgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-839",
+    "noun": "Bundesgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-840",
+    "noun": "Rücklicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-841",
+    "noun": "Ungleichgewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-842",
+    "noun": "Nachtlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-843",
+    "noun": "Hauptgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-844",
+    "noun": "Übergewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-845",
+    "noun": "Blaulicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-846",
+    "noun": "Leibgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-847",
+    "noun": "Untergewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-848",
+    "noun": "Scheinwerferlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-849",
+    "noun": "Liebesgedicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-850",
+    "noun": "Lieblingsgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-851",
+    "noun": "Bezirksgericht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht"
+  },
+  {
+    "id": "seed-852",
+    "noun": "Auto",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-853",
+    "noun": "Büro",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-854",
+    "noun": "Kino",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-855",
+    "noun": "Radio",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-856",
+    "noun": "Foto",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-857",
+    "noun": "Konto",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-858",
+    "noun": "Piano",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-859",
+    "noun": "Solo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-860",
+    "noun": "Euro",
+    "article": "der",
+    "exception": "The currency name is masculine despite ending in -o.",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-861",
+    "noun": "Espresso",
+    "article": "der",
+    "exception": "The Italian coffee loanword is masculine.",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-862",
+    "noun": "Avocado",
+    "article": "die",
+    "exception": "This Spanish food loanword ending in -o is feminine, not neuter.",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-863",
+    "noun": "Hallo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-864",
+    "noun": "Risiko",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-865",
+    "noun": "Bravo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-866",
+    "noun": "Video",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-867",
+    "noun": "Kommando",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-868",
+    "noun": "Klo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-869",
+    "noun": "Kilo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-870",
+    "noun": "Studio",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-871",
+    "noun": "Tempo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-872",
+    "noun": "Bingo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-873",
+    "noun": "Echo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-874",
+    "noun": "Casino",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-875",
+    "noun": "Ego",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-876",
+    "noun": "Motto",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-877",
+    "noun": "Kasino",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-878",
+    "noun": "Mikro",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-879",
+    "noun": "Logo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-880",
+    "noun": "Memo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-881",
+    "noun": "Szenario",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-882",
+    "noun": "Fitnessstudio",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-883",
+    "noun": "Shampoo",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-o"
+  },
+  {
+    "id": "seed-884",
+    "noun": "Thema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-885",
+    "noun": "Drama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-886",
+    "noun": "Schema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-887",
+    "noun": "Klima",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-888",
+    "noun": "Komma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-889",
+    "noun": "Trauma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-890",
+    "noun": "Dilemma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-891",
+    "noun": "Tagesthema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-892",
+    "noun": "Firma",
+    "article": "die",
+    "exception": "'Company/firm' ends in -ma but is feminine, one of the best-known exceptions.",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-893",
+    "noun": "Pyjama",
+    "article": "der",
+    "exception": "This loanword ends in -ma but is masculine, not neuter.",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-894",
+    "noun": "Sperma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-895",
+    "noun": "Karma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-896",
+    "noun": "Asthma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-897",
+    "noun": "Lama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-898",
+    "noun": "Plasma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-899",
+    "noun": "Gamma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-900",
+    "noun": "Dogma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-901",
+    "noun": "Aroma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-902",
+    "noun": "Rheuma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-903",
+    "noun": "Charisma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-904",
+    "noun": "Gesprächsthema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-905",
+    "noun": "Erdbeeraroma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-906",
+    "noun": "Halma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-907",
+    "noun": "Arbeitsklima",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-908",
+    "noun": "Panorama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-909",
+    "noun": "Melodrama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-910",
+    "noun": "Magma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-911",
+    "noun": "Familiendrama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-912",
+    "noun": "Lieblingsthema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-913",
+    "noun": "Diorama",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-914",
+    "noun": "Alltagsthema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-915",
+    "noun": "Hauptthema",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma"
+  },
+  {
+    "id": "seed-916",
+    "noun": "Ergebnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-917",
+    "noun": "Zeugnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-918",
+    "noun": "Verständnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-919",
+    "noun": "Schicksal",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-920",
+    "noun": "Kenntnis",
+    "article": "die",
+    "exception": "'Knowledge' ends in -nis but is feminine, part of the large feminine minority in this group.",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-921",
+    "noun": "Erlaubnis",
+    "article": "die",
+    "exception": "'Permission' ends in -nis but is feminine.",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-922",
+    "noun": "Erkenntnis",
+    "article": "die",
+    "exception": "'Realization/insight' ends in -nis but is feminine.",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-923",
+    "noun": "Wildnis",
+    "article": "die",
+    "exception": "'Wilderness' ends in -nis but is feminine.",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-924",
+    "noun": "Missverständnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-925",
+    "noun": "Geständnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-926",
+    "noun": "Verhältnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-927",
+    "noun": "Ereignis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-928",
+    "noun": "Bedürfnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-929",
+    "noun": "Begräbnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-930",
+    "noun": "Tennis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-931",
+    "noun": "Erlebnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-932",
+    "noun": "Hindernis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-933",
+    "noun": "Vermächtnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-934",
+    "noun": "Bündnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-935",
+    "noun": "Einverständnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-936",
+    "noun": "Grundbedürfnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-937",
+    "noun": "Wahlergebnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-938",
+    "noun": "Ärgernis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-939",
+    "noun": "Verzeichnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-940",
+    "noun": "Hochsicherheitsgefängnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-941",
+    "noun": "Bekenntnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-942",
+    "noun": "Tischtennis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-943",
+    "noun": "Endergebnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-944",
+    "noun": "Erzeugnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-945",
+    "noun": "Frauengefängnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-946",
+    "noun": "Wagnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-947",
+    "noun": "Testergebnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal"
+  },
+  {
+    "id": "seed-948",
+    "noun": "Gold",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-949",
+    "noun": "Silber",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-950",
+    "noun": "Eisen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-951",
+    "noun": "Kupfer",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-952",
+    "noun": "Aluminium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-953",
+    "noun": "Blei",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-954",
+    "noun": "Zink",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-955",
+    "noun": "Stahl",
+    "article": "der",
+    "exception": "Steel (technically an alloy, not a pure element) is masculine.",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-956",
+    "noun": "Bronze",
+    "article": "die",
+    "exception": "Bronze (an alloy) is feminine, following the -e ending pattern instead.",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-957",
+    "noun": "Schwefel",
+    "article": "der",
+    "exception": "Sulfur is masculine, ending in -el like many masculine nouns.",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-958",
+    "noun": "Phosphor",
+    "article": "der",
+    "exception": "Phosphorus is masculine, following the -or ending pattern instead of the metals/elements pattern.",
+    "ruleId": "das-metals"
+  },
+  {
+    "id": "seed-959",
+    "noun": "Rot",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-960",
+    "noun": "Blau",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-961",
+    "noun": "Grün",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-962",
+    "noun": "Gelb",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-963",
+    "noun": "Weiß",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-964",
+    "noun": "Schwarz",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-965",
+    "noun": "Orange",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-966",
+    "noun": "Lila",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-colors"
+  },
+  {
+    "id": "seed-967",
+    "noun": "Deutschland",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-968",
+    "noun": "Frankreich",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-969",
+    "noun": "Italien",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-970",
+    "noun": "Spanien",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-971",
+    "noun": "Afrika",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-972",
+    "noun": "Berlin",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-973",
+    "noun": "Kanada",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-974",
+    "noun": "Japan",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-975",
+    "noun": "Schweiz",
+    "article": "die",
+    "exception": "Switzerland is feminine and always used with the article, unlike most countries.",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-976",
+    "noun": "Türkei",
+    "article": "die",
+    "exception": "Turkey is feminine and always takes an article, like other countries ending in -ei.",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-977",
+    "noun": "Iran",
+    "article": "der",
+    "exception": "Iran is masculine and always takes an article.",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-978",
+    "noun": "Irak",
+    "article": "der",
+    "exception": "Iraq is masculine and always takes an article.",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-979",
+    "noun": "USA",
+    "article": "die",
+    "exception": "Used only in the plural (die Vereinigten Staaten), unlike the singular neuter default for most countries.",
+    "ruleId": "das-countries-cities"
+  },
+  {
+    "id": "seed-980",
+    "noun": "Baby",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-981",
+    "noun": "Fohlen",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-982",
+    "noun": "Ferkel",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-983",
+    "noun": "Lamm",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-984",
+    "noun": "Kalb",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-985",
+    "noun": "Küken",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-986",
+    "noun": "Junges",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-987",
+    "noun": "Welpe",
+    "article": "der",
+    "exception": "'Puppy' is masculine, not neuter, despite naming a baby animal.",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-988",
+    "noun": "Larve",
+    "article": "die",
+    "exception": "'Larva/grub' (an immature insect) is feminine, not neuter.",
+    "ruleId": "das-young-beings"
+  },
+  {
+    "id": "seed-989",
+    "noun": "A",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-990",
+    "noun": "B",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-991",
+    "noun": "C",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-992",
+    "noun": "M",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-993",
+    "noun": "Ypsilon",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-994",
+    "noun": "Zett",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-letters"
+  },
+  {
+    "id": "seed-995",
+    "noun": "Buchstabe",
+    "article": "der",
+    "exception": "The generic word for 'letter' (as in 'a letter of the alphabet') is itself masculine, not neuter.",
+    "ruleId": "das-letters"
+  }
+]

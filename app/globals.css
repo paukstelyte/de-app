@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --background: #f4f3ef;
+  --foreground: #111111;
+  --paper: #fffefb;
+  --ink-soft: #6d6d68;
+  --line: rgba(17, 17, 17, 0.15);
+  --accent: #f5d000;
+  --accent-deep: #d9b900;
+  --grid-line: rgba(17, 17, 17, 0.035);
+}
+
+[data-theme="dark"] {
+  --background: #181714;
+  --foreground: #f2f1ec;
+  --paper: #221f1b;
+  --ink-soft: #a3a29c;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #f5d000;
+  --accent-deep: #d9b900;
+  --grid-line: rgba(255, 255, 255, 0.045);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  background-image: linear-gradient(90deg, var(--grid-line) 1px, transparent 1px), linear-gradient(var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--foreground);
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  body {
+    background: white;
+    background-image: none;
+  }
+}
