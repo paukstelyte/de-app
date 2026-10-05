@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { recordAttempt } from "@/app/articles/actions";
 import { useFlashcards } from "@/lib/flashcards/context";
-import { ARTICLES, getFlashcardStatus, type Article } from "@/lib/flashcards/types";
+import { ARTICLES, getFlashcardStatus, type Article, type Level } from "@/lib/flashcards/types";
+import { isAtOrBelow, useMaxLevel } from "@/lib/flashcards/level";
 import { ROUND_SIZE } from "@/lib/flashcards/practice";
 import { usePracticeSession } from "@/lib/flashcards/usePracticeSession";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
@@ -48,6 +49,13 @@ export function ArticlesGame({
 }) {
   const router = useRouter();
   const { cards, recordAnswer } = useFlashcards();
+  const [maxLevel, setMaxLevel] = useMaxLevel();
+  // Rounds draw only from the chosen levels ("Practise my mistakes" ignores
+  // them: a missed word is worth practising whatever its level).
+  const levelCards = useMemo(
+    () => cards.filter((c) => isAtOrBelow(c.level, maxLevel)),
+    [cards, maxLevel],
+  );
   const {
     queue,
     effectiveIndex,
@@ -64,7 +72,7 @@ export function ArticlesGame({
     restart,
     startRecap,
   } = usePracticeSession(
-    cards,
+    levelCards,
     (id, article, wasCorrect) => {
       // Logged-in answers go to the account only, never to this browser's guest
       // streaks, so the next person on a shared computer starts clean.
@@ -99,7 +107,7 @@ export function ArticlesGame({
         <div className="border-t border-[var(--line)] pt-4">
           <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">How to use</h2>
           <ul className="mt-3 list-disc space-y-2 pl-4 text-xs leading-5 text-zinc-600 dark:text-zinc-400">
-            <li>Pick der, die or das. The card flips to show the rule behind the answer.</li>
+            <li>Choose a level, then pick der, die or das. The card flips to show the rule behind the answer.</li>
             <li>Tap the card or press Enter to go to the next word.</li>
             <li>
               After {ROUND_SIZE} words, replay the ones you missed or start the
@@ -132,7 +140,16 @@ export function ArticlesGame({
         </div>
       </aside>
 
-      <div>
+      <div className="flex flex-col gap-4">
+        {!mistakesOnly && (
+          <LevelPicker
+            value={maxLevel}
+            onChange={(level) => {
+              setMaxLevel(level);
+              nextRound(); // start a fresh round from the new word pool
+            }}
+          />
+        )}
         {cards.length === 0 ? null : mistakesOnly && queue?.length === 0 ? (
           <div className="flex flex-col items-center justify-center gap-4 border border-[var(--line)] bg-[var(--paper)] p-8 text-center shadow-[8px_8px_0_var(--accent)]">
             <h2 className="text-xl font-semibold">No trouble words right now</h2>
@@ -231,6 +248,39 @@ export function ArticlesGame({
   );
 }
 
+const LEVEL_OPTIONS: { value: Level; label: string }[] = [
+  { value: "A1", label: "A1" },
+  { value: "A2", label: "A1–A2" },
+  { value: "B1", label: "A1–B1" },
+  { value: "B2", label: "All (A1–B2)" },
+];
+
+function LevelPicker({ value, onChange }: { value: Level; onChange: (level: Level) => void }) {
+  return (
+    <fieldset className="flex flex-wrap items-center gap-2">
+      <legend className="sr-only">Word level</legend>
+      <span aria-hidden className="mr-1 text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
+        Level
+      </span>
+      {LEVEL_OPTIONS.map((option) => (
+        <button
+          key={option.value}
+          type="button"
+          aria-pressed={value === option.value}
+          onClick={() => value !== option.value && onChange(option.value)}
+          className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+            value === option.value
+              ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
+              : "border-zinc-300 text-zinc-600 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-800"
+          }`}
+        >
+          {option.label}
+        </button>
+      ))}
+    </fieldset>
+  );
+}
+
 function Stat({ label, value }: { label: string; value: number | string }) {
   return (
     <div className="bg-[var(--paper)] p-4 text-center">
@@ -294,7 +344,7 @@ function Game({
           chosen ? "cursor-pointer" : ""
         }`}
       >
-        <span className="absolute right-5 top-5 text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-600">noun / article</span>
+        <span className="absolute right-5 top-5 text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-600">{card.level} · noun</span>
         <span className="absolute bottom-5 left-5 h-5 w-5 border-b border-l border-[var(--line)]" />
         <p className="text-4xl font-bold tracking-[-0.06em] sm:text-5xl">{card.noun}</p>
 

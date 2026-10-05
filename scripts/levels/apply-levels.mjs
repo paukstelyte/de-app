@@ -9,7 +9,7 @@ const LEVELS = new Set(["A1", "A2", "B1", "B2", "REMOVE"]);
 
 const levelById = new Map();
 for (const file of ["levels-matched.csv", "levels-review.csv"]) {
-  const [, ...rows] = readFileSync(here(file), "utf8").trim().split("\n");
+  const [, ...rows] = readFileSync(here(file), "utf8").trim().split(/\r?\n/); // Excel/Numbers may save \r\n
   for (const row of rows) {
     const [id, , noun, level] = row.split(",");
     if (!LEVELS.has(level)) throw new Error(`${file}: bad level "${level}" for ${noun}`);

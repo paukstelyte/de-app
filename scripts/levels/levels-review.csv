@@ -1,10 +1,10 @@
 id,article,noun,level,note
 seed-6,der,Schwimmer,A2,
-seed-14,der,Leider,B2,REMOVE? not a noun (leider = unfortunately)
+seed-14,der,Leider,REMOVE,REMOVE? not a noun (leider = unfortunately)
 seed-16,der,Mörder,B2,
-seed-22,der,Näher,B2,REMOVE? rare word
+seed-22,der,Näher,REMOVE,REMOVE? rare word
 seed-30,der,Amerikaner,A2,
-seed-31,der,Wichser,B2,REMOVE? vulgar insult
+seed-31,der,Wichser,REMOVE,REMOVE? vulgar insult
 seed-32,der,Schmetterling,A2,
 seed-35,der,Findling,B2,
 seed-36,der,Zwilling,A2,
@@ -12,7 +12,7 @@ seed-37,der,Feigling,B1,
 seed-38,der,Häuptling,B2,
 seed-39,der,Liebling,A2,
 seed-40,die,Reling,B2,
-seed-41,der,Darling,B2,REMOVE? English word
+seed-41,der,Darling,REMOVE,REMOVE? English word
 seed-42,der,Sterling,B2,
 seed-43,der,Häftling,B2,
 seed-44,der,Eindringling,B2,
@@ -28,7 +28,7 @@ seed-53,der,Riesling,B2,
 seed-54,der,Vierling,B2,
 seed-55,der,Fiesling,B2,
 seed-56,der,Winzling,B2,
-seed-57,der,Mischling,B2,REMOVE? offensive term
+seed-57,der,Mischling,REMOVE,REMOVE? offensive term
 seed-58,der,Drilling,B2,
 seed-59,der,Setzling,B2,
 seed-60,der,Publikumsliebling,B2,
@@ -62,7 +62,7 @@ seed-88,der,Imperialismus,B2,
 seed-89,der,Perfektionismus,B2,
 seed-90,der,Magnetismus,B2,
 seed-91,der,Impressionismus,B2,
-seed-92,der,Sadismus,B2,REMOVE? off-tone
+seed-92,der,Sadismus,REMOVE,REMOVE? off-tone
 seed-93,der,Katholizismus,B2,
 seed-94,der,Sexismus,B2,
 seed-95,der,Altruismus,B2,
@@ -83,7 +83,7 @@ seed-117,der,Generator,B1,
 seed-119,der,Rektor,B1,
 seed-120,der,Terror,B1,
 seed-121,der,Senior,B1,
-seed-122,der,Signor,B2,REMOVE? Italian word
+seed-122,der,Signor,REMOVE,REMOVE? Italian word
 seed-123,der,Horror,B1,
 seed-124,der,Mentor,B1,
 seed-126,der,Reaktor,B1,
@@ -96,11 +96,11 @@ seed-133,der,Rhythmus,B1,
 seed-134,der,Campus,B1,
 seed-137,das,Plus,A2,
 seed-138,das,Minus,A2,
-seed-139,der,Voraus,B2,REMOVE? not a noun (im Voraus = in advance)
+seed-139,der,Voraus,REMOVE,REMOVE? not a noun (im Voraus = in advance)
 seed-140,der,Applaus,B1,
 seed-141,der,Status,B2,
 seed-142,der,Luxus,B1,
-seed-143,der,Orgasmus,B2,REMOVE? off-tone for a public learning app
+seed-143,der,Orgasmus,REMOVE,REMOVE? off-tone for a public learning app
 seed-144,der,Minibus,A2,
 seed-145,der,Sarkasmus,B2,
 seed-146,der,Krokus,B2,
@@ -127,7 +127,7 @@ seed-171,der,Verstand,B1,
 seed-172,der,Sergeant,B2,
 seed-175,der,Kommandant,B1,
 seed-176,der,Widerstand,B1,
-seed-177,der,Grant,B2,REMOVE? Austrian dialect
+seed-177,der,Grant,REMOVE,REMOVE? Austrian dialect
 seed-178,der,Leutnant,B2,
 seed-179,der,Abstand,B1,
 seed-180,der,Brand,B1,
@@ -136,7 +136,7 @@ seed-182,der,Brillant,B2,
 seed-183,der,Aufstand,B1,
 seed-184,der,Vorstand,B1,
 seed-185,der,Ruhestand,B1,
-seed-186,der,Elegant,B2,REMOVE? not a noun (elegant = adjective)
+seed-186,der,Elegant,REMOVE,REMOVE? not a noun (elegant = adjective)
 seed-188,der,Anstand,B1,
 seed-190,der,Mandant,B2,
 seed-191,der,Informant,B2,
@@ -270,7 +270,7 @@ seed-433,die,Popularität,B2,
 seed-442,das,Genie,B1,
 seed-443,der,Hippie,B2,
 seed-444,die,Magie,B1,
-seed-445,die,Marie,B2,REMOVE? slang
+seed-445,die,Marie,REMOVE,REMOVE? slang
 seed-450,die,Bestie,B2,
 seed-451,die,Tragödie,B1,
 seed-452,die,Strategie,B1,
@@ -307,7 +307,7 @@ seed-504,die,Löwin,B1,
 seed-507,das,Bulletin,B2,
 seed-508,der,Rubin,B2,
 seed-509,die,Prinzessin,A2,
-seed-514,die,Heroin,B2,REMOVE? confusing: das Heroin (drug) is far more common than die Heroin (heroine)
+seed-514,die,Heroin,REMOVE,REMOVE? confusing: das Heroin (drug) is far more common than die Heroin (heroine)
 seed-515,die,Assistentin,B1,
 seed-517,die,Gräfin,B2,
 seed-518,die,Herrin,B2,
@@ -362,8 +362,8 @@ seed-588,die,Tendenz,B1,
 seed-589,die,Inkompetenz,B2,
 seed-590,die,Korrespondenz,B2,
 seed-606,die,Denke,B2,
-seed-607,die,Warte,B2,REMOVE? matched 'Warte!' (verb); die Warte is a rare noun
-seed-608,die,Scheiße,B2,REMOVE? vulgar
+seed-607,die,Warte,REMOVE,REMOVE? matched 'Warte!' (verb); die Warte is a rare noun
+seed-608,die,Scheiße,REMOVE,REMOVE? vulgar
 seed-611,die,Sage,B1,
 seed-618,die,Waffe,B1,
 seed-622,die,Hölle,B1,
@@ -386,14 +386,14 @@ seed-643,die,Spree,B1,
 seed-644,die,Saale,B1,
 seed-647,der,Neckar,B1,
 seed-652,das,Fräulein,B1,
-seed-653,das,Weib,B2,REMOVE? derogatory
+seed-653,das,Weib,REMOVE,REMOVE? derogatory
 seed-654,das,Hündchen,A2,
 seed-655,das,Kätzchen,A2,
 seed-656,das,Vöglein,B2,
 seed-657,das,Bäumchen,B1,
 seed-658,das,Häuschen,A2,
 seed-659,das,Sternchen,B1,
-seed-662,das,Bisschen,B2,REMOVE? usually written 'ein bisschen'
+seed-662,das,Bisschen,REMOVE,REMOVE? usually written 'ein bisschen'
 seed-664,das,Erreichen,B2,
 seed-666,das,Verbrechen,B1,
 seed-667,das,Schätzchen,B2,
@@ -484,7 +484,7 @@ seed-779,das,Diktum,B2,
 seed-780,das,Heidentum,B2,
 seed-781,das,Faktum,B2,
 seed-789,das,Gerede,B1,
-seed-794,das,Gestern,B2,REMOVE? 'gestern' is an adverb; das Gestern is rare
+seed-794,das,Gestern,REMOVE,REMOVE? 'gestern' is an adverb; das Gestern is rare
 seed-797,das,Geschehen,B1,
 seed-804,das,Gehirn,B1,
 seed-806,das,Genießen,B2,
@@ -545,7 +545,7 @@ seed-889,das,Trauma,B1,
 seed-890,das,Dilemma,B1,
 seed-891,das,Tagesthema,B1,
 seed-893,der,Pyjama,A2,
-seed-894,das,Sperma,B2,REMOVE? off-tone for a public learning app
+seed-894,das,Sperma,REMOVE,REMOVE? off-tone for a public learning app
 seed-895,das,Karma,B2,
 seed-896,das,Asthma,B1,
 seed-897,das,Lama,B1,
@@ -612,7 +612,7 @@ seed-982,das,Ferkel,B2,
 seed-983,das,Lamm,B1,
 seed-984,das,Kalb,B1,
 seed-985,das,Küken,B1,
-seed-986,das,Junges,B2,REMOVE? should be 'das Junge'
+seed-986,das,Junges,REMOVE,REMOVE? should be 'das Junge'
 seed-987,der,Welpe,B1,
 seed-988,die,Larve,B2,
 seed-989,das,A,A1,
