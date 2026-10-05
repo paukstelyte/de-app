@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { TOPICS } from "@/lib/topics";
 
-export default function Home() {
+export default async function Home({ searchParams }: PageProps<"/">) {
+  const { account } = await searchParams;
   return (
     <div className="flex flex-col gap-10">
+      {account === "deleted" && (
+        <p role="status" className="border border-[var(--line)] bg-[var(--paper)] px-4 py-3 text-sm">
+          Your account and all your saved answers have been deleted.
+        </p>
+      )}
       <div>
         <div className="mb-5 h-2 w-12 bg-[var(--accent)]" />
         <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">German grammar practice · A1–B2</p>

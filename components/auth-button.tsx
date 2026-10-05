@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import { LogoutButton } from "@/components/auth-forms";
 
 export async function AuthButton() {
   const supabase = await createClient();
@@ -15,8 +14,13 @@ export async function AuthButton() {
       >
         Progress
       </Link>
-      <span className="hidden text-zinc-500 lg:inline">{email}</span>
-      <LogoutButton />
+      <Link
+        href="/account"
+        title={email}
+        className="whitespace-nowrap rounded-full px-2.5 py-1.5 font-medium text-zinc-600 transition-colors hover:bg-black/5 sm:px-3 dark:text-zinc-400 dark:hover:bg-white/10"
+      >
+        Account
+      </Link>
     </div>
   ) : (
     <Link
