@@ -79,6 +79,10 @@ Facts checked: all 996 seed cards' `rule` text matches exactly one `rules.json` 
 - `docs/supabase-schema.md`: `attempts` table, RLS, the anon-revoke rule for every future table.
 - Future topic recipe in CLAUDE.md: add item data file + `lib/topics.ts` entry + reuse `attempts` with a new `topic` value.
 
+## Before going public (with the Vercel step)
+- Custom SMTP provider (Supabase's built-in sender is rate-limited and free-tier projects can't edit email templates without one).
+- Then switch confirmation/recovery emails to `token_hash` links handled by a `/auth/confirm` route (see notes-app), so links work on any device.
+
 ## Out of scope (later)
 Vercel hosting (next step), AI-generated exercises, progress-over-time charts/streaks, guest-progress migration, other topics' content, levels per user profile.
 

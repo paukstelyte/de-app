@@ -2,8 +2,9 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { safeRedirectPath } from "@/lib/safe-redirect";
 
-// Where Google sends the browser back to after the user approves sign-in.
-// Exchanges the auth code Supabase appended to the URL for a real session,
+// Where Google sign-in, the sign-up confirmation email and the password-reset
+// email all land. Exchanges the auth code Supabase appended to the URL for a
+// real session (only works in the browser that started the flow),
 // then sends the user on to wherever they were headed (defaulting to the
 // game page).
 export async function GET(request: Request) {
@@ -20,6 +21,6 @@ export async function GET(request: Request) {
   }
 
   return NextResponse.redirect(
-    `${origin}/auth/error?error=google_failed`,
+    `${origin}/auth/error?error=callback_failed`,
   );
 }

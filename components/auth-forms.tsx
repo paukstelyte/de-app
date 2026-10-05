@@ -137,7 +137,7 @@ export function SignUpForm() {
         createClient().auth.signUp({
           email,
           password,
-          options: { emailRedirectTo: `${window.location.origin}/articles` },
+          options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/articles` },
         }),
       () => router.push("/auth/sign-up-success"),
     );
@@ -174,7 +174,7 @@ export function ForgotPasswordForm() {
     run(
       () =>
         createClient().auth.resetPasswordForEmail(email, {
-          redirectTo: `${window.location.origin}/auth/update-password`,
+          redirectTo: `${window.location.origin}/auth/callback?next=/auth/update-password`,
         }),
       () => setSent(true),
     );
