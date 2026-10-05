@@ -45,7 +45,7 @@ type Action =
   | { type: "start_fresh_deck" }
   | { type: "restart" }
   | { type: "start_recap" }
-  | { type: "choose"; article: Article; wasCorrect: boolean; cardId: string }
+  | { type: "choose"; article: Article; wasCorrect: boolean; cardId: string; countsTowardStats: boolean }
   | { type: "advance"; crossedDeckBoundary: boolean };
 
 function addAnswer(score: RoundScore, wasCorrect: boolean): RoundScore {
@@ -93,7 +93,7 @@ function sessionReducer(state: SessionState, action: Action): SessionState {
       };
     case "choose": {
       if (state.chosen) return state;
-      const { article, wasCorrect, cardId } = action;
+      const { article, wasCorrect, cardId, countsTowardStats } = action;
       return {
         ...state,
         chosen: article,
@@ -104,9 +104,10 @@ function sessionReducer(state: SessionState, action: Action): SessionState {
         deckScore: state.isRecap
           ? state.deckScore
           : addAnswer(state.deckScore, wasCorrect),
-        baseStats: state.isRecap
-          ? state.baseStats
-          : addAnswer(state.baseStats, wasCorrect),
+        baseStats:
+          state.isRecap || !countsTowardStats
+            ? state.baseStats
+            : addAnswer(state.baseStats, wasCorrect),
         wrongThisPass: wasCorrect
           ? state.wrongThisPass
           : [...state.wrongThisPass, cardId],
@@ -144,7 +145,8 @@ export function usePracticeSession(
   const baseOrder = useMemo(
     () => {
       if (!hasCards) return null;
-      if (mistakesOnly) return shuffle(troubleIds ?? []).slice(0, ROUND_SIZE);
+      // troubleIds is most-missed first, so a big list practises the worst words.
+      if (mistakesOnly) return shuffle((troubleIds ?? []).slice(0, ROUND_SIZE));
       return buildPracticeOrder(cards, troubleIds);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -153,24 +155,25 @@ export function usePracticeSession(
   // An optional recap queue (the cards missed last round) overrides the base
   // round until it's cleared by starting a fresh round.
   const queue = state.recapQueue ?? baseOrder;
-  const effectiveIndex = state.index;
 
   function choose(article: Article, cardId: string, correctArticle: Article) {
     if (state.chosen) return;
     const wasCorrect = article === correctArticle;
     recordAnswer(cardId, article, wasCorrect);
-    dispatch({ type: "choose", article, wasCorrect, cardId });
+    // "Practise my mistakes" rounds are short and hand-picked, so they stay out
+    // of the session-wide Decks played / Overall accuracy.
+    dispatch({ type: "choose", article, wasCorrect, cardId, countsTowardStats: !mistakesOnly });
   }
 
   function advance() {
     const crossedDeckBoundary =
-      !!queue && effectiveIndex + 1 >= queue.length && !state.isRecap;
+      !!queue && state.index + 1 >= queue.length && !state.isRecap && !mistakesOnly;
     dispatch({ type: "advance", crossedDeckBoundary });
   }
 
   return {
     queue,
-    effectiveIndex,
+    effectiveIndex: state.index,
     chosen: state.chosen,
     isRecap: state.isRecap,
     deckScore: state.deckScore,

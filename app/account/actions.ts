@@ -16,6 +16,10 @@ export async function deleteAccount(_prev: string | null, formData: FormData) {
   if (!userId) redirect("/login?next=/account");
 
   // Deleting a user needs the admin (secret) key, so it only ever runs here.
+  if (!process.env.SUPABASE_SECRET_KEY) {
+    console.error("deleteAccount: SUPABASE_SECRET_KEY is not set");
+    return "Account deletion isn't available right now. Please try again later.";
+  }
   const admin = createAdminClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SECRET_KEY!,

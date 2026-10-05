@@ -65,15 +65,17 @@ export function ArticlesGame({
   } = usePracticeSession(
     cards,
     (id, article, wasCorrect) => {
-      recordAnswer(id, wasCorrect);
+      // Logged-in answers go to the account only, never to this browser's guest
+      // streaks, so the next person on a shared computer starts clean.
       // Fire-and-forget: a failed save must never block the game.
       if (loggedIn) recordAttempt(id, article).catch(console.error);
+      else recordAnswer(id, wasCorrect);
     },
     troubleIds,
     mistakesOnly,
   );
 
-  const roundOver = !!queue && effectiveIndex >= queue.length;
+  const roundOver = !!queue && queue.length > 0 && effectiveIndex >= queue.length;
   // Re-fetch the saved trouble list once a round ends, so the next round and
   // the "Practise my mistakes" count reflect the answers just given.
   useEffect(() => {
@@ -160,6 +162,11 @@ export function ArticlesGame({
                 </button>
               )}
               {mistakesOnly ? (
+                !troubleIds?.length ? (
+                  <a href="/articles" className={`inline-flex items-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${pillPrimary}`}>
+                    All cleared — back to practice
+                  </a>
+                ) : (
                 // Full page load, so the round is rebuilt from the freshly saved list.
                 <a
                   href="/articles?mode=mistakes"
@@ -167,8 +174,9 @@ export function ArticlesGame({
                     wrongThisPass.length > 0 ? pillSecondary : pillPrimary
                   }`}
                 >
-                  Practise my mistakes again
+                  Practise my mistakes again ({troubleIds.length})
                 </a>
+                )
               ) : (
               <button
                 type="button"
@@ -195,6 +203,7 @@ export function ArticlesGame({
             onRestart={restart}
             onChoose={choose}
             onAdvance={advance}
+            troubleIds={loggedIn ? troubleIds ?? [] : undefined}
           />
         )}
       </div>
@@ -226,6 +235,7 @@ function Stat({ label, value }: { label: string; value: number | string }) {
 }
 
 function Game({
+  troubleIds,
   cardId,
   positionLabel,
   scoreLabel,
@@ -241,6 +251,8 @@ function Game({
   onRestart: () => void;
   onChoose: (article: Article, cardId: string, correctArticle: Article) => void;
   onAdvance: () => void;
+  /** Logged-in only: the badge reflects the saved trouble list, not browser streaks. */
+  troubleIds?: string[];
 }) {
   const { cards } = useFlashcards();
   const card = cards.find((c) => c.id === cardId);
@@ -314,7 +326,13 @@ function Game({
               >
                 {isCorrect ? "Correct!" : "Not quite."}
               </p>
-              <StatusBadge status={getFlashcardStatus(card)} />
+              <StatusBadge
+                status={
+                  troubleIds
+                    ? troubleIds.includes(card.id) ? "needs-practice" : "unplayed"
+                    : getFlashcardStatus(card)
+                }
+              />
             </div>
 
             <div className="text-left">

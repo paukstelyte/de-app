@@ -6,6 +6,7 @@ export default async function ArticlesPage({ searchParams }: PageProps<"/article
   const progress = await getArticlesProgress();
   return (
     <ArticlesGame
+      key={mode === "mistakes" ? "mistakes" : "normal"}
       loggedIn={!!progress}
       troubleIds={progress?.trouble.map((t) => t.id)}
       mistakesOnly={!!progress && mode === "mistakes"}

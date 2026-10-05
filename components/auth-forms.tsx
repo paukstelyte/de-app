@@ -13,6 +13,8 @@ const primaryButton =
 const secondaryButton =
   "flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 disabled:opacity-60 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800";
 const linkClass = "underline underline-offset-4";
+// Flip on once the Google provider is enabled in supabase/config.toml.
+const GOOGLE_LOGIN_ENABLED = false;
 
 export function AuthCard({
   title,
@@ -107,10 +109,12 @@ export function LoginForm({ next }: { next: string }) {
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Logging in…" : "Log in"}
         </button>
-        <button type="button" onClick={handleGoogle} className={secondaryButton}>
-          <GoogleIcon className="size-4" />
-          Continue with Google
-        </button>
+        {GOOGLE_LOGIN_ENABLED && (
+          <button type="button" onClick={handleGoogle} className={secondaryButton}>
+            <GoogleIcon className="size-4" />
+            Continue with Google
+          </button>
+        )}
       </form>
       <p className="mt-6 text-center text-sm">
         No account yet?{" "}
