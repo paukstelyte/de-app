@@ -66,6 +66,12 @@ export default function PrivacyPage() {
           <li>
             <strong>Google</strong>: only if you choose &ldquo;Continue with Google&rdquo;.
           </li>
+          <li>
+            <strong>OpenRouter</strong>: if you use the Chat page, your messages are sent through
+            OpenRouter to the AI model&apos;s provider to generate a reply. Free models may keep or
+            learn from what you type, so don&apos;t share personal details there. We don&apos;t
+            store your chat messages.
+          </li>
         </ul>
       </Section>
 
