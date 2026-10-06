@@ -161,7 +161,7 @@ export function SignUpForm() {
     <AuthCard title="Sign up" description="Track your progress and practise the words you get wrong.">
       <form onSubmit={handleSignUp} className="flex flex-col gap-4">
         <Field label="Email" type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <Field label="Password" type="password" required minLength={8} autoComplete="new-password" hint="At least 8 characters." value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Field label="Password" type="password" required minLength={8} pattern="(?=.*[A-Za-z])(?=.*\d).{8,}" title="At least 8 characters, including a letter and a number." autoComplete="new-password" hint="At least 8 characters, including a letter and a number." value={password} onChange={(e) => setPassword(e.target.value)} />
         <Field label="Repeat password" type="password" required autoComplete="new-password" value={repeat} onChange={(e) => setRepeat(e.target.value)} />
         <ErrorText error={error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
@@ -244,7 +244,7 @@ export function UpdatePasswordForm() {
   return (
     <AuthCard title="Choose a new password">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <Field label="New password" type="password" required minLength={8} autoComplete="new-password" hint="At least 8 characters." value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Field label="New password" type="password" required minLength={8} pattern="(?=.*[A-Za-z])(?=.*\d).{8,}" title="At least 8 characters, including a letter and a number." autoComplete="new-password" hint="At least 8 characters, including a letter and a number." value={password} onChange={(e) => setPassword(e.target.value)} />
         <ErrorText error={error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Saving…" : "Save new password"}
