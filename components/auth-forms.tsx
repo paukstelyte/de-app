@@ -13,8 +13,6 @@ const primaryButton =
 const secondaryButton =
   "flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 disabled:opacity-60 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800";
 const linkClass = "underline underline-offset-4";
-// Flip on once the Google provider is enabled in supabase/config.toml.
-const GOOGLE_LOGIN_ENABLED = false;
 
 export function AuthCard({
   title,
@@ -76,6 +74,27 @@ function useAuthAction() {
   return { error, setError, isLoading, run };
 }
 
+/** Google creates the account on first use, so this one button serves both
+ * log in and sign up. */
+function GoogleButton({ next, onError }: { next: string; onError: (message: string) => void }) {
+  async function handleGoogle() {
+    const { error } = await createClient().auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`,
+      },
+    });
+    // On success the browser is already on its way to Google.
+    if (error) onError(error.message);
+  }
+  return (
+    <button type="button" onClick={handleGoogle} className={secondaryButton}>
+      <GoogleIcon className="size-4" />
+      Continue with Google
+    </button>
+  );
+}
+
 export function LoginForm({ next }: { next: string }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -93,17 +112,6 @@ export function LoginForm({ next }: { next: string }) {
     );
   }
 
-  async function handleGoogle() {
-    const { error } = await createClient().auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`,
-      },
-    });
-    // On success the browser is already on its way to Google.
-    if (error) setError(error.message);
-  }
-
   return (
     <AuthCard title="Log in" description="Log in to save your answers and practise your own mistakes.">
       <form onSubmit={handleLogin} className="flex flex-col gap-4">
@@ -116,12 +124,7 @@ export function LoginForm({ next }: { next: string }) {
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Logging in…" : "Log in"}
         </button>
-        {GOOGLE_LOGIN_ENABLED && (
-          <button type="button" onClick={handleGoogle} className={secondaryButton}>
-            <GoogleIcon className="size-4" />
-            Continue with Google
-          </button>
-        )}
+        <GoogleButton next={next} onError={setError} />
       </form>
       <p className="mt-6 text-center text-sm">
         No account yet?{" "}
@@ -164,6 +167,7 @@ export function SignUpForm() {
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Creating account…" : "Sign up"}
         </button>
+        <GoogleButton next="/articles" onError={setError} />
       </form>
       <p className="mt-6 text-center text-sm">
         Already have an account?{" "}

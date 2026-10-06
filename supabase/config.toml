@@ -323,6 +323,16 @@ max_frequency = "5s"
 # Use an external OAuth provider. The full list of providers are: `apple`, `azure`, `bitbucket`,
 # `discord`, `facebook`, `github`, `gitlab`, `google`, `keycloak`, `linkedin_oidc`, `notion`, `twitch`,
 # `twitter`, `x`, `slack`, `spotify`, `workos`, `zoom`.
+# "Continue with Google". Client from Google Cloud project "DE-app" (Google Auth
+# Platform → Clients → "DE-app web"); its redirect URI is
+# https://cenzahkgbbnmgzikxvsz.supabase.co/auth/v1/callback. The client ID is
+# public; the secret lives in supabase/.env (gitignored) and is sent on push.
+[auth.external.google]
+enabled = true
+client_id = "828940667044-dmnuctvt20r7k78k8707548o5hjkg9b7.apps.googleusercontent.com"
+secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
+skip_nonce_check = false
+
 [auth.external.apple]
 enabled = false
 client_id = ""
