@@ -80,7 +80,7 @@ Facts checked: all 996 original seed cards' `rule` text matches exactly one `rul
 - Future topic recipe in CLAUDE.md: add item data file + `lib/topics.ts` entry + reuse `attempts` with a new `topic` value.
 
 ## Before going public (with the Vercel step)
-- Google Cloud "DE-app": publish the OAuth app (Audience → Publish app; needs home page + privacy policy links on Branding) — until then only listed test users can use Google login. Add the production URL as a JavaScript origin if Google's own sign-in button is ever used.
+- ✅ Google Cloud "DE-app" OAuth app published (In production, 2026-10-06): home page + /privacy on Branding, authorised domain de-app-six.vercel.app, support/developer email egle.pauk.ai@gmail.com (project account added as Owner).
 - ✅ Custom SMTP: Brevo free plan (300/day), sender egle.pauk.ai@gmail.com, 30 emails/hour in Supabase.
 - ✅ Confirmation/recovery emails use `token_hash` links to `/auth/confirm` (templates in `supabase/templates/`), so they work on any device.
 

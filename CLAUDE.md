@@ -62,6 +62,8 @@ The app runs locally at `localhost:3000`. Do not swap any part of this stack.
 - If instructions are unclear, ask me for clarification, don't make assumptions 
 - Keep the design clean and conscise througout pages
 - Every new Supabase table needs RLS policies and the anon-access revoke (see `docs/supabase-schema.md`).
+- All secrets should live in *env files
+- Before merging, suggest needed usability and security tests
 
 ## Do Not
 
