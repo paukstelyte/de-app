@@ -21,7 +21,7 @@ key never reaches the browser, and the model is changed by editing one value.
 | Transport | Server action, plain `fetch` to OpenRouter, whole reply at once (no streaming). No new packages. |
 | Model | Free model, from env var `OPENROUTER_MODEL`, default `google/gemma-4-31b-it:free`. |
 
-## Personas — `lib/chat/personas.ts`
+## Personas — `lib/chat.ts`
 
 One list; adding a persona = adding an entry. Each entry: `id`, `name`,
 `tagline` (shown in the picker), `prompt` (persona-specific instructions).
@@ -44,11 +44,13 @@ back otherwise), A1–B2 level, accurate grammar, short answers.
 3. The action:
    1. checks the user is logged in (`getClaims`), else returns an error;
    2. looks up `personaId` in the persona list, rejects unknown ids;
-   3. cleans the history with `cleanHistory()` (`lib/chat/history.ts`):
+   3. cleans the history with `cleanHistory()` (`lib/chat.ts`, which has no
+      imports so Node's test runner can load it):
       keeps only `user`/`assistant` roles with string content, trims each
       message to 2,000 characters, drops empty ones, keeps the last 20, and
       requires the last message to be from the user;
-   4. records one `chat_usage` row (the DB trigger enforces the rate limit);
+   4. calls the `use_chat_quota()` database function, which enforces the rate
+      limit and records one `chat_usage` row;
    5. builds the request: base prompt + persona prompt as the system message,
       then the history. Earlier assistant replies from a *different* persona
       are prefixed `[Earlier reply by <name>]` so the current voice doesn't
@@ -65,14 +67,15 @@ prefix. The browser talks only to our own origin, so the CSP needs no change.
 
 ## Rate limiting — migration `create_chat_usage`
 
-Table `public.chat_usage (id identity pk, user_id uuid default auth.uid()
-references auth.users on delete cascade, created_at timestamptz default now())`.
+Table `public.chat_usage (id identity pk, user_id uuid references auth.users
+on delete cascade, created_at timestamptz default now())`.
 
-- RLS on; `authenticated` may insert own rows (no columns supplied — all
-  defaults) and select own rows; no update/delete/truncate; `anon` revoked.
-  Same pattern as `attempts` (see `docs/supabase-schema.md`).
-- `BEFORE INSERT` trigger rejects when the user has ≥ 10 rows in the last
-  minute or ≥ 25 in the last 24 hours (`errcode P0001`).
+- RLS on with **no** policies, and all privileges revoked from `anon` and
+  `authenticated`: users cannot read, insert, back-date or delete rows.
+- `public.use_chat_quota()` (`security definer`, `search_path = ''`, execute
+  granted to `authenticated` only) takes a per-user advisory lock, raises
+  `P0001` when the caller (`auth.uid()`) has ≥ 10 rows in the last minute or
+  ≥ 25 in the last 24 hours, and otherwise inserts one row.
 
 OpenRouter's free tier is account-wide: 20 requests/min, 50/day (1,000/day
 after $10 of credits ever purchased). An OpenRouter `429` is shown as
@@ -87,8 +90,8 @@ after $10 of credits ever purchased). An OpenRouter `429` is shown as
 - Input at the bottom: Enter sends, Shift+Enter new line; disabled with
   "Thinking…" while waiting. Auto-scroll to newest message.
 - New replies announced via a `role="status"` live region.
-- Errors shown inline in the conversation; the user's message stays so they
-  can retry.
+- Errors shown inline (`role="alert"`); the failed message is removed from
+  the list and its text goes back into the input so the user can resend it.
 - "New chat" button clears the conversation.
 - Nav: "Chat" link in `components/NavBar.tsx`.
 
@@ -114,7 +117,8 @@ after $10 of credits ever purchased). An OpenRouter `429` is shown as
 
 - `lib/chat.test.mjs` (node:test, like the existing tests): `cleanHistory`
   role filtering, 2,000-char trim, last-20 cap, last-message-must-be-user;
-  persona lookup rejects unknown ids.
+  persona lookup rejects unknown ids; persona labelling; reply extraction;
+  429 mapping.
 - Manual (Playwright CLI): follow-up question keeps context; switching persona
   mid-chat changes voice and language; key absent from page source and
   network requests; guest redirected to login; limit message appears.
