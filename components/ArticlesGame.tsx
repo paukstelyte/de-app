@@ -150,7 +150,11 @@ export function ArticlesGame({
             }}
           />
         )}
-        {cards.length === 0 ? null : mistakesOnly && queue?.length === 0 ? (
+        {cards.length === 0 ? (
+          // The deck is read in the browser, so the server sends this empty
+          // slot sized like the card; without it the page jumps when the card appears.
+          <div aria-hidden className="mt-7 min-h-[380px] border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]" />
+        ) : mistakesOnly && queue?.length === 0 ? (
           <div className="flex flex-col items-center justify-center gap-4 border border-[var(--line)] bg-[var(--paper)] p-8 text-center shadow-[8px_8px_0_var(--accent)]">
             <h2 className="text-xl font-semibold">No trouble words right now</h2>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">

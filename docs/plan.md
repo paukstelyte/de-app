@@ -13,14 +13,14 @@ DE-app (copy of Sprint1 die-der-das, now `Sprint 3/DE-app`) is a der/die/das fla
 | Follow-up exercise | "Practise my mistakes" round across visits. AI-generated practice maybe later |
 | Trouble word leaves list | After 2 correct answers in a row |
 | Stats | Overall accuracy, accuracy per der/die/das, trouble-words list, accuracy per rule |
-| Card editing | **Removed**. Built-in 996 words only, same for everyone |
+| Card editing | **Removed**. Built-in words only (976 after the level pass), same for everyone |
 | Levels | A1–B2 on every word **now**: Goethe A1/A2/B1 lists first, Claude assigns leftovers, user reviews |
 | Level in practice | Pick level before a round (A1 / up to A2 / up to B1 / all), last choice remembered |
 | Layout | Light topic picker now, der/die/das = only tile; stats grouped by topic |
 | Supabase | New dedicated project (pause supabase-test if free-tier limit hit) |
 | GitHub | New repo just for DE-app; no submission-repo mirroring |
 
-Facts checked: all 996 seed cards' `rule` text matches exactly one `rules.json` description → `ruleId` is a free mechanical backfill. Seed ids are index-based (`seed-${i}`, `lib/flashcards/storage.ts:16-29`) — must be frozen into the JSON before history references them.
+Facts checked: all 996 original seed cards' `rule` text matches exactly one `rules.json` description → `ruleId` is a free mechanical backfill. Seed ids are index-based (`seed-${i}`, `lib/flashcards/storage.ts:16-29`) — must be frozen into the JSON before history references them.
 
 ## Data model
 - **Word content stays static in code** (`seed.json`, `rules.json`) — read-only for everyone, no DB table needed.

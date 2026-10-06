@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { FlashcardsProvider } from "@/lib/flashcards/context";
+import { Geist } from "next/font/google";
 import { ThemeProvider } from "@/lib/theme/context";
 import { THEME_STORAGE_KEY } from "@/lib/theme/constants";
 import { NavBar } from "@/components/NavBar";
@@ -14,10 +13,6 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: { default: "DE-app — German grammar practice", template: "%s · DE-app" },
@@ -30,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} h-full antialiased`}
     >
       <head>
         {/* Runs before first paint so the saved theme never flashes. It must live
@@ -39,12 +34,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="flex min-h-full flex-col text-zinc-900 dark:text-zinc-50">
         <ThemeProvider>
-          <FlashcardsProvider>
-            <NavBar auth={<AuthButton />} />
-            <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8 sm:px-8 sm:py-12 print:max-w-none print:p-0">
-              {children}
-            </main>
-          </FlashcardsProvider>
+          <NavBar auth={<AuthButton />} />
+          <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8 sm:px-8 sm:py-12 print:max-w-none print:p-0">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
