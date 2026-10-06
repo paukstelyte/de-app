@@ -169,6 +169,12 @@ export function SignUpForm() {
         </button>
         <GoogleButton next="/articles" onError={setError} />
       </form>
+      <p className="mt-4 text-center text-xs text-zinc-500">
+        See what we store and how to delete it:{" "}
+        <Link href="/privacy" className={linkClass}>
+          Privacy
+        </Link>
+      </p>
       <p className="mt-6 text-center text-sm">
         Already have an account?{" "}
         <Link href="/login" className={linkClass}>
