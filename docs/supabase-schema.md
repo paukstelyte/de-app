@@ -34,6 +34,20 @@ Limits. A logged-in user can bypass the app and call the database API directly, 
 - Policies use `(select auth.uid()) = user_id`. Wrapping it in `select` means it's evaluated once per query, not once per row.
 - History is append-only. Deleting an account (`app/account/actions.ts` → `auth.admin.deleteUser`) removes the user's rows through the cascade.
 
+## `public.chat_usage`
+
+One row per message a logged-in user sends in the AI chat (`/chat`). It's used only for rate limiting, because OpenRouter's free tier is shared by the whole app. Migration: `20261006120000_create_chat_usage.sql`.
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | `bigint` identity | Primary key |
+| `user_id` | `uuid` | References `auth.users` **on delete cascade** |
+| `created_at` | `timestamptz` | Defaults to `now()` |
+
+- RLS is on with **no policies**, and every privilege is revoked from `anon` and `authenticated`. Users can't read, insert, back-date or delete rows.
+- The only way in is `public.use_chat_quota()` (`security definer`, executable by `authenticated` only). It takes a per-user advisory lock, raises `P0001` ("Chat limit reached") when the caller already has **10 rows in the last minute or 25 in the last 24 hours**, and otherwise inserts one row for `auth.uid()`.
+- Chat messages themselves are never stored.
+
 ## Rules for every new table
 
 1. `alter table … enable row level security;` plus policies written `to authenticated`.
