@@ -64,6 +64,12 @@ The app runs locally at `localhost:3000`. Do not swap any part of this stack.
 - Every new Supabase table needs RLS policies and the anon-access revoke (see `docs/supabase-schema.md`).
 - All secrets should live in *env files
 - Before merging, suggest needed usability and security tests
+- Propose security scans at these moments:
+
+  | Command | When to use it |
+  |---|---|
+  | `/security-scan` | Periodically (monthly, or before a big release or production deploy) to confirm the whole codebase is clean. |
+  | `/security-scan-changed` | On every feature branch and pull request, to catch new problems before they merge into main. |
 
 ## Do Not
 
