@@ -66,5 +66,5 @@ Table design and access rules: [`docs/supabase-schema.md`](docs/supabase-schema.
 
 ## Known limits
 
-- Supabase's built-in email sender is rate-limited, and on the free plan the email templates can't be edited without your own email service (SMTP). Until one is set up, confirmation and password-reset links only log you in if they're opened in the same browser (see `docs/plan.md`).
+- Emails are sent through Brevo's free plan (300/day) from a Gmail sender, so some may land in spam. A custom domain would fix that.
 - Stats are computed from a user's whole answer history on each page load. That's fine for thousands of answers; move it into SQL if histories get much larger.

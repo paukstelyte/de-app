@@ -151,7 +151,7 @@ export function SignUpForm() {
         createClient().auth.signUp({
           email,
           password,
-          options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/articles` },
+          options: { emailRedirectTo: `${window.location.origin}/auth/confirm` }, // see supabase/templates
         }),
       () => router.push("/auth/sign-up-success"),
     );
@@ -189,7 +189,7 @@ export function ForgotPasswordForm() {
     run(
       () =>
         createClient().auth.resetPasswordForEmail(email, {
-          redirectTo: `${window.location.origin}/auth/callback?next=/auth/update-password`,
+          redirectTo: `${window.location.origin}/auth/confirm`, // see supabase/templates
         }),
       () => setSent(true),
     );

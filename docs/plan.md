@@ -81,8 +81,8 @@ Facts checked: all 996 original seed cards' `rule` text matches exactly one `rul
 
 ## Before going public (with the Vercel step)
 - Google Cloud "DE-app": publish the OAuth app (Audience → Publish app; needs home page + privacy policy links on Branding) — until then only listed test users can use Google login. Add the production URL as a JavaScript origin if Google's own sign-in button is ever used.
-- Custom SMTP provider (Supabase's built-in sender is rate-limited and free-tier projects can't edit email templates without one).
-- Then switch confirmation/recovery emails to `token_hash` links handled by a `/auth/confirm` route (see notes-app), so links work on any device.
+- ✅ Custom SMTP: Brevo free plan (300/day), sender egle.pauk.ai@gmail.com, 30 emails/hour in Supabase.
+- ✅ Confirmation/recovery emails use `token_hash` links to `/auth/confirm` (templates in `supabase/templates/`), so they work on any device.
 
 ## Out of scope (later)
 Vercel hosting (next step), AI-generated exercises, progress-over-time charts/streaks, guest-progress migration, other topics' content, levels per user profile.

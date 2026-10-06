@@ -206,7 +206,7 @@ password_requirements = ""
 
 [auth.rate_limit]
 # Number of emails that can be sent per hour. Requires auth.email.smtp to be enabled.
-email_sent = 2
+email_sent = 30  # Supabase sets 30 once custom SMTP is on; not managed by config push
 # Number of SMS messages that can be sent per hour. Requires auth.sms to be enabled.
 sms_sent = 30
 # Number of anonymous sign-ins that can be made per hour per IP address. Requires enable_anonymous_sign_ins = true.
@@ -243,15 +243,29 @@ otp_length = 8
 # Number of seconds before the email OTP expires (defaults to 1 hour).
 otp_expiry = 3600
 
-# Use a production-ready SMTP server
-# [auth.email.smtp]
-# enabled = true
-# host = "smtp.sendgrid.net"
-# port = 587
-# user = "apikey"
-# pass = "env(SENDGRID_API_KEY)"
-# admin_email = "admin@email.com"
-# sender_name = "Admin"
+# Brevo (free plan, 300 emails/day). The sender address is verified in Brevo;
+# the SMTP key lives in supabase/.env (gitignored) and is sent on push.
+[auth.email.smtp]
+enabled = true
+host = "smtp-relay.brevo.com"
+port = 587
+user = "bcd22d001@smtp-brevo.com"
+pass = "env(SUPABASE_AUTH_SMTP_PASS)"
+admin_email = "egle.pauk.ai@gmail.com"
+sender_name = "DE-app"
+
+# Custom SMTP unlocks template editing. Links go to /auth/confirm with a
+# token_hash, which works in any browser or device (unlike the default
+# code-exchange links, which need the browser that started the sign-up).
+# {{ .RedirectTo }} is the app's own <origin>/auth/confirm, so the same
+# template works on localhost, previews and the live site.
+[auth.email.template.confirmation]
+subject = "Confirm your DE-app account"
+content_path = "./supabase/templates/confirmation.html"
+
+[auth.email.template.recovery]
+subject = "Reset your DE-app password"
+content_path = "./supabase/templates/recovery.html"
 
 # Uncomment to customize email template
 # [auth.email.template.invite]
