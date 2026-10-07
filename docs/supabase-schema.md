@@ -36,7 +36,7 @@ Limits. A logged-in user can bypass the app and call the database API directly, 
 
 ## `public.chat_usage`
 
-One row per message a logged-in user sends in the AI chat (`/chat`). It's used only for rate limiting, because OpenRouter's free tier is shared by the whole app. Migration: `20261006120000_create_chat_usage.sql`.
+One row per message a logged-in user sends in the AI chat (`/chat`). It's used only for rate limiting, because OpenRouter's free tier is shared by the whole app. Migrations: `20261006120000_create_chat_usage.sql` and `20261006130000_chat_global_cap.sql`.
 
 | Column | Type | Notes |
 |---|---|---|
@@ -45,7 +45,7 @@ One row per message a logged-in user sends in the AI chat (`/chat`). It's used o
 | `created_at` | `timestamptz` | Defaults to `now()` |
 
 - RLS is on with **no policies**, and every privilege is revoked from `anon` and `authenticated`. Users can't read, insert, back-date or delete rows.
-- The only way in is `public.use_chat_quota()` (`security definer`, executable by `authenticated` only). It takes a per-user advisory lock, raises `P0001` ("Chat limit reached") when the caller already has **10 rows in the last minute or 25 in the last 24 hours**, and otherwise inserts one row for `auth.uid()`.
+- The only way in is `public.use_chat_quota()` (`security definer`, executable by `authenticated` only). It takes an advisory lock, raises `P0001` ("Chat limit reached") when the caller already has **10 rows in the last minute or 25 in the last 24 hours**, or the whole app has **45 in the last 24 hours** (OpenRouter's free tier allows 50 per day for the account), and otherwise inserts one row for `auth.uid()`.
 - Chat messages themselves are never stored.
 
 ## Rules for every new table

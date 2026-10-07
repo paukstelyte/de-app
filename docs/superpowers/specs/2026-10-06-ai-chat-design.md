@@ -73,9 +73,11 @@ on delete cascade, created_at timestamptz default now())`.
 - RLS on with **no** policies, and all privileges revoked from `anon` and
   `authenticated`: users cannot read, insert, back-date or delete rows.
 - `public.use_chat_quota()` (`security definer`, `search_path = ''`, execute
-  granted to `authenticated` only) takes a per-user advisory lock, raises
+  granted to `authenticated` only) takes an advisory lock, raises
   `P0001` when the caller (`auth.uid()`) has ≥ 10 rows in the last minute or
-  ≥ 25 in the last 24 hours, and otherwise inserts one row.
+  ≥ 25 in the last 24 hours, or when all users together have ≥ 45 in the
+  last 24 hours (review fix: the free tier's 50/day is account-wide), and
+  otherwise inserts one row.
 
 OpenRouter's free tier is account-wide: 20 requests/min, 50/day (1,000/day
 after $10 of credits ever purchased). An OpenRouter `429` is shown as
