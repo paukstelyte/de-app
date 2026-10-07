@@ -10,6 +10,7 @@ import {
   toModelMessages,
   type ChatResult,
 } from "@/lib/chat";
+import { systemPromptFor } from "@/lib/chat-prompts";
 
 // To switch models, set OPENROUTER_MODEL in .env.local (and in Vercel).
 const MODEL = process.env.OPENROUTER_MODEL || "google/gemma-4-31b-it";
@@ -49,7 +50,7 @@ export async function sendChatMessage(personaId: string, messages: unknown): Pro
         "Content-Type": "application/json",
         "X-Title": "DE-app",
       },
-      body: JSON.stringify({ model: MODEL, messages: toModelMessages(persona, history), max_tokens: 800 }),
+      body: JSON.stringify({ model: MODEL, messages: toModelMessages(systemPromptFor(persona.id)!, persona.id, history), max_tokens: 800 }),
       signal: AbortSignal.timeout(30_000),
     });
     if (!res.ok) {
