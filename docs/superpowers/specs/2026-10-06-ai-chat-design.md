@@ -19,7 +19,7 @@ key never reaches the browser, and the model is changed by editing one value.
 | Personas | Three, switchable at any time; the conversation continues. |
 | Language | Strict tutor: simple German (A2–B1) only. Others: English with German examples. |
 | Transport | Server action, plain `fetch` to OpenRouter, whole reply at once (no streaming). No new packages. |
-| Model | Free model, from env var `OPENROUTER_MODEL`, default `google/gemma-4-31b-it:free`. |
+| Model | From env var `OPENROUTER_MODEL`, default `google/gemma-4-31b-it` (paid, ~$0.00004/reply: the account's guardrail blocks all free models, so this is the cheapest allowed model that works). |
 
 ## Personas — `lib/chat.ts`
 
@@ -81,7 +81,7 @@ on delete cascade, created_at timestamptz default now())`.
 
 OpenRouter's free tier is account-wide: 20 requests/min, 50/day (1,000/day
 after $10 of credits ever purchased). An OpenRouter `429` is shown as
-"The free AI is busy or out of messages for today — try again later."
+"The AI is busy or out of messages for today — try again later."
 
 ## UI — `app/chat/page.tsx` + `components/Chat.tsx`
 
@@ -112,7 +112,7 @@ after $10 of credits ever purchased). An OpenRouter `429` is shown as
 |---|---|
 | Not logged in | Redirect to login (page); "Please log in again." (action) |
 | Rate limit trigger | "You've reached the chat limit — try again in a bit." |
-| OpenRouter 429 | "The free AI is busy or out of messages for today — try again later." |
+| OpenRouter 429 | "The AI is busy or out of messages for today — try again later." |
 | Missing key / other failure | "Something went wrong — please try again." (details logged server-side) |
 
 ## Testing

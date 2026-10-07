@@ -42,7 +42,7 @@ export const CHAT_ERRORS = {
   generic: "Something went wrong — please try again.",
   loggedOut: "Please log in again.",
   limit: "You've reached the chat limit — try again in a bit.",
-  busy: "The free AI is busy or out of messages for today — try again later.",
+  busy: "The AI is busy or out of messages for today — try again later.",
 };
 
 export function findPersona(id: unknown): Persona | undefined {

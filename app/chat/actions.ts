@@ -12,7 +12,7 @@ import {
 } from "@/lib/chat";
 
 // To switch models, set OPENROUTER_MODEL in .env.local (and in Vercel).
-const MODEL = process.env.OPENROUTER_MODEL || "google/gemma-4-31b-it:free";
+const MODEL = process.env.OPENROUTER_MODEL || "google/gemma-4-31b-it";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 /** Sends the conversation to the chosen tutor persona and returns its reply.
