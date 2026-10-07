@@ -96,7 +96,6 @@ function GoogleButton({ next, onError }: { next: string; onError: (message: stri
 }
 
 export function LoginForm({ next }: { next: string }) {
-  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { error, setError, isLoading, run } = useAuthAction();
@@ -105,10 +104,11 @@ export function LoginForm({ next }: { next: string }) {
     e.preventDefault();
     run(
       () => createClient().auth.signInWithPassword({ email, password }),
-      () => {
-        router.push(next);
-        router.refresh();
-      },
+      // A full page load, not router.push: the client router may still hold a
+      // "redirect to /login" it prefetched for this page while logged out (e.g.
+      // the Chat link in the nav), which would bounce the user straight back.
+      // `next` is already limited to this site by safeRedirectPath.
+      () => window.location.assign(next),
     );
   }
 
@@ -255,14 +255,15 @@ export function UpdatePasswordForm() {
 }
 
 export function LogoutButton() {
-  const router = useRouter();
   return (
     <button
       type="button"
       onClick={async () => {
         await createClient().auth.signOut();
-        router.push("/");
-        router.refresh();
+        // Full page load (deliberately not router.push) so no page cached while
+        // logged in is shown afterwards.
+        // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+        window.location.assign("/");
       }}
       className="whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium text-zinc-600 transition-colors hover:bg-black/5 dark:text-zinc-400 dark:hover:bg-white/10"
     >
