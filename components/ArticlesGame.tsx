@@ -94,9 +94,9 @@ export function ArticlesGame({
   return (
     <div className="flex flex-col gap-10">
       <div className="grid gap-10 lg:grid-cols-[240px_1fr] lg:items-start">
-      <aside className="flex flex-col gap-5 max-lg:order-last lg:pt-3">
+      <aside className="flex flex-col gap-4 max-lg:order-last lg:pt-3">
         <div>
-          <div className="mb-5 h-2 w-12 bg-[var(--accent)]" />
+          <div className="mb-4 h-2 w-12 bg-[var(--accent)]" />
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">German article practice / 01</p>
           <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">der · die · das</h1>
           <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
@@ -235,19 +235,20 @@ export function ArticlesGame({
             troubleIds={loggedIn ? troubleIds ?? [] : undefined}
           />
         )}
+        {!mistakesOnly && (
+          // mt-2 clears the card's 8px offset shadow.
+          <section className="mt-2 grid grid-cols-3 gap-px border border-[var(--line)] bg-[var(--line)]">
+            <Stat label="Decks played" value={decksPlayed} />
+            <Stat label="Mistakes fixed" value={mistakesLearned} />
+            <Stat
+              label="Overall accuracy"
+              value={baseStats.total > 0 ? `${percent(baseStats)}%` : "—"}
+            />
+          </section>
+        )}
       </div>
       </div>
 
-      {!mistakesOnly && (
-      <section className="grid grid-cols-3 gap-px border border-[var(--line)] bg-[var(--line)]">
-        <Stat label="Decks played" value={decksPlayed} />
-        <Stat label="Mistakes fixed" value={mistakesLearned} />
-        <Stat
-          label="Overall accuracy"
-          value={baseStats.total > 0 ? `${percent(baseStats)}%` : "—"}
-        />
-      </section>
-      )}
     </div>
   );
 }
@@ -287,9 +288,9 @@ function LevelPicker({ value, onChange }: { value: Level; onChange: (level: Leve
 
 function Stat({ label, value }: { label: string; value: number | string }) {
   return (
-    <div className="bg-[var(--paper)] p-4 text-center">
-      <div className="text-2xl font-semibold tracking-[-0.04em]">{value}</div>
-      <div className="mt-1 text-[10px] font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">{label}</div>
+    <div className="flex flex-wrap items-baseline justify-center gap-x-2 bg-[var(--paper)] px-3 py-2 text-center">
+      <span className="text-base font-semibold tracking-[-0.03em]">{value}</span>
+      <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">{label}</span>
     </div>
   );
 }
