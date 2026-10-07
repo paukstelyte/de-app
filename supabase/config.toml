@@ -170,7 +170,6 @@ site_url = "https://de-app-six.vercel.app"
 # A new preview branch that needs login gets its branch alias added here.
 additional_redirect_urls = [
   "https://de-app-six.vercel.app/**",
-  "https://de-app-git-feature-ai-chat-paukstis.vercel.app/**",
   "http://localhost:3000/**",
 ]
 # How long tokens are valid for, in seconds. Defaults to 3600 (1 hour), maximum 604,800 (1 week).
