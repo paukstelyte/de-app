@@ -37,7 +37,7 @@ Limits. A logged-in user can bypass the app and call the database API directly, 
 ## Rules for every new table
 
 1. `alter table … enable row level security;` plus policies written `to authenticated`.
-2. `revoke all on <table> from anon;`, and grant `authenticated` only what the app uses. The project's default privileges are also set so that new tables, sequences and functions start closed to `anon`, but revoke explicitly anyway.
+2. `revoke all on <table> from anon;`, and `grant` `authenticated` only what the app uses. New tables, sequences and functions start with **no** privileges for `anon` or `authenticated` (default privileges, `20261007120000_close_default_privileges.sql`), so a table nobody granted is unusable rather than wide open. Still revoke explicitly. Never grant `truncate`: it ignores RLS.
 3. A DELETE or UPDATE with no matching policy **succeeds with 0 rows changed** instead of erroring, so check affected rows when it matters.
 
 ## Checking access
