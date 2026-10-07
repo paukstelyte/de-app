@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const LINKS = [
   { href: "/articles", label: "der·die·das" },
   { href: "/rules", label: "The Rules" },
+  { href: "/chat", label: "Chat" },
 ];
 
 export function NavBar({ auth }: { auth: ReactNode }) {

@@ -33,10 +33,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             in <head>: a <script> inside <body> makes React warn in development. */}
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
-      <body className="flex min-h-full flex-col text-zinc-900 dark:text-zinc-50">
+      <body className="flex min-h-full flex-col text-zinc-900 has-[[data-fit-screen]]:h-dvh dark:text-zinc-50">
         <ThemeProvider>
           <NavBar auth={<AuthButton />} />
-          <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8 sm:px-8 sm:py-12 print:max-w-none print:p-0">
+          <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8 sm:px-8 sm:py-12 has-[[data-fit-screen]]:flex has-[[data-fit-screen]]:min-h-0 has-[[data-fit-screen]]:flex-col has-[[data-fit-screen]]:overflow-y-auto print:max-w-none print:p-0">
             {children}
           </main>
           <footer className="mx-auto w-full max-w-5xl px-5 pb-8 text-xs text-zinc-500 sm:px-8 print:hidden">
