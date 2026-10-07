@@ -57,7 +57,7 @@ export function Chat() {
       : "";
 
   return (
-    <div className="flex flex-col border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]">
+    <div className="flex min-h-0 flex-1 flex-col border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] p-4">
         <label className="flex items-center gap-2 text-sm font-medium">
           Tutor
@@ -86,7 +86,7 @@ export function Chat() {
         </button>
       </div>
 
-      <div ref={listRef} className="flex h-[55vh] flex-col gap-4 overflow-y-auto p-4 sm:p-6">
+      <div ref={listRef} className="flex min-h-40 flex-1 flex-col gap-4 overflow-y-auto p-4 sm:p-6">
         {messages.length === 0 && !isPending && (
           <p className="m-auto max-w-sm text-center text-sm text-zinc-500">
             Ask me anything about German grammar. Pick a tutor above; you can switch any time.

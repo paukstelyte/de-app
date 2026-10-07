@@ -17,7 +17,7 @@ key never reaches the browser, and the model is changed by editing one value.
 | Conversation lifetime | In the browser's memory only. Reload or "New chat" starts fresh. Nothing is stored except usage counts. |
 | Purpose | German grammar tutor (A1–B2), kept on German-learning topics. |
 | Personas | Three, switchable at any time; the conversation continues. |
-| Language | Strict tutor: simple German (A2–B1) only. Others: English with German examples. |
+| Language | Lotte and Frau Streng: simple German (A2–B1) only. Nigel: English with German examples. |
 | Transport | Server action, plain `fetch` to OpenRouter, whole reply at once (no streaming). No new packages. |
 | Model | From env var `OPENROUTER_MODEL`, default `google/gemma-4-31b-it` (paid, ~$0.00004/reply: the account's guardrail blocks all free models, so this is the cheapest allowed model that works). |
 
@@ -28,7 +28,7 @@ One list; adding a persona = adding an entry. Each entry: `id`, `name`,
 
 | id | name | voice | language |
 |---|---|---|---|
-| `softie` (default) | Lotte | Endlessly encouraging and patient; celebrates small wins. | English + German examples |
+| `softie` (default) | Lotte | Warm and patient; at most one short encouraging phrase, then the answer. Uses "du". | Simple German (A2–B1) only |
 | `strict` | Frau Streng | Demanding and precise, no small talk; corrects every German mistake and asks for a retry. | Simple German (A2–B1) only |
 | `british` | Nigel | Cheerfully annoying Brit: bad puns, tea, "right then!". Grammar still correct under the jokes. | English + German examples |
 
