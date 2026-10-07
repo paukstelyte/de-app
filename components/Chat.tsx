@@ -1,20 +1,24 @@
 "use client";
 
 import { useEffect, useRef, useState, useTransition, type KeyboardEvent } from "react";
-import { sendChatMessage } from "@/app/chat/actions";
-import { CHAT_ERRORS, DEFAULT_PERSONA_ID, MAX_CHARS, PERSONAS, personaName, type ChatMessage } from "@/lib/chat";
+import { clearChat, sendChatMessage } from "@/app/chat/actions";
+import { CHAT_ERRORS, DEFAULT_PERSONA_ID, MAX_CHARS, PERSONAS, findPersona, personaName, type ChatMessage } from "@/lib/chat";
 
 const pillPrimary =
   "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
 const pillSecondary =
   "inline-flex items-center rounded-full border border-[var(--line)] px-4 py-2 text-sm font-medium transition-colors hover:bg-black/5 disabled:opacity-50 dark:hover:bg-white/10";
 
-export function Chat() {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [personaId, setPersonaId] = useState(DEFAULT_PERSONA_ID);
+export function Chat({ initialMessages }: { initialMessages: ChatMessage[] }) {
+  const [messages, setMessages] = useState<ChatMessage[]>(initialMessages);
+  // Carry on with whichever tutor replied last.
+  const [personaId, setPersonaId] = useState(
+    () => findPersona(initialMessages.findLast((m) => m.role === "assistant")?.persona)?.id ?? DEFAULT_PERSONA_ID,
+  );
   const [input, setInput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+  const [isClearing, startClearing] = useTransition();
   const busy = useRef(false); // blocks a second Enter before React re-renders
   const listRef = useRef<HTMLDivElement>(null);
 
@@ -76,10 +80,14 @@ export function Chat() {
         <button
           type="button"
           className={pillSecondary}
-          disabled={isPending || messages.length === 0}
+          disabled={isPending || isClearing || messages.length === 0}
           onClick={() => {
-            setMessages([]);
             setError(null);
+            startClearing(async () => {
+              const result = await clearChat().catch(() => ({ error: CHAT_ERRORS.generic }));
+              if (result.error) setError(result.error);
+              else setMessages([]);
+            });
           }}
         >
           New chat

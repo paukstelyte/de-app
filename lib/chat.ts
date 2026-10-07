@@ -72,6 +72,17 @@ export function toModelMessages(systemPrompt: string, personaId: string, history
   ];
 }
 
+/** Saved chat_messages rows (oldest first) back into chat messages. */
+export function rowsToMessages(
+  rows: { role: string; content: string; persona: string | null }[] | null,
+): ChatMessage[] {
+  return (rows ?? []).flatMap((r): ChatMessage[] =>
+    (r.role === "user" || r.role === "assistant") && r.content
+      ? [r.persona ? { role: r.role, content: r.content, persona: r.persona } : { role: r.role, content: r.content }]
+      : [],
+  );
+}
+
 /** The reply text from an OpenRouter chat completion, or null if there is none. */
 export function extractReply(data: unknown): string | null {
   const content = (data as { choices?: { message?: { content?: unknown } }[] } | null)?.choices?.[0]?.message?.content;

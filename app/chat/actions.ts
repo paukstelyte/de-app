@@ -58,10 +58,35 @@ export async function sendChatMessage(personaId: string, messages: unknown): Pro
       return { error: errorForStatus(res.status) };
     }
     const reply = extractReply(await res.json());
-    if (!reply) console.error("OpenRouter returned no reply text");
-    return reply ? { reply } : { error: CHAT_ERRORS.generic };
+    if (!reply) {
+      console.error("OpenRouter returned no reply text");
+      return { error: CHAT_ERRORS.generic };
+    }
+    // Save the turn so the conversation survives a reload. A failed save is
+    // logged but doesn't cost the user their reply.
+    const { error: saveError } = await supabase.rpc("save_chat_turn", {
+      user_text: history.at(-1)!.content,
+      reply,
+      persona: persona.id,
+    });
+    if (saveError) console.error("save_chat_turn failed:", saveError.message);
+    return { reply };
   } catch (err) {
     console.error("OpenRouter request failed:", err instanceof Error ? err.message : err);
     return { error: CHAT_ERRORS.generic };
   }
+}
+
+/** "New chat": deletes the caller's saved conversation (RLS limits it to their rows). */
+export async function clearChat(): Promise<{ error?: string }> {
+  const supabase = await createClient();
+  const { data } = await supabase.auth.getClaims();
+  if (!data?.claims) return { error: CHAT_ERRORS.loggedOut };
+
+  const { error } = await supabase.from("chat_messages").delete().eq("user_id", data.claims.sub);
+  if (error) {
+    console.error("clearChat failed:", error.message);
+    return { error: CHAT_ERRORS.generic };
+  }
+  return {};
 }

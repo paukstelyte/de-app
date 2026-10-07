@@ -42,6 +42,11 @@ export default function PrivacyPage() {
             &ldquo;Practise my mistakes&rdquo; list.
           </li>
           <li>
+            <strong>Your current chat conversation</strong> on the Chat page (your messages, the
+            tutor&apos;s replies and which tutor answered), so it is still there after a reload. At
+            most the latest 100 messages are kept, and &ldquo;New chat&rdquo; deletes it.
+          </li>
+          <li>
             <strong>Login cookies</strong> that keep you signed in. There are no analytics,
             advertising or tracking cookies.
           </li>
@@ -69,7 +74,7 @@ export default function PrivacyPage() {
           <li>
             <strong>OpenRouter</strong>: if you use the Chat page, your messages are sent through
             OpenRouter to the AI model&apos;s provider to generate a reply. Don&apos;t share personal
-            details there. We don&apos;t store your chat messages.
+            details there.
           </li>
         </ul>
       </Section>
@@ -78,7 +83,7 @@ export default function PrivacyPage() {
         <p>
           Your data is kept for as long as you have an account. You can delete your account at any
           time on the <Link href="/account" className="underline underline-offset-2">Account</Link>{" "}
-          page: this immediately and permanently removes your account and every answer you saved.
+          page: this immediately and permanently removes your account, every answer you saved and your chat conversation.
         </p>
       </Section>
 

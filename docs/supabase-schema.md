@@ -48,6 +48,23 @@ One row per message a logged-in user sends in the AI chat (`/chat`). It's used o
 - The only way in is `public.use_chat_quota()` (`security definer`, executable by `authenticated` only). It takes an advisory lock, raises `P0001` ("Chat limit reached") when the caller already has **10 rows in the last minute or 25 in the last 24 hours**, or the whole app has **45 in the last 24 hours** (OpenRouter's free tier allows 50 per day for the account), and otherwise inserts one row for `auth.uid()`.
 - Chat messages themselves are never stored.
 
+## `public.chat_messages`
+
+Each user's current AI chat conversation, so it survives a page reload. Migration: `20261007140000_create_chat_messages.sql`. The browser still sends the conversation with every message (the model's memory); this table only restores it after a reload.
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | `bigint` identity | Primary key; also the display order |
+| `user_id` | `uuid` | Defaults to `auth.uid()`; references `auth.users` **on delete cascade** |
+| `role` | `text` | `user` or `assistant` (check constraint) |
+| `content` | `text` | 1–8,000 characters |
+| `persona` | `text` | Tutor id for assistant replies (e.g. `softie`), null for the user's messages |
+| `created_at` | `timestamptz` | Defaults to `now()` |
+
+- RLS on. `authenticated` may **select** and **delete** its own rows only (policies on `auth.uid()`); no insert or update privileges, and nothing for `anon`.
+- Rows are added only by `public.save_chat_turn(user_text, reply, persona)` (`security definer`, `search_path = ''`, executable by `authenticated` only), called by the chat server action after each reply. It inserts the question and reply for `auth.uid()` and then deletes all but that user's **newest 100** rows, so storage stays bounded even if someone calls it directly.
+- "New chat" (`clearChat` in `app/chat/actions.ts`) deletes the user's rows; deleting the account cascades.
+
 ## Rules for every new table
 
 1. `alter table … enable row level security;` plus policies written `to authenticated`.
