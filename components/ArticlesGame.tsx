@@ -119,25 +119,24 @@ export function ArticlesGame({
           </ul>
         </div>
 
-        <div className="flex flex-col items-start gap-3 border-t border-[var(--line)] pt-4 text-sm">
-          {!loggedIn ? (
-            <p className="text-zinc-600 dark:text-zinc-400">
-              <Link href="/login?next=/articles" className={sideLink}>Log in</Link> to track your
-              progress and practise the words you get wrong.
-            </p>
-          ) : mistakesOnly ? (
-            <a href="/articles" className={sideLink}>← Back to normal practice</a>
-          ) : (
-            <>
-              {troubleIds && troubleIds.length > 0 && (
-                <a href="/articles?mode=mistakes" className={sideLink}>
-                  Practise my mistakes ({troubleIds.length})
-                </a>
-              )}
-              <Link href="/progress" className={sideLink}>Your progress →</Link>
-            </>
-          )}
-        </div>
+        {/* "Your progress" lives in the top nav for logged-in users, so the only
+            link here is the mistakes round; the section is left out when empty. */}
+        {(!loggedIn || mistakesOnly || (troubleIds?.length ?? 0) > 0) && (
+          <div className="flex flex-col items-start gap-3 border-t border-[var(--line)] pt-4 text-sm">
+            {!loggedIn ? (
+              <p className="text-zinc-600 dark:text-zinc-400">
+                <Link href="/login?next=/articles" className={sideLink}>Log in</Link> to track your
+                progress and practise the words you get wrong.
+              </p>
+            ) : mistakesOnly ? (
+              <a href="/articles" className={sideLink}>← Back to normal practice</a>
+            ) : (
+              <a href="/articles?mode=mistakes" className={sideLink}>
+                Practise my mistakes ({troubleIds!.length})
+              </a>
+            )}
+          </div>
+        )}
       </aside>
 
       <div className="flex flex-col gap-4">
