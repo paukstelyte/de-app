@@ -9,10 +9,13 @@ import {
   findPersona,
   pickModel,
   toModelMessages,
+  type ChatMessage,
   type ChatResult,
 } from "@/lib/chat";
 import { DEFAULT_MODEL, getChatModels } from "@/lib/chat-models";
 import { systemPromptFor } from "@/lib/chat-prompts";
+import { embed } from "@/lib/embeddings";
+import { MATCH_COUNT, MATCH_THRESHOLD, notesContext, retrievalQuery, type Match } from "@/lib/rag";
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
@@ -48,6 +51,11 @@ export async function sendChatMessage(personaId: string, modelId: unknown, messa
     return { error: CHAT_ERRORS.generic };
   }
 
+  // RAG: search this user's own notes for what's relevant and hand it to the
+  // tutor for this reply only (it isn't added to the saved conversation).
+  const notes = await notesContextFor(supabase, data.claims.sub, history);
+  const systemPrompt = notes ? `${systemPromptFor(persona.id)!}\n\n${notes}` : systemPromptFor(persona.id)!;
+
   try {
     const res = await fetch(OPENROUTER_URL, {
       method: "POST",
@@ -58,7 +66,7 @@ export async function sendChatMessage(personaId: string, modelId: unknown, messa
       },
       body: JSON.stringify({
         model,
-        messages: toModelMessages(systemPromptFor(persona.id)!, persona.id, history),
+        messages: toModelMessages(systemPrompt, persona.id, history),
         // Models that think by default get the lightest effort, or they can spend
         // the whole budget thinking and return empty text. Others get nothing:
         // asking switches their thinking on and makes them much slower.
@@ -89,6 +97,39 @@ export async function sendChatMessage(personaId: string, modelId: unknown, messa
     console.error("OpenRouter request failed:", err instanceof Error ? err.message : err);
     return { error: CHAT_ERRORS.generic };
   }
+}
+
+type Supabase = Awaited<ReturnType<typeof createClient>>;
+
+/** Searches only the logged-in user's notes for chunks relevant to the
+ * conversation and turns them into extra tutor instructions. Everything here
+ * runs on the server: the question's embedding and the chunks never reach the
+ * browser. Returns null if the search can't run, so the chat still answers. */
+async function notesContextFor(supabase: Supabase, userId: string, history: ChatMessage[]): Promise<string | null> {
+  const [queryEmbedding] = (await embed([retrievalQuery(history)])) ?? [];
+  if (!queryEmbedding) return null;
+
+  // userId comes from the login on the server, never from the browser; RLS
+  // also limits match_documents to the caller's own rows.
+  const { data: matches, error } = await supabase.rpc("match_documents", {
+    query_embedding: JSON.stringify(queryEmbedding),
+    match_threshold: MATCH_THRESHOLD,
+    match_count: MATCH_COUNT,
+    p_user_id: userId,
+  });
+  if (error) {
+    console.error("match_documents failed:", error.message);
+    return null;
+  }
+
+  const rows = (matches ?? []) as Match[];
+  const noteIds = [...new Set(rows.map((r) => r.note_id))];
+  let titles: Record<number, string> = {};
+  if (noteIds.length > 0) {
+    const { data: found } = await supabase.from("notes").select("id, title").in("id", noteIds);
+    titles = Object.fromEntries((found ?? []).map((n) => [n.id, n.title]));
+  }
+  return notesContext(rows, titles);
 }
 
 /** "New chat": deletes the caller's saved conversation (RLS limits it to their rows). */
