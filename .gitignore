@@ -47,3 +47,5 @@ next-env.d.ts
 # Goethe word lists (copyrighted; re-download via URLs in scripts/levels/assign-levels.mjs)
 scripts/levels/*.pdf
 scripts/levels/*.txt
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
