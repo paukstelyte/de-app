@@ -1,26 +1,72 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition, type KeyboardEvent } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, useTransition, type KeyboardEvent } from "react";
 import { clearChat, sendChatMessage } from "@/app/chat/actions";
-import { CHAT_ERRORS, DEFAULT_PERSONA_ID, MAX_CHARS, PERSONAS, findPersona, personaName, type ChatMessage } from "@/lib/chat";
+import {
+  CHAT_ERRORS,
+  DEFAULT_PERSONA_ID,
+  MAX_CHARS,
+  PERSONAS,
+  findPersona,
+  personaName,
+  type ChatMessage,
+  type ChatModel,
+} from "@/lib/chat";
+
+const MODEL_STORAGE_KEY = "de-app:chat-model";
+
+// The model choice is a per-browser preference in localStorage. Storage can be
+// blocked (private windows, previews), so every access is guarded; the server
+// render and a failed read both fall back to the default model.
+function readStoredModel(): string | null {
+  try {
+    return localStorage.getItem(MODEL_STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+function subscribeToStorage(onChange: () => void) {
+  window.addEventListener("storage", onChange); // another tab changed it
+  return () => window.removeEventListener("storage", onChange);
+}
 
 const pillPrimary =
   "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
 const pillSecondary =
   "inline-flex items-center rounded-full border border-[var(--line)] px-4 py-2 text-sm font-medium transition-colors hover:bg-black/5 disabled:opacity-50 dark:hover:bg-white/10";
 
-export function Chat({ initialMessages }: { initialMessages: ChatMessage[] }) {
+export function Chat({
+  initialMessages,
+  models,
+  defaultModel,
+}: {
+  initialMessages: ChatMessage[];
+  models: ChatModel[];
+  defaultModel: string;
+}) {
   const [messages, setMessages] = useState<ChatMessage[]>(initialMessages);
   // Carry on with whichever tutor replied last.
   const [personaId, setPersonaId] = useState(
     () => findPersona(initialMessages.findLast((m) => m.role === "assistant")?.persona)?.id ?? DEFAULT_PERSONA_ID,
   );
+  const storedModel = useSyncExternalStore(subscribeToStorage, readStoredModel, () => null);
+  const [pickedModel, setPickedModel] = useState<string | null>(null);
+  // Only a model that's in the current list counts; otherwise the default.
+  const modelId =
+    [pickedModel, storedModel].find((id) => id && models.some((m) => m.id === id)) ?? defaultModel;
   const [input, setInput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
   const [isClearing, startClearing] = useTransition();
   const busy = useRef(false); // blocks a second Enter before React re-renders
   const listRef = useRef<HTMLDivElement>(null);
+
+  function chooseModel(id: string) {
+    setPickedModel(id);
+    try {
+      localStorage.setItem(MODEL_STORAGE_KEY, id);
+    } catch {}
+  }
 
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight });
@@ -37,7 +83,7 @@ export function Chat({ initialMessages }: { initialMessages: ChatMessage[] }) {
     setInput("");
     setError(null);
     startTransition(async () => {
-      const result = await sendChatMessage(personaId, history).catch(() => ({ error: CHAT_ERRORS.generic }));
+      const result = await sendChatMessage(personaId, modelId, history).catch(() => ({ error: CHAT_ERRORS.generic }));
       if ("reply" in result) {
         setMessages([...history, { role: "assistant", content: result.reply, persona: personaId }]);
       } else {
@@ -63,6 +109,7 @@ export function Chat({ initialMessages }: { initialMessages: ChatMessage[] }) {
   return (
     <div className="flex min-h-0 flex-1 flex-col border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] p-4">
+        <div className="flex flex-wrap items-center gap-3">
         <label className="flex items-center gap-2 text-sm font-medium">
           Tutor
           <select
@@ -77,6 +124,22 @@ export function Chat({ initialMessages }: { initialMessages: ChatMessage[] }) {
             ))}
           </select>
         </label>
+        <label className="flex items-center gap-2 text-sm font-medium">
+          Model
+          <select
+            value={modelId}
+            onChange={(e) => chooseModel(e.target.value)}
+            className="max-w-[16rem] rounded-full border border-[var(--line)] bg-[var(--paper)] px-3 py-1.5 text-sm"
+          >
+            {models.length === 0 && <option value={defaultModel}>{defaultModel}</option>}
+            {models.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.name} · {m.tier}
+              </option>
+            ))}
+          </select>
+        </label>
+        </div>
         <button
           type="button"
           className={pillSecondary}

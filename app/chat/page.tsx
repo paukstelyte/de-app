@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Chat } from "@/components/Chat";
 import { rowsToMessages } from "@/lib/chat";
+import { DEFAULT_MODEL, getChatModels } from "@/lib/chat-models";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Chat" };
@@ -31,7 +32,7 @@ export default async function ChatPage() {
           <Link href="/rules" className="underline underline-offset-2">Rules</Link> page.
         </p>
       </div>
-      <Chat initialMessages={rowsToMessages(rows)} />
+      <Chat initialMessages={rowsToMessages(rows)} models={await getChatModels()} defaultModel={DEFAULT_MODEL} />
     </div>
   );
 }
