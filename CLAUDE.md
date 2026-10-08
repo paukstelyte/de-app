@@ -42,6 +42,14 @@ The app runs locally at `localhost:3000`. Do not swap any part of this stack.
 * Logged-in users' answers persist in Supabase; guest progress persists in LocalStorage.
 * No blank screens: show a readable empty-state message when there is no data yet, and a friendly "not found" message for a route/address that doesn't exist.
 
+AI model calls:
+- All model calls must happen server-side only. Never call the OpenRouter API
+  from browser code.
+- OPENROUTER_API_KEY lives in .env.local and must never be exposed to the
+  browser (no NEXT_PUBLIC_ prefix, no passing it to client components).
+
+Report what you find. If anything looks wrong, fix it.
+
 ## Flashcard Game Interaction Requirements
 
 * Layout is responsive: sidebar + game panel on desktop, stacked on mobile.
