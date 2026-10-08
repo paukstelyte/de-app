@@ -47,6 +47,12 @@ export default function PrivacyPage() {
             most the latest 100 messages are kept, and &ldquo;New chat&rdquo; deletes it.
           </li>
           <li>
+            <strong>Your notes</strong> from the Notes page: the title and text you write, plus the
+            note split into small pieces with a list of numbers for each (an
+            &ldquo;embedding&rdquo;) so the chat can search your notes by meaning. Deleting a note
+            deletes its pieces too.
+          </li>
+          <li>
             <strong>Login cookies</strong> that keep you signed in. There are no analytics,
             advertising or tracking cookies.
           </li>
@@ -73,8 +79,9 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>OpenRouter</strong>: if you use the Chat page, your messages are sent through
-            OpenRouter to the AI model&apos;s provider to generate a reply. Don&apos;t share personal
-            details there.
+            OpenRouter to the AI model&apos;s provider to generate a reply. When you save a note, its
+            text is sent through OpenRouter to OpenAI to create its embeddings. Don&apos;t share
+            personal details in chats or notes.
           </li>
         </ul>
       </Section>
@@ -83,7 +90,7 @@ export default function PrivacyPage() {
         <p>
           Your data is kept for as long as you have an account. You can delete your account at any
           time on the <Link href="/account" className="underline underline-offset-2">Account</Link>{" "}
-          page: this immediately and permanently removes your account, every answer you saved and your chat conversation.
+          page: this immediately and permanently removes your account, every answer you saved, your chat conversation and your notes.
         </p>
       </Section>
 
