@@ -65,6 +65,43 @@ Each user's current AI chat conversation, so it survives a page reload. Migratio
 - Rows are added only by `public.save_chat_turn(user_text, reply, persona)` (`security definer`, `search_path = ''`, executable by `authenticated` only), called by the chat server action after each reply. It inserts the question and reply for `auth.uid()` and then deletes all but that user's **newest 100** rows, so storage stays bounded even if someone calls it directly.
 - "New chat" (`clearChat` in `app/chat/actions.ts`) deletes the user's rows; deleting the account cascades.
 
+## `public.notes` and `public.documents` (vector store for RAG)
+
+Users' study notes, and the same notes split into chunks with an **embedding** each, so the chat can look up the most relevant pieces by meaning. Migration: `20261008100000_create_vector_store.sql`. Follows Supabase's "Vector columns" and "Semantic search" guides. The `vector` extension (pgvector) lives in the `extensions` schema.
+
+`public.notes`
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | `bigint` identity | Primary key; `unique (id, user_id)` so chunks can reference note and owner together |
+| `user_id` | `uuid` | Defaults to `auth.uid()`; references `auth.users` **on delete cascade** |
+| `title` | `text` | 1–200 characters |
+| `content` | `text` | 1–20,000 characters |
+| `created_at` | `timestamptz` | Defaults to `now()` |
+
+`public.documents` (one row per chunk)
+
+| Column | Type | Notes |
+|---|---|---|
+| `id` | `bigint` identity | Primary key |
+| `user_id` | `uuid` | Defaults to `auth.uid()`; references `auth.users` **on delete cascade** |
+| `note_id` | `bigint` | With `user_id`, references `notes (id, user_id)` **on delete cascade**: deleting a note deletes its chunks, and a chunk can't point at someone else's note |
+| `content` | `text` | The chunk text, 1–8,000 characters |
+| `embedding` | `extensions.vector(1536)` | From `openai/text-embedding-3-small` via OpenRouter. **Never change the dimension or the model** without dropping and re-embedding everything (CLAUDE.md) |
+| `created_at` | `timestamptz` | Defaults to `now()` |
+
+Indexes: `user_id` and `note_id` on chunks, and an **HNSW** index on `embedding` with `vector_ip_ops` (inner product: OpenAI embeddings are normalized, and the Supabase guide recommends `<#>` as fastest for them).
+
+Access:
+- RLS on both tables; all policies are `to authenticated` and on `auth.uid() = user_id`. Notes: read, add, edit, delete own. Chunks: read, add, delete own; no update, because a changed note is re-chunked (delete + insert).
+- `anon` has no privileges on either table.
+
+`public.match_documents(query_embedding vector(1536), match_threshold float, match_count int, p_user_id uuid)` returns `(id, note_id, content, similarity)`:
+- Returns `p_user_id`'s chunks whose similarity is above `match_threshold`, most similar first, at most `least(match_count, 200)`. `similarity` is cosine similarity (−1 to 1; 1 = same meaning); start with a threshold around 0.3–0.5.
+- **Security invoker** (runs with the caller's rights) and `search_path = ''`, so RLS still applies inside: passing another user's id returns nothing. Executable by `authenticated` only.
+
+Tested on 2026-10-08 (rolled back): search order, threshold and count; another user sees 0 notes, 0 chunks and 0 search results even when passing the owner's id; deleting a note removes its chunks; a chunk on someone else's note, a wrong-size embedding and a signed-out call are all refused.
+
 ## Rules for every new table
 
 1. `alter table … enable row level security;` plus policies written `to authenticated`.

@@ -48,6 +48,13 @@ AI model calls:
 - OPENROUTER_API_KEY lives in .env.local and must never be exposed to the
   browser (no NEXT_PUBLIC_ prefix, no passing it to client components).
 
+Embeddings:
+- Use openai/text-embedding-3-small via OpenRouter's embeddings endpoint, using
+  the existing OPENROUTER_API_KEY. All embedding calls happen server-side only.
+- The documents table embedding column is vector(1536) — do not change this dimension.
+- Never change the embedding model after initial setup without dropping and
+  re-embedding all documents. Changing the model breaks retrieval silently.
+
 Report what you find. If anything looks wrong, fix it.
 
 ## Flashcard Game Interaction Requirements
