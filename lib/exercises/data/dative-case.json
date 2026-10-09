@@ -1,0 +1,386 @@
+{
+  "slug": "dative-case",
+  "instructions": "Choose or type the correct dative form to complete each sentence, or put the words in order.",
+  "items": [
+    {
+      "id": "dat-01",
+      "type": "choice",
+      "prompt": "Ich gebe ___ Kind das Buch.",
+      "options": [
+        "dem",
+        "das",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "The person receiving something is the dative object; das Kind becomes dem Kind."
+    },
+    {
+      "id": "dat-02",
+      "type": "choice",
+      "prompt": "Anna schenkt ___ Mutter Blumen.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "Feminine nouns take der in the dative: die Mutter → der Mutter."
+    },
+    {
+      "id": "dat-03",
+      "type": "choice",
+      "prompt": "Tom zeigt ___ Mädchen den Weg.",
+      "options": [
+        "dem",
+        "das",
+        "der",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "Neuter nouns take dem in the dative: das Mädchen → dem Mädchen."
+    },
+    {
+      "id": "dat-04",
+      "type": "order",
+      "words": [
+        "Ich",
+        "gebe",
+        "dem",
+        "Kind",
+        "das",
+        "Buch."
+      ],
+      "answers": [
+        "Ich gebe dem Kind das Buch."
+      ],
+      "translation": "I give the child the book.",
+      "explanation": "The person (dative, dem Kind) usually comes before the thing (accusative, das Buch)."
+    },
+    {
+      "id": "dat-05",
+      "type": "choice",
+      "prompt": "Wir schicken ___ Lehrer eine E-Mail.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "des"
+      ],
+      "answer": "dem",
+      "explanation": "Masculine nouns take dem in the dative: der Lehrer → dem Lehrer."
+    },
+    {
+      "id": "dat-06",
+      "type": "choice",
+      "prompt": "Lena erklärt ___ Kindern die Aufgabe.",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "die"
+      ],
+      "answer": "den",
+      "explanation": "In the dative plural the article is den and the noun usually adds -n: die Kinder → den Kindern."
+    },
+    {
+      "id": "dat-07",
+      "type": "type",
+      "prompt": "Wir schenken ___ Oma ein Buch.",
+      "hint": "(die Oma)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Feminine dative: die Oma → der Oma."
+    },
+    {
+      "id": "dat-08",
+      "type": "choice",
+      "prompt": "Ich helfe ___ Frau.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "helfen always takes the dative, so die Frau → der Frau."
+    },
+    {
+      "id": "dat-09",
+      "type": "choice",
+      "prompt": "Das Buch gehört ___ Mann.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "gehören takes the dative: der Mann → dem Mann."
+    },
+    {
+      "id": "dat-10",
+      "type": "choice",
+      "prompt": "Der Kellner bringt ___ Gast die Speisekarte.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "The guest receives the menu, so he is the dative object: der Gast → dem Gast."
+    },
+    {
+      "id": "dat-11",
+      "type": "type",
+      "prompt": "Der Arzt gibt ___ Patientin ein Rezept.",
+      "hint": "(die Patientin)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "The patient receives the prescription, so she is dative: die Patientin → der Patientin."
+    },
+    {
+      "id": "dat-12",
+      "type": "choice",
+      "prompt": "Tom schenkt ___ Freund ein Buch.",
+      "options": [
+        "einem",
+        "einen",
+        "ein",
+        "einer"
+      ],
+      "answer": "einem",
+      "explanation": "The receiver is dative; masculine ein becomes einem: ein Freund → einem Freund."
+    },
+    {
+      "id": "dat-13",
+      "type": "choice",
+      "prompt": "Sag mal, ___ schenkst du die Blumen?",
+      "options": [
+        "wem",
+        "wen",
+        "wer"
+      ],
+      "answer": "wem",
+      "explanation": "The question asks for the receiver, which is dative: wem (to whom). wen is accusative, wer nominative."
+    },
+    {
+      "id": "dat-14",
+      "type": "order",
+      "words": [
+        "Tom",
+        "wohnt",
+        "bei",
+        "seinen",
+        "Großeltern."
+      ],
+      "answers": [
+        "Tom wohnt bei seinen Großeltern."
+      ],
+      "translation": "Tom lives with his grandparents.",
+      "explanation": "bei takes the dative; plural possessives end in -en (seinen) and the noun adds -n (Großeltern)."
+    },
+    {
+      "id": "dat-15",
+      "type": "choice",
+      "prompt": "Ich erkläre ___ Kollegin das Problem.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "The colleague is the person you explain something to, so she is dative: die Kollegin → der Kollegin."
+    },
+    {
+      "id": "dat-16",
+      "type": "type",
+      "prompt": "Ich wohne bei ___ Freund.",
+      "hint": "(mein Freund)",
+      "answers": [
+        "meinem"
+      ],
+      "explanation": "Possessives take the same endings as ein-: dative masculine -em, so mein → meinem."
+    },
+    {
+      "id": "dat-17",
+      "type": "choice",
+      "prompt": "Ich gebe ___ Bruder das Geld.",
+      "options": [
+        "meinem",
+        "meinen",
+        "mein",
+        "meiner"
+      ],
+      "answer": "meinem",
+      "explanation": "Dative masculine/neuter possessive ends in -em: mein Bruder → meinem Bruder."
+    },
+    {
+      "id": "dat-18",
+      "type": "choice",
+      "prompt": "Der Salat schmeckt ___ Gästen gut.",
+      "options": [
+        "den",
+        "dem",
+        "die",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "schmecken takes the dative; plural die Gäste → den Gästen (+ n)."
+    },
+    {
+      "id": "dat-19",
+      "type": "order",
+      "words": [
+        "Anna",
+        "schenkt",
+        "ihrer",
+        "Mutter",
+        "Blumen."
+      ],
+      "answers": [
+        "Anna schenkt ihrer Mutter Blumen."
+      ],
+      "translation": "Anna gives her mother flowers.",
+      "explanation": "The dative (ihrer Mutter, feminine -er) comes before the accusative (Blumen) here."
+    },
+    {
+      "id": "dat-20",
+      "type": "type",
+      "prompt": "Der Lehrer hilft ___ Schülern.",
+      "hint": "(die Schüler)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "helfen takes the dative; dative plural: die Schüler → den Schülern."
+    },
+    {
+      "id": "dat-21",
+      "type": "choice",
+      "prompt": "Wie geht es ___ Oma?",
+      "options": [
+        "deiner",
+        "deine",
+        "deinem",
+        "deinen"
+      ],
+      "answer": "deiner",
+      "explanation": "In Wie geht es …? the person is dative; feminine possessive in the dative ends in -er: deine Oma → deiner Oma."
+    },
+    {
+      "id": "dat-22",
+      "type": "choice",
+      "prompt": "Er kommt aus ___ Schweiz.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "aus always takes the dative; die Schweiz → aus der Schweiz."
+    },
+    {
+      "id": "dat-23",
+      "type": "choice",
+      "prompt": "Seit ___ Woche regnet es.",
+      "options": [
+        "einer",
+        "eine",
+        "einem",
+        "einen"
+      ],
+      "answer": "einer",
+      "explanation": "seit takes the dative; feminine ein- ends in -er: eine Woche → einer Woche."
+    },
+    {
+      "id": "dat-24",
+      "type": "choice",
+      "prompt": "Wir danken ___ Freundin für die Einladung.",
+      "options": [
+        "unserer",
+        "unsere",
+        "unserem",
+        "unseren"
+      ],
+      "answer": "unserer",
+      "explanation": "danken takes the dative; feminine possessive in the dative ends in -er: unsere → unserer."
+    },
+    {
+      "id": "dat-25",
+      "type": "type",
+      "prompt": "Der Mantel gehört ___ Frau.",
+      "hint": "(eine Frau)",
+      "answers": [
+        "einer"
+      ],
+      "explanation": "gehören takes the dative; feminine ein- ends in -er: eine → einer."
+    },
+    {
+      "id": "dat-26",
+      "type": "choice",
+      "prompt": "Ich kaufe ___ Schwester ein Geschenk.",
+      "options": [
+        "meiner",
+        "meine",
+        "meinen",
+        "meinem"
+      ],
+      "answer": "meiner",
+      "explanation": "The receiver of the gift is dative; feminine possessive: meine → meiner."
+    },
+    {
+      "id": "dat-27",
+      "type": "order",
+      "words": [
+        "Wem",
+        "gehört",
+        "das",
+        "Fahrrad?"
+      ],
+      "answers": [
+        "Wem gehört das Fahrrad?"
+      ],
+      "translation": "Whose bike is this?",
+      "explanation": "wem is the dative of wer (to whom?); gehören takes the dative."
+    },
+    {
+      "id": "dat-28",
+      "type": "type",
+      "prompt": "Ich gebe ___ Lehrerin das Heft.",
+      "hint": "(unsere Lehrerin)",
+      "answers": [
+        "unserer"
+      ],
+      "explanation": "The receiver is dative; feminine possessive: unsere → unserer."
+    },
+    {
+      "id": "dat-29",
+      "type": "type",
+      "prompt": "Sie hilft den ___ im Garten.",
+      "hint": "(Nachbar, Plural)",
+      "answers": [
+        "Nachbarn"
+      ],
+      "explanation": "Dative plural nouns end in -n; Nachbarn already ends in -n, so it stays the same: den Nachbarn."
+    },
+    {
+      "id": "dat-30",
+      "type": "choice",
+      "prompt": "Ich rufe ___ Mann an.",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "das"
+      ],
+      "answer": "den",
+      "explanation": "anrufen takes the accusative, not the dative, so der Mann → den Mann."
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "slug": "prepositions-accusative",
+  "instructions": "Choose or type the correct word or form after durch, für, gegen, ohne and um.",
+  "items": [
+    {
+      "id": "prep-acc-01",
+      "type": "choice",
+      "prompt": "Das Geschenk ist ___ dich.",
+      "options": [
+        "für",
+        "mit",
+        "von",
+        "bei"
+      ],
+      "answer": "für",
+      "explanation": "für always takes the accusative: du becomes dich."
+    },
+    {
+      "id": "prep-acc-02",
+      "type": "choice",
+      "prompt": "Wir gehen ___ den Park.",
+      "options": [
+        "durch",
+        "mit",
+        "aus",
+        "bei"
+      ],
+      "answer": "durch",
+      "explanation": "durch means through and always takes the accusative: durch den Park."
+    },
+    {
+      "id": "prep-acc-03",
+      "type": "choice",
+      "prompt": "Ich mag keinen Zucker. Ich trinke Kaffee ___ Zucker.",
+      "options": [
+        "ohne",
+        "mit",
+        "für"
+      ],
+      "answer": "ohne",
+      "explanation": "The first sentence rules out mit: ohne means without and takes the accusative (here Zucker has no article)."
+    },
+    {
+      "id": "prep-acc-04",
+      "type": "choice",
+      "prompt": "Der Film beginnt ___ acht Uhr.",
+      "options": [
+        "um",
+        "an",
+        "in",
+        "bei"
+      ],
+      "answer": "um",
+      "explanation": "Clock times use um: um acht Uhr. um always takes the accusative."
+    },
+    {
+      "id": "prep-acc-05",
+      "type": "choice",
+      "prompt": "Das Buch ist für ___ Vater.",
+      "options": [
+        "meinen",
+        "meinem",
+        "meiner",
+        "mein"
+      ],
+      "answer": "meinen",
+      "explanation": "für takes the accusative, so masculine mein becomes meinen."
+    },
+    {
+      "id": "prep-acc-06",
+      "type": "choice",
+      "prompt": "Kommst du heute ohne ___ Hund?",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "answer": "den",
+      "explanation": "ohne takes the accusative; masculine der Hund becomes den Hund."
+    },
+    {
+      "id": "prep-acc-07",
+      "type": "choice",
+      "prompt": "Die Katze springt durch ___ Fenster.",
+      "options": [
+        "das",
+        "dem",
+        "der",
+        "den"
+      ],
+      "answer": "das",
+      "explanation": "durch takes the accusative; neuter das stays das in the accusative."
+    },
+    {
+      "id": "prep-acc-08",
+      "type": "choice",
+      "prompt": "Der Bus fährt um ___ Ecke.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "um takes the accusative; feminine die Ecke stays die."
+    },
+    {
+      "id": "prep-acc-09",
+      "type": "choice",
+      "prompt": "Das Paket ist für ___ Kinder.",
+      "options": [
+        "die",
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "die",
+      "explanation": "für takes the accusative, and the plural article in the accusative is die."
+    },
+    {
+      "id": "prep-acc-10",
+      "type": "choice",
+      "prompt": "Das ist ein Geschenk für ___.",
+      "options": [
+        "mich",
+        "mir",
+        "ich",
+        "mein"
+      ],
+      "answer": "mich",
+      "explanation": "After für the pronoun is accusative: ich becomes mich."
+    },
+    {
+      "id": "prep-acc-11",
+      "type": "choice",
+      "prompt": "Wir gehen heute ohne ___ ins Kino.",
+      "options": [
+        "ihn",
+        "ihm",
+        "er",
+        "sein"
+      ],
+      "answer": "ihn",
+      "explanation": "ohne takes the accusative: er becomes ihn."
+    },
+    {
+      "id": "prep-acc-12",
+      "type": "choice",
+      "prompt": "Tom spielt heute gegen ___.",
+      "options": [
+        "uns",
+        "wir",
+        "unser",
+        "unsere"
+      ],
+      "answer": "uns",
+      "explanation": "gegen takes the accusative; the accusative of wir is uns."
+    },
+    {
+      "id": "prep-acc-13",
+      "type": "choice",
+      "prompt": "Kannst du das ohne ___ Brille lesen?",
+      "options": [
+        "deine",
+        "deiner",
+        "deinem",
+        "deinen"
+      ],
+      "answer": "deine",
+      "explanation": "ohne takes the accusative; feminine die Brille gives deine Brille."
+    },
+    {
+      "id": "prep-acc-14",
+      "type": "choice",
+      "prompt": "Anna geht nie ohne ___ Jacke aus dem Haus.",
+      "options": [
+        "ihre",
+        "ihrer",
+        "ihrem",
+        "ihren"
+      ],
+      "answer": "ihre",
+      "explanation": "ohne takes the accusative; feminine die Jacke gives ihre Jacke."
+    },
+    {
+      "id": "prep-acc-15",
+      "type": "choice",
+      "prompt": "Das Auto fährt gegen ___ Wand.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "gegen takes the accusative; feminine die Wand stays die."
+    },
+    {
+      "id": "prep-acc-16",
+      "type": "choice",
+      "prompt": "Ich fahre jeden Tag durch ___ Stadt.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "durch takes the accusative; feminine die Stadt stays die."
+    },
+    {
+      "id": "prep-acc-17",
+      "type": "choice",
+      "prompt": "Er kauft Blumen für ___ Mutter.",
+      "options": [
+        "seine",
+        "seiner",
+        "seinem",
+        "seinen"
+      ],
+      "answer": "seine",
+      "explanation": "für takes the accusative; feminine Mutter needs seine (not the dative seiner)."
+    },
+    {
+      "id": "prep-acc-18",
+      "type": "choice",
+      "prompt": "Ich bin gegen ___ Idee.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "gegen is always followed by the accusative: die Idee."
+    },
+    {
+      "id": "prep-acc-19",
+      "type": "type",
+      "prompt": "Wir kaufen ein Geschenk für ___ Opa.",
+      "hint": "(unser)",
+      "answers": [
+        "unseren"
+      ],
+      "explanation": "für takes the accusative; masculine unser becomes unseren: für unseren Opa."
+    },
+    {
+      "id": "prep-acc-20",
+      "type": "type",
+      "prompt": "Sie kommt ohne ___ Kinder.",
+      "hint": "(ihr)",
+      "answers": [
+        "ihre"
+      ],
+      "explanation": "ohne takes the accusative; the plural form of ihr in the accusative is ihre."
+    },
+    {
+      "id": "prep-acc-21",
+      "type": "type",
+      "prompt": "Die Kinder laufen um ___ See.",
+      "hint": "(der)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "um takes the accusative; masculine der See becomes den See."
+    },
+    {
+      "id": "prep-acc-22",
+      "type": "type",
+      "prompt": "Hast du ein Mittel gegen ___ Husten?",
+      "hint": "(der Husten)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "gegen takes the accusative; masculine der Husten becomes den Husten."
+    },
+    {
+      "id": "prep-acc-23",
+      "type": "type",
+      "prompt": "Das Eis ist für ___.",
+      "hint": "(du)",
+      "answers": [
+        "dich"
+      ],
+      "explanation": "After für the pronoun is accusative: du becomes dich."
+    },
+    {
+      "id": "prep-acc-24",
+      "type": "type",
+      "prompt": "Ich fahre ___ den Wald nach Hause.",
+      "hint": "(through)",
+      "answers": [
+        "durch"
+      ],
+      "explanation": "durch means through and takes the accusative: durch den Wald."
+    },
+    {
+      "id": "prep-acc-25",
+      "type": "type",
+      "prompt": "Wir fahren ohne ___ in den Urlaub.",
+      "hint": "(sie, plural)",
+      "answers": [
+        "sie"
+      ],
+      "explanation": "ohne takes the accusative; sie (they) has the same form in the nominative and the accusative: ohne sie."
+    },
+    {
+      "id": "prep-acc-26",
+      "type": "order",
+      "words": [
+        "Wir",
+        "fahren",
+        "durch",
+        "den",
+        "Tunnel."
+      ],
+      "answers": [
+        "Wir fahren durch den Tunnel."
+      ],
+      "translation": "We drive through the tunnel.",
+      "explanation": "durch takes the accusative: der Tunnel becomes den Tunnel."
+    },
+    {
+      "id": "prep-acc-27",
+      "type": "order",
+      "words": [
+        "Ist",
+        "das",
+        "Geschenk",
+        "für",
+        "mich?"
+      ],
+      "answers": [
+        "Ist das Geschenk für mich?"
+      ],
+      "translation": "Is the present for me?",
+      "explanation": "für takes the accusative: ich becomes mich."
+    },
+    {
+      "id": "prep-acc-28",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kinder",
+        "sitzen",
+        "um",
+        "den",
+        "Tisch."
+      ],
+      "answers": [
+        "Die Kinder sitzen um den Tisch."
+      ],
+      "translation": "The children are sitting around the table.",
+      "explanation": "um takes the accusative; masculine der Tisch becomes den Tisch."
+    },
+    {
+      "id": "prep-acc-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "glaube,",
+        "dass",
+        "Tom",
+        "gegen",
+        "den",
+        "Plan",
+        "ist."
+      ],
+      "answers": [
+        "Ich glaube, dass Tom gegen den Plan ist."
+      ],
+      "translation": "I think Tom is against the plan.",
+      "explanation": "gegen takes the accusative; masculine der Plan becomes den Plan."
+    },
+    {
+      "id": "prep-acc-30",
+      "type": "order",
+      "words": [
+        "Kommst",
+        "du",
+        "ohne",
+        "deinen",
+        "Bruder?"
+      ],
+      "answers": [
+        "Kommst du ohne deinen Bruder?"
+      ],
+      "translation": "Are you coming without your brother?",
+      "explanation": "ohne takes the accusative; masculine dein becomes deinen."
+    }
+  ]
+}

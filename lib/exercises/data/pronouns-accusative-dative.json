@@ -1,0 +1,352 @@
+{
+  "slug": "pronouns-accusative-dative",
+  "instructions": "Choose or type the correct accusative or dative pronoun, or put the words in order.",
+  "items": [
+    {
+      "id": "pron-01",
+      "type": "choice",
+      "prompt": "Ich sehe ___ im Park.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dich",
+      "explanation": "sehen takes the accusative: du → dich."
+    },
+    {
+      "id": "pron-02",
+      "type": "choice",
+      "prompt": "Kannst du ___ helfen?",
+      "options": [
+        "mich",
+        "mir"
+      ],
+      "answer": "mir",
+      "explanation": "helfen takes the dative: ich → mir."
+    },
+    {
+      "id": "pron-03",
+      "type": "choice",
+      "prompt": "Anna liebt ___ sehr.",
+      "options": [
+        "ihn",
+        "ihm"
+      ],
+      "answer": "ihn",
+      "explanation": "lieben takes the accusative object: er → ihn."
+    },
+    {
+      "id": "pron-04",
+      "type": "choice",
+      "prompt": "Ich schenke ___ ein Buch.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dir",
+      "explanation": "The person receiving the gift is the dative object: du → dir."
+    },
+    {
+      "id": "pron-05",
+      "type": "choice",
+      "prompt": "Der Film gefällt ___ sehr.",
+      "options": [
+        "ihn",
+        "ihm"
+      ],
+      "answer": "ihm",
+      "explanation": "gefallen takes the dative: er → ihm."
+    },
+    {
+      "id": "pron-06",
+      "type": "choice",
+      "prompt": "Tom ruft ___ heute Abend an.",
+      "options": [
+        "sie",
+        "ihr"
+      ],
+      "answer": "sie",
+      "explanation": "anrufen takes the accusative: sie (she) → sie."
+    },
+    {
+      "id": "pron-07",
+      "type": "choice",
+      "prompt": "Ich vermisse ___ sehr.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dich",
+      "explanation": "vermissen takes the accusative: du → dich."
+    },
+    {
+      "id": "pron-08",
+      "type": "choice",
+      "prompt": "Der Kaffee schmeckt ___ gut.",
+      "options": [
+        "mir",
+        "mich"
+      ],
+      "answer": "mir",
+      "explanation": "schmecken takes the dative: ich → mir."
+    },
+    {
+      "id": "pron-09",
+      "type": "choice",
+      "prompt": "Mein Bruder zeigt ___ sein Zimmer.",
+      "options": [
+        "mir",
+        "mich"
+      ],
+      "answer": "mir",
+      "explanation": "The person being shown something is the dative object: ich → mir."
+    },
+    {
+      "id": "pron-10",
+      "type": "choice",
+      "prompt": "Ich danke ___ für die Hilfe.",
+      "options": [
+        "Ihnen",
+        "Sie"
+      ],
+      "answer": "Ihnen",
+      "explanation": "danken takes the dative: formal Sie → Ihnen."
+    },
+    {
+      "id": "pron-11",
+      "type": "choice",
+      "prompt": "Anna versteht die Regel nicht. Die Lehrerin erklärt ___ die Regel noch einmal.",
+      "options": [
+        "ihr",
+        "sie",
+        "ihn"
+      ],
+      "answer": "ihr",
+      "explanation": "Anna is the person something is explained to, so she is the dative object: sie → ihr. sie would be accusative."
+    },
+    {
+      "id": "pron-12",
+      "type": "choice",
+      "prompt": "Frau Weber, wir laden ___ herzlich zu unserer Party ein.",
+      "options": [
+        "Sie",
+        "Ihnen",
+        "Ihr"
+      ],
+      "answer": "Sie",
+      "explanation": "einladen takes the accusative; the formal accusative is Sie. Ihnen is the dative form."
+    },
+    {
+      "id": "pron-13",
+      "type": "choice",
+      "prompt": "Das Buch gehört ___ nicht.",
+      "options": [
+        "ihm",
+        "ihn"
+      ],
+      "answer": "ihm",
+      "explanation": "gehören takes the dative: er → ihm."
+    },
+    {
+      "id": "pron-14",
+      "type": "choice",
+      "prompt": "Der Chef fragt ___ nach dem Bericht.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dich",
+      "explanation": "fragen takes the accusative object (jemanden fragen): du → dich."
+    },
+    {
+      "id": "pron-15",
+      "type": "choice",
+      "prompt": "Ich fahre mit ___ nach Berlin.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dir",
+      "explanation": "mit always takes the dative: du → dir."
+    },
+    {
+      "id": "pron-16",
+      "type": "choice",
+      "prompt": "Ich gehe ohne ___ nach Hause.",
+      "options": [
+        "ihn",
+        "ihm"
+      ],
+      "answer": "ihn",
+      "explanation": "ohne always takes the accusative: er → ihn."
+    },
+    {
+      "id": "pron-17",
+      "type": "choice",
+      "prompt": "Kennst du Lena? Ich treffe ___ morgen.",
+      "options": [
+        "sie",
+        "ihr"
+      ],
+      "answer": "sie",
+      "explanation": "treffen takes the accusative: Lena = sie."
+    },
+    {
+      "id": "pron-18",
+      "type": "choice",
+      "prompt": "Lena hat eine große Wohnung. Tom wohnt bei ___.",
+      "options": [
+        "ihr",
+        "sie"
+      ],
+      "answer": "ihr",
+      "explanation": "bei always takes the dative: Lena = sie → bei ihr."
+    },
+    {
+      "id": "pron-19",
+      "type": "choice",
+      "prompt": "Das Geschenk ist für ___ und für Tom.",
+      "options": [
+        "dich",
+        "dir"
+      ],
+      "answer": "dich",
+      "explanation": "für always takes the accusative: du → dich."
+    },
+    {
+      "id": "pron-20",
+      "type": "choice",
+      "prompt": "Jonas hilft ___ beim Umzug.",
+      "options": [
+        "mir",
+        "mich"
+      ],
+      "answer": "mir",
+      "explanation": "helfen takes the dative: ich → mir."
+    },
+    {
+      "id": "pron-21",
+      "type": "type",
+      "prompt": "Ich gebe ___ das Buch.",
+      "hint": "(du)",
+      "answers": [
+        "dir"
+      ],
+      "explanation": "geben has a dative object for the receiver: du → dir."
+    },
+    {
+      "id": "pron-22",
+      "type": "type",
+      "prompt": "Ich sehe ___ am Bahnhof.",
+      "hint": "(ihr)",
+      "answers": [
+        "euch"
+      ],
+      "explanation": "sehen takes the accusative: ihr → euch."
+    },
+    {
+      "id": "pron-23",
+      "type": "type",
+      "prompt": "Wir rufen ___ morgen an.",
+      "hint": "(er)",
+      "answers": [
+        "ihn"
+      ],
+      "explanation": "anrufen takes the accusative: er → ihn."
+    },
+    {
+      "id": "pron-24",
+      "type": "type",
+      "prompt": "Der Mantel passt ___ gut.",
+      "hint": "(sie, she)",
+      "answers": [
+        "ihr"
+      ],
+      "explanation": "passen takes the dative: sie (she) → ihr."
+    },
+    {
+      "id": "pron-25",
+      "type": "type",
+      "prompt": "Ich bringe ___ einen Kaffee.",
+      "hint": "(Sie, formal)",
+      "answers": [
+        "Ihnen"
+      ],
+      "explanation": "The person receiving the coffee is dative; formal Sie → Ihnen (capitalised)."
+    },
+    {
+      "id": "pron-26",
+      "type": "type",
+      "prompt": "Oma kocht ___ eine Suppe.",
+      "hint": "(ich)",
+      "answers": [
+        "mir"
+      ],
+      "explanation": "The person you cook for is the dative object: ich → mir."
+    },
+    {
+      "id": "pron-27",
+      "type": "order",
+      "words": [
+        "Anna",
+        "gibt",
+        "mir",
+        "das",
+        "Buch."
+      ],
+      "answers": [
+        "Anna gibt mir das Buch."
+      ],
+      "translation": "Anna gives me the book.",
+      "explanation": "The dative pronoun mir (person) usually comes before the accusative noun das Buch (thing)."
+    },
+    {
+      "id": "pron-28",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "bitte",
+        "helfen?"
+      ],
+      "answers": [
+        "Kannst du mir bitte helfen?"
+      ],
+      "translation": "Can you help me, please?",
+      "explanation": "helfen needs the dative: mir, placed before bitte and the infinitive at the end."
+    },
+    {
+      "id": "pron-29",
+      "type": "order",
+      "words": [
+        "Besuchst",
+        "du",
+        "sie",
+        "am",
+        "Samstag?"
+      ],
+      "answers": [
+        "Besuchst du sie am Samstag?"
+      ],
+      "translation": "Are you visiting her on Saturday?",
+      "explanation": "besuchen takes the accusative: sie. A pronoun object comes before the time expression am Samstag."
+    },
+    {
+      "id": "pron-30",
+      "type": "order",
+      "words": [
+        "Wir",
+        "schenken",
+        "ihm",
+        "ein",
+        "Fahrrad."
+      ],
+      "answers": [
+        "Wir schenken ihm ein Fahrrad."
+      ],
+      "translation": "We are giving him a bike.",
+      "explanation": "The receiver is dative (ihm) and comes before the accusative object ein Fahrrad."
+    }
+  ]
+}

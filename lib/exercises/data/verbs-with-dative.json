@@ -1,0 +1,377 @@
+{
+  "slug": "verbs-with-dative",
+  "instructions": "Complete or build each sentence with the correct dative form.",
+  "items": [
+    {
+      "id": "vdat-01",
+      "type": "choice",
+      "prompt": "Das Buch gefällt ___.",
+      "options": [
+        "mir",
+        "mich",
+        "ich"
+      ],
+      "answer": "mir",
+      "explanation": "gefallen takes the dative: the person who likes something is in the dative (ich → mir)."
+    },
+    {
+      "id": "vdat-02",
+      "type": "choice",
+      "prompt": "Anna hilft ___ oft.",
+      "options": [
+        "mir",
+        "mich",
+        "ich"
+      ],
+      "answer": "mir",
+      "explanation": "helfen always takes the dative, never the accusative: ich → mir."
+    },
+    {
+      "id": "vdat-03",
+      "type": "choice",
+      "prompt": "Ich danke ___ für das Geschenk.",
+      "options": [
+        "dir",
+        "dich",
+        "du"
+      ],
+      "answer": "dir",
+      "explanation": "danken takes the dative: du → dir."
+    },
+    {
+      "id": "vdat-04",
+      "type": "choice",
+      "prompt": "Das Fahrrad gehört ___.",
+      "options": [
+        "ihm",
+        "ihn",
+        "er"
+      ],
+      "answer": "ihm",
+      "explanation": "gehören takes the dative: er → ihm."
+    },
+    {
+      "id": "vdat-05",
+      "type": "choice",
+      "prompt": "Die Kinder essen gern Suppe. Die Suppe schmeckt ___ gut.",
+      "options": [
+        "ihnen",
+        "sie",
+        "ihr"
+      ],
+      "answer": "ihnen",
+      "explanation": "schmecken takes the dative; the children are plural, so sie (they) → ihnen. sie is accusative, ihr is singular feminine."
+    },
+    {
+      "id": "vdat-06",
+      "type": "choice",
+      "prompt": "Tom hilft ___ Mann.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "helfen + dative: der Mann → dem Mann."
+    },
+    {
+      "id": "vdat-07",
+      "type": "choice",
+      "prompt": "Die Lehrerin dankt ___ Schülern.",
+      "options": [
+        "den",
+        "die",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "danken + dative; the dative plural article is den, and the noun adds -n: den Schülern."
+    },
+    {
+      "id": "vdat-08",
+      "type": "choice",
+      "prompt": "Der Mantel gefällt ___ Frau.",
+      "options": [
+        "der",
+        "die",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "gefallen + dative: die Frau → der Frau (feminine dative is der)."
+    },
+    {
+      "id": "vdat-09",
+      "type": "choice",
+      "prompt": "Weißt du, ___ die Tasche gehört?",
+      "options": [
+        "wem",
+        "wen",
+        "wer"
+      ],
+      "answer": "wem",
+      "explanation": "gehören takes the dative, so the question word is wem (to whom does it belong)."
+    },
+    {
+      "id": "vdat-10",
+      "type": "choice",
+      "prompt": "Wir antworten ___ Lehrer.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "antworten takes the dative: der Lehrer → dem Lehrer."
+    },
+    {
+      "id": "vdat-11",
+      "type": "choice",
+      "prompt": "Der Film hat ___ nicht gefallen.",
+      "options": [
+        "mir",
+        "mich",
+        "ich"
+      ],
+      "answer": "mir",
+      "explanation": "gefallen is dative also in the perfect tense: Der Film hat mir nicht gefallen."
+    },
+    {
+      "id": "vdat-12",
+      "type": "choice",
+      "prompt": "Kannst du ___ Kindern helfen?",
+      "options": [
+        "den",
+        "die",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "helfen + dative plural: die Kinder → den Kindern."
+    },
+    {
+      "id": "vdat-13",
+      "type": "choice",
+      "prompt": "Tom lügt oft. Ich glaube ___ nicht.",
+      "options": [
+        "ihm",
+        "ihn",
+        "er"
+      ],
+      "answer": "ihm",
+      "explanation": "glauben with a person takes the dative (jemandem glauben): Tom = er → ihm."
+    },
+    {
+      "id": "vdat-14",
+      "type": "choice",
+      "prompt": "Anna hat heute Geburtstag. Der Chef gratuliert ___.",
+      "options": [
+        "ihr",
+        "sie",
+        "er"
+      ],
+      "answer": "ihr",
+      "explanation": "gratulieren takes the dative: Anna = sie → ihr."
+    },
+    {
+      "id": "vdat-15",
+      "type": "choice",
+      "prompt": "Dieser Hut steht ___ gut.",
+      "options": [
+        "dir",
+        "dich",
+        "du"
+      ],
+      "answer": "dir",
+      "explanation": "stehen (suit) takes the dative: du → dir."
+    },
+    {
+      "id": "vdat-16",
+      "type": "choice",
+      "prompt": "Der Hund folgt ___ Kind.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "folgen takes the dative: das Kind → dem Kind."
+    },
+    {
+      "id": "vdat-17",
+      "type": "type",
+      "prompt": "Das Kleid gefällt ___ sehr.",
+      "hint": "(ich)",
+      "answers": [
+        "mir"
+      ],
+      "explanation": "gefallen needs the dative pronoun: ich → mir."
+    },
+    {
+      "id": "vdat-18",
+      "type": "type",
+      "prompt": "Ich helfe ___ bei den Hausaufgaben.",
+      "hint": "(du)",
+      "answers": [
+        "dir"
+      ],
+      "explanation": "helfen + dative: du → dir."
+    },
+    {
+      "id": "vdat-19",
+      "type": "type",
+      "prompt": "Das Handy gehört ___.",
+      "hint": "(er)",
+      "answers": [
+        "ihm"
+      ],
+      "explanation": "gehören + dative: er → ihm."
+    },
+    {
+      "id": "vdat-20",
+      "type": "type",
+      "prompt": "Die Kinder danken ___ Opa.",
+      "hint": "(der)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "danken + dative: der Opa → dem Opa."
+    },
+    {
+      "id": "vdat-21",
+      "type": "type",
+      "prompt": "Schmeckt ___ der Kaffee?",
+      "hint": "(du)",
+      "answers": [
+        "dir"
+      ],
+      "explanation": "schmecken + dative: du → dir."
+    },
+    {
+      "id": "vdat-22",
+      "type": "type",
+      "prompt": "Er ___ seiner Mutter im Garten.",
+      "hint": "(helfen)",
+      "answers": [
+        "hilft"
+      ],
+      "explanation": "helfen is a stem-changing verb (e → i) and takes the dative: er hilft seiner Mutter."
+    },
+    {
+      "id": "vdat-23",
+      "type": "type",
+      "prompt": "Das Auto ___ meinem Vater.",
+      "hint": "(gehören)",
+      "answers": [
+        "gehört"
+      ],
+      "explanation": "gehören + dative; third person singular ends in -t: das Auto gehört."
+    },
+    {
+      "id": "vdat-24",
+      "type": "type",
+      "prompt": "Wir ___ dem Lehrer für die Hilfe.",
+      "hint": "(danken)",
+      "answers": [
+        "danken"
+      ],
+      "explanation": "danken + dative; wir takes the infinitive form: wir danken dem Lehrer."
+    },
+    {
+      "id": "vdat-25",
+      "type": "type",
+      "prompt": "Das Eis ___ mir nicht.",
+      "hint": "(schmecken)",
+      "answers": [
+        "schmeckt"
+      ],
+      "explanation": "schmecken + dative; third person singular ends in -t: das Eis schmeckt mir nicht."
+    },
+    {
+      "id": "vdat-26",
+      "type": "order",
+      "words": [
+        "Ich",
+        "glaube,",
+        "dass",
+        "der",
+        "Film",
+        "meinem",
+        "Bruder",
+        "nicht",
+        "gefällt."
+      ],
+      "answers": [
+        "Ich glaube, dass der Film meinem Bruder nicht gefällt.",
+        "Ich glaube, dass meinem Bruder der Film nicht gefällt."
+      ],
+      "translation": "I think my brother does not like the film.",
+      "explanation": "gefallen takes a dative (meinem Bruder); the film is the subject. In the dass-clause gefällt goes last; the dative can come before or after der Film."
+    },
+    {
+      "id": "vdat-27",
+      "type": "order",
+      "words": [
+        "Wem",
+        "gehört",
+        "die",
+        "Jacke?"
+      ],
+      "answers": [
+        "Wem gehört die Jacke?"
+      ],
+      "translation": "Whose jacket is it?",
+      "explanation": "gehören takes the dative, so the question starts with wem."
+    },
+    {
+      "id": "vdat-28",
+      "type": "order",
+      "words": [
+        "Gefällt",
+        "dir",
+        "das",
+        "neue",
+        "Kleid?"
+      ],
+      "answers": [
+        "Gefällt dir das neue Kleid?"
+      ],
+      "translation": "Do you like the new dress?",
+      "explanation": "gefallen takes the dative: du → dir. In a yes/no question the verb comes first and the pronoun dir before the subject."
+    },
+    {
+      "id": "vdat-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "dir",
+        "die",
+        "Tasche",
+        "gehört."
+      ],
+      "answers": [
+        "Ich weiß, dass dir die Tasche gehört.",
+        "Ich weiß, dass die Tasche dir gehört."
+      ],
+      "translation": "I know that the bag belongs to you.",
+      "explanation": "gehören takes the dative: du → dir. In the dass-clause gehört goes last; the pronoun dir usually comes before the subject, but after it is also correct."
+    },
+    {
+      "id": "vdat-30",
+      "type": "order",
+      "words": [
+        "Tom",
+        "dankt",
+        "seiner",
+        "Tante",
+        "für",
+        "das",
+        "Geschenk."
+      ],
+      "answers": [
+        "Tom dankt seiner Tante für das Geschenk."
+      ],
+      "translation": "Tom thanks his aunt for the present.",
+      "explanation": "danken takes the dative: die Tante → seiner Tante (feminine dative: -er)."
+    }
+  ]
+}

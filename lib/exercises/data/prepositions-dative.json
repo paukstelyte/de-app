@@ -1,0 +1,364 @@
+{
+  "slug": "prepositions-dative",
+  "instructions": "Choose or type the correct preposition or dative form to complete each sentence.",
+  "items": [
+    {
+      "id": "pdat-01",
+      "type": "choice",
+      "prompt": "Ich fahre mit ___ Bus zur Arbeit.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "des"
+      ],
+      "answer": "dem",
+      "explanation": "mit always takes the dative: der Bus → dem Bus."
+    },
+    {
+      "id": "pdat-02",
+      "type": "choice",
+      "prompt": "Ich wohne ___ meiner Tante.",
+      "options": [
+        "bei",
+        "für",
+        "ohne",
+        "durch"
+      ],
+      "answer": "bei",
+      "explanation": "bei means 'at someone's place' and takes the dative (meiner Tante); the others take the accusative."
+    },
+    {
+      "id": "pdat-03",
+      "type": "choice",
+      "prompt": "Er nimmt das Buch aus ___ Tasche.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "aus always takes the dative: die Tasche → der Tasche (feminine dative is der)."
+    },
+    {
+      "id": "pdat-04",
+      "type": "choice",
+      "prompt": "Wir wohnen bei ___ Eltern.",
+      "options": [
+        "den",
+        "die",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "In the dative plural the article is den and the noun gets -n: die Eltern → bei den Eltern."
+    },
+    {
+      "id": "pdat-05",
+      "type": "choice",
+      "prompt": "Ich gehe zu ___ Arzt.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "zu always takes the dative: der Arzt → dem Arzt (zu dem = zum)."
+    },
+    {
+      "id": "pdat-06",
+      "type": "choice",
+      "prompt": "Nach ___ Unterricht gehe ich nach Hause.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "nach takes the dative: der Unterricht → nach dem Unterricht."
+    },
+    {
+      "id": "pdat-07",
+      "type": "choice",
+      "prompt": "Ich gehe ___ Bahnhof.",
+      "options": [
+        "zum",
+        "zur",
+        "zu den"
+      ],
+      "answer": "zum",
+      "explanation": "zu + dem contracts to zum; Bahnhof is masculine, so zur would be wrong."
+    },
+    {
+      "id": "pdat-08",
+      "type": "choice",
+      "prompt": "Wir treffen uns ___ Bäcker.",
+      "options": [
+        "beim",
+        "zum",
+        "vom",
+        "am"
+      ],
+      "answer": "beim",
+      "explanation": "bei + dem contracts to beim: wir treffen uns beim Bäcker (at the baker's)."
+    },
+    {
+      "id": "pdat-09",
+      "type": "choice",
+      "prompt": "Ich komme gerade von ___ Arbeit.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "von always takes the dative: die Arbeit → der Arbeit."
+    },
+    {
+      "id": "pdat-10",
+      "type": "choice",
+      "prompt": "Das Geschenk ist ___ meinem Bruder.",
+      "options": [
+        "von",
+        "für",
+        "ohne",
+        "gegen"
+      ],
+      "answer": "von",
+      "explanation": "meinem shows the dative, and only von takes the dative here; für, ohne and gegen take the accusative."
+    },
+    {
+      "id": "pdat-11",
+      "type": "choice",
+      "prompt": "Seit ___ Monat lerne ich Deutsch.",
+      "options": [
+        "einem",
+        "einen",
+        "einer",
+        "ein"
+      ],
+      "answer": "einem",
+      "explanation": "seit takes the dative: der Monat → seit einem Monat."
+    },
+    {
+      "id": "pdat-12",
+      "type": "choice",
+      "prompt": "Ich gehe mit ___ Freundin ins Kino.",
+      "options": [
+        "meiner",
+        "meine",
+        "meinen",
+        "meinem"
+      ],
+      "answer": "meiner",
+      "explanation": "mit takes the dative; feminine dative is meiner: die Freundin → mit meiner Freundin."
+    },
+    {
+      "id": "pdat-13",
+      "type": "choice",
+      "prompt": "Tom spielt mit ___ Kindern.",
+      "options": [
+        "den",
+        "die",
+        "dem",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "Dative plural uses den (plus -n on the noun): mit den Kindern."
+    },
+    {
+      "id": "pdat-14",
+      "type": "choice",
+      "prompt": "Das Kind kommt ___ der Schule.",
+      "options": [
+        "aus",
+        "ohne",
+        "durch",
+        "für"
+      ],
+      "answer": "aus",
+      "explanation": "aus takes the dative (der Schule); ohne, durch and für take the accusative."
+    },
+    {
+      "id": "pdat-15",
+      "type": "choice",
+      "prompt": "Am Wochenende fahren wir ___ meiner Oma.",
+      "options": [
+        "zu",
+        "für",
+        "ohne",
+        "um"
+      ],
+      "answer": "zu",
+      "explanation": "zu + dative expresses going to a person: zu meiner Oma."
+    },
+    {
+      "id": "pdat-16",
+      "type": "choice",
+      "prompt": "Ich bin heute den ganzen Tag ___ Hause.",
+      "options": [
+        "zu",
+        "nach",
+        "bei",
+        "in"
+      ],
+      "answer": "zu",
+      "explanation": "bin describes where you are, so it is zu Hause (at home). nach Hause is only for going home: Ich gehe nach Hause."
+    },
+    {
+      "id": "pdat-17",
+      "type": "choice",
+      "prompt": "Das ist ein Brief von ___ Lehrerin.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "von takes the dative: die Lehrerin → von der Lehrerin."
+    },
+    {
+      "id": "pdat-18",
+      "type": "choice",
+      "prompt": "Nach dem Essen gehe ich ___ Park.",
+      "options": [
+        "zum",
+        "zur",
+        "zu den"
+      ],
+      "answer": "zum",
+      "explanation": "zu + dem = zum; der Park is masculine."
+    },
+    {
+      "id": "pdat-19",
+      "type": "choice",
+      "prompt": "Ich arbeite bei ___ Firma in Berlin.",
+      "options": [
+        "einer",
+        "eine",
+        "einem",
+        "einen"
+      ],
+      "answer": "einer",
+      "explanation": "bei takes the dative; feminine eine becomes einer: bei einer Firma."
+    },
+    {
+      "id": "pdat-20",
+      "type": "choice",
+      "prompt": "Ich fahre mit ___ Fahrrad zur Schule.",
+      "options": [
+        "dem",
+        "das",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "mit takes the dative: das Fahrrad → mit dem Fahrrad (neuter dative is dem)."
+    },
+    {
+      "id": "pdat-21",
+      "type": "type",
+      "prompt": "Ich fahre mit ___ Zug nach Berlin.",
+      "hint": "(der Zug)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "mit takes the dative: der Zug → dem Zug."
+    },
+    {
+      "id": "pdat-22",
+      "type": "type",
+      "prompt": "Sie kommt ___ der Türkei.",
+      "hint": "(from, out of)",
+      "answers": [
+        "aus"
+      ],
+      "explanation": "aus (from a country or out of a place) always takes the dative: aus der Türkei."
+    },
+    {
+      "id": "pdat-23",
+      "type": "type",
+      "prompt": "Ich gehe ___ Bäcker.",
+      "hint": "(zu + dem, one word)",
+      "answers": [
+        "zum"
+      ],
+      "explanation": "zu + dem contracts to zum: der Bäcker → zum Bäcker."
+    },
+    {
+      "id": "pdat-24",
+      "type": "type",
+      "prompt": "Ich war gestern ___ Arzt.",
+      "hint": "(bei + dem, one word)",
+      "answers": [
+        "beim"
+      ],
+      "explanation": "bei + dem contracts to beim: beim Arzt (at the doctor's)."
+    },
+    {
+      "id": "pdat-25",
+      "type": "type",
+      "prompt": "Wir gehen jetzt ___ Schule.",
+      "hint": "(zu + der, one word)",
+      "answers": [
+        "zur"
+      ],
+      "explanation": "zu + der contracts to zur: die Schule → zur Schule."
+    },
+    {
+      "id": "pdat-26",
+      "type": "type",
+      "prompt": "Ich habe eine Nachricht ___ meinem Chef bekommen.",
+      "hint": "(from)",
+      "answers": [
+        "von"
+      ],
+      "explanation": "von (from a person) always takes the dative: von meinem Chef."
+    },
+    {
+      "id": "pdat-27",
+      "type": "type",
+      "prompt": "Ich wohne ___ drei Jahren hier.",
+      "hint": "(time: started in the past, still true)",
+      "answers": [
+        "seit"
+      ],
+      "explanation": "seit + dative for something that started in the past and still continues: seit drei Jahren (dative plural Jahre → Jahren)."
+    },
+    {
+      "id": "pdat-28",
+      "type": "type",
+      "prompt": "Ich spiele gern mit meinen ___.",
+      "hint": "(Freund, plural)",
+      "answers": [
+        "Freunden"
+      ],
+      "explanation": "After mit the plural noun takes -n in the dative: die Freunde → mit meinen Freunden."
+    },
+    {
+      "id": "pdat-29",
+      "type": "type",
+      "prompt": "Er kommt gerade ___ Arzt.",
+      "hint": "(von + dem, one word)",
+      "answers": [
+        "vom"
+      ],
+      "explanation": "von + dem contracts to vom: der Arzt → vom Arzt."
+    },
+    {
+      "id": "pdat-30",
+      "type": "type",
+      "prompt": "Heute Abend gehe ich ___ meiner Freundin.",
+      "hint": "(going to a person)",
+      "answers": [
+        "zu"
+      ],
+      "explanation": "Going to a person uses zu + dative: zu meiner Freundin. bei would mean you are already at her place."
+    }
+  ]
+}

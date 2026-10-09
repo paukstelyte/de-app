@@ -1,0 +1,378 @@
+{
+  "slug": "reflexive-verbs",
+  "instructions": "Fill in or build each sentence with the correct reflexive verb form or pronoun.",
+  "items": [
+    {
+      "id": "refl-01",
+      "type": "choice",
+      "prompt": "Ich freue ___ auf das Wochenende.",
+      "options": [
+        "mich",
+        "dich",
+        "sich",
+        "mir"
+      ],
+      "answer": "mich",
+      "explanation": "ich uses mich as its reflexive pronoun: sich freuen → ich freue mich."
+    },
+    {
+      "id": "refl-02",
+      "type": "choice",
+      "prompt": "Du wäschst ___ mit kaltem Wasser.",
+      "options": [
+        "dich",
+        "dir",
+        "sich"
+      ],
+      "answer": "dich",
+      "explanation": "du uses dich: sich waschen → du wäschst dich."
+    },
+    {
+      "id": "refl-03",
+      "type": "choice",
+      "prompt": "Anna interessiert ___ für Musik.",
+      "options": [
+        "sich",
+        "ihr",
+        "ihm"
+      ],
+      "answer": "sich",
+      "explanation": "er/sie/es takes sich, not a normal pronoun: Anna interessiert sich."
+    },
+    {
+      "id": "refl-04",
+      "type": "choice",
+      "prompt": "Wir treffen ___ um acht Uhr.",
+      "options": [
+        "uns",
+        "sich",
+        "unser"
+      ],
+      "answer": "uns",
+      "explanation": "wir uses uns: sich treffen → wir treffen uns."
+    },
+    {
+      "id": "refl-05",
+      "type": "choice",
+      "prompt": "Ihr müsst ___ beeilen.",
+      "options": [
+        "euch",
+        "uns",
+        "sich",
+        "dich"
+      ],
+      "answer": "euch",
+      "explanation": "ihr uses euch: sich beeilen → ihr beeilt euch."
+    },
+    {
+      "id": "refl-06",
+      "type": "choice",
+      "prompt": "Die Kinder freuen ___ auf die Ferien.",
+      "options": [
+        "sich",
+        "uns",
+        "euch",
+        "sie"
+      ],
+      "answer": "sich",
+      "explanation": "sie (plural) also takes sich: die Kinder freuen sich."
+    },
+    {
+      "id": "refl-07",
+      "type": "choice",
+      "prompt": "Duschst du ___ morgens oder abends?",
+      "options": [
+        "dich",
+        "dir",
+        "sich",
+        "du"
+      ],
+      "answer": "dich",
+      "explanation": "sich duschen with du takes the accusative reflexive dich: du duschst dich."
+    },
+    {
+      "id": "refl-08",
+      "type": "choice",
+      "prompt": "Tom setzt ___ auf das Sofa.",
+      "options": [
+        "sich",
+        "ihm",
+        "er"
+      ],
+      "answer": "sich",
+      "explanation": "The subject Tom sits himself down, so the pronoun is reflexive: sich."
+    },
+    {
+      "id": "refl-09",
+      "type": "choice",
+      "prompt": "Warum ärgerst du ___ über den Lärm?",
+      "options": [
+        "dich",
+        "dir",
+        "sich",
+        "du"
+      ],
+      "answer": "dich",
+      "explanation": "du → dich: sich ärgern über + accusative."
+    },
+    {
+      "id": "refl-10",
+      "type": "choice",
+      "prompt": "Haben Sie ___ gut erholt?",
+      "options": [
+        "sich",
+        "Sie",
+        "Ihnen",
+        "uns"
+      ],
+      "answer": "sich",
+      "explanation": "The polite Sie also takes sich: Haben Sie sich erholt?"
+    },
+    {
+      "id": "refl-11",
+      "type": "choice",
+      "prompt": "Wir sehen ___ morgen wieder.",
+      "options": [
+        "uns",
+        "sich",
+        "wir"
+      ],
+      "answer": "uns",
+      "explanation": "wir → uns. Here the pronoun means each other: we see one another."
+    },
+    {
+      "id": "refl-12",
+      "type": "choice",
+      "prompt": "Sie hat ___ gestern erkältet.",
+      "options": [
+        "sich",
+        "ihr",
+        "mich",
+        "euch"
+      ],
+      "answer": "sich",
+      "explanation": "sich erkälten is reflexive; sie takes sich, also in the perfect tense."
+    },
+    {
+      "id": "refl-13",
+      "type": "type",
+      "prompt": "Ich fühle ___ heute nicht gut.",
+      "hint": "(ich → sich fühlen)",
+      "answers": [
+        "mich"
+      ],
+      "explanation": "ich needs mich: sich fühlen → ich fühle mich."
+    },
+    {
+      "id": "refl-14",
+      "type": "type",
+      "prompt": "Wir ___ uns auf die Party.",
+      "hint": "(sich freuen)",
+      "answers": [
+        "freuen"
+      ],
+      "explanation": "With wir the verb ends in -en: wir freuen uns."
+    },
+    {
+      "id": "refl-15",
+      "type": "type",
+      "prompt": "Er rasiert ___ jeden Morgen.",
+      "hint": "(er → sich rasieren)",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "er/sie/es always use sich: er rasiert sich."
+    },
+    {
+      "id": "refl-16",
+      "type": "type",
+      "prompt": "Kinder, setzt ___ bitte!",
+      "hint": "(ihr → sich setzen)",
+      "answers": [
+        "euch"
+      ],
+      "explanation": "ihr needs euch: setzt euch bitte!"
+    },
+    {
+      "id": "refl-17",
+      "type": "type",
+      "prompt": "Warum ___ du dich so?",
+      "hint": "(sich ärgern)",
+      "answers": [
+        "ärgerst"
+      ],
+      "explanation": "du-form of ärgern is ärgerst: du ärgerst dich."
+    },
+    {
+      "id": "refl-18",
+      "type": "type",
+      "prompt": "Meine Schwester ___ sich für Mode.",
+      "hint": "(sich interessieren)",
+      "answers": [
+        "interessiert"
+      ],
+      "explanation": "er/sie/es verbs end in -t: sie interessiert sich."
+    },
+    {
+      "id": "refl-19",
+      "type": "type",
+      "prompt": "Ich ___ mich nach dem Sport.",
+      "hint": "(sich duschen)",
+      "answers": [
+        "dusche"
+      ],
+      "explanation": "ich-form ends in -e: ich dusche mich."
+    },
+    {
+      "id": "refl-20",
+      "type": "type",
+      "prompt": "Hast du ___ gut erholt?",
+      "hint": "(du → sich erholen)",
+      "answers": [
+        "dich"
+      ],
+      "explanation": "du needs dich: du hast dich erholt."
+    },
+    {
+      "id": "refl-21",
+      "type": "type",
+      "prompt": "Die Gäste unterhalten ___ im Garten.",
+      "hint": "(sie, Plural → sich unterhalten)",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "Plural sie takes sich: die Gäste unterhalten sich."
+    },
+    {
+      "id": "refl-22",
+      "type": "type",
+      "prompt": "Wann ___ ihr euch morgen?",
+      "hint": "(sich treffen)",
+      "answers": [
+        "trefft"
+      ],
+      "explanation": "ihr-form of treffen is trefft: ihr trefft euch."
+    },
+    {
+      "id": "refl-23",
+      "type": "type",
+      "prompt": "Entschuldigung, ich habe ___ verspätet.",
+      "hint": "(ich → sich verspäten)",
+      "answers": [
+        "mich"
+      ],
+      "explanation": "In the perfect the pronoun stays: ich habe mich verspätet."
+    },
+    {
+      "id": "refl-24",
+      "type": "type",
+      "prompt": "Er ___ sich schnell an.",
+      "hint": "(sich anziehen)",
+      "answers": [
+        "zieht"
+      ],
+      "explanation": "anziehen is separable: er zieht sich an, with the verb in second position."
+    },
+    {
+      "id": "refl-25",
+      "type": "order",
+      "words": [
+        "Ich",
+        "freue",
+        "mich",
+        "auf",
+        "den",
+        "Urlaub."
+      ],
+      "answers": [
+        "Ich freue mich auf den Urlaub."
+      ],
+      "translation": "I am looking forward to the holiday.",
+      "explanation": "The reflexive mich follows the conjugated verb: Ich freue mich."
+    },
+    {
+      "id": "refl-26",
+      "type": "order",
+      "words": [
+        "Wann",
+        "triffst",
+        "du",
+        "dich",
+        "mit",
+        "Anna?"
+      ],
+      "answers": [
+        "Wann triffst du dich mit Anna?"
+      ],
+      "translation": "When are you meeting Anna?",
+      "explanation": "In questions the pronoun dich comes right after the subject du."
+    },
+    {
+      "id": "refl-27",
+      "type": "order",
+      "words": [
+        "Warum",
+        "ärgert",
+        "er",
+        "sich",
+        "so?"
+      ],
+      "answers": [
+        "Warum ärgert er sich so?"
+      ],
+      "translation": "Why is he so annoyed?",
+      "explanation": "er → sich: the reflexive pronoun stands after the subject in a question."
+    },
+    {
+      "id": "refl-28",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "dich",
+        "gut",
+        "erholt?"
+      ],
+      "answers": [
+        "Hast du dich gut erholt?"
+      ],
+      "translation": "Did you recover well?",
+      "explanation": "In the perfect, the pronoun comes after the subject, before the participle: du dich erholt."
+    },
+    {
+      "id": "refl-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "Tom",
+        "sich",
+        "freut."
+      ],
+      "answers": [
+        "Ich weiß, dass Tom sich freut.",
+        "Ich weiß, dass sich Tom freut."
+      ],
+      "translation": "I know that Tom is pleased.",
+      "explanation": "In a dass-clause the verb goes last; sich can stand before or after Tom."
+    },
+    {
+      "id": "refl-30",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kinder",
+        "ziehen",
+        "sich",
+        "schnell",
+        "an."
+      ],
+      "answers": [
+        "Die Kinder ziehen sich schnell an."
+      ],
+      "translation": "The children get dressed quickly.",
+      "explanation": "Separable sich anziehen: the pronoun sits after the verb, an goes to the end."
+    }
+  ]
+}

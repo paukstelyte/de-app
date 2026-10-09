@@ -1,0 +1,384 @@
+{
+  "slug": "two-way-prepositions",
+  "instructions": "Choose or write the right form: accusative for movement (wohin?), dative for location (wo?).",
+  "items": [
+    {
+      "id": "twp-01",
+      "type": "choice",
+      "prompt": "Ich gehe in ___ Küche.",
+      "options": [
+        "die",
+        "der",
+        "dem"
+      ],
+      "answer": "die",
+      "explanation": "gehen asks wohin?, so in takes the accusative: die Küche."
+    },
+    {
+      "id": "twp-02",
+      "type": "choice",
+      "prompt": "Ich bin in ___ Küche.",
+      "options": [
+        "die",
+        "der",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "sein asks wo?, so in takes the dative: feminine die Küche becomes der Küche."
+    },
+    {
+      "id": "twp-03",
+      "type": "choice",
+      "prompt": "Das Buch liegt auf ___ Tisch.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "liegen describes a location (wo?), so auf takes the dative: dem Tisch."
+    },
+    {
+      "id": "twp-04",
+      "type": "choice",
+      "prompt": "Anna legt das Buch auf ___ Tisch.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "legen means putting something somewhere (wohin?), so auf takes the accusative: den Tisch."
+    },
+    {
+      "id": "twp-05",
+      "type": "choice",
+      "prompt": "Wir gehen ___ Kino.",
+      "options": [
+        "ins",
+        "im",
+        "in der"
+      ],
+      "answer": "ins",
+      "explanation": "gehen is movement (wohin?): in + das = ins (accusative)."
+    },
+    {
+      "id": "twp-06",
+      "type": "choice",
+      "prompt": "Meine Eltern wohnen ___ Dorf.",
+      "options": [
+        "im",
+        "ins",
+        "in das"
+      ],
+      "answer": "im",
+      "explanation": "wohnen is a location (wo?): in + dem = im (dative)."
+    },
+    {
+      "id": "twp-07",
+      "type": "choice",
+      "prompt": "Ich warte ___ Bahnhof.",
+      "options": [
+        "am",
+        "ans",
+        "an den"
+      ],
+      "answer": "am",
+      "explanation": "warten happens at a place (wo?): an + dem = am (dative)."
+    },
+    {
+      "id": "twp-08",
+      "type": "choice",
+      "prompt": "Im Sommer fahren wir ___ Meer.",
+      "options": [
+        "ans",
+        "am",
+        "an dem"
+      ],
+      "answer": "ans",
+      "explanation": "fahren is movement (wohin?): an + das = ans (accusative)."
+    },
+    {
+      "id": "twp-09",
+      "type": "choice",
+      "prompt": "Der Hund schläft unter ___ Bett.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "schlafen is a location (wo?), so unter takes the dative: dem Bett."
+    },
+    {
+      "id": "twp-10",
+      "type": "choice",
+      "prompt": "Tom stellt die Tasche unter ___ Tisch.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "stellen means putting something somewhere (wohin?), so unter takes the accusative: den Tisch."
+    },
+    {
+      "id": "twp-11",
+      "type": "choice",
+      "prompt": "Das Bild hängt an ___ Wand.",
+      "options": [
+        "die",
+        "der",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "hängen (hang, intransitive) gives a location (wo?), so an takes the dative: der Wand."
+    },
+    {
+      "id": "twp-12",
+      "type": "choice",
+      "prompt": "Jonas hängt das Bild an ___ Wand.",
+      "options": [
+        "die",
+        "der",
+        "dem"
+      ],
+      "answer": "die",
+      "explanation": "hängen (hang up, transitive) shows movement (wohin?), so an takes the accusative: die Wand."
+    },
+    {
+      "id": "twp-13",
+      "type": "choice",
+      "prompt": "Das Auto steht vor ___ Haus.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "stehen describes a location (wo?), so vor takes the dative: dem Haus."
+    },
+    {
+      "id": "twp-14",
+      "type": "choice",
+      "prompt": "Lena stellt das Fahrrad vor ___ Haus.",
+      "options": [
+        "dem",
+        "das",
+        "der"
+      ],
+      "answer": "das",
+      "explanation": "stellen means putting something somewhere (wohin?), so vor takes the accusative: das Haus."
+    },
+    {
+      "id": "twp-15",
+      "type": "choice",
+      "prompt": "Ich setze mich neben ___ Freundin.",
+      "options": [
+        "meine",
+        "meiner",
+        "meinem"
+      ],
+      "answer": "meine",
+      "explanation": "sich setzen is a movement (wohin?), so neben takes the accusative: meine Freundin (not the dative meiner)."
+    },
+    {
+      "id": "twp-16",
+      "type": "choice",
+      "prompt": "Die Lampe hängt über ___ Tisch.",
+      "options": [
+        "dem",
+        "den",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "hängen here gives a location (wo?), so über takes the dative: dem Tisch."
+    },
+    {
+      "id": "twp-17",
+      "type": "choice",
+      "prompt": "Der Stuhl steht zwischen ___ Tisch und dem Sofa.",
+      "options": [
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "stehen gives a location (wo?), so zwischen takes the dative: dem Tisch."
+    },
+    {
+      "id": "twp-18",
+      "type": "choice",
+      "prompt": "Ich stelle den Stuhl zwischen ___ Tisch und das Sofa.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "stellen means putting something somewhere (wohin?), so zwischen takes the accusative: den Tisch."
+    },
+    {
+      "id": "twp-19",
+      "type": "choice",
+      "prompt": "Die Brücke führt über ___ Fluss.",
+      "options": [
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "den",
+      "explanation": "führen über here means crossing to the other side, a direction (wohin?), so über takes the accusative: über den Fluss."
+    },
+    {
+      "id": "twp-20",
+      "type": "choice",
+      "prompt": "Ich lege das Handy auf ___ Regal.",
+      "options": [
+        "das",
+        "dem",
+        "den"
+      ],
+      "answer": "das",
+      "explanation": "legen means putting something somewhere (wohin?), so auf takes the accusative: das Regal."
+    },
+    {
+      "id": "twp-21",
+      "type": "choice",
+      "prompt": "Der Garten liegt hinter ___ Haus.",
+      "options": [
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "liegen describes a location (wo?), so hinter takes the dative: das Haus → dem Haus."
+    },
+    {
+      "id": "twp-22",
+      "type": "type",
+      "prompt": "Wir gehen in ___ Park.",
+      "hint": "(der Park)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "gehen is movement (wohin?), so in takes the accusative: der Park becomes den Park."
+    },
+    {
+      "id": "twp-23",
+      "type": "type",
+      "prompt": "Ich stelle die Schuhe hinter ___ Tür.",
+      "hint": "(die Tür)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "stellen means putting something somewhere (wohin?), so hinter takes the accusative: die Tür."
+    },
+    {
+      "id": "twp-24",
+      "type": "type",
+      "prompt": "Ich hänge die Jacke an ___ Haken.",
+      "hint": "(der Haken)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "hängen (hang up) is movement (wohin?), so an takes the accusative: den Haken."
+    },
+    {
+      "id": "twp-25",
+      "type": "type",
+      "prompt": "Der Bus hält vor ___ Schule.",
+      "hint": "(die Schule)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "halten (stop) says where the bus is (wo?), so vor takes the dative: die Schule becomes der Schule."
+    },
+    {
+      "id": "twp-26",
+      "type": "order",
+      "words": [
+        "Anna",
+        "stellt",
+        "die",
+        "Vase",
+        "auf",
+        "den",
+        "Tisch."
+      ],
+      "answers": [
+        "Anna stellt die Vase auf den Tisch."
+      ],
+      "translation": "Anna puts the vase on the table.",
+      "explanation": "stellen shows movement (wohin?), so auf takes the accusative: den Tisch."
+    },
+    {
+      "id": "twp-27",
+      "type": "order",
+      "words": [
+        "Tom",
+        "sitzt",
+        "neben",
+        "der",
+        "Lehrerin."
+      ],
+      "answers": [
+        "Tom sitzt neben der Lehrerin."
+      ],
+      "translation": "Tom is sitting next to the teacher.",
+      "explanation": "sitzen is a location (wo?), so neben takes the dative: der Lehrerin."
+    },
+    {
+      "id": "twp-28",
+      "type": "order",
+      "words": [
+        "Lena",
+        "wartet",
+        "vor",
+        "dem",
+        "Kino."
+      ],
+      "answers": [
+        "Lena wartet vor dem Kino."
+      ],
+      "translation": "Lena is waiting in front of the cinema.",
+      "explanation": "warten is a location (wo?), so vor takes the dative: dem Kino."
+    },
+    {
+      "id": "twp-29",
+      "type": "order",
+      "words": [
+        "Lena",
+        "hängt",
+        "den",
+        "Mantel",
+        "in",
+        "den",
+        "Schrank."
+      ],
+      "answers": [
+        "Lena hängt den Mantel in den Schrank."
+      ],
+      "translation": "Lena hangs the coat in the wardrobe.",
+      "explanation": "hängen with an object (hang up) is movement (wohin?), so in takes the accusative: den Schrank."
+    },
+    {
+      "id": "twp-30",
+      "type": "order",
+      "words": [
+        "Wir",
+        "legen",
+        "die",
+        "Schuhe",
+        "unter",
+        "das",
+        "Bett."
+      ],
+      "answers": [
+        "Wir legen die Schuhe unter das Bett."
+      ],
+      "translation": "We put the shoes under the bed.",
+      "explanation": "legen means putting something somewhere (wohin?), so unter takes the accusative: das Bett."
+    }
+  ]
+}

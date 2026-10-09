@@ -1,0 +1,377 @@
+{
+  "slug": "past-modal-verbs",
+  "instructions": "Choose, type or arrange the correct simple past form of the modal verb.",
+  "items": [
+    {
+      "id": "pm-01",
+      "type": "choice",
+      "prompt": "Gestern ___ ich nicht kommen.",
+      "options": [
+        "konnte",
+        "konnten",
+        "kann"
+      ],
+      "answer": "konnte",
+      "explanation": "Simple past of können: ich konnte. The umlaut disappears (können → konnte); kann is present tense."
+    },
+    {
+      "id": "pm-02",
+      "type": "choice",
+      "prompt": "Als Kind ___ Tom nicht schwimmen.",
+      "options": [
+        "konnte",
+        "konnten",
+        "kann"
+      ],
+      "answer": "konnte",
+      "explanation": "er/sie/es and ich share the same past form: konnte. No umlaut in the simple past."
+    },
+    {
+      "id": "pm-03",
+      "type": "choice",
+      "prompt": "Wir ___ gestern lange arbeiten.",
+      "options": [
+        "mussten",
+        "musste",
+        "müssten"
+      ],
+      "answer": "mussten",
+      "explanation": "Simple past of müssen: ich/er musste, wir/sie mussten. müssten (with umlaut) is subjunctive."
+    },
+    {
+      "id": "pm-04",
+      "type": "choice",
+      "prompt": "Anna ___ gestern zum Arzt gehen.",
+      "options": [
+        "musste",
+        "müsste",
+        "musst"
+      ],
+      "answer": "musste",
+      "explanation": "müssen loses its umlaut in the simple past: sie musste. müsste is a different (subjunctive) form."
+    },
+    {
+      "id": "pm-05",
+      "type": "choice",
+      "prompt": "Früher ___ man hier nicht parken.",
+      "options": [
+        "durfte",
+        "dürfte",
+        "darf"
+      ],
+      "answer": "durfte",
+      "explanation": "Simple past of dürfen: man durfte, without the umlaut. früher points to the past, so darf is wrong."
+    },
+    {
+      "id": "pm-06",
+      "type": "choice",
+      "prompt": "Ihr ___ gestern keine Pause machen.",
+      "options": [
+        "wolltet",
+        "wollten",
+        "wollte"
+      ],
+      "answer": "wolltet",
+      "explanation": "With ihr the simple past ends in -t: ihr wolltet. wollten is for wir/sie, wollte for ich/er."
+    },
+    {
+      "id": "pm-07",
+      "type": "choice",
+      "prompt": "Du ___ als Kind nicht lange fernsehen.",
+      "options": [
+        "durftest",
+        "durfte",
+        "darfst"
+      ],
+      "answer": "durftest",
+      "explanation": "With du, the simple past of modals adds -st: du durftest. darfst is present tense."
+    },
+    {
+      "id": "pm-08",
+      "type": "choice",
+      "prompt": "Lena ___ letztes Jahr nach Spanien fahren, aber sie hatte kein Geld.",
+      "options": [
+        "wollte",
+        "wollten",
+        "will"
+      ],
+      "answer": "wollte",
+      "explanation": "wollen has no umlaut, and the singular past form is wollte (ich/er/sie). letztes Jahr signals the past."
+    },
+    {
+      "id": "pm-09",
+      "type": "choice",
+      "prompt": "Die Kinder ___ gestern nicht draußen spielen.",
+      "options": [
+        "durften",
+        "durfte",
+        "dürften"
+      ],
+      "answer": "durften",
+      "explanation": "Plural past of dürfen: sie durften. Drop the umlaut and add -en; dürften would be subjunctive."
+    },
+    {
+      "id": "pm-10",
+      "type": "choice",
+      "prompt": "Gestern ___ ich für meine Mutter Brot kaufen, aber der Laden war zu.",
+      "options": [
+        "sollte",
+        "sollten",
+        "soll"
+      ],
+      "answer": "sollte",
+      "explanation": "ich sollte = I was supposed to (my mother asked me). Simple past of sollen: soll- + -te; gestern rules out the present soll."
+    },
+    {
+      "id": "pm-11",
+      "type": "choice",
+      "prompt": "Meine Eltern ___ früher jeden Tag früh aufstehen.",
+      "options": [
+        "mussten",
+        "musste",
+        "müssen"
+      ],
+      "answer": "mussten",
+      "explanation": "Plural subjects use -ten in the simple past: sie mussten. früher requires a past form, not müssen."
+    },
+    {
+      "id": "pm-12",
+      "type": "choice",
+      "prompt": "Warum ___ du gestern nicht kommen?",
+      "options": [
+        "konntest",
+        "konnte",
+        "kannst"
+      ],
+      "answer": "konntest",
+      "explanation": "du + simple past: konntest (konnte + -st). kannst is present tense and does not fit gestern."
+    },
+    {
+      "id": "pm-13",
+      "type": "type",
+      "prompt": "Gestern ___ ich lange arbeiten.",
+      "hint": "(müssen)",
+      "answers": [
+        "musste"
+      ],
+      "explanation": "ich + simple past of müssen is musste: the umlaut disappears and -te is added."
+    },
+    {
+      "id": "pm-14",
+      "type": "type",
+      "prompt": "Mit fünf Jahren ___ ich schon lesen.",
+      "hint": "(können)",
+      "answers": [
+        "konnte"
+      ],
+      "explanation": "Simple past of können: ich konnte. The umlaut disappears and -te is added."
+    },
+    {
+      "id": "pm-15",
+      "type": "type",
+      "prompt": "Wir ___ im letzten Urlaub viel sehen.",
+      "hint": "(wollen)",
+      "answers": [
+        "wollten"
+      ],
+      "explanation": "wir takes -ten in the simple past: wir wollten."
+    },
+    {
+      "id": "pm-16",
+      "type": "type",
+      "prompt": "Du ___ gestern nicht mitkommen.",
+      "hint": "(dürfen)",
+      "answers": [
+        "durftest"
+      ],
+      "explanation": "dürfen drops its umlaut in the simple past: durf- + -test → du durftest."
+    },
+    {
+      "id": "pm-17",
+      "type": "type",
+      "prompt": "Tom ___ gestern früh aufstehen.",
+      "hint": "(müssen)",
+      "answers": [
+        "musste"
+      ],
+      "explanation": "er/sie/es uses the same form as ich: musste. No -t on top of -te."
+    },
+    {
+      "id": "pm-18",
+      "type": "type",
+      "prompt": "Ihr ___ gestern nicht ins Kino gehen.",
+      "hint": "(können)",
+      "answers": [
+        "konntet"
+      ],
+      "explanation": "ihr + simple past of können: konntet (konnte- stem + -t)."
+    },
+    {
+      "id": "pm-19",
+      "type": "type",
+      "prompt": "Am Montag ___ Lena ihre Oma anrufen, aber sie hat es vergessen.",
+      "hint": "(sollen)",
+      "answers": [
+        "sollte"
+      ],
+      "explanation": "sollte = was supposed to (someone expected it), and hat vergessen shows it is past: sie sollte."
+    },
+    {
+      "id": "pm-20",
+      "type": "type",
+      "prompt": "Früher ___ die Schüler im Unterricht nicht essen.",
+      "hint": "(dürfen)",
+      "answers": [
+        "durften"
+      ],
+      "explanation": "Plural past of dürfen: sie durften, without the umlaut."
+    },
+    {
+      "id": "pm-21",
+      "type": "type",
+      "prompt": "Ich ___ gestern nicht anrufen, weil mein Handy kaputt war.",
+      "hint": "(können)",
+      "answers": [
+        "konnte"
+      ],
+      "explanation": "Modal verbs prefer the simple past: ich konnte instead of ich habe ... gekonnt."
+    },
+    {
+      "id": "pm-22",
+      "type": "type",
+      "prompt": "Meine Freunde ___ gestern bis spät arbeiten.",
+      "hint": "(müssen)",
+      "answers": [
+        "mussten"
+      ],
+      "explanation": "Plural subject: sie mussten. Same stem as musste, with -ten."
+    },
+    {
+      "id": "pm-23",
+      "type": "type",
+      "prompt": "Lena ___ gestern unbedingt tanzen gehen.",
+      "hint": "(wollen)",
+      "answers": [
+        "wollte"
+      ],
+      "explanation": "Singular simple past of wollen: sie wollte. The infinitive gehen stays at the end."
+    },
+    {
+      "id": "pm-24",
+      "type": "type",
+      "prompt": "Warum ___ du gestern nicht mitspielen?",
+      "hint": "(wollen)",
+      "answers": [
+        "wolltest"
+      ],
+      "explanation": "du + simple past of wollen: wolltest (wollte + -st)."
+    },
+    {
+      "id": "pm-25",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "er",
+        "gestern",
+        "nicht",
+        "kommen",
+        "konnte."
+      ],
+      "answers": [
+        "Ich weiß, dass er gestern nicht kommen konnte."
+      ],
+      "translation": "I know that he could not come yesterday.",
+      "explanation": "In a dass-clause the conjugated modal goes last: ... kommen konnte."
+    },
+    {
+      "id": "pm-26",
+      "type": "order",
+      "words": [
+        "Tom",
+        "sagt,",
+        "dass",
+        "er",
+        "gestern",
+        "arbeiten",
+        "musste."
+      ],
+      "answers": [
+        "Tom sagt, dass er gestern arbeiten musste."
+      ],
+      "translation": "Tom says that he had to work yesterday.",
+      "explanation": "In the subordinate clause the modal in the simple past stands at the very end: arbeiten musste."
+    },
+    {
+      "id": "pm-27",
+      "type": "order",
+      "words": [
+        "Warum",
+        "konntest",
+        "du",
+        "gestern",
+        "nicht",
+        "kommen?"
+      ],
+      "answers": [
+        "Warum konntest du gestern nicht kommen?"
+      ],
+      "translation": "Why could you not come yesterday?",
+      "explanation": "In a question with a question word, the modal (konntest) comes second; the infinitive kommen goes to the end."
+    },
+    {
+      "id": "pm-28",
+      "type": "order",
+      "words": [
+        "Wollte",
+        "Anna",
+        "gestern",
+        "ins",
+        "Kino",
+        "gehen?"
+      ],
+      "answers": [
+        "Wollte Anna gestern ins Kino gehen?"
+      ],
+      "translation": "Did Anna want to go to the cinema yesterday?",
+      "explanation": "In a yes/no question the modal wollte comes first; the infinitive gehen goes to the end."
+    },
+    {
+      "id": "pm-29",
+      "type": "order",
+      "words": [
+        "Durftest",
+        "du",
+        "als",
+        "Kind",
+        "lange",
+        "fernsehen?"
+      ],
+      "answers": [
+        "Durftest du als Kind lange fernsehen?"
+      ],
+      "translation": "Were you allowed to watch TV for long as a child?",
+      "explanation": "In a yes/no question durftest (du-form, no umlaut) comes first; the infinitive fernsehen goes last."
+    },
+    {
+      "id": "pm-30",
+      "type": "order",
+      "words": [
+        "Weil",
+        "ich",
+        "arbeiten",
+        "musste,",
+        "konnte",
+        "ich",
+        "nicht",
+        "kommen."
+      ],
+      "answers": [
+        "Weil ich arbeiten musste, konnte ich nicht kommen."
+      ],
+      "translation": "Because I had to work, I could not come.",
+      "explanation": "The weil-clause sends musste to the end; the main clause then starts with the verb konnte."
+    }
+  ]
+}

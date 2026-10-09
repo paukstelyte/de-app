@@ -252,56 +252,104 @@
     "title": "Dative case",
     "level": "A2",
     "group": "Cases",
-    "summary": "The indirect object, usually the person receiving something, is in the dative: Ich gebe dem Kind das Buch. Articles change: der/das → dem, die → der, plural die → den (+ n)."
+    "summary": "The indirect object, usually the person receiving something, is in the dative: Ich gebe dem Kind das Buch. Articles change: der/das → dem, die → der, plural die → den (+ n).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/dative-case/practice"
+      }
+    ]
   },
   {
     "slug": "pronouns-accusative-dative",
     "title": "Pronouns in the accusative and dative (mich, mir …)",
     "level": "A2",
     "group": "Pronouns",
-    "summary": "Pronouns change with the case: ich → mich (accusative) → mir (dative), du → dich → dir, er → ihn → ihm. Kannst du mir helfen? Ich sehe dich."
+    "summary": "Pronouns change with the case: ich → mich (accusative) → mir (dative), du → dich → dir, er → ihn → ihm. Kannst du mir helfen? Ich sehe dich.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/pronouns-accusative-dative/practice"
+      }
+    ]
   },
   {
     "slug": "verbs-with-dative",
     "title": "Verbs that take the dative (helfen, gefallen …)",
     "level": "A2",
     "group": "Cases",
-    "summary": "A few common verbs always take a dative object: helfen, danken, gefallen, gehören, schmecken. Das Buch gefällt mir. Ich helfe dir."
+    "summary": "A few common verbs always take a dative object: helfen, danken, gefallen, gehören, schmecken. Das Buch gefällt mir. Ich helfe dir.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/verbs-with-dative/practice"
+      }
+    ]
   },
   {
     "slug": "prepositions-dative",
     "title": "Prepositions with the dative",
     "level": "A2",
     "group": "Prepositions",
-    "summary": "aus, bei, mit, nach, seit, von and zu always take the dative: mit dem Bus, bei meiner Tante. bei dem → beim, zu dem → zum, zu der → zur."
+    "summary": "aus, bei, mit, nach, seit, von and zu always take the dative: mit dem Bus, bei meiner Tante. bei dem → beim, zu dem → zum, zu der → zur.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/prepositions-dative/practice"
+      }
+    ]
   },
   {
     "slug": "prepositions-accusative",
     "title": "Prepositions with the accusative",
     "level": "A2",
     "group": "Prepositions",
-    "summary": "durch, für, gegen, ohne and um always take the accusative: für meinen Vater, ohne den Hund."
+    "summary": "durch, für, gegen, ohne and um always take the accusative: für meinen Vater, ohne den Hund.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/prepositions-accusative/practice"
+      }
+    ]
   },
   {
     "slug": "two-way-prepositions",
     "title": "Two-way prepositions (in, auf, an …)",
     "level": "A2",
     "group": "Prepositions",
-    "summary": "in, an, auf, über, unter, vor, hinter, neben and zwischen take the accusative for movement (wohin? Ich gehe in die Küche) and the dative for location (wo? Ich bin in der Küche)."
+    "summary": "in, an, auf, über, unter, vor, hinter, neben and zwischen take the accusative for movement (wohin? Ich gehe in die Küche) and the dative for location (wo? Ich bin in der Küche).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/two-way-prepositions/practice"
+      }
+    ]
   },
   {
     "slug": "reflexive-verbs",
     "title": "Reflexive verbs (sich freuen, sich waschen)",
     "level": "A2",
     "group": "Verbs and tenses",
-    "summary": "Some verbs need a reflexive pronoun that refers back to the subject: Ich freue mich. Du wäschst dich. The pronoun is the same as the accusative pronoun, except sich for er/sie/es and sie/Sie."
+    "summary": "Some verbs need a reflexive pronoun that refers back to the subject: Ich freue mich. Du wäschst dich. The pronoun is the same as the accusative pronoun, except sich for er/sie/es and sie/Sie.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/reflexive-verbs/practice"
+      }
+    ]
   },
   {
     "slug": "past-modal-verbs",
     "title": "Simple past of modal verbs (konnte, musste)",
     "level": "A2",
     "group": "Verbs and tenses",
-    "summary": "Modal verbs usually use the simple past, not the perfect: ich konnte, ich musste, ich wollte, ich durfte. The umlaut disappears: können → konnte."
+    "summary": "Modal verbs usually use the simple past, not the perfect: ich konnte, ich musste, ich wollte, ich durfte. The umlaut disappears: können → konnte.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/past-modal-verbs/practice"
+      }
+    ]
   },
   {
     "slug": "comparative-superlative",

@@ -3,39 +3,55 @@ import type { ExerciseSet } from "./types";
 import s0 from "./data/accusative-case.json" with { type: "json" };
 import s1 from "./data/articles-definite-indefinite.json" with { type: "json" };
 import s2 from "./data/coordinating-conjunctions.json" with { type: "json" };
-import s3 from "./data/imperative.json" with { type: "json" };
-import s4 from "./data/modal-verbs.json" with { type: "json" };
-import s5 from "./data/negation-nicht-kein.json" with { type: "json" };
-import s6 from "./data/past-sein-haben.json" with { type: "json" };
-import s7 from "./data/perfect-tense.json" with { type: "json" };
-import s8 from "./data/personal-pronouns.json" with { type: "json" };
-import s9 from "./data/plural-nouns.json" with { type: "json" };
-import s10 from "./data/possessive-articles.json" with { type: "json" };
-import s11 from "./data/present-tense-regular.json" with { type: "json" };
-import s12 from "./data/present-tense-stem-change.json" with { type: "json" };
-import s13 from "./data/questions.json" with { type: "json" };
-import s14 from "./data/sein-haben.json" with { type: "json" };
-import s15 from "./data/separable-verbs.json" with { type: "json" };
-import s16 from "./data/time-prepositions.json" with { type: "json" };
-import s17 from "./data/word-order-verb-second.json" with { type: "json" };
+import s3 from "./data/dative-case.json" with { type: "json" };
+import s4 from "./data/imperative.json" with { type: "json" };
+import s5 from "./data/modal-verbs.json" with { type: "json" };
+import s6 from "./data/negation-nicht-kein.json" with { type: "json" };
+import s7 from "./data/past-modal-verbs.json" with { type: "json" };
+import s8 from "./data/past-sein-haben.json" with { type: "json" };
+import s9 from "./data/perfect-tense.json" with { type: "json" };
+import s10 from "./data/personal-pronouns.json" with { type: "json" };
+import s11 from "./data/plural-nouns.json" with { type: "json" };
+import s12 from "./data/possessive-articles.json" with { type: "json" };
+import s13 from "./data/prepositions-accusative.json" with { type: "json" };
+import s14 from "./data/prepositions-dative.json" with { type: "json" };
+import s15 from "./data/present-tense-regular.json" with { type: "json" };
+import s16 from "./data/present-tense-stem-change.json" with { type: "json" };
+import s17 from "./data/pronouns-accusative-dative.json" with { type: "json" };
+import s18 from "./data/questions.json" with { type: "json" };
+import s19 from "./data/reflexive-verbs.json" with { type: "json" };
+import s20 from "./data/sein-haben.json" with { type: "json" };
+import s21 from "./data/separable-verbs.json" with { type: "json" };
+import s22 from "./data/time-prepositions.json" with { type: "json" };
+import s23 from "./data/two-way-prepositions.json" with { type: "json" };
+import s24 from "./data/verbs-with-dative.json" with { type: "json" };
+import s25 from "./data/word-order-verb-second.json" with { type: "json" };
 
 export const EXERCISE_SETS: Record<string, ExerciseSet> = {
   "accusative-case": s0 as ExerciseSet,
   "articles-definite-indefinite": s1 as ExerciseSet,
   "coordinating-conjunctions": s2 as ExerciseSet,
-  "imperative": s3 as ExerciseSet,
-  "modal-verbs": s4 as ExerciseSet,
-  "negation-nicht-kein": s5 as ExerciseSet,
-  "past-sein-haben": s6 as ExerciseSet,
-  "perfect-tense": s7 as ExerciseSet,
-  "personal-pronouns": s8 as ExerciseSet,
-  "plural-nouns": s9 as ExerciseSet,
-  "possessive-articles": s10 as ExerciseSet,
-  "present-tense-regular": s11 as ExerciseSet,
-  "present-tense-stem-change": s12 as ExerciseSet,
-  "questions": s13 as ExerciseSet,
-  "sein-haben": s14 as ExerciseSet,
-  "separable-verbs": s15 as ExerciseSet,
-  "time-prepositions": s16 as ExerciseSet,
-  "word-order-verb-second": s17 as ExerciseSet,
+  "dative-case": s3 as ExerciseSet,
+  "imperative": s4 as ExerciseSet,
+  "modal-verbs": s5 as ExerciseSet,
+  "negation-nicht-kein": s6 as ExerciseSet,
+  "past-modal-verbs": s7 as ExerciseSet,
+  "past-sein-haben": s8 as ExerciseSet,
+  "perfect-tense": s9 as ExerciseSet,
+  "personal-pronouns": s10 as ExerciseSet,
+  "plural-nouns": s11 as ExerciseSet,
+  "possessive-articles": s12 as ExerciseSet,
+  "prepositions-accusative": s13 as ExerciseSet,
+  "prepositions-dative": s14 as ExerciseSet,
+  "present-tense-regular": s15 as ExerciseSet,
+  "present-tense-stem-change": s16 as ExerciseSet,
+  "pronouns-accusative-dative": s17 as ExerciseSet,
+  "questions": s18 as ExerciseSet,
+  "reflexive-verbs": s19 as ExerciseSet,
+  "sein-haben": s20 as ExerciseSet,
+  "separable-verbs": s21 as ExerciseSet,
+  "time-prepositions": s22 as ExerciseSet,
+  "two-way-prepositions": s23 as ExerciseSet,
+  "verbs-with-dative": s24 as ExerciseSet,
+  "word-order-verb-second": s25 as ExerciseSet,
 };
