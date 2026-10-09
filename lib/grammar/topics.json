@@ -1,0 +1,583 @@
+[
+  {
+    "slug": "noun-gender",
+    "title": "Noun gender (der, die, das)",
+    "level": "A1",
+    "group": "Nouns and articles",
+    "summary": "Every German noun is masculine (der), feminine (die) or neuter (das), and the article changes with it. Many endings give the gender away: -ung, -heit and -keit are feminine, -chen is neuter.",
+    "exercises": [
+      {
+        "title": "der · die · das flashcards",
+        "href": "/articles"
+      }
+    ],
+    "rulesHref": "/rules"
+  },
+  {
+    "slug": "articles-definite-indefinite",
+    "title": "Definite and indefinite articles",
+    "level": "A1",
+    "group": "Nouns and articles",
+    "summary": "der, die, das mean \"the\"; ein and eine mean \"a\". Use the indefinite article for something new and the definite one once it's known: Da ist ein Hund. Der Hund ist groß."
+  },
+  {
+    "slug": "plural-nouns",
+    "title": "Plural forms of nouns",
+    "level": "A1",
+    "group": "Nouns and articles",
+    "summary": "German has several plural patterns: -e (Tage), -er with umlaut (Häuser), -(e)n (Frauen), -s (Autos) or no ending (Lehrer). The plural article is always die."
+  },
+  {
+    "slug": "negation-nicht-kein",
+    "title": "Negation with nicht and kein",
+    "level": "A1",
+    "group": "Sentence structure",
+    "summary": "kein negates a noun that would have ein or no article (Ich habe kein Auto). nicht negates everything else: verbs, adjectives, nouns with der/die/das (Das ist nicht mein Auto)."
+  },
+  {
+    "slug": "personal-pronouns",
+    "title": "Personal pronouns (ich, du, er …)",
+    "level": "A1",
+    "group": "Pronouns",
+    "summary": "ich, du, er, sie, es, wir, ihr, sie and Sie. du is informal, Sie is formal and always capitalised. er, sie and es follow the noun's gender: der Tisch → er."
+  },
+  {
+    "slug": "present-tense-regular",
+    "title": "Present tense of regular verbs",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "Take the stem and add -e, -st, -t, -en, -t, -en: ich spiele, du spielst, er spielt. Stems ending in -t or -d add an extra e: du arbeitest."
+  },
+  {
+    "slug": "present-tense-stem-change",
+    "title": "Present tense: stem-changing verbs",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "Some verbs change their vowel with du and er/sie/es: fahren → du fährst, lesen → er liest, nehmen → du nimmst. The other forms stay regular."
+  },
+  {
+    "slug": "sein-haben",
+    "title": "sein and haben",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "The two most important irregular verbs: ich bin, du bist, er ist …; ich habe, du hast, er hat … They are also the helper verbs for the perfect tense."
+  },
+  {
+    "slug": "separable-verbs",
+    "title": "Separable verbs",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "Verbs like aufstehen and einkaufen split in a main clause: the prefix goes to the end. Ich stehe um 7 Uhr auf. In the infinitive and at the end of a subordinate clause they stay together."
+  },
+  {
+    "slug": "modal-verbs",
+    "title": "Modal verbs (können, müssen, wollen …)",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "können, müssen, dürfen, sollen, wollen and möchten combine with a second verb in the infinitive at the end: Ich kann gut schwimmen. ich and er/sie/es have the same form: ich kann, er kann."
+  },
+  {
+    "slug": "imperative",
+    "title": "The imperative (giving instructions)",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "Three forms for du, ihr and Sie: Komm! Kommt! Kommen Sie! The du form drops -st and the pronoun: du fährst → Fahr!"
+  },
+  {
+    "slug": "perfect-tense",
+    "title": "Perfect tense (Perfekt)",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "The usual spoken past: haben or sein plus the past participle at the end. Ich habe Pizza gegessen. Verbs of movement or change use sein: Ich bin nach Berlin gefahren."
+  },
+  {
+    "slug": "past-sein-haben",
+    "title": "Simple past of sein and haben (war, hatte)",
+    "level": "A1",
+    "group": "Verbs and tenses",
+    "summary": "Even in speech, sein and haben usually use the simple past: Ich war krank. Wir hatten keine Zeit."
+  },
+  {
+    "slug": "word-order-verb-second",
+    "title": "Word order: the verb in second position",
+    "level": "A1",
+    "group": "Sentence structure",
+    "summary": "In a main clause the conjugated verb is always the second element. If something else comes first, the subject moves behind the verb: Heute gehe ich ins Kino."
+  },
+  {
+    "slug": "questions",
+    "title": "Questions (W-questions and yes/no questions)",
+    "level": "A1",
+    "group": "Sentence structure",
+    "summary": "W-questions start with a question word and the verb comes second: Wo wohnst du? Yes/no questions start with the verb: Wohnst du in Berlin?"
+  },
+  {
+    "slug": "coordinating-conjunctions",
+    "title": "Joining sentences with und, aber, oder, denn",
+    "level": "A1",
+    "group": "Linking ideas",
+    "summary": "und, aber, oder, denn and sondern join two main clauses without changing the word order: Ich bin müde, aber ich gehe noch ins Kino."
+  },
+  {
+    "slug": "accusative-case",
+    "title": "Accusative case",
+    "level": "A1",
+    "group": "Cases",
+    "summary": "The direct object is in the accusative. Only masculine articles change: der → den, ein → einen. Ich sehe den Mann. Ich kaufe einen Tisch."
+  },
+  {
+    "slug": "possessive-articles",
+    "title": "Possessive articles (mein, dein, sein …)",
+    "level": "A1",
+    "group": "Pronouns",
+    "summary": "mein, dein, sein, ihr, unser, euer, ihr and Ihr take the same endings as ein: mein Bruder, meine Schwester, meinen Bruder (accusative)."
+  },
+  {
+    "slug": "time-prepositions",
+    "title": "Time expressions (am, um, im)",
+    "level": "A1",
+    "group": "Prepositions",
+    "summary": "um for clock times (um 8 Uhr), am for days and parts of the day (am Montag, am Abend), im for months and seasons (im Mai, im Sommer)."
+  },
+  {
+    "slug": "dative-case",
+    "title": "Dative case",
+    "level": "A2",
+    "group": "Cases",
+    "summary": "The indirect object, usually the person receiving something, is in the dative: Ich gebe dem Kind das Buch. Articles change: der/das → dem, die → der, plural die → den (+ n)."
+  },
+  {
+    "slug": "pronouns-accusative-dative",
+    "title": "Pronouns in the accusative and dative (mich, mir …)",
+    "level": "A2",
+    "group": "Pronouns",
+    "summary": "Pronouns change with the case: ich → mich (accusative) → mir (dative), du → dich → dir, er → ihn → ihm. Kannst du mir helfen? Ich sehe dich."
+  },
+  {
+    "slug": "verbs-with-dative",
+    "title": "Verbs that take the dative (helfen, gefallen …)",
+    "level": "A2",
+    "group": "Cases",
+    "summary": "A few common verbs always take a dative object: helfen, danken, gefallen, gehören, schmecken. Das Buch gefällt mir. Ich helfe dir."
+  },
+  {
+    "slug": "prepositions-dative",
+    "title": "Prepositions with the dative",
+    "level": "A2",
+    "group": "Prepositions",
+    "summary": "aus, bei, mit, nach, seit, von and zu always take the dative: mit dem Bus, bei meiner Tante. bei dem → beim, zu dem → zum, zu der → zur."
+  },
+  {
+    "slug": "prepositions-accusative",
+    "title": "Prepositions with the accusative",
+    "level": "A2",
+    "group": "Prepositions",
+    "summary": "durch, für, gegen, ohne and um always take the accusative: für meinen Vater, ohne den Hund."
+  },
+  {
+    "slug": "two-way-prepositions",
+    "title": "Two-way prepositions (in, auf, an …)",
+    "level": "A2",
+    "group": "Prepositions",
+    "summary": "in, an, auf, über, unter, vor, hinter, neben and zwischen take the accusative for movement (wohin? Ich gehe in die Küche) and the dative for location (wo? Ich bin in der Küche)."
+  },
+  {
+    "slug": "reflexive-verbs",
+    "title": "Reflexive verbs (sich freuen, sich waschen)",
+    "level": "A2",
+    "group": "Verbs and tenses",
+    "summary": "Some verbs need a reflexive pronoun that refers back to the subject: Ich freue mich. Du wäschst dich. The pronoun is the same as the accusative pronoun, except sich for er/sie/es and sie/Sie."
+  },
+  {
+    "slug": "past-modal-verbs",
+    "title": "Simple past of modal verbs (konnte, musste)",
+    "level": "A2",
+    "group": "Verbs and tenses",
+    "summary": "Modal verbs usually use the simple past, not the perfect: ich konnte, ich musste, ich wollte, ich durfte. The umlaut disappears: können → konnte."
+  },
+  {
+    "slug": "comparative-superlative",
+    "title": "Comparative and superlative",
+    "level": "A2",
+    "group": "Adjectives",
+    "summary": "Add -er for the comparative and am …-sten for the superlative: schnell, schneller, am schnellsten. Short words often add an umlaut: alt → älter. Irregular: gut, besser, am besten."
+  },
+  {
+    "slug": "adjective-endings-basic",
+    "title": "Adjective endings: the basics",
+    "level": "A2",
+    "group": "Adjectives",
+    "summary": "An adjective before a noun takes an ending: der große Hund, ein großer Hund. After der/die/das the ending is mostly -e or -en; after ein the adjective shows the gender itself."
+  },
+  {
+    "slug": "subordinate-clauses",
+    "title": "Subordinate clauses with weil, dass, wenn",
+    "level": "A2",
+    "group": "Linking ideas",
+    "summary": "After weil, dass, wenn, ob and similar words, the conjugated verb goes to the end: Ich bleibe zu Hause, weil ich krank bin. If the subordinate clause comes first, the main clause starts with the verb."
+  },
+  {
+    "slug": "konjunktiv-ii-polite",
+    "title": "Polite requests (würde, könnte, hätte gern)",
+    "level": "A2",
+    "group": "Verbs and tenses",
+    "summary": "Use würde, könnte and hätte gern to sound polite: Könnten Sie mir helfen? Ich hätte gern einen Kaffee. Ich würde gern mitkommen."
+  },
+  {
+    "slug": "indefinite-pronouns",
+    "title": "man, jemand, niemand, etwas, nichts",
+    "level": "A2",
+    "group": "Pronouns",
+    "summary": "man means people in general and takes the er/sie/es form of the verb: Hier darf man nicht rauchen. jemand/niemand mean someone/no one; etwas/nichts mean something/nothing."
+  },
+  {
+    "slug": "ordinal-numbers-dates",
+    "title": "Ordinal numbers and dates",
+    "level": "A2",
+    "group": "Other",
+    "summary": "Ordinals add -te up to 19 and -ste from 20: der zweite, der zwanzigste (der erste, der dritte and der siebte are irregular). Dates: am ersten Mai, heute ist der dritte Juni."
+  },
+  {
+    "slug": "compound-nouns",
+    "title": "Compound nouns",
+    "level": "A2",
+    "group": "Nouns and articles",
+    "summary": "German joins nouns into one word, and the last part decides the gender: das Haus + die Tür = die Haustür. Sometimes a linking -s- or -n- appears: Arbeitszimmer, Straßenbahn."
+  },
+  {
+    "slug": "genitive-case",
+    "title": "Genitive case",
+    "level": "B1",
+    "group": "Cases",
+    "summary": "The genitive shows possession: das Auto meines Vaters, die Tasche der Frau. Masculine and neuter nouns add -s or -es. In speech, von + dative is often used instead."
+  },
+  {
+    "slug": "prepositions-genitive",
+    "title": "Prepositions with the genitive (wegen, trotz, während)",
+    "level": "B1",
+    "group": "Prepositions",
+    "summary": "wegen, trotz, während and statt take the genitive in written German: wegen des Wetters, trotz des Regens. In everyday speech the dative is common."
+  },
+  {
+    "slug": "n-declension",
+    "title": "Weak masculine nouns (n-declension)",
+    "level": "B1",
+    "group": "Nouns and articles",
+    "summary": "Some masculine nouns add -n or -en in every case except the nominative singular: der Junge → den Jungen, dem Jungen. Many are people or animals: Kollege, Student, Mensch, Löwe."
+  },
+  {
+    "slug": "adjective-declension",
+    "title": "Adjective declension: all cases",
+    "level": "B1",
+    "group": "Adjectives",
+    "summary": "The full pattern for adjective endings after der, after ein and with no article, in all four cases: mit dem neuen Auto, mit einem neuen Auto, mit neuem Mut."
+  },
+  {
+    "slug": "simple-past",
+    "title": "Simple past (Präteritum)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "The written past tense, used in stories and reports. Regular verbs add -te: ich spielte. Irregular verbs change the stem: ich ging, er kam, sie sah."
+  },
+  {
+    "slug": "past-perfect",
+    "title": "Past perfect (Plusquamperfekt)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "For something that happened before another past event: hatte or war plus the participle. Nachdem ich gegessen hatte, ging ich spazieren."
+  },
+  {
+    "slug": "future-tense",
+    "title": "Future tense (Futur I)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "werden plus the infinitive at the end: Ich werde morgen anrufen. German often uses the present for the future (Ich rufe morgen an); werden adds a promise or a prediction."
+  },
+  {
+    "slug": "passive-present-past",
+    "title": "Passive voice (present and past)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "werden plus the participle, when the action matters more than who does it: Das Haus wird gebaut. In the past: Das Haus wurde 1900 gebaut. The doer can be added with von."
+  },
+  {
+    "slug": "relative-clauses",
+    "title": "Relative clauses (der, die, das, dem …)",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "Describe a noun with a clause that starts with der/die/das and ends with the verb: Der Mann, der dort steht, ist mein Lehrer. The pronoun takes its case from its role in the clause: der Mann, dem ich helfe."
+  },
+  {
+    "slug": "infinitive-with-zu",
+    "title": "Infinitive with zu",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "After many verbs and expressions, a second verb comes at the end with zu: Ich habe keine Lust, heute zu arbeiten. Separable verbs put zu in the middle: anzurufen."
+  },
+  {
+    "slug": "um-zu-damit",
+    "title": "Expressing purpose (um … zu, damit)",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "um … zu when the subject stays the same: Ich lerne Deutsch, um in Berlin zu arbeiten. damit when it changes: Ich erkläre es, damit du es verstehst."
+  },
+  {
+    "slug": "als-wenn",
+    "title": "Time clauses with als and wenn",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "als for a single event in the past (Als ich ein Kind war, …), wenn for repeated events and for the present or future (Immer wenn es regnet, …; Wenn ich fertig bin, …)."
+  },
+  {
+    "slug": "konjunktiv-ii-hypothetical",
+    "title": "Wishes and unreal conditions (Konjunktiv II)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "For things that aren't real: Wenn ich Zeit hätte, würde ich reisen. Ich wäre gern am Meer. Most verbs use würde + infinitive; sein, haben and the modal verbs have their own forms."
+  },
+  {
+    "slug": "indirect-questions",
+    "title": "Indirect questions (ob, wo, wann …)",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "A question inside another sentence puts the verb at the end: Weißt du, wo er wohnt? For yes/no questions use ob: Ich frage mich, ob sie kommt."
+  },
+  {
+    "slug": "verbs-with-prepositions",
+    "title": "Verbs with prepositions (warten auf, sich freuen über)",
+    "level": "B1",
+    "group": "Verbs and tenses",
+    "summary": "Many verbs come with a fixed preposition and case: warten auf + accusative, Angst haben vor + dative. da- and wo- words refer back to them: Worauf wartest du? Ich warte darauf."
+  },
+  {
+    "slug": "concessive-obwohl-trotzdem",
+    "title": "Contrast: obwohl and trotzdem",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "obwohl starts a subordinate clause (verb at the end): Obwohl es regnet, gehe ich spazieren. trotzdem is an adverb in a main clause (verb second): Es regnet. Trotzdem gehe ich spazieren."
+  },
+  {
+    "slug": "consequence-deshalb",
+    "title": "Consequence: deshalb, deswegen, darum",
+    "level": "B1",
+    "group": "Linking ideas",
+    "summary": "These words mean \"that's why\" and take position 1, so the verb comes next: Ich bin krank, deshalb bleibe ich zu Hause."
+  },
+  {
+    "slug": "passive-advanced",
+    "title": "Passive voice: all tenses and with modal verbs",
+    "level": "B2",
+    "group": "Verbs and tenses",
+    "summary": "Perfect passive with worden: Das Haus ist gebaut worden. With modal verbs: Das muss repariert werden. Also the state passive with sein: Die Tür ist geschlossen."
+  },
+  {
+    "slug": "passive-alternatives",
+    "title": "Alternatives to the passive (man, lassen, -bar, sein + zu)",
+    "level": "B2",
+    "group": "Verbs and tenses",
+    "summary": "Other ways to say what can or must be done: Das kann man reparieren. Das lässt sich reparieren. Das ist reparierbar. Das ist zu reparieren."
+  },
+  {
+    "slug": "konjunktiv-ii-past",
+    "title": "Unreal past (hätte … gemacht, wäre … gegangen)",
+    "level": "B2",
+    "group": "Verbs and tenses",
+    "summary": "For things that didn't happen: hätte or wäre plus the participle. Wenn ich das gewusst hätte, wäre ich gekommen. With modal verbs: Ich hätte anrufen sollen."
+  },
+  {
+    "slug": "konjunktiv-i-reported-speech",
+    "title": "Reported speech (Konjunktiv I)",
+    "level": "B2",
+    "group": "Verbs and tenses",
+    "summary": "Used in news and formal writing to report what someone said: Er sagt, er sei krank. Sie meint, sie habe keine Zeit. Where Konjunktiv I looks like the present, Konjunktiv II is used instead."
+  },
+  {
+    "slug": "participles-as-adjectives",
+    "title": "Participles as adjectives (der lachende Mann)",
+    "level": "B2",
+    "group": "Adjectives",
+    "summary": "Present and past participles can describe a noun like adjectives: das schlafende Kind, das gekochte Ei. In formal writing they can carry whole phrases: der seit Jahren in Berlin lebende Autor."
+  },
+  {
+    "slug": "two-part-conjunctions",
+    "title": "Two-part conjunctions (entweder … oder, sowohl … als auch)",
+    "level": "B2",
+    "group": "Linking ideas",
+    "summary": "entweder … oder (either … or), weder … noch (neither … nor), sowohl … als auch (both … and), nicht nur … sondern auch, zwar … aber, je … desto."
+  },
+  {
+    "slug": "relative-clauses-advanced",
+    "title": "Relative clauses: was, wo, wer and with prepositions",
+    "level": "B2",
+    "group": "Linking ideas",
+    "summary": "Prepositions go in front of the relative pronoun: die Stadt, in der ich wohne. Use was after alles, nichts or a whole sentence (alles, was ich weiß), wo for places, and wer for \"whoever\"."
+  },
+  {
+    "slug": "infinitive-clauses-ohne-statt",
+    "title": "ohne … zu, statt … zu, anstatt dass",
+    "level": "B2",
+    "group": "Linking ideas",
+    "summary": "ohne … zu (without doing) and statt … zu (instead of doing) when the subject is the same: Er ging, ohne sich zu verabschieden. With a different subject: ohne dass, statt dass."
+  },
+  {
+    "slug": "nominalisation",
+    "title": "Nouns from verbs (Nominalisierung)",
+    "level": "B2",
+    "group": "Other",
+    "summary": "Formal German often turns verbs into nouns: lesen → das Lesen, entscheiden → die Entscheidung. Nach dem Essen instead of Nachdem wir gegessen haben."
+  },
+  {
+    "slug": "modal-particles",
+    "title": "Modal particles (doch, mal, ja, eben)",
+    "level": "B2",
+    "group": "Other",
+    "summary": "Small words that add tone in spoken German: Komm doch mal vorbei! (friendly), Das ist ja toll! (surprise), Das ist eben so (that's just how it is)."
+  },
+  {
+    "slug": "futur-ii",
+    "title": "Future perfect (Futur II)",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "For something that will be finished by a point in the future, or a guess about the past: werden + participle + haben/sein. Bis Montag werde ich es geschafft haben. Er wird wohl den Zug verpasst haben."
+  },
+  {
+    "slug": "modal-verbs-subjective",
+    "title": "Modal verbs for assumptions and hearsay",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "Modal verbs can show how sure you are or where information came from: Sie muss krank sein (I'm sure), Er dürfte zu Hause sein (probably), Er soll sehr reich sein (people say), Sie will es allein geschafft haben (she claims)."
+  },
+  {
+    "slug": "passive-impersonal",
+    "title": "Impersonal passive and passive with dative verbs",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "The passive also works without a subject: Hier wird nicht geraucht. Am Samstag wird getanzt. Verbs with a dative object keep the dative: Mir wurde geholfen (not Ich wurde geholfen)."
+  },
+  {
+    "slug": "konjunktiv-i-advanced",
+    "title": "Reported speech in all tenses (Konjunktiv I)",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "Reporting past events, questions and requests: Er sagte, er habe es nicht gewusst. Sie fragte, ob ich Zeit hätte. Er meinte, ich solle warten."
+  },
+  {
+    "slug": "conditionals-without-wenn",
+    "title": "Conditions without wenn",
+    "level": "C1",
+    "group": "Linking ideas",
+    "summary": "In formal German a condition can start with the verb instead of wenn: Sollte es regnen, bleiben wir zu Hause. Hätte ich das gewusst, wäre ich gekommen."
+  },
+  {
+    "slug": "participle-phrases-extended",
+    "title": "Extended participle phrases",
+    "level": "C1",
+    "group": "Adjectives",
+    "summary": "Long descriptions packed between the article and the noun, typical of newspapers and academic texts: die von der Regierung gestern beschlossenen Maßnahmen (the measures that the government decided yesterday)."
+  },
+  {
+    "slug": "participle-clauses",
+    "title": "Participle clauses (Im Büro angekommen, …)",
+    "level": "C1",
+    "group": "Linking ideas",
+    "summary": "A participle can replace a whole clause: Im Büro angekommen, rief sie sofort an (= Als sie im Büro angekommen war, …). Vom Lärm geweckt, stand er auf."
+  },
+  {
+    "slug": "nominal-verbal-style",
+    "title": "Switching between noun style and verb style",
+    "level": "C1",
+    "group": "Other",
+    "summary": "Turning clauses into noun phrases and back, a key skill for formal writing: Weil es stark regnete … ↔ Wegen des starken Regens … Nachdem er zurückgekehrt war … ↔ Nach seiner Rückkehr …"
+  },
+  {
+    "slug": "funktionsverbgefuege",
+    "title": "Fixed verb-noun phrases (Funktionsverbgefüge)",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "Formal phrases where a noun carries the meaning and the verb is almost empty: zur Verfügung stellen (provide), in Frage kommen (be possible), eine Entscheidung treffen (decide), in Kraft treten (come into force)."
+  },
+  {
+    "slug": "connectors-advanced",
+    "title": "Advanced connectors (sofern, indem, wohingegen …)",
+    "level": "C1",
+    "group": "Linking ideas",
+    "summary": "Precise links between ideas: indem (by doing), sofern (provided that), wohingegen (whereas), insofern … als (to the extent that), geschweige denn (let alone), je nachdem (depending on)."
+  },
+  {
+    "slug": "prepositions-formal-genitive",
+    "title": "Formal prepositions with the genitive",
+    "level": "C1",
+    "group": "Prepositions",
+    "summary": "Written German uses many genitive prepositions: aufgrund, angesichts, hinsichtlich, mithilfe, infolge, zwecks, unweit. Aufgrund des Streiks fallen alle Züge aus."
+  },
+  {
+    "slug": "verbs-with-genitive",
+    "title": "Verbs and adjectives with the genitive",
+    "level": "C1",
+    "group": "Cases",
+    "summary": "A few formal verbs and adjectives take a genitive object: gedenken (remember), bedürfen (need), sich bewusst sein, sich einer Sache schämen. Wir gedenken der Opfer."
+  },
+  {
+    "slug": "correlate-es-da",
+    "title": "Placeholder es and da- words (Korrelat)",
+    "level": "C1",
+    "group": "Sentence structure",
+    "summary": "es or a da- word can point ahead to a whole clause: Ich finde es wichtig, dass du kommst. Ich freue mich darauf, dich zu sehen. Knowing when they're required, optional or wrong is a C1 skill."
+  },
+  {
+    "slug": "separable-inseparable-pairs",
+    "title": "Verbs that can be separable or not (übersetzen, umfahren)",
+    "level": "C1",
+    "group": "Verbs and tenses",
+    "summary": "Some prefixes (über-, um-, durch-, unter-, wieder-) can be separable or not, with different meanings and stress: Er setzt mit der Fähre über (crosses over) vs. Er übersetzt den Text (translates)."
+  },
+  {
+    "slug": "konjunktiv-i-set-phrases",
+    "title": "Konjunktiv I in set phrases and instructions",
+    "level": "C2",
+    "group": "Verbs and tenses",
+    "summary": "Fixed expressions and recipe or instruction style use Konjunktiv I: Es lebe die Freiheit! Gott sei Dank. Man nehme 200 g Mehl. Sei es, wie es sei."
+  },
+  {
+    "slug": "hedging-formal-style",
+    "title": "Hedging and nuance in formal writing",
+    "level": "C2",
+    "group": "Other",
+    "summary": "Academic and professional German softens claims with Konjunktiv II and modal verbs: Es wäre zu prüfen, ob … Dies dürfte darauf zurückzuführen sein, dass … Man könnte einwenden, dass …"
+  },
+  {
+    "slug": "complex-sentence-structure",
+    "title": "Complex sentences with several layers",
+    "level": "C2",
+    "group": "Sentence structure",
+    "summary": "Long sentences with clauses inside clauses, extended participle phrases and several verbs at the end, as in legal, academic or literary texts: … dass er das Buch, das er seit Jahren hatte schreiben wollen, endlich beendet hat."
+  },
+  {
+    "slug": "word-order-emphasis",
+    "title": "Word order for emphasis (fronting and moving to the end)",
+    "level": "C2",
+    "group": "Sentence structure",
+    "summary": "Choosing what goes first or last to shift emphasis: Den Film habe ich gesehen, das Buch nicht. Moving parts after the final verb in speech and journalism: Ich habe ihn gesehen gestern im Park."
+  },
+  {
+    "slug": "modal-particle-combinations",
+    "title": "Combining modal particles (doch mal, ja wohl, halt eben)",
+    "level": "C2",
+    "group": "Other",
+    "summary": "Native speakers stack particles for fine shades of meaning: Komm doch mal her! Das ist ja wohl nicht dein Ernst! Das ist halt eben so."
+  },
+  {
+    "slug": "spoken-vs-written-grammar",
+    "title": "Spoken vs written grammar",
+    "level": "C2",
+    "group": "Other",
+    "summary": "What changes between registers and regions: wegen + dative in speech, weil with main-clause word order (weil ich hab keine Zeit), Perfekt vs Präteritum in north and south, the tun + infinitive form (Ich tu gerade kochen)."
+  },
+  {
+    "slug": "word-formation-advanced",
+    "title": "Word formation: prefixes and suffixes",
+    "level": "C2",
+    "group": "Other",
+    "summary": "Building and decoding words: ver-, zer-, ent- and er- change a verb's meaning (verlaufen, zerbrechen, entkommen, erkämpfen); suffixes like -lich, -ig, -bar, -sam and -haft make adjectives with different shades."
+  }
+]
