@@ -23,6 +23,8 @@ writeFileSync(new URL("../lib/exercises/sets.ts", import.meta.url), sets);
 
 const topicsUrl = new URL("../lib/grammar/topics.json", import.meta.url);
 const topics = JSON.parse(readFileSync(topicsUrl, "utf8"));
+// Drop practice links whose data file is gone (any other exercises are kept).
+for (const t of topics) if (t.exercises?.[0]?.href === `/topics/${t.slug}/practice`) delete t.exercises;
 for (const slug of slugs) {
   const t = topics.find((x) => x.slug === slug);
   if (!t) throw new Error(`${slug}.json: no such topic in topics.json`);

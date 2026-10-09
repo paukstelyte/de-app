@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { LevelBadge } from "@/components/LevelBadge";
-import { getArticlesProgress } from "@/lib/attempts";
+import { getAllAttempts } from "@/lib/attempts";
 import { LEVEL_NAMES, TOPICS, topicsByLevel, type GrammarTopic } from "@/lib/grammar/topics";
+import { topicProgress } from "@/lib/learning/progress";
 import { percent } from "@/lib/progress";
+import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Grammar Topics" };
 
 const heading = "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
 
 export default async function TopicsPage() {
-  // Only noun gender has exercises (and answer history) so far; null for guests.
-  const articles = await getArticlesProgress();
+  // Accuracy per topic from one pass over the logged-in user's answers; guests get none.
+  const { data } = await (await createClient()).auth.getClaims();
   const progress: Record<string, string> = {};
-  if (articles && articles.overall.total > 0) {
-    progress["noun-gender"] = `Your accuracy ${percent(articles.overall)}% · ${articles.overall.total} answers`;
+  if (data?.claims) {
+    for (const [slug, p] of Object.entries(topicProgress(await getAllAttempts()))) {
+      progress[slug] = `Your accuracy ${percent(p)}% · ${p.total} answers`;
+    }
   }
   const levels = topicsByLevel();
 

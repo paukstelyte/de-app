@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FocusButton } from "@/components/learning/FocusButton";
 import { LevelBadge } from "@/components/LevelBadge";
-import { getArticlesProgress } from "@/lib/attempts";
+import { getArticlesProgress, getTopicAccuracy } from "@/lib/attempts";
+import { EXERCISE_SETS } from "@/lib/exercises/sets";
 import { LEVEL_NAMES, TOPICS, getTopic } from "@/lib/grammar/topics";
 import { percent } from "@/lib/progress";
 import { createClient } from "@/lib/supabase/server";
@@ -36,7 +37,11 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
   const i = sameLevel.indexOf(topic);
   const prev = sameLevel[i - 1];
   const next = sameLevel[i + 1];
-  const articles = topic.slug === "noun-gender" ? await getArticlesProgress() : null;
+  // Noun gender's answers are the flashcards' ("articles"); other topics' are their exercise set's.
+  const accuracy =
+    topic.slug === "noun-gender"
+      ? (await getArticlesProgress())?.overall
+      : Object.hasOwn(EXERCISE_SETS, topic.slug) ? await getTopicAccuracy(topic.slug) : null;
   const supabase = await createClient();
   const { data: claims } = await supabase.auth.getClaims();
   const loggedIn = !!claims?.claims;
@@ -76,9 +81,9 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
             Exercises coming soon. This topic&apos;s exercises are being built.
           </p>
         )}
-        {articles && articles.overall.total > 0 && (
+        {accuracy && accuracy.total > 0 && (
           <p className="text-sm">
-            Your accuracy so far: <b>{percent(articles.overall)}%</b> over {articles.overall.total} answers.{" "}
+            Your accuracy so far: <b>{percent(accuracy)}%</b> over {accuracy.total} answers.{" "}
             <Link href="/progress" className="underline underline-offset-2">See your progress</Link>
           </p>
         )}
