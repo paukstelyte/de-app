@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { embed } from "@/lib/embeddings";
-import { chunkText, MAX_CONTENT, MAX_TITLE, validateNote } from "@/lib/notes";
+import { chunkText, MAX_CONTENT, MAX_TITLE, noteLimitError, validateNote } from "@/lib/notes";
 import { createClient } from "@/lib/supabase/server";
 
 export type NoteResult = { error?: string };
@@ -34,6 +34,20 @@ export async function saveNote(noteId: unknown, title: unknown, content: unknown
   const { data } = await supabase.auth.getClaims();
   if (!data?.claims) return { error: ERRORS.loggedOut };
 
+  // Cheap checks before the paid embedding call. Editing: the note must be the
+  // user's own (RLS hides anyone else's, so it simply isn't found).
+  if (id !== null) {
+    const { data: existing } = await supabase.from("notes").select("id").eq("id", id).maybeSingle();
+    if (!existing) return { error: ERRORS.notFound };
+  }
+  // Every save counts against a per-user limit (10 a minute, 50 a day).
+  const { error: quotaError } = await supabase.rpc("use_note_quota");
+  if (quotaError) {
+    const limit = noteLimitError(quotaError.code, quotaError.message);
+    if (!limit) console.error("use_note_quota failed:", quotaError.message);
+    return { error: limit ?? ERRORS.generic };
+  }
+
   const chunks = chunkText(note.content);
   const vectors = await embed(chunks);
   if (!vectors) return { error: ERRORS.embed };
@@ -46,6 +60,8 @@ export async function saveNote(noteId: unknown, title: unknown, content: unknown
     p_embeddings: vectors.map((v) => JSON.stringify(v)),
   });
   if (error) {
+    const limit = noteLimitError(error.code, error.message);
+    if (limit) return { error: limit };
     console.error("save_note_with_chunks failed:", error.code, error.message);
     return { error: error.code === "P0002" ? ERRORS.notFound : ERRORS.generic };
   }

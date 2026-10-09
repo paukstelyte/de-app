@@ -1,6 +1,7 @@
 // Server only: reads OPENROUTER_API_KEY. Import only from server actions.
 // Embeddings never reach the browser: the server creates them and writes them
 // straight to the database.
+import "server-only"; // build fails if a browser component ever imports this
 import { embeddingsFrom } from "@/lib/notes";
 
 // Fixed on purpose (CLAUDE.md): changing the model or its 1536 dimensions

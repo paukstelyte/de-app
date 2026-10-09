@@ -98,12 +98,19 @@ Access:
 
 `public.match_documents(query_embedding vector(1536), match_threshold float, match_count int, p_user_id uuid)` returns `(id, note_id, content, similarity)`:
 - Returns `p_user_id`'s chunks whose similarity is above `match_threshold`, most similar first, at most `least(match_count, 200)`. `similarity` is cosine similarity (−1 to 1; 1 = same meaning); start with a threshold around 0.3–0.5.
-- **Security invoker** (runs with the caller's rights) and `search_path = ''`, so RLS still applies inside: passing another user's id returns nothing. Executable by `authenticated` only.
+- **Security invoker** (runs with the caller's rights) and `search_path = ''`, so RLS still applies inside: passing another user's id returns nothing. It also filters on `(select auth.uid())` itself (since `20261009100000`), so it would stay safe even if someone switched it to security definer — **never do that**. Executable by `authenticated` only.
+- plpgsql since `20261009100000`: it turns on pgvector's **iterative index scan** (`hnsw.iterative_scan = strict_order`, `hnsw.ef_search = 100`) for that call only, so the HNSW index keeps searching until it has enough of the caller's own chunks instead of stopping after the nearest 40 across all users. (Supabase doesn't allow these in the function's `SET` clause, hence `set_config(..., true)`.)
 
 `public.save_note_with_chunks(p_note_id bigint, p_title text, p_content text, p_chunks text[], p_embeddings text[])` returns the note id. Migration: `20261008120000_save_note_with_chunks.sql`.
 - Saves a note and its chunks **in one transaction**. `p_note_id` null creates a note; otherwise it updates that note, **deletes all its old chunks** and inserts the new ones, so no stale embeddings survive an edit. Raises `22023` unless there is exactly one embedding per chunk, and `P0002` if the note doesn't exist or isn't the caller's.
 - Called only by `saveNote` in `app/notes/actions.ts`, which splits the note (`chunkText` in `lib/notes.ts`: ~500 characters, ~100 overlap) and embeds every chunk on the server (`lib/embeddings.ts`) **before** calling it; if embedding fails nothing is written.
 - Security invoker with `search_path = ''`, so RLS applies; executable by `authenticated` only.
+
+**Limits** (migration `20261009100000_harden_notes.sql`, from the 2026-10-08 security scan). Saving a note costs an embedding call and storage, so:
+- `public.note_save_usage` + `public.use_note_quota()`: **10 saves a minute, 50 a day per user**, the same pattern as `chat_usage` (table closed to everyone; `security definer` function, executable by `authenticated` only; raises `P0001` "Note save limit reached"). `saveNote` calls it after the login and ownership checks and **before** embedding.
+- Triggers `notes_limit` and `documents_limit` (`BEFORE INSERT`): at most **100 notes** and **1,500 chunks** per user, raising `P0001`. They also apply to direct inserts through the API.
+- `save_note_with_chunks` rejects more than **60 chunks** in one save (`22023`); a 20,000-character note splits into about 56.
+- `noteLimitError` in `lib/notes.ts` turns these errors into plain messages for the Notes page.
 
 Tested on 2026-10-08 (rolled back): search order, threshold and count; another user sees 0 notes, 0 chunks and 0 search results even when passing the owner's id; deleting a note removes its chunks; a chunk on someone else's note, a wrong-size embedding and a signed-out call are all refused.
 

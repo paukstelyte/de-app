@@ -68,3 +68,22 @@ export function embeddingsFrom(data: unknown, expected: number): number[][] | nu
   );
   return ok ? (vectors as number[][]) : null;
 }
+
+/** A friendly message for the database's note limits (see the
+ * 20261009100000_harden_notes migration), or null for any other error. */
+export function noteLimitError(code: string | undefined, message: string | undefined): string | null {
+  const m = message ?? "";
+  if (code === "P0001" && m.startsWith("Note save limit")) {
+    return "You've saved a lot of notes in a short time. Please wait a bit and try again.";
+  }
+  if (code === "P0001" && m.startsWith("Note limit")) {
+    return "You've reached the limit of 100 notes. Delete some notes to save new ones.";
+  }
+  if (code === "P0001" && m.startsWith("Note storage limit")) {
+    return "Your notes have reached the storage limit. Delete or shorten some notes to save new ones.";
+  }
+  if (code === "22023" && m.startsWith("Too many chunks")) {
+    return "This note is too long to save. Please shorten it.";
+  }
+  return null;
+}

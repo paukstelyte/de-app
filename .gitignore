@@ -49,3 +49,4 @@ scripts/levels/*.pdf
 scripts/levels/*.txt
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
+.playwright/
