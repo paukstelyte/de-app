@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400">
           DE-app is a small, non-commercial learning project. It stores only what it needs to save
           your practice, and nothing is sold, shared for advertising or used for tracking.
-          Last updated: 6 October 2026.
+          Last updated: 9 October 2026.
         </p>
       </div>
 
@@ -42,11 +42,16 @@ export default function PrivacyPage() {
             &ldquo;Practise my mistakes&rdquo; list.
           </li>
           <li>
+            <strong>Your Customized Learning documents:</strong> the title, the text read from each
+            document and the suggested topics; the original files are deleted straight after reading.
+            Your focus list.
+          </li>
+          <li>
             <strong>Login cookies</strong> that keep you signed in. There are no analytics,
             advertising or tracking cookies.
           </li>
         </ul>
-        <p>Nobody else can see your answers. The database only lets each account read its own.</p>
+        <p>Nobody else can see your answers or your documents. The database only lets each account read its own.</p>
       </Section>
 
       <Section title="Services that handle your data for us">
@@ -64,7 +69,10 @@ export default function PrivacyPage() {
             sees your email address.
           </li>
           <li>
-            <strong>Google</strong>: only if you choose &ldquo;Continue with Google&rdquo;.
+            <strong>Google</strong>: if you choose &ldquo;Continue with Google&rdquo;, and if you upload documents to Customized Learning, documents are sent through OpenRouter to Google&rsquo;s Gemini model to read and suggest topics. Don&rsquo;t upload documents with personal details.
+          </li>
+          <li>
+            <strong>OpenRouter</strong>: handles the connection to Google&rsquo;s Gemini model for Customized Learning document processing.
           </li>
         </ul>
       </Section>
@@ -73,7 +81,7 @@ export default function PrivacyPage() {
         <p>
           Your data is kept for as long as you have an account. You can delete your account at any
           time on the <Link href="/account" className="underline underline-offset-2">Account</Link>{" "}
-          page: this immediately and permanently removes your account and every answer you saved.
+          page: this immediately and permanently removes your account, every answer you saved, your Customized Learning documents and focus list.
         </p>
       </Section>
 

@@ -35,7 +35,7 @@ export default async function AccountPage() {
         <h2 className={heading}>Delete account</h2>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           This permanently deletes your account and every answer you&apos;ve saved, including your
-          progress and trouble words. It can&apos;t be undone.
+          progress, trouble words, your Customized Learning documents and focus list. It can&apos;t be undone.
         </p>
         <DeleteAccountForm confirmWord={CONFIRM_WORD} />
       </section>
