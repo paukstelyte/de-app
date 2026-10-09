@@ -447,63 +447,117 @@
     "title": "Genitive case",
     "level": "B1",
     "group": "Cases",
-    "summary": "The genitive shows possession: das Auto meines Vaters, die Tasche der Frau. Masculine and neuter nouns add -s or -es. In speech, von + dative is often used instead."
+    "summary": "The genitive shows possession: das Auto meines Vaters, die Tasche der Frau. Masculine and neuter nouns add -s or -es. In speech, von + dative is often used instead.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/genitive-case/practice"
+      }
+    ]
   },
   {
     "slug": "prepositions-genitive",
     "title": "Prepositions with the genitive (wegen, trotz, während)",
     "level": "B1",
     "group": "Prepositions",
-    "summary": "wegen, trotz, während and statt take the genitive in written German: wegen des Wetters, trotz des Regens. In everyday speech the dative is common."
+    "summary": "wegen, trotz, während and statt take the genitive in written German: wegen des Wetters, trotz des Regens. In everyday speech the dative is common.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/prepositions-genitive/practice"
+      }
+    ]
   },
   {
     "slug": "n-declension",
     "title": "Weak masculine nouns (n-declension)",
     "level": "B1",
     "group": "Nouns and articles",
-    "summary": "Some masculine nouns add -n or -en in every case except the nominative singular: der Junge → den Jungen, dem Jungen. Many are people or animals: Kollege, Student, Mensch, Löwe."
+    "summary": "Some masculine nouns add -n or -en in every case except the nominative singular: der Junge → den Jungen, dem Jungen. Many are people or animals: Kollege, Student, Mensch, Löwe.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/n-declension/practice"
+      }
+    ]
   },
   {
     "slug": "adjective-declension",
     "title": "Adjective declension: all cases",
     "level": "B1",
     "group": "Adjectives",
-    "summary": "The full pattern for adjective endings after der, after ein and with no article, in all four cases: mit dem neuen Auto, mit einem neuen Auto, mit neuem Mut."
+    "summary": "The full pattern for adjective endings after der, after ein and with no article, in all four cases: mit dem neuen Auto, mit einem neuen Auto, mit neuem Mut.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/adjective-declension/practice"
+      }
+    ]
   },
   {
     "slug": "simple-past",
     "title": "Simple past (Präteritum)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "The written past tense, used in stories and reports. Regular verbs add -te: ich spielte. Irregular verbs change the stem: ich ging, er kam, sie sah."
+    "summary": "The written past tense, used in stories and reports. Regular verbs add -te: ich spielte. Irregular verbs change the stem: ich ging, er kam, sie sah.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/simple-past/practice"
+      }
+    ]
   },
   {
     "slug": "past-perfect",
     "title": "Past perfect (Plusquamperfekt)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "For something that happened before another past event: hatte or war plus the participle. Nachdem ich gegessen hatte, ging ich spazieren."
+    "summary": "For something that happened before another past event: hatte or war plus the participle. Nachdem ich gegessen hatte, ging ich spazieren.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/past-perfect/practice"
+      }
+    ]
   },
   {
     "slug": "future-tense",
     "title": "Future tense (Futur I)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "werden plus the infinitive at the end: Ich werde morgen anrufen. German often uses the present for the future (Ich rufe morgen an); werden adds a promise or a prediction."
+    "summary": "werden plus the infinitive at the end: Ich werde morgen anrufen. German often uses the present for the future (Ich rufe morgen an); werden adds a promise or a prediction.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/future-tense/practice"
+      }
+    ]
   },
   {
     "slug": "passive-present-past",
     "title": "Passive voice (present and past)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "werden plus the participle, when the action matters more than who does it: Das Haus wird gebaut. In the past: Das Haus wurde 1900 gebaut. The doer can be added with von."
+    "summary": "werden plus the participle, when the action matters more than who does it: Das Haus wird gebaut. In the past: Das Haus wurde 1900 gebaut. The doer can be added with von.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/passive-present-past/practice"
+      }
+    ]
   },
   {
     "slug": "relative-clauses",
     "title": "Relative clauses (der, die, das, dem …)",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "Describe a noun with a clause that starts with der/die/das and ends with the verb: Der Mann, der dort steht, ist mein Lehrer. The pronoun takes its case from its role in the clause: der Mann, dem ich helfe."
+    "summary": "Describe a noun with a clause that starts with der/die/das and ends with the verb: Der Mann, der dort steht, ist mein Lehrer. The pronoun takes its case from its role in the clause: der Mann, dem ich helfe.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/relative-clauses/practice"
+      }
+    ]
   },
   {
     "slug": "infinitive-with-zu",

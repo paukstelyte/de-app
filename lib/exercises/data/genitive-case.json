@@ -1,0 +1,378 @@
+{
+  "slug": "genitive-case",
+  "instructions": "Choose or type the correct genitive form, or put the words in order.",
+  "items": [
+    {
+      "id": "gen-01",
+      "type": "choice",
+      "prompt": "Das ist das Büro ___ Onkels.",
+      "options": [
+        "meines",
+        "mein",
+        "meinem",
+        "meinen"
+      ],
+      "answer": "meines",
+      "explanation": "The genitive shows whose office it is; masculine mein becomes meines: das Büro meines Onkels."
+    },
+    {
+      "id": "gen-02",
+      "type": "choice",
+      "prompt": "Die Tasche ___ Frau ist neu.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "Feminine nouns take der in the genitive: die Frau → der Frau."
+    },
+    {
+      "id": "gen-03",
+      "type": "choice",
+      "prompt": "Das ist das Fahrrad ___ Kindes.",
+      "options": [
+        "des",
+        "dem",
+        "das",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "Neuter nouns take des in the genitive, and the noun adds -es: das Kind → des Kindes."
+    },
+    {
+      "id": "gen-04",
+      "type": "choice",
+      "prompt": "Der Garten ___ Hauses ist sehr groß.",
+      "options": [
+        "des",
+        "das",
+        "dem",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "Das Haus is neuter, so the genitive article is des, and the noun adds -es: der Garten des Hauses."
+    },
+    {
+      "id": "gen-05",
+      "type": "choice",
+      "prompt": "Das Spielzeug ___ Kinder liegt im Zimmer.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "In the plural, all genders take der in the genitive: die Kinder → das Spielzeug der Kinder."
+    },
+    {
+      "id": "gen-06",
+      "type": "choice",
+      "prompt": "Wir besuchen die Eltern ___ Freundes.",
+      "options": [
+        "meines",
+        "meiner",
+        "meinem",
+        "meinen"
+      ],
+      "answer": "meines",
+      "explanation": "Der Freund is masculine, so the possessive takes -es in the genitive: meines Freundes."
+    },
+    {
+      "id": "gen-07",
+      "type": "choice",
+      "prompt": "Der Preis ___ Tickets ist hoch.",
+      "options": [
+        "des",
+        "der",
+        "dem",
+        "das"
+      ],
+      "answer": "des",
+      "explanation": "Das Ticket is neuter; the genitive article is des, and the noun adds -s: des Tickets."
+    },
+    {
+      "id": "gen-08",
+      "type": "choice",
+      "prompt": "Die Meinung ___ Chefin ist wichtig.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "The genitive of feminine die is der: die Chefin → der Chefin; the noun stays unchanged."
+    },
+    {
+      "id": "gen-09",
+      "type": "choice",
+      "prompt": "Das ist die Geschichte ___ Mannes.",
+      "options": [
+        "eines",
+        "einem",
+        "einen",
+        "ein"
+      ],
+      "answer": "eines",
+      "explanation": "The indefinite article ein becomes eines for masculine and neuter in the genitive: eines Mannes."
+    },
+    {
+      "id": "gen-10",
+      "type": "choice",
+      "prompt": "Die Wohnung ___ Schwester ist sehr groß.",
+      "options": [
+        "meiner",
+        "meine",
+        "meinen",
+        "meines"
+      ],
+      "answer": "meiner",
+      "explanation": "Feminine possessives end in -er in the genitive: meine Schwester → die Wohnung meiner Schwester."
+    },
+    {
+      "id": "gen-11",
+      "type": "choice",
+      "prompt": "Das ist ___ Tasche.",
+      "options": [
+        "Annas",
+        "Anna",
+        "Annes"
+      ],
+      "answer": "Annas",
+      "explanation": "Names take -s in the genitive and stand before the noun. The standard written form has no apostrophe: Annas Tasche."
+    },
+    {
+      "id": "gen-12",
+      "type": "choice",
+      "prompt": "Das ist ___ Zimmer.",
+      "options": [
+        "Thomas'",
+        "Thomass",
+        "Thomases",
+        "Thomas's"
+      ],
+      "answer": "Thomas'",
+      "explanation": "Names ending in an s sound (-s, -ß, -x, -z) add only an apostrophe in writing: Thomas' Zimmer."
+    },
+    {
+      "id": "gen-13",
+      "type": "choice",
+      "prompt": "Das Dach des ___ ist rot.",
+      "options": [
+        "Hauses",
+        "Haus",
+        "Hauss",
+        "Hausen"
+      ],
+      "answer": "Hauses",
+      "explanation": "Neuter nouns ending in -s add -es in the genitive: das Haus → des Hauses."
+    },
+    {
+      "id": "gen-14",
+      "type": "choice",
+      "prompt": "Der Name des ___ ist Lea.",
+      "options": [
+        "Mädchens",
+        "Mädchen",
+        "Mädchenes"
+      ],
+      "answer": "Mädchens",
+      "explanation": "Nouns ending in -chen add just -s in the genitive: das Mädchen → des Mädchens."
+    },
+    {
+      "id": "gen-15",
+      "type": "choice",
+      "prompt": "Die Mutter des ___ arbeitet hier.",
+      "options": [
+        "Studenten",
+        "Students",
+        "Studentes",
+        "Student"
+      ],
+      "answer": "Studenten",
+      "explanation": "Weak masculine nouns add -en instead of -s in the genitive: der Student → des Studenten."
+    },
+    {
+      "id": "gen-16",
+      "type": "choice",
+      "prompt": "Die Brille des ___ ist kaputt.",
+      "options": [
+        "Jungen",
+        "Junges",
+        "Junge"
+      ],
+      "answer": "Jungen",
+      "explanation": "Weak masculine nouns ending in -e add -n, not -s, in the genitive: der Junge → des Jungen."
+    },
+    {
+      "id": "gen-17",
+      "type": "choice",
+      "prompt": "In der Umgangssprache sagt man: die Jacke von ___ Vater.",
+      "options": [
+        "meinem",
+        "meines",
+        "meiner",
+        "meinen"
+      ],
+      "answer": "meinem",
+      "explanation": "In everyday speech von + dative often replaces the genitive (written: die Jacke meines Vaters); von takes the dative: von meinem Vater."
+    },
+    {
+      "id": "gen-18",
+      "type": "choice",
+      "prompt": "Im Alltag sagt man: das Haus von ___ Eltern.",
+      "options": [
+        "meinen",
+        "meiner",
+        "meines",
+        "mein"
+      ],
+      "answer": "meinen",
+      "explanation": "In everyday speech von + dative replaces the genitive (written: das Haus meiner Eltern); the dative plural of mein is meinen."
+    },
+    {
+      "id": "gen-19",
+      "type": "type",
+      "prompt": "Wie heißt die Frau ___ Lehrers?",
+      "hint": "(mein)",
+      "answers": [
+        "meines"
+      ],
+      "explanation": "Lehrer is masculine, so the possessive takes -es in the genitive: die Frau meines Lehrers."
+    },
+    {
+      "id": "gen-20",
+      "type": "type",
+      "prompt": "Die Katze ___ Nachbarin ist krank.",
+      "hint": "(die)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Feminine nouns take der in the genitive: die Nachbarin → der Nachbarin."
+    },
+    {
+      "id": "gen-21",
+      "type": "type",
+      "prompt": "Ich höre das Bellen ___ Hundes.",
+      "hint": "(ein)",
+      "answers": [
+        "eines"
+      ],
+      "explanation": "The genitive of masculine ein is eines, and the noun adds -es: das Bellen eines Hundes."
+    },
+    {
+      "id": "gen-22",
+      "type": "type",
+      "prompt": "Die Lehrerin spricht mit den Eltern ___ Schüler.",
+      "hint": "(die)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "All plural nouns use der in the genitive: die Schüler → die Eltern der Schüler."
+    },
+    {
+      "id": "gen-23",
+      "type": "type",
+      "prompt": "Im Alltag sagt man: das Fahrrad von ___ Bruder.",
+      "hint": "(mein, von + Dativ)",
+      "answers": [
+        "meinem"
+      ],
+      "explanation": "In everyday speech von + dative replaces the genitive (written: das Fahrrad meines Bruders): von meinem Bruder."
+    },
+    {
+      "id": "gen-24",
+      "type": "type",
+      "prompt": "Das ist ___ Fahrrad.",
+      "hint": "(Lena)",
+      "answers": [
+        "Lenas"
+      ],
+      "explanation": "Names add -s in the genitive and come before the noun: Lenas Fahrrad."
+    },
+    {
+      "id": "gen-25",
+      "type": "type",
+      "prompt": "Das war eine gute Rede des ___.",
+      "hint": "(der Präsident)",
+      "answers": [
+        "Präsidenten"
+      ],
+      "explanation": "Weak masculine nouns add -en instead of -s in the genitive: der Präsident → des Präsidenten."
+    },
+    {
+      "id": "gen-26",
+      "type": "type",
+      "prompt": "Wie ist der Name des ___?",
+      "hint": "(der Herr)",
+      "answers": [
+        "Herrn"
+      ],
+      "explanation": "Der Herr is a weak noun that adds only -n in the genitive: des Herrn."
+    },
+    {
+      "id": "gen-27",
+      "type": "type",
+      "prompt": "Der Rand des ___ ist kaputt.",
+      "hint": "(das Glas)",
+      "answers": [
+        "Glases"
+      ],
+      "explanation": "Nouns ending in -s take -es in the genitive: des Glases."
+    },
+    {
+      "id": "gen-28",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "das",
+        "Auto",
+        "meines",
+        "Vaters."
+      ],
+      "answers": [
+        "Das ist das Auto meines Vaters."
+      ],
+      "translation": "That is my father's car.",
+      "explanation": "The owner stands after the thing owned in the genitive: das Auto meines Vaters."
+    },
+    {
+      "id": "gen-29",
+      "type": "order",
+      "words": [
+        "Wo",
+        "ist",
+        "der",
+        "Schlüssel",
+        "des",
+        "Lehrers?"
+      ],
+      "answers": [
+        "Wo ist der Schlüssel des Lehrers?"
+      ],
+      "translation": "Where is the teacher's key?",
+      "explanation": "The genitive des Lehrers follows der Schlüssel and shows whose key it is."
+    },
+    {
+      "id": "gen-30",
+      "type": "order",
+      "words": [
+        "Anna",
+        "liest",
+        "das",
+        "Buch",
+        "ihrer",
+        "Schwester."
+      ],
+      "answers": [
+        "Anna liest das Buch ihrer Schwester."
+      ],
+      "translation": "Anna is reading her sister's book.",
+      "explanation": "Feminine ihre becomes ihrer in the genitive: das Buch ihrer Schwester."
+    }
+  ]
+}

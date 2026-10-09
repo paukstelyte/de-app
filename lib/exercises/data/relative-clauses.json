@@ -1,0 +1,413 @@
+{
+  "slug": "relative-clauses",
+  "instructions": "Complete or build each sentence with the correct relative pronoun and clause word order.",
+  "items": [
+    {
+      "id": "rel-01",
+      "type": "choice",
+      "prompt": "Der Mann, ___ dort steht, ist mein Lehrer.",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "Der Mann is masculine and the subject of 'steht', so the relative pronoun is nominative masculine: der."
+    },
+    {
+      "id": "rel-02",
+      "type": "choice",
+      "prompt": "Die Frau, ___ neben mir wohnt, ist sehr nett.",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "dem"
+      ],
+      "answer": "die",
+      "explanation": "Die Frau is feminine and the subject of 'wohnt', so the pronoun is nominative feminine: die."
+    },
+    {
+      "id": "rel-03",
+      "type": "choice",
+      "prompt": "Das Kind, ___ im Garten spielt, heißt Mia.",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "dem"
+      ],
+      "answer": "das",
+      "explanation": "Das Kind is neuter and the subject of 'spielt', so the pronoun is nominative neuter: das."
+    },
+    {
+      "id": "rel-04",
+      "type": "choice",
+      "prompt": "Die Leute, ___ hier wohnen, sind sehr freundlich.",
+      "options": [
+        "die",
+        "der",
+        "das",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "Leute is plural and the subject of 'wohnen', so the relative pronoun is nominative plural: die."
+    },
+    {
+      "id": "rel-05",
+      "type": "choice",
+      "prompt": "Der Hund, ___ ich im Park sehe, gehört Anna.",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "dessen"
+      ],
+      "answer": "den",
+      "explanation": "Der Hund is masculine and the direct object of 'sehe', so the pronoun is accusative masculine: den."
+    },
+    {
+      "id": "rel-06",
+      "type": "choice",
+      "prompt": "Das Buch, ___ ich gerade lese, ist spannend.",
+      "options": [
+        "das",
+        "dem",
+        "den",
+        "die"
+      ],
+      "answer": "das",
+      "explanation": "Das Buch is neuter and the direct object of 'lese'; accusative neuter is the same as nominative: das."
+    },
+    {
+      "id": "rel-07",
+      "type": "choice",
+      "prompt": "Die Jacke, ___ ich gestern gekauft habe, ist blau.",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "Die Jacke is feminine and the direct object of 'gekauft habe'; accusative feminine is die."
+    },
+    {
+      "id": "rel-08",
+      "type": "choice",
+      "prompt": "Der Kollege, ___ ich oft helfe, arbeitet im Büro.",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "dessen"
+      ],
+      "answer": "dem",
+      "explanation": "helfen takes the dative, so the pronoun for masculine Kollege is dative: dem."
+    },
+    {
+      "id": "rel-09",
+      "type": "choice",
+      "prompt": "Die Nachbarin, ___ ich die Blumen gebe, freut sich.",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "The pronoun is the dative object (indirect object) of 'gebe', and dative feminine is der."
+    },
+    {
+      "id": "rel-10",
+      "type": "choice",
+      "prompt": "Das Mädchen, ___ ich das Buch schenke, freut sich.",
+      "options": [
+        "das",
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "The pronoun is the dative object of 'schenke'; dative neuter is dem."
+    },
+    {
+      "id": "rel-11",
+      "type": "choice",
+      "prompt": "Die Freunde, ___ ich oft schreibe, wohnen in Wien.",
+      "options": [
+        "die",
+        "den",
+        "denen",
+        "der"
+      ],
+      "answer": "denen",
+      "explanation": "schreiben takes a dative object here; the dative plural relative pronoun is denen, not den."
+    },
+    {
+      "id": "rel-12",
+      "type": "choice",
+      "prompt": "Der Bus, mit ___ ich fahre, ist voll.",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "dessen"
+      ],
+      "answer": "dem",
+      "explanation": "mit always takes the dative, so masculine Bus gives: mit dem."
+    },
+    {
+      "id": "rel-13",
+      "type": "choice",
+      "prompt": "Die Stadt, in ___ ich wohne, ist klein.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "wohnen in + dative (location); the feminine dative relative pronoun is der: in der Stadt."
+    },
+    {
+      "id": "rel-14",
+      "type": "choice",
+      "prompt": "Das Haus, in ___ wir wohnen, ist alt.",
+      "options": [
+        "das",
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "wohnen in + dative (location); neuter dative is dem: in dem Haus."
+    },
+    {
+      "id": "rel-15",
+      "type": "choice",
+      "prompt": "Der Freund, auf ___ ich warte, kommt spät.",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "dessen"
+      ],
+      "answer": "den",
+      "explanation": "warten auf takes the accusative, so masculine Freund gives: auf den."
+    },
+    {
+      "id": "rel-16",
+      "type": "choice",
+      "prompt": "Die Kollegin, mit ___ ich arbeite, kommt aus Polen.",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "mit takes the dative; the feminine dative relative pronoun is der: mit der Kollegin."
+    },
+    {
+      "id": "rel-17",
+      "type": "choice",
+      "prompt": "Der Mann, ___ Auto vor dem Haus steht, ist Arzt.",
+      "options": [
+        "dessen",
+        "deren",
+        "dem",
+        "den"
+      ],
+      "answer": "dessen",
+      "explanation": "To show possession for a masculine noun use the genitive relative pronoun dessen (the man's car)."
+    },
+    {
+      "id": "rel-18",
+      "type": "choice",
+      "prompt": "Die Frau, ___ Tochter ich kenne, wohnt in Berlin.",
+      "options": [
+        "dessen",
+        "deren",
+        "der",
+        "die"
+      ],
+      "answer": "deren",
+      "explanation": "To show possession for a feminine noun use the genitive relative pronoun deren (the woman's daughter)."
+    },
+    {
+      "id": "rel-19",
+      "type": "choice",
+      "prompt": "Die Kinder, ___ Eltern im Urlaub sind, bleiben bei Oma.",
+      "options": [
+        "dessen",
+        "deren",
+        "denen",
+        "die"
+      ],
+      "answer": "deren",
+      "explanation": "Possession with a plural noun uses the genitive plural pronoun deren (the children's parents)."
+    },
+    {
+      "id": "rel-20",
+      "type": "choice",
+      "prompt": "Das ist die Stadt, ___ ich geboren bin.",
+      "options": [
+        "wo",
+        "wer",
+        "was",
+        "wen"
+      ],
+      "answer": "wo",
+      "explanation": "For a place you can use wo instead of 'in der': die Stadt, wo ich geboren bin."
+    },
+    {
+      "id": "rel-21",
+      "type": "type",
+      "prompt": "Der Schüler, ___ neben mir sitzt, heißt Tim.",
+      "hint": "(der Schüler, Nominativ)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Der Schüler is the masculine subject of 'sitzt', so the pronoun is nominative masculine: der."
+    },
+    {
+      "id": "rel-22",
+      "type": "type",
+      "prompt": "Die Tasche, ___ ich suche, ist schwarz.",
+      "hint": "(die Tasche, Akkusativ)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Feminine accusative is the same as nominative: die; the verb 'suche' sits at the end of the clause."
+    },
+    {
+      "id": "rel-23",
+      "type": "type",
+      "prompt": "Der Chef, ___ wir die Unterlagen geben, ist nett.",
+      "hint": "(der Chef, Dativ)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "Der Chef is the dative object of 'geben', so the masculine dative pronoun is dem."
+    },
+    {
+      "id": "rel-24",
+      "type": "type",
+      "prompt": "Die Freundinnen, mit ___ ich reise, sind lustig.",
+      "hint": "(die Freundinnen, mit)",
+      "answers": [
+        "denen"
+      ],
+      "explanation": "mit takes the dative; the dative plural relative pronoun is denen."
+    },
+    {
+      "id": "rel-25",
+      "type": "type",
+      "prompt": "Das Kind, ___ Fahrrad kaputt ist, weint.",
+      "hint": "(das Kind, Genitiv)",
+      "answers": [
+        "dessen"
+      ],
+      "explanation": "Possession for a neuter noun uses the genitive relative pronoun dessen; no article follows it."
+    },
+    {
+      "id": "rel-26",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "der",
+        "Mann,",
+        "der",
+        "mir",
+        "geholfen",
+        "hat."
+      ],
+      "answers": [
+        "Das ist der Mann, der mir geholfen hat."
+      ],
+      "translation": "That is the man who helped me.",
+      "explanation": "The relative clause starts with der and the conjugated verb hat goes to the end, after the participle."
+    },
+    {
+      "id": "rel-27",
+      "type": "order",
+      "words": [
+        "Anna",
+        "liebt",
+        "das",
+        "Buch,",
+        "das",
+        "sie",
+        "gestern",
+        "gekauft",
+        "hat."
+      ],
+      "answers": [
+        "Anna liebt das Buch, das sie gestern gekauft hat."
+      ],
+      "translation": "Anna loves the book that she bought yesterday.",
+      "explanation": "In a relative clause the conjugated verb (hat) stands last, after the participle gekauft."
+    },
+    {
+      "id": "rel-28",
+      "type": "order",
+      "words": [
+        "Wo",
+        "ist",
+        "die",
+        "Tasche,",
+        "die",
+        "auf",
+        "dem",
+        "Tisch",
+        "lag?"
+      ],
+      "answers": [
+        "Wo ist die Tasche, die auf dem Tisch lag?"
+      ],
+      "translation": "Where is the bag that was on the table?",
+      "explanation": "The relative clause die ... lag? ends with the verb lag; the pronoun die is feminine nominative."
+    },
+    {
+      "id": "rel-29",
+      "type": "order",
+      "words": [
+        "Tom",
+        "kennt",
+        "die",
+        "Frau,",
+        "mit",
+        "der",
+        "ich",
+        "arbeite."
+      ],
+      "answers": [
+        "Tom kennt die Frau, mit der ich arbeite."
+      ],
+      "translation": "Tom knows the woman I work with.",
+      "explanation": "The preposition comes before the pronoun (mit der) and the verb arbeite ends the clause."
+    },
+    {
+      "id": "rel-30",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "die",
+        "Lehrerin,",
+        "deren",
+        "Sohn",
+        "Arzt",
+        "ist."
+      ],
+      "answers": [
+        "Das ist die Lehrerin, deren Sohn Arzt ist."
+      ],
+      "translation": "That is the teacher whose son is a doctor.",
+      "explanation": "deren (genitive feminine) directly precedes the noun it belongs to, and the verb ist ends the clause."
+    }
+  ]
+}

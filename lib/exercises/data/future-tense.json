@@ -1,0 +1,380 @@
+{
+  "slug": "future-tense",
+  "instructions": "Complete or build each sentence in the German future tense (werden + infinitive).",
+  "items": [
+    {
+      "id": "fut-01",
+      "type": "choice",
+      "prompt": "Ich ___ morgen einkaufen gehen.",
+      "options": [
+        "werde",
+        "wirst",
+        "wird",
+        "werden"
+      ],
+      "answer": "werde",
+      "explanation": "Futur I uses werden plus the infinitive. With ich the form is werde."
+    },
+    {
+      "id": "fut-02",
+      "type": "choice",
+      "prompt": "Du ___ bald Urlaub machen.",
+      "options": [
+        "wirst",
+        "wird",
+        "werde",
+        "werdet"
+      ],
+      "answer": "wirst",
+      "explanation": "With du, werden becomes wirst (the vowel changes: du wirst)."
+    },
+    {
+      "id": "fut-03",
+      "type": "choice",
+      "prompt": "Wir ___ nächstes Jahr umziehen.",
+      "options": [
+        "werden",
+        "wird",
+        "werdet",
+        "wirst"
+      ],
+      "answer": "werden",
+      "explanation": "With wir (and sie/Sie) the form is werden: wir werden umziehen."
+    },
+    {
+      "id": "fut-04",
+      "type": "choice",
+      "prompt": "Anna ___ am Samstag kochen.",
+      "options": [
+        "wird",
+        "werde",
+        "wirst",
+        "werden"
+      ],
+      "answer": "wird",
+      "explanation": "With er/sie/es the form is wird: Anna (= sie) wird kochen."
+    },
+    {
+      "id": "fut-05",
+      "type": "choice",
+      "prompt": "Ihr ___ das schaffen.",
+      "options": [
+        "werdet",
+        "werden",
+        "wird",
+        "wirst"
+      ],
+      "answer": "werdet",
+      "explanation": "With ihr the form is werdet: ihr werdet schaffen."
+    },
+    {
+      "id": "fut-06",
+      "type": "choice",
+      "prompt": "Tom wird morgen früh ___.",
+      "options": [
+        "aufstehen",
+        "aufgestanden",
+        "aufsteht",
+        "aufzustehen"
+      ],
+      "answer": "aufstehen",
+      "explanation": "After werden the main verb stays in the infinitive at the end: wird aufstehen."
+    },
+    {
+      "id": "fut-07",
+      "type": "choice",
+      "prompt": "Sie werden nächste Woche nach Berlin ___.",
+      "options": [
+        "fahren",
+        "gefahren",
+        "fährt",
+        "fuhren"
+      ],
+      "answer": "fahren",
+      "explanation": "Futur I is werden plus the plain infinitive, not a participle: werden fahren."
+    },
+    {
+      "id": "fut-08",
+      "type": "choice",
+      "prompt": "Ich werde dir morgen das Geld ___.",
+      "options": [
+        "geben",
+        "gegeben",
+        "gibt",
+        "gab"
+      ],
+      "answer": "geben",
+      "explanation": "The infinitive goes to the end of the clause: werde ... geben."
+    },
+    {
+      "id": "fut-09",
+      "type": "choice",
+      "prompt": "Nächstes Jahr ___ ich Spanisch lernen.",
+      "options": [
+        "werde",
+        "bin",
+        "habe",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "The future is formed with werden, not sein or haben. The verb stays in second place: werde ich."
+    },
+    {
+      "id": "fut-10",
+      "type": "choice",
+      "prompt": "Morgen ___ ich dich an.",
+      "options": [
+        "rufe",
+        "werde",
+        "wirst",
+        "rufst"
+      ],
+      "answer": "rufe",
+      "explanation": "German often uses the present for the future when a time word like morgen is there: Morgen rufe ich dich an. werde would need the infinitive anrufen."
+    },
+    {
+      "id": "fut-11",
+      "type": "choice",
+      "prompt": "Es ___ morgen bestimmt regnen.",
+      "options": [
+        "wird",
+        "werde",
+        "wirst",
+        "werden"
+      ],
+      "answer": "wird",
+      "explanation": "werden also expresses a prediction. With es the form is wird."
+    },
+    {
+      "id": "fut-12",
+      "type": "choice",
+      "prompt": "Ich hoffe, dass er pünktlich kommen ___.",
+      "options": [
+        "wird",
+        "werde",
+        "wirst",
+        "werden"
+      ],
+      "answer": "wird",
+      "explanation": "In a dass-clause the conjugated verb goes last, after the infinitive: kommen wird."
+    },
+    {
+      "id": "fut-13",
+      "type": "type",
+      "prompt": "Ich ___ dir morgen alles erklären.",
+      "hint": "(werden)",
+      "answers": [
+        "werde"
+      ],
+      "explanation": "Futur I: ich werde plus infinitive at the end."
+    },
+    {
+      "id": "fut-14",
+      "type": "type",
+      "prompt": "Du ___ sicher viel Spaß haben.",
+      "hint": "(werden)",
+      "answers": [
+        "wirst"
+      ],
+      "explanation": "With du the form is wirst. werden here makes a prediction."
+    },
+    {
+      "id": "fut-15",
+      "type": "type",
+      "prompt": "Lena ___ nächsten Monat ihre Prüfung machen.",
+      "hint": "(werden)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "With a singular third person the form is wird."
+    },
+    {
+      "id": "fut-16",
+      "type": "type",
+      "prompt": "Wir ___ euch am Wochenende besuchen.",
+      "hint": "(werden)",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "With wir the form is werden; besuchen stays at the end."
+    },
+    {
+      "id": "fut-17",
+      "type": "type",
+      "prompt": "Ihr ___ bestimmt müde sein.",
+      "hint": "(werden)",
+      "answers": [
+        "werdet"
+      ],
+      "explanation": "With ihr the form is werdet."
+    },
+    {
+      "id": "fut-18",
+      "type": "type",
+      "prompt": "Meine Eltern ___ im Herbst nach Italien fliegen.",
+      "hint": "(werden)",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "A plural subject takes werden: sie werden fliegen."
+    },
+    {
+      "id": "fut-19",
+      "type": "type",
+      "prompt": "Ich werde dich morgen ___.",
+      "hint": "(anrufen)",
+      "answers": [
+        "anrufen"
+      ],
+      "explanation": "After werden the separable verb stays whole in the infinitive at the end: anrufen."
+    },
+    {
+      "id": "fut-20",
+      "type": "type",
+      "prompt": "Jonas wird nächste Woche seine Oma ___.",
+      "hint": "(besuchen)",
+      "answers": [
+        "besuchen"
+      ],
+      "explanation": "The main verb is an infinitive at the end of the sentence."
+    },
+    {
+      "id": "fut-21",
+      "type": "type",
+      "prompt": "Wir werden heute Abend Pizza ___.",
+      "hint": "(essen)",
+      "answers": [
+        "essen"
+      ],
+      "explanation": "Futur I needs the infinitive, not the participle gegessen."
+    },
+    {
+      "id": "fut-22",
+      "type": "type",
+      "prompt": "Du wirst das Buch bald ___.",
+      "hint": "(lesen)",
+      "answers": [
+        "lesen"
+      ],
+      "explanation": "The infinitive lesen stands at the end after wirst."
+    },
+    {
+      "id": "fut-23",
+      "type": "type",
+      "prompt": "Ich weiß, dass Tom bald umziehen ___.",
+      "hint": "(werden)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "In a dass-clause werden goes to the very end: umziehen wird."
+    },
+    {
+      "id": "fut-24",
+      "type": "type",
+      "prompt": "Er wird am Wochenende arbeiten ___.",
+      "hint": "(müssen)",
+      "answers": [
+        "müssen"
+      ],
+      "explanation": "With a modal verb two infinitives stand at the end: arbeiten müssen."
+    },
+    {
+      "id": "fut-25",
+      "type": "type",
+      "prompt": "Wo ist Max? – Er ___ wohl noch im Büro sein.",
+      "hint": "(werden)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "werden plus wohl/bestimmt expresses an assumption about the present: He is probably still at the office."
+    },
+    {
+      "id": "fut-26",
+      "type": "order",
+      "words": [
+        "Wann",
+        "wirst",
+        "du",
+        "deine",
+        "Tante",
+        "besuchen?"
+      ],
+      "answers": [
+        "Wann wirst du deine Tante besuchen?"
+      ],
+      "translation": "When will you visit your aunt?",
+      "explanation": "In a W-question werden comes second and the infinitive besuchen goes last."
+    },
+    {
+      "id": "fut-27",
+      "type": "order",
+      "words": [
+        "Wo",
+        "wird",
+        "Anna",
+        "im",
+        "Sommer",
+        "Urlaub",
+        "machen?"
+      ],
+      "answers": [
+        "Wo wird Anna im Sommer Urlaub machen?"
+      ],
+      "translation": "Where will Anna go on holiday in the summer?",
+      "explanation": "wird stays in second place after the question word and the infinitive machen is last."
+    },
+    {
+      "id": "fut-28",
+      "type": "order",
+      "words": [
+        "Wirst",
+        "du",
+        "morgen",
+        "zur",
+        "Party",
+        "kommen?"
+      ],
+      "answers": [
+        "Wirst du morgen zur Party kommen?"
+      ],
+      "translation": "Will you come to the party tomorrow?",
+      "explanation": "In a yes/no question werden comes first and the infinitive stays at the end."
+    },
+    {
+      "id": "fut-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "glaube,",
+        "dass",
+        "es",
+        "morgen",
+        "regnen",
+        "wird."
+      ],
+      "answers": [
+        "Ich glaube, dass es morgen regnen wird."
+      ],
+      "translation": "I think it will rain tomorrow.",
+      "explanation": "In a dass-clause the conjugated verb werden goes to the very end, after the infinitive."
+    },
+    {
+      "id": "fut-30",
+      "type": "order",
+      "words": [
+        "Werdet",
+        "ihr",
+        "nächstes",
+        "Jahr",
+        "ein",
+        "Haus",
+        "kaufen?"
+      ],
+      "answers": [
+        "Werdet ihr nächstes Jahr ein Haus kaufen?"
+      ],
+      "translation": "Will you buy a house next year?",
+      "explanation": "In a yes/no question werdet comes first and the infinitive kaufen goes to the end."
+    }
+  ]
+}

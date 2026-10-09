@@ -1,0 +1,383 @@
+{
+  "slug": "prepositions-genitive",
+  "instructions": "Choose or type the correct genitive form or preposition (standard written German).",
+  "items": [
+    {
+      "id": "pgen-01",
+      "type": "choice",
+      "prompt": "Wir bleiben wegen ___ Regens zu Hause.",
+      "options": [
+        "des",
+        "der",
+        "die"
+      ],
+      "answer": "des",
+      "explanation": "wegen takes the genitive. Masculine der Regen becomes des Regens."
+    },
+    {
+      "id": "pgen-02",
+      "type": "choice",
+      "prompt": "Trotz ___ Wetters gehen wir spazieren.",
+      "options": [
+        "des",
+        "das",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "trotz takes the genitive. Neuter das Wetter becomes des Wetters."
+    },
+    {
+      "id": "pgen-03",
+      "type": "choice",
+      "prompt": "Während ___ Sommers ist es hier sehr heiß.",
+      "options": [
+        "des",
+        "der",
+        "das"
+      ],
+      "answer": "des",
+      "explanation": "während (during) takes the genitive. Masculine der Sommer becomes des Sommers."
+    },
+    {
+      "id": "pgen-04",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "Tom",
+        "trotz",
+        "des",
+        "Regens",
+        "joggt."
+      ],
+      "answers": [
+        "Ich weiß, dass Tom trotz des Regens joggt."
+      ],
+      "translation": "I know that Tom jogs despite the rain.",
+      "explanation": "In a subordinate clause the verb goes last; trotz is followed by the genitive des Regens."
+    },
+    {
+      "id": "pgen-05",
+      "type": "choice",
+      "prompt": "Statt ___ Busses nehmen wir das Fahrrad.",
+      "options": [
+        "des",
+        "den",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "statt (instead of) takes the genitive. Masculine der Bus becomes des Busses."
+    },
+    {
+      "id": "pgen-06",
+      "type": "choice",
+      "prompt": "Wegen ___ Krankheit fehlt Lena heute.",
+      "options": [
+        "der",
+        "des",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "Feminine nouns have der in the genitive: die Krankheit becomes der Krankheit."
+    },
+    {
+      "id": "pgen-07",
+      "type": "choice",
+      "prompt": "Während ___ Pause lese ich ein Buch.",
+      "options": [
+        "der",
+        "die",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "während takes the genitive; feminine genitive article is der: die Pause becomes der Pause."
+    },
+    {
+      "id": "pgen-08",
+      "type": "choice",
+      "prompt": "Trotz ___ Verspätung erreichen wir den Anschlusszug.",
+      "options": [
+        "der",
+        "die",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "trotz takes the genitive. Feminine die Verspätung becomes der Verspätung."
+    },
+    {
+      "id": "pgen-09",
+      "type": "choice",
+      "prompt": "Wegen ___ Kinder ist es hier sehr laut.",
+      "options": [
+        "der",
+        "die",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "The genitive plural article is der for all genders: die Kinder becomes der Kinder."
+    },
+    {
+      "id": "pgen-10",
+      "type": "choice",
+      "prompt": "Trotz ___ Probleme lacht Tom.",
+      "options": [
+        "der",
+        "die",
+        "des"
+      ],
+      "answer": "der",
+      "explanation": "trotz takes the genitive; plural genitive article is der: trotz der Probleme."
+    },
+    {
+      "id": "pgen-11",
+      "type": "order",
+      "words": [
+        "Was",
+        "machst",
+        "du",
+        "während",
+        "der",
+        "Fahrt?"
+      ],
+      "answers": [
+        "Was machst du während der Fahrt?"
+      ],
+      "translation": "What do you do during the journey?",
+      "explanation": "während + genitive: feminine die Fahrt becomes der Fahrt."
+    },
+    {
+      "id": "pgen-12",
+      "type": "choice",
+      "prompt": "Wegen des ___ kann ich nicht schlafen.",
+      "options": [
+        "Lärm",
+        "Lärms",
+        "Lärmen"
+      ],
+      "answer": "Lärms",
+      "explanation": "After wegen des a masculine noun needs the genitive ending -s: der Lärm → des Lärms."
+    },
+    {
+      "id": "pgen-13",
+      "type": "choice",
+      "prompt": "Während des ___ schläft das Baby.",
+      "options": [
+        "Flug",
+        "Fluges",
+        "Flugen"
+      ],
+      "answer": "Fluges",
+      "explanation": "After des the masculine noun needs a genitive ending: des Fluges (des Flugs is also correct; Flug alone is not)."
+    },
+    {
+      "id": "pgen-14",
+      "type": "choice",
+      "prompt": "Statt eines ___ sehen wir heute eine Serie.",
+      "options": [
+        "Film",
+        "Films",
+        "Filme"
+      ],
+      "answer": "Films",
+      "explanation": "Masculine nouns add -s in the genitive after eines: statt eines Films."
+    },
+    {
+      "id": "pgen-15",
+      "type": "choice",
+      "prompt": "Ich trinke heute Tee ___ eines Kaffees.",
+      "options": [
+        "statt",
+        "wegen",
+        "während",
+        "trotz"
+      ],
+      "answer": "statt",
+      "explanation": "statt means instead of and takes the genitive: statt eines Kaffees."
+    },
+    {
+      "id": "pgen-16",
+      "type": "choice",
+      "prompt": "Ich höre gern Musik ___ der Arbeit.",
+      "options": [
+        "während",
+        "wegen",
+        "trotz",
+        "statt"
+      ],
+      "answer": "während",
+      "explanation": "während means during and takes the genitive: während der Arbeit."
+    },
+    {
+      "id": "pgen-17",
+      "type": "choice",
+      "prompt": "Es ist sehr kalt, aber wir gehen ___ der Kälte schwimmen.",
+      "options": [
+        "trotz",
+        "wegen",
+        "statt"
+      ],
+      "answer": "trotz",
+      "explanation": "trotz means despite and takes the genitive: trotz der Kälte."
+    },
+    {
+      "id": "pgen-18",
+      "type": "order",
+      "words": [
+        "Fällt",
+        "der",
+        "Unterricht",
+        "wegen",
+        "des",
+        "Sturms",
+        "aus?"
+      ],
+      "answers": [
+        "Fällt der Unterricht wegen des Sturms aus?",
+        "Fällt wegen des Sturms der Unterricht aus?"
+      ],
+      "translation": "Is the lesson cancelled because of the storm?",
+      "explanation": "wegen + genitive: masculine der Sturm becomes des Sturms; the separable prefix aus goes to the end."
+    },
+    {
+      "id": "pgen-19",
+      "type": "choice",
+      "prompt": "Der Zug fällt ___ eines Unfalls aus.",
+      "options": [
+        "wegen",
+        "trotz",
+        "während"
+      ],
+      "answer": "wegen",
+      "explanation": "wegen means because of and takes the genitive: wegen eines Unfalls."
+    },
+    {
+      "id": "pgen-20",
+      "type": "choice",
+      "prompt": "Innerhalb ___ Woche bekommst du eine Antwort.",
+      "options": [
+        "einer",
+        "eine",
+        "einen"
+      ],
+      "answer": "einer",
+      "explanation": "innerhalb (within) takes the genitive. Feminine genitive: einer Woche."
+    },
+    {
+      "id": "pgen-21",
+      "type": "choice",
+      "prompt": "Außerhalb ___ Stadt gibt es einen See.",
+      "options": [
+        "der",
+        "die",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "außerhalb (outside of) takes the genitive. Feminine genitive: der Stadt."
+    },
+    {
+      "id": "pgen-22",
+      "type": "choice",
+      "prompt": "Wegen ___ Staus kommt Jonas zu spät.",
+      "options": [
+        "eines",
+        "einem",
+        "ein"
+      ],
+      "answer": "eines",
+      "explanation": "wegen takes the genitive. Masculine indefinite genitive: eines Staus."
+    },
+    {
+      "id": "pgen-23",
+      "type": "choice",
+      "prompt": "Wegen ___ Arbeit ziehen wir nach Köln um.",
+      "options": [
+        "meiner",
+        "meine",
+        "meinen"
+      ],
+      "answer": "meiner",
+      "explanation": "Feminine genitive of possessives ends in -er: wegen meiner Arbeit."
+    },
+    {
+      "id": "pgen-24",
+      "type": "type",
+      "prompt": "Wegen des schlechten ___ spielen die Kinder drinnen.",
+      "hint": "(das Wetter)",
+      "answers": [
+        "Wetters"
+      ],
+      "explanation": "Neuter nouns take -s in the genitive: wegen des schlechten Wetters."
+    },
+    {
+      "id": "pgen-25",
+      "type": "order",
+      "words": [
+        "Warum",
+        "kommst",
+        "du",
+        "trotz",
+        "des",
+        "Fiebers",
+        "zur",
+        "Arbeit?"
+      ],
+      "answers": [
+        "Warum kommst du trotz des Fiebers zur Arbeit?"
+      ],
+      "translation": "Why do you come to work despite the fever?",
+      "explanation": "trotz + genitive: neuter das Fieber becomes des Fiebers."
+    },
+    {
+      "id": "pgen-26",
+      "type": "type",
+      "prompt": "Während ___ Reise lesen wir viel.",
+      "hint": "(die Reise)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "während takes the genitive; feminine genitive article is der: während der Reise."
+    },
+    {
+      "id": "pgen-27",
+      "type": "type",
+      "prompt": "Trotz des kalten ___ gehen wir baden.",
+      "hint": "(das Wasser)",
+      "answers": [
+        "Wassers"
+      ],
+      "explanation": "After trotz des the neuter noun takes -s: trotz des kalten Wassers."
+    },
+    {
+      "id": "pgen-28",
+      "type": "type",
+      "prompt": "Während des ___ rufe ich dich an.",
+      "hint": "(der Urlaub)",
+      "answers": [
+        "Urlaubs",
+        "Urlaubes"
+      ],
+      "explanation": "Masculine nouns take -s or -es in the genitive: während des Urlaubs (Urlaubes is also correct)."
+    },
+    {
+      "id": "pgen-29",
+      "type": "type",
+      "prompt": "Wegen ___ Eltern muss ich heute früh nach Hause.",
+      "hint": "(meine Eltern)",
+      "answers": [
+        "meiner"
+      ],
+      "explanation": "The genitive plural of mein- ends in -er: wegen meiner Eltern."
+    },
+    {
+      "id": "pgen-30",
+      "type": "type",
+      "prompt": "Statt ___ Pizza essen wir heute Salat.",
+      "hint": "(eine Pizza)",
+      "answers": [
+        "einer"
+      ],
+      "explanation": "statt takes the genitive; feminine eine becomes einer: statt einer Pizza."
+    }
+  ]
+}

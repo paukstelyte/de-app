@@ -1,0 +1,356 @@
+{
+  "slug": "simple-past",
+  "instructions": "Complete each sentence or build it in the simple past (Präteritum).",
+  "items": [
+    {
+      "id": "past-01",
+      "type": "choice",
+      "prompt": "Anna ___ gestern lange im Garten.",
+      "options": [
+        "arbeitete",
+        "arbeitet",
+        "gearbeitet",
+        "arbeiteten"
+      ],
+      "answer": "arbeitete",
+      "explanation": "Regular verbs add -te in the simple past; stems ending in -t add -ete: arbeiten → sie arbeitete."
+    },
+    {
+      "id": "past-02",
+      "type": "type",
+      "prompt": "Tom ___ als Kind oft Fußball.",
+      "hint": "(spielen)",
+      "answers": [
+        "spielte"
+      ],
+      "explanation": "Regular verb: stem spiel- + -te for er/sie/es, no extra ending."
+    },
+    {
+      "id": "past-03",
+      "type": "type",
+      "prompt": "Letzten Sommer ___ wir in Italien.",
+      "hint": "(wohnen)",
+      "answers": [
+        "wohnten"
+      ],
+      "explanation": "Regular verb: stem wohn- + -te, plus -n for wir/sie: wir wohnten."
+    },
+    {
+      "id": "past-04",
+      "type": "choice",
+      "prompt": "Lena ___ gestern die ganze Wohnung.",
+      "options": [
+        "putzte",
+        "putzt",
+        "geputzt",
+        "putzten"
+      ],
+      "answer": "putzte",
+      "explanation": "Regular verb with -te for er/sie/es: putzen → sie putzte; the participle geputzt belongs to the perfect."
+    },
+    {
+      "id": "past-05",
+      "type": "type",
+      "prompt": "Im Hof ___ die Kinder laut.",
+      "hint": "(lachen)",
+      "answers": [
+        "lachten"
+      ],
+      "explanation": "Regular verb: stem lach- + -te + -n for plural subjects: die Kinder lachten."
+    },
+    {
+      "id": "past-06",
+      "type": "type",
+      "prompt": "Früher ___ ich jeden Tag Gitarre.",
+      "hint": "(üben)",
+      "answers": [
+        "übte"
+      ],
+      "explanation": "Regular verb: ich übte. In the simple past ich and er/sie/es have the same form."
+    },
+    {
+      "id": "past-07",
+      "type": "type",
+      "prompt": "Gestern ___ er lange auf den Bus.",
+      "hint": "(warten)",
+      "answers": [
+        "wartete"
+      ],
+      "explanation": "Stems ending in -t take -ete for easier pronunciation: warten → er wartete."
+    },
+    {
+      "id": "past-08",
+      "type": "choice",
+      "prompt": "Das Konzert ___ um acht Uhr.",
+      "options": [
+        "begann",
+        "beginnte",
+        "begonnen",
+        "beginnt"
+      ],
+      "answer": "begann",
+      "explanation": "Irregular (strong) verb: beginnen → begann. It has no -te ending and the stem vowel changes."
+    },
+    {
+      "id": "past-09",
+      "type": "type",
+      "prompt": "Gestern ___ Anna spät nach Hause.",
+      "hint": "(gehen)",
+      "answers": [
+        "ging"
+      ],
+      "explanation": "Irregular verb: gehen → ging. ich and er/sie/es take no ending."
+    },
+    {
+      "id": "past-10",
+      "type": "type",
+      "prompt": "Tom ___ gestern erst um zehn Uhr.",
+      "hint": "(kommen)",
+      "answers": [
+        "kam"
+      ],
+      "explanation": "Irregular verb: kommen → kam, with no ending for er/sie/es."
+    },
+    {
+      "id": "past-11",
+      "type": "type",
+      "prompt": "Lena ___ den Film letzte Woche zweimal.",
+      "hint": "(sehen)",
+      "answers": [
+        "sah"
+      ],
+      "explanation": "Irregular verb: sehen → sah; the stem vowel changes and er/sie/es has no ending."
+    },
+    {
+      "id": "past-12",
+      "type": "choice",
+      "prompt": "Am Abend ___ wir einen Kuchen.",
+      "options": [
+        "aßen",
+        "essen",
+        "gegessen",
+        "essten"
+      ],
+      "answer": "aßen",
+      "explanation": "Irregular verb: essen → aß; with wir/sie the ending -en is added: wir aßen."
+    },
+    {
+      "id": "past-13",
+      "type": "type",
+      "prompt": "Ich ___ ihm gestern eine E-Mail.",
+      "hint": "(schreiben)",
+      "answers": [
+        "schrieb"
+      ],
+      "explanation": "Irregular verb: schreiben → schrieb; ich takes no ending."
+    },
+    {
+      "id": "past-14",
+      "type": "type",
+      "prompt": "Im Urlaub ___ die Zeit sehr schnell.",
+      "hint": "(vergehen)",
+      "answers": [
+        "verging"
+      ],
+      "explanation": "Irregular verb: vergehen → verging, like gehen → ging."
+    },
+    {
+      "id": "past-15",
+      "type": "type",
+      "prompt": "Gestern ___ wir den ganzen Tag im Auto.",
+      "hint": "(sitzen)",
+      "answers": [
+        "saßen"
+      ],
+      "explanation": "Irregular verb: sitzen → saß; wir adds -en: wir saßen."
+    },
+    {
+      "id": "past-16",
+      "type": "order",
+      "words": [
+        "Als",
+        "Anna",
+        "ein",
+        "Kind",
+        "war,",
+        "las",
+        "sie",
+        "viele",
+        "Bücher."
+      ],
+      "answers": [
+        "Als Anna ein Kind war, las sie viele Bücher."
+      ],
+      "translation": "When Anna was a child, she read a lot of books.",
+      "explanation": "In the als clause the verb goes last (war); the main clause that follows starts with the verb (las, from lesen)."
+    },
+    {
+      "id": "past-17",
+      "type": "type",
+      "prompt": "Gestern ___ Lena den Zug nach Hamburg.",
+      "hint": "(nehmen)",
+      "answers": [
+        "nahm"
+      ],
+      "explanation": "Irregular verb: nehmen → nahm; both the vowel and the consonant change."
+    },
+    {
+      "id": "past-18",
+      "type": "type",
+      "prompt": "Jonas ___ mir sein Fahrrad.",
+      "hint": "(geben)",
+      "answers": [
+        "gab"
+      ],
+      "explanation": "Irregular verb: geben → gab, no ending for er/sie/es."
+    },
+    {
+      "id": "past-19",
+      "type": "type",
+      "prompt": "Der Lehrer ___ uns eine lange Geschichte.",
+      "hint": "(erzählen)",
+      "answers": [
+        "erzählte"
+      ],
+      "explanation": "Regular verb with the unstressed prefix er-: erzählen → er erzählte."
+    },
+    {
+      "id": "past-20",
+      "type": "choice",
+      "prompt": "Er ___ den ganzen Tag im Bett.",
+      "options": [
+        "blieb",
+        "bleibte",
+        "geblieben",
+        "blieben"
+      ],
+      "answer": "blieb",
+      "explanation": "Irregular verb: bleiben → blieb. Singular er takes no ending, so blieben is wrong here."
+    },
+    {
+      "id": "past-21",
+      "type": "order",
+      "words": [
+        "Fuhr",
+        "der",
+        "Zug",
+        "pünktlich",
+        "ab?"
+      ],
+      "answers": [
+        "Fuhr der Zug pünktlich ab?"
+      ],
+      "translation": "Did the train leave on time?",
+      "explanation": "Separable verbs split in the simple past: abfahren → fuhr ... ab; in a yes/no question fuhr comes first."
+    },
+    {
+      "id": "past-22",
+      "type": "type",
+      "prompt": "Damals ___ wir eine kleine Wohnung in der Stadt.",
+      "hint": "(haben)",
+      "answers": [
+        "hatten"
+      ],
+      "explanation": "haben is irregular in the simple past: hatt- + ending; wir hatten, er hatte."
+    },
+    {
+      "id": "past-23",
+      "type": "type",
+      "prompt": "Letzte Woche ___ das Wetter in Hamburg sehr schlecht.",
+      "hint": "(sein)",
+      "answers": [
+        "war"
+      ],
+      "explanation": "sein → war; ich and er/sie/es both use war, wir/sie use waren."
+    },
+    {
+      "id": "past-24",
+      "type": "choice",
+      "prompt": "Nach der Party ___ die Kinder sehr müde.",
+      "options": [
+        "waren",
+        "war",
+        "gewesen",
+        "wart"
+      ],
+      "answer": "waren",
+      "explanation": "sein → war, with -en for plural subjects: die Kinder waren. wart is the ihr form and gewesen is a participle."
+    },
+    {
+      "id": "past-25",
+      "type": "type",
+      "prompt": "Früher ___ Lena Ärztin werden.",
+      "hint": "(wollen)",
+      "answers": [
+        "wollte"
+      ],
+      "explanation": "Modal verbs add -te in the simple past: wollen → sie wollte, with no ending for er/sie/es."
+    },
+    {
+      "id": "past-26",
+      "type": "type",
+      "prompt": "Lena ___ nicht mitkommen, weil sie krank war.",
+      "hint": "(dürfen)",
+      "answers": [
+        "durfte"
+      ],
+      "explanation": "Modal verbs lose their umlaut and add -te: dürfen → sie durfte."
+    },
+    {
+      "id": "past-27",
+      "type": "type",
+      "prompt": "Im Urlaub ___ wir jeden Tag lange schlafen.",
+      "hint": "(können)",
+      "answers": [
+        "konnten"
+      ],
+      "explanation": "Modal verb: können → konnten, with no umlaut and -en for wir."
+    },
+    {
+      "id": "past-28",
+      "type": "type",
+      "prompt": "Ich ___ die Antwort leider nicht.",
+      "hint": "(wissen)",
+      "answers": [
+        "wusste"
+      ],
+      "explanation": "wissen is a mixed verb: it takes -te but changes its stem: wissen → wusste."
+    },
+    {
+      "id": "past-29",
+      "type": "order",
+      "words": [
+        "Tom",
+        "sagte,",
+        "dass",
+        "er",
+        "keine",
+        "Zeit",
+        "hatte."
+      ],
+      "answers": [
+        "Tom sagte, dass er keine Zeit hatte."
+      ],
+      "translation": "Tom said that he had no time.",
+      "explanation": "The simple past hatte stands at the end of the dass-clause, while sagte stays in second position in the main clause."
+    },
+    {
+      "id": "past-30",
+      "type": "order",
+      "words": [
+        "Warum",
+        "kam",
+        "Tom",
+        "so",
+        "spät",
+        "nach",
+        "Hause?"
+      ],
+      "answers": [
+        "Warum kam Tom so spät nach Hause?"
+      ],
+      "translation": "Why did Tom come home so late?",
+      "explanation": "In a question with a question word the verb comes second: kam (simple past of kommen) follows Warum."
+    }
+  ]
+}

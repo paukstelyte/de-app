@@ -1,0 +1,372 @@
+{
+  "slug": "past-perfect",
+  "instructions": "Complete or build each sentence with the correct past perfect (hatte/war plus participle).",
+  "items": [
+    {
+      "id": "pp-01",
+      "type": "choice",
+      "prompt": "Nachdem Anna die E-Mail geschrieben ___, ging sie einkaufen.",
+      "options": [
+        "hatte",
+        "war"
+      ],
+      "answer": "hatte",
+      "explanation": "schreiben takes haben, so the past perfect is hatte + geschrieben."
+    },
+    {
+      "id": "pp-02",
+      "type": "choice",
+      "prompt": "Als ich ankam, ___ der Zug schon abgefahren.",
+      "options": [
+        "war",
+        "hatte"
+      ],
+      "answer": "war",
+      "explanation": "abfahren is a movement verb, so the past perfect uses war + abgefahren."
+    },
+    {
+      "id": "pp-03",
+      "type": "choice",
+      "prompt": "Ich ___ meine Tasche vergessen, deshalb musste ich zurückfahren.",
+      "options": [
+        "hatte",
+        "war"
+      ],
+      "answer": "hatte",
+      "explanation": "vergessen takes haben: hatte vergessen shows the forgetting came first."
+    },
+    {
+      "id": "pp-04",
+      "type": "choice",
+      "prompt": "Wir ___ schon gegangen, als es anfing zu regnen.",
+      "options": [
+        "waren",
+        "hatten"
+      ],
+      "answer": "waren",
+      "explanation": "gehen takes sein; with wir the past perfect is waren + gegangen."
+    },
+    {
+      "id": "pp-05",
+      "type": "choice",
+      "prompt": "Die Kinder ___ lange geschlafen, bevor wir sie weckten.",
+      "options": [
+        "hatten",
+        "waren"
+      ],
+      "answer": "hatten",
+      "explanation": "schlafen takes haben; with plural subjects: hatten + geschlafen."
+    },
+    {
+      "id": "pp-06",
+      "type": "choice",
+      "prompt": "Nachdem das Baby eingeschlafen ___, sahen wir einen Film.",
+      "options": [
+        "war",
+        "hatte"
+      ],
+      "answer": "war",
+      "explanation": "einschlafen is a change of state and takes sein: war eingeschlafen."
+    },
+    {
+      "id": "pp-07",
+      "type": "choice",
+      "prompt": "Tom ___ vorher noch nie Sushi probiert.",
+      "options": [
+        "hatte",
+        "war"
+      ],
+      "answer": "hatte",
+      "explanation": "probieren takes haben, so the past perfect is hatte probiert."
+    },
+    {
+      "id": "pp-08",
+      "type": "choice",
+      "prompt": "Als die Polizei kam, ___ der Dieb schon geflohen.",
+      "options": [
+        "war",
+        "hatte"
+      ],
+      "answer": "war",
+      "explanation": "fliehen is a movement verb and takes sein: war geflohen."
+    },
+    {
+      "id": "pp-09",
+      "type": "choice",
+      "prompt": "Sie ___ nach Berlin gezogen, bevor ich sie kennenlernte.",
+      "options": [
+        "war",
+        "hatte"
+      ],
+      "answer": "war",
+      "explanation": "ziehen in the sense of moving house is a change of place and takes sein."
+    },
+    {
+      "id": "pp-10",
+      "type": "choice",
+      "prompt": "Er ___ das Buch gelesen, bevor er den Film sah.",
+      "options": [
+        "hatte",
+        "war"
+      ],
+      "answer": "hatte",
+      "explanation": "lesen takes haben: hatte gelesen describes the earlier action."
+    },
+    {
+      "id": "pp-11",
+      "type": "choice",
+      "prompt": "Nachdem ich das Fenster ___ hatte, wurde es kühler.",
+      "options": [
+        "geöffnet",
+        "öffnete",
+        "öffnen"
+      ],
+      "answer": "geöffnet",
+      "explanation": "The past perfect needs the participle at the end: hatte + geöffnet."
+    },
+    {
+      "id": "pp-12",
+      "type": "choice",
+      "prompt": "Sie war schon nach Hause ___, als es klingelte.",
+      "options": [
+        "gefahren",
+        "gefahrt",
+        "fahren"
+      ],
+      "answer": "gefahren",
+      "explanation": "fahren is a strong verb: the participle is gefahren, used with war."
+    },
+    {
+      "id": "pp-13",
+      "type": "type",
+      "prompt": "Nachdem Lena das Essen ___, setzte sie sich hin.",
+      "hint": "(kochen: participle + auxiliary)",
+      "answers": [
+        "gekocht hatte"
+      ],
+      "explanation": "kochen takes haben; in a nachdem clause the participle comes first and the finite verb last: gekocht hatte."
+    },
+    {
+      "id": "pp-14",
+      "type": "type",
+      "prompt": "Lena war schon ins Bett ___, als ich nach Hause kam.",
+      "hint": "(gehen)",
+      "answers": [
+        "gegangen"
+      ],
+      "explanation": "gehen takes sein, and its participle is gegangen: war gegangen."
+    },
+    {
+      "id": "pp-15",
+      "type": "type",
+      "prompt": "Jonas hatte den Schlüssel ___, deshalb kam er nicht ins Haus.",
+      "hint": "(verlieren)",
+      "answers": [
+        "verloren"
+      ],
+      "explanation": "verlieren has no ge- prefix and is strong: verloren."
+    },
+    {
+      "id": "pp-16",
+      "type": "type",
+      "prompt": "Sie hatte lange Deutsch ___, bevor sie nach Wien zog.",
+      "hint": "(lernen)",
+      "answers": [
+        "gelernt"
+      ],
+      "explanation": "Regular verbs form the participle with ge- and -t: gelernt."
+    },
+    {
+      "id": "pp-17",
+      "type": "type",
+      "prompt": "Nachdem wir ins Hotel ___, gingen wir essen.",
+      "hint": "(ankommen: participle + auxiliary)",
+      "answers": [
+        "angekommen waren"
+      ],
+      "explanation": "ankommen takes sein; in the clause the participle comes first: angekommen waren."
+    },
+    {
+      "id": "pp-18",
+      "type": "type",
+      "prompt": "Ich war müde, weil ich nicht gut ___ hatte.",
+      "hint": "(schlafen)",
+      "answers": [
+        "geschlafen"
+      ],
+      "explanation": "schlafen is strong: the participle is geschlafen, used with hatte."
+    },
+    {
+      "id": "pp-19",
+      "type": "type",
+      "prompt": "Als ich in die Küche kam, hatte mein Bruder alles ___.",
+      "hint": "(aufessen)",
+      "answers": [
+        "aufgegessen"
+      ],
+      "explanation": "Separable verbs put ge- between prefix and stem: aufgegessen."
+    },
+    {
+      "id": "pp-20",
+      "type": "type",
+      "prompt": "Er hatte den Bus ___, deshalb kam er zu spät.",
+      "hint": "(verpassen)",
+      "answers": [
+        "verpasst"
+      ],
+      "explanation": "Verbs with the prefix ver- have no ge-: verpasst."
+    },
+    {
+      "id": "pp-21",
+      "type": "type",
+      "prompt": "Nachdem Tina ihre Mutter ___, ging sie schlafen.",
+      "hint": "(anrufen: participle + auxiliary)",
+      "answers": [
+        "angerufen hatte"
+      ],
+      "explanation": "anrufen takes haben; the clause ends with the finite verb: angerufen hatte."
+    },
+    {
+      "id": "pp-22",
+      "type": "type",
+      "prompt": "Ich hatte mein Handy zu Hause ___, also konnte ich nicht anrufen.",
+      "hint": "(lassen)",
+      "answers": [
+        "gelassen"
+      ],
+      "explanation": "lassen has the participle gelassen, used with hatte."
+    },
+    {
+      "id": "pp-23",
+      "type": "type",
+      "prompt": "Als wir am Bahnhof ankamen, ___ der Zug schon abgefahren.",
+      "hint": "(haben oder sein)",
+      "answers": [
+        "war"
+      ],
+      "explanation": "abfahren is a movement verb, so the past perfect uses war."
+    },
+    {
+      "id": "pp-24",
+      "type": "type",
+      "prompt": "Nachdem ich gefrühstückt ___, putzte ich die Zähne.",
+      "hint": "(haben oder sein)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "frühstücken takes haben, so the auxiliary is hatte."
+    },
+    {
+      "id": "pp-25",
+      "type": "order",
+      "words": [
+        "Nachdem",
+        "Anna",
+        "gegessen",
+        "hatte,",
+        "ging",
+        "sie",
+        "spazieren."
+      ],
+      "answers": [
+        "Nachdem Anna gegessen hatte, ging sie spazieren."
+      ],
+      "translation": "After Anna had eaten, she went for a walk.",
+      "explanation": "In a nachdem clause the finite hatte goes to the end, then the main clause starts with the verb."
+    },
+    {
+      "id": "pp-26",
+      "type": "order",
+      "words": [
+        "Als",
+        "wir",
+        "ankamen,",
+        "hatte",
+        "der",
+        "Film",
+        "schon",
+        "angefangen."
+      ],
+      "answers": [
+        "Als wir ankamen, hatte der Film schon angefangen."
+      ],
+      "translation": "When we arrived, the film had already started.",
+      "explanation": "anfangen takes haben: hatte angefangen; after the als clause the verb hatte comes right after the comma."
+    },
+    {
+      "id": "pp-27",
+      "type": "order",
+      "words": [
+        "Nachdem",
+        "Tom",
+        "angekommen",
+        "war,",
+        "rief",
+        "er",
+        "Lena",
+        "an."
+      ],
+      "answers": [
+        "Nachdem Tom angekommen war, rief er Lena an."
+      ],
+      "translation": "After Tom had arrived, he called Lena.",
+      "explanation": "The finite war ends the nachdem clause; rief follows in position one of the main clause."
+    },
+    {
+      "id": "pp-28",
+      "type": "order",
+      "words": [
+        "Hattest",
+        "du",
+        "das",
+        "Buch",
+        "schon",
+        "gelesen?"
+      ],
+      "answers": [
+        "Hattest du das Buch schon gelesen?",
+        "Hattest du schon das Buch gelesen?"
+      ],
+      "translation": "Had you already read the book?",
+      "explanation": "In a yes/no question the finite hattest comes first and the participle gelesen stays at the end."
+    },
+    {
+      "id": "pp-29",
+      "type": "order",
+      "words": [
+        "Sie",
+        "sagte,",
+        "dass",
+        "sie",
+        "den",
+        "Schlüssel",
+        "verloren",
+        "hatte."
+      ],
+      "answers": [
+        "Sie sagte, dass sie den Schlüssel verloren hatte."
+      ],
+      "translation": "She said that she had lost the key.",
+      "explanation": "After dass the finite verb goes last, so the participle comes before hatte."
+    },
+    {
+      "id": "pp-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "wusste",
+        "nicht,",
+        "dass",
+        "er",
+        "schon",
+        "gegangen",
+        "war."
+      ],
+      "answers": [
+        "Ich wusste nicht, dass er schon gegangen war."
+      ],
+      "translation": "I did not know that he had already left.",
+      "explanation": "In the dass clause war goes to the end, after the participle gegangen."
+    }
+  ]
+}

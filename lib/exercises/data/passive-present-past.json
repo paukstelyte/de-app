@@ -1,0 +1,386 @@
+{
+  "slug": "passive-present-past",
+  "instructions": "Complete or build each sentence in the passive voice (present or past).",
+  "items": [
+    {
+      "id": "pas-01",
+      "type": "choice",
+      "prompt": "Das Brot ___ hier jeden Morgen gebacken.",
+      "options": [
+        "wird",
+        "werden",
+        "wirst"
+      ],
+      "answer": "wird",
+      "explanation": "Present passive: werden plus the participle. Das Brot is singular, so wird."
+    },
+    {
+      "id": "pas-02",
+      "type": "type",
+      "prompt": "Der Tisch ___ gerade gedeckt.",
+      "hint": "(werden, Präsens)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "Present passive of a singular subject: wird + participle (gedeckt)."
+    },
+    {
+      "id": "pas-03",
+      "type": "choice",
+      "prompt": "Die Briefe ___ morgen geschickt.",
+      "options": [
+        "wird",
+        "werden",
+        "wurden"
+      ],
+      "answer": "werden",
+      "explanation": "Plural subject (die Briefe) takes werden; the present passive with morgen refers to the future, so past wurden is wrong."
+    },
+    {
+      "id": "pas-04",
+      "type": "type",
+      "prompt": "Die Hausaufgaben ___ jeden Tag kontrolliert.",
+      "hint": "(werden, Präsens)",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "Plural subject, present passive: werden + participle (kontrolliert)."
+    },
+    {
+      "id": "pas-05",
+      "type": "type",
+      "prompt": "Das Zimmer wird jeden Tag ___.",
+      "hint": "(putzen)",
+      "answers": [
+        "geputzt"
+      ],
+      "explanation": "The passive uses the participle at the end: putzen → geputzt."
+    },
+    {
+      "id": "pas-06",
+      "type": "choice",
+      "prompt": "Das Fenster ___ gestern repariert.",
+      "options": [
+        "wird",
+        "wurde",
+        "werden"
+      ],
+      "answer": "wurde",
+      "explanation": "gestern needs the past passive: wurde (singular) + participle."
+    },
+    {
+      "id": "pas-07",
+      "type": "type",
+      "prompt": "Das Auto ___ gestern gewaschen.",
+      "hint": "(werden, Präteritum)",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "Past passive: wurde (singular) + participle gewaschen."
+    },
+    {
+      "id": "pas-08",
+      "type": "choice",
+      "prompt": "Die Tür wird jeden Abend ___.",
+      "options": [
+        "abgeschlossen",
+        "abgeschlossene",
+        "abschloss"
+      ],
+      "answer": "abgeschlossen",
+      "explanation": "Passive needs the participle at the end; abschließen is separable, so ab-ge-schlossen."
+    },
+    {
+      "id": "pas-09",
+      "type": "type",
+      "prompt": "Die Rechnung wird morgen ___.",
+      "hint": "(bezahlen)",
+      "answers": [
+        "bezahlt"
+      ],
+      "explanation": "Verbs with the prefix be- form the participle without ge-: bezahlt."
+    },
+    {
+      "id": "pas-10",
+      "type": "choice",
+      "prompt": "Die Kinder ___ jetzt von der Lehrerin abgeholt.",
+      "options": [
+        "werden",
+        "wird",
+        "wurden"
+      ],
+      "answer": "werden",
+      "explanation": "jetzt = present, plural subject: werden + participle."
+    },
+    {
+      "id": "pas-11",
+      "type": "type",
+      "prompt": "Hier ___ Deutsch gesprochen.",
+      "hint": "(werden, Präsens)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "Deutsch is the singular subject here, so the present passive is wird + gesprochen."
+    },
+    {
+      "id": "pas-12",
+      "type": "choice",
+      "prompt": "Das Museum ___ 1890 eröffnet.",
+      "options": [
+        "wurde",
+        "wurden",
+        "wird"
+      ],
+      "answer": "wurde",
+      "explanation": "A past year needs the past passive; das Museum is singular: wurde + eröffnet."
+    },
+    {
+      "id": "pas-13",
+      "type": "choice",
+      "prompt": "Die Kirche wurde 1850 ___.",
+      "options": [
+        "gebaut",
+        "baute",
+        "gebauen",
+        "bauen"
+      ],
+      "answer": "gebaut",
+      "explanation": "Past passive = wurde + participle at the end: bauen → gebaut."
+    },
+    {
+      "id": "pas-14",
+      "type": "type",
+      "prompt": "Der Film wurde im Kino ___.",
+      "hint": "(zeigen)",
+      "answers": [
+        "gezeigt"
+      ],
+      "explanation": "Past passive: wurde + participle; zeigen → gezeigt."
+    },
+    {
+      "id": "pas-15",
+      "type": "choice",
+      "prompt": "Das Paket wurde heute Morgen ___.",
+      "options": [
+        "geliefert",
+        "liefert",
+        "lieferte"
+      ],
+      "answer": "geliefert",
+      "explanation": "Past passive = wurde + participle at the end: liefern → geliefert."
+    },
+    {
+      "id": "pas-16",
+      "type": "choice",
+      "prompt": "Das Buch wurde ___ einer jungen Autorin geschrieben.",
+      "options": [
+        "von",
+        "mit",
+        "für",
+        "bei"
+      ],
+      "answer": "von",
+      "explanation": "The doer (agent) of a passive sentence is introduced with von + dative: von einer jungen Autorin."
+    },
+    {
+      "id": "pas-17",
+      "type": "type",
+      "prompt": "Die Fotos ___ im Urlaub gemacht.",
+      "hint": "(werden, Präteritum)",
+      "answers": [
+        "wurden"
+      ],
+      "explanation": "Plural subject in the past passive: wurden + participle."
+    },
+    {
+      "id": "pas-18",
+      "type": "choice",
+      "prompt": "Wir ___ gestern vom Chef eingeladen.",
+      "options": [
+        "wurden",
+        "wurde",
+        "werden"
+      ],
+      "answer": "wurden",
+      "explanation": "wir takes wurden in the past; gestern signals past."
+    },
+    {
+      "id": "pas-19",
+      "type": "type",
+      "prompt": "Der Brief wurde gestern ___.",
+      "hint": "(schreiben)",
+      "answers": [
+        "geschrieben"
+      ],
+      "explanation": "schreiben has the irregular participle geschrieben."
+    },
+    {
+      "id": "pas-20",
+      "type": "type",
+      "prompt": "Das Bild wurde von meinem Opa ___.",
+      "hint": "(malen)",
+      "answers": [
+        "gemalt"
+      ],
+      "explanation": "The participle goes to the end of the passive sentence: malen → gemalt; von meinem Opa names the doer."
+    },
+    {
+      "id": "pas-21",
+      "type": "choice",
+      "prompt": "Ich ___ morgen vom Arzt untersucht.",
+      "options": [
+        "werde",
+        "wird",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "ich takes werde in the present passive; morgen is not past."
+    },
+    {
+      "id": "pas-22",
+      "type": "type",
+      "prompt": "Der Müll wird jeden Montag ___.",
+      "hint": "(abholen)",
+      "answers": [
+        "abgeholt"
+      ],
+      "explanation": "Separable verb: ab-holen → participle abgeholt."
+    },
+    {
+      "id": "pas-23",
+      "type": "order",
+      "words": [
+        "Das",
+        "Essen",
+        "wird",
+        "gekocht."
+      ],
+      "answers": [
+        "Das Essen wird gekocht."
+      ],
+      "translation": "The food is being cooked.",
+      "explanation": "Present passive: werden in second position, participle at the end."
+    },
+    {
+      "id": "pas-24",
+      "type": "order",
+      "words": [
+        "Die",
+        "Hausaufgaben",
+        "werden",
+        "von",
+        "den",
+        "Kindern",
+        "gemacht."
+      ],
+      "answers": [
+        "Die Hausaufgaben werden von den Kindern gemacht."
+      ],
+      "translation": "The homework is done by the children.",
+      "explanation": "Plural subject takes werden; von + dative names the doer; the participle comes last."
+    },
+    {
+      "id": "pas-25",
+      "type": "order",
+      "words": [
+        "Der",
+        "Kuchen",
+        "wurde",
+        "von",
+        "Anna",
+        "gebacken."
+      ],
+      "answers": [
+        "Der Kuchen wurde von Anna gebacken."
+      ],
+      "translation": "The cake was baked by Anna.",
+      "explanation": "Past passive: wurde in second position, von Anna, then the participle at the end."
+    },
+    {
+      "id": "pas-26",
+      "type": "order",
+      "words": [
+        "Wurde",
+        "die",
+        "Brücke",
+        "vor",
+        "zehn",
+        "Jahren",
+        "gebaut?"
+      ],
+      "answers": [
+        "Wurde die Brücke vor zehn Jahren gebaut?",
+        "Wurde vor zehn Jahren die Brücke gebaut?"
+      ],
+      "translation": "Was the bridge built ten years ago?",
+      "explanation": "In a yes/no question wurde comes first and the participle gebaut goes last."
+    },
+    {
+      "id": "pas-27",
+      "type": "order",
+      "words": [
+        "Wann",
+        "wurde",
+        "das",
+        "Haus",
+        "gebaut?"
+      ],
+      "answers": [
+        "Wann wurde das Haus gebaut?"
+      ],
+      "translation": "When was the house built?",
+      "explanation": "In a question with a W-word, wurde follows it directly and the participle goes last."
+    },
+    {
+      "id": "pas-28",
+      "type": "order",
+      "words": [
+        "Wann",
+        "wird",
+        "die",
+        "Post",
+        "gebracht?"
+      ],
+      "answers": [
+        "Wann wird die Post gebracht?"
+      ],
+      "translation": "When is the post delivered?",
+      "explanation": "The W-question puts wird second; the participle gebracht closes the sentence."
+    },
+    {
+      "id": "pas-29",
+      "type": "order",
+      "words": [
+        "Warum",
+        "wurden",
+        "die",
+        "Gäste",
+        "nicht",
+        "eingeladen?"
+      ],
+      "answers": [
+        "Warum wurden die Gäste nicht eingeladen?"
+      ],
+      "translation": "Why were the guests not invited?",
+      "explanation": "Plural subject: wurden after the W-word; nicht comes before the participle."
+    },
+    {
+      "id": "pas-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "glaube,",
+        "dass",
+        "das",
+        "Auto",
+        "repariert",
+        "wird."
+      ],
+      "answers": [
+        "Ich glaube, dass das Auto repariert wird."
+      ],
+      "translation": "I think the car is being repaired.",
+      "explanation": "In a dass-clause the conjugated verb wird goes to the very end, after the participle."
+    }
+  ]
+}

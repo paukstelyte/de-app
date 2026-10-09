@@ -1,0 +1,329 @@
+{
+  "slug": "n-declension",
+  "instructions": "Choose or type the correct form of the weak masculine noun for the case in the sentence.",
+  "items": [
+    {
+      "id": "nd-01",
+      "type": "choice",
+      "prompt": "Ich kenne den ___ aus meinem Kurs.",
+      "options": [
+        "Student",
+        "Studenten"
+      ],
+      "answer": "Studenten",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Student → den Studenten."
+    },
+    {
+      "id": "nd-02",
+      "type": "choice",
+      "prompt": "Der ___ wohnt neben uns.",
+      "options": [
+        "Nachbar",
+        "Nachbarn"
+      ],
+      "answer": "Nachbar",
+      "explanation": "The nominative singular has no ending: der Nachbar. The -n appears only in the other cases."
+    },
+    {
+      "id": "nd-03",
+      "type": "choice",
+      "prompt": "Wir besuchen morgen unseren ___.",
+      "options": [
+        "Kollege",
+        "Kollegen"
+      ],
+      "answer": "Kollegen",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Kollege → den Kollegen."
+    },
+    {
+      "id": "nd-04",
+      "type": "choice",
+      "prompt": "Anna hilft dem ___ beim Umzug.",
+      "options": [
+        "Nachbar",
+        "Nachbarn"
+      ],
+      "answer": "Nachbarn",
+      "explanation": "helfen takes the dative, and weak nouns add -n there too: dem Nachbarn."
+    },
+    {
+      "id": "nd-05",
+      "type": "type",
+      "prompt": "Ich sehe den ___ im Park.",
+      "hint": "(der Junge)",
+      "answers": [
+        "Jungen"
+      ],
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Junge → den Jungen."
+    },
+    {
+      "id": "nd-06",
+      "type": "choice",
+      "prompt": "Im Zoo sehen wir einen ___.",
+      "options": [
+        "Löwe",
+        "Löwen",
+        "Löwes"
+      ],
+      "answer": "Löwen",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Löwe → den Löwen."
+    },
+    {
+      "id": "nd-07",
+      "type": "choice",
+      "prompt": "Tom fragt den ___ nach dem Weg.",
+      "options": [
+        "Polizist",
+        "Polizisten"
+      ],
+      "answer": "Polizisten",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Polizist → den Polizisten."
+    },
+    {
+      "id": "nd-08",
+      "type": "choice",
+      "prompt": "Welcher ___ hat das gesagt?",
+      "options": [
+        "Mensch",
+        "Menschen"
+      ],
+      "answer": "Mensch",
+      "explanation": "The subject is nominative singular, so there is no ending: der Mensch."
+    },
+    {
+      "id": "nd-09",
+      "type": "choice",
+      "prompt": "Lena schenkt dem ___ eine Banane.",
+      "options": [
+        "Affe",
+        "Affen"
+      ],
+      "answer": "Affen",
+      "explanation": "Dative singular of a weak noun also takes -n: der Affe → dem Affen."
+    },
+    {
+      "id": "nd-10",
+      "type": "type",
+      "prompt": "Das Kind hat Angst vor dem ___.",
+      "hint": "(der Bär)",
+      "answers": [
+        "Bären"
+      ],
+      "explanation": "vor takes the dative here, and weak nouns add -en: der Bär → dem Bären."
+    },
+    {
+      "id": "nd-11",
+      "type": "choice",
+      "prompt": "Ich bringe dem ___ die Rechnung.",
+      "options": [
+        "Herr",
+        "Herrn"
+      ],
+      "answer": "Herrn",
+      "explanation": "Herr adds only -n in all cases except the nominative singular: dem Herrn."
+    },
+    {
+      "id": "nd-12",
+      "type": "choice",
+      "prompt": "Wir geben dem ___ unsere Hausaufgaben.",
+      "options": [
+        "Lehrer",
+        "Lehrern"
+      ],
+      "answer": "Lehrer",
+      "explanation": "Lehrer is a normal masculine noun, not a weak one, so the dative singular stays dem Lehrer."
+    },
+    {
+      "id": "nd-13",
+      "type": "type",
+      "prompt": "Der Tierarzt hilft dem ___.",
+      "hint": "(der Bauer)",
+      "answers": [
+        "Bauern"
+      ],
+      "explanation": "Bauer is a weak noun: it adds -n in every case except the nominative singular; dative: dem Bauern."
+    },
+    {
+      "id": "nd-14",
+      "type": "choice",
+      "prompt": "Jonas füttert den ___ jeden Morgen.",
+      "options": [
+        "Hund",
+        "Hunden"
+      ],
+      "answer": "Hund",
+      "explanation": "Hund is not a weak noun, so the accusative singular stays den Hund."
+    },
+    {
+      "id": "nd-15",
+      "type": "choice",
+      "prompt": "Das Hotel ist bei ___ sehr beliebt.",
+      "options": [
+        "Tourist",
+        "Touristen"
+      ],
+      "answer": "Touristen",
+      "explanation": "The plural of weak nouns ends in -en, and there is no article here: Touristen."
+    },
+    {
+      "id": "nd-16",
+      "type": "type",
+      "prompt": "Diese Stadt ist für viele ___ ein Traum.",
+      "hint": "(der Mensch)",
+      "answers": [
+        "Menschen"
+      ],
+      "explanation": "The plural of Mensch is Menschen, and the weak -en ending stays in every case."
+    },
+    {
+      "id": "nd-17",
+      "type": "choice",
+      "prompt": "Das ist der Plan des ___.",
+      "options": [
+        "Architekt",
+        "Architekten",
+        "Architektes"
+      ],
+      "answer": "Architekten",
+      "explanation": "Weak nouns form the genitive with -en, not -es: des Architekten."
+    },
+    {
+      "id": "nd-18",
+      "type": "choice",
+      "prompt": "Ich habe einen ___ im Garten gesehen.",
+      "options": [
+        "Hase",
+        "Hasen"
+      ],
+      "answer": "Hasen",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Hase → den Hasen."
+    },
+    {
+      "id": "nd-19",
+      "type": "type",
+      "prompt": "Das Kind zeichnet einen ___.",
+      "hint": "(der Elefant)",
+      "answers": [
+        "Elefanten"
+      ],
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Elefant → einen Elefanten."
+    },
+    {
+      "id": "nd-20",
+      "type": "choice",
+      "prompt": "Die Adresse des ___ steht hier.",
+      "options": [
+        "Kunde",
+        "Kunden",
+        "Kundes"
+      ],
+      "answer": "Kunden",
+      "explanation": "Weak nouns form the genitive with -n: der Kunde → des Kunden."
+    },
+    {
+      "id": "nd-21",
+      "type": "type",
+      "prompt": "Die Ärztin untersucht den ___.",
+      "hint": "(der Patient)",
+      "answers": [
+        "Patienten"
+      ],
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Patient → den Patienten."
+    },
+    {
+      "id": "nd-22",
+      "type": "type",
+      "prompt": "Das ist das Haus meines ___.",
+      "hint": "(der Nachbar)",
+      "answers": [
+        "Nachbarn"
+      ],
+      "explanation": "Genitive singular of a weak noun takes -n: der Nachbar → des Nachbarn (no -s)."
+    },
+    {
+      "id": "nd-23",
+      "type": "choice",
+      "prompt": "Wir sprechen mit dem ___.",
+      "options": [
+        "Praktikant",
+        "Praktikanten"
+      ],
+      "answer": "Praktikanten",
+      "explanation": "mit takes the dative, and weak nouns add -en: dem Praktikanten."
+    },
+    {
+      "id": "nd-24",
+      "type": "type",
+      "prompt": "Der Name des ___ steht unter dem Foto.",
+      "hint": "(der Fotograf)",
+      "answers": [
+        "Fotografen"
+      ],
+      "explanation": "Weak nouns form the genitive with -en, not -s: der Fotograf → des Fotografen."
+    },
+    {
+      "id": "nd-25",
+      "type": "type",
+      "prompt": "Der Lehrer erklärt dem ___ die Aufgabe.",
+      "hint": "(der Schüler)",
+      "answers": [
+        "Schüler"
+      ],
+      "explanation": "Schüler is not a weak noun, so it takes no ending in the dative singular: dem Schüler."
+    },
+    {
+      "id": "nd-26",
+      "type": "choice",
+      "prompt": "Tom ist ein junger ___.",
+      "options": [
+        "Franzose",
+        "Franzosen"
+      ],
+      "answer": "Franzose",
+      "explanation": "After sein the noun stays nominative, so there is no ending: ein Franzose."
+    },
+    {
+      "id": "nd-27",
+      "type": "type",
+      "prompt": "Die Kinder bewundern den ___ im Film.",
+      "hint": "(der Held)",
+      "answers": [
+        "Helden"
+      ],
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Held → den Helden."
+    },
+    {
+      "id": "nd-28",
+      "type": "choice",
+      "prompt": "Ich suche einen ___ für meine Frage.",
+      "options": [
+        "Experte",
+        "Experten"
+      ],
+      "answer": "Experten",
+      "explanation": "Weak masculine nouns add -(e)n in every case except the nominative singular; accusative: der Experte → einen Experten."
+    },
+    {
+      "id": "nd-29",
+      "type": "type",
+      "prompt": "Ich kenne seinen ___ nicht.",
+      "hint": "(der Name)",
+      "answers": [
+        "Namen"
+      ],
+      "explanation": "Name is a weak noun: der Name → den Namen. (Genitive is the special form des Namens.)"
+    },
+    {
+      "id": "nd-30",
+      "type": "choice",
+      "prompt": "Das ist das Zimmer meines ___.",
+      "options": [
+        "Neffe",
+        "Neffen",
+        "Neffes"
+      ],
+      "answer": "Neffen",
+      "explanation": "Weak nouns form the genitive with -n, not -s: der Neffe → meines Neffen."
+    }
+  ]
+}

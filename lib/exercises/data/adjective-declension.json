@@ -1,0 +1,372 @@
+{
+  "slug": "adjective-declension",
+  "instructions": "Choose or type the correct adjective ending (or the adjective with its ending) for the case and article.",
+  "items": [
+    {
+      "type": "choice",
+      "prompt": "Mit dem ___ Auto fahre ich zur Arbeit.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuem",
+        "neues"
+      ],
+      "answer": "neuen",
+      "explanation": "After dem (dative neuter) the adjective takes the weak ending -en: mit dem neuen Auto.",
+      "id": "adjd-01"
+    },
+    {
+      "id": "adjd-02",
+      "type": "choice",
+      "prompt": "Das Zimmer gehört der ___ Studentin.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer",
+        "neuem"
+      ],
+      "answer": "neuen",
+      "explanation": "gehören takes the dative; after der (dative feminine) the adjective ends in -en: der neuen Studentin."
+    },
+    {
+      "type": "choice",
+      "prompt": "Das ist das Auto des ___ Mannes.",
+      "options": [
+        "nette",
+        "netten",
+        "netter",
+        "nettem"
+      ],
+      "answer": "netten",
+      "explanation": "Genitive after des: the adjective ends in -en: des netten Mannes.",
+      "id": "adjd-03"
+    },
+    {
+      "id": "adjd-04",
+      "type": "choice",
+      "prompt": "Die ___ Schuhe sind zu klein.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer",
+        "neuem"
+      ],
+      "answer": "neuen",
+      "explanation": "After the plural article die the adjective always ends in -en: die neuen Schuhe."
+    },
+    {
+      "type": "choice",
+      "prompt": "Wir wohnen in einem ___ Haus.",
+      "options": [
+        "kleines",
+        "kleinem",
+        "kleinen",
+        "kleine"
+      ],
+      "answer": "kleinen",
+      "explanation": "After a dative ein-word (einem) the adjective ends in -en: in einem kleinen Haus.",
+      "id": "adjd-05"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ich schreibe einer ___ Freundin.",
+      "options": [
+        "gute",
+        "guten",
+        "guter",
+        "gutem"
+      ],
+      "answer": "guten",
+      "explanation": "Dative feminine after einer: the adjective ends in -en.",
+      "id": "adjd-06"
+    },
+    {
+      "id": "adjd-07",
+      "type": "choice",
+      "prompt": "Gestern hat mich ein ___ Freund besucht.",
+      "options": [
+        "alte",
+        "alten",
+        "alter",
+        "altem"
+      ],
+      "answer": "alter",
+      "explanation": "Ein in the nominative masculine has no ending, so the adjective shows it with -er: ein alter Freund."
+    },
+    {
+      "type": "choice",
+      "prompt": "Das ist ein ___ Angebot.",
+      "options": [
+        "gute",
+        "guten",
+        "gutes",
+        "guter"
+      ],
+      "answer": "gutes",
+      "explanation": "After ein in the nominative/accusative neuter the adjective shows the gender with -es: ein gutes Angebot.",
+      "id": "adjd-08"
+    },
+    {
+      "type": "choice",
+      "prompt": "Mit ___ Mut fange ich an.",
+      "options": [
+        "neuem",
+        "neuen",
+        "neuer",
+        "neues"
+      ],
+      "answer": "neuem",
+      "explanation": "With no article the adjective shows the case: dative masculine ends in -em (like dem): mit neuem Mut.",
+      "id": "adjd-09"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ich trinke gern ___ Kaffee.",
+      "options": [
+        "heißer",
+        "heißen",
+        "heißem",
+        "heißes"
+      ],
+      "answer": "heißen",
+      "explanation": "With no article, accusative masculine ends in -en: heißen Kaffee.",
+      "id": "adjd-10"
+    },
+    {
+      "type": "choice",
+      "prompt": "Sie malt mit ___ Farben.",
+      "options": [
+        "bunte",
+        "bunten",
+        "bunter",
+        "buntem"
+      ],
+      "answer": "bunten",
+      "explanation": "With no article, dative plural ends in -en: mit bunten Farben.",
+      "id": "adjd-11"
+    },
+    {
+      "type": "type",
+      "prompt": "Wir fahren mit dem ___ Bus zur Schule.",
+      "hint": "(gelb)",
+      "answers": [
+        "gelben"
+      ],
+      "explanation": "After dem (dative masculine) the weak ending is -en: mit dem gelben Bus.",
+      "id": "adjd-12"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ich spreche mit meinem ___ Bruder.",
+      "options": [
+        "jüngere",
+        "jüngeren",
+        "jüngerer",
+        "jüngerem"
+      ],
+      "answer": "jüngeren",
+      "explanation": "After a dative ein-word like meinem the adjective ends in -en.",
+      "id": "adjd-13"
+    },
+    {
+      "type": "type",
+      "prompt": "Sie arbeitet in einer ___ Firma.",
+      "hint": "(international)",
+      "answers": [
+        "internationalen"
+      ],
+      "explanation": "Dative feminine after einer: -en: in einer internationalen Firma.",
+      "id": "adjd-14"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ich gebe dem ___ Kind ein Eis.",
+      "options": [
+        "kleine",
+        "kleinen",
+        "kleinem",
+        "kleines"
+      ],
+      "answer": "kleinen",
+      "explanation": "Dative neuter after dem: -en. The article already shows the case.",
+      "id": "adjd-15"
+    },
+    {
+      "id": "adjd-16",
+      "type": "type",
+      "prompt": "Ich trinke gern ___ Wasser.",
+      "hint": "(kalt)",
+      "answers": [
+        "kaltes"
+      ],
+      "explanation": "With no article, the adjective shows the case: accusative neuter ends in -es (like das): kaltes Wasser."
+    },
+    {
+      "type": "choice",
+      "prompt": "Bei ___ Wetter bleibe ich zu Hause.",
+      "options": [
+        "schlechtem",
+        "schlechten",
+        "schlechtes",
+        "schlechter"
+      ],
+      "answer": "schlechtem",
+      "explanation": "With no article, dative neuter ends in -em: bei schlechtem Wetter.",
+      "id": "adjd-17"
+    },
+    {
+      "type": "choice",
+      "prompt": "Dort liegen ___ Bücher.",
+      "options": [
+        "alte",
+        "alten",
+        "alter",
+        "altes"
+      ],
+      "answer": "alte",
+      "explanation": "With no article, nominative plural ends in -e: alte Bücher.",
+      "id": "adjd-18"
+    },
+    {
+      "type": "type",
+      "prompt": "Wir haben ein ___ Problem.",
+      "hint": "(groß)",
+      "answers": [
+        "großes"
+      ],
+      "explanation": "After ein in the nominative/accusative neuter the adjective ends in -es: ein großes Problem.",
+      "id": "adjd-19"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ich habe keine ___ Ideen.",
+      "options": [
+        "gute",
+        "guten",
+        "guter",
+        "gutes"
+      ],
+      "answer": "guten",
+      "explanation": "After kein-words the plural ending is -en: keine guten Ideen.",
+      "id": "adjd-20"
+    },
+    {
+      "type": "type",
+      "prompt": "Das ist das Haus des ___ Lehrers.",
+      "hint": "(alt)",
+      "answers": [
+        "alten"
+      ],
+      "explanation": "Genitive masculine after des: -en: des alten Lehrers.",
+      "id": "adjd-21"
+    },
+    {
+      "type": "choice",
+      "prompt": "Die Tasche der ___ Lehrerin ist rot.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer",
+        "neuem"
+      ],
+      "answer": "neuen",
+      "explanation": "Genitive feminine after der: the adjective ends in -en: der neuen Lehrerin.",
+      "id": "adjd-22"
+    },
+    {
+      "type": "type",
+      "prompt": "Ich schenke meinem ___ Freund ein Buch.",
+      "hint": "(best)",
+      "answers": [
+        "besten"
+      ],
+      "explanation": "Dative masculine after meinem: -en: meinem besten Freund.",
+      "id": "adjd-23"
+    },
+    {
+      "id": "adjd-24",
+      "type": "choice",
+      "prompt": "Die Farbe des ___ Autos gefällt mir.",
+      "options": [
+        "rote",
+        "roten",
+        "rotem",
+        "roter"
+      ],
+      "answer": "roten",
+      "explanation": "Genitive neuter after des: the adjective ends in -en: des roten Autos."
+    },
+    {
+      "type": "choice",
+      "prompt": "Das ist das Ende eines ___ Films.",
+      "options": [
+        "lange",
+        "langen",
+        "langer",
+        "langem"
+      ],
+      "answer": "langen",
+      "explanation": "Genitive masculine after eines: the adjective ends in -en.",
+      "id": "adjd-25"
+    },
+    {
+      "id": "adjd-26",
+      "type": "type",
+      "prompt": "Bei ___ Regen nehme ich immer einen Schirm mit.",
+      "hint": "(stark)",
+      "answers": [
+        "starkem"
+      ],
+      "explanation": "With no article, dative masculine ends in -em (like dem): bei starkem Regen."
+    },
+    {
+      "type": "choice",
+      "prompt": "Trotz ___ Regens gehen wir spazieren.",
+      "options": [
+        "starker",
+        "starkem",
+        "starken",
+        "starke"
+      ],
+      "answer": "starken",
+      "explanation": "With no article, genitive masculine/neuter ends in -en (the noun already shows -s): trotz starken Regens.",
+      "id": "adjd-27"
+    },
+    {
+      "type": "type",
+      "prompt": "Trotz ___ Müdigkeit arbeitet Lena weiter.",
+      "hint": "(groß)",
+      "answers": [
+        "großer"
+      ],
+      "explanation": "With no article, genitive feminine ends in -er: trotz großer Müdigkeit.",
+      "id": "adjd-28"
+    },
+    {
+      "id": "adjd-29",
+      "type": "choice",
+      "prompt": "Wegen ___ Erkältung bleibt Tom heute im Bett.",
+      "options": [
+        "starke",
+        "starken",
+        "starker",
+        "starkem"
+      ],
+      "answer": "starker",
+      "explanation": "With no article, genitive feminine ends in -er (like der): wegen starker Erkältung."
+    },
+    {
+      "type": "choice",
+      "prompt": "Mit ___ Geduld schafft man alles.",
+      "options": [
+        "große",
+        "großen",
+        "großer",
+        "großem"
+      ],
+      "answer": "großer",
+      "explanation": "With no article, dative feminine ends in -er (like der): mit großer Geduld.",
+      "id": "adjd-30"
+    }
+  ]
+}
