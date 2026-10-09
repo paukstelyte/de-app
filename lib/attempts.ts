@@ -4,40 +4,34 @@ import { summarize, type Attempt } from "@/lib/progress";
 
 const PAGE = 1000; // Supabase returns at most 1000 rows per request.
 
-/** All of the logged-in user's answers across topics (paged past the 1000-row cap), oldest first. */
-export async function getAllAttempts(): Promise<{ topic: string; correct: boolean; created_at: string }[]> {
+/** Pages through the logged-in user's attempts (past the 1000-row cap), oldest first; RLS scopes to them.
+ * ponytail: reads the whole history; move the summary into SQL if it grows to tens of thousands of rows. */
+async function pageAttempts<T>(columns: string, topic?: string): Promise<T[]> {
   const supabase = await createClient();
-  const rows: { topic: string; correct: boolean; created_at: string }[] = [];
+  const rows: T[] = [];
   for (let from = 0; ; from += PAGE) {
-    const { data, error } = await supabase
-      .from("attempts")
-      .select("topic, correct, created_at")
-      .order("created_at")
-      .order("id")
-      .range(from, from + PAGE - 1);
+    let q = supabase.from("attempts").select(columns);
+    if (topic) q = q.eq("topic", topic);
+    const { data, error } = await q.order("created_at").order("id").range(from, from + PAGE - 1);
     if (error) throw error;
-    rows.push(...data);
+    rows.push(...(data as unknown as T[]));
     if (data.length < PAGE) return rows;
   }
 }
 
-/** The logged-in user's answers for a topic, oldest first (RLS scopes to them).
- * ponytail: reads the whole history; move the summary into SQL if it grows to tens of thousands of rows. */
-async function getAttempts(topic: string): Promise<Attempt[]> {
+/** All of the logged-in user's answers across topics, oldest first. */
+export const getAllAttempts = () =>
+  pageAttempts<{ topic: string; correct: boolean; created_at: string }>("topic, correct, created_at");
+
+const getAttempts = (topic: string) => pageAttempts<Attempt>("item_id, correct", topic);
+
+/** Answer counts for one topic; null for guests. */
+export async function getTopicAccuracy(slug: string): Promise<{ total: number; correct: number } | null> {
   const supabase = await createClient();
-  const rows: Attempt[] = [];
-  for (let from = 0; ; from += PAGE) {
-    const { data, error } = await supabase
-      .from("attempts")
-      .select("item_id, correct")
-      .eq("topic", topic)
-      .order("created_at")
-      .order("id")
-      .range(from, from + PAGE - 1);
-    if (error) throw error;
-    rows.push(...data);
-    if (data.length < PAGE) return rows;
-  }
+  const { data } = await supabase.auth.getClaims();
+  if (!data?.claims) return null;
+  const rows = await pageAttempts<{ correct: boolean }>("correct", slug);
+  return { total: rows.length, correct: rows.filter((r) => r.correct).length };
 }
 
 /** Returns null for guests. */
