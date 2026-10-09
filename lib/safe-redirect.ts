@@ -6,7 +6,7 @@
 // origin but normalise to a protocol-relative "//evil.com" pathname.
 const BASE = "http://internal.invalid";
 
-export function safeRedirectPath(raw: string | null | undefined, fallback = "/articles") {
+export function safeRedirectPath(raw: string | null | undefined, fallback = "/learning") {
   if (!raw) return fallback;
   try {
     const url = new URL(raw, BASE);

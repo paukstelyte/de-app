@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const LINKS = [
+  { href: "/learning", label: "Customized Learning", also: [] as string[] },
   // der·die·das (/articles) and The Rules (/rules) are part of the Noun gender topic.
   { href: "/topics", label: "Grammar Topics", also: ["/articles", "/rules"] },
 ];

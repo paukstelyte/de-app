@@ -167,7 +167,7 @@ export function SignUpForm() {
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Creating account…" : "Sign up"}
         </button>
-        <GoogleButton next="/articles" onError={setError} />
+        <GoogleButton next="/learning" onError={setError} />
       </form>
       <p className="mt-4 text-center text-xs text-zinc-500">
         See what we store and how to delete it:{" "}
@@ -237,7 +237,7 @@ export function UpdatePasswordForm() {
     e.preventDefault();
     run(
       () => createClient().auth.updateUser({ password }),
-      () => router.push("/articles"),
+      () => router.push("/learning"),
     );
   }
 
