@@ -27,7 +27,7 @@ login() { # email password
   pw close >/dev/null; pw open "$BASE/login" >/dev/null; pw resize 1280 800 >/dev/null; sleep 3
   js "() => { const set=(sel,v)=>{const t=document.querySelector(sel); Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(t,v); t.dispatchEvent(new Event('input',{bubbles:true}));}; set('input[type=email]', $(json "$1")); set('input[type=password]', $(json "$2")); [...document.querySelectorAll('button')].find(b=>b.textContent.trim()==='Log in').click(); return 1; }" >/dev/null
   for i in $(seq 1 15); do sleep 1; [ "$(js '() => location.pathname')" != '"/login"' ] && { sleep 2; return 0; }; done
-  echo "  login failed for $1"; return 1
+  echo "  ❌ login failed for $1 (still on $(js '() => location.pathname'))"; FAILED=1; result
 }
 
 # Log out through the Account page, like a user would.
@@ -36,8 +36,8 @@ logout() {
   js "() => { [...document.querySelectorAll('button')].find(b=>/log ?out/i.test(b.textContent))?.click(); return 1; }" >/dev/null; sleep 4
 }
 
-# Click the first button/link whose text is exactly $1 (optionally inside the <li> containing $2).
-click() { js "() => { const root=$([ -n "$2" ] && echo "[...document.querySelectorAll('li')].filter(l=>l.textContent.includes($(json "$2"))).at(-1)" || echo document); const b=[...(root?.querySelectorAll('button')||[])].find(b=>b.textContent.trim()===$(json "$1")); b?.click(); return !!b; }" >/dev/null; }
+# Click the first button whose text is exactly $1.
+click() { js "() => { const b=[...document.querySelectorAll('button')].find(b=>b.textContent.trim()===$(json "$1")); b?.click(); return !!b; }" >/dev/null; }
 
 # SQL against the linked project (read-only selects). Prints the SQL and its result rows.
 sql() {
@@ -45,5 +45,9 @@ sql() {
   npx supabase db query --linked --project-ref "${SUPABASE_PROJECT_REF:-cenzahkgbbnmgzikxvsz}" "$1" 2>/dev/null \
     | python3 -c 'import json,sys;d=json.loads(sys.stdin.read().split("Initialising login role...")[-1]);print("     ->",json.dumps(d["rows"]))'
 }
-sql_value() { npx supabase db query --linked --project-ref "${SUPABASE_PROJECT_REF:-cenzahkgbbnmgzikxvsz}" "$1" 2>/dev/null \
-    | python3 -c 'import json,sys;d=json.loads(sys.stdin.read().split("Initialising login role...")[-1]);print(list(d["rows"][0].values())[0])'; }
+# Prints the single numeric value of a query, or SQL_ERROR (never equal to a number, so checks fail).
+sql_value() {
+  local v; v=$(npx supabase db query --linked --project-ref "${SUPABASE_PROJECT_REF:-cenzahkgbbnmgzikxvsz}" "$1" 2>/dev/null \
+    | python3 -c 'import json,sys;d=json.loads(sys.stdin.read().split("Initialising login role...")[-1]);print(list(d["rows"][0].values())[0])' 2>/dev/null)
+  case "$v" in ''|*[!0-9]*) echo "SQL_ERROR"; echo "  SQL failed: $1" >&2;; *) echo "$v";; esac
+}

@@ -22,7 +22,7 @@ their passwords; this repository is public. The SQL checks use the linked Supaba
 (`npx supabase db query --linked`; set `SUPABASE_PROJECT_REF` to override the project).
 
 ```bash
-export E2E_MAIN_EMAIL=…  E2E_MAIN_PASSWORD=…    # the tester; its documents are deleted at the end
+export E2E_MAIN_EMAIL=…  E2E_MAIN_PASSWORD=…    # the tester: must be a disposable test account (documents deleted at the end)
 export E2E_OTHER_EMAIL=… E2E_OTHER_PASSWORD=…   # second account; only read
 bash e2e/learning.sh
 ```
@@ -36,5 +36,5 @@ Set `BASE=https://…` to run against another deployment.
   in the browser and cost nothing.
 - Documents the run creates are deleted through the page. The page cannot delete focus rows, so
   the main account keeps two "removed" rows (`modal-verbs` and the topic removed in the focus check).
-- `fixtures/` holds only the German sample text "Lektion 7: Präpositionen mit Dativ …"; the
-  6 photos are copies of `blank.png` made in a temp folder at run time.
+- `fixtures/` holds only the German sample text "Lektion 7: Präpositionen mit Dativ …" (plus a one-line
+  English `old.doc` placeholder); the 6 photos are copies of `blank.png` made in a temp folder at run time.

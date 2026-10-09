@@ -1,5 +1,7 @@
 #!/bin/bash
 # Browser checks for Customized Learning (/learning, /topics). See e2e/README.md.
+# The MAIN account must be a disposable test account: this script adds documents and focus rows
+# to it, and the page cannot delete focus rows (it only marks them 'removed').
 # Real uploads call the AI (about $0.0005 each) and use 4 of the main account's 10 uploads/day.
 cd "$(dirname "$0")/.." || exit 2
 source e2e/lib.sh
@@ -8,7 +10,13 @@ TMP=$(mktemp -d); trap 'rm -rf "$TMP"' EXIT
 for i in 1 2 3 4 5 6; do cp "$FX/blank.png" "$TMP/photo$i.png"; done
 
 BUCKET_SQL="select count(*) as objects from storage.objects where bucket_id = 'learning-uploads'"
-USAGE_SQL="select count(*) as uploads_24h from public.learning_upload_usage where created_at > now() - interval '24 hours'"
+USAGE_SQL="select count(*) as uploads_24h from public.learning_upload_usage where created_at > now() - interval '24 hours' and user_id = (select id from auth.users where email = '$E2E_MAIN_EMAIL')"
+FOCUS_SQL="select kind, topic_slug from public.learning_focus where user_id = (select id from auth.users where email = '$E2E_MAIN_EMAIL') order by topic_slug"
+
+# Quota pre-check: the run needs 4 of the main account's 10 uploads per day.
+USAGE0=$(sql_value "$USAGE_SQL")
+case "$USAGE0" in ''|*[!0-9]*) echo "Could not read upload usage (SQL failed); is supabase linked? Aborting."; exit 2;; esac
+[ "$USAGE0" -le 6 ] || { echo "Main account already used $USAGE0 of 10 uploads in 24h; this run needs 4. Aborting."; exit 2; }
 TOPIC_RE='prepositions-dative|dative-case'
 
 # Open /learning, pick files like a user (click the drop zone, answer the file chooser).
@@ -41,7 +49,7 @@ upload_and_check() { # label file
     blank.png)
       check "$1: 'No German grammar topics found', no topics, focus unchanged" '[ -z "$TOPICS" ] && text | grep -q "No German grammar topics found"' ;;
     *)
-      check "$1: document appears (title mentions lesson 7 / Dative prepositions)" 'echo "$TITLE" | grep -qiE "Lektion 7|Lesson 7|Pr.positionen|Dative Prepositions"'
+      check "$1: document appears (title mentions lesson 7 or dative prepositions (the AI title varies, any language))" 'echo "$TITLE" | grep -qiE "Lektion 7|Lesson 7|Pr.positionen|Dative Prepositions"'
       check "$1: topics include prepositions-dative or dative-case" 'echo "$TOPICS" | grep -qE "$TOPIC_RE"'
       check "$1: 'Your focus now' lists it" 'echo "$FOCUS" | grep -qE "$TOPIC_RE"' ;;
   esac
@@ -53,14 +61,15 @@ echo "== 1. Guest, login redirect"
 pw close >/dev/null; pw open "$BASE/learning" >/dev/null; pw resize 1280 800 >/dev/null; sleep 3
 check "guest /learning shows 'Log in to use Customized Learning'" 'text | grep -q "Log in to use Customized Learning"'
 login "$E2E_MAIN_EMAIL" "$E2E_MAIN_PASSWORD"
-check "logging in from /login lands on /learning" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
+check "logging in from /login lands on /learning (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
 pw goto "$BASE/" >/dev/null; sleep 3
-check "/ redirects to /learning when logged in" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
+check "/ redirects to /learning when logged in (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
 
 echo "== Start state"
 pw goto "$BASE/learning" >/dev/null; sleep 3
 START_DOCS=$(doc_count); START_FOCUS=$(focus_topics); echo "     documents at start: $START_DOCS; focus at start: '$START_FOCUS'"
-sql "$USAGE_SQL"; USAGE0=$(sql_value "$USAGE_SQL")
+sql "$USAGE_SQL"
+sql "$FOCUS_SQL"; echo "     (focus rows above = START)"
 
 echo "== 9. Rejected before upload (no storage, no quota)"
 choose "$FX/old.doc"; msg=$(wait_upload); echo "     page says: $msg"
@@ -89,6 +98,7 @@ check "'Add to my focus' on /topics/modal-verbs adds it to 'Your focus now'" 'fo
 
 echo "== 8. Other user sees none of it"
 login "$E2E_OTHER_EMAIL" "$E2E_OTHER_PASSWORD"; pw goto "$BASE/learning" >/dev/null; sleep 3
+check "user B is logged in (not on /login)" '[ "$(js "() => location.pathname")" != "\"/login\"" ]'
 check "user B sees none of user A's documents" '! text | grep -qE "Lektion 7|Pr.positionen mit Dativ|What I read"'
 check "user B's focus has no prepositions-dative / dative-case / modal-verbs" '! focus_topics | grep -qE "prepositions-dative|dative-case|modal-verbs"'
 echo "     user B focus: '$(focus_topics)'"
@@ -98,11 +108,11 @@ login "$E2E_MAIN_EMAIL" "$E2E_MAIN_PASSWORD"; pw goto "$BASE/learning" >/dev/nul
 n=$(doc_count)
 delete_newest_doc; pw goto "$BASE/learning" >/dev/null; sleep 3
 check "deleted document is gone after reload" '[ "$(doc_count)" = "$((n - 1))" ]'
-while [ "$(doc_count)" -gt "$START_DOCS" ] 2>/dev/null; do delete_newest_doc; pw goto "$BASE/learning" >/dev/null; sleep 3; done
+for i in $(seq 1 10); do [ "$(doc_count)" -gt "$START_DOCS" ] 2>/dev/null || break; delete_newest_doc; pw goto "$BASE/learning" >/dev/null; sleep 3; done
 check "all created documents deleted (back to $START_DOCS)" '[ "$(doc_count)" = "$START_DOCS" ]'
 # Focus: take modal-verbs out again (a 'removed' row stays in learning_focus; the page can't delete it).
 pw goto "$BASE/topics/modal-verbs" >/dev/null; sleep 3; click "Remove from my focus"; sleep 3
-sql "select kind, topic_slug from public.learning_focus order by topic_slug"
+echo "     focus rows at END (compare with START above, no assertion):"; sql "$FOCUS_SQL"
 sql "$BUCKET_SQL"
 pw close >/dev/null
 result
