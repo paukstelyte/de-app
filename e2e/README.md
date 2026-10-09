@@ -54,3 +54,12 @@ bash e2e/exercises.sh                            # about 3 minutes
 ```
 
 Side effect: each run adds 2 `modal-verbs` rows to the main account's `public.attempts` (they stay).
+
+## Every practice page loads (`all-practice-pages.sh`)
+
+Opens all `/topics/<slug>/practice` pages (one per file in `lib/exercises/data/`) as a guest and checks each
+shows "Question 1 of 10" with an answer control and no console errors. No accounts, no AI, nothing saved.
+
+```bash
+bash e2e/all-practice-pages.sh                   # about 2 minutes
+```
