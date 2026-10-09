@@ -26,6 +26,7 @@ export async function analyseDocument(input: {
     console.error("analyseDocument: OPENROUTER_API_KEY is not set");
     return { error: "ai" };
   }
+  if (input.kind !== "docx" && input.files.length === 0) return { error: "unreadable" };
   const parts: object[] = [{ type: "text", text: PROMPT }];
   if (input.kind === "docx") {
     if (!input.docxText?.trim()) return { error: "unreadable" };
@@ -54,9 +55,14 @@ export async function analyseDocument(input: {
       console.error("analyseDocument: OpenRouter", res.status, (await res.text()).slice(0, 300));
       return { error: "ai" };
     }
-    const content = (await res.json())?.choices?.[0]?.message?.content;
-    const analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
-    if (!analysis) console.error("analyseDocument: unexpected answer");
+    const json = await res.json();
+    const choice = json?.choices?.[0];
+    const content = choice?.message?.content;
+    let analysis: Analysis | null = null;
+    try {
+      analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
+    } catch {}
+    if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
     return analysis ? { analysis } : { error: "ai" };
   } catch (err) {
     console.error("analyseDocument failed:", err instanceof Error ? err.message : err);

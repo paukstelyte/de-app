@@ -2,6 +2,9 @@
 // node:zlib, so no package is needed. Returns null for anything it can't read.
 import { inflateRawSync } from "node:zlib";
 
+// Cap on the unpacked XML, so a tiny zip bomb can't exhaust server memory.
+const MAX_XML = 5 * 1024 * 1024;
+
 function findEntry(buf: Buffer, wanted: string): Buffer | null {
   // End of central directory record: last 22+ bytes, signature 0x06054b50.
   const eocd = buf.lastIndexOf(Buffer.from([0x50, 0x4b, 0x05, 0x06]));
@@ -21,8 +24,8 @@ function findEntry(buf: Buffer, wanted: string): Buffer | null {
       if (buf.readUInt32LE(local) !== 0x04034b50) return null;
       const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
       const data = buf.subarray(start, start + size);
-      if (method === 0) return data;
-      if (method === 8) return inflateRawSync(data);
+      if (method === 0) return size > MAX_XML ? null : data;
+      if (method === 8) return inflateRawSync(data, { maxOutputLength: MAX_XML });
       return null;
     }
     ptr += 46 + nameLen + extraLen + commentLen;
