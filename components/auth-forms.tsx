@@ -106,7 +106,7 @@ export function LoginForm({ next }: { next: string }) {
       () => createClient().auth.signInWithPassword({ email, password }),
       // A full page load, not router.push: the client router may still hold a
       // "redirect to /login" it prefetched for this page while logged out (e.g.
-      // the Chat link in the nav), which would bounce the user straight back.
+      // a nav link to a protected page), which would bounce the user straight back.
       // `next` is already limited to this site by safeRedirectPath.
       () => window.location.assign(next),
     );
