@@ -42,7 +42,13 @@ export default async function PracticePage({ params }: PageProps<"/topics/[slug]
           <LevelBadge level={topic.level} />
           <span className="text-sm text-zinc-500">Practice</span>
         </div>
-        <h1 className="mt-3 text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">{topic.title}</h1>
+        <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
+          <h1 className="text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">{topic.title}</h1>
+          {/* Every set on this page is new; der·die·das (/articles) doesn't use it. */}
+          <span className="rounded-full border border-amber-500 bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900 dark:border-amber-400 dark:bg-amber-400/15 dark:text-amber-200">
+            This exercise is still in test mode
+          </span>
+        </div>
         <p className="mt-4 max-w-2xl leading-7 text-zinc-700 dark:text-zinc-300">{set.instructions}</p>
       </div>
       <ExerciseSession slug={slug} title={topic.title} items={set.items} loggedIn={!!data?.claims} />
