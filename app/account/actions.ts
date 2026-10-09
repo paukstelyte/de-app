@@ -4,9 +4,12 @@ import { createClient as createAdminClient } from "@supabase/supabase-js";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { CONFIRM_WORD } from "@/lib/account";
+import { BUCKET } from "@/lib/learning/uploads";
+import { listUserUploads } from "@/lib/learning/storage";
 
-/** Permanently deletes the logged-in user. Their attempts go with them
- * (attempts.user_id → auth.users is `on delete cascade`). */
+/** Permanently deletes the logged-in user. Their attempts and learning rows go with
+ * them (`on delete cascade` on user_id → auth.users). Files in the `learning-uploads`
+ * bucket have no foreign key, so they are removed here first (best-effort). */
 export async function deleteAccount(_prev: string | null, formData: FormData) {
   if (formData.get("confirm") !== CONFIRM_WORD) return `Type ${CONFIRM_WORD} to confirm.`;
 
@@ -25,6 +28,16 @@ export async function deleteAccount(_prev: string | null, formData: FormData) {
     process.env.SUPABASE_SECRET_KEY!,
     { auth: { persistSession: false, autoRefreshToken: false } },
   );
+  try {
+    const storage = admin.storage.from(BUCKET);
+    const files = await listUserUploads(storage, userId);
+    if (files.length) {
+      const { error: rmError } = await storage.remove(files);
+      if (rmError) console.error("deleteAccount: upload cleanup failed:", rmError.message);
+    }
+  } catch (e) {
+    console.error("deleteAccount: upload cleanup failed:", e instanceof Error ? e.message : "unknown");
+  }
   const { error } = await admin.auth.admin.deleteUser(userId);
   if (error) {
     console.error("deleteAccount failed:", error.message);

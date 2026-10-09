@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { analyseUpload } from "@/app/learning/actions";
 import { createClient } from "@/lib/supabase/client";
+import { listUserUploads } from "@/lib/learning/storage";
 import { BUCKET, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
 
 const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
@@ -19,6 +20,9 @@ export function UploadBox({ userId }: { userId: string }) {
 
     setStatus({ kind: "busy", text: "Uploading…" });
     const storage = createClient().storage.from(BUCKET);
+    // Self-heal: drop files left behind by a closed tab or crash (the bucket caps a folder at 5).
+    const leftovers = await listUserUploads(storage, userId).catch(() => []);
+    if (leftovers.length) await storage.remove(leftovers).catch(() => {});
     const batch = crypto.randomUUID();
     const paths: string[] = [];
     for (const [i, file] of files.entries()) {

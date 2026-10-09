@@ -88,6 +88,7 @@ Private. Holds files only in transit: the server reads an upload and deletes it 
 - Size limit 10 MB (`10485760` bytes).
 - Allowed types: PDF, DOCX, JPEG, PNG, WebP, HEIC, HEIF.
 - Policies on `storage.objects` (insert, select, delete), all `to authenticated`: a user may only touch objects under the folder named after their own id, `<user id>/…`. There is no update policy.
+- **Pending migration `20261010110000` (not yet applied):** tightens the insert policy so a new object must also match the path shape the server accepts (`<user id>/<batch id>/<digit>.<allowed ext>`) and the user's folder must hold fewer than 5 objects (counted by a new security definer function `public.learning_upload_count()`, since a policy can't query its own table). The app clears leftovers before each upload and on account deletion.
 
 ## Removed: the AI chat and its notes vector store
 
