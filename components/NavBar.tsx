@@ -6,8 +6,8 @@ import type { ReactNode } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const LINKS = [
-  { href: "/articles", label: "der·die·das" },
-  { href: "/rules", label: "The Rules" },
+  // der·die·das (/articles) and The Rules (/rules) are part of the Noun gender topic.
+  { href: "/topics", label: "Grammar Topics", also: ["/articles", "/rules"] },
 ];
 
 export function NavBar({ auth }: { auth: ReactNode }) {
@@ -26,7 +26,7 @@ export function NavBar({ auth }: { auth: ReactNode }) {
         <div className="flex flex-wrap items-center justify-end gap-x-1 gap-y-2 sm:gap-3">
           <ul className="flex items-center gap-1">
             {LINKS.map((link) => {
-              const isActive = pathname.startsWith(link.href);
+              const isActive = [link.href, ...link.also].some((p) => pathname.startsWith(p));
               return (
                 <li key={link.href}>
                   <Link

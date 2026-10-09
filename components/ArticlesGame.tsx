@@ -97,7 +97,9 @@ export function ArticlesGame({
       <aside className="flex flex-col gap-4 max-lg:order-last lg:pt-3">
         <div>
           <div className="mb-4 h-2 w-12 bg-[var(--accent)]" />
-          <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">German article practice / 01</p>
+          <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
+            <Link href="/topics/noun-gender" className="underline-offset-2 hover:underline">Grammar Topics › Noun gender · A1</Link>
+          </p>
           <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">der · die · das</h1>
           <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
             Learn German noun articles and the rules behind them.

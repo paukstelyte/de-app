@@ -1,3 +1,4 @@
+import Link from "next/link";
 import rules from "@/lib/flashcards/data/rules.json";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
 import { PrintButton } from "@/components/PrintButton";
@@ -55,6 +56,9 @@ export default function RulesPage() {
     <>
     <div className="flex flex-col gap-10 print:hidden">
       <section>
+        <p className="mb-2 text-sm text-zinc-500">
+          <Link href="/topics/noun-gender" className="underline-offset-2 hover:underline">Grammar Topics › Noun gender</Link>
+        </p>
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="text-2xl font-semibold">The Rules</h1>
           <PrintButton

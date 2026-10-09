@@ -5,7 +5,7 @@ import { loadFlashcards } from "@/lib/flashcards/storage";
 import { ARTICLES } from "@/lib/flashcards/types";
 import { getArticlesProgress } from "@/lib/attempts";
 import { percent, type Score } from "@/lib/progress";
-import { TOPICS } from "@/lib/topics";
+import { getTopic } from "@/lib/grammar/topics";
 
 export const metadata = { title: "Your progress" };
 
@@ -22,7 +22,7 @@ const heading =
 export default async function ProgressPage() {
   const progress = await getArticlesProgress();
   if (!progress) redirect("/login?next=/progress");
-  const topic = TOPICS[0];
+  const topic = getTopic("noun-gender")!;
   const { overall, byArticle, byRule, trouble } = progress;
 
   return (
@@ -38,7 +38,7 @@ export default async function ProgressPage() {
         {overall.total === 0 ? (
           <div className={`${panel} text-sm text-zinc-600 dark:text-zinc-400`}>
             No answers yet.{" "}
-            <Link href={topic.href} className="underline underline-offset-2">
+            <Link href={topic.exercises![0].href} className="underline underline-offset-2">
               Play a round
             </Link>{" "}
             and your stats will show up here.
