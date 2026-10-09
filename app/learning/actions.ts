@@ -29,19 +29,24 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number } | { 
   const storage = supabase.storage.from(BUCKET);
 
   try {
+    const mimes = owned.map((path) => mimeFor({ name: path, size: 0, type: "" }));
+    const first = mimes[0];
+    if (!first || mimes.some((m) => !m)) return { error: ERRORS.files };
+    const kind: UploadKind = first === "application/pdf" ? "pdf" : first.includes("wordprocessingml") ? "docx" : "images";
+    if (kind !== "images" && owned.length > 1) return { error: ERRORS.files };
+    if (kind === "images" && !mimes.every((m) => m!.startsWith("image/"))) return { error: ERRORS.files };
+
     const { error: quotaError } = await supabase.rpc("use_upload_quota");
     if (quotaError) return { error: quotaError.code === "P0001" ? ERRORS.limit : ERRORS.generic };
 
     const files = [];
-    for (const path of owned) {
+    for (const [i, path] of owned.entries()) {
       const { data: blob, error } = await storage.download(path);
-      const mime = mimeFor({ name: path, size: 0, type: "" });
-      if (error || !blob || !mime || blob.size > MAX_FILE_BYTES) return { error: ERRORS.files };
+      const mime = mimes[i]!;
+      if (error || !blob || blob.size > MAX_FILE_BYTES) return { error: ERRORS.files };
       files.push({ name: path.split("/").pop()!, mime, data: Buffer.from(await blob.arrayBuffer()) });
     }
-    const kind: UploadKind = files[0].mime === "application/pdf" ? "pdf" : files[0].mime.includes("wordprocessingml") ? "docx" : "images";
-    if (kind !== "images" && files.length > 1) return { error: ERRORS.files };
-    if (kind === "images" && !files.every((f) => f.mime.startsWith("image/"))) return { error: ERRORS.files };
+    // ponytail: counts uncompressed page objects only; PDFs storing pages in compressed object streams pass uncounted (cost still capped by 10 MB + daily quota). Inflate FlateDecode streams if long PDFs become a problem.
     if (kind === "pdf" && (files[0].data.toString("latin1").match(/\/Type\s*\/Page(?!s)/g)?.length ?? 0) > MAX_PDF_PAGES) {
       return { error: ERRORS.pdfPages };
     }
@@ -75,7 +80,10 @@ export async function deleteDocument(id: unknown): Promise<{ error?: string }> {
   const { data } = await supabase.auth.getClaims();
   if (!data?.claims) return { error: ERRORS.loggedOut };
   const { error } = await supabase.from("learning_documents").delete().eq("id", id as number);
-  if (error) return { error: ERRORS.generic };
+  if (error) {
+    console.error("deleteDocument failed:", error.message);
+    return { error: ERRORS.generic };
+  }
   revalidatePath("/learning");
   return {};
 }
