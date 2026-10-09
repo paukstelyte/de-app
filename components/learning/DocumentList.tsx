@@ -22,22 +22,23 @@ function DocumentItem({ doc, topics }: { doc: Doc; topics: Record<string, Gramma
   const [confirming, setConfirming] = useState(false);
   const [error, setError] = useState("");
   const [pending, start] = useTransition();
+  const known = doc.suggestions.filter((s) => topics[s.slug]);
   return (
     <li className="flex flex-col gap-3 border border-[var(--line)] bg-[var(--paper)] p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">{doc.title}</h3>
         <span className="text-xs text-zinc-500">{date(doc.created_at)}</span>
       </div>
-      {doc.no_grammar ? (
+      {doc.no_grammar || known.length === 0 ? (
         <p className="text-sm text-zinc-600 dark:text-zinc-400">No German grammar topics found in this document.</p>
       ) : (
         <ul className="flex flex-col gap-2">
-          {doc.suggestions.map((s) => topics[s.slug] && (
+          {known.map((s) => (
             <li key={s.slug} className="flex flex-wrap items-center gap-2 text-sm">
               <LevelBadge level={topics[s.slug].level} />
               <Link href={`/topics/${s.slug}`} className="font-medium underline underline-offset-2">{topics[s.slug].title}</Link>
               {s.fromMistake && <span className="text-xs font-semibold text-red-700 dark:text-red-400">mistake</span>}
-              <span className="w-full text-zinc-600 dark:text-zinc-400">{s.reason}</span>
+              {s.reason && <span className="w-full text-zinc-600 dark:text-zinc-400">{s.reason}</span>}
             </li>
           ))}
         </ul>

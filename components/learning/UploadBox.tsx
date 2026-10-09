@@ -31,7 +31,10 @@ export function UploadBox({ userId }: { userId: string }) {
       paths.push(path);
     }
     setStatus({ kind: "busy", text: "Reading your document… this takes up to a minute." });
-    const result = await analyseUpload(paths).catch(() => ({ error: "Something went wrong — please try again." }));
+    const result = await analyseUpload(paths).catch(async () => {
+      await storage.remove(paths);
+      return { error: "Something went wrong — please try again." };
+    });
     if ("error" in result) return setStatus({ kind: "error", text: result.error });
     setStatus({ kind: "done", text: "Done! Your topics are below." });
     router.refresh();
@@ -40,7 +43,7 @@ export function UploadBox({ userId }: { userId: string }) {
   return (
     <section className="flex flex-col gap-4 border border-[var(--line)] bg-[var(--paper)] p-5 shadow-[8px_8px_0_var(--accent)] sm:p-6" aria-labelledby="upload-title">
       <h2 id="upload-title" className="text-lg font-semibold tracking-[-0.02em]">Upload what you&apos;re learning</h2>
-      <label className="flex cursor-pointer flex-col items-center gap-2 border-2 border-dashed border-[var(--line)] px-4 py-8 text-center text-sm hover:border-zinc-900 dark:hover:border-zinc-100">
+      <label className="flex cursor-pointer flex-col items-center gap-2 border-2 border-dashed border-[var(--line)] focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 px-4 py-8 text-center text-sm hover:border-zinc-900 dark:hover:border-zinc-100">
         <span className="font-semibold">Choose a PDF, a Word file or up to 5 photos</span>
         <span className="text-zinc-500">PDF, DOCX, JPG, PNG, WebP or HEIC · up to 10 MB each</span>
         <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy"} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />

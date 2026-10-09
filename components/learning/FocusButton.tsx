@@ -15,7 +15,7 @@ export function FocusButton({ slug, inFocus }: { slug: string; inFocus: boolean 
     <p className="text-sm">
       {on && <span className="mr-2 font-semibold">In your focus ·</span>}
       <button type="button" disabled={pending} onClick={toggle} className="underline underline-offset-2">
-        {on ? "Remove" : "Add to my focus"}
+        {on ? "Remove from my focus" : "Add to my focus"}
       </button>
       {error && <span role="alert" className="ml-2 text-red-600 dark:text-red-400">{error}</span>}
     </p>
