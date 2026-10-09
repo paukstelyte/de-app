@@ -1,0 +1,343 @@
+{
+  "slug": "nominalisation",
+  "instructions": "Choose or type the correct noun form that turns the verb or adjective into a noun.",
+  "items": [
+    {
+      "id": "nom-01",
+      "type": "choice",
+      "prompt": "Beim ___ höre ich gern Musik.",
+      "options": [
+        "Kochen",
+        "Koch",
+        "Kochung"
+      ],
+      "answer": "Kochen",
+      "explanation": "An infinitive used as a noun is capitalised and neuter: kochen → das Kochen. beim = bei dem."
+    },
+    {
+      "id": "nom-02",
+      "type": "choice",
+      "prompt": "Er hat endlich eine schwere ___ getroffen.",
+      "options": [
+        "Entscheidung",
+        "Entscheiden",
+        "Entscheidet"
+      ],
+      "answer": "Entscheidung",
+      "explanation": "Many verbs form a feminine noun with -ung: entscheiden → die Entscheidung. Here eine requires a feminine noun."
+    },
+    {
+      "id": "nom-03",
+      "type": "choice",
+      "prompt": "Nach dem ___ putze ich mir die Zähne.",
+      "options": [
+        "Essen",
+        "Isst",
+        "Gegessen"
+      ],
+      "answer": "Essen",
+      "explanation": "Nach dem Essen replaces Nachdem ich gegessen habe: the infinitive becomes a neuter noun after dem."
+    },
+    {
+      "id": "nom-04",
+      "type": "choice",
+      "prompt": "Die ___ des Problems hat lange gedauert.",
+      "options": [
+        "Lösung",
+        "Lösen",
+        "Löst"
+      ],
+      "answer": "Lösung",
+      "explanation": "lösen → die Lösung (-ung noun, feminine). The article die shows a feminine noun, not das Lösen."
+    },
+    {
+      "id": "nom-05",
+      "type": "choice",
+      "prompt": "Wegen der ___ des Zuges kamen wir zu spät an.",
+      "options": [
+        "Verspätung",
+        "Verspäten",
+        "Verspätet"
+      ],
+      "answer": "Verspätung",
+      "explanation": "Wegen + genitive and a noun: Der Zug hat sich verspätet → die Verspätung des Zuges."
+    },
+    {
+      "id": "nom-06",
+      "type": "choice",
+      "prompt": "Ich finde ___ Schwimmen im See herrlich.",
+      "options": [
+        "das",
+        "die",
+        "der"
+      ],
+      "answer": "das",
+      "explanation": "Nominalised infinitives are always neuter: das Schwimmen."
+    },
+    {
+      "id": "nom-07",
+      "type": "choice",
+      "prompt": "Vor dem ___ muss man das Formular unterschreiben.",
+      "options": [
+        "Einreichen",
+        "Einreichung",
+        "Einreicht"
+      ],
+      "answer": "Einreichen",
+      "explanation": "dem is masculine/neuter dative, so only the nominalised infinitive das Einreichen fits; die Einreichung would need vor der."
+    },
+    {
+      "id": "nom-08",
+      "type": "choice",
+      "prompt": "Die ___ der Mitarbeiter ist uns wichtig.",
+      "options": [
+        "Zufriedenheit",
+        "Zufrieden",
+        "Zufriedung"
+      ],
+      "answer": "Zufriedenheit",
+      "explanation": "Adjectives become nouns with -heit/-keit: zufrieden → die Zufriedenheit."
+    },
+    {
+      "id": "nom-09",
+      "type": "choice",
+      "prompt": "Bei der ___ des Hauses half uns Tom.",
+      "options": [
+        "Renovierung",
+        "Renovieren",
+        "Renoviert"
+      ],
+      "answer": "Renovierung",
+      "explanation": "renovieren → die Renovierung. The article der (dative feminine after bei) shows a feminine noun."
+    },
+    {
+      "id": "nom-10",
+      "type": "choice",
+      "prompt": "Das ___ ist, dass er nie pünktlich kommt.",
+      "options": [
+        "Schlimme",
+        "Schlimmes",
+        "Schlimmer"
+      ],
+      "answer": "Schlimme",
+      "explanation": "An adjective used as a noun takes the normal adjective ending after the article: das Schlimme."
+    },
+    {
+      "id": "nom-11",
+      "type": "choice",
+      "prompt": "Er hat uns etwas ___ erzählt.",
+      "options": [
+        "Interessantes",
+        "Interessante",
+        "Interessanter"
+      ],
+      "answer": "Interessantes",
+      "explanation": "After etwas, a nominalised adjective is capitalised and ends in -es: etwas Interessantes."
+    },
+    {
+      "id": "nom-12",
+      "type": "choice",
+      "prompt": "Nach ihrer ___ rief sie ihre Mutter an.",
+      "options": [
+        "Ankunft",
+        "Ankommen",
+        "Angekommen"
+      ],
+      "answer": "Ankunft",
+      "explanation": "Nachdem sie angekommen war → nach ihrer Ankunft. ihrer (dative feminine) needs a feminine noun."
+    },
+    {
+      "id": "nom-13",
+      "type": "choice",
+      "prompt": "Aufgrund seiner ___ konnte er nicht arbeiten.",
+      "options": [
+        "Krankheit",
+        "Krankung",
+        "Krankes"
+      ],
+      "answer": "Krankheit",
+      "explanation": "The adjective krank becomes the feminine noun die Krankheit (-heit); seiner shows a feminine genitive."
+    },
+    {
+      "id": "nom-14",
+      "type": "choice",
+      "prompt": "Die ___ der Ergebnisse dauert zwei Tage.",
+      "options": [
+        "Auswertung",
+        "Auswerten",
+        "Ausgewertet"
+      ],
+      "answer": "Auswertung",
+      "explanation": "auswerten → die Auswertung. Formal writing prefers -ung nouns to subordinate clauses."
+    },
+    {
+      "id": "nom-15",
+      "type": "choice",
+      "prompt": "Während des ___ darf man nicht telefonieren.",
+      "options": [
+        "Fahrens",
+        "Fahren",
+        "Fahrt"
+      ],
+      "answer": "Fahrens",
+      "explanation": "A nominalised infinitive takes genitive -s: während des Fahrens. Fahrt is feminine (der Fahrt)."
+    },
+    {
+      "id": "nom-16",
+      "type": "choice",
+      "prompt": "Trotz des ständigen ___ der Nachbarn schlief er gut.",
+      "options": [
+        "Streitens",
+        "Streiten",
+        "Streit"
+      ],
+      "answer": "Streitens",
+      "explanation": "After trotz des + adjective, the masculine/neuter genitive noun needs -s: des Streitens."
+    },
+    {
+      "id": "nom-17",
+      "type": "choice",
+      "prompt": "Er bedankte sich für die ___ bei der Arbeit.",
+      "options": [
+        "Unterstützung",
+        "Unterstützen",
+        "Unterstützt"
+      ],
+      "answer": "Unterstützung",
+      "explanation": "unterstützen → die Unterstützung. Die after für (accusative feminine) needs a noun, not an infinitive."
+    },
+    {
+      "id": "nom-18",
+      "type": "choice",
+      "prompt": "Das ___ ist hier verboten.",
+      "options": [
+        "Rauchen",
+        "Rauch",
+        "Raucht"
+      ],
+      "answer": "Rauchen",
+      "explanation": "The infinitive becomes a neuter noun: rauchen → das Rauchen. Das Rauch would be wrong (der Rauch)."
+    },
+    {
+      "id": "nom-19",
+      "type": "type",
+      "prompt": "Ich habe mir beim ___ den Fuß verletzt.",
+      "hint": "(joggen)",
+      "answers": [
+        "Joggen"
+      ],
+      "explanation": "A verb becomes a neuter noun by capitalising the infinitive: joggen → beim Joggen."
+    },
+    {
+      "id": "nom-20",
+      "type": "type",
+      "prompt": "Die ___ des Antrags dauert zwei Wochen.",
+      "hint": "(bearbeiten)",
+      "answers": [
+        "Bearbeitung"
+      ],
+      "explanation": "bearbeiten → die Bearbeitung (-ung is the common suffix for verb nouns)."
+    },
+    {
+      "id": "nom-21",
+      "type": "type",
+      "prompt": "Ich warte noch auf die ___ des Chefs.",
+      "hint": "(antworten)",
+      "answers": [
+        "Antwort"
+      ],
+      "explanation": "Some verbs form irregular nouns: antworten → die Antwort."
+    },
+    {
+      "id": "nom-22",
+      "type": "type",
+      "prompt": "Gestern fand die ___ im Gericht statt.",
+      "hint": "(verhandeln)",
+      "answers": [
+        "Verhandlung"
+      ],
+      "explanation": "verhandeln → die Verhandlung. Compare with the verb in a clause: Man hat gestern verhandelt."
+    },
+    {
+      "id": "nom-23",
+      "type": "type",
+      "prompt": "Die ___ des Flusses beträgt zehn Meter.",
+      "hint": "(tief)",
+      "answers": [
+        "Tiefe"
+      ],
+      "explanation": "Many adjectives form a feminine noun with -e: tief → die Tiefe."
+    },
+    {
+      "id": "nom-24",
+      "type": "type",
+      "prompt": "Er sprach über die ___ der Stadt.",
+      "hint": "(entwickeln)",
+      "answers": [
+        "Entwicklung"
+      ],
+      "explanation": "entwickeln → die Entwicklung. Note the spelling: -ung is added to the stem entwickel-/entwickl-."
+    },
+    {
+      "id": "nom-25",
+      "type": "type",
+      "prompt": "Wir wünschen dir alles ___ zum Geburtstag.",
+      "hint": "(gut)",
+      "answers": [
+        "Gute"
+      ],
+      "explanation": "After alles, a nominalised adjective is capitalised with the ending -e: alles Gute."
+    },
+    {
+      "id": "nom-26",
+      "type": "type",
+      "prompt": "Hast du schon etwas ___ von Anna gehört?",
+      "hint": "(neu)",
+      "answers": [
+        "Neues"
+      ],
+      "explanation": "After etwas, a nominalised adjective is capitalised and ends in -es: etwas Neues."
+    },
+    {
+      "id": "nom-27",
+      "type": "type",
+      "prompt": "Während des ___ las er die Zeitung.",
+      "hint": "(frühstücken)",
+      "answers": [
+        "Frühstückens",
+        "Frühstücks"
+      ],
+      "explanation": "Both the nominalised infinitive (des Frühstückens) and the noun Frühstück (des Frühstücks) take genitive -s."
+    },
+    {
+      "id": "nom-28",
+      "type": "type",
+      "prompt": "Nach der ___ des Studiums zog sie nach Berlin.",
+      "hint": "(beenden)",
+      "answers": [
+        "Beendigung"
+      ],
+      "explanation": "Nachdem sie das Studium beendet hatte → nach der Beendigung des Studiums (-igung noun from beenden)."
+    },
+    {
+      "id": "nom-29",
+      "type": "type",
+      "prompt": "Vor der ___ des Vertrags lese ich alles genau.",
+      "hint": "(unterzeichnen)",
+      "answers": [
+        "Unterzeichnung"
+      ],
+      "explanation": "unterzeichnen → die Unterzeichnung; this replaces a clause like Bevor ich den Vertrag unterzeichne."
+    },
+    {
+      "id": "nom-30",
+      "type": "type",
+      "prompt": "Dank seiner ___ haben wir das Spiel gewonnen.",
+      "hint": "(helfen)",
+      "answers": [
+        "Hilfe"
+      ],
+      "explanation": "helfen → die Hilfe. Dank takes the genitive here: seiner Hilfe (feminine)."
+    }
+  ]
+}

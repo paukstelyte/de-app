@@ -1,0 +1,377 @@
+{
+  "slug": "konjunktiv-i-reported-speech",
+  "instructions": "Complete or build each sentence in reported speech using Konjunktiv I (or Konjunktiv II where Konjunktiv I looks like the present).",
+  "items": [
+    {
+      "id": "kj1-01",
+      "type": "choice",
+      "prompt": "Der Arzt sagt, die Wunde ___ nicht gefährlich.",
+      "options": [
+        "sei",
+        "sein",
+        "sind"
+      ],
+      "answer": "sei",
+      "explanation": "Konjunktiv I of sein for er/sie/es is sei; it marks the statement as reported."
+    },
+    {
+      "id": "kj1-02",
+      "type": "type",
+      "prompt": "Tom meint, er ___ kein Geld.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "Konjunktiv I of haben for er/sie/es is habe (stem hab- + -e), instead of the indicative hat."
+    },
+    {
+      "id": "kj1-03",
+      "type": "choice",
+      "prompt": "Lena sagt, ihr Bruder ___ ein neues Auto.",
+      "options": [
+        "habe",
+        "habt",
+        "haben"
+      ],
+      "answer": "habe",
+      "explanation": "ihr Bruder = er, and Konjunktiv I of haben for er/sie/es is habe."
+    },
+    {
+      "id": "kj1-04",
+      "type": "type",
+      "prompt": "Der Minister sagt, die Lage ___ ernst.",
+      "hint": "(sein)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "sein has an irregular Konjunktiv I: er/sie/es sei."
+    },
+    {
+      "id": "kj1-05",
+      "type": "choice",
+      "prompt": "Sie sagt, sie ___ das Buch schon gelesen.",
+      "options": [
+        "habe",
+        "sei",
+        "werde"
+      ],
+      "answer": "habe",
+      "explanation": "Reported past uses Konjunktiv I of the auxiliary + participle; lesen takes haben: habe gelesen."
+    },
+    {
+      "id": "kj1-06",
+      "type": "type",
+      "prompt": "Lena erzählt, sie ___ gern Fußball.",
+      "hint": "(spielen)",
+      "answers": [
+        "spiele"
+      ],
+      "explanation": "Konjunktiv I for er/sie/es is the stem + -e: spiele instead of spielt."
+    },
+    {
+      "id": "kj1-07",
+      "type": "choice",
+      "prompt": "Er sagt, sie ___ gern Tee.",
+      "options": [
+        "trinke",
+        "tränke",
+        "trinken"
+      ],
+      "answer": "trinke",
+      "explanation": "Konjunktiv I for er/sie/es is stem + -e: sie trinke. tränke is Konjunktiv II, used only when Konjunktiv I looks like the present."
+    },
+    {
+      "id": "kj1-08",
+      "type": "type",
+      "prompt": "Jonas sagt, er ___ morgen nach Berlin.",
+      "hint": "(fahren)",
+      "answers": [
+        "fahre"
+      ],
+      "explanation": "Konjunktiv I has no vowel change: er fahre, not er fährt."
+    },
+    {
+      "id": "kj1-09",
+      "type": "choice",
+      "prompt": "Tom sagt, er ___ gestern im Kino gewesen.",
+      "options": [
+        "sei",
+        "habe",
+        "werde"
+      ],
+      "answer": "sei",
+      "explanation": "sein forms its perfect with sein, so reported past is sei + gewesen."
+    },
+    {
+      "id": "kj1-10",
+      "type": "type",
+      "prompt": "Die Zeitung schreibt, der Zug ___ gestern zu spät angekommen.",
+      "hint": "(sein)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "ankommen forms its perfect with sein, so the reported past is sei + angekommen."
+    },
+    {
+      "id": "kj1-11",
+      "type": "choice",
+      "prompt": "Sie sagt, ___ sie keine Zeit habe.",
+      "options": [
+        "dass",
+        "ob",
+        "wenn"
+      ],
+      "answer": "dass",
+      "explanation": "A reported statement is introduced by dass (or no conjunction); ob is for yes/no questions."
+    },
+    {
+      "id": "kj1-12",
+      "type": "choice",
+      "prompt": "Er fragt, ___ das Museum heute geöffnet sei.",
+      "options": [
+        "ob",
+        "dass",
+        "wenn"
+      ],
+      "answer": "ob",
+      "explanation": "A reported yes/no question is introduced by ob, with the verb (here Konjunktiv I sei) at the end."
+    },
+    {
+      "id": "kj1-13",
+      "type": "type",
+      "prompt": "Die Lehrerin fragte, ob Tom die Hausaufgaben gemacht ___.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "Reported questions also take Konjunktiv I; machen forms its perfect with haben: ob er … gemacht habe."
+    },
+    {
+      "id": "kj1-14",
+      "type": "type",
+      "prompt": "Er behauptet, er ___ nichts gewusst.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "Perfect in reported speech: habe + gewusst; wissen forms the perfect with haben."
+    },
+    {
+      "id": "kj1-15",
+      "type": "choice",
+      "prompt": "Die Firma teilt mit, sie ___ neue Mitarbeiter einstellen.",
+      "options": [
+        "werde",
+        "werden",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "Reported future uses Konjunktiv I of werden + infinitive; die Firma = sie (singular): sie werde einstellen."
+    },
+    {
+      "id": "kj1-16",
+      "type": "type",
+      "prompt": "Der Politiker sagt, er ___ das Gesetz ändern.",
+      "hint": "(werden)",
+      "answers": [
+        "werde"
+      ],
+      "explanation": "Reported future: werde + infinitive; Konjunktiv I of werden is werde for er/sie/es."
+    },
+    {
+      "id": "kj1-17",
+      "type": "type",
+      "prompt": "Die Ärztin meint, der Patient ___ bald gesund.",
+      "hint": "(werden)",
+      "answers": [
+        "werde"
+      ],
+      "explanation": "werden in Konjunktiv I: er/sie/es werde."
+    },
+    {
+      "id": "kj1-18",
+      "type": "choice",
+      "prompt": "Die Eltern sagen, sie ___ zu Hause.",
+      "options": [
+        "seien",
+        "sei",
+        "seid"
+      ],
+      "answer": "seien",
+      "explanation": "sein has its own plural Konjunktiv I: sie seien (distinct from indicative sind)."
+    },
+    {
+      "id": "kj1-19",
+      "type": "type",
+      "prompt": "Die Nachbarn erzählen, sie ___ im Urlaub gewesen.",
+      "hint": "(sein)",
+      "answers": [
+        "seien"
+      ],
+      "explanation": "Plural Konjunktiv I of sein is seien; reported past: seien gewesen."
+    },
+    {
+      "id": "kj1-20",
+      "type": "choice",
+      "prompt": "Anna sagt, die Kinder ___ Hunger.",
+      "options": [
+        "habe",
+        "hätten",
+        "hat"
+      ],
+      "answer": "hätten",
+      "explanation": "For sie (plural), Konjunktiv I haben is identical to the indicative, so Konjunktiv II hätten is used instead."
+    },
+    {
+      "id": "kj1-21",
+      "type": "type",
+      "prompt": "Die Studenten berichten, sie ___ zu wenig Zeit.",
+      "hint": "(haben)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "sie haben (plural) looks the same in Konjunktiv I and the indicative, so the Konjunktiv II form hätten is used."
+    },
+    {
+      "id": "kj1-22",
+      "type": "choice",
+      "prompt": "Der Sprecher sagt, die Preise ___ bald steigen.",
+      "options": [
+        "könnten",
+        "können",
+        "könne"
+      ],
+      "answer": "könnten",
+      "explanation": "For sie (plural), Konjunktiv I können is identical to the indicative, so Konjunktiv II könnten replaces it; könne is singular."
+    },
+    {
+      "id": "kj1-23",
+      "type": "type",
+      "prompt": "Meine Eltern sagen, sie ___ morgen kommen.",
+      "hint": "(können)",
+      "answers": [
+        "könnten"
+      ],
+      "explanation": "sie können (plural) is the same in Konjunktiv I and the indicative, so Konjunktiv II könnten is used."
+    },
+    {
+      "id": "kj1-24",
+      "type": "type",
+      "prompt": "Der Chef sagt, wir ___ mehr arbeiten.",
+      "hint": "(müssen)",
+      "answers": [
+        "müssten"
+      ],
+      "explanation": "wir müssen is identical in Konjunktiv I and the indicative, so the Konjunktiv II form müssten is used."
+    },
+    {
+      "id": "kj1-25",
+      "type": "order",
+      "words": [
+        "Lena",
+        "schreibt,",
+        "sie",
+        "sei",
+        "sehr",
+        "glücklich."
+      ],
+      "answers": [
+        "Lena schreibt, sie sei sehr glücklich."
+      ],
+      "translation": "Lena writes that she is very happy.",
+      "explanation": "Reported speech: Konjunktiv I sei in the subordinate clause, after a comma."
+    },
+    {
+      "id": "kj1-26",
+      "type": "order",
+      "words": [
+        "Tom",
+        "meint,",
+        "er",
+        "habe",
+        "den",
+        "Bus",
+        "verpasst."
+      ],
+      "answers": [
+        "Tom meint, er habe den Bus verpasst."
+      ],
+      "translation": "Tom says he missed the bus.",
+      "explanation": "Without dass, the reported clause keeps main-clause order: subject, then Konjunktiv I habe, with the participle verpasst at the end."
+    },
+    {
+      "id": "kj1-27",
+      "type": "order",
+      "words": [
+        "Lena",
+        "fragt,",
+        "ob",
+        "er",
+        "Hunger",
+        "habe."
+      ],
+      "answers": [
+        "Lena fragt, ob er Hunger habe."
+      ],
+      "translation": "Lena asks whether he is hungry.",
+      "explanation": "In a reported question with ob, the Konjunktiv I verb goes to the end."
+    },
+    {
+      "id": "kj1-28",
+      "type": "order",
+      "words": [
+        "Der",
+        "Chef",
+        "sagt,",
+        "die",
+        "Firma",
+        "habe",
+        "viel",
+        "Geld."
+      ],
+      "answers": [
+        "Der Chef sagt, die Firma habe viel Geld."
+      ],
+      "translation": "The boss says the company has a lot of money.",
+      "explanation": "Konjunktiv I habe follows the subject die Firma in the reported clause."
+    },
+    {
+      "id": "kj1-29",
+      "type": "order",
+      "words": [
+        "Die",
+        "Zeitung",
+        "schreibt,",
+        "der",
+        "Minister",
+        "werde",
+        "zurücktreten."
+      ],
+      "answers": [
+        "Die Zeitung schreibt, der Minister werde zurücktreten."
+      ],
+      "translation": "The paper writes that the minister will resign.",
+      "explanation": "Reported future: Konjunktiv I werde with the infinitive zurücktreten at the end."
+    },
+    {
+      "id": "kj1-30",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "erzählte,",
+        "er",
+        "sei",
+        "letzte",
+        "Woche",
+        "in",
+        "Rom",
+        "gewesen."
+      ],
+      "answers": [
+        "Jonas erzählte, er sei letzte Woche in Rom gewesen."
+      ],
+      "translation": "Jonas said he had been in Rome last week.",
+      "explanation": "Reported past: sei with gewesen at the end of the clause."
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "slug": "konjunktiv-ii-past",
+  "instructions": "Complete or build each sentence about things that did not happen, using hätte or wäre with the participle.",
+  "items": [
+    {
+      "id": "kj2p-01",
+      "type": "choice",
+      "prompt": "Wenn ich Hunger gehabt ___, hätte ich etwas gegessen.",
+      "options": [
+        "hätte",
+        "wäre",
+        "würde"
+      ],
+      "answer": "hätte",
+      "explanation": "haben forms its past with haben, so the unreal past is hätte + gehabt."
+    },
+    {
+      "id": "kj2p-02",
+      "type": "choice",
+      "prompt": "Wenn wir früher losgefahren ___, wären wir pünktlich gewesen.",
+      "options": [
+        "wären",
+        "hätten",
+        "würden"
+      ],
+      "answer": "wären",
+      "explanation": "losfahren is a movement verb, so the unreal past uses wären + losgefahren."
+    },
+    {
+      "id": "kj2p-03",
+      "type": "choice",
+      "prompt": "Er ___ den Termin vergessen, wenn du ihn nicht erinnert hättest.",
+      "options": [
+        "hätte",
+        "wäre",
+        "hat"
+      ],
+      "answer": "hätte",
+      "explanation": "vergessen takes haben, so the unreal past is hätte + vergessen; hat is the indicative and does not fit the unreal condition."
+    },
+    {
+      "id": "kj2p-04",
+      "type": "choice",
+      "prompt": "Ohne dich ___ ich nie nach Berlin gefahren.",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "wäre",
+      "explanation": "fahren (movement) takes sein: wäre … gefahren."
+    },
+    {
+      "id": "kj2p-05",
+      "type": "choice",
+      "prompt": "Ich ___ das Buch gelesen, wenn ich es gekannt hätte.",
+      "options": [
+        "hätte",
+        "wäre",
+        "würde"
+      ],
+      "answer": "hätte",
+      "explanation": "lesen takes haben: hätte + gelesen."
+    },
+    {
+      "id": "kj2p-06",
+      "type": "choice",
+      "prompt": "Wenn du mich angerufen ___, hätte ich dich abgeholt.",
+      "options": [
+        "hättest",
+        "wärst",
+        "hast"
+      ],
+      "answer": "hättest",
+      "explanation": "anrufen takes haben; with du the form is hättest + angerufen."
+    },
+    {
+      "id": "kj2p-07",
+      "type": "choice",
+      "prompt": "Wenn Lena nicht krank ___ wäre, wäre sie mitgekommen.",
+      "options": [
+        "gewesen",
+        "gehabt",
+        "sein"
+      ],
+      "answer": "gewesen",
+      "explanation": "The unreal past of sein is wäre + gewesen, here inside the wenn-clause."
+    },
+    {
+      "id": "kj2p-08",
+      "type": "choice",
+      "prompt": "Wir ___ gern länger geblieben, aber der Bus fuhr ab.",
+      "options": [
+        "wären",
+        "hätten",
+        "würden"
+      ],
+      "answer": "wären",
+      "explanation": "bleiben takes sein, so: wären … geblieben."
+    },
+    {
+      "id": "kj2p-09",
+      "type": "choice",
+      "prompt": "Wenn sie das Fenster zugemacht ___, wäre es nicht kalt geworden.",
+      "options": [
+        "hätte",
+        "wäre",
+        "hatte"
+      ],
+      "answer": "hätte",
+      "explanation": "zumachen takes haben: hätte + zugemacht. hatte is the simple past, not Konjunktiv II."
+    },
+    {
+      "id": "kj2p-10",
+      "type": "choice",
+      "prompt": "Ihr ___ uns früher Bescheid sagen sollen.",
+      "options": [
+        "hättet",
+        "wärt",
+        "würdet"
+      ],
+      "answer": "hättet",
+      "explanation": "With a modal verb the unreal past is hätte + infinitive + modal infinitive; for ihr: hättet … sagen sollen."
+    },
+    {
+      "id": "kj2p-11",
+      "type": "choice",
+      "prompt": "Ich hätte dir gern helfen ___.",
+      "options": [
+        "können",
+        "gekonnt",
+        "könnten"
+      ],
+      "answer": "können",
+      "explanation": "With hätte, the modal appears as an infinitive (double infinitive): helfen können, not gekonnt."
+    },
+    {
+      "id": "kj2p-12",
+      "type": "choice",
+      "prompt": "Wenn er mehr gelernt ___, hätte er die Prüfung bestanden.",
+      "options": [
+        "hätte",
+        "wäre",
+        "würde"
+      ],
+      "answer": "hätte",
+      "explanation": "lernen takes haben, so the wenn-clause ends in hätte."
+    },
+    {
+      "id": "kj2p-13",
+      "type": "type",
+      "prompt": "Wenn ich Geld gehabt hätte, ___ ich ein Auto gekauft.",
+      "hint": "(haben)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "kaufen takes haben, so the main clause has hätte + gekauft."
+    },
+    {
+      "id": "kj2p-14",
+      "type": "type",
+      "prompt": "Wenn es nicht geregnet hätte, ___ wir spazieren gegangen.",
+      "hint": "(sein)",
+      "answers": [
+        "wären"
+      ],
+      "explanation": "gehen (movement) takes sein: wären … gegangen."
+    },
+    {
+      "id": "kj2p-15",
+      "type": "type",
+      "prompt": "Hätte ich das gewusst, ___ ich nicht gekommen.",
+      "hint": "(sein)",
+      "answers": [
+        "wäre"
+      ],
+      "explanation": "Without wenn, the verb comes first in the condition; the result clause uses wäre + gekommen."
+    },
+    {
+      "id": "kj2p-16",
+      "type": "type",
+      "prompt": "Wenn du früher aufgestanden ___, hättest du den Bus erreicht.",
+      "hint": "(sein)",
+      "answers": [
+        "wärst",
+        "wärest"
+      ],
+      "explanation": "aufstehen takes sein; with du: wärst + aufgestanden."
+    },
+    {
+      "id": "kj2p-17",
+      "type": "type",
+      "prompt": "Ich hätte gestern gern mit dir Tennis ___.",
+      "hint": "(spielen)",
+      "answers": [
+        "gespielt"
+      ],
+      "explanation": "After hätte, regular spielen needs the participle gespielt."
+    },
+    {
+      "id": "kj2p-18",
+      "type": "type",
+      "prompt": "Sie wäre fast vom Fahrrad ___.",
+      "hint": "(fallen)",
+      "answers": [
+        "gefallen"
+      ],
+      "explanation": "fallen takes sein, so the unreal past is wäre + gefallen: she almost fell (but didn't)."
+    },
+    {
+      "id": "kj2p-19",
+      "type": "type",
+      "prompt": "Wenn Jonas besser aufgepasst hätte, hätte er den Fehler ___.",
+      "hint": "(sehen)",
+      "answers": [
+        "gesehen"
+      ],
+      "explanation": "The participle of sehen is gesehen, combined with hätte."
+    },
+    {
+      "id": "kj2p-20",
+      "type": "type",
+      "prompt": "Wir hätten den Film gern ___, wenn wir Zeit gehabt hätten.",
+      "hint": "(anschauen)",
+      "answers": [
+        "angeschaut"
+      ],
+      "explanation": "Separable verbs insert -ge- after the prefix: angeschaut."
+    },
+    {
+      "id": "kj2p-21",
+      "type": "type",
+      "prompt": "Wenn Anna den Zug nicht verpasst ___, wäre sie pünktlich gewesen.",
+      "hint": "(haben)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "verpassen takes haben, so the wenn-clause ends in hätte; the main clause uses wäre … gewesen."
+    },
+    {
+      "id": "kj2p-22",
+      "type": "type",
+      "prompt": "Du hättest mir das gleich erzählen ___.",
+      "hint": "(modal: should)",
+      "answers": [
+        "sollen"
+      ],
+      "explanation": "With a modal in the unreal past, the modal stays an infinitive (double infinitive): hättest erzählen sollen, not gesollt."
+    },
+    {
+      "id": "kj2p-23",
+      "type": "type",
+      "prompt": "Er hätte nicht so schnell fahren ___.",
+      "hint": "(modal: be allowed to)",
+      "answers": [
+        "dürfen"
+      ],
+      "explanation": "Double infinitive after hätte: hätte fahren dürfen, not gedurft. dürfen = be allowed to."
+    },
+    {
+      "id": "kj2p-24",
+      "type": "type",
+      "prompt": "Wir hätten das Problem lösen ___, aber niemand fragte uns.",
+      "hint": "(modal: be able to)",
+      "answers": [
+        "können"
+      ],
+      "explanation": "Double infinitive after hätte: hätten lösen können, not gekonnt. können = be able to."
+    },
+    {
+      "id": "kj2p-25",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "der",
+        "Bus",
+        "gekommen",
+        "wäre,",
+        "hätte",
+        "ich",
+        "ihn",
+        "genommen."
+      ],
+      "answers": [
+        "Wenn der Bus gekommen wäre, hätte ich ihn genommen."
+      ],
+      "translation": "If the bus had come, I would have taken it.",
+      "explanation": "In the wenn-clause the finite verb wäre goes last (kommen takes sein); the main clause then starts with its verb hätte."
+    },
+    {
+      "id": "kj2p-26",
+      "type": "order",
+      "words": [
+        "Wärst",
+        "du",
+        "gestern",
+        "zur",
+        "Party",
+        "gegangen?"
+      ],
+      "answers": [
+        "Wärst du gestern zur Party gegangen?"
+      ],
+      "translation": "Would you have gone to the party yesterday?",
+      "explanation": "A yes/no question starts with the verb: wärst … gegangen with the participle at the end."
+    },
+    {
+      "id": "kj2p-27",
+      "type": "order",
+      "words": [
+        "Hätte",
+        "ich",
+        "mehr",
+        "Zeit",
+        "gehabt,",
+        "wäre",
+        "ich",
+        "geblieben."
+      ],
+      "answers": [
+        "Hätte ich mehr Zeit gehabt, wäre ich geblieben."
+      ],
+      "translation": "Had I had more time, I would have stayed.",
+      "explanation": "Dropping wenn puts hätte first; the main clause follows with wäre … geblieben."
+    },
+    {
+      "id": "kj2p-28",
+      "type": "order",
+      "words": [
+        "Ohne",
+        "den",
+        "Stau",
+        "wären",
+        "wir",
+        "pünktlich",
+        "gewesen."
+      ],
+      "answers": [
+        "Ohne den Stau wären wir pünktlich gewesen."
+      ],
+      "translation": "Without the traffic jam, we would have been on time.",
+      "explanation": "Unreal past of sein: wären + gewesen, with ohne expressing the missing condition."
+    },
+    {
+      "id": "kj2p-29",
+      "type": "order",
+      "words": [
+        "Anna",
+        "hätte",
+        "früher",
+        "aufstehen",
+        "sollen."
+      ],
+      "answers": [
+        "Anna hätte früher aufstehen sollen."
+      ],
+      "translation": "Anna should have got up earlier.",
+      "explanation": "With a modal, hätte is followed by two infinitives at the end: aufstehen sollen."
+    },
+    {
+      "id": "kj2p-30",
+      "type": "order",
+      "words": [
+        "Tom",
+        "sagt,",
+        "dass",
+        "er",
+        "mehr",
+        "hätte",
+        "lernen",
+        "sollen."
+      ],
+      "answers": [
+        "Tom sagt, dass er mehr hätte lernen sollen."
+      ],
+      "translation": "Tom says that he should have studied more.",
+      "explanation": "In a dass-clause with a double infinitive, hätte stands before the two infinitives: hätte lernen sollen."
+    }
+  ]
+}

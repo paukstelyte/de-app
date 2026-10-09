@@ -1,0 +1,407 @@
+{
+  "slug": "infinitive-clauses-ohne-statt",
+  "instructions": "Complete or build each sentence with ohne/statt … zu or ohne/statt dass, depending on the subjects.",
+  "items": [
+    {
+      "id": "ohne-01",
+      "type": "choice",
+      "prompt": "Sie verließ den Raum, ___ ein Wort zu sagen.",
+      "options": [
+        "ohne",
+        "weil",
+        "damit"
+      ],
+      "answer": "ohne",
+      "explanation": "ohne … zu + infinitive means \"without doing\": she left without saying a word."
+    },
+    {
+      "id": "ohne-02",
+      "type": "choice",
+      "prompt": "Lena sieht fern, ___ ihr Zimmer aufzuräumen.",
+      "options": [
+        "statt",
+        "weil",
+        "damit"
+      ],
+      "answer": "statt",
+      "explanation": "statt … zu + infinitive means \"instead of doing\": watching TV instead of tidying up."
+    },
+    {
+      "id": "ohne-03",
+      "type": "choice",
+      "prompt": "Er ging, ohne uns ___ grüßen.",
+      "options": [
+        "zu",
+        "dass",
+        "um"
+      ],
+      "answer": "zu",
+      "explanation": "The infinitive clause with ohne needs zu directly before the infinitive: ohne uns zu grüßen."
+    },
+    {
+      "id": "ohne-04",
+      "type": "type",
+      "prompt": "Tom bezahlte, ohne auf die Rechnung ___.",
+      "hint": "(schauen)",
+      "answers": [
+        "zu schauen"
+      ],
+      "explanation": "ohne … zu: zu stands directly before the infinitive, which closes the clause: ohne auf die Rechnung zu schauen."
+    },
+    {
+      "id": "ohne-05",
+      "type": "type",
+      "prompt": "Anna fährt Rad, statt mit dem Bus ___.",
+      "hint": "(fahren)",
+      "answers": [
+        "zu fahren"
+      ],
+      "explanation": "With the same subject, statt/anstatt takes zu + infinitive at the end of the clause."
+    },
+    {
+      "id": "ohne-06",
+      "type": "order",
+      "words": [
+        "Tom",
+        "ging,",
+        "ohne",
+        "zu",
+        "fragen."
+      ],
+      "answers": [
+        "Tom ging, ohne zu fragen."
+      ],
+      "translation": "Tom left without asking.",
+      "explanation": "With the same subject, ohne takes zu + infinitive at the end of the clause, with no dass."
+    },
+    {
+      "id": "ohne-07",
+      "type": "choice",
+      "prompt": "Tom ging, ohne das Licht ___.",
+      "options": [
+        "auszumachen",
+        "zu ausmachen",
+        "ausmachen"
+      ],
+      "answer": "auszumachen",
+      "explanation": "With a separable verb, zu goes between prefix and verb and is written as one word: aus + zu + machen = auszumachen."
+    },
+    {
+      "id": "ohne-08",
+      "type": "choice",
+      "prompt": "Er fährt Auto, ohne einen Führerschein ___.",
+      "options": [
+        "zu haben",
+        "haben",
+        "zu hat"
+      ],
+      "answer": "zu haben",
+      "explanation": "ohne … zu: zu comes right before the infinitive, which stands at the end: ohne einen Führerschein zu haben."
+    },
+    {
+      "id": "ohne-09",
+      "type": "type",
+      "prompt": "Sie kam herein, ohne ___.",
+      "hint": "(anklopfen)",
+      "answers": [
+        "anzuklopfen"
+      ],
+      "explanation": "A separable verb puts zu between prefix and stem, in one word: an + zu + klopfen = anzuklopfen."
+    },
+    {
+      "id": "ohne-10",
+      "type": "choice",
+      "prompt": "Max ging, ohne ___ von uns zu verabschieden.",
+      "options": [
+        "sich",
+        "mich",
+        "dich"
+      ],
+      "answer": "sich",
+      "explanation": "The reflexive pronoun refers back to the subject (Max), so it is sich: ohne sich zu verabschieden."
+    },
+    {
+      "id": "ohne-11",
+      "type": "type",
+      "prompt": "Sie bleibt zu Hause, statt ins Büro ___.",
+      "hint": "(gehen)",
+      "answers": [
+        "zu gehen"
+      ],
+      "explanation": "With the same subject, statt/anstatt takes zu + infinitive at the end of the clause."
+    },
+    {
+      "id": "ohne-12",
+      "type": "order",
+      "words": [
+        "Lena",
+        "trinkt",
+        "Kaffee,",
+        "statt",
+        "Tee",
+        "zu",
+        "trinken."
+      ],
+      "answers": [
+        "Lena trinkt Kaffee, statt Tee zu trinken."
+      ],
+      "translation": "Lena drinks coffee instead of drinking tea.",
+      "explanation": "With the same subject, statt/anstatt takes zu + infinitive at the end of the clause."
+    },
+    {
+      "id": "ohne-13",
+      "type": "type",
+      "prompt": "Sie verließ das Büro, ohne das Fenster ___.",
+      "hint": "(zumachen)",
+      "answers": [
+        "zuzumachen"
+      ],
+      "explanation": "zumachen is separable, so zu goes inside: zu + zu + machen = zuzumachen."
+    },
+    {
+      "id": "ohne-14",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "fuhr",
+        "weg,",
+        "ohne",
+        "mich",
+        "anzurufen."
+      ],
+      "answers": [
+        "Jonas fuhr weg, ohne mich anzurufen."
+      ],
+      "translation": "Jonas drove off without calling me.",
+      "explanation": "Separable verb: zu sits between prefix and stem (anzurufen), and the infinitive clause ends the sentence."
+    },
+    {
+      "id": "ohne-15",
+      "type": "choice",
+      "prompt": "Wir nahmen ein Taxi, ___ lange zu warten.",
+      "options": [
+        "statt",
+        "weil",
+        "damit"
+      ],
+      "answer": "statt",
+      "explanation": "statt … zu expresses an alternative that was not done: a taxi instead of waiting long."
+    },
+    {
+      "id": "ohne-16",
+      "type": "type",
+      "prompt": "Jonas hat das Auto gekauft, ohne es vorher ___.",
+      "hint": "(testen)",
+      "answers": [
+        "zu testen"
+      ],
+      "explanation": "With the same subject, ohne takes zu + infinitive at the end of the clause, with no dass."
+    },
+    {
+      "id": "ohne-17",
+      "type": "order",
+      "words": [
+        "Anna",
+        "hat",
+        "gearbeitet,",
+        "ohne",
+        "eine",
+        "Pause",
+        "zu",
+        "machen."
+      ],
+      "answers": [
+        "Anna hat gearbeitet, ohne eine Pause zu machen."
+      ],
+      "translation": "Anna worked without taking a break.",
+      "explanation": "With the same subject, ohne takes zu + infinitive at the end of the clause, with no dass."
+    },
+    {
+      "id": "ohne-18",
+      "type": "type",
+      "prompt": "Lena lernt Deutsch, ohne einen Kurs ___.",
+      "hint": "(besuchen)",
+      "answers": [
+        "zu besuchen"
+      ],
+      "explanation": "With the same subject, ohne takes zu + infinitive at the end of the clause, with no dass."
+    },
+    {
+      "id": "ohne-19",
+      "type": "type",
+      "prompt": "Wir gehen spazieren, ___ zu Hause zu bleiben.",
+      "hint": "(instead of)",
+      "answers": [
+        "anstatt",
+        "statt"
+      ],
+      "explanation": "anstatt and statt are interchangeable before zu + infinitive when the subject stays the same."
+    },
+    {
+      "id": "ohne-20",
+      "type": "order",
+      "words": [
+        "Wir",
+        "nehmen",
+        "das",
+        "Rad,",
+        "anstatt",
+        "zu",
+        "laufen."
+      ],
+      "answers": [
+        "Wir nehmen das Rad, anstatt zu laufen."
+      ],
+      "translation": "We take the bike instead of walking.",
+      "explanation": "With the same subject, statt/anstatt takes zu + infinitive at the end of the clause."
+    },
+    {
+      "id": "ohne-21",
+      "type": "choice",
+      "prompt": "Der Zug fuhr ab, ohne ___ ich einsteigen konnte.",
+      "options": [
+        "dass",
+        "zu",
+        "um"
+      ],
+      "answer": "dass",
+      "explanation": "Different subjects (der Zug / ich) cannot use zu + infinitive, so you need ohne dass + finite verb at the end."
+    },
+    {
+      "id": "ohne-22",
+      "type": "type",
+      "prompt": "Sie hat das Paket abgeholt, ohne ___ ich es gemerkt habe.",
+      "hint": "(zu oder dass?)",
+      "answers": [
+        "dass"
+      ],
+      "explanation": "The subjects differ (sie / ich), so ohne dass + a full clause with the verb at the end is required."
+    },
+    {
+      "id": "ohne-23",
+      "type": "choice",
+      "prompt": "Er hilft mir, ohne ___ ich ihn bitte.",
+      "options": [
+        "dass",
+        "zu",
+        "um"
+      ],
+      "answer": "dass",
+      "explanation": "Different subjects (er / ich): ohne dass + finite verb at the end replaces ohne zu."
+    },
+    {
+      "id": "ohne-24",
+      "type": "choice",
+      "prompt": "Der Lehrer erklärt alles selbst, statt ___ die Schüler es versuchen.",
+      "options": [
+        "dass",
+        "zu",
+        "um"
+      ],
+      "answer": "dass",
+      "explanation": "Different subjects (der Lehrer / die Schüler) need statt dass + finite verb at the end."
+    },
+    {
+      "id": "ohne-25",
+      "type": "order",
+      "words": [
+        "Er",
+        "hilft",
+        "ihr,",
+        "ohne",
+        "etwas",
+        "dafür",
+        "zu",
+        "verlangen."
+      ],
+      "answers": [
+        "Er hilft ihr, ohne etwas dafür zu verlangen."
+      ],
+      "translation": "He helps her without asking for anything in return.",
+      "explanation": "With the same subject, ohne takes zu + infinitive at the end of the clause, with no dass."
+    },
+    {
+      "id": "ohne-26",
+      "type": "type",
+      "prompt": "Der Chef redet viel, statt ___ die Mitarbeiter ihre Ideen zeigen dürfen.",
+      "hint": "(zu oder dass?)",
+      "answers": [
+        "dass"
+      ],
+      "explanation": "The Mitarbeiter are a new subject, so statt dass + finite verb is needed, not statt zu."
+    },
+    {
+      "id": "ohne-27",
+      "type": "choice",
+      "prompt": "Sie ruht sich aus, anstatt ihrer Mutter ___.",
+      "options": [
+        "zu helfen",
+        "dass sie hilft",
+        "helfen"
+      ],
+      "answer": "zu helfen",
+      "explanation": "The subject is the same (sie), so anstatt … zu + infinitive is used; anstatt dass is for a different subject."
+    },
+    {
+      "id": "ohne-28",
+      "type": "order",
+      "words": [
+        "Sie",
+        "verließ",
+        "die",
+        "Party,",
+        "ohne",
+        "dass",
+        "es",
+        "jemand",
+        "merkte."
+      ],
+      "answers": [
+        "Sie verließ die Party, ohne dass es jemand merkte.",
+        "Sie verließ die Party, ohne dass jemand es merkte."
+      ],
+      "translation": "She left the party without anyone noticing.",
+      "explanation": "Different subjects (sie / jemand) need ohne dass + a full clause with the verb at the end; es and jemand may swap places."
+    },
+    {
+      "id": "ohne-29",
+      "type": "order",
+      "words": [
+        "Lena",
+        "kochte",
+        "allein,",
+        "statt",
+        "dass",
+        "Tom",
+        "ihr",
+        "half."
+      ],
+      "answers": [
+        "Lena kochte allein, statt dass Tom ihr half."
+      ],
+      "translation": "Lena cooked alone instead of Tom helping her.",
+      "explanation": "Different subjects (Lena / Tom): statt dass + a full clause with the conjugated verb at the end."
+    },
+    {
+      "id": "ohne-30",
+      "type": "order",
+      "words": [
+        "Lena",
+        "ist",
+        "gegangen,",
+        "ohne",
+        "dass",
+        "Tom",
+        "es",
+        "bemerkt",
+        "hat."
+      ],
+      "answers": [
+        "Lena ist gegangen, ohne dass Tom es bemerkt hat.",
+        "Lena ist gegangen, ohne dass es Tom bemerkt hat."
+      ],
+      "translation": "Lena left without Tom noticing.",
+      "explanation": "Different subjects (Lena / Tom) require ohne dass with the conjugated verbs at the end."
+    }
+  ]
+}

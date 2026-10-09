@@ -1,0 +1,404 @@
+{
+  "slug": "relative-clauses-advanced",
+  "instructions": "Complete or build each relative clause, choosing the right pronoun, preposition or wo-/was-form.",
+  "items": [
+    {
+      "id": "relc-01",
+      "type": "choice",
+      "prompt": "Das ist die Brücke, über ___ wir gestern gefahren sind.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "über + movement across takes the accusative; die Brücke is feminine, so the pronoun is die: über die Brücke."
+    },
+    {
+      "id": "relc-02",
+      "type": "choice",
+      "prompt": "Der Freund, mit ___ ich reise, heißt Tom.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "mit always takes the dative; der Freund is masculine, so the pronoun is dem."
+    },
+    {
+      "id": "relc-03",
+      "type": "choice",
+      "prompt": "Das ist die Frau, für ___ ich das Geschenk kaufe.",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "answer": "die",
+      "explanation": "für takes the accusative; feminine accusative is die: für die Frau."
+    },
+    {
+      "id": "relc-04",
+      "type": "choice",
+      "prompt": "Das Hotel, an ___ wir vorbeigefahren sind, ist neu.",
+      "options": [
+        "dem",
+        "das",
+        "den",
+        "der"
+      ],
+      "answer": "dem",
+      "explanation": "The preposition stands before the pronoun; an etwas vorbeifahren takes the dative, and das Hotel is neuter: an dem Hotel → an dem."
+    },
+    {
+      "id": "relc-05",
+      "type": "choice",
+      "prompt": "Alles, ___ ich weiß, habe ich dir gesagt.",
+      "options": [
+        "was",
+        "wer",
+        "wo",
+        "wem"
+      ],
+      "answer": "was",
+      "explanation": "After alles, nichts, etwas, viel the relative pronoun is was, not der/die/das."
+    },
+    {
+      "id": "relc-06",
+      "type": "choice",
+      "prompt": "Das ist das Schönste, ___ ich je gesehen habe.",
+      "options": [
+        "was",
+        "wer",
+        "wo",
+        "wem"
+      ],
+      "answer": "was",
+      "explanation": "After a superlative used as a noun (das Schönste, das Beste) the relative pronoun is was."
+    },
+    {
+      "id": "relc-07",
+      "type": "choice",
+      "prompt": "Anna hat die Prüfung bestanden, ___ mich sehr freut.",
+      "options": [
+        "was",
+        "wer",
+        "wo",
+        "wem"
+      ],
+      "answer": "was",
+      "explanation": "When the clause refers to a whole sentence (not to one noun) the relative pronoun is was."
+    },
+    {
+      "id": "relc-08",
+      "type": "choice",
+      "prompt": "Das ist etwas, ___ ich nie vergessen werde.",
+      "options": [
+        "was",
+        "wer",
+        "wo",
+        "wem"
+      ],
+      "answer": "was",
+      "explanation": "After etwas, nichts, alles the relative pronoun is was: etwas, was ich nie vergessen werde."
+    },
+    {
+      "id": "relc-09",
+      "type": "choice",
+      "prompt": "Das Dorf, ___ ich als Kind gelebt habe, ist sehr klein.",
+      "options": [
+        "wo",
+        "was",
+        "wer",
+        "wem"
+      ],
+      "answer": "wo",
+      "explanation": "wo can replace in + relative pronoun for places: das Dorf, wo ich gelebt habe (= in dem ich gelebt habe)."
+    },
+    {
+      "id": "relc-10",
+      "type": "choice",
+      "prompt": "Der Chef, ___ ich gestern geschrieben habe, hat nicht geantwortet.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "dem",
+      "explanation": "schreiben takes the dative of the person, so the masculine relative pronoun is dem."
+    },
+    {
+      "id": "relc-11",
+      "type": "choice",
+      "prompt": "Die Kinder, mit ___ ich spiele, sind nett.",
+      "options": [
+        "denen",
+        "den",
+        "dem",
+        "die"
+      ],
+      "answer": "denen",
+      "explanation": "In the dative plural the relative pronoun is denen (not den): mit den Kindern → mit denen."
+    },
+    {
+      "id": "relc-12",
+      "type": "choice",
+      "prompt": "Das Thema, über ___ wir sprechen, ist wichtig.",
+      "options": [
+        "das",
+        "dem",
+        "was",
+        "wo"
+      ],
+      "answer": "das",
+      "explanation": "sprechen über takes the accusative; neuter accusative is das: über das Thema."
+    },
+    {
+      "id": "relc-13",
+      "type": "choice",
+      "prompt": "Der Film, auf ___ ich mich freue, kommt morgen ins Kino.",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "das"
+      ],
+      "answer": "den",
+      "explanation": "sich freuen auf takes the accusative; masculine accusative is den: auf den Film."
+    },
+    {
+      "id": "relc-14",
+      "type": "choice",
+      "prompt": "Die Nachbarn, von ___ ich den Schlüssel bekommen habe, sind verreist.",
+      "options": [
+        "denen",
+        "den",
+        "die",
+        "dem"
+      ],
+      "answer": "denen",
+      "explanation": "von takes the dative; the dative plural relative pronoun is denen: von den Nachbarn → von denen."
+    },
+    {
+      "id": "relc-15",
+      "type": "choice",
+      "prompt": "Wir fahren in die Stadt, ___ meine Oma wohnt.",
+      "options": [
+        "wo",
+        "was",
+        "wer",
+        "wem"
+      ],
+      "answer": "wo",
+      "explanation": "wo introduces a relative clause about a place: die Stadt, wo meine Oma wohnt (= in der meine Oma wohnt)."
+    },
+    {
+      "id": "relc-16",
+      "type": "choice",
+      "prompt": "Den Preis bekommt, ___ die Frage zuerst richtig beantwortet.",
+      "options": [
+        "wer",
+        "was",
+        "wo",
+        "wem"
+      ],
+      "answer": "wer",
+      "explanation": "wer means \"whoever\" and refers to no particular noun: Den Preis bekommt, wer … = whoever answers first gets the prize."
+    },
+    {
+      "id": "relc-17",
+      "type": "type",
+      "prompt": "Das Café, in ___ wir uns treffen, ist klein.",
+      "hint": "(das Café; in + dative)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "Meeting place with in takes the dative; neuter dative is dem: in dem Café."
+    },
+    {
+      "id": "relc-18",
+      "type": "type",
+      "prompt": "Die Kollegin, bei ___ ich wohne, kommt aus Spanien.",
+      "hint": "(die Kollegin; bei + dative)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "bei always takes the dative; feminine dative is der: bei der Kollegin."
+    },
+    {
+      "id": "relc-19",
+      "type": "type",
+      "prompt": "Der Lehrer, von ___ ich viel gelernt habe, geht in Rente.",
+      "hint": "(der Lehrer; von + dative)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "von takes the dative; masculine dative is dem: von dem Lehrer."
+    },
+    {
+      "id": "relc-20",
+      "type": "type",
+      "prompt": "Die Freunde, auf ___ ich mich verlassen kann, wohnen weit weg.",
+      "hint": "(die Freunde; sich verlassen auf + accusative)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "sich verlassen auf takes the accusative; the plural accusative relative pronoun is die."
+    },
+    {
+      "id": "relc-21",
+      "type": "type",
+      "prompt": "Das war das Beste, ___ mir passieren konnte.",
+      "hint": "(was / das / wo)",
+      "answers": [
+        "was"
+      ],
+      "explanation": "After a superlative used as a noun (das Beste) the relative pronoun is was."
+    },
+    {
+      "id": "relc-22",
+      "type": "type",
+      "prompt": "Das ist der Ort, ___ wir uns zum ersten Mal trafen.",
+      "hint": "(place: wo, or preposition + pronoun)",
+      "answers": [
+        "wo",
+        "an dem",
+        "in dem"
+      ],
+      "explanation": "For a place you can use wo or a preposition + pronoun: der Ort, wo / an dem / in dem wir uns trafen."
+    },
+    {
+      "id": "relc-23",
+      "type": "type",
+      "prompt": "Es gibt vieles, ___ ich mich freue.",
+      "hint": "(wo- + auf)",
+      "answers": [
+        "worauf"
+      ],
+      "explanation": "After vieles, alles, nichts the relative is was, and with a preposition it becomes a wo-word: sich freuen auf → worauf."
+    },
+    {
+      "id": "relc-24",
+      "type": "type",
+      "prompt": "Das ist nichts, ___ du dich fürchten musst.",
+      "hint": "(wo- + vor)",
+      "answers": [
+        "wovor"
+      ],
+      "explanation": "sich fürchten vor + nichts: was with a preposition becomes a wo-compound, wo + vor = wovor."
+    },
+    {
+      "id": "relc-25",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "der",
+        "Kollege,",
+        "auf",
+        "den",
+        "ich",
+        "warte."
+      ],
+      "answers": [
+        "Das ist der Kollege, auf den ich warte."
+      ],
+      "translation": "That is the colleague I am waiting for.",
+      "explanation": "warten auf takes the accusative: auf den Kollegen → auf den; the preposition comes before the pronoun and the verb goes to the end."
+    },
+    {
+      "id": "relc-26",
+      "type": "order",
+      "words": [
+        "Alles,",
+        "was",
+        "du",
+        "sagst,",
+        "ist",
+        "richtig."
+      ],
+      "answers": [
+        "Alles, was du sagst, ist richtig."
+      ],
+      "translation": "Everything that you say is right.",
+      "explanation": "alles takes the relative pronoun was; the verb sagst ends the relative clause."
+    },
+    {
+      "id": "relc-27",
+      "type": "order",
+      "words": [
+        "Anna",
+        "hat",
+        "gewonnen,",
+        "was",
+        "alle",
+        "freut."
+      ],
+      "answers": [
+        "Anna hat gewonnen, was alle freut."
+      ],
+      "translation": "Anna has won, which pleases everyone.",
+      "explanation": "was refers back to the whole main clause, and the verb freut comes at the end of its clause."
+    },
+    {
+      "id": "relc-28",
+      "type": "order",
+      "words": [
+        "Wer",
+        "lange",
+        "übt,",
+        "wird",
+        "besser."
+      ],
+      "answers": [
+        "Wer lange übt, wird besser."
+      ],
+      "translation": "Whoever practises for a long time gets better.",
+      "explanation": "wer starts the clause for \"whoever\", with the verb übt at the end; the main clause follows with its verb first."
+    },
+    {
+      "id": "relc-29",
+      "type": "order",
+      "words": [
+        "Wo",
+        "ist",
+        "das",
+        "Buch,",
+        "von",
+        "dem",
+        "du",
+        "erzählt",
+        "hast?"
+      ],
+      "answers": [
+        "Wo ist das Buch, von dem du erzählt hast?"
+      ],
+      "translation": "Where is the book that you told me about?",
+      "explanation": "von dem: the preposition comes before the dative pronoun; the relative clause ends with the verb phrase."
+    },
+    {
+      "id": "relc-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "kenne",
+        "den",
+        "Mann,",
+        "mit",
+        "dem",
+        "Lena",
+        "spricht."
+      ],
+      "answers": [
+        "Ich kenne den Mann, mit dem Lena spricht."
+      ],
+      "translation": "I know the man Lena is talking to.",
+      "explanation": "mit goes before the pronoun dem (dative masculine), and the verb spricht stands last."
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+{
+  "slug": "two-part-conjunctions",
+  "instructions": "Complete or build each sentence with the correct two-part conjunction.",
+  "items": [
+    {
+      "id": "tpc-01",
+      "type": "choice",
+      "prompt": "Zum Frühstück esse ich entweder Brot ___ Müsli.",
+      "options": [
+        "oder",
+        "noch",
+        "aber",
+        "auch"
+      ],
+      "answer": "oder",
+      "explanation": "entweder pairs with oder: you choose one of two options."
+    },
+    {
+      "id": "tpc-02",
+      "type": "choice",
+      "prompt": "Wir haben weder Zeit ___ Geld.",
+      "options": [
+        "noch",
+        "oder",
+        "und",
+        "sondern"
+      ],
+      "answer": "noch",
+      "explanation": "weder is always completed by noch (neither … nor)."
+    },
+    {
+      "id": "tpc-03",
+      "type": "choice",
+      "prompt": "Sie spielt sowohl Klavier ___ Gitarre.",
+      "options": [
+        "als auch",
+        "sondern auch",
+        "oder auch",
+        "noch"
+      ],
+      "answer": "als auch",
+      "explanation": "sowohl … als auch means both … and; both things are true."
+    },
+    {
+      "id": "tpc-04",
+      "type": "choice",
+      "prompt": "Tom ist nicht nur freundlich, ___ auch hilfsbereit.",
+      "options": [
+        "sondern",
+        "aber",
+        "als",
+        "noch"
+      ],
+      "answer": "sondern",
+      "explanation": "nicht nur … sondern auch means not only … but also."
+    },
+    {
+      "id": "tpc-05",
+      "type": "choice",
+      "prompt": "Das Auto ist zwar alt, ___ es fährt noch gut.",
+      "options": [
+        "aber",
+        "sondern",
+        "noch",
+        "oder"
+      ],
+      "answer": "aber",
+      "explanation": "zwar introduces a concession and is followed by aber (admittedly … but)."
+    },
+    {
+      "id": "tpc-06",
+      "type": "choice",
+      "prompt": "Je wärmer das Wetter ist, ___ lieber gehe ich schwimmen.",
+      "options": [
+        "desto",
+        "je",
+        "noch",
+        "als"
+      ],
+      "answer": "desto",
+      "explanation": "je … desto + comparative: the je-clause has the verb at the end, desto + comparative (lieber) is followed directly by the verb."
+    },
+    {
+      "id": "tpc-07",
+      "type": "choice",
+      "prompt": "Du kannst ___ mit dem Zug oder mit dem Bus fahren.",
+      "options": [
+        "entweder",
+        "weder",
+        "sowohl",
+        "zwar"
+      ],
+      "answer": "entweder",
+      "explanation": "The oder later in the sentence signals entweder … oder (either … or)."
+    },
+    {
+      "id": "tpc-08",
+      "type": "choice",
+      "prompt": "Er isst ___ Fleisch noch Fisch.",
+      "options": [
+        "weder",
+        "entweder",
+        "sowohl",
+        "nicht nur"
+      ],
+      "answer": "weder",
+      "explanation": "noch later in the sentence signals weder … noch (neither … nor)."
+    },
+    {
+      "id": "tpc-09",
+      "type": "choice",
+      "prompt": "Sie ist nicht nur Ärztin, sondern ___ Autorin.",
+      "options": [
+        "auch",
+        "noch",
+        "oder",
+        "wie"
+      ],
+      "answer": "auch",
+      "explanation": "The second part of nicht nur … sondern is auch."
+    },
+    {
+      "id": "tpc-10",
+      "type": "choice",
+      "prompt": "Das Essen war ___ gut, aber sehr teuer.",
+      "options": [
+        "zwar",
+        "weder",
+        "entweder",
+        "sowohl"
+      ],
+      "answer": "zwar",
+      "explanation": "zwar … aber admits one point and then contrasts it with another."
+    },
+    {
+      "id": "tpc-11",
+      "type": "choice",
+      "prompt": "Im Urlaub möchte ich ___ schwimmen als auch wandern.",
+      "options": [
+        "sowohl",
+        "weder",
+        "entweder",
+        "zwar"
+      ],
+      "answer": "sowohl",
+      "explanation": "als auch is the partner of sowohl: both swimming and hiking."
+    },
+    {
+      "id": "tpc-12",
+      "type": "choice",
+      "prompt": "Je früher du aufstehst, ___ mehr Zeit hast du.",
+      "options": [
+        "desto",
+        "je",
+        "dann",
+        "als"
+      ],
+      "answer": "desto",
+      "explanation": "In je … desto, the second clause starts with desto and a comparative (mehr)."
+    },
+    {
+      "id": "tpc-13",
+      "type": "choice",
+      "prompt": "Nicht nur der Chef, ___ auch die Kollegen waren müde.",
+      "options": [
+        "sondern",
+        "aber",
+        "als",
+        "noch"
+      ],
+      "answer": "sondern",
+      "explanation": "nicht nur … sondern auch also works with nouns as subjects."
+    },
+    {
+      "id": "tpc-14",
+      "type": "choice",
+      "prompt": "Wir fahren entweder nach Wien ___ nach Prag.",
+      "options": [
+        "oder",
+        "noch",
+        "und",
+        "aber"
+      ],
+      "answer": "oder",
+      "explanation": "Either … or: only one of the two cities will be chosen, so oder is needed."
+    },
+    {
+      "id": "tpc-15",
+      "type": "type",
+      "prompt": "Weder Anna ___ Tom hat Hunger.",
+      "hint": "(weder … ?)",
+      "answers": [
+        "noch"
+      ],
+      "explanation": "weder is completed by noch, not by oder."
+    },
+    {
+      "id": "tpc-16",
+      "type": "type",
+      "prompt": "Er ist nicht nur klug, ___ auch witzig.",
+      "hint": "(nicht nur … ? auch)",
+      "answers": [
+        "sondern"
+      ],
+      "explanation": "nicht nur … sondern auch: sondern introduces the added quality."
+    },
+    {
+      "id": "tpc-17",
+      "type": "type",
+      "prompt": "Ich nehme ___ den Fisch oder das Steak.",
+      "hint": "(either … or)",
+      "answers": [
+        "entweder"
+      ],
+      "explanation": "entweder opens the pair that ends in oder."
+    },
+    {
+      "id": "tpc-18",
+      "type": "type",
+      "prompt": "Ich habe weder Hunger ___ Durst.",
+      "hint": "(neither … nor)",
+      "answers": [
+        "noch"
+      ],
+      "explanation": "weder … noch negates both parts, so no extra nicht is needed."
+    },
+    {
+      "id": "tpc-19",
+      "type": "type",
+      "prompt": "Das Zimmer ist ___ klein, aber sehr gemütlich.",
+      "hint": "(admittedly)",
+      "answers": [
+        "zwar"
+      ],
+      "explanation": "zwar … aber: the first part concedes a weakness, aber adds the positive."
+    },
+    {
+      "id": "tpc-20",
+      "type": "type",
+      "prompt": "Sie spricht sowohl Spanisch ___ Italienisch.",
+      "hint": "(sowohl … ?)",
+      "answers": [
+        "als auch",
+        "wie auch"
+      ],
+      "explanation": "sowohl … als auch (also: sowohl … wie auch) means both … and."
+    },
+    {
+      "id": "tpc-21",
+      "type": "type",
+      "prompt": "Je länger ich warte, ___ nervöser werde ich.",
+      "hint": "(je … ?)",
+      "answers": [
+        "desto",
+        "umso"
+      ],
+      "explanation": "je … desto/umso + comparative: the two comparatives rise together."
+    },
+    {
+      "id": "tpc-22",
+      "type": "type",
+      "prompt": "Sie ist sowohl klug ___ auch fleißig.",
+      "hint": "(sowohl … ? … auch)",
+      "answers": [
+        "als",
+        "wie"
+      ],
+      "explanation": "The fixed pair is sowohl … als auch (also sowohl … wie auch); als is the usual missing word."
+    },
+    {
+      "id": "tpc-23",
+      "type": "order",
+      "words": [
+        "Anna",
+        "spricht",
+        "sowohl",
+        "Deutsch",
+        "als",
+        "auch",
+        "Englisch."
+      ],
+      "answers": [
+        "Anna spricht sowohl Deutsch als auch Englisch."
+      ],
+      "translation": "Anna speaks both German and English.",
+      "explanation": "sowohl … als auch links two equal elements."
+    },
+    {
+      "id": "tpc-24",
+      "type": "order",
+      "words": [
+        "Tom",
+        "ist",
+        "entweder",
+        "zu",
+        "Hause",
+        "oder",
+        "im",
+        "Büro."
+      ],
+      "answers": [
+        "Tom ist entweder zu Hause oder im Büro."
+      ],
+      "translation": "Tom is either at home or at the office.",
+      "explanation": "entweder … oder sits directly before the two alternatives."
+    },
+    {
+      "id": "tpc-25",
+      "type": "order",
+      "words": [
+        "Lena",
+        "mag",
+        "weder",
+        "Kaffee",
+        "noch",
+        "Tee."
+      ],
+      "answers": [
+        "Lena mag weder Kaffee noch Tee."
+      ],
+      "translation": "Lena likes neither coffee nor tea.",
+      "explanation": "weder … noch already negates the sentence; no nicht is added."
+    },
+    {
+      "id": "tpc-26",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "hat",
+        "nicht",
+        "nur",
+        "gekocht,",
+        "sondern",
+        "auch",
+        "abgewaschen."
+      ],
+      "answers": [
+        "Jonas hat nicht nur gekocht, sondern auch abgewaschen."
+      ],
+      "translation": "Jonas not only cooked but also did the dishes.",
+      "explanation": "nicht nur … sondern auch links two participles here; a comma comes before sondern."
+    },
+    {
+      "id": "tpc-27",
+      "type": "order",
+      "words": [
+        "Das",
+        "Hotel",
+        "ist",
+        "zwar",
+        "teuer,",
+        "aber",
+        "sehr",
+        "schön."
+      ],
+      "answers": [
+        "Das Hotel ist zwar teuer, aber sehr schön."
+      ],
+      "translation": "The hotel is admittedly expensive, but very beautiful.",
+      "explanation": "zwar … aber: aber starts the contrast after the comma."
+    },
+    {
+      "id": "tpc-28",
+      "type": "order",
+      "words": [
+        "Anna",
+        "kommt",
+        "entweder",
+        "heute",
+        "oder",
+        "morgen."
+      ],
+      "answers": [
+        "Anna kommt entweder heute oder morgen."
+      ],
+      "translation": "Anna is coming either today or tomorrow.",
+      "explanation": "entweder … oder surrounds the two alternatives: entweder heute oder morgen."
+    },
+    {
+      "id": "tpc-29",
+      "type": "order",
+      "words": [
+        "Je",
+        "mehr",
+        "du",
+        "lernst,",
+        "desto",
+        "besser",
+        "wirst",
+        "du."
+      ],
+      "answers": [
+        "Je mehr du lernst, desto besser wirst du."
+      ],
+      "translation": "The more you learn, the better you get.",
+      "explanation": "je … desto: verb at the end in the je-clause, verb directly after desto + comparative."
+    },
+    {
+      "id": "tpc-30",
+      "type": "order",
+      "words": [
+        "Tom",
+        "hat",
+        "weder",
+        "Zeit",
+        "noch",
+        "Geld",
+        "für",
+        "den",
+        "Urlaub."
+      ],
+      "answers": [
+        "Tom hat weder Zeit noch Geld für den Urlaub."
+      ],
+      "translation": "Tom has neither time nor money for the holiday.",
+      "explanation": "weder … noch places both negated objects before the shared phrase."
+    }
+  ]
+}

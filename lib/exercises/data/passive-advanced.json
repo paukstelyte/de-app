@@ -1,0 +1,401 @@
+{
+  "slug": "passive-advanced",
+  "instructions": "Complete or build each sentence using the correct passive form (all tenses, modal verbs and state passive).",
+  "items": [
+    {
+      "id": "pasv-01",
+      "type": "choice",
+      "prompt": "Gestern ___ der Vertrag unterschrieben.",
+      "options": [
+        "wurde",
+        "wird",
+        "wurden",
+        "worden"
+      ],
+      "answer": "wurde",
+      "explanation": "Präteritum passive is wurde + Partizip II; gestern points to the past and der Vertrag is singular, so wurde."
+    },
+    {
+      "id": "pasv-02",
+      "type": "type",
+      "prompt": "Mein Auto ___ jeden Samstag gewaschen.",
+      "hint": "(werden, Präsens)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "Present passive is werden + Partizip II; with a singular subject it is wird."
+    },
+    {
+      "id": "pasv-03",
+      "type": "choice",
+      "prompt": "Das Paket ist heute früh geliefert ___.",
+      "options": [
+        "worden",
+        "werden",
+        "wurde",
+        "geworden"
+      ],
+      "answer": "worden",
+      "explanation": "Perfect passive: sein + Partizip II + worden. The participle of werden in the passive is worden, not geworden."
+    },
+    {
+      "id": "pasv-04",
+      "type": "choice",
+      "prompt": "Die Rechnung muss noch bezahlt ___.",
+      "options": [
+        "werden",
+        "worden",
+        "wird",
+        "wurde"
+      ],
+      "answer": "werden",
+      "explanation": "Passive with a modal verb: modal + Partizip II + werden (infinitive): muss bezahlt werden."
+    },
+    {
+      "id": "pasv-05",
+      "type": "order",
+      "words": [
+        "Das",
+        "Haus",
+        "muss",
+        "renoviert",
+        "werden."
+      ],
+      "answers": [
+        "Das Haus muss renoviert werden."
+      ],
+      "translation": "The house has to be renovated.",
+      "explanation": "Modal passive: Partizip II + werden stand together at the end of the clause."
+    },
+    {
+      "id": "pasv-06",
+      "type": "type",
+      "prompt": "Die Fenster sind gestern ___ worden.",
+      "hint": "(reparieren)",
+      "answers": [
+        "repariert"
+      ],
+      "explanation": "Perfect passive: sind + Partizip II + worden. Partizip II of reparieren is repariert (no ge-)."
+    },
+    {
+      "id": "pasv-07",
+      "type": "choice",
+      "prompt": "Die Bibliothek ___ seit Montag geschlossen.",
+      "options": [
+        "ist",
+        "wird",
+        "wurde",
+        "worden"
+      ],
+      "answer": "ist",
+      "explanation": "State passive describes a result with sein + Partizip II: the library is closed (a state), not being closed."
+    },
+    {
+      "id": "pasv-08",
+      "type": "type",
+      "prompt": "Das Gebäude ist vor zwei Jahren ___ worden.",
+      "hint": "(abreißen)",
+      "answers": [
+        "abgerissen"
+      ],
+      "explanation": "Perfect passive needs the Partizip II of abreißen: abgerissen, plus worden."
+    },
+    {
+      "id": "pasv-09",
+      "type": "choice",
+      "prompt": "Hier ___ früher viel Wein angebaut.",
+      "options": [
+        "wurde",
+        "wird",
+        "ist",
+        "worden"
+      ],
+      "answer": "wurde",
+      "explanation": "früher points to the past, so use Präteritum passive: wurde angebaut."
+    },
+    {
+      "id": "pasv-10",
+      "type": "choice",
+      "prompt": "Der Brief ___ gestern von Anna geschrieben worden.",
+      "options": [
+        "ist",
+        "wurde",
+        "wird",
+        "hat"
+      ],
+      "answer": "ist",
+      "explanation": "Perfect passive uses sein as auxiliary: ist ... geschrieben worden. Wurde cannot combine with worden."
+    },
+    {
+      "id": "pasv-11",
+      "type": "type",
+      "prompt": "Die Kinder sollen pünktlich ___ werden.",
+      "hint": "(abholen)",
+      "answers": [
+        "abgeholt"
+      ],
+      "explanation": "Modal passive: modal + Partizip II + werden. abholen is separable, so the participle is abgeholt."
+    },
+    {
+      "id": "pasv-12",
+      "type": "order",
+      "words": [
+        "Der",
+        "Kuchen",
+        "ist",
+        "schon",
+        "gebacken",
+        "worden."
+      ],
+      "answers": [
+        "Der Kuchen ist schon gebacken worden."
+      ],
+      "translation": "The cake has already been baked.",
+      "explanation": "Perfect passive: ist + Partizip II + worden, with the participle and worden at the end."
+    },
+    {
+      "id": "pasv-13",
+      "type": "choice",
+      "prompt": "Morgen ___ das Projekt vorgestellt werden.",
+      "options": [
+        "wird",
+        "wurde",
+        "ist",
+        "hat"
+      ],
+      "answer": "wird",
+      "explanation": "Future passive: werden + Partizip II + werden. The first werden is conjugated: wird."
+    },
+    {
+      "id": "pasv-14",
+      "type": "type",
+      "prompt": "Der Brief ___ noch nicht geschickt worden.",
+      "hint": "(sein, Präsens)",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "Perfect passive uses sein: ist geschickt worden (never haben)."
+    },
+    {
+      "id": "pasv-15",
+      "type": "choice",
+      "prompt": "Das Gedicht wurde ___ einem berühmten Dichter geschrieben.",
+      "options": [
+        "von",
+        "durch",
+        "mit",
+        "für"
+      ],
+      "answer": "von",
+      "explanation": "The agent in a passive sentence, when it is a person, is introduced with von + dative."
+    },
+    {
+      "id": "pasv-16",
+      "type": "order",
+      "words": [
+        "Wann",
+        "ist",
+        "die",
+        "Brücke",
+        "gebaut",
+        "worden?"
+      ],
+      "answers": [
+        "Wann ist die Brücke gebaut worden?"
+      ],
+      "translation": "When was the bridge built?",
+      "explanation": "In a question the finite verb ist comes second; Partizip II and worden stay at the end."
+    },
+    {
+      "id": "pasv-17",
+      "type": "choice",
+      "prompt": "Das Fenster war schon geöffnet ___, als ich kam.",
+      "options": [
+        "worden",
+        "werden",
+        "wurde",
+        "geworden"
+      ],
+      "answer": "worden",
+      "explanation": "Past perfect passive: war + Partizip II + worden. The action had been done before I came."
+    },
+    {
+      "id": "pasv-18",
+      "type": "type",
+      "prompt": "Sie hat gesagt, dass die Rechnung schon bezahlt worden ___.",
+      "hint": "(sein, Präsens)",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "In a subordinate clause the finite verb goes last, after worden: bezahlt worden ist."
+    },
+    {
+      "id": "pasv-19",
+      "type": "choice",
+      "prompt": "Das Kind ___ vom Arzt untersucht worden.",
+      "options": [
+        "ist",
+        "wurde",
+        "hat",
+        "wird"
+      ],
+      "answer": "ist",
+      "explanation": "Perfect passive: ist ... untersucht worden. Wurde and worden never appear together."
+    },
+    {
+      "id": "pasv-20",
+      "type": "type",
+      "prompt": "Die Tür ist leider ___, ich habe keinen Schlüssel.",
+      "hint": "(abschließen)",
+      "answers": [
+        "abgeschlossen"
+      ],
+      "explanation": "State passive: sein + Partizip II describes the result: the door is locked (abgeschlossen)."
+    },
+    {
+      "id": "pasv-21",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "die",
+        "Heizung",
+        "repariert",
+        "worden",
+        "ist."
+      ],
+      "answers": [
+        "Ich weiß, dass die Heizung repariert worden ist."
+      ],
+      "translation": "I know that the heating has been repaired.",
+      "explanation": "In a dass-clause the finite verb ist moves to the very end, after repariert worden."
+    },
+    {
+      "id": "pasv-22",
+      "type": "type",
+      "prompt": "Die Wohnung ___ letztes Jahr renoviert.",
+      "hint": "(werden)",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "Past passive: Präteritum of werden + Partizip II. Singular subject: wurde."
+    },
+    {
+      "id": "pasv-23",
+      "type": "choice",
+      "prompt": "Das Problem hätte früher gelöst ___ müssen.",
+      "options": [
+        "werden",
+        "worden",
+        "wurde",
+        "sein"
+      ],
+      "answer": "werden",
+      "explanation": "Konjunktiv II with modal passive: hätte gelöst werden müssen. The infinitive werden is used."
+    },
+    {
+      "id": "pasv-24",
+      "type": "order",
+      "words": [
+        "Die",
+        "Tür",
+        "wurde",
+        "von",
+        "Tom",
+        "geöffnet."
+      ],
+      "answers": [
+        "Die Tür wurde von Tom geöffnet."
+      ],
+      "translation": "The door was opened by Tom.",
+      "explanation": "The agent is introduced by von + dative; wurde is the second element, Partizip II at the end."
+    },
+    {
+      "id": "pasv-25",
+      "type": "type",
+      "prompt": "Alle Gäste sind schon eingeladen ___.",
+      "hint": "(Partizip II von werden)",
+      "answers": [
+        "worden"
+      ],
+      "explanation": "Perfect passive ends in Partizip II + worden: sind eingeladen worden."
+    },
+    {
+      "id": "pasv-26",
+      "type": "order",
+      "words": [
+        "Er",
+        "hat",
+        "gesagt,",
+        "dass",
+        "die",
+        "Zimmer",
+        "geputzt",
+        "werden",
+        "müssen."
+      ],
+      "answers": [
+        "Er hat gesagt, dass die Zimmer geputzt werden müssen."
+      ],
+      "translation": "He said that the rooms have to be cleaned.",
+      "explanation": "In a subordinate clause the modal passive ends: Partizip II + werden + the conjugated modal müssen."
+    },
+    {
+      "id": "pasv-27",
+      "type": "order",
+      "words": [
+        "Der",
+        "Termin",
+        "wird",
+        "bald",
+        "verschoben",
+        "werden."
+      ],
+      "answers": [
+        "Der Termin wird bald verschoben werden."
+      ],
+      "translation": "The appointment will soon be postponed.",
+      "explanation": "Future passive: wird + Partizip II + werden (infinitive), with verschoben werden at the end."
+    },
+    {
+      "id": "pasv-28",
+      "type": "type",
+      "prompt": "Die neue Brücke wird nächstes Jahr ___ werden.",
+      "hint": "(eröffnen)",
+      "answers": [
+        "eröffnet"
+      ],
+      "explanation": "Future passive: wird + Partizip II + werden. eröffnen has an inseparable prefix, so the participle is eröffnet (no ge-)."
+    },
+    {
+      "id": "pasv-29",
+      "type": "order",
+      "words": [
+        "Warum",
+        "ist",
+        "die",
+        "Straße",
+        "gesperrt?"
+      ],
+      "answers": [
+        "Warum ist die Straße gesperrt?"
+      ],
+      "translation": "Why is the road closed?",
+      "explanation": "State passive: sein + Partizip II describes the resulting state, no worden needed."
+    },
+    {
+      "id": "pasv-30",
+      "type": "choice",
+      "prompt": "Die Hausaufgaben ___ gestern nicht kontrolliert.",
+      "options": [
+        "wurden",
+        "wurde",
+        "worden",
+        "werden"
+      ],
+      "answer": "wurden",
+      "explanation": "Plural subject die Hausaufgaben, past passive: wurden + Partizip II."
+    }
+  ]
+}

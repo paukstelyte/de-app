@@ -1,0 +1,366 @@
+{
+  "slug": "participles-as-adjectives",
+  "instructions": "Choose, type or arrange the correct participle form used as an adjective.",
+  "items": [
+    {
+      "id": "part-01",
+      "type": "choice",
+      "prompt": "Das ___ Publikum klatscht laut.",
+      "options": [
+        "begeisterte",
+        "begeisterten",
+        "begeisterter"
+      ],
+      "answer": "begeisterte",
+      "explanation": "Past participle begeistert (enthusiastic) used as an adjective; after das in the nominative singular the ending is -e."
+    },
+    {
+      "id": "part-02",
+      "type": "choice",
+      "prompt": "Der ___ Mann winkt uns zu.",
+      "options": [
+        "lachende",
+        "lachenden",
+        "lachendes",
+        "lachender"
+      ],
+      "answer": "lachende",
+      "explanation": "lachen + d = lachend (an action happening now); after der in the nominative singular masculine the ending is -e."
+    },
+    {
+      "id": "part-03",
+      "type": "choice",
+      "prompt": "Ich esse ein ___ Brötchen.",
+      "options": [
+        "belegtes",
+        "belegte",
+        "belegten",
+        "belegter"
+      ],
+      "answer": "belegtes",
+      "explanation": "Past participle belegt (a filled roll); after ein, a neuter noun in the accusative needs -es."
+    },
+    {
+      "id": "part-04",
+      "type": "choice",
+      "prompt": "Wir sehen einen ___ Hund.",
+      "options": [
+        "bellenden",
+        "bellender",
+        "bellende",
+        "gebellten"
+      ],
+      "answer": "bellenden",
+      "explanation": "bellen + d = bellend; after einen (masculine accusative) the ending is -en."
+    },
+    {
+      "id": "part-05",
+      "type": "choice",
+      "prompt": "Wir brauchen ___ Wasser.",
+      "options": [
+        "fließendes",
+        "fließende",
+        "fließenden",
+        "fließender"
+      ],
+      "answer": "fließendes",
+      "explanation": "With no article, the adjective shows the case itself: neuter nominative/accusative = -es (fließendes Wasser)."
+    },
+    {
+      "id": "part-06",
+      "type": "choice",
+      "prompt": "Das ___ Auto wird morgen abgeholt.",
+      "options": [
+        "verkaufte",
+        "verkaufende",
+        "verkauften",
+        "verkauftes"
+      ],
+      "answer": "verkaufte",
+      "explanation": "The car has been sold (passive, completed), so use the past participle verkauft + -e after das; verkaufende would mean the car itself is selling."
+    },
+    {
+      "id": "part-07",
+      "type": "choice",
+      "prompt": "Hast du die ___ Fenster gesehen?",
+      "options": [
+        "zerbrochenen",
+        "zerbrochene",
+        "zerbrechenden",
+        "zerbrochenes"
+      ],
+      "answer": "zerbrochenen",
+      "explanation": "Past participle of zerbrechen (irregular: zerbrochen); after die in the plural accusative the ending is -en."
+    },
+    {
+      "id": "part-08",
+      "type": "choice",
+      "prompt": "Wir fahren mit dem ___ Taxi.",
+      "options": [
+        "wartenden",
+        "wartende",
+        "wartendem",
+        "wartender"
+      ],
+      "answer": "wartenden",
+      "explanation": "warten + d = wartend (the taxi that is waiting); after dem in the dative singular the ending is always -en."
+    },
+    {
+      "id": "part-09",
+      "type": "choice",
+      "prompt": "Ich suche mein ___ Handy.",
+      "options": [
+        "verlorenes",
+        "verlorene",
+        "verlorenen",
+        "verlierendes"
+      ],
+      "answer": "verlorenes",
+      "explanation": "A phone that has been lost: past participle verloren; after mein, neuter accusative takes -es."
+    },
+    {
+      "id": "part-10",
+      "type": "choice",
+      "prompt": "Die ___ Kinder sind sehr laut.",
+      "options": [
+        "spielenden",
+        "spielende",
+        "gespielten",
+        "spielender"
+      ],
+      "answer": "spielenden",
+      "explanation": "spielen + d = spielend (children who are playing); after die in the plural nominative the ending is -en."
+    },
+    {
+      "id": "part-11",
+      "type": "choice",
+      "prompt": "Der Arzt hilft der ___ Frau.",
+      "options": [
+        "verletzten",
+        "verletzte",
+        "verletzter",
+        "verletztem"
+      ],
+      "answer": "verletzten",
+      "explanation": "Past participle verletzt (injured); after der in the feminine dative the ending is -en."
+    },
+    {
+      "id": "part-12",
+      "type": "choice",
+      "prompt": "Das Spielzeug des ___ Kindes ist kaputt.",
+      "options": [
+        "weinenden",
+        "weinende",
+        "weinendes",
+        "weinender"
+      ],
+      "answer": "weinenden",
+      "explanation": "After des (genitive singular) the adjective ending is -en: des weinenden Kindes."
+    },
+    {
+      "id": "part-13",
+      "type": "choice",
+      "prompt": "Das ist ein ___ Problem.",
+      "options": [
+        "ungelöstes",
+        "ungelöste",
+        "ungelösten",
+        "ungelöster"
+      ],
+      "answer": "ungelöstes",
+      "explanation": "Past participle with un- (ungelöst = not solved); after ein, neuter nominative needs -es."
+    },
+    {
+      "id": "part-14",
+      "type": "choice",
+      "prompt": "Der vor der Tür ___ Mann ist mein Nachbar.",
+      "options": [
+        "stehende",
+        "stehenden",
+        "stehender",
+        "gestanden"
+      ],
+      "answer": "stehende",
+      "explanation": "In an extended participial phrase, the participle stands right before the noun with the adjective ending: der vor der Tür stehende Mann (nominative, -e)."
+    },
+    {
+      "id": "part-15",
+      "type": "choice",
+      "prompt": "Das von Anna ___ Foto hängt an der Wand.",
+      "options": [
+        "gemachte",
+        "gemachtes",
+        "gemachten",
+        "machende"
+      ],
+      "answer": "gemachte",
+      "explanation": "The photo was taken by Anna: past participle with -e after das (nominative neuter); the phrase von Anna belongs before it."
+    },
+    {
+      "id": "part-16",
+      "type": "type",
+      "prompt": "Ich kaufe ein frisch ___ Brot.",
+      "hint": "(backen, Partizip II)",
+      "answers": [
+        "gebackenes"
+      ],
+      "explanation": "Past participle gebacken, plus -es after ein (neuter accusative): ein frisch gebackenes Brot."
+    },
+    {
+      "id": "part-17",
+      "type": "type",
+      "prompt": "Die ___ Sonne weckt mich jeden Morgen.",
+      "hint": "(aufgehen, Partizip I)",
+      "answers": [
+        "aufgehende"
+      ],
+      "explanation": "Present participle = infinitive + d (aufgehend, the prefix stays attached); after die in the feminine nominative add -e."
+    },
+    {
+      "id": "part-18",
+      "type": "type",
+      "prompt": "Spring nie auf einen ___ Zug!",
+      "hint": "(fahren, Partizip I)",
+      "answers": [
+        "fahrenden"
+      ],
+      "explanation": "fahren + d = fahrend (a moving train); after einen in the masculine accusative the ending is -en."
+    },
+    {
+      "id": "part-19",
+      "type": "type",
+      "prompt": "Wir suchen ein ___ Zimmer.",
+      "hint": "(möblieren, Partizip II)",
+      "answers": [
+        "möbliertes"
+      ],
+      "explanation": "Verbs in -ieren form the past participle without ge-: möbliert; after ein, neuter accusative adds -es."
+    },
+    {
+      "id": "part-20",
+      "type": "type",
+      "prompt": "Ich gebe der ___ Frau die Hand.",
+      "hint": "(lächeln, Partizip I)",
+      "answers": [
+        "lächelnden"
+      ],
+      "explanation": "lächeln + d = lächelnd; after der in the feminine dative the ending is -en."
+    },
+    {
+      "id": "part-21",
+      "type": "type",
+      "prompt": "Ein ___ Computer ist billiger als ein neuer.",
+      "hint": "(gebrauchen, Partizip II)",
+      "answers": [
+        "gebrauchter"
+      ],
+      "explanation": "Past participle gebraucht (used, second-hand); after ein in the masculine nominative the ending is -er."
+    },
+    {
+      "id": "part-22",
+      "type": "type",
+      "prompt": "Die Polizei sucht den ___ Dieb.",
+      "hint": "(fliehen, Partizip I)",
+      "answers": [
+        "fliehenden",
+        "flüchtenden"
+      ],
+      "explanation": "Present participle fliehend (or flüchtend) takes -en after den (masculine accusative)."
+    },
+    {
+      "id": "part-23",
+      "type": "type",
+      "prompt": "Sie trägt ein ___ Kleid.",
+      "hint": "(leihen, Partizip II)",
+      "answers": [
+        "geliehenes"
+      ],
+      "explanation": "Irregular past participle geliehen (borrowed); after ein, neuter accusative adds -es."
+    },
+    {
+      "id": "part-24",
+      "type": "type",
+      "prompt": "Wir sprechen mit den ___ Gästen.",
+      "hint": "(ankommen, Partizip I)",
+      "answers": [
+        "ankommenden"
+      ],
+      "explanation": "ankommen + d = ankommend (the guests who are arriving); after den in the dative plural the ending is -en."
+    },
+    {
+      "id": "part-25",
+      "type": "type",
+      "prompt": "Wir suchen ___ Mitarbeiter.",
+      "hint": "(motivieren, Partizip II)",
+      "answers": [
+        "motivierte"
+      ],
+      "explanation": "Without an article, plural accusative takes -e: motivierte Mitarbeiter (motivieren forms motiviert, no ge-)."
+    },
+    {
+      "id": "part-26",
+      "type": "type",
+      "prompt": "Der seit zwei Jahren hier ___ Student kommt aus Spanien.",
+      "hint": "(wohnen, Partizip I)",
+      "answers": [
+        "wohnende"
+      ],
+      "explanation": "In an extended phrase the participle stands directly before the noun with its ending: der ... hier wohnende Student."
+    },
+    {
+      "id": "part-27",
+      "type": "type",
+      "prompt": "Die von der Firma ___ Waren sind teuer.",
+      "hint": "(liefern, Partizip II)",
+      "answers": [
+        "gelieferten"
+      ],
+      "explanation": "Past participle with a von-phrase in front of it; after die in the plural nominative the ending is -en."
+    },
+    {
+      "id": "part-28",
+      "type": "type",
+      "prompt": "Das ___ Paket liegt vor der Tür.",
+      "hint": "(bestellen, Partizip II)",
+      "answers": [
+        "bestellte"
+      ],
+      "explanation": "bestellen has an inseparable prefix, so the past participle is bestellt (no ge-); after das in the nominative neuter add -e."
+    },
+    {
+      "id": "part-29",
+      "type": "order",
+      "words": [
+        "Der",
+        "schlafende",
+        "Hund",
+        "liegt",
+        "im",
+        "Garten."
+      ],
+      "answers": [
+        "Der schlafende Hund liegt im Garten."
+      ],
+      "translation": "The sleeping dog is lying in the garden.",
+      "explanation": "The participle schlafende stands between the article and the noun, like any adjective."
+    },
+    {
+      "id": "part-30",
+      "type": "order",
+      "words": [
+        "Die",
+        "vor",
+        "dem",
+        "Kino",
+        "wartenden",
+        "Leute",
+        "frieren."
+      ],
+      "answers": [
+        "Die vor dem Kino wartenden Leute frieren."
+      ],
+      "translation": "The people waiting in front of the cinema are cold.",
+      "explanation": "In an extended participial phrase, the extra information (vor dem Kino) goes between the article die and the participle wartenden, which stands right before the noun."
+    }
+  ]
+}

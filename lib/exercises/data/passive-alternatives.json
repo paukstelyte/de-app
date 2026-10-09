@@ -1,0 +1,387 @@
+{
+  "slug": "passive-alternatives",
+  "instructions": "Choose or complete the form that expresses the same idea as a passive sentence.",
+  "items": [
+    {
+      "id": "pass-alt-01",
+      "type": "choice",
+      "prompt": "Das Fenster ___ sich leicht öffnen.",
+      "options": [
+        "lässt",
+        "wird",
+        "ist",
+        "hat"
+      ],
+      "answer": "lässt",
+      "explanation": "sich lassen + Infinitiv replaces the passive with können: Das Fenster lässt sich öffnen = Das Fenster kann geöffnet werden."
+    },
+    {
+      "id": "pass-alt-02",
+      "type": "type",
+      "prompt": "Das Formular ___ sich online ausfüllen.",
+      "hint": "(lassen, Präsens)",
+      "answers": [
+        "lässt"
+      ],
+      "explanation": "sich lassen + infinitive means \"can be done\": das Formular (singular) → lässt sich ausfüllen = kann ausgefüllt werden."
+    },
+    {
+      "id": "pass-alt-03",
+      "type": "choice",
+      "prompt": "Die Aufgabe ist leicht ___.",
+      "options": [
+        "lösbar",
+        "lösen",
+        "lösend"
+      ],
+      "answer": "lösbar",
+      "explanation": "The suffix -bar (lösen → lösbar) means \"can be done\": leicht lösbar = leicht zu lösen."
+    },
+    {
+      "id": "pass-alt-04",
+      "type": "choice",
+      "prompt": "Der Text ist schwer ___ verstehen.",
+      "options": [
+        "zu",
+        "sich",
+        "man"
+      ],
+      "answer": "zu",
+      "explanation": "sein + zu + Infinitiv expresses possibility: Der Text ist schwer zu verstehen = kann schwer verstanden werden."
+    },
+    {
+      "id": "pass-alt-05",
+      "type": "type",
+      "prompt": "Die Schrift ist kaum ___.",
+      "hint": "(lesen + -bar)",
+      "answers": [
+        "lesbar"
+      ],
+      "explanation": "The adjective with -bar is built from the verb stem: les(en) → lesbar, meaning \"can be read\"."
+    },
+    {
+      "id": "pass-alt-06",
+      "type": "choice",
+      "prompt": "Gestern ___ sich die Tür nicht öffnen.",
+      "options": [
+        "ließ",
+        "lässt",
+        "ließen"
+      ],
+      "answer": "ließ",
+      "explanation": "The past tense of lassen is ließ, and it agrees with the singular subject die Tür."
+    },
+    {
+      "id": "pass-alt-07",
+      "type": "type",
+      "prompt": "Im Museum ___ man nicht fotografieren.",
+      "hint": "(dürfen, Präsens)",
+      "answers": [
+        "darf"
+      ],
+      "explanation": "man + modal verb is the simplest passive alternative: Im Museum darf man nicht fotografieren = Im Museum darf nicht fotografiert werden."
+    },
+    {
+      "id": "pass-alt-08",
+      "type": "choice",
+      "prompt": "Das Wasser hier ist nicht ___.",
+      "options": [
+        "trinkbar",
+        "trinkend",
+        "trinken"
+      ],
+      "answer": "trinkbar",
+      "explanation": "-bar turns a verb into an adjective meaning \"can be …-ed\": trinken → trinkbar (drinkable)."
+    },
+    {
+      "id": "pass-alt-09",
+      "type": "type",
+      "prompt": "Die Antwort ist leicht ___.",
+      "hint": "(finden, with sein + zu)",
+      "answers": [
+        "zu finden"
+      ],
+      "explanation": "sein + zu + infinitive expresses possibility: Die Antwort ist leicht zu finden = kann leicht gefunden werden."
+    },
+    {
+      "id": "pass-alt-10",
+      "type": "choice",
+      "prompt": "Diese Regeln sind einfach zu ___.",
+      "options": [
+        "beachten",
+        "beachtet",
+        "beachtend"
+      ],
+      "answer": "beachten",
+      "explanation": "After zu in sein + zu comes the plain infinitive, not the participle: einfach zu beachten."
+    },
+    {
+      "id": "pass-alt-11",
+      "type": "type",
+      "prompt": "Diese Fragen ___ sich nicht leicht beantworten.",
+      "hint": "(lassen, Präsens)",
+      "answers": [
+        "lassen"
+      ],
+      "explanation": "The form of lassen agrees with the subject: Diese Fragen (plural) → lassen sich beantworten."
+    },
+    {
+      "id": "pass-alt-12",
+      "type": "choice",
+      "prompt": "Die Suppe ist nicht mehr ___.",
+      "options": [
+        "essbar",
+        "essend",
+        "essen"
+      ],
+      "answer": "essbar",
+      "explanation": "essbar (from essen + -bar) means \"can be eaten\"; nicht mehr essbar = no longer edible."
+    },
+    {
+      "id": "pass-alt-13",
+      "type": "type",
+      "prompt": "Das Gerät lässt ___ nicht mehr reparieren.",
+      "hint": "(Reflexivpronomen)",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "lassen as a passive alternative needs the reflexive pronoun sich (3rd person): Das Gerät lässt sich reparieren."
+    },
+    {
+      "id": "pass-alt-14",
+      "type": "choice",
+      "prompt": "Die Zahlen ___ sich leicht merken.",
+      "options": [
+        "lassen",
+        "lässt",
+        "lasst"
+      ],
+      "answer": "lassen",
+      "explanation": "The subject die Zahlen is plural, so the verb is lassen: Die Zahlen lassen sich leicht merken."
+    },
+    {
+      "id": "pass-alt-15",
+      "type": "type",
+      "prompt": "Die Ware ist sofort ___.",
+      "hint": "(liefern + -bar)",
+      "answers": [
+        "lieferbar"
+      ],
+      "explanation": "lieferbar (liefern + -bar) means \"can be delivered\", often used for products in stock."
+    },
+    {
+      "id": "pass-alt-16",
+      "type": "choice",
+      "prompt": "Der Schrank ist leicht ___.",
+      "options": [
+        "zusammenzubauen",
+        "zu zusammenbauen",
+        "zusammenbauen"
+      ],
+      "answer": "zusammenzubauen",
+      "explanation": "With separable verbs, zu goes between prefix and stem and is written as one word: zusammen·zu·bauen."
+    },
+    {
+      "id": "pass-alt-17",
+      "type": "type",
+      "prompt": "Der Antrag ist bis Ende Mai ___.",
+      "hint": "(einreichen)",
+      "answers": [
+        "einzureichen"
+      ],
+      "explanation": "sein + zu can also express obligation: Der Antrag ist einzureichen = muss eingereicht werden. Separable verb: ein-zu-reichen."
+    },
+    {
+      "id": "pass-alt-18",
+      "type": "choice",
+      "prompt": "Das Medikament ist ohne Rezept ___.",
+      "options": [
+        "erhältlich",
+        "erhalten",
+        "erhaltend"
+      ],
+      "answer": "erhältlich",
+      "explanation": "Some verbs form the \"can be done\" adjective with -lich instead of -bar: erhalten → erhältlich (obtainable, available), with an umlaut."
+    },
+    {
+      "id": "pass-alt-19",
+      "type": "type",
+      "prompt": "Früher ___ sich solche Fehler leicht beheben.",
+      "hint": "(lassen, Präteritum)",
+      "answers": [
+        "ließen"
+      ],
+      "explanation": "Past tense plural of lassen is ließen; the subject solche Fehler is plural."
+    },
+    {
+      "id": "pass-alt-20",
+      "type": "choice",
+      "prompt": "Hier ist nichts mehr zu ___.",
+      "options": [
+        "machen",
+        "gemacht",
+        "machend"
+      ],
+      "answer": "machen",
+      "explanation": "nichts mehr zu machen = nothing more can be done; sein + zu is followed by the infinitive."
+    },
+    {
+      "id": "pass-alt-21",
+      "type": "type",
+      "prompt": "Diesen Fehler ___ man leicht vermeiden.",
+      "hint": "(können, Präsens)",
+      "answers": [
+        "kann"
+      ],
+      "explanation": "man + können replaces a passive of possibility: Diesen Fehler kann man leicht vermeiden = Dieser Fehler kann leicht vermieden werden."
+    },
+    {
+      "id": "pass-alt-22",
+      "type": "choice",
+      "prompt": "Der Fehler ist leicht ___.",
+      "options": [
+        "erkennbar",
+        "erkennend",
+        "erkennen"
+      ],
+      "answer": "erkennbar",
+      "explanation": "-bar adjectives need no zu and no werden: leicht erkennbar = kann leicht erkannt werden."
+    },
+    {
+      "id": "pass-alt-23",
+      "type": "type",
+      "prompt": "Die Lage ___ kaum noch zu retten.",
+      "hint": "(sein, Präteritum)",
+      "answers": [
+        "war"
+      ],
+      "explanation": "sein + zu works in the past with war: Die Lage war kaum noch zu retten = konnte kaum noch gerettet werden."
+    },
+    {
+      "id": "pass-alt-24",
+      "type": "choice",
+      "prompt": "Die Rechnung ist bis Montag ___ bezahlen.",
+      "options": [
+        "zu",
+        "wird",
+        "sich"
+      ],
+      "answer": "zu",
+      "explanation": "sein + zu + Infinitiv can express necessity: Die Rechnung ist zu bezahlen = muss bezahlt werden."
+    },
+    {
+      "id": "pass-alt-25",
+      "type": "order",
+      "words": [
+        "Wie",
+        "lässt",
+        "sich",
+        "dieser",
+        "Fleck",
+        "entfernen?"
+      ],
+      "answers": [
+        "Wie lässt sich dieser Fleck entfernen?",
+        "Wie lässt dieser Fleck sich entfernen?"
+      ],
+      "translation": "How can this stain be removed?",
+      "explanation": "In a question the verb lässt comes second, followed by the reflexive sich and the infinitive at the end."
+    },
+    {
+      "id": "pass-alt-26",
+      "type": "order",
+      "words": [
+        "Ist",
+        "dieser",
+        "Pilz",
+        "wirklich",
+        "genießbar?"
+      ],
+      "answers": [
+        "Ist dieser Pilz wirklich genießbar?"
+      ],
+      "translation": "Is this mushroom really edible?",
+      "explanation": "genießbar (genießen + -bar) means \"edible, fit to be eaten\"; in a yes/no question the verb comes first."
+    },
+    {
+      "id": "pass-alt-27",
+      "type": "order",
+      "words": [
+        "Anna",
+        "sagt,",
+        "dass",
+        "man",
+        "hier",
+        "nicht",
+        "parken",
+        "darf."
+      ],
+      "answers": [
+        "Anna sagt, dass man hier nicht parken darf."
+      ],
+      "translation": "Anna says that you are not allowed to park here.",
+      "explanation": "In a dass-clause the conjugated modal verb darf goes to the end, after the infinitive parken."
+    },
+    {
+      "id": "pass-alt-28",
+      "type": "order",
+      "words": [
+        "Tom",
+        "weiß,",
+        "dass",
+        "die",
+        "Aufgabe",
+        "kaum",
+        "zu",
+        "lösen",
+        "ist."
+      ],
+      "answers": [
+        "Tom weiß, dass die Aufgabe kaum zu lösen ist."
+      ],
+      "translation": "Tom knows that the task can hardly be solved.",
+      "explanation": "In the dass-clause the finite verb ist moves to the end: kaum zu lösen ist = kann kaum gelöst werden."
+    },
+    {
+      "id": "pass-alt-29",
+      "type": "order",
+      "words": [
+        "Lena",
+        "fragt,",
+        "ob",
+        "sich",
+        "das",
+        "Problem",
+        "lösen",
+        "lässt."
+      ],
+      "answers": [
+        "Lena fragt, ob sich das Problem lösen lässt.",
+        "Lena fragt, ob das Problem sich lösen lässt."
+      ],
+      "translation": "Lena asks whether the problem can be solved.",
+      "explanation": "In an ob-clause lässt goes to the end after the infinitive; sich may stand before or after the subject."
+    },
+    {
+      "id": "pass-alt-30",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "meint,",
+        "dass",
+        "sich",
+        "der",
+        "Fehler",
+        "leicht",
+        "beheben",
+        "lässt."
+      ],
+      "answers": [
+        "Jonas meint, dass sich der Fehler leicht beheben lässt.",
+        "Jonas meint, dass der Fehler sich leicht beheben lässt."
+      ],
+      "translation": "Jonas thinks the mistake can be fixed easily.",
+      "explanation": "The construction sich lassen + Infinitiv in a dass-clause ends with …beheben lässt."
+    }
+  ]
+}

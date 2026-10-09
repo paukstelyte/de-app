@@ -1,0 +1,388 @@
+{
+  "slug": "modal-particles",
+  "instructions": "Choose or type the modal particle that fits the tone described in brackets, or put the words in order.",
+  "items": [
+    {
+      "id": "mp-01",
+      "type": "choice",
+      "prompt": "Komm ___ mal vorbei! (friendly invitation)",
+      "options": [
+        "doch",
+        "eben",
+        "wohl"
+      ],
+      "answer": "doch",
+      "explanation": "doch softens an invitation or suggestion and makes it sound warm: Komm doch mal vorbei!"
+    },
+    {
+      "id": "mp-02",
+      "type": "order",
+      "words": [
+        "Ruf",
+        "mich",
+        "doch",
+        "mal",
+        "an!"
+      ],
+      "answers": [
+        "Ruf mich doch mal an!"
+      ],
+      "translation": "Do give me a call some time!",
+      "explanation": "doch mal softens the imperative; the particles come after the pronoun mich and before the separable prefix an at the end."
+    },
+    {
+      "id": "mp-03",
+      "type": "choice",
+      "prompt": "Das ist ___ eine Überraschung! (pleasantly surprised at what you see)",
+      "options": [
+        "ja",
+        "eben",
+        "mal"
+      ],
+      "answer": "ja",
+      "explanation": "ja expresses surprise about something obvious in the situation: Das ist ja eine Überraschung!"
+    },
+    {
+      "id": "mp-04",
+      "type": "choice",
+      "prompt": "Wo wohnst du ___? (curious, friendly question)",
+      "options": [
+        "denn",
+        "eben",
+        "ja"
+      ],
+      "answer": "denn",
+      "explanation": "denn makes a question sound interested and less blunt: Wo wohnst du denn?"
+    },
+    {
+      "id": "mp-05",
+      "type": "order",
+      "words": [
+        "Was",
+        "machst",
+        "du",
+        "denn",
+        "hier?"
+      ],
+      "answers": [
+        "Was machst du denn hier?"
+      ],
+      "translation": "What are you doing here, then?",
+      "explanation": "denn is used in questions and comes right after the subject pronoun, before the rest of the middle field."
+    },
+    {
+      "id": "mp-06",
+      "type": "choice",
+      "prompt": "Kannst du mir ___ das Salz geben? (casual, polite request)",
+      "options": [
+        "mal",
+        "ja",
+        "wohl"
+      ],
+      "answer": "mal",
+      "explanation": "mal makes a request casual and small: Kannst du mir mal das Salz geben?"
+    },
+    {
+      "id": "mp-07",
+      "type": "choice",
+      "prompt": "Es regnet im Winter oft. Das ist ___ so. (that's just how it is)",
+      "options": [
+        "eben",
+        "wohl",
+        "denn"
+      ],
+      "answer": "eben",
+      "explanation": "eben signals that something is simply a fact that cannot be changed: Das ist eben so."
+    },
+    {
+      "id": "mp-08",
+      "type": "type",
+      "prompt": "Schau mal, es schneit ___!",
+      "hint": "(surprise: look, it's snowing!)",
+      "answers": [
+        "ja",
+        "doch"
+      ],
+      "explanation": "ja (or doch) shows surprise at something the speaker sees right now."
+    },
+    {
+      "id": "mp-09",
+      "type": "choice",
+      "prompt": "Wir haben genug Kuchen. Du kannst ___ noch ein Stück nehmen. (encouraging, no need to hold back)",
+      "options": [
+        "ruhig",
+        "eben",
+        "wohl"
+      ],
+      "answer": "ruhig",
+      "explanation": "ruhig tells the listener there is no problem in doing something: Du kannst ruhig noch ein Stück nehmen."
+    },
+    {
+      "id": "mp-10",
+      "type": "choice",
+      "prompt": "Du hast ___ gesagt, dass du kommst! (reminding: you said so, we both know)",
+      "options": [
+        "ja",
+        "bloß",
+        "wohl"
+      ],
+      "answer": "ja",
+      "explanation": "ja refers to something the speaker and listener both already know: Du hast ja gesagt, dass du kommst."
+    },
+    {
+      "id": "mp-11",
+      "type": "choice",
+      "prompt": "Das war ___ ein toller Film! (very impressed)",
+      "options": [
+        "aber",
+        "eben",
+        "mal"
+      ],
+      "answer": "aber",
+      "explanation": "aber in an exclamation intensifies it: Das war aber ein toller Film!"
+    },
+    {
+      "id": "mp-12",
+      "type": "type",
+      "prompt": "Setz dich ___ hin! Du siehst müde aus.",
+      "hint": "(friendly offer, 'do sit down')",
+      "answers": [
+        "doch",
+        "ruhig",
+        "mal"
+      ],
+      "explanation": "doch, ruhig or mal turn the order into a friendly offer; all three are natural here."
+    },
+    {
+      "id": "mp-13",
+      "type": "order",
+      "words": [
+        "Du",
+        "kannst",
+        "ruhig",
+        "das",
+        "Fenster",
+        "aufmachen."
+      ],
+      "answers": [
+        "Du kannst ruhig das Fenster aufmachen.",
+        "Du kannst das Fenster ruhig aufmachen."
+      ],
+      "translation": "Feel free to open the window.",
+      "explanation": "ruhig reassures the listener that it is fine to do something; it can stand before or after the object das Fenster."
+    },
+    {
+      "id": "mp-14",
+      "type": "choice",
+      "prompt": "Er ist ___ schon zu Hause. (a guess: probably)",
+      "options": [
+        "wohl",
+        "eben",
+        "mal"
+      ],
+      "answer": "wohl",
+      "explanation": "wohl expresses a likely assumption: Er ist wohl schon zu Hause means he is probably home already."
+    },
+    {
+      "id": "mp-15",
+      "type": "type",
+      "prompt": "Wie spät ist es ___?",
+      "hint": "(curious question, 'by the way')",
+      "answers": [
+        "denn",
+        "eigentlich"
+      ],
+      "explanation": "denn and eigentlich both make a question sound casual or curious."
+    },
+    {
+      "id": "mp-16",
+      "type": "choice",
+      "prompt": "Wir haben alles versucht, aber es geht ___ nicht. (resigned: it just can't be done)",
+      "options": [
+        "eben",
+        "denn",
+        "ruhig"
+      ],
+      "answer": "eben",
+      "explanation": "eben (or halt) expresses resignation: it simply is so and nothing can change it."
+    },
+    {
+      "id": "mp-17",
+      "type": "choice",
+      "prompt": "Sind Sie ___ der Chef hier? (suspicious, 'surely not')",
+      "options": [
+        "etwa",
+        "eben",
+        "ja"
+      ],
+      "answer": "etwa",
+      "explanation": "etwa in a yes/no question suggests the speaker expects or fears the answer is no."
+    },
+    {
+      "id": "mp-18",
+      "type": "type",
+      "prompt": "Bist du ___ schon wieder krank?",
+      "hint": "(worried, 'don't tell me')",
+      "answers": [
+        "etwa",
+        "denn"
+      ],
+      "explanation": "etwa expresses worry or doubt; denn can express the same impatient surprise."
+    },
+    {
+      "id": "mp-19",
+      "type": "choice",
+      "prompt": "Hast du ___ meinen Schlüssel gesehen? (polite, casual)",
+      "options": [
+        "vielleicht",
+        "eben",
+        "ja"
+      ],
+      "answer": "vielleicht",
+      "explanation": "In a polite question vielleicht does not mean 'perhaps' but softens it: Hast du vielleicht meinen Schlüssel gesehen?"
+    },
+    {
+      "id": "mp-20",
+      "type": "choice",
+      "prompt": "Was ist ___ hier los? (impatient, wants to know)",
+      "options": [
+        "denn",
+        "eben",
+        "mal"
+      ],
+      "answer": "denn",
+      "explanation": "denn adds impatience or surprise to a W-question: Was ist denn hier los?"
+    },
+    {
+      "id": "mp-21",
+      "type": "type",
+      "prompt": "Hilf mir ___ kurz, bitte.",
+      "hint": "(casual request)",
+      "answers": [
+        "mal",
+        "eben",
+        "doch"
+      ],
+      "explanation": "mal or eben make a short request sound casual and easy; doch adds gentle urging."
+    },
+    {
+      "id": "mp-22",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "vielleicht",
+        "ein",
+        "Pflaster?"
+      ],
+      "answers": [
+        "Hast du vielleicht ein Pflaster?"
+      ],
+      "translation": "Do you happen to have a plaster?",
+      "explanation": "vielleicht softens a yes/no question and follows the subject du."
+    },
+    {
+      "id": "mp-23",
+      "type": "choice",
+      "prompt": "Pass ___ auf, dass du nicht fällst! (urgent warning)",
+      "options": [
+        "bloß",
+        "eben",
+        "wohl"
+      ],
+      "answer": "bloß",
+      "explanation": "bloß (or nur) strengthens a warning or wish: Pass bloß auf!"
+    },
+    {
+      "id": "mp-24",
+      "type": "type",
+      "prompt": "Das habe ich dir ___ gestern erklärt!",
+      "hint": "(reminder: you should know this)",
+      "answers": [
+        "doch",
+        "ja"
+      ],
+      "explanation": "doch (reproachful) or ja (shared knowledge) remind the listener of something they should already know."
+    },
+    {
+      "id": "mp-25",
+      "type": "choice",
+      "prompt": "Warum gehst du ___ nicht zum Arzt? (puzzled, 'why on earth not?')",
+      "options": [
+        "denn",
+        "eben",
+        "wohl"
+      ],
+      "answer": "denn",
+      "explanation": "denn adds puzzled interest to a W-question: Warum gehst du denn nicht zum Arzt?"
+    },
+    {
+      "id": "mp-26",
+      "type": "type",
+      "prompt": "Er ist krank, er kommt ___ nicht.",
+      "hint": "(that's the simple reason)",
+      "answers": [
+        "halt",
+        "eben"
+      ],
+      "explanation": "halt and eben both say that this is simply the reason and nothing more."
+    },
+    {
+      "id": "mp-27",
+      "type": "order",
+      "words": [
+        "Sie",
+        "ist",
+        "eben",
+        "sehr",
+        "müde."
+      ],
+      "answers": [
+        "Sie ist eben sehr müde."
+      ],
+      "translation": "She is just very tired.",
+      "explanation": "eben marks a plain, unchangeable fact and sits after the verb, before the adjective."
+    },
+    {
+      "id": "mp-28",
+      "type": "type",
+      "prompt": "Das kann ___ nicht wahr sein!",
+      "hint": "(disbelief)",
+      "answers": [
+        "doch",
+        "ja",
+        "einfach"
+      ],
+      "explanation": "doch (also ja or einfach) adds disbelief: the speaker expects the listener to agree it can't be true."
+    },
+    {
+      "id": "mp-29",
+      "type": "choice",
+      "prompt": "Wo ist ___ mein Handy? (thinking aloud, annoyed at yourself)",
+      "options": [
+        "nur",
+        "eben",
+        "ja"
+      ],
+      "answer": "nur",
+      "explanation": "nur in a W-question shows helpless puzzlement or worry: Wo ist nur mein Handy?"
+    },
+    {
+      "id": "mp-30",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "ja",
+        "ein",
+        "schöner",
+        "Garten!"
+      ],
+      "answers": [
+        "Das ist ja ein schöner Garten!"
+      ],
+      "translation": "What a lovely garden!",
+      "explanation": "ja expresses pleased surprise and stands after the verb and subject."
+    }
+  ]
+}

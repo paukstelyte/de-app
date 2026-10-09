@@ -668,70 +668,130 @@
     "title": "Passive voice: all tenses and with modal verbs",
     "level": "B2",
     "group": "Verbs and tenses",
-    "summary": "Perfect passive with worden: Das Haus ist gebaut worden. With modal verbs: Das muss repariert werden. Also the state passive with sein: Die Tür ist geschlossen."
+    "summary": "Perfect passive with worden: Das Haus ist gebaut worden. With modal verbs: Das muss repariert werden. Also the state passive with sein: Die Tür ist geschlossen.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/passive-advanced/practice"
+      }
+    ]
   },
   {
     "slug": "passive-alternatives",
     "title": "Alternatives to the passive (man, lassen, -bar, sein + zu)",
     "level": "B2",
     "group": "Verbs and tenses",
-    "summary": "Other ways to say what can or must be done: Das kann man reparieren. Das lässt sich reparieren. Das ist reparierbar. Das ist zu reparieren."
+    "summary": "Other ways to say what can or must be done: Das kann man reparieren. Das lässt sich reparieren. Das ist reparierbar. Das ist zu reparieren.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/passive-alternatives/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-ii-past",
     "title": "Unreal past (hätte … gemacht, wäre … gegangen)",
     "level": "B2",
     "group": "Verbs and tenses",
-    "summary": "For things that didn't happen: hätte or wäre plus the participle. Wenn ich das gewusst hätte, wäre ich gekommen. With modal verbs: Ich hätte anrufen sollen."
+    "summary": "For things that didn't happen: hätte or wäre plus the participle. Wenn ich das gewusst hätte, wäre ich gekommen. With modal verbs: Ich hätte anrufen sollen.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-ii-past/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-i-reported-speech",
     "title": "Reported speech (Konjunktiv I)",
     "level": "B2",
     "group": "Verbs and tenses",
-    "summary": "Used in news and formal writing to report what someone said: Er sagt, er sei krank. Sie meint, sie habe keine Zeit. Where Konjunktiv I looks like the present, Konjunktiv II is used instead."
+    "summary": "Used in news and formal writing to report what someone said: Er sagt, er sei krank. Sie meint, sie habe keine Zeit. Where Konjunktiv I looks like the present, Konjunktiv II is used instead.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-i-reported-speech/practice"
+      }
+    ]
   },
   {
     "slug": "participles-as-adjectives",
     "title": "Participles as adjectives (der lachende Mann)",
     "level": "B2",
     "group": "Adjectives",
-    "summary": "Present and past participles can describe a noun like adjectives: das schlafende Kind, das gekochte Ei. In formal writing they can carry whole phrases: der seit Jahren in Berlin lebende Autor."
+    "summary": "Present and past participles can describe a noun like adjectives: das schlafende Kind, das gekochte Ei. In formal writing they can carry whole phrases: der seit Jahren in Berlin lebende Autor.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/participles-as-adjectives/practice"
+      }
+    ]
   },
   {
     "slug": "two-part-conjunctions",
     "title": "Two-part conjunctions (entweder … oder, sowohl … als auch)",
     "level": "B2",
     "group": "Linking ideas",
-    "summary": "entweder … oder (either … or), weder … noch (neither … nor), sowohl … als auch (both … and), nicht nur … sondern auch, zwar … aber, je … desto."
+    "summary": "entweder … oder (either … or), weder … noch (neither … nor), sowohl … als auch (both … and), nicht nur … sondern auch, zwar … aber, je … desto.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/two-part-conjunctions/practice"
+      }
+    ]
   },
   {
     "slug": "relative-clauses-advanced",
     "title": "Relative clauses: was, wo, wer and with prepositions",
     "level": "B2",
     "group": "Linking ideas",
-    "summary": "Prepositions go in front of the relative pronoun: die Stadt, in der ich wohne. Use was after alles, nichts or a whole sentence (alles, was ich weiß), wo for places, and wer for \"whoever\"."
+    "summary": "Prepositions go in front of the relative pronoun: die Stadt, in der ich wohne. Use was after alles, nichts or a whole sentence (alles, was ich weiß), wo for places, and wer for \"whoever\".",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/relative-clauses-advanced/practice"
+      }
+    ]
   },
   {
     "slug": "infinitive-clauses-ohne-statt",
     "title": "ohne … zu, statt … zu, anstatt dass",
     "level": "B2",
     "group": "Linking ideas",
-    "summary": "ohne … zu (without doing) and statt … zu (instead of doing) when the subject is the same: Er ging, ohne sich zu verabschieden. With a different subject: ohne dass, statt dass."
+    "summary": "ohne … zu (without doing) and statt … zu (instead of doing) when the subject is the same: Er ging, ohne sich zu verabschieden. With a different subject: ohne dass, statt dass.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/infinitive-clauses-ohne-statt/practice"
+      }
+    ]
   },
   {
     "slug": "nominalisation",
     "title": "Nouns from verbs (Nominalisierung)",
     "level": "B2",
     "group": "Other",
-    "summary": "Formal German often turns verbs into nouns: lesen → das Lesen, entscheiden → die Entscheidung. Nach dem Essen instead of Nachdem wir gegessen haben."
+    "summary": "Formal German often turns verbs into nouns: lesen → das Lesen, entscheiden → die Entscheidung. Nach dem Essen instead of Nachdem wir gegessen haben.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/nominalisation/practice"
+      }
+    ]
   },
   {
     "slug": "modal-particles",
     "title": "Modal particles (doch, mal, ja, eben)",
     "level": "B2",
     "group": "Other",
-    "summary": "Small words that add tone in spoken German: Komm doch mal vorbei! (friendly), Das ist ja toll! (surprise), Das ist eben so (that's just how it is)."
+    "summary": "Small words that add tone in spoken German: Komm doch mal vorbei! (friendly), Das ist ja toll! (surprise), Das ist eben so (that's just how it is).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/modal-particles/practice"
+      }
+    ]
   },
   {
     "slug": "futur-ii",
