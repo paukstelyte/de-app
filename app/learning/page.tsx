@@ -2,6 +2,7 @@ import Link from "next/link";
 import { DocumentList } from "@/components/learning/DocumentList";
 import { FocusList } from "@/components/learning/FocusList";
 import { UploadBox } from "@/components/learning/UploadBox";
+import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
 import { buildFocus, type FocusOverride } from "@/lib/learning/focus";
 import { topicProgress } from "@/lib/learning/progress";
@@ -39,17 +40,17 @@ export default async function LearningPage() {
     );
   }
 
-  const [{ data: docs }, { data: overrides }, { data: attempts }] = await Promise.all([
+  const [{ data: docs }, { data: overrides }, attempts] = await Promise.all([
     supabase.from("learning_documents").select("id, title, created_at, extracted_text, no_grammar, suggestions").order("created_at", { ascending: false }).limit(200),
     supabase.from("learning_focus").select("topic_slug, kind, updated_at"),
-    supabase.from("attempts").select("topic, correct, created_at").limit(10000),
+    getAllAttempts(),
   ]);
   const focus = buildFocus(
     (docs ?? []).map((d) => ({ id: d.id, title: d.title, createdAt: d.created_at, topics: d.suggestions as Suggestion[] })),
     (overrides ?? []).map((o) => ({ slug: o.topic_slug, kind: o.kind, updatedAt: o.updated_at }) as FocusOverride),
     new Date(),
   );
-  const progress = topicProgress(attempts ?? []);
+  const progress = topicProgress(attempts);
   const isEmpty = !docs?.length && focus.length === 0;
 
   return (

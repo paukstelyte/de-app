@@ -40,7 +40,7 @@ export function FocusList({ items, topics, progress }: { items: FocusItem[]; top
             <div className="flex gap-3 text-sm">
               {topic.exercises?.[0] && <Link href={topic.exercises[0].href} className="font-semibold underline underline-offset-2">Practise</Link>}
               <button type="button" disabled={pending} className="text-zinc-500 underline underline-offset-2 hover:text-zinc-900 dark:hover:text-zinc-100" onClick={() => start(async () => { const r = await setFocus(item.slug, "removed"); setErrors((e) => ({ ...e, [item.slug]: r.error ?? "" })); })}>
-                Remove from focus
+                Remove from my focus
               </button>
             </div>
             {errors[item.slug] && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{errors[item.slug]}</p>}

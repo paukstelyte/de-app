@@ -17,7 +17,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
     <div className="flex flex-col gap-12">
       {account === "deleted" && (
         <p role="status" className="border border-[var(--line)] bg-[var(--paper)] px-4 py-3 text-sm">
-          Your account and all your saved answers have been deleted.
+          Your account, all your saved answers, your Customized Learning documents and your focus list have been deleted.
         </p>
       )}
       <section className="flex flex-col gap-6 border border-[var(--line)] bg-[var(--paper)] p-6 shadow-[8px_8px_0_var(--accent)] sm:p-8">

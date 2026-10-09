@@ -21,7 +21,6 @@ const MIME_BY_EXT: Record<string, { mime: string; kind: "pdf" | "docx" | "image"
   heic: { mime: "image/heic", kind: "image" },
   heif: { mime: "image/heif", kind: "image" },
 };
-export const ALLOWED_MIME_TYPES = [...new Set(Object.values(MIME_BY_EXT).map((v) => v.mime))];
 
 const extOf = (name: string) => name.toLowerCase().match(/\.([a-z0-9]+)$/)?.[1] ?? "";
 

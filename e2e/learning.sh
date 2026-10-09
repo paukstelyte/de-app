@@ -90,8 +90,8 @@ echo "== 6. Focus buttons"
 pw goto "$BASE/learning" >/dev/null; sleep 3
 SLUG=$(focus_topics | tr ' ' '\n' | grep -E "$TOPIC_RE" | head -1)
 TTITLE=$(js "() => [...document.querySelectorAll('section[aria-labelledby=focus-title] a')].find(a=>a.getAttribute('href')==='$SLUG')?.textContent || ''" | unjson)
-js "() => { const li=[...document.querySelectorAll('section[aria-labelledby=focus-title] > ul > li')].find(l=>l.textContent.includes('$TTITLE')); [...li.querySelectorAll('button')].find(b=>b.textContent.trim()==='Remove from focus').click(); return 1; }" >/dev/null; sleep 3; pw goto "$BASE/learning" >/dev/null; sleep 3
-check "'Remove from focus' hides $SLUG from 'Your focus now'" '! focus_topics | grep -q "$SLUG"'
+js "() => { const li=[...document.querySelectorAll('section[aria-labelledby=focus-title] > ul > li')].find(l=>l.textContent.includes('$TTITLE')); [...li.querySelectorAll('button')].find(b=>b.textContent.trim()==='Remove from my focus').click(); return 1; }" >/dev/null; sleep 3; pw goto "$BASE/learning" >/dev/null; sleep 3
+check "'Remove from my focus' hides $SLUG from 'Your focus now'" '! focus_topics | grep -q "$SLUG"'
 pw goto "$BASE/topics/modal-verbs" >/dev/null; sleep 3
 click "Add to my focus"; sleep 3; pw goto "$BASE/learning" >/dev/null; sleep 3
 check "'Add to my focus' on /topics/modal-verbs adds it to 'Your focus now'" 'focus_topics | grep -q "/topics/modal-verbs"'

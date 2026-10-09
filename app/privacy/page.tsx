@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             as plain text.
           </li>
           <li>
-            <strong>If you sign in with Google:</strong> the name, email address and profile picture
+            <strong>If you choose &ldquo;Continue with Google&rdquo;:</strong> the name, email address and profile picture
             link that Google shares with us. We never see your Google password.
           </li>
           <li>
@@ -43,8 +43,12 @@ export default function PrivacyPage() {
           </li>
           <li>
             <strong>Your Customized Learning documents:</strong> the title, the text read from each
-            document and the suggested topics; the original files are deleted straight after reading.
-            Your focus list.
+            document and the suggested topics, plus your focus list. The original files are deleted
+            straight after reading; if an upload is interrupted, the file is removed the next time
+            you upload or when you delete your account.
+          </li>
+          <li>
+            <strong>A count of your uploads</strong>, used for the daily limit.
           </li>
           <li>
             <strong>Login cookies</strong> that keep you signed in. There are no analytics,
@@ -57,8 +61,8 @@ export default function PrivacyPage() {
       <Section title="Services that handle your data for us">
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
-            <strong>Supabase</strong>: accounts, login and the answer database, on servers in
-            Ireland (EU).
+            <strong>Supabase</strong>: accounts, login, the answer database, your Customized Learning
+            documents and, briefly, uploaded files, on servers in Ireland (EU).
           </li>
           <li>
             <strong>Vercel</strong>: hosts the website (servers in Dublin, Ireland) and keeps short-lived
@@ -69,10 +73,12 @@ export default function PrivacyPage() {
             sees your email address.
           </li>
           <li>
-            <strong>Google</strong>: if you choose &ldquo;Continue with Google&rdquo;, and if you upload documents to Customized Learning, documents are sent through OpenRouter to Google&rsquo;s Gemini model to read and suggest topics. Don&rsquo;t upload documents with personal details.
+            <strong>Google</strong>: only if you choose &ldquo;Continue with Google&rdquo;, to sign you in.
           </li>
           <li>
-            <strong>OpenRouter</strong>: handles the connection to Google&rsquo;s Gemini model for Customized Learning document processing.
+            <strong>OpenRouter and Google Gemini</strong>: documents you upload to Customized Learning
+            are sent through OpenRouter to Google&rsquo;s Gemini model, which reads them and suggests
+            topics. Don&rsquo;t upload documents with personal details.
           </li>
         </ul>
       </Section>

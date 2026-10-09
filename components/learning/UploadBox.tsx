@@ -40,7 +40,7 @@ export function UploadBox({ userId }: { userId: string }) {
       return { error: "Something went wrong — please try again." };
     });
     if ("error" in result) return setStatus({ kind: "error", text: result.error });
-    setStatus({ kind: "done", text: "Done! Your topics are below." });
+    setStatus({ kind: "done", text: result.noGrammar ? "Done — but we couldn't find German grammar topics in this document." : "Done! Your topics are below." });
     router.refresh();
   }
 

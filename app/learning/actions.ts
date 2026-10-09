@@ -19,7 +19,7 @@ const ERRORS = {
 };
 
 /** Reads the uploaded files with AI, saves the result, and always deletes the files. */
-export async function analyseUpload(paths: unknown): Promise<{ id: number } | { error: string }> {
+export async function analyseUpload(paths: unknown): Promise<{ id: number; noGrammar: boolean } | { error: string }> {
   const supabase = await createClient();
   const { data } = await supabase.auth.getClaims();
   const userId = data?.claims?.sub;
@@ -36,9 +36,6 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number } | { 
     if (kind !== "images" && owned.length > 1) return { error: ERRORS.files };
     if (kind === "images" && !mimes.every((m) => m!.startsWith("image/"))) return { error: ERRORS.files };
 
-    const { error: quotaError } = await supabase.rpc("use_upload_quota");
-    if (quotaError) return { error: quotaError.code === "P0001" ? ERRORS.limit : ERRORS.generic };
-
     const files = [];
     for (const [i, path] of owned.entries()) {
       const { data: blob, error } = await storage.download(path);
@@ -53,6 +50,9 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number } | { 
     const docxText = kind === "docx" ? extractDocxText(files[0].data) ?? undefined : undefined;
     if (kind === "docx" && !docxText) return { error: ERRORS.docx };
 
+    const { error: quotaError } = await supabase.rpc("use_upload_quota");
+    if (quotaError) return { error: quotaError.code === "P0001" ? ERRORS.limit : ERRORS.generic };
+
     const result = await analyseDocument({ kind, files, docxText });
     if ("error" in result) return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
     const a = result.analysis;
@@ -66,7 +66,7 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number } | { 
       return { error: error?.code === "P0001" ? ERRORS.docLimit : ERRORS.generic };
     }
     revalidatePath("/learning");
-    return { id: row.id };
+    return { id: row.id, noGrammar: a.noGrammar };
   } finally {
     // The original files are never kept, whatever happened above.
     const { error } = await storage.remove(owned);
