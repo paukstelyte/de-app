@@ -564,56 +564,104 @@
     "title": "Infinitive with zu",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "After many verbs and expressions, a second verb comes at the end with zu: Ich habe keine Lust, heute zu arbeiten. Separable verbs put zu in the middle: anzurufen."
+    "summary": "After many verbs and expressions, a second verb comes at the end with zu: Ich habe keine Lust, heute zu arbeiten. Separable verbs put zu in the middle: anzurufen.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/infinitive-with-zu/practice"
+      }
+    ]
   },
   {
     "slug": "um-zu-damit",
     "title": "Expressing purpose (um … zu, damit)",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "um … zu when the subject stays the same: Ich lerne Deutsch, um in Berlin zu arbeiten. damit when it changes: Ich erkläre es, damit du es verstehst."
+    "summary": "um … zu when the subject stays the same: Ich lerne Deutsch, um in Berlin zu arbeiten. damit when it changes: Ich erkläre es, damit du es verstehst.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/um-zu-damit/practice"
+      }
+    ]
   },
   {
     "slug": "als-wenn",
     "title": "Time clauses with als and wenn",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "als for a single event in the past (Als ich ein Kind war, …), wenn for repeated events and for the present or future (Immer wenn es regnet, …; Wenn ich fertig bin, …)."
+    "summary": "als for a single event in the past (Als ich ein Kind war, …), wenn for repeated events and for the present or future (Immer wenn es regnet, …; Wenn ich fertig bin, …).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/als-wenn/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-ii-hypothetical",
     "title": "Wishes and unreal conditions (Konjunktiv II)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "For things that aren't real: Wenn ich Zeit hätte, würde ich reisen. Ich wäre gern am Meer. Most verbs use würde + infinitive; sein, haben and the modal verbs have their own forms."
+    "summary": "For things that aren't real: Wenn ich Zeit hätte, würde ich reisen. Ich wäre gern am Meer. Most verbs use würde + infinitive; sein, haben and the modal verbs have their own forms.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-ii-hypothetical/practice"
+      }
+    ]
   },
   {
     "slug": "indirect-questions",
     "title": "Indirect questions (ob, wo, wann …)",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "A question inside another sentence puts the verb at the end: Weißt du, wo er wohnt? For yes/no questions use ob: Ich frage mich, ob sie kommt."
+    "summary": "A question inside another sentence puts the verb at the end: Weißt du, wo er wohnt? For yes/no questions use ob: Ich frage mich, ob sie kommt.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/indirect-questions/practice"
+      }
+    ]
   },
   {
     "slug": "verbs-with-prepositions",
     "title": "Verbs with prepositions (warten auf, sich freuen über)",
     "level": "B1",
     "group": "Verbs and tenses",
-    "summary": "Many verbs come with a fixed preposition and case: warten auf + accusative, Angst haben vor + dative. da- and wo- words refer back to them: Worauf wartest du? Ich warte darauf."
+    "summary": "Many verbs come with a fixed preposition and case: warten auf + accusative, Angst haben vor + dative. da- and wo- words refer back to them: Worauf wartest du? Ich warte darauf.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/verbs-with-prepositions/practice"
+      }
+    ]
   },
   {
     "slug": "concessive-obwohl-trotzdem",
     "title": "Contrast: obwohl and trotzdem",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "obwohl starts a subordinate clause (verb at the end): Obwohl es regnet, gehe ich spazieren. trotzdem is an adverb in a main clause (verb second): Es regnet. Trotzdem gehe ich spazieren."
+    "summary": "obwohl starts a subordinate clause (verb at the end): Obwohl es regnet, gehe ich spazieren. trotzdem is an adverb in a main clause (verb second): Es regnet. Trotzdem gehe ich spazieren.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/concessive-obwohl-trotzdem/practice"
+      }
+    ]
   },
   {
     "slug": "consequence-deshalb",
     "title": "Consequence: deshalb, deswegen, darum",
     "level": "B1",
     "group": "Linking ideas",
-    "summary": "These words mean \"that's why\" and take position 1, so the verb comes next: Ich bin krank, deshalb bleibe ich zu Hause."
+    "summary": "These words mean \"that's why\" and take position 1, so the verb comes next: Ich bin krank, deshalb bleibe ich zu Hause.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/consequence-deshalb/practice"
+      }
+    ]
   },
   {
     "slug": "passive-advanced",

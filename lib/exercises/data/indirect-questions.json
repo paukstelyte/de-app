@@ -1,0 +1,436 @@
+{
+  "slug": "indirect-questions",
+  "instructions": "Complete or build each sentence so that the indirect question has the verb at the end.",
+  "items": [
+    {
+      "id": "indq-01",
+      "type": "order",
+      "words": [
+        "Weißt",
+        "du,",
+        "wo",
+        "der",
+        "Bahnhof",
+        "ist?"
+      ],
+      "answers": [
+        "Weißt du, wo der Bahnhof ist?"
+      ],
+      "translation": "Do you know where the station is?",
+      "explanation": "After wo the verb ist moves to the end: Weißt du, wo der Bahnhof ist?"
+    },
+    {
+      "id": "indq-02",
+      "type": "choice",
+      "prompt": "Ich weiß nicht, ___ Anna gerade ist.",
+      "options": [
+        "wo",
+        "wohin",
+        "woher"
+      ],
+      "answer": "wo",
+      "explanation": "wo asks for a location (where is she?); wohin asks for a direction and woher for an origin."
+    },
+    {
+      "id": "indq-03",
+      "type": "order",
+      "words": [
+        "Ich",
+        "frage",
+        "mich,",
+        "ob",
+        "sie",
+        "kommt."
+      ],
+      "answers": [
+        "Ich frage mich, ob sie kommt."
+      ],
+      "translation": "I wonder whether she is coming.",
+      "explanation": "A yes/no question inside a sentence uses ob, and the verb kommt goes last."
+    },
+    {
+      "id": "indq-04",
+      "type": "choice",
+      "prompt": "Ich frage mich, ___ der Laden heute geöffnet hat.",
+      "options": [
+        "ob",
+        "dass",
+        "wenn"
+      ],
+      "answer": "ob",
+      "explanation": "A yes/no question inside a sentence uses ob, with the verb at the end; dass and wenn do not ask anything."
+    },
+    {
+      "id": "indq-05",
+      "type": "type",
+      "prompt": "Weißt du, wo Tom ___?",
+      "hint": "(arbeiten)",
+      "answers": [
+        "arbeitet"
+      ],
+      "explanation": "After wo the verb goes to the end and agrees with Tom: wo Tom arbeitet."
+    },
+    {
+      "id": "indq-06",
+      "type": "order",
+      "words": [
+        "Tom",
+        "weiß",
+        "nicht,",
+        "wo",
+        "Anna",
+        "wohnt."
+      ],
+      "answers": [
+        "Tom weiß nicht, wo Anna wohnt."
+      ],
+      "translation": "Tom doesn't know where Anna lives.",
+      "explanation": "The question word wo opens the subordinate clause; wohnt is last."
+    },
+    {
+      "id": "indq-07",
+      "type": "choice",
+      "prompt": "Weißt du, ___ die Schlüssel sind?",
+      "options": [
+        "wo",
+        "ob",
+        "dass"
+      ],
+      "answer": "wo",
+      "explanation": "Wo asks about place; ob would need a yes/no question without a question word."
+    },
+    {
+      "id": "indq-08",
+      "type": "type",
+      "prompt": "Ich weiß nicht, ___ ich das richtig gemacht habe.",
+      "hint": "(whether)",
+      "answers": [
+        "ob"
+      ],
+      "explanation": "A yes/no question inside a sentence is introduced by ob."
+    },
+    {
+      "id": "indq-09",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "sagen,",
+        "wann",
+        "der",
+        "Zug",
+        "fährt?"
+      ],
+      "answers": [
+        "Kannst du mir sagen, wann der Zug fährt?"
+      ],
+      "translation": "Can you tell me when the train leaves?",
+      "explanation": "A polite request with sagen: wann starts the clause and fährt goes to the end."
+    },
+    {
+      "id": "indq-10",
+      "type": "choice",
+      "prompt": "Wir wissen nicht, ___ er so spät kommt.",
+      "options": [
+        "warum",
+        "wer",
+        "wo"
+      ],
+      "answer": "warum",
+      "explanation": "Warum asks for the reason: Wir wissen nicht, warum er so spät kommt."
+    },
+    {
+      "id": "indq-11",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß",
+        "nicht,",
+        "was",
+        "das",
+        "kostet."
+      ],
+      "answers": [
+        "Ich weiß nicht, was das kostet."
+      ],
+      "translation": "I don't know what that costs.",
+      "explanation": "Was introduces the clause and kostet ends it."
+    },
+    {
+      "id": "indq-12",
+      "type": "choice",
+      "prompt": "Weißt du, wann der Film ___?",
+      "options": [
+        "anfängt",
+        "fängt an",
+        "fängt"
+      ],
+      "answer": "anfängt",
+      "explanation": "At the end of the clause a separable verb is written as one word: anfängt."
+    },
+    {
+      "id": "indq-13",
+      "type": "order",
+      "words": [
+        "Wissen",
+        "Sie,",
+        "wo",
+        "die",
+        "nächste",
+        "Apotheke",
+        "ist?"
+      ],
+      "answers": [
+        "Wissen Sie, wo die nächste Apotheke ist?"
+      ],
+      "translation": "Do you know where the nearest pharmacy is?",
+      "explanation": "Formal Wissen Sie starts the main clause; in wo die nächste Apotheke ist the verb ist goes last."
+    },
+    {
+      "id": "indq-14",
+      "type": "type",
+      "prompt": "Weißt du, ___ der Supermarkt schließt?",
+      "hint": "(when)",
+      "answers": [
+        "wann"
+      ],
+      "explanation": "wann asks for the time and starts the indirect question; schließt goes to the end."
+    },
+    {
+      "id": "indq-15",
+      "type": "order",
+      "words": [
+        "Sie",
+        "fragt,",
+        "ob",
+        "wir",
+        "Hunger",
+        "haben."
+      ],
+      "answers": [
+        "Sie fragt, ob wir Hunger haben."
+      ],
+      "translation": "She asks whether we are hungry.",
+      "explanation": "After fragen a yes/no question uses ob, with haben at the end."
+    },
+    {
+      "id": "indq-16",
+      "type": "choice",
+      "prompt": "Sie fragt, wie viel das ___.",
+      "options": [
+        "kostet",
+        "kosten",
+        "kostest"
+      ],
+      "answer": "kostet",
+      "explanation": "The verb goes to the end and agrees with das: das kostet."
+    },
+    {
+      "id": "indq-17",
+      "type": "type",
+      "prompt": "Er fragt, was wir morgen ___.",
+      "hint": "(machen)",
+      "answers": [
+        "machen"
+      ],
+      "explanation": "The verb goes to the end and agrees with wir: was wir morgen machen."
+    },
+    {
+      "id": "indq-18",
+      "type": "order",
+      "words": [
+        "Lena",
+        "möchte",
+        "wissen,",
+        "warum",
+        "du",
+        "so",
+        "müde",
+        "bist."
+      ],
+      "answers": [
+        "Lena möchte wissen, warum du so müde bist."
+      ],
+      "translation": "Lena wants to know why you are so tired.",
+      "explanation": "Möchte wissen is the main clause; warum starts the question and bist ends it."
+    },
+    {
+      "id": "indq-19",
+      "type": "choice",
+      "prompt": "Er fragt, ___ ich Kaffee oder Tee möchte.",
+      "options": [
+        "ob",
+        "was",
+        "dass"
+      ],
+      "answer": "ob",
+      "explanation": "The choice between two options is a yes/no-style question, so it takes ob."
+    },
+    {
+      "id": "indq-20",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "fragt,",
+        "wer",
+        "morgen",
+        "mitkommt."
+      ],
+      "answers": [
+        "Jonas fragt, wer morgen mitkommt."
+      ],
+      "translation": "Jonas asks who is coming along tomorrow.",
+      "explanation": "Wer is the subject of the indirect question; the separable verb mitkommt is one word at the end."
+    },
+    {
+      "id": "indq-21",
+      "type": "choice",
+      "prompt": "Kannst du mir sagen, ___ das Buch gehört?",
+      "options": [
+        "wem",
+        "wen",
+        "wer"
+      ],
+      "answer": "wem",
+      "explanation": "Gehören takes the dative, so the question word is wem."
+    },
+    {
+      "id": "indq-22",
+      "type": "type",
+      "prompt": "Ich möchte wissen, wann der Zug ___.",
+      "hint": "(ankommen)",
+      "answers": [
+        "ankommt"
+      ],
+      "explanation": "A separable verb at the end of the clause is not split: der Zug ankommt."
+    },
+    {
+      "id": "indq-23",
+      "type": "order",
+      "words": [
+        "Ich",
+        "habe",
+        "vergessen,",
+        "wann",
+        "die",
+        "Party",
+        "anfängt."
+      ],
+      "answers": [
+        "Ich habe vergessen, wann die Party anfängt."
+      ],
+      "translation": "I forgot when the party starts.",
+      "explanation": "Verbs like vergessen can introduce an indirect question; the separable verb anfängt is one word at the end."
+    },
+    {
+      "id": "indq-24",
+      "type": "choice",
+      "prompt": "Ich weiß nicht, ___ das Wetter morgen ist.",
+      "options": [
+        "wie",
+        "was",
+        "wer"
+      ],
+      "answer": "wie",
+      "explanation": "Wie asks about the manner or state: wie das Wetter ist."
+    },
+    {
+      "id": "indq-25",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "erklären,",
+        "wie",
+        "dieses",
+        "Gerät",
+        "funktioniert?"
+      ],
+      "answers": [
+        "Kannst du mir erklären, wie dieses Gerät funktioniert?"
+      ],
+      "translation": "Can you explain to me how this device works?",
+      "explanation": "Wie starts the indirect question and funktioniert goes to the end."
+    },
+    {
+      "id": "indq-26",
+      "type": "choice",
+      "prompt": "Weißt du, mit ___ Anna spricht?",
+      "options": [
+        "wem",
+        "wen",
+        "wer"
+      ],
+      "answer": "wem",
+      "explanation": "Mit takes the dative, so the question word is mit wem, and the verb spricht is last."
+    },
+    {
+      "id": "indq-27",
+      "type": "type",
+      "prompt": "Ich frage mich, ob sie die E-Mail schon gelesen ___.",
+      "hint": "(haben)",
+      "answers": [
+        "hat"
+      ],
+      "explanation": "In the perfect, the auxiliary comes last, after the participle: gelesen hat."
+    },
+    {
+      "id": "indq-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "möchte",
+        "wissen,",
+        "ob",
+        "du",
+        "gestern",
+        "angerufen",
+        "hast."
+      ],
+      "answers": [
+        "Ich möchte wissen, ob du gestern angerufen hast."
+      ],
+      "translation": "I would like to know whether you called yesterday.",
+      "explanation": "In a perfect-tense clause the participle comes before the conjugated auxiliary at the end."
+    },
+    {
+      "id": "indq-29",
+      "type": "order",
+      "words": [
+        "Sie",
+        "weiß",
+        "nicht,",
+        "wohin",
+        "er",
+        "gegangen",
+        "ist."
+      ],
+      "answers": [
+        "Sie weiß nicht, wohin er gegangen ist."
+      ],
+      "translation": "She doesn't know where he has gone.",
+      "explanation": "Wohin asks for direction; the participle gegangen precedes the auxiliary ist at the end."
+    },
+    {
+      "id": "indq-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß",
+        "nicht,",
+        "ob",
+        "er",
+        "schon",
+        "gegessen",
+        "hat."
+      ],
+      "answers": [
+        "Ich weiß nicht, ob er schon gegessen hat."
+      ],
+      "translation": "I don't know whether he has already eaten.",
+      "explanation": "Ob starts the clause and the auxiliary hat comes last, after gegessen."
+    }
+  ]
+}

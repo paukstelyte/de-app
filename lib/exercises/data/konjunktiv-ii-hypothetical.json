@@ -1,0 +1,382 @@
+{
+  "slug": "konjunktiv-ii-hypothetical",
+  "instructions": "Choose or type the correct Konjunktiv II form, or put the words in order.",
+  "items": [
+    {
+      "id": "konj2-01",
+      "type": "choice",
+      "prompt": "Wenn ich Zeit ___, würde ich reisen.",
+      "options": [
+        "hätte",
+        "habe",
+        "hatte"
+      ],
+      "answer": "hätte",
+      "explanation": "An unreal condition with wenn needs Konjunktiv II: haben becomes hätte."
+    },
+    {
+      "id": "konj2-02",
+      "type": "choice",
+      "prompt": "Ich ___ jetzt gern am Meer, aber ich muss arbeiten.",
+      "options": [
+        "wäre",
+        "bin",
+        "war"
+      ],
+      "answer": "wäre",
+      "explanation": "A wish about something not real now uses the Konjunktiv II of sein: ich wäre gern … (bin would say you really are there)."
+    },
+    {
+      "id": "konj2-03",
+      "type": "choice",
+      "prompt": "Wenn ich ein Vogel ___, würde ich fliegen.",
+      "options": [
+        "wäre",
+        "bin",
+        "werde"
+      ],
+      "answer": "wäre",
+      "explanation": "Being a bird is unreal, so the wenn-clause uses wäre, the Konjunktiv II of sein."
+    },
+    {
+      "id": "konj2-04",
+      "type": "choice",
+      "prompt": "Wenn ich du ___, würde ich den Job nehmen.",
+      "options": [
+        "wäre",
+        "bin",
+        "war"
+      ],
+      "answer": "wäre",
+      "explanation": "Wenn ich du wäre is the fixed pattern for giving advice: Konjunktiv II of sein."
+    },
+    {
+      "id": "konj2-05",
+      "type": "choice",
+      "prompt": "Wenn ich mehr Geld hätte, ___ ich ein Haus kaufen.",
+      "options": [
+        "würde",
+        "wurde",
+        "werde"
+      ],
+      "answer": "würde",
+      "explanation": "Most verbs form Konjunktiv II with würde + infinitive: ich würde kaufen."
+    },
+    {
+      "id": "konj2-06",
+      "type": "choice",
+      "prompt": "An deiner Stelle ___ ich früher ins Bett gehen.",
+      "options": [
+        "würde",
+        "werde",
+        "wurde"
+      ],
+      "answer": "würde",
+      "explanation": "Advice with an deiner Stelle (in your place) uses würde + infinitive: ich würde gehen."
+    },
+    {
+      "id": "konj2-07",
+      "type": "choice",
+      "prompt": "Wenn das Wetter schön wäre, ___ wir ins Schwimmbad gehen.",
+      "options": [
+        "würden",
+        "werden",
+        "wurden"
+      ],
+      "answer": "würden",
+      "explanation": "wir takes würden (ending -en) plus the infinitive at the end: würden gehen."
+    },
+    {
+      "id": "konj2-08",
+      "type": "choice",
+      "prompt": "Ich wünschte, es ___ schon Freitag.",
+      "options": [
+        "wäre",
+        "ist",
+        "war"
+      ],
+      "answer": "wäre",
+      "explanation": "After ich wünschte the wish is in Konjunktiv II: es wäre."
+    },
+    {
+      "id": "konj2-09",
+      "type": "choice",
+      "prompt": "Ich wünschte, ich ___ ein eigenes Zimmer.",
+      "options": [
+        "hätte",
+        "habe",
+        "hatte"
+      ],
+      "answer": "hätte",
+      "explanation": "A wish for something you do not have takes Konjunktiv II: ich hätte."
+    },
+    {
+      "id": "konj2-10",
+      "type": "choice",
+      "prompt": "Mit mehr Geld ___ wir ein größeres Haus kaufen, aber leider haben wir nicht genug.",
+      "options": [
+        "könnten",
+        "können",
+        "konnten"
+      ],
+      "answer": "könnten",
+      "explanation": "The situation is not real (we don't have enough money), so the modal verb takes its own Konjunktiv II: können → könnten."
+    },
+    {
+      "id": "konj2-11",
+      "type": "choice",
+      "prompt": "Du ___ mal zum Arzt gehen.",
+      "options": [
+        "solltest",
+        "solltet",
+        "sollten"
+      ],
+      "answer": "solltest",
+      "explanation": "For advice use sollte-forms: du solltest = you should."
+    },
+    {
+      "id": "konj2-12",
+      "type": "choice",
+      "prompt": "Es ___ schön, wenn du mitkommen könntest.",
+      "options": [
+        "wäre",
+        "ist",
+        "war"
+      ],
+      "answer": "wäre",
+      "explanation": "The wish is not real yet (könntest), so the main clause also uses the Konjunktiv II of sein: es wäre schön."
+    },
+    {
+      "id": "konj2-13",
+      "type": "type",
+      "prompt": "Wenn ich einen Garten ___, würde ich Tomaten pflanzen.",
+      "hint": "(haben)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "haben has its own Konjunktiv II form: ich hätte."
+    },
+    {
+      "id": "konj2-14",
+      "type": "type",
+      "prompt": "Wenn wir jetzt in Spanien ___, würden wir am Strand liegen.",
+      "hint": "(sein)",
+      "answers": [
+        "wären"
+      ],
+      "explanation": "sein becomes wären for wir in Konjunktiv II."
+    },
+    {
+      "id": "konj2-15",
+      "type": "type",
+      "prompt": "Wenn Tom reich wäre, ___ er ein Boot kaufen.",
+      "hint": "(werden)",
+      "answers": [
+        "würde"
+      ],
+      "explanation": "The auxiliary for Konjunktiv II is würde: er würde kaufen."
+    },
+    {
+      "id": "konj2-16",
+      "type": "type",
+      "prompt": "Wenn ich fliegen ___, wäre ich schon in Rom.",
+      "hint": "(können)",
+      "answers": [
+        "könnte"
+      ],
+      "explanation": "können becomes könnte in Konjunktiv II (no ending for ich/er)."
+    },
+    {
+      "id": "konj2-17",
+      "type": "type",
+      "prompt": "Wenn ich nicht arbeiten ___, würde ich länger schlafen.",
+      "hint": "(müssen)",
+      "answers": [
+        "müsste"
+      ],
+      "explanation": "müssen becomes müsste in Konjunktiv II, with Umlaut."
+    },
+    {
+      "id": "konj2-18",
+      "type": "type",
+      "prompt": "Ihr ___ besser ein Taxi nehmen.",
+      "hint": "(sollen, advice)",
+      "answers": [
+        "solltet"
+      ],
+      "explanation": "For advice use sollen in Konjunktiv II: ihr solltet."
+    },
+    {
+      "id": "konj2-19",
+      "type": "type",
+      "prompt": "Ich wünschte, ich ___ besser singen.",
+      "hint": "(können)",
+      "answers": [
+        "könnte"
+      ],
+      "explanation": "A wish after ich wünschte uses Konjunktiv II of the modal verb: ich könnte."
+    },
+    {
+      "id": "konj2-20",
+      "type": "type",
+      "prompt": "Was ___ du machen, wenn du im Lotto gewinnen würdest?",
+      "hint": "(werden)",
+      "answers": [
+        "würdest"
+      ],
+      "explanation": "For du the helper is würdest: Was würdest du machen?"
+    },
+    {
+      "id": "konj2-21",
+      "type": "type",
+      "prompt": "Wenn ich seine Adresse ___, würde ich ihm schreiben.",
+      "hint": "(wissen)",
+      "answers": [
+        "wüsste"
+      ],
+      "explanation": "wissen has the Konjunktiv II form wüsste (Umlaut, ending -te)."
+    },
+    {
+      "id": "konj2-22",
+      "type": "type",
+      "prompt": "Wenn Anna und Tom mehr Zeit ___, würden sie öfter kommen.",
+      "hint": "(haben)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "For sie (plural) haben becomes hätten."
+    },
+    {
+      "id": "konj2-23",
+      "type": "type",
+      "prompt": "Wenn ihr hier ___, könntet ihr mitessen.",
+      "hint": "(sein)",
+      "answers": [
+        "wärt",
+        "wäret"
+      ],
+      "explanation": "For ihr, sein becomes wärt (or the longer wäret)."
+    },
+    {
+      "id": "konj2-24",
+      "type": "type",
+      "prompt": "Wenn ich 18 wäre, ___ ich Auto fahren.",
+      "hint": "(dürfen)",
+      "answers": [
+        "dürfte"
+      ],
+      "explanation": "dürfen has its own Konjunktiv II form with Umlaut: ich dürfte."
+    },
+    {
+      "id": "konj2-25",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "es",
+        "warm",
+        "wäre,",
+        "könnten",
+        "wir",
+        "schwimmen."
+      ],
+      "answers": [
+        "Wenn es warm wäre, könnten wir schwimmen."
+      ],
+      "translation": "If it were warm, we could swim.",
+      "explanation": "In the wenn-clause the verb (wäre) is last; the main clause then starts with the verb könnten."
+    },
+    {
+      "id": "konj2-26",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "Tom",
+        "Zeit",
+        "hätte,",
+        "würde",
+        "er",
+        "kochen."
+      ],
+      "answers": [
+        "Wenn Tom Zeit hätte, würde er kochen."
+      ],
+      "translation": "If Tom had time, he would cook.",
+      "explanation": "wenn sends hätte to the end; würde opens the main clause and the infinitive kochen goes last."
+    },
+    {
+      "id": "konj2-27",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "ich",
+        "reich",
+        "wäre,",
+        "würde",
+        "ich",
+        "viel",
+        "reisen."
+      ],
+      "answers": [
+        "Wenn ich reich wäre, würde ich viel reisen."
+      ],
+      "translation": "If I were rich, I would travel a lot.",
+      "explanation": "Unreal wenn-clause with wäre, then würde + infinitive at the end."
+    },
+    {
+      "id": "konj2-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "wünschte,",
+        "ich",
+        "hätte",
+        "mehr",
+        "Zeit."
+      ],
+      "answers": [
+        "Ich wünschte, ich hätte mehr Zeit."
+      ],
+      "translation": "I wish I had more time.",
+      "explanation": "After ich wünschte the wish clause uses Konjunktiv II: ich hätte."
+    },
+    {
+      "id": "konj2-29",
+      "type": "order",
+      "words": [
+        "An",
+        "deiner",
+        "Stelle",
+        "würde",
+        "ich",
+        "ihn",
+        "anrufen."
+      ],
+      "answers": [
+        "An deiner Stelle würde ich ihn anrufen."
+      ],
+      "translation": "In your place I would call him.",
+      "explanation": "Advice: würde in second position, infinitive anrufen at the end."
+    },
+    {
+      "id": "konj2-30",
+      "type": "order",
+      "words": [
+        "Was",
+        "würdest",
+        "du",
+        "tun,",
+        "wenn",
+        "du",
+        "ein",
+        "Jahr",
+        "frei",
+        "hättest?"
+      ],
+      "answers": [
+        "Was würdest du tun, wenn du ein Jahr frei hättest?"
+      ],
+      "translation": "What would you do if you had a year off?",
+      "explanation": "The question has würdest in second position; the wenn-clause sends hättest to the end."
+    }
+  ]
+}

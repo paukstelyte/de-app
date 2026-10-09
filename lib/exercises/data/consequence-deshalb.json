@@ -1,0 +1,462 @@
+{
+  "slug": "consequence-deshalb",
+  "instructions": "Choose, type or arrange the words so the sentence expresses a consequence with deshalb, deswegen or darum.",
+  "items": [
+    {
+      "id": "deshalb-01",
+      "type": "choice",
+      "prompt": "Es ist kalt, ___ trage ich eine Jacke.",
+      "options": [
+        "deshalb",
+        "weil",
+        "obwohl"
+      ],
+      "answer": "deshalb",
+      "explanation": "deshalb gives the result (that's why) and is followed directly by the verb; weil and obwohl send the verb to the end."
+    },
+    {
+      "id": "deshalb-02",
+      "type": "choice",
+      "prompt": "Wir nehmen ein Taxi, ___ es schon spät ist.",
+      "options": [
+        "deshalb",
+        "weil",
+        "darum"
+      ],
+      "answer": "weil",
+      "explanation": "The verb ist stands at the end, so this clause needs the subordinating conjunction weil, not deshalb or darum."
+    },
+    {
+      "id": "deshalb-03",
+      "type": "choice",
+      "prompt": "Anna ist krank, ___ geht sie nicht zur Schule.",
+      "options": [
+        "deshalb",
+        "denn",
+        "aber"
+      ],
+      "answer": "deshalb",
+      "explanation": "deshalb states the consequence and takes position 1, then the verb: deshalb geht sie. denn and aber do not."
+    },
+    {
+      "id": "deshalb-04",
+      "type": "choice",
+      "prompt": "Ich gehe heute nicht ins Büro, ___ ich habe Fieber.",
+      "options": [
+        "denn",
+        "deshalb",
+        "darum"
+      ],
+      "answer": "denn",
+      "explanation": "The second part gives the reason, and denn keeps normal order (ich habe). deshalb and darum would give a result and need the verb next: deshalb habe ich."
+    },
+    {
+      "id": "deshalb-05",
+      "type": "choice",
+      "prompt": "Tom hat kein Geld, ___ kauft er nichts.",
+      "options": [
+        "deshalb",
+        "obwohl",
+        "dass"
+      ],
+      "answer": "deshalb",
+      "explanation": "The second clause is the consequence of the first, so deshalb fits; obwohl and dass would need the verb at the end."
+    },
+    {
+      "id": "deshalb-06",
+      "type": "choice",
+      "prompt": "Ich habe Kopfschmerzen, deshalb ___ eine Tablette.",
+      "options": [
+        "nehme ich",
+        "ich nehme"
+      ],
+      "answer": "nehme ich",
+      "explanation": "deshalb is in position 1 of its clause, so the verb comes right after it: deshalb nehme ich."
+    },
+    {
+      "id": "deshalb-07",
+      "type": "choice",
+      "prompt": "Lena mag Tiere, ___ arbeitet sie im Tierheim.",
+      "options": [
+        "darum",
+        "damit",
+        "dafür"
+      ],
+      "answer": "darum",
+      "explanation": "darum means that's why, like deshalb and deswegen. damit and dafür have other meanings."
+    },
+    {
+      "id": "deshalb-08",
+      "type": "choice",
+      "prompt": "Das Essen war schlecht, deshalb ___ nie wieder in dieses Restaurant.",
+      "options": [
+        "gehen wir",
+        "wir gehen"
+      ],
+      "answer": "gehen wir",
+      "explanation": "After deshalb the verb takes position 2 and the subject follows it: deshalb gehen wir."
+    },
+    {
+      "id": "deshalb-09",
+      "type": "type",
+      "prompt": "Das Wetter ist schlecht, ___ gehen wir nicht spazieren.",
+      "hint": "(that's why)",
+      "answers": [
+        "deshalb",
+        "deswegen",
+        "darum",
+        "daher",
+        "also"
+      ],
+      "explanation": "deshalb, deswegen, darum, daher (and also = so) all give the result and are followed directly by the verb: gehen wir."
+    },
+    {
+      "id": "deshalb-10",
+      "type": "type",
+      "prompt": "Mein Bruder ist krank, ___ besuche ich ihn.",
+      "hint": "(that's why)",
+      "answers": [
+        "deshalb",
+        "deswegen",
+        "darum",
+        "daher",
+        "also"
+      ],
+      "explanation": "These linking words fill position 1 of the second clause, so the verb comes next: besuche ich."
+    },
+    {
+      "id": "deshalb-11",
+      "type": "type",
+      "prompt": "Der Zug fällt aus, ___ fahre ich mit dem Auto.",
+      "hint": "(that's why)",
+      "answers": [
+        "deshalb",
+        "deswegen",
+        "darum",
+        "daher",
+        "also"
+      ],
+      "explanation": "deshalb, deswegen, darum or daher express the consequence; the verb follows: fahre ich."
+    },
+    {
+      "id": "deshalb-12",
+      "type": "type",
+      "prompt": "Anna ist krank, deshalb ___ sie zu Hause.",
+      "hint": "(bleiben)",
+      "answers": [
+        "bleibt"
+      ],
+      "explanation": "After deshalb the conjugated verb comes next; with sie the form is bleibt."
+    },
+    {
+      "id": "deshalb-13",
+      "type": "type",
+      "prompt": "Ich habe den Bus verpasst, deshalb ___ ich zu Fuß gegangen.",
+      "hint": "(sein)",
+      "answers": [
+        "bin"
+      ],
+      "explanation": "In the Perfekt the conjugated auxiliary comes right after deshalb: deshalb bin ich gegangen; the participle stays at the end."
+    },
+    {
+      "id": "deshalb-14",
+      "type": "type",
+      "prompt": "Anna liebt Italien, deshalb ___ sie Italienisch lernen.",
+      "hint": "(wollen)",
+      "answers": [
+        "will"
+      ],
+      "explanation": "The modal verb comes right after deshalb and the infinitive lernen goes to the end: deshalb will sie lernen."
+    },
+    {
+      "id": "deshalb-15",
+      "type": "type",
+      "prompt": "Der Zug hatte Verspätung, deshalb ___ wir spät an.",
+      "hint": "(ankommen, Präteritum)",
+      "answers": [
+        "kamen"
+      ],
+      "explanation": "The separable verb splits: kamen takes position 2 after deshalb and the prefix an goes to the end."
+    },
+    {
+      "id": "deshalb-16",
+      "type": "type",
+      "prompt": "Wir haben Besuch, darum ___ ich heute viel einkaufen.",
+      "hint": "(müssen)",
+      "answers": [
+        "muss"
+      ],
+      "explanation": "After darum the modal comes first: darum muss ich einkaufen. Ich takes the form muss."
+    },
+    {
+      "id": "deshalb-17",
+      "type": "type",
+      "prompt": "Ich lerne Deutsch, deswegen ___ ich viele Filme auf Deutsch.",
+      "hint": "(sehen)",
+      "answers": [
+        "sehe"
+      ],
+      "explanation": "The verb follows deswegen directly, then the subject: deswegen sehe ich. Ich takes sehe."
+    },
+    {
+      "id": "deshalb-18",
+      "type": "type",
+      "prompt": "Lena hat Geburtstag, deshalb ___ wir eine Party.",
+      "hint": "(machen)",
+      "answers": [
+        "machen"
+      ],
+      "explanation": "The verb comes straight after deshalb, followed by the subject: deshalb machen wir."
+    },
+    {
+      "id": "deshalb-19",
+      "type": "order",
+      "words": [
+        "Ich",
+        "bin",
+        "müde,",
+        "deshalb",
+        "gehe",
+        "ich",
+        "früh",
+        "ins",
+        "Bett."
+      ],
+      "answers": [
+        "Ich bin müde, deshalb gehe ich früh ins Bett.",
+        "Ich bin müde, ich gehe deshalb früh ins Bett."
+      ],
+      "translation": "I am tired, that's why I go to bed early.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb gehe ich / ich gehe deshalb."
+    },
+    {
+      "id": "deshalb-20",
+      "type": "order",
+      "answers": [
+        "Es ist sehr heiß, deshalb trinken wir viel Wasser.",
+        "Es ist sehr heiß, wir trinken deshalb viel Wasser."
+      ],
+      "translation": "It is very hot, that's why we drink a lot of water.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb trinken wir / wir trinken deshalb.",
+      "words": [
+        "Es",
+        "ist",
+        "sehr",
+        "heiß,",
+        "deshalb",
+        "trinken",
+        "wir",
+        "viel",
+        "Wasser."
+      ]
+    },
+    {
+      "id": "deshalb-21",
+      "type": "order",
+      "words": [
+        "Anna",
+        "hat",
+        "Hunger,",
+        "darum",
+        "kocht",
+        "sie",
+        "Nudeln."
+      ],
+      "answers": [
+        "Anna hat Hunger, darum kocht sie Nudeln.",
+        "Anna hat Hunger, sie kocht darum Nudeln."
+      ],
+      "translation": "Anna is hungry, that's why she cooks pasta.",
+      "explanation": "darum can take position 1 (verb next) or stand after the verb: darum kocht sie / sie kocht darum."
+    },
+    {
+      "id": "deshalb-22",
+      "type": "order",
+      "words": [
+        "Tom",
+        "ist",
+        "krank,",
+        "deswegen",
+        "kommt",
+        "er",
+        "nicht",
+        "zur",
+        "Arbeit."
+      ],
+      "answers": [
+        "Tom ist krank, deswegen kommt er nicht zur Arbeit.",
+        "Tom ist krank, er kommt deswegen nicht zur Arbeit."
+      ],
+      "translation": "Tom is ill, that's why he is not coming to work.",
+      "explanation": "deswegen can take position 1 (verb next) or stand after the verb: deswegen kommt er / er kommt deswegen."
+    },
+    {
+      "id": "deshalb-23",
+      "type": "order",
+      "words": [
+        "Wir",
+        "haben",
+        "kein",
+        "Brot,",
+        "deshalb",
+        "gehen",
+        "wir",
+        "zum",
+        "Supermarkt."
+      ],
+      "answers": [
+        "Wir haben kein Brot, deshalb gehen wir zum Supermarkt.",
+        "Wir haben kein Brot, wir gehen deshalb zum Supermarkt."
+      ],
+      "translation": "We have no bread, that's why we are going to the supermarket.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb gehen wir / wir gehen deshalb."
+    },
+    {
+      "id": "deshalb-24",
+      "type": "order",
+      "words": [
+        "Lena",
+        "lernt",
+        "viel,",
+        "deshalb",
+        "besteht",
+        "sie",
+        "die",
+        "Prüfung."
+      ],
+      "answers": [
+        "Lena lernt viel, deshalb besteht sie die Prüfung.",
+        "Lena lernt viel, sie besteht deshalb die Prüfung."
+      ],
+      "translation": "Lena studies a lot, that's why she passes the exam.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb besteht sie / sie besteht deshalb."
+    },
+    {
+      "id": "deshalb-25",
+      "type": "order",
+      "words": [
+        "Der",
+        "Bus",
+        "kommt",
+        "nicht,",
+        "deshalb",
+        "nehme",
+        "ich",
+        "ein",
+        "Taxi."
+      ],
+      "answers": [
+        "Der Bus kommt nicht, deshalb nehme ich ein Taxi.",
+        "Der Bus kommt nicht, ich nehme deshalb ein Taxi."
+      ],
+      "translation": "The bus isn't coming, that's why I'm taking a taxi.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb nehme ich / ich nehme deshalb."
+    },
+    {
+      "id": "deshalb-26",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "hat",
+        "verschlafen,",
+        "deshalb",
+        "ist",
+        "er",
+        "zu",
+        "spät",
+        "gekommen."
+      ],
+      "answers": [
+        "Jonas hat verschlafen, deshalb ist er zu spät gekommen.",
+        "Jonas hat verschlafen, er ist deshalb zu spät gekommen."
+      ],
+      "translation": "Jonas overslept, that's why he came too late.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb ist er / er ist deshalb … gekommen."
+    },
+    {
+      "id": "deshalb-27",
+      "type": "order",
+      "words": [
+        "Das",
+        "Wetter",
+        "ist",
+        "schön,",
+        "deshalb",
+        "machen",
+        "wir",
+        "einen",
+        "Ausflug."
+      ],
+      "answers": [
+        "Das Wetter ist schön, deshalb machen wir einen Ausflug.",
+        "Das Wetter ist schön, wir machen deshalb einen Ausflug."
+      ],
+      "translation": "The weather is nice, that's why we are going on a trip.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb machen wir / wir machen deshalb."
+    },
+    {
+      "id": "deshalb-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "habe",
+        "keine",
+        "Zeit,",
+        "deshalb",
+        "kann",
+        "ich",
+        "nicht",
+        "mitkommen."
+      ],
+      "answers": [
+        "Ich habe keine Zeit, deshalb kann ich nicht mitkommen.",
+        "Ich habe keine Zeit, ich kann deshalb nicht mitkommen."
+      ],
+      "translation": "I have no time, that's why I can't come along.",
+      "explanation": "deshalb can take position 1 (verb next) or stand after the verb: deshalb kann ich / ich kann deshalb … mitkommen."
+    },
+    {
+      "id": "deshalb-29",
+      "type": "order",
+      "words": [
+        "Mein",
+        "Handy",
+        "ist",
+        "kaputt,",
+        "deswegen",
+        "kann",
+        "ich",
+        "dich",
+        "nicht",
+        "anrufen."
+      ],
+      "answers": [
+        "Mein Handy ist kaputt, deswegen kann ich dich nicht anrufen.",
+        "Mein Handy ist kaputt, ich kann dich deswegen nicht anrufen."
+      ],
+      "translation": "My phone is broken, that's why I can't call you.",
+      "explanation": "deswegen can take position 1 (verb next) or stand after the verb: deswegen kann ich dich / ich kann dich deswegen … anrufen."
+    },
+    {
+      "id": "deshalb-30",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kinder",
+        "sind",
+        "müde,",
+        "darum",
+        "gehen",
+        "sie",
+        "früh",
+        "schlafen."
+      ],
+      "answers": [
+        "Die Kinder sind müde, darum gehen sie früh schlafen.",
+        "Die Kinder sind müde, sie gehen darum früh schlafen."
+      ],
+      "translation": "The children are tired, that's why they go to sleep early.",
+      "explanation": "darum can take position 1 (verb next) or stand after the verb: darum gehen sie / sie gehen darum."
+    }
+  ]
+}

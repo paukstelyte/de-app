@@ -1,0 +1,392 @@
+{
+  "slug": "infinitive-with-zu",
+  "instructions": "Choose or write the correct form of the infinitive, with or without zu.",
+  "items": [
+    {
+      "id": "inf-zu-01",
+      "type": "choice",
+      "prompt": "Es ist wichtig, jeden Tag Deutsch ___ lernen.",
+      "options": [
+        "zu",
+        "um",
+        "dass"
+      ],
+      "answer": "zu",
+      "explanation": "After es ist wichtig the second verb is an infinitive with zu: zu lernen."
+    },
+    {
+      "id": "inf-zu-02",
+      "type": "choice",
+      "prompt": "Ich habe keine Lust, heute ___ arbeiten.",
+      "options": [
+        "zu",
+        "um",
+        "für"
+      ],
+      "answer": "zu",
+      "explanation": "After keine Lust haben the infinitive takes zu: heute zu arbeiten."
+    },
+    {
+      "id": "inf-zu-03",
+      "type": "choice",
+      "prompt": "Anna kann heute leider nicht ___.",
+      "options": [
+        "mitkommen",
+        "mitzukommen",
+        "zu mitkommen"
+      ],
+      "answer": "mitkommen",
+      "explanation": "Modal verbs (können, müssen, wollen) take a bare infinitive without zu: kann … mitkommen."
+    },
+    {
+      "id": "inf-zu-04",
+      "type": "choice",
+      "prompt": "Tom hofft, bald eine Wohnung ___ finden.",
+      "options": [
+        "zu",
+        "dass",
+        "wenn"
+      ],
+      "answer": "zu",
+      "explanation": "hoffen can take an infinitive clause with zu when the subject stays the same."
+    },
+    {
+      "id": "inf-zu-05",
+      "type": "choice",
+      "prompt": "Lena hat vergessen, die Tür ___.",
+      "options": [
+        "abzuschließen",
+        "zu abschließen",
+        "abschließen zu"
+      ],
+      "answer": "abzuschließen",
+      "explanation": "vergessen takes an infinitive with zu. With a separable verb, zu goes between prefix and verb, written as one word: ab + zu + schließen = abzuschließen."
+    },
+    {
+      "id": "inf-zu-06",
+      "type": "choice",
+      "prompt": "Wir fangen an, das Essen ___.",
+      "options": [
+        "zu kochen",
+        "kochen",
+        "zu gekocht"
+      ],
+      "answer": "zu kochen",
+      "explanation": "anfangen takes an infinitive with zu: das Essen zu kochen."
+    },
+    {
+      "id": "inf-zu-07",
+      "type": "choice",
+      "prompt": "Tom verspricht, morgen pünktlich ___.",
+      "options": [
+        "zu kommen",
+        "kommen",
+        "kommt"
+      ],
+      "answer": "zu kommen",
+      "explanation": "versprechen is followed by an infinitive clause with zu: morgen pünktlich zu kommen."
+    },
+    {
+      "id": "inf-zu-08",
+      "type": "choice",
+      "prompt": "Jonas will nächstes Jahr nach Berlin ___.",
+      "options": [
+        "ziehen",
+        "zu ziehen",
+        "gezogen"
+      ],
+      "answer": "ziehen",
+      "explanation": "wollen is a modal verb, so the infinitive stands without zu."
+    },
+    {
+      "id": "inf-zu-09",
+      "type": "choice",
+      "prompt": "Es beginnt gleich ___ regnen.",
+      "options": [
+        "zu",
+        "dass",
+        "ohne"
+      ],
+      "answer": "zu",
+      "explanation": "beginnen is followed by an infinitive with zu: zu regnen."
+    },
+    {
+      "id": "inf-zu-10",
+      "type": "choice",
+      "prompt": "Ich gehe heute Abend ___.",
+      "options": [
+        "schwimmen",
+        "zu schwimmen",
+        "schwimmen zu"
+      ],
+      "answer": "schwimmen",
+      "explanation": "gehen + an activity verb (schwimmen gehen, einkaufen gehen) uses the bare infinitive, never zu."
+    },
+    {
+      "id": "inf-zu-11",
+      "type": "choice",
+      "prompt": "Es ist schön, dich ___ sehen.",
+      "options": [
+        "zu",
+        "als",
+        "wie"
+      ],
+      "answer": "zu",
+      "explanation": "After adjectives like schön, leicht, schwer the infinitive takes zu: dich zu sehen."
+    },
+    {
+      "id": "inf-zu-12",
+      "type": "choice",
+      "prompt": "Sie hat Angst, allein ___ reisen.",
+      "options": [
+        "zu",
+        "weil",
+        "dass"
+      ],
+      "answer": "zu",
+      "explanation": "Angst haben is followed by an infinitive with zu when the subject is the same."
+    },
+    {
+      "id": "inf-zu-13",
+      "type": "type",
+      "prompt": "Ich vergesse oft, meine Oma ___.",
+      "hint": "(anrufen)",
+      "answers": [
+        "anzurufen"
+      ],
+      "explanation": "Separable verbs put zu between prefix and verb: an + zu + rufen = anzurufen."
+    },
+    {
+      "id": "inf-zu-14",
+      "type": "type",
+      "prompt": "Es ist schwer, früh ___.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "aufzustehen"
+      ],
+      "explanation": "auf is a separable prefix, so zu goes in the middle: aufzustehen."
+    },
+    {
+      "id": "inf-zu-15",
+      "type": "type",
+      "prompt": "Hast du Lust, heute Abend mit uns ___?",
+      "hint": "(ausgehen)",
+      "answers": [
+        "auszugehen"
+      ],
+      "explanation": "aus + zu + gehen = auszugehen; zu sits between the prefix and the verb."
+    },
+    {
+      "id": "inf-zu-16",
+      "type": "type",
+      "prompt": "Er plant, im Sommer nach Spanien ___.",
+      "hint": "(fahren)",
+      "answers": [
+        "zu fahren"
+      ],
+      "explanation": "With a verb without separable prefix, zu stands before the infinitive: zu fahren."
+    },
+    {
+      "id": "inf-zu-17",
+      "type": "type",
+      "prompt": "Ich versuche, mehr Wasser ___.",
+      "hint": "(trinken)",
+      "answers": [
+        "zu trinken"
+      ],
+      "explanation": "versuchen is followed by an infinitive with zu, placed at the end: zu trinken."
+    },
+    {
+      "id": "inf-zu-18",
+      "type": "type",
+      "prompt": "Sie bittet mich, das Fenster ___.",
+      "hint": "(aufmachen)",
+      "answers": [
+        "aufzumachen"
+      ],
+      "explanation": "aufmachen is separable, so zu goes inside: aufzumachen."
+    },
+    {
+      "id": "inf-zu-19",
+      "type": "type",
+      "prompt": "Es ist nicht erlaubt, hier ___.",
+      "hint": "(parken)",
+      "answers": [
+        "zu parken"
+      ],
+      "explanation": "After es ist erlaubt / verboten the infinitive takes zu: zu parken."
+    },
+    {
+      "id": "inf-zu-20",
+      "type": "type",
+      "prompt": "Wir haben beschlossen, ein Haus ___.",
+      "hint": "(kaufen)",
+      "answers": [
+        "zu kaufen"
+      ],
+      "explanation": "beschließen is followed by an infinitive with zu: ein Haus zu kaufen."
+    },
+    {
+      "id": "inf-zu-21",
+      "type": "type",
+      "prompt": "Ich habe vor, morgen mein Zimmer ___.",
+      "hint": "(aufräumen)",
+      "answers": [
+        "aufzuräumen"
+      ],
+      "explanation": "Separable verb auf|räumen: zu goes between prefix and verb, aufzuräumen."
+    },
+    {
+      "id": "inf-zu-22",
+      "type": "type",
+      "prompt": "Vergiss nicht, die Heizung ___!",
+      "hint": "(ausmachen)",
+      "answers": [
+        "auszumachen"
+      ],
+      "explanation": "aus + zu + machen = auszumachen; the infinitive clause ends the sentence."
+    },
+    {
+      "id": "inf-zu-23",
+      "type": "order",
+      "words": [
+        "Anna",
+        "hat",
+        "vergessen,",
+        "Milch",
+        "zu",
+        "kaufen."
+      ],
+      "answers": [
+        "Anna hat vergessen, Milch zu kaufen."
+      ],
+      "translation": "Anna forgot to buy milk.",
+      "explanation": "The infinitive with zu stands at the end of the clause: Milch zu kaufen."
+    },
+    {
+      "id": "inf-zu-24",
+      "type": "order",
+      "words": [
+        "Tom",
+        "hat",
+        "keine",
+        "Zeit,",
+        "ein",
+        "Buch",
+        "zu",
+        "lesen."
+      ],
+      "answers": [
+        "Tom hat keine Zeit, ein Buch zu lesen."
+      ],
+      "translation": "Tom has no time to read a book.",
+      "explanation": "zu + infinitive closes the clause, after the object: ein Buch zu lesen."
+    },
+    {
+      "id": "inf-zu-25",
+      "type": "order",
+      "words": [
+        "Lena",
+        "versucht,",
+        "jeden",
+        "Morgen",
+        "früh",
+        "aufzustehen."
+      ],
+      "answers": [
+        "Lena versucht, jeden Morgen früh aufzustehen."
+      ],
+      "translation": "Lena tries to get up early every morning.",
+      "explanation": "Separable verb: zu goes inside, aufzustehen, at the end of the clause."
+    },
+    {
+      "id": "inf-zu-26",
+      "type": "order",
+      "words": [
+        "Es",
+        "ist",
+        "wichtig,",
+        "genug",
+        "zu",
+        "schlafen."
+      ],
+      "answers": [
+        "Es ist wichtig, genug zu schlafen."
+      ],
+      "translation": "It is important to sleep enough.",
+      "explanation": "After the comma the clause ends with zu + infinitive: genug zu schlafen."
+    },
+    {
+      "id": "inf-zu-27",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "hofft,",
+        "bald",
+        "einen",
+        "Job",
+        "zu",
+        "finden."
+      ],
+      "answers": [
+        "Jonas hofft, bald einen Job zu finden."
+      ],
+      "translation": "Jonas hopes to find a job soon.",
+      "explanation": "The object and time word come first, then zu finden at the end."
+    },
+    {
+      "id": "inf-zu-28",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "Lust,",
+        "mit",
+        "mir",
+        "ins",
+        "Kino",
+        "zu",
+        "gehen?"
+      ],
+      "answers": [
+        "Hast du Lust, mit mir ins Kino zu gehen?"
+      ],
+      "translation": "Do you feel like going to the cinema with me?",
+      "explanation": "The infinitive clause ends with zu gehen, followed by the question mark."
+    },
+    {
+      "id": "inf-zu-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "freue",
+        "mich,",
+        "dich",
+        "bald",
+        "wiederzusehen."
+      ],
+      "answers": [
+        "Ich freue mich, dich bald wiederzusehen."
+      ],
+      "translation": "I am looking forward to seeing you again soon.",
+      "explanation": "wieder|sehen is separable, so zu is inserted: wiederzusehen."
+    },
+    {
+      "id": "inf-zu-30",
+      "type": "order",
+      "words": [
+        "Mia",
+        "fängt",
+        "an,",
+        "ihr",
+        "Zimmer",
+        "aufzuräumen."
+      ],
+      "answers": [
+        "Mia fängt an, ihr Zimmer aufzuräumen."
+      ],
+      "translation": "Mia starts to tidy up her room.",
+      "explanation": "anfangen + infinitive with zu; the separable verb becomes aufzuräumen."
+    }
+  ]
+}

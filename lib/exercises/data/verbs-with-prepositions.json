@@ -1,0 +1,372 @@
+{
+  "slug": "verbs-with-prepositions",
+  "instructions": "Complete each sentence with the preposition, article or da-/wo- word that the verb requires.",
+  "items": [
+    {
+      "id": "vwp-01",
+      "type": "choice",
+      "prompt": "Ich warte ___ den Bus.",
+      "options": [
+        "auf",
+        "für",
+        "an",
+        "mit"
+      ],
+      "answer": "auf",
+      "explanation": "warten takes auf + accusative: warten auf den Bus."
+    },
+    {
+      "id": "vwp-02",
+      "type": "choice",
+      "prompt": "Lena freut sich ___ die gute Note von gestern.",
+      "options": [
+        "über",
+        "an",
+        "von",
+        "mit"
+      ],
+      "answer": "über",
+      "explanation": "sich freuen über + accusative is for something that has already happened (the grade from yesterday); sich freuen auf is for the future."
+    },
+    {
+      "id": "vwp-03",
+      "type": "choice",
+      "prompt": "Tom denkt oft ___ seine Oma.",
+      "options": [
+        "an",
+        "für",
+        "mit",
+        "bei"
+      ],
+      "answer": "an",
+      "explanation": "denken an + accusative means to think of someone."
+    },
+    {
+      "id": "vwp-04",
+      "type": "choice",
+      "prompt": "Ich interessiere mich ___ Musik.",
+      "options": [
+        "für",
+        "an",
+        "auf",
+        "über"
+      ],
+      "answer": "für",
+      "explanation": "sich interessieren für + accusative: Ich interessiere mich für Musik."
+    },
+    {
+      "id": "vwp-05",
+      "type": "choice",
+      "prompt": "Sie hat Angst ___ dem Hund.",
+      "options": [
+        "vor",
+        "von",
+        "für",
+        "an"
+      ],
+      "answer": "vor",
+      "explanation": "Angst haben vor + dative: vor dem Hund."
+    },
+    {
+      "id": "vwp-06",
+      "type": "choice",
+      "prompt": "Wir sprechen ___ das Wetter.",
+      "options": [
+        "über",
+        "auf",
+        "an",
+        "für"
+      ],
+      "answer": "über",
+      "explanation": "sprechen über + accusative names the topic of a conversation."
+    },
+    {
+      "id": "vwp-07",
+      "type": "choice",
+      "prompt": "Anna fragt ___ dem Weg zum Bahnhof.",
+      "options": [
+        "nach",
+        "für",
+        "auf",
+        "zu"
+      ],
+      "answer": "nach",
+      "explanation": "fragen nach + dative: nach dem Weg fragen."
+    },
+    {
+      "id": "vwp-08",
+      "type": "choice",
+      "prompt": "Die Eltern sind stolz ___ ihre Tochter.",
+      "options": [
+        "auf",
+        "mit",
+        "von",
+        "für"
+      ],
+      "answer": "auf",
+      "explanation": "stolz sein auf + accusative: stolz auf die Tochter."
+    },
+    {
+      "id": "vwp-09",
+      "type": "choice",
+      "prompt": "Jonas ärgert sich ___ den Lärm.",
+      "options": [
+        "über",
+        "auf",
+        "mit",
+        "vor"
+      ],
+      "answer": "über",
+      "explanation": "sich ärgern über + accusative: Er ärgert sich über den Lärm."
+    },
+    {
+      "id": "vwp-10",
+      "type": "choice",
+      "prompt": "Jonas gratuliert seiner Schwester ___ Geburtstag.",
+      "options": [
+        "zum",
+        "am",
+        "im",
+        "vom"
+      ],
+      "answer": "zum",
+      "explanation": "gratulieren zu + dative: zum Geburtstag (zu dem = zum)."
+    },
+    {
+      "id": "vwp-11",
+      "type": "choice",
+      "prompt": "Sie ist ___ dem Ergebnis zufrieden.",
+      "options": [
+        "mit",
+        "von",
+        "auf",
+        "über"
+      ],
+      "answer": "mit",
+      "explanation": "zufrieden sein mit + dative: mit dem Ergebnis."
+    },
+    {
+      "id": "vwp-12",
+      "type": "choice",
+      "prompt": "Wir warten auf ___ Zug nach Hamburg.",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "answer": "den",
+      "explanation": "warten auf takes the accusative, so der Zug becomes den Zug."
+    },
+    {
+      "id": "vwp-13",
+      "type": "choice",
+      "prompt": "Ich nehme an ___ Kurs teil.",
+      "options": [
+        "dem",
+        "den",
+        "der",
+        "des"
+      ],
+      "answer": "dem",
+      "explanation": "teilnehmen an takes the dative: der Kurs becomes dem Kurs."
+    },
+    {
+      "id": "vwp-14",
+      "type": "choice",
+      "prompt": "Tom freut sich auf ___ Konzert am Samstag.",
+      "options": [
+        "das",
+        "dem",
+        "den",
+        "des"
+      ],
+      "answer": "das",
+      "explanation": "sich freuen auf takes the accusative; neuter das stays das."
+    },
+    {
+      "id": "vwp-15",
+      "type": "choice",
+      "prompt": "Er erzählt von ___ Reise nach Italien.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "erzählen von takes the dative: die Reise becomes der Reise."
+    },
+    {
+      "id": "vwp-16",
+      "type": "choice",
+      "prompt": "Du wartest auf den Bus. ___ wartest du?",
+      "options": [
+        "Worauf",
+        "Wofür",
+        "Woran",
+        "Wovor"
+      ],
+      "answer": "Worauf",
+      "explanation": "For things, ask with wo(r) + the preposition: warten auf, so Worauf?"
+    },
+    {
+      "id": "vwp-17",
+      "type": "choice",
+      "prompt": "Ich warte auf meine Freundin. ___ wartest du?",
+      "options": [
+        "Auf wen",
+        "Worauf",
+        "Wofür",
+        "Woran"
+      ],
+      "answer": "Auf wen",
+      "explanation": "For people, use the preposition + wen/wem, not a wo-word: Auf wen wartest du?"
+    },
+    {
+      "id": "vwp-18",
+      "type": "choice",
+      "prompt": "Ich freue mich auf die Ferien. Du freust dich auch ___.",
+      "options": [
+        "darauf",
+        "dafür",
+        "daran",
+        "darüber"
+      ],
+      "answer": "darauf",
+      "explanation": "sich freuen auf is replaced by darauf (da + r + auf) when it refers to a thing."
+    },
+    {
+      "id": "vwp-19",
+      "type": "choice",
+      "prompt": "Lena freut sich über das Geschenk. Sie freut sich sehr ___.",
+      "options": [
+        "darüber",
+        "darauf",
+        "dafür",
+        "davon"
+      ],
+      "answer": "darüber",
+      "explanation": "sich freuen über becomes darüber when referring back to a thing."
+    },
+    {
+      "id": "vwp-20",
+      "type": "choice",
+      "prompt": "Du hast Angst vor Spinnen. ___ hast du Angst?",
+      "options": [
+        "Wovor",
+        "Woran",
+        "Worüber",
+        "Wofür"
+      ],
+      "answer": "Wovor",
+      "explanation": "Angst haben vor is asked with wovor for things."
+    },
+    {
+      "id": "vwp-21",
+      "type": "choice",
+      "prompt": "Ich denke oft ___, dass ich zu wenig schlafe.",
+      "options": [
+        "daran",
+        "davon",
+        "dafür",
+        "darauf"
+      ],
+      "answer": "daran",
+      "explanation": "denken an plus a dass-clause uses the da-word daran as a placeholder."
+    },
+    {
+      "id": "vwp-22",
+      "type": "choice",
+      "prompt": "Er ärgert sich ___, dass der Zug Verspätung hat.",
+      "options": [
+        "darüber",
+        "darauf",
+        "davon",
+        "dafür"
+      ],
+      "answer": "darüber",
+      "explanation": "sich ärgern über plus a dass-clause uses darüber."
+    },
+    {
+      "id": "vwp-23",
+      "type": "type",
+      "prompt": "Ich träume ___ einem eigenen Haus.",
+      "hint": "(träumen … + dative)",
+      "answers": [
+        "von"
+      ],
+      "explanation": "träumen von + dative: von einem eigenen Haus."
+    },
+    {
+      "id": "vwp-24",
+      "type": "type",
+      "prompt": "Du interessierst dich für Kunst? Ich interessiere mich auch ___.",
+      "hint": "(da-word)",
+      "answers": [
+        "dafür"
+      ],
+      "explanation": "sich interessieren für becomes dafür when it refers back to a thing."
+    },
+    {
+      "id": "vwp-25",
+      "type": "type",
+      "prompt": "Ihr redet schon so lange. Sag mal, ___ redet ihr?",
+      "hint": "(wo-word, reden über)",
+      "answers": [
+        "worüber"
+      ],
+      "explanation": "Ask about a thing with wo(r) + the preposition: reden über, so worüber (r added because über starts with a vowel)."
+    },
+    {
+      "id": "vwp-26",
+      "type": "type",
+      "prompt": "Ich warte auf den Brief. Ich warte schon lange ___.",
+      "hint": "(da-word)",
+      "answers": [
+        "darauf"
+      ],
+      "explanation": "warten auf becomes darauf (da + r + auf, because auf starts with a vowel)."
+    },
+    {
+      "id": "vwp-27",
+      "type": "type",
+      "prompt": "Ich erinnere mich oft ___ meine Schulzeit.",
+      "hint": "(sich erinnern … + accusative)",
+      "answers": [
+        "an"
+      ],
+      "explanation": "sich erinnern an + accusative: an meine Schulzeit."
+    },
+    {
+      "id": "vwp-28",
+      "type": "type",
+      "prompt": "Tom hat sich ___ Lena verliebt.",
+      "hint": "(sich verlieben … + accusative)",
+      "answers": [
+        "in"
+      ],
+      "explanation": "sich verlieben in + accusative: in Lena."
+    },
+    {
+      "id": "vwp-29",
+      "type": "type",
+      "prompt": "Tom bereitet sich ___ die Prüfung vor.",
+      "hint": "(sich vorbereiten … + accusative)",
+      "answers": [
+        "auf"
+      ],
+      "explanation": "sich vorbereiten auf + accusative: auf die Prüfung."
+    },
+    {
+      "id": "vwp-30",
+      "type": "type",
+      "prompt": "Sie bewirbt sich ___ eine Stelle in Wien.",
+      "hint": "(sich bewerben … + accusative)",
+      "answers": [
+        "um"
+      ],
+      "explanation": "sich bewerben um + accusative: um eine Stelle."
+    }
+  ]
+}

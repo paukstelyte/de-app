@@ -1,0 +1,423 @@
+{
+  "slug": "concessive-obwohl-trotzdem",
+  "instructions": "Choose or type the right contrast word, or put the words in the correct order.",
+  "items": [
+    {
+      "id": "obw-01",
+      "type": "choice",
+      "prompt": "Wir gehen ins Kino, ___ wir wenig Zeit haben.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "obwohl",
+      "explanation": "obwohl (although) starts a subordinate clause, so the verb haben goes to the end."
+    },
+    {
+      "id": "obw-02",
+      "type": "choice",
+      "prompt": "Der Film ist schon alt. Ich finde ihn ___ gut.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "explanation": "trotzdem is an adverb in a main clause, so the verb stays in second position: Ich finde ihn trotzdem gut."
+    },
+    {
+      "id": "obw-03",
+      "type": "choice",
+      "prompt": "Mia schwimmt, ___ das Wasser kalt ist.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "obwohl",
+      "explanation": "The verb ist stands at the end, so a subordinating conjunction is needed: obwohl."
+    },
+    {
+      "id": "obw-04",
+      "type": "choice",
+      "prompt": "Tom ist müde, ___ arbeitet er noch.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "explanation": "The verb arbeitet comes right after the gap (verb second), so you need the adverb trotzdem, not obwohl."
+    },
+    {
+      "id": "obw-05",
+      "type": "choice",
+      "prompt": "Anna kauft das Kleid, ___ es teuer ist.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "obwohl",
+      "explanation": "obwohl sends the verb to the end of its clause (ist): 'although it is expensive'."
+    },
+    {
+      "id": "obw-06",
+      "type": "choice",
+      "prompt": "Das Wetter ist schlecht. Wir machen ___ einen Ausflug.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "explanation": "A new main clause with the verb machen in second position takes trotzdem ('nevertheless')."
+    },
+    {
+      "id": "obw-07",
+      "type": "choice",
+      "prompt": "Der Bus ist voll. Anna steigt ___ ein.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "explanation": "obwohl would push the verb to the end; with steigt ... ein in main-clause order you need trotzdem."
+    },
+    {
+      "id": "obw-08",
+      "type": "choice",
+      "prompt": "Der Film ist langweilig. Wir sehen ihn ___ bis zum Ende.",
+      "options": [
+        "obwohl",
+        "trotzdem"
+      ],
+      "answer": "trotzdem",
+      "explanation": "sehen stays in second position, so the adverb trotzdem fits."
+    },
+    {
+      "id": "obw-09",
+      "type": "choice",
+      "prompt": "Obwohl er krank ist, ___ zur Arbeit.",
+      "options": [
+        "geht er",
+        "er geht"
+      ],
+      "answer": "geht er",
+      "explanation": "The obwohl clause fills position one, so the main clause that follows starts with the verb: geht er."
+    },
+    {
+      "id": "obw-10",
+      "type": "choice",
+      "prompt": "Obwohl sie wenig Geld hat, ___ ein Auto.",
+      "options": [
+        "kauft sie",
+        "sie kauft"
+      ],
+      "answer": "kauft sie",
+      "explanation": "After an obwohl clause the main clause begins with the verb (verb second counts the whole clause as position one): kauft sie."
+    },
+    {
+      "id": "obw-11",
+      "type": "choice",
+      "prompt": "Obwohl ich Kaffee getrunken habe, ___ müde.",
+      "options": [
+        "bin ich",
+        "ich bin"
+      ],
+      "answer": "bin ich",
+      "explanation": "The obwohl clause fills position one, so the verb comes next: bin ich müde."
+    },
+    {
+      "id": "obw-12",
+      "type": "choice",
+      "prompt": "Es ist kalt. Trotzdem ___ das Fenster auf.",
+      "options": [
+        "macht er",
+        "er macht"
+      ],
+      "answer": "macht er",
+      "explanation": "trotzdem takes position one, so the verb must follow immediately: Trotzdem macht er ... auf."
+    },
+    {
+      "id": "obw-13",
+      "type": "type",
+      "prompt": "Sie lacht, ___ sie traurig ist.",
+      "hint": "(although)",
+      "answers": [
+        "obwohl"
+      ],
+      "explanation": "obwohl means 'although' and the verb ist goes to the end of the clause."
+    },
+    {
+      "id": "obw-14",
+      "type": "type",
+      "prompt": "Es schneit. Wir fahren ___ nach Hause.",
+      "hint": "(nevertheless)",
+      "answers": [
+        "trotzdem",
+        "dennoch"
+      ],
+      "explanation": "trotzdem (or dennoch) is an adverb in a main clause, so fahren stays in second position."
+    },
+    {
+      "id": "obw-15",
+      "type": "type",
+      "prompt": "Er ist reich. Er fährt ___ mit dem Fahrrad.",
+      "hint": "(nevertheless)",
+      "answers": [
+        "trotzdem",
+        "dennoch"
+      ],
+      "explanation": "The adverb trotzdem links two main clauses and does not change the verb position."
+    },
+    {
+      "id": "obw-16",
+      "type": "type",
+      "prompt": "Tom geht joggen, obwohl er Schmerzen ___.",
+      "hint": "(haben)",
+      "answers": [
+        "hat"
+      ],
+      "explanation": "In the obwohl clause the finite verb goes to the end: … obwohl er Schmerzen hat."
+    },
+    {
+      "id": "obw-17",
+      "type": "type",
+      "prompt": "Obwohl wir müde sind, ___ noch.",
+      "hint": "(tanzen, wir)",
+      "answers": [
+        "tanzen wir"
+      ],
+      "explanation": "After an obwohl clause the main clause starts with the verb, then the subject: tanzen wir."
+    },
+    {
+      "id": "obw-18",
+      "type": "type",
+      "prompt": "Obwohl Jonas früh aufsteht, ___ zu spät.",
+      "hint": "(kommen, er)",
+      "answers": [
+        "kommt er"
+      ],
+      "explanation": "The whole obwohl clause counts as position one, so the verb comes next, then the subject: kommt er."
+    },
+    {
+      "id": "obw-19",
+      "type": "type",
+      "prompt": "Obwohl die Kinder krank ___, wollen sie spielen.",
+      "hint": "(sein)",
+      "answers": [
+        "sind"
+      ],
+      "explanation": "The verb goes to the end of the obwohl clause: ... obwohl die Kinder krank sind."
+    },
+    {
+      "id": "obw-20",
+      "type": "order",
+      "words": [
+        "Obwohl",
+        "es",
+        "regnet,",
+        "gehe",
+        "ich",
+        "spazieren."
+      ],
+      "answers": [
+        "Obwohl es regnet, gehe ich spazieren."
+      ],
+      "translation": "Although it is raining, I go for a walk.",
+      "explanation": "After the obwohl clause (verb at the end) the main clause starts with the verb: gehe ich."
+    },
+    {
+      "id": "obw-21",
+      "type": "order",
+      "words": [
+        "Der",
+        "Kaffee",
+        "ist",
+        "kalt,",
+        "trotzdem",
+        "trinkt",
+        "Anna",
+        "ihn",
+        "gern."
+      ],
+      "answers": [
+        "Der Kaffee ist kalt, trotzdem trinkt Anna ihn gern.",
+        "Der Kaffee ist kalt, Anna trinkt ihn trotzdem gern."
+      ],
+      "translation": "The coffee is cold, but Anna still likes drinking it.",
+      "explanation": "trotzdem can take position one (verb next) or stand after the verb: trotzdem trinkt Anna ihn / Anna trinkt ihn trotzdem gern."
+    },
+    {
+      "id": "obw-22",
+      "type": "order",
+      "words": [
+        "Wir",
+        "fahren,",
+        "obwohl",
+        "es",
+        "schneit."
+      ],
+      "answers": [
+        "Wir fahren, obwohl es schneit."
+      ],
+      "translation": "We are driving although it is snowing.",
+      "explanation": "In the obwohl clause the verb goes to the end: obwohl es schneit."
+    },
+    {
+      "id": "obw-23",
+      "type": "order",
+      "words": [
+        "Obwohl",
+        "Tom",
+        "viel",
+        "arbeitet,",
+        "hat",
+        "er",
+        "wenig",
+        "Geld."
+      ],
+      "answers": [
+        "Obwohl Tom viel arbeitet, hat er wenig Geld."
+      ],
+      "translation": "Although Tom works a lot, he has little money.",
+      "explanation": "The obwohl clause comes first, so the main clause begins with the verb hat."
+    },
+    {
+      "id": "obw-24",
+      "type": "order",
+      "words": [
+        "Das",
+        "Hotel",
+        "war",
+        "teuer,",
+        "trotzdem",
+        "haben",
+        "wir",
+        "es",
+        "gebucht."
+      ],
+      "answers": [
+        "Das Hotel war teuer, trotzdem haben wir es gebucht.",
+        "Das Hotel war teuer, wir haben es trotzdem gebucht."
+      ],
+      "translation": "The hotel was expensive, but we booked it anyway.",
+      "explanation": "trotzdem can take position one (verb next) or stand after the verb: trotzdem haben wir es gebucht / wir haben es trotzdem gebucht."
+    },
+    {
+      "id": "obw-25",
+      "type": "order",
+      "words": [
+        "Obwohl",
+        "Mia",
+        "Angst",
+        "hatte,",
+        "ist",
+        "sie",
+        "geflogen."
+      ],
+      "answers": [
+        "Obwohl Mia Angst hatte, ist sie geflogen."
+      ],
+      "translation": "Although Mia was afraid, she flew.",
+      "explanation": "The conjugated verb hatte goes to the end of the obwohl clause; the main clause then starts with ist."
+    },
+    {
+      "id": "obw-26",
+      "type": "order",
+      "words": [
+        "Ich",
+        "esse",
+        "Schokolade,",
+        "obwohl",
+        "ich",
+        "keinen",
+        "Hunger",
+        "habe."
+      ],
+      "answers": [
+        "Ich esse Schokolade, obwohl ich keinen Hunger habe."
+      ],
+      "translation": "I eat chocolate although I am not hungry.",
+      "explanation": "In the obwohl clause the finite verb habe stands last."
+    },
+    {
+      "id": "obw-27",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "hat",
+        "nicht",
+        "gelernt,",
+        "trotzdem",
+        "hat",
+        "er",
+        "die",
+        "Prüfung",
+        "bestanden."
+      ],
+      "answers": [
+        "Jonas hat nicht gelernt, trotzdem hat er die Prüfung bestanden.",
+        "Jonas hat nicht gelernt, er hat trotzdem die Prüfung bestanden.",
+        "Jonas hat nicht gelernt, er hat die Prüfung trotzdem bestanden."
+      ],
+      "translation": "Jonas didn't study, but he passed the exam anyway.",
+      "explanation": "trotzdem can take position one (verb next) or stand after the verb: trotzdem hat er … / er hat (die Prüfung) trotzdem … bestanden."
+    },
+    {
+      "id": "obw-28",
+      "type": "order",
+      "words": [
+        "Obwohl",
+        "der",
+        "Zug",
+        "Verspätung",
+        "hatte,",
+        "sind",
+        "wir",
+        "pünktlich",
+        "angekommen."
+      ],
+      "answers": [
+        "Obwohl der Zug Verspätung hatte, sind wir pünktlich angekommen."
+      ],
+      "translation": "Although the train was late, we arrived on time.",
+      "explanation": "hatte is last in the obwohl clause; the main clause then begins with the verb sind."
+    },
+    {
+      "id": "obw-29",
+      "type": "order",
+      "words": [
+        "Es",
+        "ist",
+        "schon",
+        "spät,",
+        "trotzdem",
+        "kocht",
+        "Lena",
+        "noch."
+      ],
+      "answers": [
+        "Es ist schon spät, trotzdem kocht Lena noch.",
+        "Es ist schon spät, Lena kocht trotzdem noch."
+      ],
+      "translation": "It is already late, but Lena is still cooking.",
+      "explanation": "trotzdem can take position one (verb next) or stand after the verb: trotzdem kocht Lena noch / Lena kocht trotzdem noch."
+    },
+    {
+      "id": "obw-30",
+      "type": "order",
+      "words": [
+        "Warum",
+        "bleibst",
+        "du",
+        "hier,",
+        "obwohl",
+        "du",
+        "müde",
+        "bist?"
+      ],
+      "answers": [
+        "Warum bleibst du hier, obwohl du müde bist?"
+      ],
+      "translation": "Why are you staying here although you are tired?",
+      "explanation": "The question has verb-second order after the question word; obwohl du müde bist sends bist to the end."
+    }
+  ]
+}

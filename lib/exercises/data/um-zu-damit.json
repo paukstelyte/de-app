@@ -1,0 +1,404 @@
+{
+  "slug": "um-zu-damit",
+  "instructions": "Choose or complete the purpose clause with um … zu or damit, or put the words in the right order.",
+  "items": [
+    {
+      "id": "umz-01",
+      "type": "choice",
+      "prompt": "Sie lernt jeden Abend, ___ die Prüfung zu bestehen.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"sie lernt\" and \"sie besteht\": the subject is the same in both parts, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-02",
+      "type": "choice",
+      "prompt": "Ich erkläre es dir, ___ du es verstehst.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"ich erkläre\" but \"du verstehst\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-03",
+      "type": "choice",
+      "prompt": "Ich stelle den Wecker, ___ nicht zu verschlafen.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"ich stelle\" and \"ich verschlafe nicht\": same subject, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-04",
+      "type": "choice",
+      "prompt": "Ich gebe dir meine Nummer, ___ du mich anrufen kannst.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"ich gebe\" but \"du kannst anrufen\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-05",
+      "type": "choice",
+      "prompt": "Er trägt eine Jacke, ___ nicht zu frieren.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"er trägt\" and \"er friert nicht\": same subject, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-06",
+      "type": "choice",
+      "prompt": "Die Stadt baut einen Radweg, ___ die Kinder sicher zur Schule fahren können.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"die Stadt baut\" but \"die Kinder können fahren\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-07",
+      "type": "choice",
+      "prompt": "Wir fahren früh los, ___ einen Parkplatz zu finden.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"wir fahren\" and \"wir finden\": same subject, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-08",
+      "type": "choice",
+      "prompt": "Sie schaltet das Licht an, ___ die Kinder keine Angst haben.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"sie schaltet an\" but \"die Kinder haben keine Angst\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-09",
+      "type": "choice",
+      "prompt": "Jonas macht Sport, ___ fit zu bleiben.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"Jonas macht Sport\" and \"Jonas bleibt fit\": same subject, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-10",
+      "type": "choice",
+      "prompt": "Die Eltern arbeiten viel, ___ die Kinder studieren können.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"die Eltern arbeiten\" but \"die Kinder können studieren\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-11",
+      "type": "choice",
+      "prompt": "Wir nehmen ein Taxi, ___ pünktlich anzukommen.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "um",
+      "explanation": "\"wir nehmen\" and \"wir kommen an\": same subject, so um … zu + infinitive is used, with no second subject."
+    },
+    {
+      "id": "umz-12",
+      "type": "choice",
+      "prompt": "Ich mache die Musik leiser, ___ du schlafen kannst.",
+      "options": [
+        "um",
+        "damit"
+      ],
+      "answer": "damit",
+      "explanation": "\"ich mache leiser\" but \"du kannst schlafen\": the subject changes, so damit is needed, with its own subject and the verb at the end."
+    },
+    {
+      "id": "umz-13",
+      "type": "type",
+      "prompt": "Ich gehe ins Reisebüro, um eine Reise ___.",
+      "hint": "(buchen)",
+      "answers": [
+        "zu buchen"
+      ],
+      "explanation": "In um … zu, zu goes directly before the infinitive at the end: zu buchen."
+    },
+    {
+      "id": "umz-14",
+      "type": "type",
+      "prompt": "Sie fährt nach Wien, um ihre Oma ___.",
+      "hint": "(besuchen)",
+      "answers": [
+        "zu besuchen"
+      ],
+      "explanation": "The um-clause ends with zu + infinitive: zu besuchen."
+    },
+    {
+      "id": "umz-15",
+      "type": "type",
+      "prompt": "Ich stehe früh auf, um den Bus nicht ___.",
+      "hint": "(verpassen)",
+      "answers": [
+        "zu verpassen"
+      ],
+      "explanation": "The negation nicht comes before zu + infinitive: nicht zu verpassen."
+    },
+    {
+      "id": "umz-16",
+      "type": "type",
+      "prompt": "Wir laden Freunde ein, um zusammen ___.",
+      "hint": "(feiern)",
+      "answers": [
+        "zu feiern"
+      ],
+      "explanation": "The same subject (wir) celebrates, so um … zu: zu feiern."
+    },
+    {
+      "id": "umz-17",
+      "type": "type",
+      "prompt": "Ich gehe zum Markt, um frisches Gemüse ___.",
+      "hint": "(einkaufen)",
+      "answers": [
+        "einzukaufen"
+      ],
+      "explanation": "With a separable verb, zu goes between prefix and stem and is written as one word: einzukaufen."
+    },
+    {
+      "id": "umz-18",
+      "type": "type",
+      "prompt": "Sie geht früh ins Bett, um morgen früh ___.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "aufzustehen"
+      ],
+      "explanation": "Separable verbs put zu between prefix and stem: auf + zu + stehen = aufzustehen."
+    },
+    {
+      "id": "umz-19",
+      "type": "type",
+      "prompt": "Ich schreibe die Regel auf, damit du sie nicht ___.",
+      "hint": "(vergessen)",
+      "answers": [
+        "vergisst"
+      ],
+      "explanation": "After damit the verb is conjugated for its own subject (du) and sits at the end: vergisst."
+    },
+    {
+      "id": "umz-20",
+      "type": "type",
+      "prompt": "Wir sprechen leise, damit das Baby nicht ___.",
+      "hint": "(aufwachen)",
+      "answers": [
+        "aufwacht"
+      ],
+      "explanation": "The subject changes (das Baby), so damit + conjugated verb at the end; aufwachen stays together at the end: aufwacht."
+    },
+    {
+      "id": "umz-21",
+      "type": "type",
+      "prompt": "Ich erkläre den Weg, damit ihr den Bahnhof ___.",
+      "hint": "(finden)",
+      "answers": [
+        "findet"
+      ],
+      "explanation": "damit introduces a new subject (ihr), so the verb is conjugated: ihr findet, at the end of the clause."
+    },
+    {
+      "id": "umz-22",
+      "type": "order",
+      "words": [
+        "Ich",
+        "lerne",
+        "Deutsch,",
+        "um",
+        "in",
+        "Berlin",
+        "zu",
+        "arbeiten."
+      ],
+      "answers": [
+        "Ich lerne Deutsch, um in Berlin zu arbeiten."
+      ],
+      "translation": "I learn German in order to work in Berlin.",
+      "explanation": "The um-clause ends with zu + infinitive and has no subject of its own."
+    },
+    {
+      "id": "umz-23",
+      "type": "order",
+      "words": [
+        "Anna",
+        "spart",
+        "Geld,",
+        "um",
+        "eine",
+        "Reise",
+        "zu",
+        "machen."
+      ],
+      "answers": [
+        "Anna spart Geld, um eine Reise zu machen."
+      ],
+      "translation": "Anna saves money in order to take a trip.",
+      "explanation": "Same subject, so um … zu: the infinitive with zu stands at the end."
+    },
+    {
+      "id": "umz-24",
+      "type": "order",
+      "words": [
+        "Tom",
+        "spricht",
+        "langsam,",
+        "damit",
+        "wir",
+        "ihn",
+        "verstehen."
+      ],
+      "answers": [
+        "Tom spricht langsam, damit wir ihn verstehen."
+      ],
+      "translation": "Tom speaks slowly so that we understand him.",
+      "explanation": "The subject changes (wir), so damit starts a subordinate clause with the verb at the end."
+    },
+    {
+      "id": "umz-25",
+      "type": "order",
+      "words": [
+        "Lena",
+        "nimmt",
+        "einen",
+        "Schirm",
+        "mit,",
+        "um",
+        "nicht",
+        "nass",
+        "zu",
+        "werden."
+      ],
+      "answers": [
+        "Lena nimmt einen Schirm mit, um nicht nass zu werden."
+      ],
+      "translation": "Lena takes an umbrella so as not to get wet.",
+      "explanation": "The separable verb mitnehmen stays in the main clause; the um-clause ends with zu werden."
+    },
+    {
+      "id": "umz-26",
+      "type": "order",
+      "words": [
+        "Wir",
+        "kochen",
+        "viel,",
+        "damit",
+        "alle",
+        "Gäste",
+        "satt",
+        "werden."
+      ],
+      "answers": [
+        "Wir kochen viel, damit alle Gäste satt werden."
+      ],
+      "translation": "We cook a lot so that all the guests get full.",
+      "explanation": "damit introduces a subordinate clause, so the conjugated verb werden goes last."
+    },
+    {
+      "id": "umz-27",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "fährt",
+        "mit",
+        "dem",
+        "Rad,",
+        "um",
+        "Geld",
+        "zu",
+        "sparen."
+      ],
+      "answers": [
+        "Jonas fährt mit dem Rad, um Geld zu sparen."
+      ],
+      "translation": "Jonas goes by bike to save money.",
+      "explanation": "Same subject, so um … zu sparen closes the sentence."
+    },
+    {
+      "id": "umz-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "gehe",
+        "in",
+        "die",
+        "Bibliothek,",
+        "um",
+        "ein",
+        "Buch",
+        "auszuleihen."
+      ],
+      "answers": [
+        "Ich gehe in die Bibliothek, um ein Buch auszuleihen."
+      ],
+      "translation": "I go to the library to borrow a book.",
+      "explanation": "um introduces the purpose; the object comes first and the separable verb ausleihen takes zu inside: auszuleihen."
+    },
+    {
+      "id": "umz-29",
+      "type": "order",
+      "words": [
+        "Mara",
+        "macht",
+        "das",
+        "Fenster",
+        "auf,",
+        "damit",
+        "frische",
+        "Luft",
+        "hereinkommt."
+      ],
+      "answers": [
+        "Mara macht das Fenster auf, damit frische Luft hereinkommt."
+      ],
+      "translation": "Mara opens the window so that fresh air comes in.",
+      "explanation": "The subject changes (frische Luft), so damit + verb at the end; separable hereinkommt stays joined at the end."
+    },
+    {
+      "id": "umz-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "rufe",
+        "dich",
+        "an,",
+        "damit",
+        "du",
+        "nicht",
+        "warten",
+        "musst."
+      ],
+      "answers": [
+        "Ich rufe dich an, damit du nicht warten musst."
+      ],
+      "translation": "I call you so that you don't have to wait.",
+      "explanation": "damit with a new subject (du): the modal verb musst stands last."
+    }
+  ]
+}

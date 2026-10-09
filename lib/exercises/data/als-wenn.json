@@ -1,0 +1,374 @@
+{
+  "slug": "als-wenn",
+  "instructions": "Choose or type als or wenn, or put the words in order, to complete each time clause.",
+  "items": [
+    {
+      "id": "alw-01",
+      "type": "choice",
+      "prompt": "___ meine Eltern jung waren, hatten sie kein Handy.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Als",
+      "explanation": "als: one finished period in the past (when my parents were young)."
+    },
+    {
+      "id": "alw-02",
+      "type": "choice",
+      "prompt": "___ es morgen regnet, gehen wir ins Museum.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Wenn",
+      "explanation": "wenn is used for the future (morgen); als is only for the past."
+    },
+    {
+      "id": "alw-03",
+      "type": "choice",
+      "prompt": "Gestern, ___ ich nach Hause kam, war niemand da.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "als",
+      "explanation": "als: one single event in the past (gestern, one time)."
+    },
+    {
+      "id": "alw-04",
+      "type": "choice",
+      "prompt": "Ich schreibe dir, ___ ich in Berlin ankomme.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "Arriving in Berlin is still in the future, so wenn; als is only for the past."
+    },
+    {
+      "id": "alw-05",
+      "type": "choice",
+      "prompt": "Immer ___ ich Pizza esse, bin ich glücklich.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "Repeated events take wenn: immer wenn = whenever."
+    },
+    {
+      "id": "alw-06",
+      "type": "choice",
+      "prompt": "___ wir letzten Sommer in Italien waren, war es sehr heiß.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Als",
+      "explanation": "Letzten Sommer is one single past occasion, so als."
+    },
+    {
+      "id": "alw-07",
+      "type": "choice",
+      "prompt": "Jedes Mal, ___ ich ihn sehe, lacht er.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "jedes Mal signals repetition, so wenn."
+    },
+    {
+      "id": "alw-08",
+      "type": "choice",
+      "prompt": "Ich war müde, ___ ich gestern von der Arbeit kam.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "als",
+      "explanation": "One specific time yesterday: als."
+    },
+    {
+      "id": "alw-09",
+      "type": "choice",
+      "prompt": "___ du Hunger hast, kannst du etwas essen.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Wenn",
+      "explanation": "wenn is used for the present and general conditions: Wenn du Hunger hast, …."
+    },
+    {
+      "id": "alw-10",
+      "type": "choice",
+      "prompt": "___ der Film zu Ende war, sind wir nach Hause gegangen.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Als",
+      "explanation": "The film ended once in the past: als."
+    },
+    {
+      "id": "alw-11",
+      "type": "choice",
+      "prompt": "Wir haben uns kennengelernt, ___ wir beide in Hamburg gewohnt haben.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "als",
+      "explanation": "The time in Hamburg is one single period in the past, so als."
+    },
+    {
+      "id": "alw-12",
+      "type": "choice",
+      "prompt": "Sag mir Bescheid, ___ du Hilfe brauchst.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "An open present or future possibility takes wenn."
+    },
+    {
+      "id": "alw-13",
+      "type": "choice",
+      "prompt": "Weißt du, ___ der Zug morgen abfährt?",
+      "options": [
+        "als",
+        "wenn",
+        "wann"
+      ],
+      "answer": "wann",
+      "explanation": "This is an indirect question about a time, so wann (when?). als and wenn introduce time clauses, not questions."
+    },
+    {
+      "id": "alw-14",
+      "type": "choice",
+      "prompt": "___ Lena zwölf Jahre alt war, ist sie nach Wien umgezogen.",
+      "options": [
+        "Als",
+        "Wenn"
+      ],
+      "answer": "Als",
+      "explanation": "Moving was a single event in the past: als."
+    },
+    {
+      "id": "alw-15",
+      "type": "choice",
+      "prompt": "Ich fahre zu meinen Großeltern, ___ die Ferien anfangen.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "The holidays have not started yet; a future event takes wenn."
+    },
+    {
+      "id": "alw-16",
+      "type": "choice",
+      "prompt": "Jedes Mal, ___ Tom mit dem Bus fuhr, kam er zu spät.",
+      "options": [
+        "als",
+        "wenn"
+      ],
+      "answer": "wenn",
+      "explanation": "jedes Mal means repeated, so wenn, even though it is in the past."
+    },
+    {
+      "id": "alw-17",
+      "type": "type",
+      "prompt": "Ich habe gerade gegessen, ___ du angerufen hast.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "als"
+      ],
+      "explanation": "One single past moment (the call): als."
+    },
+    {
+      "id": "alw-18",
+      "type": "type",
+      "prompt": "Ich lese abends, ___ ich nicht schlafen kann.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "wenn"
+      ],
+      "explanation": "This happens again and again in the present, so wenn."
+    },
+    {
+      "id": "alw-19",
+      "type": "type",
+      "prompt": "Sie hat geweint, ___ sie die Nachricht gehört hat.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "als"
+      ],
+      "explanation": "One single past event (hearing the news): als."
+    },
+    {
+      "id": "alw-20",
+      "type": "type",
+      "prompt": "Er kocht immer, ___ seine Freunde zu Besuch kommen.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "wenn"
+      ],
+      "explanation": "immer indicates repeated events: wenn."
+    },
+    {
+      "id": "alw-21",
+      "type": "type",
+      "prompt": "Ich war sehr nervös, ___ ich die Prüfung geschrieben habe.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "als"
+      ],
+      "explanation": "The exam was a single past event: als."
+    },
+    {
+      "id": "alw-22",
+      "type": "type",
+      "prompt": "Wir fahren ans Meer, ___ das Wetter schön ist.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "wenn"
+      ],
+      "explanation": "A future plan depending on a condition takes wenn."
+    },
+    {
+      "id": "alw-23",
+      "type": "type",
+      "prompt": "Mein Bruder hat gelacht, ___ er das Geschenk gesehen hat.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "als"
+      ],
+      "explanation": "One single past reaction: als."
+    },
+    {
+      "id": "alw-24",
+      "type": "type",
+      "prompt": "Ich nehme den Regenschirm mit, ___ es regnet.",
+      "hint": "(als / wenn)",
+      "answers": [
+        "wenn"
+      ],
+      "explanation": "General or future condition: wenn."
+    },
+    {
+      "id": "alw-25",
+      "type": "order",
+      "words": [
+        "Als",
+        "ich",
+        "ein",
+        "Kind",
+        "war,",
+        "habe",
+        "ich",
+        "viel",
+        "gespielt."
+      ],
+      "answers": [
+        "Als ich ein Kind war, habe ich viel gespielt."
+      ],
+      "translation": "When I was a child, I played a lot.",
+      "explanation": "In an als-clause the conjugated verb goes to the end (war); the main clause then starts with its verb (habe)."
+    },
+    {
+      "id": "alw-26",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "ich",
+        "fertig",
+        "bin,",
+        "helfe",
+        "ich",
+        "dir."
+      ],
+      "answers": [
+        "Wenn ich fertig bin, helfe ich dir."
+      ],
+      "translation": "When I am finished, I will help you.",
+      "explanation": "The wenn-clause sends the verb to the end (bin); the main clause that follows starts with the verb (helfe ich)."
+    },
+    {
+      "id": "alw-27",
+      "type": "order",
+      "words": [
+        "Als",
+        "wir",
+        "ankamen,",
+        "hat",
+        "es",
+        "geregnet."
+      ],
+      "answers": [
+        "Als wir ankamen, hat es geregnet."
+      ],
+      "translation": "When we arrived, it was raining.",
+      "explanation": "als introduces one past event; the verb ankamen stands at the end of the subordinate clause."
+    },
+    {
+      "id": "alw-28",
+      "type": "order",
+      "words": [
+        "Immer",
+        "wenn",
+        "Tom",
+        "Zeit",
+        "hat,",
+        "kocht",
+        "er."
+      ],
+      "answers": [
+        "Immer wenn Tom Zeit hat, kocht er."
+      ],
+      "translation": "Whenever Tom has time, he cooks.",
+      "explanation": "Immer wenn marks repetition; the verb hat goes to the end, then the main clause starts with the verb (kocht er)."
+    },
+    {
+      "id": "alw-29",
+      "type": "order",
+      "words": [
+        "Als",
+        "Lena",
+        "in",
+        "Wien",
+        "wohnte,",
+        "hat",
+        "sie",
+        "viel",
+        "gelernt."
+      ],
+      "answers": [
+        "Als Lena in Wien wohnte, hat sie viel gelernt."
+      ],
+      "translation": "When Lena lived in Vienna, she learned a lot.",
+      "explanation": "als: a single period in the past; the conjugated verb wohnte moves to the end of its clause."
+    },
+    {
+      "id": "alw-30",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "es",
+        "morgen",
+        "schneit,",
+        "fahren",
+        "wir",
+        "Ski."
+      ],
+      "answers": [
+        "Wenn es morgen schneit, fahren wir Ski."
+      ],
+      "translation": "If it snows tomorrow, we will go skiing.",
+      "explanation": "wenn for the future; schneit goes to the end and the main clause begins with the verb (fahren wir)."
+    }
+  ]
+}
