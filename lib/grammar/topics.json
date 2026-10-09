@@ -356,49 +356,91 @@
     "title": "Comparative and superlative",
     "level": "A2",
     "group": "Adjectives",
-    "summary": "Add -er for the comparative and am …-sten for the superlative: schnell, schneller, am schnellsten. Short words often add an umlaut: alt → älter. Irregular: gut, besser, am besten."
+    "summary": "Add -er for the comparative and am …-sten for the superlative: schnell, schneller, am schnellsten. Short words often add an umlaut: alt → älter. Irregular: gut, besser, am besten.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/comparative-superlative/practice"
+      }
+    ]
   },
   {
     "slug": "adjective-endings-basic",
     "title": "Adjective endings: the basics",
     "level": "A2",
     "group": "Adjectives",
-    "summary": "An adjective before a noun takes an ending: der große Hund, ein großer Hund. After der/die/das the ending is mostly -e or -en; after ein the adjective shows the gender itself."
+    "summary": "An adjective before a noun takes an ending: der große Hund, ein großer Hund. After der/die/das the ending is mostly -e or -en; after ein the adjective shows the gender itself.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/adjective-endings-basic/practice"
+      }
+    ]
   },
   {
     "slug": "subordinate-clauses",
     "title": "Subordinate clauses with weil, dass, wenn",
     "level": "A2",
     "group": "Linking ideas",
-    "summary": "After weil, dass, wenn, ob and similar words, the conjugated verb goes to the end: Ich bleibe zu Hause, weil ich krank bin. If the subordinate clause comes first, the main clause starts with the verb."
+    "summary": "After weil, dass, wenn, ob and similar words, the conjugated verb goes to the end: Ich bleibe zu Hause, weil ich krank bin. If the subordinate clause comes first, the main clause starts with the verb.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/subordinate-clauses/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-ii-polite",
     "title": "Polite requests (würde, könnte, hätte gern)",
     "level": "A2",
     "group": "Verbs and tenses",
-    "summary": "Use würde, könnte and hätte gern to sound polite: Könnten Sie mir helfen? Ich hätte gern einen Kaffee. Ich würde gern mitkommen."
+    "summary": "Use würde, könnte and hätte gern to sound polite: Könnten Sie mir helfen? Ich hätte gern einen Kaffee. Ich würde gern mitkommen.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-ii-polite/practice"
+      }
+    ]
   },
   {
     "slug": "indefinite-pronouns",
     "title": "man, jemand, niemand, etwas, nichts",
     "level": "A2",
     "group": "Pronouns",
-    "summary": "man means people in general and takes the er/sie/es form of the verb: Hier darf man nicht rauchen. jemand/niemand mean someone/no one; etwas/nichts mean something/nothing."
+    "summary": "man means people in general and takes the er/sie/es form of the verb: Hier darf man nicht rauchen. jemand/niemand mean someone/no one; etwas/nichts mean something/nothing.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/indefinite-pronouns/practice"
+      }
+    ]
   },
   {
     "slug": "ordinal-numbers-dates",
     "title": "Ordinal numbers and dates",
     "level": "A2",
     "group": "Other",
-    "summary": "Ordinals add -te up to 19 and -ste from 20: der zweite, der zwanzigste (der erste, der dritte and der siebte are irregular). Dates: am ersten Mai, heute ist der dritte Juni."
+    "summary": "Ordinals add -te up to 19 and -ste from 20: der zweite, der zwanzigste (der erste, der dritte and der siebte are irregular). Dates: am ersten Mai, heute ist der dritte Juni.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/ordinal-numbers-dates/practice"
+      }
+    ]
   },
   {
     "slug": "compound-nouns",
     "title": "Compound nouns",
     "level": "A2",
     "group": "Nouns and articles",
-    "summary": "German joins nouns into one word, and the last part decides the gender: das Haus + die Tür = die Haustür. Sometimes a linking -s- or -n- appears: Arbeitszimmer, Straßenbahn."
+    "summary": "German joins nouns into one word, and the last part decides the gender: das Haus + die Tür = die Haustür. Sometimes a linking -s- or -n- appears: Arbeitszimmer, Straßenbahn.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/compound-nouns/practice"
+      }
+    ]
   },
   {
     "slug": "genitive-case",

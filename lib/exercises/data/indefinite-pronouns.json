@@ -1,0 +1,356 @@
+{
+  "slug": "indefinite-pronouns",
+  "instructions": "Choose or type the correct word (man, jemand, niemand, etwas, nichts) or verb form for each gap.",
+  "items": [
+    {
+      "id": "ip-01",
+      "type": "choice",
+      "prompt": "Im Kino soll ___ das Handy ausmachen.",
+      "options": [
+        "man",
+        "etwas",
+        "nichts"
+      ],
+      "answer": "man",
+      "explanation": "man means people in general, so it fits a rule for everyone: Im Kino soll man das Handy ausmachen."
+    },
+    {
+      "id": "ip-02",
+      "type": "choice",
+      "prompt": "In Deutschland isst ___ oft Brot zum Abendessen.",
+      "options": [
+        "man",
+        "jemand",
+        "nichts"
+      ],
+      "answer": "man",
+      "explanation": "man describes what people in general do, with the er/sie/es verb form: isst."
+    },
+    {
+      "id": "ip-03",
+      "type": "choice",
+      "prompt": "Da klingelt ___ an der Tür.",
+      "options": [
+        "jemand",
+        "man",
+        "nichts"
+      ],
+      "answer": "jemand",
+      "explanation": "jemand means someone: one specific, unknown person is at the door."
+    },
+    {
+      "id": "ip-04",
+      "type": "choice",
+      "prompt": "Ich habe Hunger und möchte ___ essen.",
+      "options": [
+        "etwas",
+        "jemand",
+        "niemand"
+      ],
+      "answer": "etwas",
+      "explanation": "etwas means something; jemand and niemand refer to people, not things."
+    },
+    {
+      "id": "ip-05",
+      "type": "choice",
+      "prompt": "Im Kühlschrank ist leider ___.",
+      "options": [
+        "nichts",
+        "jemand",
+        "man"
+      ],
+      "answer": "nichts",
+      "explanation": "nichts means nothing: the fridge is empty."
+    },
+    {
+      "id": "ip-06",
+      "type": "choice",
+      "prompt": "Es ist ruhig im Haus. Heute ist ___ zu Hause.",
+      "options": [
+        "niemand",
+        "nichts",
+        "etwas"
+      ],
+      "answer": "niemand",
+      "explanation": "niemand means no one; it refers to people, while nichts refers to things."
+    },
+    {
+      "id": "ip-07",
+      "type": "choice",
+      "prompt": "Wie sagt ___ das auf Deutsch?",
+      "options": [
+        "man",
+        "jemand",
+        "etwas"
+      ],
+      "answer": "man",
+      "explanation": "man is the general \"you/one\" in questions about how things are done."
+    },
+    {
+      "id": "ip-08",
+      "type": "choice",
+      "prompt": "Ich brauche ___ Warmes zum Anziehen.",
+      "options": [
+        "etwas",
+        "jemand",
+        "man"
+      ],
+      "answer": "etwas",
+      "explanation": "etwas + adjective (capitalised) means something warm: etwas Warmes."
+    },
+    {
+      "id": "ip-09",
+      "type": "choice",
+      "prompt": "Ich kenne hier ___. Ich bin neu in der Stadt.",
+      "options": [
+        "niemanden",
+        "man",
+        "etwas"
+      ],
+      "answer": "niemanden",
+      "explanation": "niemand is a person word; as the accusative object it becomes niemanden (no one)."
+    },
+    {
+      "id": "ip-10",
+      "type": "choice",
+      "prompt": "Kennst du ___, der gut Deutsch spricht?",
+      "options": [
+        "jemanden",
+        "etwas",
+        "man"
+      ],
+      "answer": "jemanden",
+      "explanation": "jemand is a person word; as the accusative object it becomes jemanden."
+    },
+    {
+      "id": "ip-11",
+      "type": "choice",
+      "prompt": "Ich habe heute ___ gegessen. Ich bin sehr hungrig.",
+      "options": [
+        "nichts",
+        "niemand",
+        "jemand"
+      ],
+      "answer": "nichts",
+      "explanation": "nichts means nothing and refers to things such as food."
+    },
+    {
+      "id": "ip-12",
+      "type": "choice",
+      "prompt": "Im Museum muss ___ leise sein.",
+      "options": [
+        "man",
+        "etwas",
+        "nichts"
+      ],
+      "answer": "man",
+      "explanation": "man states a general rule for everyone: Im Museum muss man leise sein."
+    },
+    {
+      "id": "ip-13",
+      "type": "choice",
+      "prompt": "Zu Weihnachten möchte ich dir ___ Schönes schenken.",
+      "options": [
+        "etwas",
+        "jemand",
+        "man"
+      ],
+      "answer": "etwas",
+      "explanation": "etwas + capitalised adjective: etwas Schönes means something nice."
+    },
+    {
+      "id": "ip-14",
+      "type": "choice",
+      "prompt": "Das Haus ist alt. Hier wohnt ___ mehr.",
+      "options": [
+        "niemand",
+        "nichts",
+        "etwas"
+      ],
+      "answer": "niemand",
+      "explanation": "niemand (no one) is the subject here: a person word, not a thing."
+    },
+    {
+      "id": "ip-15",
+      "type": "choice",
+      "prompt": "In Spanien ___ man spät zu Abend.",
+      "options": [
+        "isst",
+        "essen",
+        "esst"
+      ],
+      "answer": "isst",
+      "explanation": "man takes the er/sie/es form of the verb: man isst."
+    },
+    {
+      "id": "ip-16",
+      "type": "choice",
+      "prompt": "Hier ___ man sehr gut Pizza.",
+      "options": [
+        "bekommt",
+        "bekommen",
+        "bekomme"
+      ],
+      "answer": "bekommt",
+      "explanation": "man always takes the third person singular: man bekommt."
+    },
+    {
+      "id": "ip-17",
+      "type": "choice",
+      "prompt": "Hat ___ meinen Schlüssel gesehen?",
+      "options": [
+        "jemand",
+        "etwas",
+        "nichts"
+      ],
+      "answer": "jemand",
+      "explanation": "jemand asks about an unknown person: Has anyone seen my key?"
+    },
+    {
+      "id": "ip-18",
+      "type": "type",
+      "prompt": "In der Schule ___ man viel.",
+      "hint": "(lernen)",
+      "answers": [
+        "lernt"
+      ],
+      "explanation": "man takes the er/sie/es form: man lernt."
+    },
+    {
+      "id": "ip-19",
+      "type": "type",
+      "prompt": "Hier ___ man gut einkaufen.",
+      "hint": "(können)",
+      "answers": [
+        "kann"
+      ],
+      "explanation": "können is irregular in the singular: er/sie/es/man kann."
+    },
+    {
+      "id": "ip-20",
+      "type": "type",
+      "prompt": "Im Winter ___ man oft Tee.",
+      "hint": "(trinken)",
+      "answers": [
+        "trinkt"
+      ],
+      "explanation": "man + er/sie/es form: man trinkt."
+    },
+    {
+      "id": "ip-21",
+      "type": "type",
+      "prompt": "Wie ___ man das Wort?",
+      "hint": "(schreiben)",
+      "answers": [
+        "schreibt"
+      ],
+      "explanation": "man takes the third person singular ending -t: man schreibt."
+    },
+    {
+      "id": "ip-22",
+      "type": "type",
+      "prompt": "Möchtest du ___ trinken?",
+      "hint": "(something)",
+      "answers": [
+        "etwas"
+      ],
+      "explanation": "etwas means something and is used for things in offers and questions."
+    },
+    {
+      "id": "ip-23",
+      "type": "type",
+      "prompt": "Ich habe Hunger, aber im Haus ist ___ zu essen.",
+      "hint": "(nothing)",
+      "answers": [
+        "nichts"
+      ],
+      "explanation": "nichts means nothing: there is no food in the house."
+    },
+    {
+      "id": "ip-24",
+      "type": "type",
+      "prompt": "Es ist ___ im Büro.",
+      "hint": "(no one)",
+      "answers": [
+        "niemand"
+      ],
+      "explanation": "niemand means no one and refers to people."
+    },
+    {
+      "id": "ip-25",
+      "type": "type",
+      "prompt": "Hallo, ist ___ da?",
+      "hint": "(someone)",
+      "answers": [
+        "jemand"
+      ],
+      "explanation": "jemand means someone/anyone and is used for people."
+    },
+    {
+      "id": "ip-26",
+      "type": "type",
+      "prompt": "Ich habe ___ nach dem Weg gefragt.",
+      "hint": "(someone, accusative)",
+      "answers": [
+        "jemanden",
+        "jemand"
+      ],
+      "explanation": "As an accusative object jemand usually becomes jemanden; the uninflected jemand is also standard (Duden: jemand[en])."
+    },
+    {
+      "id": "ip-27",
+      "type": "type",
+      "prompt": "Die Straße ist leer. Ich sehe ___.",
+      "hint": "(no one, accusative)",
+      "answers": [
+        "niemanden",
+        "niemand"
+      ],
+      "explanation": "As an accusative object niemand usually becomes niemanden; the uninflected niemand is also standard (Duden: niemand[en])."
+    },
+    {
+      "id": "ip-28",
+      "type": "type",
+      "prompt": "Sie war still und hat ___ gesagt.",
+      "hint": "(nothing)",
+      "answers": [
+        "nichts"
+      ],
+      "explanation": "nichts means nothing and refers to things, here what was said."
+    },
+    {
+      "id": "ip-29",
+      "type": "order",
+      "words": [
+        "Wo",
+        "kann",
+        "man",
+        "hier",
+        "Fahrkarten",
+        "kaufen?"
+      ],
+      "answers": [
+        "Wo kann man hier Fahrkarten kaufen?"
+      ],
+      "translation": "Where can you buy tickets here?",
+      "explanation": "man is the subject and takes the er/sie/es form kann; kaufen goes to the end."
+    },
+    {
+      "id": "ip-30",
+      "type": "order",
+      "words": [
+        "Weißt",
+        "du,",
+        "ob",
+        "jemand",
+        "Zeit",
+        "hat?"
+      ],
+      "answers": [
+        "Weißt du, ob jemand Zeit hat?"
+      ],
+      "translation": "Do you know whether anyone has time?",
+      "explanation": "In the ob-clause the verb hat goes to the end; jemand is the subject."
+    }
+  ]
+}

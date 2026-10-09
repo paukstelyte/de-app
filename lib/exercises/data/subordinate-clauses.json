@@ -1,0 +1,478 @@
+{
+  "slug": "subordinate-clauses",
+  "instructions": "Complete or build each sentence so the verb is in the right place in the subordinate clause.",
+  "items": [
+    {
+      "id": "sub-01",
+      "type": "choice",
+      "prompt": "Ich lerne Deutsch, ___ ich in Wien arbeiten möchte.",
+      "options": [
+        "weil",
+        "dass",
+        "ob"
+      ],
+      "answer": "weil",
+      "explanation": "weil introduces a reason (because). It sends the conjugated verb to the end: ... weil ich arbeiten möchte."
+    },
+    {
+      "id": "sub-02",
+      "type": "order",
+      "words": [
+        "Ich",
+        "trinke",
+        "einen",
+        "Kaffee,",
+        "weil",
+        "ich",
+        "müde",
+        "bin."
+      ],
+      "answers": [
+        "Ich trinke einen Kaffee, weil ich müde bin."
+      ],
+      "translation": "I'm having a coffee because I'm tired.",
+      "explanation": "In a weil clause the conjugated verb goes to the end: weil ich müde bin."
+    },
+    {
+      "id": "sub-03",
+      "type": "choice",
+      "prompt": "Ich glaube, ___ Anna heute nicht kommt.",
+      "options": [
+        "dass",
+        "weil",
+        "wenn"
+      ],
+      "answer": "dass",
+      "explanation": "After verbs like glauben, sagen, wissen, the content clause starts with dass."
+    },
+    {
+      "id": "sub-04",
+      "type": "order",
+      "words": [
+        "Tom",
+        "sagt,",
+        "dass",
+        "er",
+        "heute",
+        "keine",
+        "Zeit",
+        "hat."
+      ],
+      "answers": [
+        "Tom sagt, dass er heute keine Zeit hat."
+      ],
+      "translation": "Tom says that he has no time today.",
+      "explanation": "dass opens a subordinate clause, so the conjugated verb hat stands at the end."
+    },
+    {
+      "id": "sub-05",
+      "type": "type",
+      "prompt": "Ich weiß nicht, ___ er kommt.",
+      "hint": "(if / whether)",
+      "answers": [
+        "ob"
+      ],
+      "explanation": "ob means whether/if in indirect yes/no questions: Kommt er? becomes ob er kommt."
+    },
+    {
+      "id": "sub-06",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "sagen,",
+        "ob",
+        "der",
+        "Zug",
+        "pünktlich",
+        "ist?"
+      ],
+      "answers": [
+        "Kannst du mir sagen, ob der Zug pünktlich ist?"
+      ],
+      "translation": "Can you tell me whether the train is on time?",
+      "explanation": "ob introduces an indirect yes/no question; the verb ist goes to the end."
+    },
+    {
+      "id": "sub-07",
+      "type": "choice",
+      "prompt": "Ich weiß nicht, ___ er heute Zeit hat.",
+      "options": [
+        "ob",
+        "weil",
+        "wenn"
+      ],
+      "answer": "ob",
+      "explanation": "An indirect yes/no question (Hat er Zeit?) is introduced by ob, not weil or wenn."
+    },
+    {
+      "id": "sub-08",
+      "type": "order",
+      "words": [
+        "Wir",
+        "gehen",
+        "spazieren,",
+        "wenn",
+        "die",
+        "Sonne",
+        "scheint."
+      ],
+      "answers": [
+        "Wir gehen spazieren, wenn die Sonne scheint."
+      ],
+      "translation": "We go for a walk when the sun shines.",
+      "explanation": "wenn (whenever/if) sends the verb scheint to the end of its clause."
+    },
+    {
+      "id": "sub-09",
+      "type": "choice",
+      "prompt": "Ich gehe heute nicht zur Schule, weil ___.",
+      "options": [
+        "ich krank bin",
+        "ich bin krank",
+        "bin ich krank"
+      ],
+      "answer": "ich krank bin",
+      "explanation": "After weil the conjugated verb goes to the end of the clause."
+    },
+    {
+      "id": "sub-10",
+      "type": "order",
+      "words": [
+        "Weil",
+        "der",
+        "Bus",
+        "nicht",
+        "kommt,",
+        "gehen",
+        "wir",
+        "zu",
+        "Fuß."
+      ],
+      "answers": [
+        "Weil der Bus nicht kommt, gehen wir zu Fuß."
+      ],
+      "translation": "Because the bus isn't coming, we're walking.",
+      "explanation": "When the weil clause comes first, the main clause starts with its verb: gehen wir."
+    },
+    {
+      "id": "sub-11",
+      "type": "type",
+      "prompt": "Lena geht spazieren, ___ es regnet.",
+      "hint": "(although)",
+      "answers": [
+        "obwohl"
+      ],
+      "explanation": "obwohl (although) introduces a contrast and, like weil, sends the verb regnet to the end."
+    },
+    {
+      "id": "sub-12",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "du",
+        "Zeit",
+        "hast,",
+        "rufe",
+        "ich",
+        "dich",
+        "an."
+      ],
+      "answers": [
+        "Wenn du Zeit hast, rufe ich dich an."
+      ],
+      "translation": "If you have time, I'll call you.",
+      "explanation": "Clause first: the verb rufe comes right after the comma, before the subject ich."
+    },
+    {
+      "id": "sub-13",
+      "type": "choice",
+      "prompt": "Wenn ich Zeit habe, ___.",
+      "options": [
+        "besuche ich dich",
+        "ich besuche dich",
+        "ich dich besuche"
+      ],
+      "answer": "besuche ich dich",
+      "explanation": "After a subordinate clause in first position, the main clause starts with the verb: besuche ich dich."
+    },
+    {
+      "id": "sub-14",
+      "type": "order",
+      "words": [
+        "Tom",
+        "lernt",
+        "Deutsch,",
+        "weil",
+        "er",
+        "in",
+        "Berlin",
+        "arbeitet."
+      ],
+      "answers": [
+        "Tom lernt Deutsch, weil er in Berlin arbeitet."
+      ],
+      "translation": "Tom is learning German because he works in Berlin.",
+      "explanation": "The verb arbeitet goes to the end of the weil clause."
+    },
+    {
+      "id": "sub-15",
+      "type": "order",
+      "words": [
+        "Ich",
+        "hoffe,",
+        "dass",
+        "das",
+        "Wetter",
+        "morgen",
+        "schön",
+        "ist."
+      ],
+      "answers": [
+        "Ich hoffe, dass das Wetter morgen schön ist.",
+        "Ich hoffe, dass morgen das Wetter schön ist."
+      ],
+      "translation": "I hope that the weather is nice tomorrow.",
+      "explanation": "In the dass clause the verb ist is last; morgen can stand before or after das Wetter."
+    },
+    {
+      "id": "sub-16",
+      "type": "type",
+      "prompt": "Sie sagt, dass sie heute lange ___.",
+      "hint": "(arbeiten)",
+      "answers": [
+        "arbeitet"
+      ],
+      "explanation": "The verb goes to the end of the dass clause and is conjugated for sie: arbeitet."
+    },
+    {
+      "id": "sub-17",
+      "type": "choice",
+      "prompt": "Ich weiß, dass er morgen ___.",
+      "options": [
+        "ankommt",
+        "kommt an",
+        "an kommt"
+      ],
+      "answer": "ankommt",
+      "explanation": "In a subordinate clause a separable verb is not split: dass er ankommt."
+    },
+    {
+      "id": "sub-18",
+      "type": "order",
+      "words": [
+        "Weißt",
+        "du,",
+        "ob",
+        "der",
+        "Supermarkt",
+        "noch",
+        "offen",
+        "ist?"
+      ],
+      "answers": [
+        "Weißt du, ob der Supermarkt noch offen ist?"
+      ],
+      "translation": "Do you know whether the supermarket is still open?",
+      "explanation": "ob clauses send the verb ist to the end, even inside a question."
+    },
+    {
+      "id": "sub-19",
+      "type": "order",
+      "words": [
+        "Ich",
+        "komme",
+        "später,",
+        "weil",
+        "der",
+        "Bus",
+        "Verspätung",
+        "hat."
+      ],
+      "answers": [
+        "Ich komme später, weil der Bus Verspätung hat."
+      ],
+      "translation": "I'm coming later because the bus is late.",
+      "explanation": "The verb hat stands at the end of the weil clause, after Verspätung."
+    },
+    {
+      "id": "sub-20",
+      "type": "type",
+      "prompt": "Ich bleibe im Bett, weil ich Fieber ___.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "In the weil clause the conjugated verb is last: weil ich Fieber habe."
+    },
+    {
+      "id": "sub-21",
+      "type": "order",
+      "words": [
+        "Wenn",
+        "ich",
+        "Hunger",
+        "habe,",
+        "esse",
+        "ich",
+        "einen",
+        "Apfel."
+      ],
+      "answers": [
+        "Wenn ich Hunger habe, esse ich einen Apfel."
+      ],
+      "translation": "When I'm hungry, I eat an apple.",
+      "explanation": "Clause first, then inverted main clause: esse ich."
+    },
+    {
+      "id": "sub-22",
+      "type": "choice",
+      "prompt": "Ich bin müde, weil ich schlecht geschlafen ___.",
+      "options": [
+        "habe",
+        "bin",
+        "hat"
+      ],
+      "answer": "habe",
+      "explanation": "With a perfect tense in a subordinate clause, the conjugated auxiliary comes last, after the participle: geschlafen habe."
+    },
+    {
+      "id": "sub-23",
+      "type": "order",
+      "words": [
+        "Sie",
+        "geht",
+        "zur",
+        "Arbeit,",
+        "obwohl",
+        "sie",
+        "Fieber",
+        "hat."
+      ],
+      "answers": [
+        "Sie geht zur Arbeit, obwohl sie Fieber hat."
+      ],
+      "translation": "She goes to work although she has a fever.",
+      "explanation": "obwohl (although) also sends the verb hat to the end."
+    },
+    {
+      "id": "sub-24",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "ist",
+        "glücklich,",
+        "weil",
+        "er",
+        "eine",
+        "neue",
+        "Wohnung",
+        "gefunden",
+        "hat."
+      ],
+      "answers": [
+        "Jonas ist glücklich, weil er eine neue Wohnung gefunden hat."
+      ],
+      "translation": "Jonas is happy because he found a new flat.",
+      "explanation": "The participle gefunden comes before the auxiliary hat, which is last."
+    },
+    {
+      "id": "sub-25",
+      "type": "order",
+      "words": [
+        "Ich",
+        "rufe",
+        "dich",
+        "an,",
+        "wenn",
+        "ich",
+        "ankomme."
+      ],
+      "answers": [
+        "Ich rufe dich an, wenn ich ankomme."
+      ],
+      "translation": "I'll call you when I arrive.",
+      "explanation": "In a subordinate clause the separable verb is written together: ich ankomme."
+    },
+    {
+      "id": "sub-26",
+      "type": "choice",
+      "prompt": "Er lernt viel, weil er die Prüfung bestehen ___.",
+      "options": [
+        "will",
+        "wollen",
+        "willst"
+      ],
+      "answer": "will",
+      "explanation": "With a modal verb in a subordinate clause, the conjugated modal comes last: bestehen will."
+    },
+    {
+      "id": "sub-27",
+      "type": "order",
+      "words": [
+        "Weil",
+        "sie",
+        "viel",
+        "arbeiten",
+        "muss,",
+        "hat",
+        "Lena",
+        "wenig",
+        "Zeit."
+      ],
+      "answers": [
+        "Weil sie viel arbeiten muss, hat Lena wenig Zeit."
+      ],
+      "translation": "Because she has to work a lot, Lena has little time.",
+      "explanation": "The modal muss is last in the weil clause; the main clause then starts with hat."
+    },
+    {
+      "id": "sub-28",
+      "type": "type",
+      "prompt": "Ruf mich an, wenn du Zeit ___.",
+      "hint": "(haben)",
+      "answers": [
+        "hast"
+      ],
+      "explanation": "In the wenn clause the verb goes to the end and agrees with du: hast."
+    },
+    {
+      "id": "sub-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "möchte",
+        "wissen,",
+        "warum",
+        "du",
+        "so",
+        "spät",
+        "kommst."
+      ],
+      "answers": [
+        "Ich möchte wissen, warum du so spät kommst."
+      ],
+      "translation": "I'd like to know why you're coming so late.",
+      "explanation": "Question words (warum, wann, wo) also send the verb to the end in indirect questions."
+    },
+    {
+      "id": "sub-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "du",
+        "gestern",
+        "krank",
+        "warst."
+      ],
+      "answers": [
+        "Ich weiß, dass du gestern krank warst."
+      ],
+      "translation": "I know that you were ill yesterday.",
+      "explanation": "In the dass clause, warst (the conjugated verb) comes last."
+    }
+  ]
+}

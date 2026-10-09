@@ -1,0 +1,362 @@
+{
+  "slug": "adjective-endings-basic",
+  "instructions": "Choose or type the correct adjective ending for each noun.",
+  "items": [
+    {
+      "id": "adj-01",
+      "type": "choice",
+      "prompt": "Das ist der ___ Hund.",
+      "options": [
+        "große",
+        "großen",
+        "großes"
+      ],
+      "answer": "große",
+      "explanation": "After der (nominative masculine) the adjective takes -e: der große Hund."
+    },
+    {
+      "id": "adj-02",
+      "type": "choice",
+      "prompt": "Die ___ Katze schläft.",
+      "options": [
+        "kleine",
+        "kleinen",
+        "kleiner",
+        "kleines"
+      ],
+      "answer": "kleine",
+      "explanation": "After die (nominative feminine) the adjective takes -e: die kleine Katze."
+    },
+    {
+      "id": "adj-03",
+      "type": "choice",
+      "prompt": "Das ___ Haus ist teuer.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer"
+      ],
+      "answer": "neue",
+      "explanation": "After das (nominative neuter) the adjective takes -e: das neue Haus."
+    },
+    {
+      "id": "adj-04",
+      "type": "choice",
+      "prompt": "Kennst du den ___ Lehrer?",
+      "options": [
+        "junge",
+        "jungen",
+        "junger"
+      ],
+      "answer": "jungen",
+      "explanation": "After den (accusative masculine) the adjective takes -en: den jungen Lehrer."
+    },
+    {
+      "id": "adj-05",
+      "type": "choice",
+      "prompt": "Wir kaufen die ___ Jacke.",
+      "options": [
+        "rote",
+        "roten",
+        "roter"
+      ],
+      "answer": "rote",
+      "explanation": "After die (accusative feminine) the ending stays -e: die rote Jacke."
+    },
+    {
+      "id": "adj-06",
+      "type": "choice",
+      "prompt": "Er trinkt das ___ Wasser.",
+      "options": [
+        "kalte",
+        "kalten",
+        "kaltes"
+      ],
+      "answer": "kalte",
+      "explanation": "After das (accusative neuter) the ending is -e: das kalte Wasser."
+    },
+    {
+      "id": "adj-07",
+      "type": "choice",
+      "prompt": "Ich habe einen ___ Bruder.",
+      "options": [
+        "große",
+        "großen",
+        "großer",
+        "großes"
+      ],
+      "answer": "großen",
+      "explanation": "After einen (accusative masculine) the adjective takes -en: einen großen Bruder."
+    },
+    {
+      "id": "adj-08",
+      "type": "choice",
+      "prompt": "Das ist ein ___ Tisch.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer",
+        "neues"
+      ],
+      "answer": "neuer",
+      "explanation": "After ein (nominative masculine) the adjective shows the gender itself: ein neuer Tisch."
+    },
+    {
+      "id": "adj-09",
+      "type": "choice",
+      "prompt": "Das ist ein ___ Auto.",
+      "options": [
+        "alte",
+        "alten",
+        "alter",
+        "altes"
+      ],
+      "answer": "altes",
+      "explanation": "After ein (nominative neuter) the adjective shows the gender itself with -es: ein altes Auto."
+    },
+    {
+      "id": "adj-10",
+      "type": "choice",
+      "prompt": "Sie hat eine ___ Tasche.",
+      "options": [
+        "schwarze",
+        "schwarzen",
+        "schwarzer",
+        "schwarzes"
+      ],
+      "answer": "schwarze",
+      "explanation": "After eine (feminine) the adjective takes -e: eine schwarze Tasche."
+    },
+    {
+      "id": "adj-11",
+      "type": "choice",
+      "prompt": "Das ist eine ___ Idee.",
+      "options": [
+        "gute",
+        "guten",
+        "guter",
+        "gutes"
+      ],
+      "answer": "gute",
+      "explanation": "After eine (nominative feminine) the adjective takes -e: eine gute Idee."
+    },
+    {
+      "id": "adj-12",
+      "type": "choice",
+      "prompt": "Ich lese ein ___ Buch.",
+      "options": [
+        "spannende",
+        "spannenden",
+        "spannendes"
+      ],
+      "answer": "spannendes",
+      "explanation": "After ein (accusative neuter) the adjective shows the gender with -es: ein spannendes Buch."
+    },
+    {
+      "id": "adj-13",
+      "type": "choice",
+      "prompt": "Ich suche einen ___ Stuhl.",
+      "options": [
+        "bequeme",
+        "bequemen",
+        "bequemer"
+      ],
+      "answer": "bequemen",
+      "explanation": "After einen (accusative masculine) the adjective takes -en: einen bequemen Stuhl."
+    },
+    {
+      "id": "adj-14",
+      "type": "choice",
+      "prompt": "Die ___ Häuser sind sehr teuer.",
+      "options": [
+        "alte",
+        "alten",
+        "alter"
+      ],
+      "answer": "alten",
+      "explanation": "In the plural after die the adjective takes -en: die alten Häuser."
+    },
+    {
+      "id": "adj-15",
+      "type": "choice",
+      "prompt": "Ich mag die ___ Schuhe.",
+      "options": [
+        "braune",
+        "braunen",
+        "brauner"
+      ],
+      "answer": "braunen",
+      "explanation": "In the plural after die the adjective takes -en: die braunen Schuhe."
+    },
+    {
+      "id": "adj-16",
+      "type": "choice",
+      "prompt": "Dort steht ein ___ Mann.",
+      "options": [
+        "alte",
+        "alten",
+        "alter",
+        "altes"
+      ],
+      "answer": "alter",
+      "explanation": "After ein (nominative masculine) the adjective shows the gender with -er: ein alter Mann."
+    },
+    {
+      "id": "adj-17",
+      "type": "choice",
+      "prompt": "Wir haben ein ___ Zimmer.",
+      "options": [
+        "schöne",
+        "schönen",
+        "schönes"
+      ],
+      "answer": "schönes",
+      "explanation": "After ein (accusative neuter) the adjective shows the gender with -es: ein schönes Zimmer."
+    },
+    {
+      "id": "adj-18",
+      "type": "choice",
+      "prompt": "Der ___ Tee ist zu heiß.",
+      "options": [
+        "schwarze",
+        "schwarzen",
+        "schwarzer"
+      ],
+      "answer": "schwarze",
+      "explanation": "After der (nominative masculine) the adjective takes -e: der schwarze Tee."
+    },
+    {
+      "id": "adj-19",
+      "type": "choice",
+      "prompt": "Ich esse die ___ Suppe.",
+      "options": [
+        "warme",
+        "warmen",
+        "warmer"
+      ],
+      "answer": "warme",
+      "explanation": "After die (accusative feminine) the ending stays -e: die warme Suppe."
+    },
+    {
+      "id": "adj-20",
+      "type": "choice",
+      "prompt": "Sie trägt das ___ Kleid.",
+      "options": [
+        "blaue",
+        "blauen",
+        "blaues"
+      ],
+      "answer": "blaue",
+      "explanation": "After das (accusative neuter) the ending is -e: das blaue Kleid."
+    },
+    {
+      "id": "adj-21",
+      "type": "choice",
+      "prompt": "Er kauft einen ___ Computer.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer"
+      ],
+      "answer": "neuen",
+      "explanation": "After einen (accusative masculine) the adjective takes -en: einen neuen Computer."
+    },
+    {
+      "id": "adj-22",
+      "type": "choice",
+      "prompt": "Der ___ Pullover ist zu klein.",
+      "options": [
+        "gelbe",
+        "gelben",
+        "gelber"
+      ],
+      "answer": "gelbe",
+      "explanation": "After der (nominative masculine) the adjective takes -e: der gelbe Pullover."
+    },
+    {
+      "id": "adj-23",
+      "type": "choice",
+      "prompt": "Gegenüber ist ein ___ Café.",
+      "options": [
+        "neue",
+        "neuen",
+        "neuer",
+        "neues"
+      ],
+      "answer": "neues",
+      "explanation": "After ein (nominative neuter) the adjective shows the gender itself with -es: ein neues Café."
+    },
+    {
+      "id": "adj-24",
+      "type": "choice",
+      "prompt": "Wir kaufen die ___ Äpfel.",
+      "options": [
+        "grüne",
+        "grünen",
+        "grüner"
+      ],
+      "answer": "grünen",
+      "explanation": "In the plural after die the adjective takes -en, also in the accusative: die grünen Äpfel."
+    },
+    {
+      "id": "adj-25",
+      "type": "type",
+      "prompt": "Ich kaufe einen ___ Mantel.",
+      "hint": "(warm)",
+      "answers": [
+        "warmen"
+      ],
+      "explanation": "After einen (accusative masculine) the adjective takes -en: einen warmen Mantel."
+    },
+    {
+      "id": "adj-26",
+      "type": "type",
+      "prompt": "Das ist ein ___ Film.",
+      "hint": "(lang)",
+      "answers": [
+        "langer"
+      ],
+      "explanation": "After ein (nominative masculine) the adjective shows the gender with -er: ein langer Film."
+    },
+    {
+      "id": "adj-27",
+      "type": "type",
+      "prompt": "Die ___ Blumen sind schön.",
+      "hint": "(bunt)",
+      "answers": [
+        "bunten"
+      ],
+      "explanation": "In the plural after die the adjective takes -en: die bunten Blumen."
+    },
+    {
+      "id": "adj-28",
+      "type": "type",
+      "prompt": "Das ist eine ___ Frage.",
+      "hint": "(interessant)",
+      "answers": [
+        "interessante"
+      ],
+      "explanation": "After eine (nominative feminine) the adjective takes -e: eine interessante Frage."
+    },
+    {
+      "id": "adj-29",
+      "type": "type",
+      "prompt": "Sie hat eine ___ Wohnung.",
+      "hint": "(günstig)",
+      "answers": [
+        "günstige"
+      ],
+      "explanation": "After eine (feminine) the adjective takes -e: eine günstige Wohnung."
+    },
+    {
+      "id": "adj-30",
+      "type": "type",
+      "prompt": "Heute esse ich ein ___ Brötchen.",
+      "hint": "(frisch)",
+      "answers": [
+        "frisches"
+      ],
+      "explanation": "After ein (accusative neuter) the adjective shows the gender with -es: ein frisches Brötchen."
+    }
+  ]
+}

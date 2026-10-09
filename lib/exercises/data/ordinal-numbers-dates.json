@@ -1,0 +1,359 @@
+{
+  "slug": "ordinal-numbers-dates",
+  "instructions": "Fill in or build the correct ordinal number or date.",
+  "items": [
+    {
+      "id": "ord-01",
+      "type": "choice",
+      "prompt": "Montag ist der ___ Tag der Woche.",
+      "options": [
+        "erste",
+        "eine",
+        "einte",
+        "eins"
+      ],
+      "answer": "erste",
+      "explanation": "1. is irregular: der erste, not einte."
+    },
+    {
+      "id": "ord-02",
+      "type": "choice",
+      "prompt": "Der ___ Monat des Jahres ist Februar.",
+      "options": [
+        "zweite",
+        "zweiste",
+        "zweit"
+      ],
+      "answer": "zweite",
+      "explanation": "2. is regular: zwei + te, so der zweite Monat."
+    },
+    {
+      "id": "ord-03",
+      "type": "choice",
+      "prompt": "Heute ist der ___ Juni.",
+      "options": [
+        "dritte",
+        "dreite",
+        "dritete"
+      ],
+      "answer": "dritte",
+      "explanation": "3. is irregular: der dritte, not dreite."
+    },
+    {
+      "id": "ord-04",
+      "type": "choice",
+      "prompt": "Das ist die ___ Straße links.",
+      "options": [
+        "vierte",
+        "vier",
+        "vierste"
+      ],
+      "answer": "vierte",
+      "explanation": "Up to 19 ordinals add -te (vier → vierte); die Straße takes -e in the nominative."
+    },
+    {
+      "id": "ord-05",
+      "type": "choice",
+      "prompt": "Heute ist der ___ Oktober.",
+      "options": [
+        "zehnte",
+        "zehnste",
+        "zehn"
+      ],
+      "answer": "zehnte",
+      "explanation": "Up to 19 ordinals add -te: zehn → der zehnte."
+    },
+    {
+      "id": "ord-06",
+      "type": "choice",
+      "prompt": "Heute ist der ___ Mai.",
+      "options": [
+        "zwanzigste",
+        "zwanzigte",
+        "zwanzigen"
+      ],
+      "answer": "zwanzigste",
+      "explanation": "From 20 ordinals add -ste: zwanzig → der zwanzigste."
+    },
+    {
+      "id": "ord-07",
+      "type": "choice",
+      "prompt": "Wir wohnen im ___ Stock.",
+      "options": [
+        "achten",
+        "achte",
+        "achtem"
+      ],
+      "answer": "achten",
+      "explanation": "acht → achte (only one t); after im (dative) it ends in -en: im achten Stock."
+    },
+    {
+      "id": "ord-08",
+      "type": "choice",
+      "prompt": "Anna feiert am ___ Mai Geburtstag.",
+      "options": [
+        "ersten",
+        "erste",
+        "ersteste"
+      ],
+      "answer": "ersten",
+      "explanation": "am is dative, so the ordinal ends in -en: am ersten Mai."
+    },
+    {
+      "id": "ord-09",
+      "type": "choice",
+      "prompt": "Der Kurs beginnt am ___ April.",
+      "options": [
+        "fünften",
+        "fünfte",
+        "fünftem"
+      ],
+      "answer": "fünften",
+      "explanation": "Date after am: ordinal + -en, so am fünften April."
+    },
+    {
+      "id": "ord-10",
+      "type": "choice",
+      "prompt": "Die Schule beginnt am ___ Januar wieder.",
+      "options": [
+        "elften",
+        "elfsten",
+        "elfzehnten"
+      ],
+      "answer": "elften",
+      "explanation": "elf → elfte (add -te up to 19); after am (dative) it ends in -en: am elften Januar."
+    },
+    {
+      "id": "ord-11",
+      "type": "choice",
+      "prompt": "Wir haben am ___ Juni Prüfung.",
+      "options": [
+        "zwanzigsten",
+        "zwanzigten",
+        "zwanzigste"
+      ],
+      "answer": "zwanzigsten",
+      "explanation": "From 20 add -ste, plus -n after am: am zwanzigsten Juni."
+    },
+    {
+      "id": "ord-12",
+      "type": "choice",
+      "prompt": "Der Urlaub endet am ___ August.",
+      "options": [
+        "dreißigsten",
+        "dreißigten",
+        "dreißigen"
+      ],
+      "answer": "dreißigsten",
+      "explanation": "30. = dreißig + -ste, plus -n after am: am dreißigsten August."
+    },
+    {
+      "id": "ord-13",
+      "type": "type",
+      "prompt": "Heute ist der ___ Juli.",
+      "hint": "(1.)",
+      "answers": [
+        "erste"
+      ],
+      "explanation": "1. is irregular: der erste."
+    },
+    {
+      "id": "ord-14",
+      "type": "type",
+      "prompt": "Morgen ist der ___ April.",
+      "hint": "(2.)",
+      "answers": [
+        "zweite"
+      ],
+      "explanation": "After der/die/das the ordinal takes -e in the nominative: der zweite."
+    },
+    {
+      "id": "ord-15",
+      "type": "type",
+      "prompt": "Ich habe am ___ August Geburtstag.",
+      "hint": "(3.)",
+      "answers": [
+        "dritten"
+      ],
+      "explanation": "After am/im (dative) the ordinal ends in -en: am dritten (3. is irregular)."
+    },
+    {
+      "id": "ord-16",
+      "type": "type",
+      "prompt": "Wir fahren am ___ Mai nach Wien.",
+      "hint": "(1.)",
+      "answers": [
+        "ersten"
+      ],
+      "explanation": "After am/im (dative) the ordinal ends in -en: am ersten Mai."
+    },
+    {
+      "id": "ord-17",
+      "type": "type",
+      "prompt": "Heute ist der ___ Februar.",
+      "hint": "(4.)",
+      "answers": [
+        "vierte"
+      ],
+      "explanation": "After der/die/das the ordinal takes -e in the nominative: vier → vierte."
+    },
+    {
+      "id": "ord-18",
+      "type": "type",
+      "prompt": "Der Kurs beginnt am ___ Oktober.",
+      "hint": "(6.)",
+      "answers": [
+        "sechsten"
+      ],
+      "explanation": "sechs → sechste (add -te); after am it ends in -en: am sechsten Oktober."
+    },
+    {
+      "id": "ord-19",
+      "type": "type",
+      "prompt": "Sie wohnt im ___ Stock.",
+      "hint": "(7.)",
+      "answers": [
+        "siebten",
+        "siebenten"
+      ],
+      "explanation": "7. is irregular: siebte (the longer siebente is also correct); dative after im: im siebten Stock."
+    },
+    {
+      "id": "ord-20",
+      "type": "type",
+      "prompt": "Der ___ März ist ein Mittwoch.",
+      "hint": "(8.)",
+      "answers": [
+        "achte"
+      ],
+      "explanation": "acht → achte (one t); nominative after der: der achte März."
+    },
+    {
+      "id": "ord-21",
+      "type": "type",
+      "prompt": "Lena ist zum ___ Mal in Wien.",
+      "hint": "(9.)",
+      "answers": [
+        "neunten"
+      ],
+      "explanation": "neun → neunte; zum (zu dem) is dative, so it ends in -en: zum neunten Mal."
+    },
+    {
+      "id": "ord-22",
+      "type": "type",
+      "prompt": "Das Konzert ist am ___ November.",
+      "hint": "(11.)",
+      "answers": [
+        "elften"
+      ],
+      "explanation": "elf → elfte (add -te up to 19), plus -n after am: am elften November."
+    },
+    {
+      "id": "ord-23",
+      "type": "type",
+      "prompt": "Heute ist der ___ Juni.",
+      "hint": "(12.)",
+      "answers": [
+        "zwölfte"
+      ],
+      "explanation": "zwölf → zwölfte (the f stays, -te added); nominative: der zwölfte."
+    },
+    {
+      "id": "ord-24",
+      "type": "type",
+      "prompt": "Weihnachten ist am ___ Dezember.",
+      "hint": "(25.)",
+      "answers": [
+        "fünfundzwanzigsten"
+      ],
+      "explanation": "From 20 add -ste (fünfundzwanzig → fünfundzwanzigste), plus -n after am."
+    },
+    {
+      "id": "ord-25",
+      "type": "type",
+      "prompt": "Mein Vater hat am ___ Mai Geburtstag.",
+      "hint": "(20.)",
+      "answers": [
+        "zwanzigsten"
+      ],
+      "explanation": "zwanzig + -ste, and -n after am: am zwanzigsten Mai."
+    },
+    {
+      "id": "ord-26",
+      "type": "type",
+      "prompt": "Das Fest ist am ___ Juli.",
+      "hint": "(21.)",
+      "answers": [
+        "einundzwanzigsten"
+      ],
+      "explanation": "From 20 up, ordinals take -ste: einundzwanzig → einundzwanzigsten after am."
+    },
+    {
+      "id": "ord-27",
+      "type": "order",
+      "words": [
+        "Am",
+        "wievielten",
+        "hast",
+        "du",
+        "Geburtstag?"
+      ],
+      "answers": [
+        "Am wievielten hast du Geburtstag?"
+      ],
+      "translation": "On which date is your birthday?",
+      "explanation": "Am wievielten ...? asks for a date; like an ordinal after am it ends in -en."
+    },
+    {
+      "id": "ord-28",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "am",
+        "zwölften",
+        "März",
+        "Geburtstag?"
+      ],
+      "answers": [
+        "Hast du am zwölften März Geburtstag?"
+      ],
+      "translation": "Is your birthday on the twelfth of March?",
+      "explanation": "am takes the dative, so the ordinal ends in -en: am zwölften März."
+    },
+    {
+      "id": "ord-29",
+      "type": "order",
+      "words": [
+        "Wir",
+        "wohnen",
+        "im",
+        "vierten",
+        "Stock."
+      ],
+      "answers": [
+        "Wir wohnen im vierten Stock."
+      ],
+      "translation": "We live on the fourth floor.",
+      "explanation": "im is dative, so the ordinal ends in -en: im vierten Stock."
+    },
+    {
+      "id": "ord-30",
+      "type": "order",
+      "words": [
+        "Fährt",
+        "Anna",
+        "am",
+        "zweiten",
+        "Juli",
+        "nach",
+        "Berlin?"
+      ],
+      "answers": [
+        "Fährt Anna am zweiten Juli nach Berlin?"
+      ],
+      "translation": "Is Anna going to Berlin on the second of July?",
+      "explanation": "Dates with am use the dative -en: am zweiten Juli."
+    }
+  ]
+}

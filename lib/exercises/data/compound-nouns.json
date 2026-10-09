@@ -1,0 +1,340 @@
+{
+  "slug": "compound-nouns",
+  "instructions": "Choose or type the missing compound noun, or its article, using the last part of the word.",
+  "items": [
+    {
+      "id": "cn-01",
+      "type": "choice",
+      "prompt": "Wo ist ___ Kaffeetasse?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The last part decides: Tasse is feminine, so die Kaffeetasse, even though der Kaffee is masculine."
+    },
+    {
+      "id": "cn-02",
+      "type": "choice",
+      "prompt": "Wo ist ___ Orangensaft?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "The last part decides: der Saft, so der Orangensaft, even though die Orange is feminine."
+    },
+    {
+      "id": "cn-03",
+      "type": "choice",
+      "prompt": "Im Winter ist ___ Schlafzimmer kalt.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "The last part decides: das Zimmer, so das Schlafzimmer (not der Schlaf)."
+    },
+    {
+      "id": "cn-04",
+      "type": "choice",
+      "prompt": "Hier liegt ___ Handschuh.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "The last part decides: der Schuh, so der Handschuh (even though die Hand is feminine)."
+    },
+    {
+      "id": "cn-05",
+      "type": "choice",
+      "prompt": "Wo ist ___ Sonnenbrille?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The last part decides: die Brille, so die Sonnenbrille."
+    },
+    {
+      "id": "cn-06",
+      "type": "choice",
+      "prompt": "Dort steht ___ Kühlschrank.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "The last part decides: der Schrank, so der Kühlschrank."
+    },
+    {
+      "id": "cn-07",
+      "type": "choice",
+      "prompt": "Ist ___ Wochenende schon vorbei?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "The last part decides: das Ende, so das Wochenende, even though die Woche is feminine."
+    },
+    {
+      "id": "cn-08",
+      "type": "choice",
+      "prompt": "Hier ist ___ Zahnbürste.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The last part decides: die Bürste, so die Zahnbürste, even though der Zahn is masculine."
+    },
+    {
+      "id": "cn-09",
+      "type": "choice",
+      "prompt": "Wo ist ___ Fußball von Tom?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "The last part decides: der Ball, so der Fußball."
+    },
+    {
+      "id": "cn-10",
+      "type": "choice",
+      "prompt": "Ist ___ Wörterbuch neu?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "The last part decides: das Buch, so das Wörterbuch (Wort + er + Buch with a linking -er-)."
+    },
+    {
+      "id": "cn-11",
+      "type": "type",
+      "prompt": "Das ist die ___ von Anna.",
+      "hint": "(Haus + Tür)",
+      "answers": [
+        "Haustür"
+      ],
+      "explanation": "Two nouns written as one word; the gender comes from die Tür, so die Haustür."
+    },
+    {
+      "id": "cn-12",
+      "type": "type",
+      "prompt": "Ich suche meinen ___.",
+      "hint": "(Reise + Pass)",
+      "answers": [
+        "Reisepass"
+      ],
+      "explanation": "Reise + Pass joins without a linking letter: der Reisepass, with the gender of der Pass."
+    },
+    {
+      "id": "cn-13",
+      "type": "type",
+      "prompt": "Lena kauft eine ___.",
+      "hint": "(Wasser + Flasche)",
+      "answers": [
+        "Wasserflasche"
+      ],
+      "explanation": "Wasser + Flasche joins directly: die Wasserflasche, gender from die Flasche."
+    },
+    {
+      "id": "cn-14",
+      "type": "type",
+      "prompt": "Wir treffen uns am ___.",
+      "hint": "(Bahn + Hof)",
+      "answers": [
+        "Bahnhof"
+      ],
+      "explanation": "Bahn + Hof joins directly: der Bahnhof, gender from der Hof."
+    },
+    {
+      "id": "cn-15",
+      "type": "type",
+      "prompt": "Tom fährt auf dem ___ zur Arbeit.",
+      "hint": "(Fahrrad + Weg)",
+      "answers": [
+        "Fahrradweg"
+      ],
+      "explanation": "Fahrrad + Weg joins directly: der Fahrradweg, gender from der Weg."
+    },
+    {
+      "id": "cn-16",
+      "type": "type",
+      "prompt": "Es gibt heute ___.",
+      "hint": "(Kartoffel + Suppe)",
+      "answers": [
+        "Kartoffelsuppe"
+      ],
+      "explanation": "Kartoffel + Suppe joins directly: die Kartoffelsuppe, gender from die Suppe."
+    },
+    {
+      "id": "cn-17",
+      "type": "choice",
+      "prompt": "Mein ___ ist klein.",
+      "options": [
+        "Arbeitszimmer",
+        "Arbeitzimmer",
+        "Arbeitenzimmer"
+      ],
+      "answer": "Arbeitszimmer",
+      "explanation": "After Arbeit- the compound needs a linking -s-: das Arbeitszimmer."
+    },
+    {
+      "id": "cn-18",
+      "type": "choice",
+      "prompt": "Anna fährt mit der ___ zur Arbeit.",
+      "options": [
+        "Straßenbahn",
+        "Straßebahn",
+        "Straßensbahn"
+      ],
+      "answer": "Straßenbahn",
+      "explanation": "Die Straße takes a linking -n-: die Straßenbahn (Straße + n + Bahn)."
+    },
+    {
+      "id": "cn-19",
+      "type": "choice",
+      "prompt": "Zum Geburtstag backt Lena einen ___.",
+      "options": [
+        "Geburtstagkuchen",
+        "Geburtstagskuchen",
+        "Geburtstagenkuchen"
+      ],
+      "answer": "Geburtstagskuchen",
+      "explanation": "Geburtstag takes a linking -s- in compounds: der Geburtstagskuchen."
+    },
+    {
+      "id": "cn-20",
+      "type": "choice",
+      "prompt": "Mein Sohn geht in den ___.",
+      "options": [
+        "Kindergarten",
+        "Kindsgarten",
+        "Kinderngarten"
+      ],
+      "answer": "Kindergarten",
+      "explanation": "Here the linking element is -er-: das Kind becomes Kinder-, so der Kindergarten."
+    },
+    {
+      "id": "cn-21",
+      "type": "choice",
+      "prompt": "Tom kauft einen ___.",
+      "options": [
+        "Blumenstrauß",
+        "Blumestrauß",
+        "Blumesstrauß"
+      ],
+      "answer": "Blumenstrauß",
+      "explanation": "Die Blume takes a linking -n-: der Blumenstrauß (Blume + n + Strauß)."
+    },
+    {
+      "id": "cn-22",
+      "type": "choice",
+      "prompt": "Ich warte vor der ___.",
+      "options": [
+        "Wohnungstür",
+        "Wohnungtür",
+        "Wohnungentür"
+      ],
+      "answer": "Wohnungstür",
+      "explanation": "Nouns ending in -ung take a linking -s-: die Wohnungstür."
+    },
+    {
+      "id": "cn-23",
+      "type": "type",
+      "prompt": "Zum Abendessen macht Tom einen ___.",
+      "hint": "(Tomate + Salat)",
+      "answers": [
+        "Tomatensalat"
+      ],
+      "explanation": "Die Tomate takes a linking -n-: der Tomatensalat, gender from der Salat."
+    },
+    {
+      "id": "cn-24",
+      "type": "type",
+      "prompt": "Das Fahrrad ist mein liebstes ___.",
+      "hint": "(Verkehr + Mittel)",
+      "answers": [
+        "Verkehrsmittel"
+      ],
+      "explanation": "Verkehr takes a linking -s-: das Verkehrsmittel, gender from das Mittel."
+    },
+    {
+      "id": "cn-25",
+      "type": "type",
+      "prompt": "Tom sucht einen neuen ___.",
+      "hint": "(Arbeit + Platz)",
+      "answers": [
+        "Arbeitsplatz"
+      ],
+      "explanation": "Arbeit takes a linking -s-: der Arbeitsplatz, gender from der Platz."
+    },
+    {
+      "id": "cn-26",
+      "type": "type",
+      "prompt": "Lena kauft ___ für ihre Katze.",
+      "hint": "(Katze + Futter)",
+      "answers": [
+        "Katzenfutter"
+      ],
+      "explanation": "Die Katze takes a linking -n-: das Katzenfutter, gender from das Futter."
+    },
+    {
+      "id": "cn-27",
+      "type": "type",
+      "prompt": "Tom packt seine ___.",
+      "hint": "(Schule + Tasche)",
+      "answers": [
+        "Schultasche"
+      ],
+      "explanation": "Schule loses its -e: die Schultasche, gender from die Tasche."
+    },
+    {
+      "id": "cn-28",
+      "type": "choice",
+      "prompt": "Der Hund frisst sein ___.",
+      "options": [
+        "Hundefutter",
+        "Hundfutter",
+        "Hundenfutter"
+      ],
+      "answer": "Hundefutter",
+      "explanation": "Der Hund takes a linking -e-: das Hundefutter."
+    },
+    {
+      "id": "cn-29",
+      "type": "type",
+      "prompt": "Im Park gibt es einen ___.",
+      "hint": "(Spiel + Platz)",
+      "answers": [
+        "Spielplatz"
+      ],
+      "explanation": "Spiel + Platz joins directly: der Spielplatz, gender from der Platz."
+    },
+    {
+      "id": "cn-30",
+      "type": "type",
+      "prompt": "Wir machen ___ im Garten.",
+      "hint": "(Mittag + Pause)",
+      "answers": [
+        "Mittagspause"
+      ],
+      "explanation": "Mittag takes a linking -s-: die Mittagspause, gender from die Pause."
+    }
+  ]
+}

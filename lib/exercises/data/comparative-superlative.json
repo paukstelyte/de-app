@@ -1,0 +1,335 @@
+{
+  "slug": "comparative-superlative",
+  "instructions": "Complete each sentence with the correct comparative or superlative form, or put the words in order.",
+  "items": [
+    {
+      "id": "comp-01",
+      "type": "type",
+      "prompt": "Meine Wohnung ist ___ als deine Wohnung.",
+      "hint": "(klein)",
+      "answers": [
+        "kleiner"
+      ],
+      "explanation": "Comparative: add -er to the adjective (klein → kleiner)."
+    },
+    {
+      "id": "comp-02",
+      "type": "type",
+      "prompt": "Dieses Buch ist ___ als das andere Buch.",
+      "hint": "(billig)",
+      "answers": [
+        "billiger"
+      ],
+      "explanation": "Comparative: add -er to the adjective (billig → billiger)."
+    },
+    {
+      "id": "comp-03",
+      "type": "choice",
+      "prompt": "Der Zug ist ___ als der Bus.",
+      "options": [
+        "schneller",
+        "schnellere",
+        "am schnellsten",
+        "schnell"
+      ],
+      "answer": "schneller",
+      "explanation": "Comparing two things with als needs the comparative: schnell → schneller."
+    },
+    {
+      "id": "comp-04",
+      "type": "type",
+      "prompt": "Anna läuft am ___.",
+      "hint": "(schnell)",
+      "answers": [
+        "schnellsten"
+      ],
+      "explanation": "Superlative of an adverb: am + adjective + -sten: schnell → am schnellsten."
+    },
+    {
+      "id": "comp-05",
+      "type": "type",
+      "prompt": "Mein Opa ist ___ als meine Oma.",
+      "hint": "(alt)",
+      "answers": [
+        "älter"
+      ],
+      "explanation": "Short adjectives often take an umlaut: alt → älter."
+    },
+    {
+      "id": "comp-06",
+      "type": "type",
+      "prompt": "Das Eis schmeckt am ___.",
+      "hint": "(gut)",
+      "answers": [
+        "besten"
+      ],
+      "explanation": "gut is irregular: gut, besser, am besten."
+    },
+    {
+      "id": "comp-07",
+      "type": "type",
+      "prompt": "Pizza esse ich ___ als Salat.",
+      "hint": "(gern)",
+      "answers": [
+        "lieber"
+      ],
+      "explanation": "gern is irregular: gern, lieber, am liebsten."
+    },
+    {
+      "id": "comp-08",
+      "type": "choice",
+      "prompt": "Tom ist so groß ___ Jonas.",
+      "options": [
+        "wie",
+        "als"
+      ],
+      "answer": "wie",
+      "explanation": "Equal comparison uses so … wie; als is only used after a comparative."
+    },
+    {
+      "id": "comp-09",
+      "type": "choice",
+      "prompt": "Berlin ist größer ___ Bonn.",
+      "options": [
+        "als",
+        "wie"
+      ],
+      "answer": "als",
+      "explanation": "After a comparative (größer) the comparison word is als, not wie."
+    },
+    {
+      "id": "comp-10",
+      "type": "type",
+      "prompt": "Dieser Tisch ist ___ als der Stuhl.",
+      "hint": "(hoch)",
+      "answers": [
+        "höher"
+      ],
+      "explanation": "hoch is irregular in the comparative: the c drops and it takes an umlaut: hoch → höher."
+    },
+    {
+      "id": "comp-11",
+      "type": "type",
+      "prompt": "Im Januar ist es am ___.",
+      "hint": "(kalt)",
+      "answers": [
+        "kältesten"
+      ],
+      "explanation": "Short adjectives take an umlaut: kalt → kälter → am kältesten, with -esten after -t."
+    },
+    {
+      "id": "comp-12",
+      "type": "type",
+      "prompt": "Lena ist ___ als ihr Bruder.",
+      "hint": "(jung)",
+      "answers": [
+        "jünger"
+      ],
+      "explanation": "Short adjectives often take an umlaut: jung → jünger."
+    },
+    {
+      "id": "comp-13",
+      "type": "type",
+      "prompt": "Welcher Berg ist am ___?",
+      "hint": "(hoch)",
+      "answers": [
+        "höchsten"
+      ],
+      "explanation": "hoch is irregular: hoch, höher, am höchsten (umlaut; the c is kept in the superlative)."
+    },
+    {
+      "id": "comp-14",
+      "type": "choice",
+      "prompt": "Mein Bruder ist ___ in der Familie.",
+      "options": [
+        "am ältesten",
+        "älter",
+        "am älter",
+        "ältesten"
+      ],
+      "answer": "am ältesten",
+      "explanation": "The predicate superlative is formed with am + adjective + -sten; alt gets an umlaut."
+    },
+    {
+      "id": "comp-15",
+      "type": "type",
+      "prompt": "Diese Aufgabe ist am ___.",
+      "hint": "(schwer)",
+      "answers": [
+        "schwersten"
+      ],
+      "explanation": "Superlative: am + adjective + -sten: schwer → am schwersten."
+    },
+    {
+      "id": "comp-16",
+      "type": "type",
+      "prompt": "Fußball spiele ich am ___.",
+      "hint": "(gern)",
+      "answers": [
+        "liebsten"
+      ],
+      "explanation": "gern is irregular: gern, lieber, am liebsten."
+    },
+    {
+      "id": "comp-17",
+      "type": "type",
+      "prompt": "Der Kaffee hier ist ___ als zu Hause.",
+      "hint": "(gut)",
+      "answers": [
+        "besser"
+      ],
+      "explanation": "gut is irregular: gut, besser, am besten."
+    },
+    {
+      "id": "comp-18",
+      "type": "type",
+      "prompt": "Am Wochenende schlafe ich ___ als in der Woche.",
+      "hint": "(lang)",
+      "answers": [
+        "länger"
+      ],
+      "explanation": "Short adjectives take an umlaut: lang → länger."
+    },
+    {
+      "id": "comp-19",
+      "type": "order",
+      "words": [
+        "Tom",
+        "ist",
+        "älter",
+        "als",
+        "Anna."
+      ],
+      "answers": [
+        "Tom ist älter als Anna."
+      ],
+      "translation": "Tom is older than Anna.",
+      "explanation": "The comparative älter is followed by als and the person being compared."
+    },
+    {
+      "id": "comp-20",
+      "type": "order",
+      "words": [
+        "Berlin",
+        "ist",
+        "viel",
+        "größer",
+        "als",
+        "Bonn."
+      ],
+      "answers": [
+        "Berlin ist viel größer als Bonn."
+      ],
+      "translation": "Berlin is much bigger than Bonn.",
+      "explanation": "groß → größer takes an umlaut; the comparison is introduced by als."
+    },
+    {
+      "id": "comp-21",
+      "type": "type",
+      "prompt": "Wer ist in deiner Klasse am ___?",
+      "hint": "(nett)",
+      "answers": [
+        "nettesten"
+      ],
+      "explanation": "Superlative: am + adjective + -sten; after -t add -esten for pronunciation: nett → am nettesten."
+    },
+    {
+      "id": "comp-22",
+      "type": "type",
+      "prompt": "Im Sommer ist es hier ___ als im Frühling.",
+      "hint": "(warm)",
+      "answers": [
+        "wärmer"
+      ],
+      "explanation": "Short adjectives take an umlaut: warm → wärmer."
+    },
+    {
+      "id": "comp-23",
+      "type": "choice",
+      "prompt": "Ich trinke Tee ___ als Kaffee.",
+      "options": [
+        "lieber",
+        "gerner",
+        "am liebsten"
+      ],
+      "answer": "lieber",
+      "explanation": "gern is irregular: gern, lieber, am liebsten. With als you need the comparative lieber (prefer)."
+    },
+    {
+      "id": "comp-24",
+      "type": "type",
+      "prompt": "Die Pizza hier ist ___ als die Pizza dort.",
+      "hint": "(teuer)",
+      "answers": [
+        "teurer"
+      ],
+      "explanation": "teuer loses its e in the comparative: teuer → teurer."
+    },
+    {
+      "id": "comp-25",
+      "type": "type",
+      "prompt": "Im Supermarkt ist das Brot am ___.",
+      "hint": "(teuer)",
+      "answers": [
+        "teuersten"
+      ],
+      "explanation": "The superlative of teuer keeps the e: am teuersten."
+    },
+    {
+      "id": "comp-26",
+      "type": "type",
+      "prompt": "Mein Zimmer ist ___ als dein Zimmer.",
+      "hint": "(dunkel)",
+      "answers": [
+        "dunkler"
+      ],
+      "explanation": "Adjectives ending in -el drop the e before -er: dunkel → dunkler."
+    },
+    {
+      "id": "comp-27",
+      "type": "order",
+      "words": [
+        "Wer",
+        "kann",
+        "am",
+        "schnellsten",
+        "laufen?"
+      ],
+      "answers": [
+        "Wer kann am schnellsten laufen?"
+      ],
+      "translation": "Who can run the fastest?",
+      "explanation": "Superlative of an adverb: am + adjective + -sten (am schnellsten); the infinitive laufen goes to the end."
+    },
+    {
+      "id": "comp-28",
+      "type": "type",
+      "prompt": "Ich esse heute ___ als gestern.",
+      "hint": "(viel)",
+      "answers": [
+        "mehr"
+      ],
+      "explanation": "viel is irregular: viel, mehr, am meisten."
+    },
+    {
+      "id": "comp-29",
+      "type": "type",
+      "prompt": "Der Winter ist hier ___ als bei uns.",
+      "hint": "(kurz)",
+      "answers": [
+        "kürzer"
+      ],
+      "explanation": "Short adjectives often take an umlaut: kurz → kürzer."
+    },
+    {
+      "id": "comp-30",
+      "type": "type",
+      "prompt": "Er ist am ___ in der Gruppe.",
+      "hint": "(stark)",
+      "answers": [
+        "stärksten"
+      ],
+      "explanation": "Short adjectives take an umlaut: stark → stärker → am stärksten."
+    }
+  ]
+}

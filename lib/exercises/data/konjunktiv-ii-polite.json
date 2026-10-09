@@ -1,0 +1,386 @@
+{
+  "slug": "konjunktiv-ii-polite",
+  "instructions": "Choose, type or arrange the polite form (würde, könnte, hätte gern) for each request.",
+  "items": [
+    {
+      "id": "kj-01",
+      "type": "choice",
+      "prompt": "Guten Tag, ich ___ gern einen Tee, bitte.",
+      "options": [
+        "hätte",
+        "hatte",
+        "hätten"
+      ],
+      "answer": "hätte",
+      "explanation": "Ich hätte gern is the polite way to order something; hätte is the Konjunktiv II of haben."
+    },
+    {
+      "id": "kj-02",
+      "type": "order",
+      "words": [
+        "Was",
+        "hätten",
+        "Sie",
+        "gern?"
+      ],
+      "answers": [
+        "Was hätten Sie gern?"
+      ],
+      "translation": "What would you like?",
+      "explanation": "Was hätten Sie gern? is the polite question in a shop or café; hätten is in second position after was."
+    },
+    {
+      "id": "kj-03",
+      "type": "type",
+      "prompt": "Ich ___ gern ein Glas Wasser.",
+      "hint": "(haben)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "hätte gern + noun is the polite way to ask for something: ich hätte, wir hätten."
+    },
+    {
+      "id": "kj-04",
+      "type": "choice",
+      "prompt": "Wir ___ gern einen Tisch für zwei.",
+      "options": [
+        "hätten",
+        "hättet",
+        "hätte"
+      ],
+      "answer": "hätten",
+      "explanation": "With wir the Konjunktiv II of haben is hätten: Wir hätten gern ...; hättet is for ihr, hätte for ich/er/sie."
+    },
+    {
+      "id": "kj-05",
+      "type": "type",
+      "prompt": "Wir ___ gern die Rechnung.",
+      "hint": "(haben)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "With wir, hätte gern becomes hätten gern: Wir hätten gern die Rechnung."
+    },
+    {
+      "id": "kj-06",
+      "type": "choice",
+      "prompt": "Im Restaurant: Ich ___ gern die Speisekarte.",
+      "options": [
+        "hätte",
+        "hätten",
+        "hättest"
+      ],
+      "answer": "hätte",
+      "explanation": "With ich the form is hätte (not hätten or hättest): Ich hätte gern ..."
+    },
+    {
+      "id": "kj-07",
+      "type": "choice",
+      "prompt": "Wir ___ gern zwei Karten für das Konzert.",
+      "options": [
+        "hätten",
+        "hättet",
+        "hätte"
+      ],
+      "answer": "hätten",
+      "explanation": "With wir the Konjunktiv II of haben is hätten; hättet is for ihr, hätte for ich/er/sie."
+    },
+    {
+      "id": "kj-08",
+      "type": "type",
+      "prompt": "Was ___ du gern zum Frühstück?",
+      "hint": "(haben)",
+      "answers": [
+        "hättest"
+      ],
+      "explanation": "With du the Konjunktiv II of haben is hättest: Was hättest du gern?"
+    },
+    {
+      "id": "kj-09",
+      "type": "choice",
+      "prompt": "Entschuldigung, ___ Sie mir helfen?",
+      "options": [
+        "könnten",
+        "könntest",
+        "könnte"
+      ],
+      "answer": "könnten",
+      "explanation": "Könnten Sie ...? is a polite request; Sie takes the -en form könnten (könntest is for du)."
+    },
+    {
+      "id": "kj-10",
+      "type": "type",
+      "prompt": "Entschuldigung, ___ Sie mir sagen, wie spät es ist?",
+      "hint": "(können)",
+      "answers": [
+        "könnten"
+      ],
+      "explanation": "Könnten Sie ...? is more polite than Können Sie ...?; the infinitive sagen goes to the end."
+    },
+    {
+      "id": "kj-11",
+      "type": "order",
+      "words": [
+        "Könnten",
+        "Sie",
+        "mir",
+        "bitte",
+        "helfen?"
+      ],
+      "answers": [
+        "Könnten Sie mir bitte helfen?"
+      ],
+      "translation": "Could you please help me?",
+      "explanation": "In a polite question the Konjunktiv verb comes first, the infinitive (helfen) at the end."
+    },
+    {
+      "id": "kj-12",
+      "type": "choice",
+      "prompt": "Tom, ___ du mich bitte morgen anrufen?",
+      "options": [
+        "könntest",
+        "könntet",
+        "könnte"
+      ],
+      "answer": "könntest",
+      "explanation": "With du the Konjunktiv II of können is könntest; könntet is for ihr."
+    },
+    {
+      "id": "kj-13",
+      "type": "type",
+      "prompt": "Lena, ___ du mir bitte den Stift geben?",
+      "hint": "(können)",
+      "answers": [
+        "könntest"
+      ],
+      "explanation": "With du the polite form is könntest: Könntest du mir ... geben?"
+    },
+    {
+      "id": "kj-14",
+      "type": "choice",
+      "prompt": "Entschuldigung, ___ ich kurz telefonieren?",
+      "options": [
+        "könnte",
+        "könnten",
+        "könntest"
+      ],
+      "answer": "könnte",
+      "explanation": "Könnte ich ...? politely asks for permission; with ich the form is könnte."
+    },
+    {
+      "id": "kj-15",
+      "type": "order",
+      "words": [
+        "Könntest",
+        "du",
+        "mir",
+        "das",
+        "Salz",
+        "geben?"
+      ],
+      "answers": [
+        "Könntest du mir das Salz geben?"
+      ],
+      "translation": "Could you give me the salt?",
+      "explanation": "Könntest du ...? is a polite request to a friend; geben goes to the end."
+    },
+    {
+      "id": "kj-16",
+      "type": "choice",
+      "prompt": "Anna und Tom, ___ ihr bitte leiser sein?",
+      "options": [
+        "könntet",
+        "könnten",
+        "könntest"
+      ],
+      "answer": "könntet",
+      "explanation": "With ihr the Konjunktiv II of können is könntet."
+    },
+    {
+      "id": "kj-17",
+      "type": "type",
+      "prompt": "Anna und Jonas, ___ ihr mir bitte helfen?",
+      "hint": "(können)",
+      "answers": [
+        "könntet"
+      ],
+      "explanation": "With ihr the polite form is könntet: Könntet ihr mir helfen?"
+    },
+    {
+      "id": "kj-18",
+      "type": "choice",
+      "prompt": "Ich ___ gern mitkommen, aber ich muss arbeiten.",
+      "options": [
+        "würde",
+        "wurde",
+        "würden"
+      ],
+      "answer": "würde",
+      "explanation": "Ich würde gern + infinitive says what you would like to do; würde is the Konjunktiv II of werden."
+    },
+    {
+      "id": "kj-19",
+      "type": "type",
+      "prompt": "Ich ___ gern nach Wien fahren.",
+      "hint": "(werden)",
+      "answers": [
+        "würde"
+      ],
+      "explanation": "Ich würde gern + infinitive expresses a polite wish; the infinitive fahren goes to the end."
+    },
+    {
+      "id": "kj-20",
+      "type": "order",
+      "words": [
+        "Ich",
+        "würde",
+        "gern",
+        "ein",
+        "Eis",
+        "essen."
+      ],
+      "answers": [
+        "Ich würde gern ein Eis essen."
+      ],
+      "translation": "I would like to eat an ice cream.",
+      "explanation": "würde + gern + infinitive expresses a wish; the infinitive essen goes to the end."
+    },
+    {
+      "id": "kj-21",
+      "type": "choice",
+      "prompt": "Ich ___ gern wissen, wo der Bahnhof ist.",
+      "options": [
+        "würde",
+        "wurde",
+        "würden"
+      ],
+      "answer": "würde",
+      "explanation": "Ich würde gern wissen ... is a polite way to ask for information."
+    },
+    {
+      "id": "kj-22",
+      "type": "order",
+      "words": [
+        "Würdet",
+        "ihr",
+        "gern",
+        "am",
+        "Samstag",
+        "kommen?"
+      ],
+      "answers": [
+        "Würdet ihr gern am Samstag kommen?",
+        "Würdet ihr am Samstag gern kommen?"
+      ],
+      "translation": "Would you like to come on Saturday?",
+      "explanation": "With ihr the form is würdet; kommen stands at the end, and gern can come before or after am Samstag."
+    },
+    {
+      "id": "kj-23",
+      "type": "type",
+      "prompt": "Wir ___ morgen gern früher anfangen.",
+      "hint": "(werden)",
+      "answers": [
+        "würden"
+      ],
+      "explanation": "With wir the Konjunktiv II of werden is würden; anfangen goes to the end."
+    },
+    {
+      "id": "kj-24",
+      "type": "choice",
+      "prompt": "Herr Weber, ___ Sie bitte das Fenster zumachen?",
+      "options": [
+        "würden",
+        "würdest",
+        "wurden"
+      ],
+      "answer": "würden",
+      "explanation": "Würden Sie bitte ...? is a polite request; Sie takes würden (würdest is for du)."
+    },
+    {
+      "id": "kj-25",
+      "type": "type",
+      "prompt": "Frau Meier, ___ Sie bitte kurz warten?",
+      "hint": "(werden)",
+      "answers": [
+        "würden"
+      ],
+      "explanation": "Würden Sie bitte ...? politely asks someone to do something; the infinitive goes to the end."
+    },
+    {
+      "id": "kj-26",
+      "type": "order",
+      "words": [
+        "Würden",
+        "Sie",
+        "bitte",
+        "das",
+        "Fenster",
+        "öffnen?"
+      ],
+      "answers": [
+        "Würden Sie bitte das Fenster öffnen?",
+        "Würden Sie das Fenster bitte öffnen?"
+      ],
+      "translation": "Would you please open the window?",
+      "explanation": "In a würde-question the infinitive öffnen goes last; bitte can stand before or after the object."
+    },
+    {
+      "id": "kj-27",
+      "type": "choice",
+      "prompt": "Lena, ___ du bitte die Tür zumachen?",
+      "options": [
+        "würdest",
+        "würden",
+        "würde"
+      ],
+      "answer": "würdest",
+      "explanation": "With du the Konjunktiv II of werden is würdest."
+    },
+    {
+      "id": "kj-28",
+      "type": "type",
+      "prompt": "Was ___ du gern trinken?",
+      "hint": "(werden)",
+      "answers": [
+        "würdest"
+      ],
+      "explanation": "With du the form is würdest: Was würdest du gern trinken?"
+    },
+    {
+      "id": "kj-29",
+      "type": "order",
+      "words": [
+        "Hätten",
+        "Sie",
+        "vielleicht",
+        "einen",
+        "Tisch",
+        "für",
+        "vier?"
+      ],
+      "answers": [
+        "Hätten Sie vielleicht einen Tisch für vier?"
+      ],
+      "translation": "Would you perhaps have a table for four?",
+      "explanation": "Hätten Sie ...? is a polite question; vielleicht makes it even softer."
+    },
+    {
+      "id": "kj-30",
+      "type": "order",
+      "words": [
+        "Tom",
+        "würde",
+        "gern",
+        "mehr",
+        "Sport",
+        "machen."
+      ],
+      "answers": [
+        "Tom würde gern mehr Sport machen."
+      ],
+      "translation": "Tom would like to do more sport.",
+      "explanation": "With er/sie/Tom the form is würde; the infinitive machen stands at the end."
+    }
+  ]
+}
