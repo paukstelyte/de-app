@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FocusButton } from "@/components/learning/FocusButton";
 import { LevelBadge } from "@/components/LevelBadge";
 import { getArticlesProgress } from "@/lib/attempts";
 import { LEVEL_NAMES, TOPICS, getTopic } from "@/lib/grammar/topics";
 import { percent } from "@/lib/progress";
+import { createClient } from "@/lib/supabase/server";
 
 // Only the catalogue's topics exist; any other address shows the "not found" page.
 export const dynamicParams = false;
@@ -18,6 +20,12 @@ export async function generateMetadata({ params }: PageProps<"/topics/[slug]">) 
 
 const pillPrimary =
   "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
+// A topic counts as "in focus" here if added by hand; upload-only topics show "Add", which pins them.
+async function isInFocus(supabase: Awaited<ReturnType<typeof createClient>>, slug: string) {
+  const { data } = await supabase.from("learning_focus").select("kind").eq("topic_slug", slug).maybeSingle();
+  return data?.kind === "added";
+}
+
 const heading = "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
 
 export default async function TopicPage({ params }: PageProps<"/topics/[slug]">) {
@@ -29,6 +37,10 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
   const prev = sameLevel[i - 1];
   const next = sameLevel[i + 1];
   const articles = topic.slug === "noun-gender" ? await getArticlesProgress() : null;
+  const supabase = await createClient();
+  const { data: claims } = await supabase.auth.getClaims();
+  const loggedIn = !!claims?.claims;
+  const inFocus = loggedIn && (await isInFocus(supabase, topic.slug));
 
   return (
     <article className="flex max-w-3xl flex-col gap-8">
@@ -75,6 +87,7 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
             <Link href={topic.rulesHref} className="underline underline-offset-2">Read the rules behind it</Link>
           </p>
         )}
+        {loggedIn && <FocusButton slug={topic.slug} inFocus={inFocus} />}
       </section>
 
       {(prev || next) && (
