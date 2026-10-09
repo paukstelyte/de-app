@@ -1,0 +1,484 @@
+{
+  "slug": "connectors-advanced",
+  "instructions": "Choose the connector that expresses the right logical link, or build the sentence in the correct word order.",
+  "items": [
+    {
+      "id": "ca-01",
+      "type": "choice",
+      "prompt": "Die Behörde senkte die Kosten erheblich, ___ sie sämtliche Verwaltungsverfahren digitalisierte.",
+      "options": [
+        "indem",
+        "sofern",
+        "wohingegen",
+        "je nachdem"
+      ],
+      "answer": "indem",
+      "explanation": "indem names the means (by doing): the costs fell by digitising the procedures. The verb goes to the end of the indem-clause."
+    },
+    {
+      "id": "ca-02",
+      "type": "choice",
+      "prompt": "Die Teilnahme an der Fortbildung ist kostenfrei, ___ Sie sich bis zum 15. März verbindlich anmelden.",
+      "options": [
+        "sofern",
+        "wohingegen",
+        "geschweige denn",
+        "je nachdem"
+      ],
+      "answer": "sofern",
+      "explanation": "sofern means provided that: the course is free only on condition that you register in time."
+    },
+    {
+      "id": "ca-03",
+      "type": "choice",
+      "prompt": "Im Norden des Landes ist die Arbeitslosigkeit gesunken, ___ sie im Süden weiter gestiegen ist.",
+      "options": [
+        "wohingegen",
+        "indem",
+        "sofern",
+        "geschweige denn"
+      ],
+      "answer": "wohingegen",
+      "explanation": "wohingegen (whereas) contrasts two opposing facts: falling in the north, rising in the south."
+    },
+    {
+      "id": "ca-04",
+      "type": "choice",
+      "prompt": "Er war kaum in der Lage, die Grundzüge des Verfahrens zu erklären, ___ dessen rechtliche Konsequenzen abzuschätzen.",
+      "options": [
+        "geschweige denn",
+        "wohingegen",
+        "indem",
+        "je nachdem"
+      ],
+      "answer": "geschweige denn",
+      "explanation": "geschweige denn (let alone) follows a negative or kaum statement and adds something even less likely."
+    },
+    {
+      "id": "ca-05",
+      "type": "choice",
+      "prompt": "Die Bearbeitungsdauer variiert erheblich, ___, wie umfangreich der Antrag ist.",
+      "options": [
+        "je nachdem",
+        "geschweige denn",
+        "sofern",
+        "insofern"
+      ],
+      "answer": "je nachdem",
+      "explanation": "je nachdem (depending on) is followed by a clause with wie, ob or a w-word; the duration depends on the size of the application. The comma after nachdem is optional."
+    },
+    {
+      "id": "ca-06",
+      "type": "order",
+      "words": [
+        "Die",
+        "Ministerin",
+        "entschärfte",
+        "den",
+        "Konflikt,",
+        "indem",
+        "sie",
+        "Zugeständnisse",
+        "machte."
+      ],
+      "answers": [
+        "Die Ministerin entschärfte den Konflikt, indem sie Zugeständnisse machte."
+      ],
+      "translation": "The minister defused the conflict by making concessions.",
+      "explanation": "indem introduces a subordinate clause, so the conjugated verb machte goes to the end."
+    },
+    {
+      "id": "ca-07",
+      "type": "choice",
+      "prompt": "Die Studie ist ___ aufschlussreich, als sie erstmals Langzeitdaten berücksichtigt.",
+      "options": [
+        "insofern",
+        "sofern",
+        "indem",
+        "je nachdem"
+      ],
+      "answer": "insofern",
+      "explanation": "insofern … als (to the extent that): insofern sits in the main clause, als opens the clause that gives the respect in which it is true."
+    },
+    {
+      "id": "ca-08",
+      "type": "choice",
+      "prompt": "Der Beschluss gilt als angenommen, ___ bis Ende der Woche keine Einwände erhoben werden.",
+      "options": [
+        "sofern",
+        "indem",
+        "wohingegen",
+        "geschweige denn"
+      ],
+      "answer": "sofern",
+      "explanation": "sofern states a condition: the decision counts as adopted provided no objections are raised."
+    },
+    {
+      "id": "ca-09",
+      "type": "order",
+      "words": [
+        "Die",
+        "Frist",
+        "kann",
+        "verlängert",
+        "werden,",
+        "sofern",
+        "triftige",
+        "Gründe",
+        "vorliegen."
+      ],
+      "answers": [
+        "Die Frist kann verlängert werden, sofern triftige Gründe vorliegen."
+      ],
+      "translation": "The deadline can be extended provided there are valid reasons.",
+      "explanation": "sofern sends the verb to the end of its clause: sofern … vorliegen."
+    },
+    {
+      "id": "ca-10",
+      "type": "choice",
+      "prompt": "Die ältere Generation informiert sich überwiegend über Printmedien, ___ jüngere Menschen fast ausschließlich auf digitale Angebote zurückgreifen.",
+      "options": [
+        "wohingegen",
+        "indem",
+        "sofern",
+        "insofern"
+      ],
+      "answer": "wohingegen",
+      "explanation": "wohingegen contrasts two groups (older vs younger people); it is a subordinating conjunction, so zurückgreifen comes last."
+    },
+    {
+      "id": "ca-11",
+      "type": "order",
+      "words": [
+        "Die",
+        "Exporte",
+        "stiegen,",
+        "wohingegen",
+        "die",
+        "Binnennachfrage",
+        "stagnierte."
+      ],
+      "answers": [
+        "Die Exporte stiegen, wohingegen die Binnennachfrage stagnierte."
+      ],
+      "translation": "Exports rose, whereas domestic demand stagnated.",
+      "explanation": "wohingegen is subordinating: the verb stagnierte goes to the end of its clause."
+    },
+    {
+      "id": "ca-12",
+      "type": "choice",
+      "prompt": "Der Vorschlag ist insofern problematisch, ___ er die Interessen kleinerer Unternehmen außer Acht lässt.",
+      "options": [
+        "als",
+        "wie",
+        "wenn",
+        "indem"
+      ],
+      "answer": "als",
+      "explanation": "insofern is always completed by als: insofern problematisch, als … (problematic in that …)."
+    },
+    {
+      "id": "ca-13",
+      "type": "choice",
+      "prompt": "Man kann der Abwanderung von Fachkräften entgegenwirken, ___ man attraktivere Arbeitsbedingungen schafft.",
+      "options": [
+        "indem",
+        "wohingegen",
+        "geschweige denn",
+        "je nachdem"
+      ],
+      "answer": "indem",
+      "explanation": "indem answers the question how? (wodurch?): by creating better working conditions."
+    },
+    {
+      "id": "ca-14",
+      "type": "order",
+      "words": [
+        "Das",
+        "Budget",
+        "deckt",
+        "kaum",
+        "die",
+        "Betriebskosten,",
+        "geschweige",
+        "denn",
+        "Investitionen."
+      ],
+      "answers": [
+        "Das Budget deckt kaum die Betriebskosten, geschweige denn Investitionen."
+      ],
+      "translation": "The budget barely covers running costs, let alone investments.",
+      "explanation": "geschweige denn follows a statement with kaum or nicht and adds an even less likely item; no verb is needed after it."
+    },
+    {
+      "id": "ca-15",
+      "type": "choice",
+      "prompt": "Viele Kommunen können sich die Sanierung ihrer Schulgebäude kaum leisten, ___ einen Neubau.",
+      "options": [
+        "geschweige denn",
+        "wohingegen",
+        "insofern",
+        "indem"
+      ],
+      "answer": "geschweige denn",
+      "explanation": "After kaum, geschweige denn adds something even harder to achieve: a new building is even less affordable than a renovation."
+    },
+    {
+      "id": "ca-16",
+      "type": "choice",
+      "prompt": "Je nachdem, ___ die Mittel bewilligt werden, wird das Projekt im Frühjahr oder erst im Herbst fortgesetzt.",
+      "options": [
+        "ob",
+        "dass",
+        "als",
+        "sofern"
+      ],
+      "answer": "ob",
+      "explanation": "je nachdem is followed by ob when the outcome depends on a yes/no question (are the funds approved or not?)."
+    },
+    {
+      "id": "ca-17",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kosten",
+        "variieren,",
+        "je",
+        "nachdem,",
+        "welcher",
+        "Tarif",
+        "gewählt",
+        "wird."
+      ],
+      "answers": [
+        "Die Kosten variieren, je nachdem, welcher Tarif gewählt wird."
+      ],
+      "translation": "The costs vary depending on which tariff is chosen.",
+      "explanation": "je nachdem introduces a clause with a w-word (welcher); the verb wird goes to the end."
+    },
+    {
+      "id": "ca-18",
+      "type": "choice",
+      "prompt": "Wir werden Sie, ___ dies rechtlich zulässig ist, fortlaufend über den Stand des Verfahrens informieren.",
+      "options": [
+        "sofern",
+        "indem",
+        "wohingegen",
+        "geschweige denn"
+      ],
+      "answer": "sofern",
+      "explanation": "sofern (provided that) limits the promise to cases where it is legally permitted; the clause can be inserted between commas."
+    },
+    {
+      "id": "ca-19",
+      "type": "order",
+      "words": [
+        "Der",
+        "Vorschlag",
+        "überzeugt",
+        "insofern,",
+        "als",
+        "er",
+        "langfristig",
+        "Kosten",
+        "spart."
+      ],
+      "answers": [
+        "Der Vorschlag überzeugt insofern, als er langfristig Kosten spart.",
+        "Der Vorschlag überzeugt insofern, als er Kosten langfristig spart."
+      ],
+      "translation": "The proposal is convincing in that it saves costs in the long run.",
+      "explanation": "insofern stays in the main clause, als opens the subordinate clause with the verb at the end."
+    },
+    {
+      "id": "ca-20",
+      "type": "choice",
+      "prompt": "Die Forscherin widerlegte die gängige These, ___ sie die Originalquellen erneut auswertete.",
+      "options": [
+        "indem",
+        "sofern",
+        "je nachdem",
+        "geschweige denn"
+      ],
+      "answer": "indem",
+      "explanation": "indem gives the method by which a result was achieved; sofern would wrongly make a past fact a condition."
+    },
+    {
+      "id": "ca-21",
+      "type": "order",
+      "words": [
+        "Das",
+        "Unternehmen",
+        "reagierte,",
+        "indem",
+        "es",
+        "die",
+        "Produktion",
+        "vorübergehend",
+        "drosselte."
+      ],
+      "answers": [
+        "Das Unternehmen reagierte, indem es die Produktion vorübergehend drosselte.",
+        "Das Unternehmen reagierte, indem es vorübergehend die Produktion drosselte."
+      ],
+      "translation": "The company responded by temporarily cutting production.",
+      "explanation": "In the indem-clause the subject es follows indem directly and the verb drosselte comes last."
+    },
+    {
+      "id": "ca-22",
+      "type": "choice",
+      "prompt": "Ich stimme Ihnen ___ zu, als die Reform tatsächlich längst überfällig ist.",
+      "options": [
+        "insofern",
+        "sofern",
+        "indem",
+        "wohingegen"
+      ],
+      "answer": "insofern",
+      "explanation": "insofern … als limits agreement to one aspect: I agree with you to the extent that the reform is overdue."
+    },
+    {
+      "id": "ca-23",
+      "type": "order",
+      "words": [
+        "Sofern",
+        "nichts",
+        "anderes",
+        "vereinbart",
+        "wurde,",
+        "gilt",
+        "diese",
+        "Regelung."
+      ],
+      "answers": [
+        "Sofern nichts anderes vereinbart wurde, gilt diese Regelung."
+      ],
+      "translation": "Unless otherwise agreed, this rule applies.",
+      "explanation": "When the sofern-clause comes first, it fills position 1 and the main clause starts with the verb: …, gilt diese Regelung."
+    },
+    {
+      "id": "ca-24",
+      "type": "choice",
+      "prompt": "Kaum jemand hat den Bericht gelesen, ___ sich ernsthaft mit seinen Schlussfolgerungen auseinandergesetzt.",
+      "options": [
+        "geschweige denn",
+        "wohingegen",
+        "je nachdem",
+        "indem"
+      ],
+      "answer": "geschweige denn",
+      "explanation": "geschweige denn can also add a second, shortened verb phrase: hardly anyone read it, let alone engaged with it."
+    },
+    {
+      "id": "ca-25",
+      "type": "order",
+      "answers": [
+        "Die Opposition lehnte den Entwurf ab, wohingegen die Koalition zustimmte.",
+        "Die Koalition lehnte den Entwurf ab, wohingegen die Opposition zustimmte."
+      ],
+      "words": [
+        "Die",
+        "Opposition",
+        "lehnte",
+        "den",
+        "Entwurf",
+        "ab,",
+        "wohingegen",
+        "die",
+        "Koalition",
+        "zustimmte."
+      ],
+      "translation": "The opposition rejected the draft, whereas the coalition agreed.",
+      "explanation": "wohingegen is subordinating, so in its clause the separable verb stays together at the end: zustimmte. (Opposition and Koalition can swap roles.)"
+    },
+    {
+      "id": "ca-26",
+      "type": "choice",
+      "prompt": "Die Höhe der Fördersumme wird ___ Einkommen der Antragsteller gestaffelt.",
+      "options": [
+        "je nach",
+        "je nachdem",
+        "sofern",
+        "indem"
+      ],
+      "answer": "je nach",
+      "explanation": "Before a noun use the preposition je nach (+ dative): je nach Einkommen. je nachdem needs a full clause."
+    },
+    {
+      "id": "ca-27",
+      "type": "order",
+      "words": [
+        "Viele",
+        "Patienten",
+        "verstehen",
+        "die",
+        "Diagnose",
+        "kaum,",
+        "geschweige",
+        "denn",
+        "die",
+        "Therapie."
+      ],
+      "answers": [
+        "Viele Patienten verstehen die Diagnose kaum, geschweige denn die Therapie."
+      ],
+      "translation": "Many patients barely understand the diagnosis, let alone the treatment.",
+      "explanation": "geschweige denn follows a kaum statement and repeats only the new element (die Therapie), without a verb."
+    },
+    {
+      "id": "ca-28",
+      "type": "choice",
+      "prompt": "Die Verhandlungen könnten sich über Monate hinziehen oder rasch abgeschlossen werden, ___, ob beide Seiten zu Zugeständnissen bereit sind.",
+      "options": [
+        "je nachdem",
+        "je nach",
+        "sofern",
+        "indem"
+      ],
+      "answer": "je nachdem",
+      "explanation": "Before a clause (here with ob) use je nachdem; je nach is a preposition and needs a noun."
+    },
+    {
+      "id": "ca-29",
+      "type": "order",
+      "words": [
+        "Das",
+        "Urteil",
+        "ist",
+        "insofern",
+        "bemerkenswert,",
+        "als",
+        "es",
+        "einen",
+        "Präzedenzfall",
+        "schafft."
+      ],
+      "answers": [
+        "Das Urteil ist insofern bemerkenswert, als es einen Präzedenzfall schafft."
+      ],
+      "translation": "The ruling is remarkable in that it sets a precedent.",
+      "explanation": "insofern belongs to the main clause; the als-clause explains in what respect and ends with the verb schafft."
+    },
+    {
+      "id": "ca-30",
+      "type": "order",
+      "words": [
+        "Die",
+        "Behörde",
+        "will",
+        "Missbrauch",
+        "verhindern,",
+        "indem",
+        "sie",
+        "strengere",
+        "Kontrollen",
+        "einführt."
+      ],
+      "answers": [
+        "Die Behörde will Missbrauch verhindern, indem sie strengere Kontrollen einführt."
+      ],
+      "translation": "The authority wants to prevent abuse by introducing stricter controls.",
+      "explanation": "The separable verb einführen stays joined at the end of the indem-clause: einführt."
+    }
+  ]
+}

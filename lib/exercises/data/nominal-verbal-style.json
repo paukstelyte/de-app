@@ -1,0 +1,357 @@
+{
+  "slug": "nominal-verbal-style",
+  "instructions": "Each item gives a sentence in one style; choose or type the missing word to rewrite it in the other style (noun style ↔ verb style).",
+  "items": [
+    {
+      "id": "nvs-01",
+      "type": "choice",
+      "prompt": "Weil es tagelang stark geregnet hatte, wurde die Großveranstaltung kurzfristig abgesagt. → Die Großveranstaltung wurde ___ der tagelangen starken Regenfälle kurzfristig abgesagt.",
+      "options": [
+        "wegen",
+        "trotz",
+        "während",
+        "bei"
+      ],
+      "answer": "wegen",
+      "explanation": "A causal weil-clause becomes wegen + genitive in noun style: weil es stark geregnet hatte → wegen der starken Regenfälle."
+    },
+    {
+      "id": "nvs-02",
+      "type": "choice",
+      "prompt": "Obwohl erhebliche Bedenken bestanden, wurde das Genehmigungsverfahren fortgesetzt. → Das Genehmigungsverfahren wurde ___ erheblicher Bedenken fortgesetzt.",
+      "options": [
+        "trotz",
+        "wegen",
+        "infolge",
+        "mangels"
+      ],
+      "answer": "trotz",
+      "explanation": "A concessive obwohl-clause becomes trotz + genitive: obwohl Bedenken bestanden → trotz erheblicher Bedenken."
+    },
+    {
+      "id": "nvs-03",
+      "type": "choice",
+      "prompt": "Nachdem er aus dem Ausland zurückgekehrt war, übernahm er die Leitung der Abteilung. → Er übernahm ___ seiner Rückkehr aus dem Ausland die Leitung der Abteilung.",
+      "options": [
+        "nach",
+        "vor",
+        "seit",
+        "während"
+      ],
+      "answer": "nach",
+      "explanation": "A nachdem-clause (earlier action) becomes nach + dative: nachdem er zurückgekehrt war → nach seiner Rückkehr."
+    },
+    {
+      "id": "nvs-04",
+      "type": "choice",
+      "prompt": "Bevor der Vertrag unterzeichnet wird, muss ihn die Rechtsabteilung prüfen. → Der Vertrag muss ___ seiner Unterzeichnung von der Rechtsabteilung geprüft werden.",
+      "options": [
+        "vor",
+        "nach",
+        "seit",
+        "bei"
+      ],
+      "answer": "vor",
+      "explanation": "A bevor-clause becomes vor + dative: bevor der Vertrag unterzeichnet wird → vor seiner Unterzeichnung."
+    },
+    {
+      "id": "nvs-05",
+      "type": "choice",
+      "prompt": "Wenn das Gerät unsachgemäß verwendet wird, erlischt die Garantie. → Die Garantie erlischt ___ unsachgemäßer Verwendung des Geräts.",
+      "options": [
+        "bei",
+        "trotz",
+        "statt",
+        "ohne"
+      ],
+      "answer": "bei",
+      "explanation": "A conditional wenn/falls-clause becomes bei + dative: wenn es unsachgemäß verwendet wird → bei unsachgemäßer Verwendung."
+    },
+    {
+      "id": "nvs-06",
+      "type": "choice",
+      "prompt": "Um die Energieversorgung langfristig zu sichern, hat die Regierung ein Maßnahmenpaket beschlossen. → Die Regierung hat ___ langfristigen Sicherung der Energieversorgung ein Maßnahmenpaket beschlossen.",
+      "options": [
+        "zur",
+        "zum",
+        "bei der",
+        "seit der"
+      ],
+      "answer": "zur",
+      "explanation": "A purpose clause with um … zu becomes zu + dative: zu sichern → zur (zu der) Sicherung, since Sicherung is feminine."
+    },
+    {
+      "id": "nvs-07",
+      "type": "choice",
+      "prompt": "Indem die Verwaltungsprozesse digitalisiert werden, lassen sich die Kosten erheblich senken. → Die Kosten lassen sich ___ die Digitalisierung der Verwaltungsprozesse erheblich senken.",
+      "options": [
+        "durch",
+        "mit",
+        "wegen",
+        "bei"
+      ],
+      "answer": "durch",
+      "explanation": "An indem-clause (the means) becomes durch + accusative: indem digitalisiert wird → durch die Digitalisierung."
+    },
+    {
+      "id": "nvs-08",
+      "type": "choice",
+      "prompt": "Seitdem das Gesetz in Kraft getreten ist, ist die Zahl der Anträge deutlich gestiegen. → Die Zahl der Anträge ist ___ Inkrafttreten des Gesetzes deutlich gestiegen.",
+      "options": [
+        "seit",
+        "vor",
+        "bei",
+        "während"
+      ],
+      "answer": "seit",
+      "explanation": "A seit(dem)-clause becomes seit + dative: seitdem es in Kraft getreten ist → seit (dem) Inkrafttreten des Gesetzes."
+    },
+    {
+      "id": "nvs-09",
+      "type": "choice",
+      "prompt": "Falls bis Monatsende keine Einigung erzielt wird, droht ein unbefristeter Streik. → Ein unbefristeter Streik droht ___ ausbleibender Einigung bis Monatsende.",
+      "options": [
+        "bei",
+        "trotz",
+        "nach",
+        "seit"
+      ],
+      "answer": "bei",
+      "explanation": "Conditions (falls/wenn) are expressed with bei in noun style; a negated condition often becomes a noun with ausbleibend or Nicht-: bei ausbleibender Einigung."
+    },
+    {
+      "id": "nvs-10",
+      "type": "choice",
+      "prompt": "Nachdem die Stadt das Gelände erworben hatte, begann die Planung des neuen Quartiers. → Nach dem Erwerb des Geländes ___ Stadt begann die Planung des neuen Quartiers.",
+      "options": [
+        "durch die",
+        "von der",
+        "mit der",
+        "bei der"
+      ],
+      "answer": "durch die",
+      "explanation": "When the object is already the genitive (des Geländes), the subject of the verb is added with durch + accusative: durch die Stadt. von der Stadt would mean bought from the city."
+    },
+    {
+      "id": "nvs-11",
+      "type": "type",
+      "prompt": "Nachdem die Ergebnisse der Studie veröffentlicht worden waren, setzte eine heftige Debatte ein. → Nach der ___ der Ergebnisse der Studie setzte eine heftige Debatte ein.",
+      "hint": "(veröffentlichen)",
+      "answers": [
+        "Veröffentlichung"
+      ],
+      "explanation": "Many verbs form feminine nouns with -ung: veröffentlichen → die Veröffentlichung; the object becomes a genitive (der Ergebnisse)."
+    },
+    {
+      "id": "nvs-12",
+      "type": "type",
+      "prompt": "Als der Friedensvertrag unterzeichnet wurde, waren beide Außenminister anwesend. → Bei der ___ des Friedensvertrags waren beide Außenminister anwesend.",
+      "hint": "(unterzeichnen)",
+      "answers": [
+        "Unterzeichnung"
+      ],
+      "explanation": "A temporal als-clause becomes bei + dative; unterzeichnen → die Unterzeichnung, with the object in the genitive (des Vertrags)."
+    },
+    {
+      "id": "nvs-13",
+      "type": "type",
+      "prompt": "Obwohl sich die Wetterlage deutlich verschlechtert hatte, wurde die Expedition fortgesetzt. → Trotz der deutlichen ___ der Wetterlage wurde die Expedition fortgesetzt.",
+      "hint": "(sich verschlechtern)",
+      "answers": [
+        "Verschlechterung"
+      ],
+      "explanation": "Reflexive verbs lose sich when nominalised: sich verschlechtern → die Verschlechterung; the subject becomes a genitive (der Wetterlage)."
+    },
+    {
+      "id": "nvs-14",
+      "type": "type",
+      "prompt": "Um die Qualität der Lehre zu verbessern, wurden zusätzliche Mittel bereitgestellt. → Zur ___ der Qualität der Lehre wurden zusätzliche Mittel bereitgestellt.",
+      "hint": "(verbessern)",
+      "answers": [
+        "Verbesserung"
+      ],
+      "explanation": "um … zu becomes zur + -ung noun: zu verbessern → zur Verbesserung, followed by the object in the genitive."
+    },
+    {
+      "id": "nvs-15",
+      "type": "type",
+      "prompt": "Weil die Energiepreise drastisch gestiegen sind, verzichten viele Haushalte auf größere Anschaffungen. → Wegen des drastischen ___ der Energiepreise verzichten viele Haushalte auf größere Anschaffungen.",
+      "hint": "(der Anstieg)",
+      "answers": [
+        "Anstiegs",
+        "Anstieges"
+      ],
+      "explanation": "steigen → der Anstieg; after wegen the masculine noun takes the genitive -s/-es: des drastischen Anstiegs."
+    },
+    {
+      "id": "nvs-16",
+      "type": "type",
+      "prompt": "Sobald der Antrag eingegangen ist, wird er umgehend bearbeitet. → Nach ___ des Antrags wird dieser umgehend bearbeitet.",
+      "hint": "(eingehen)",
+      "answers": [
+        "Eingang",
+        "dem Eingang"
+      ],
+      "explanation": "Many separable verbs form a masculine noun from the stem: eingehen → der Eingang; in official style the article is often dropped (nach Eingang des Antrags)."
+    },
+    {
+      "id": "nvs-17",
+      "type": "type",
+      "prompt": "Indem erneuerbare Energien konsequent ausgebaut werden, soll der Ausstoß von Treibhausgasen gesenkt werden. → Durch den konsequenten ___ erneuerbarer Energien soll der Ausstoß von Treibhausgasen gesenkt werden.",
+      "hint": "(ausbauen)",
+      "answers": [
+        "Ausbau"
+      ],
+      "explanation": "ausbauen → der Ausbau (noun from the verb stem); indem becomes durch + accusative, so the adverb konsequent becomes an adjective."
+    },
+    {
+      "id": "nvs-18",
+      "type": "type",
+      "prompt": "Nachdem sich die beiden Konzerne zusammengeschlossen hatten, wurden zahlreiche Stellen abgebaut. → Nach dem ___ der beiden Konzerne wurden zahlreiche Stellen abgebaut.",
+      "hint": "(sich zusammenschließen)",
+      "answers": [
+        "Zusammenschluss"
+      ],
+      "explanation": "sich zusammenschließen → der Zusammenschluss (stem change ie → u, no -ung); the subject of the clause becomes a genitive."
+    },
+    {
+      "id": "nvs-19",
+      "type": "type",
+      "prompt": "Wenn die Sicherheitsvorschriften nicht eingehalten werden, drohen empfindliche Bußgelder. → Bei ___ der Sicherheitsvorschriften drohen empfindliche Bußgelder.",
+      "hint": "(nicht einhalten)",
+      "answers": [
+        "Nichteinhaltung",
+        "Nicht-Einhaltung"
+      ],
+      "explanation": "A negated condition is nominalised with the prefix Nicht-: nicht einhalten → die Nichteinhaltung, typical of legal and official texts."
+    },
+    {
+      "id": "nvs-20",
+      "type": "choice",
+      "prompt": "Trotz intensiver Bemühungen konnte die Ursache des Ausfalls nicht ermittelt werden. → Die Ursache des Ausfalls konnte nicht ermittelt werden, ___ man sich intensiv bemüht hatte.",
+      "options": [
+        "obwohl",
+        "weil",
+        "sodass",
+        "damit"
+      ],
+      "answer": "obwohl",
+      "explanation": "Going back to verb style, trotz + genitive becomes a concessive obwohl-clause with the verb at the end."
+    },
+    {
+      "id": "nvs-21",
+      "type": "choice",
+      "prompt": "Bei Überschreitung der Zahlungsfrist wird eine Säumnisgebühr fällig. → Eine Säumnisgebühr wird fällig, ___ die Zahlungsfrist überschritten wird.",
+      "options": [
+        "wenn",
+        "als",
+        "obwohl",
+        "damit"
+      ],
+      "answer": "wenn",
+      "explanation": "bei + noun expressing a condition becomes a wenn-clause in verb style: bei Überschreitung der Frist → wenn die Frist überschritten wird."
+    },
+    {
+      "id": "nvs-22",
+      "type": "choice",
+      "prompt": "Infolge der Umstrukturierung verloren zahlreiche Beschäftigte ihren Arbeitsplatz. → Zahlreiche Beschäftigte verloren ihren Arbeitsplatz, ___ das Unternehmen umstrukturiert worden war.",
+      "options": [
+        "weil",
+        "obwohl",
+        "damit",
+        "bevor"
+      ],
+      "answer": "weil",
+      "explanation": "infolge + genitive expresses a cause; in verb style it becomes a weil- or da-clause."
+    },
+    {
+      "id": "nvs-23",
+      "type": "choice",
+      "prompt": "Mangels ausreichender Beweise wurde das Verfahren gegen den Angeklagten eingestellt. → Das Verfahren gegen den Angeklagten wurde eingestellt, ___ keine ausreichenden Beweise vorlagen.",
+      "options": [
+        "weil",
+        "obwohl",
+        "sodass",
+        "damit"
+      ],
+      "answer": "weil",
+      "explanation": "mangels + genitive (for lack of) becomes a causal clause with a negation: weil keine ausreichenden Beweise vorlagen."
+    },
+    {
+      "id": "nvs-24",
+      "type": "choice",
+      "prompt": "Durch die Senkung der Unternehmenssteuern wollte die Regierung die Konjunktur ankurbeln. → Die Regierung wollte die Konjunktur ankurbeln, ___ sie die Unternehmenssteuern senkte.",
+      "options": [
+        "indem",
+        "damit",
+        "sodass",
+        "obwohl"
+      ],
+      "answer": "indem",
+      "explanation": "durch + noun expressing the means becomes an indem-clause in verb style: durch die Senkung → indem sie senkte."
+    },
+    {
+      "id": "nvs-25",
+      "type": "choice",
+      "prompt": "Bis zur Fertigstellung des Neubaus finden die Vorlesungen in einem Ausweichquartier statt. → Die Vorlesungen finden in einem Ausweichquartier statt, ___ der Neubau fertiggestellt ist.",
+      "options": [
+        "bis",
+        "seit",
+        "nachdem",
+        "solange"
+      ],
+      "answer": "bis",
+      "explanation": "bis zu + noun becomes a bis-clause: bis zur Fertigstellung → bis der Neubau fertiggestellt ist."
+    },
+    {
+      "id": "nvs-26",
+      "type": "type",
+      "prompt": "Nach Abschluss der Tarifverhandlungen wurde eine gemeinsame Erklärung veröffentlicht. → Nachdem die Tarifverhandlungen ___ worden waren, wurde eine gemeinsame Erklärung veröffentlicht.",
+      "hint": "(abschließen)",
+      "answers": [
+        "abgeschlossen"
+      ],
+      "explanation": "nach + noun becomes a nachdem-clause; the genitive becomes the subject of a passive: Abschluss der Verhandlungen → die Verhandlungen waren abgeschlossen worden."
+    },
+    {
+      "id": "nvs-27",
+      "type": "type",
+      "prompt": "Wegen der kurzfristigen Erkrankung des Dirigenten fiel das Konzert aus. → Das Konzert fiel aus, weil der Dirigent kurzfristig ___ war.",
+      "hint": "(erkranken)",
+      "answers": [
+        "erkrankt"
+      ],
+      "explanation": "The genitive (des Dirigenten) becomes the subject of the weil-clause; erkranken forms its perfect tenses with sein: war erkrankt."
+    },
+    {
+      "id": "nvs-28",
+      "type": "type",
+      "prompt": "Vor der Entscheidung über den Haushalt werden alle Fraktionen angehört. → Bevor über den Haushalt ___ wird, werden alle Fraktionen angehört.",
+      "hint": "(entscheiden)",
+      "answers": [
+        "entschieden"
+      ],
+      "explanation": "vor + noun becomes a bevor-clause; with no stated agent, an impersonal passive is used: bevor über den Haushalt entschieden wird."
+    },
+    {
+      "id": "nvs-29",
+      "type": "type",
+      "prompt": "Bei Zustimmung des Aufsichtsrats wird die Fusion noch in diesem Jahr vollzogen. → Die Fusion wird noch in diesem Jahr vollzogen, sofern der Aufsichtsrat ___.",
+      "hint": "(zustimmen)",
+      "answers": [
+        "zustimmt"
+      ],
+      "explanation": "bei + noun as a condition becomes a sofern/wenn-clause; the genitive (des Aufsichtsrats) becomes the subject and the verb goes to the end: zustimmt."
+    },
+    {
+      "id": "nvs-30",
+      "type": "type",
+      "prompt": "Durch die Einführung flexibler Arbeitszeiten steigerte das Unternehmen die Zufriedenheit seiner Belegschaft. → Indem das Unternehmen flexible Arbeitszeiten ___, steigerte es die Zufriedenheit seiner Belegschaft.",
+      "hint": "(einführen, Präteritum)",
+      "answers": [
+        "einführte"
+      ],
+      "explanation": "durch + noun becomes an indem-clause; the separable verb stays joined at the end of the clause: einführte."
+    }
+  ]
+}

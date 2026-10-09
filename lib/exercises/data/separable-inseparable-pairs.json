@@ -1,0 +1,391 @@
+{
+  "slug": "separable-inseparable-pairs",
+  "instructions": "Decide from the meaning whether the prefix is separable (stressed) or inseparable (unstressed), then choose, type or build the correct form.",
+  "items": [
+    {
+      "id": "sip-01",
+      "type": "choice",
+      "prompt": "Beim Zurücksetzen hat der Lieferwagen einen Poller ___, der nun verbogen auf dem Gehweg liegt.",
+      "options": [
+        "umgefahren",
+        "umfahren"
+      ],
+      "answer": "umgefahren",
+      "explanation": "UMfahren (separable, stressed um-) means to knock down; the participle takes -ge-: umgefahren. umFAHren means to drive around."
+    },
+    {
+      "id": "sip-02",
+      "type": "type",
+      "prompt": "Sämtliche Urkunden müssen vor der Einreichung von einer beeidigten Übersetzerin ___ werden.",
+      "hint": "(übersetzen – translate)",
+      "answers": [
+        "übersetzt"
+      ],
+      "explanation": "überSETZen (inseparable) means to translate, so the participle has no -ge-: übersetzt."
+    },
+    {
+      "id": "sip-03",
+      "type": "type",
+      "prompt": "Da die Brücke beschädigt war, mussten die Einsatzkräfte mit Booten ans andere Ufer ___ werden.",
+      "hint": "(übersetzen – ferry across)",
+      "answers": [
+        "übergesetzt"
+      ],
+      "explanation": "ÜBERsetzen (separable, stressed über-) means to ferry across, so -ge- goes between prefix and stem: übergesetzt."
+    },
+    {
+      "id": "sip-04",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kanzlei",
+        "übersetzt",
+        "sämtliche",
+        "Verträge",
+        "ins",
+        "Englische."
+      ],
+      "answers": [
+        "Die Kanzlei übersetzt sämtliche Verträge ins Englische."
+      ],
+      "translation": "The law firm translates all contracts into English.",
+      "explanation": "überSETZen (translate) is inseparable, so the prefix stays on the verb in second position: übersetzt."
+    },
+    {
+      "id": "sip-05",
+      "type": "order",
+      "words": [
+        "Die",
+        "Fähre",
+        "setzt",
+        "die",
+        "Fahrzeuge",
+        "stündlich",
+        "ans",
+        "andere",
+        "Ufer",
+        "über."
+      ],
+      "answers": [
+        "Die Fähre setzt die Fahrzeuge stündlich ans andere Ufer über.",
+        "Die Fähre setzt stündlich die Fahrzeuge ans andere Ufer über."
+      ],
+      "translation": "The ferry takes the vehicles across to the other bank every hour.",
+      "explanation": "ÜBERsetzen (ferry across) is separable: setzt stays in second position and über goes to the end of the clause."
+    },
+    {
+      "id": "sip-06",
+      "type": "type",
+      "prompt": "Die neue Ortsumgehung soll es ermöglichen, das historische Zentrum künftig vollständig ___.",
+      "hint": "(umfahren – bypass, zu-infinitive)",
+      "answers": [
+        "zu umfahren"
+      ],
+      "explanation": "umFAHren (inseparable) means to drive around or bypass, so zu stands before the verb: zu umfahren (not umzufahren, which would mean knock down)."
+    },
+    {
+      "id": "sip-07",
+      "type": "order",
+      "answers": [
+        "Viele Autofahrer umfahren die gesperrte Innenstadt weiträumig."
+      ],
+      "words": [
+        "Viele",
+        "Autofahrer",
+        "umfahren",
+        "die",
+        "gesperrte",
+        "Innenstadt",
+        "weiträumig."
+      ],
+      "translation": "Many drivers give the closed city centre a wide berth.",
+      "explanation": "umFAHren (drive around) is inseparable, so the whole verb stays in second position and nothing goes to the end."
+    },
+    {
+      "id": "sip-08",
+      "type": "order",
+      "words": [
+        "Es",
+        "ist",
+        "unklar,",
+        "ob",
+        "der",
+        "Fahrer",
+        "den",
+        "Pfosten",
+        "umgefahren",
+        "hat."
+      ],
+      "answers": [
+        "Es ist unklar, ob der Fahrer den Pfosten umgefahren hat."
+      ],
+      "translation": "It is unclear whether the driver knocked down the post.",
+      "explanation": "UMfahren (knock down) is separable: its participle is umgefahren, and in the ob-clause the finite verb hat goes last."
+    },
+    {
+      "id": "sip-09",
+      "type": "type",
+      "prompt": "Den Behörden zufolge versuchen einige Firmen, die Sanktionen über Drittstaaten ___.",
+      "hint": "(umgehen – circumvent, zu-infinitive)",
+      "answers": [
+        "zu umgehen"
+      ],
+      "explanation": "umGEHen (inseparable) means to circumvent or evade, so zu stands before the verb: zu umgehen."
+    },
+    {
+      "id": "sip-10",
+      "type": "order",
+      "words": [
+        "Entscheidend",
+        "ist,",
+        "wie",
+        "die",
+        "Verwaltung",
+        "mit",
+        "den",
+        "Beschwerden",
+        "umgeht."
+      ],
+      "answers": [
+        "Entscheidend ist, wie die Verwaltung mit den Beschwerden umgeht."
+      ],
+      "translation": "What matters is how the administration deals with the complaints.",
+      "explanation": "UMgehen mit (separable) means to deal with; in a subordinate clause the prefix rejoins the verb at the end: umgeht."
+    },
+    {
+      "id": "sip-11",
+      "type": "choice",
+      "prompt": "Die Ermittler hatten das betrügerische Vorgehen der Firma längst ___, bevor die ersten Anzeigen eingingen.",
+      "options": [
+        "durchschaut",
+        "durchgeschaut"
+      ],
+      "answer": "durchschaut",
+      "explanation": "durchSCHAUen (inseparable) means to see through someone's scheme; the participle has no -ge-: durchschaut."
+    },
+    {
+      "id": "sip-12",
+      "type": "order",
+      "words": [
+        "Er",
+        "wusste",
+        "nicht,",
+        "dass",
+        "sie",
+        "seine",
+        "Absichten",
+        "längst",
+        "durchschaut",
+        "hatte."
+      ],
+      "answers": [
+        "Er wusste nicht, dass sie seine Absichten längst durchschaut hatte.",
+        "Er wusste nicht, dass sie längst seine Absichten durchschaut hatte."
+      ],
+      "translation": "He did not know that she had long since seen through his intentions.",
+      "explanation": "durchSCHAUen (see through a person or plan) is inseparable, so the participle is durchschaut without -ge-."
+    },
+    {
+      "id": "sip-13",
+      "type": "choice",
+      "prompt": "Das neue Medikament hat sämtliche klinischen Testphasen erfolgreich ___.",
+      "options": [
+        "durchlaufen",
+        "durchgelaufen"
+      ],
+      "answer": "durchlaufen",
+      "explanation": "durchLAUfen (inseparable, transitive, with haben) means to pass through stages; the participle is durchlaufen. DURCHlaufen means to run or seep through (with sein)."
+    },
+    {
+      "id": "sip-14",
+      "type": "choice",
+      "prompt": "Die Ministerin wies es entschieden zurück, dass man ihr in der Debatte unlautere Motive ___ habe.",
+      "options": [
+        "unterstellt",
+        "untergestellt"
+      ],
+      "answer": "unterstellt",
+      "explanation": "unterSTELLen (inseparable) means to insinuate or impute; participle without -ge-: unterstellt."
+    },
+    {
+      "id": "sip-15",
+      "type": "choice",
+      "prompt": "Während des Unwetters hatten sich zahlreiche Festivalbesucher in den Zelten der Veranstalter ___.",
+      "options": [
+        "untergestellt",
+        "unterstellt"
+      ],
+      "answer": "untergestellt",
+      "explanation": "sich UNTERstellen (separable) means to take shelter; the participle takes -ge-: untergestellt."
+    },
+    {
+      "id": "sip-16",
+      "type": "choice",
+      "prompt": "Im Alter von dreißig Jahren ist sie aus Überzeugung zum katholischen Glauben ___.",
+      "options": [
+        "übergetreten",
+        "übertreten"
+      ],
+      "answer": "übergetreten",
+      "explanation": "ÜBERtreten (separable, with sein) means to convert or switch sides; the participle is übergetreten."
+    },
+    {
+      "id": "sip-17",
+      "type": "choice",
+      "prompt": "Wer die Auflagen des Gerichts mehrfach ___ hat, muss mit einer Haftstrafe rechnen.",
+      "options": [
+        "übertreten",
+        "übergetreten"
+      ],
+      "answer": "übertreten",
+      "explanation": "überTREten (inseparable, with haben) means to violate a rule or law; the participle has no -ge-: übertreten."
+    },
+    {
+      "id": "sip-18",
+      "type": "order",
+      "words": [
+        "Der",
+        "Abgeordnete",
+        "trat",
+        "nach",
+        "dem",
+        "Skandal",
+        "zur",
+        "Opposition",
+        "über."
+      ],
+      "answers": [
+        "Der Abgeordnete trat nach dem Skandal zur Opposition über."
+      ],
+      "translation": "After the scandal, the MP defected to the opposition.",
+      "explanation": "ÜBERtreten (switch sides) is separable: trat stays in second position and über moves to the end of the clause."
+    },
+    {
+      "id": "sip-19",
+      "type": "type",
+      "prompt": "Noch bevor die Verdächtigen fliehen konnten, hatten Spezialkräfte das Gelände weiträumig ___.",
+      "hint": "(umstellen – surround)",
+      "answers": [
+        "umstellt"
+      ],
+      "explanation": "umSTELLen (inseparable) means to surround or encircle, so the participle has no -ge-: umstellt."
+    },
+    {
+      "id": "sip-20",
+      "type": "type",
+      "prompt": "Seitdem die Verwaltung ihr Abrechnungssystem ___ hat, kommt es zu erheblichen Verzögerungen.",
+      "hint": "(umstellen – switch over)",
+      "answers": [
+        "umgestellt"
+      ],
+      "explanation": "UMstellen (separable) means to switch over or reorganise; the participle takes -ge-: umgestellt."
+    },
+    {
+      "id": "sip-21",
+      "type": "type",
+      "prompt": "Der Wahlleiter ordnete an, die Auszählung in drei Bezirken ___.",
+      "hint": "(wiederholen – repeat, zu-infinitive)",
+      "answers": [
+        "zu wiederholen"
+      ],
+      "explanation": "wiederHOLen (inseparable) means to repeat, so zu stands before the verb: zu wiederholen."
+    },
+    {
+      "id": "sip-22",
+      "type": "choice",
+      "prompt": "Nach monatelangem Widerstand der Opposition hat die Regierung die umstrittene Reform schließlich ___.",
+      "options": [
+        "durchgesetzt",
+        "durchsetzt"
+      ],
+      "answer": "durchgesetzt",
+      "explanation": "DURCHsetzen (separable) means to push through or enforce; the participle takes -ge-: durchgesetzt. durchSETZen (inseparable) means to permeate: ein von Fehlern durchsetzter Text."
+    },
+    {
+      "id": "sip-23",
+      "type": "type",
+      "prompt": "Die Opposition wirft der Regierung vor, wesentliche Einwände der Sachverständigen schlicht ___ zu haben.",
+      "hint": "(übergehen – ignore, disregard)",
+      "answers": [
+        "übergangen"
+      ],
+      "explanation": "überGEHen (inseparable) means to ignore or pass over; the participle has no -ge-: übergangen."
+    },
+    {
+      "id": "sip-24",
+      "type": "choice",
+      "prompt": "Nach der Begrüßung der Gäste ist der Vorsitzende unmittelbar zur Tagesordnung ___.",
+      "options": [
+        "übergegangen",
+        "übergangen"
+      ],
+      "answer": "übergegangen",
+      "explanation": "ÜBERgehen zu (separable, with sein) means to move on to; the participle is übergegangen."
+    },
+    {
+      "id": "sip-25",
+      "type": "choice",
+      "prompt": "Da sie ihr Konto um mehrere Tausend Euro ___ hatte, verlangte die Bank eine Rückzahlung innerhalb von vier Wochen.",
+      "options": [
+        "überzogen",
+        "übergezogen"
+      ],
+      "answer": "überzogen",
+      "explanation": "überZIEhen (inseparable) means to overdraw an account; the participle has no -ge-: überzogen."
+    },
+    {
+      "id": "sip-26",
+      "type": "choice",
+      "prompt": "Bevor sie das Labor betrat, hatte sie sich vorschriftsgemäß einen Schutzkittel ___.",
+      "options": [
+        "übergezogen",
+        "überzogen"
+      ],
+      "answer": "übergezogen",
+      "explanation": "sich etwas ÜBERziehen (separable) means to put on a garment; the participle takes -ge-: übergezogen."
+    },
+    {
+      "id": "sip-27",
+      "type": "type",
+      "prompt": "Vor ihrer Verbeamtung haben sich alle Bewerberinnen einer umfassenden Sicherheitsüberprüfung ___.",
+      "hint": "(sich unterziehen – undergo)",
+      "answers": [
+        "unterzogen"
+      ],
+      "explanation": "sich einer Sache unterZIEhen (inseparable) means to undergo; the participle has no -ge-: unterzogen."
+    },
+    {
+      "id": "sip-28",
+      "type": "choice",
+      "prompt": "Auf Wunsch des Verlags hat die Autorin das letzte Kapitel vollständig ___.",
+      "options": [
+        "umgeschrieben",
+        "umschrieben"
+      ],
+      "answer": "umgeschrieben",
+      "explanation": "UMschreiben (separable) means to rewrite; the participle takes -ge-: umgeschrieben."
+    },
+    {
+      "id": "sip-29",
+      "type": "choice",
+      "prompt": "In der Präambel wird das eigentliche Ziel des Abkommens lediglich vage ___.",
+      "options": [
+        "umschrieben",
+        "umgeschrieben"
+      ],
+      "answer": "umschrieben",
+      "explanation": "umSCHREIben (inseparable) means to paraphrase or describe indirectly; the participle has no -ge-: umschrieben."
+    },
+    {
+      "id": "sip-30",
+      "type": "choice",
+      "prompt": "Trotz massiver Sicherheitsvorkehrungen sind einige Demonstrierende durch die Polizeikette ___.",
+      "options": [
+        "durchgebrochen",
+        "durchbrochen"
+      ],
+      "answer": "durchgebrochen",
+      "explanation": "With sein and durch + accusative, DURCHbrechen is separable and intransitive (to break through): sind durchgebrochen. Inseparable durchBREchen takes a direct object and haben: Sie haben die Kette durchbrochen."
+    }
+  ]
+}

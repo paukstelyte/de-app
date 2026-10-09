@@ -1,0 +1,403 @@
+{
+  "slug": "prepositions-formal-genitive",
+  "instructions": "Choose, type or build the correct formal genitive preposition or form as used in written German.",
+  "items": [
+    {
+      "id": "pfg-01",
+      "type": "choice",
+      "prompt": "Aufgrund ___ anhaltenden Streiks fallen heute sämtliche Regionalzüge aus.",
+      "options": [
+        "des",
+        "dem",
+        "den"
+      ],
+      "answer": "des",
+      "explanation": "aufgrund takes the genitive: der Streik becomes des (anhaltenden) Streiks. 'aufgrund dem' is colloquial and wrong in writing."
+    },
+    {
+      "id": "pfg-02",
+      "type": "choice",
+      "prompt": "Angesichts ___ angespannten Haushaltslage verschiebt die Stadt den Bau des neuen Schwimmbads.",
+      "options": [
+        "der",
+        "die",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "angesichts (in view of) takes the genitive: feminine die Haushaltslage becomes der angespannten Haushaltslage."
+    },
+    {
+      "id": "pfg-03",
+      "type": "choice",
+      "prompt": "Mithilfe ___ neuen Analyseverfahrens konnten die Forscher den Erreger in nur wenigen Tagen identifizieren.",
+      "options": [
+        "des",
+        "dem",
+        "das"
+      ],
+      "answer": "des",
+      "explanation": "mithilfe takes the genitive: das Analyseverfahren becomes des neuen Analyseverfahrens (note the -s on the noun)."
+    },
+    {
+      "id": "pfg-04",
+      "type": "choice",
+      "prompt": "Hinsichtlich ___ geplanten Umstrukturierung bestehen im Betriebsrat noch erhebliche Bedenken.",
+      "options": [
+        "der",
+        "die",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "hinsichtlich (with regard to) takes the genitive: die Umstrukturierung becomes der geplanten Umstrukturierung."
+    },
+    {
+      "id": "pfg-05",
+      "type": "choice",
+      "prompt": "Unweit ___ historischen Altstadt entsteht derzeit ein umstrittenes Hotelprojekt.",
+      "options": [
+        "der",
+        "die",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "unweit (not far from) takes the genitive: die Altstadt becomes der historischen Altstadt."
+    },
+    {
+      "id": "pfg-06",
+      "type": "choice",
+      "prompt": "Infolge ___ zahlreichen Beschwerden hat das Unternehmen seine Lieferbedingungen überarbeitet.",
+      "options": [
+        "der",
+        "den",
+        "die"
+      ],
+      "answer": "der",
+      "explanation": "infolge (as a result of) takes the genitive; the genitive plural article is der: die Beschwerden becomes der zahlreichen Beschwerden."
+    },
+    {
+      "id": "pfg-07",
+      "type": "choice",
+      "prompt": "Die Ausstellung wurde ___ der großen Nachfrage um zwei Wochen verlängert.",
+      "options": [
+        "aufgrund",
+        "hinsichtlich",
+        "unweit",
+        "zwecks"
+      ],
+      "answer": "aufgrund",
+      "explanation": "aufgrund gives the reason (because of): the high demand is why the exhibition was extended."
+    },
+    {
+      "id": "pfg-08",
+      "type": "choice",
+      "prompt": "Die Täter konnten ___ der Aufnahmen einer Überwachungskamera identifiziert werden.",
+      "options": [
+        "mithilfe",
+        "hinsichtlich",
+        "unweit"
+      ],
+      "answer": "mithilfe",
+      "explanation": "mithilfe (with the help of) names the means: the camera footage made the identification possible."
+    },
+    {
+      "id": "pfg-09",
+      "type": "order",
+      "words": [
+        "Musste",
+        "die",
+        "Veranstaltung",
+        "angesichts",
+        "der",
+        "Unwetterwarnung",
+        "abgesagt",
+        "werden?"
+      ],
+      "answers": [
+        "Musste die Veranstaltung angesichts der Unwetterwarnung abgesagt werden?",
+        "Musste angesichts der Unwetterwarnung die Veranstaltung abgesagt werden?"
+      ],
+      "translation": "Did the event have to be cancelled in view of the storm warning?",
+      "explanation": "In a yes/no question the finite verb comes first and the passive infinitive goes last; angesichts is followed by the genitive der Unwetterwarnung."
+    },
+    {
+      "id": "pfg-10",
+      "type": "choice",
+      "prompt": "Im Ausschuss bestehen weiterhin Unklarheiten ___ der Finanzierung des Projekts.",
+      "options": [
+        "hinsichtlich",
+        "unweit",
+        "mithilfe",
+        "zwecks"
+      ],
+      "answer": "hinsichtlich",
+      "explanation": "hinsichtlich (regarding) states the subject matter: the uncertainties concern the financing."
+    },
+    {
+      "id": "pfg-11",
+      "type": "choice",
+      "prompt": "Das Verwaltungsgebäude blieb ___ eines Rohrbruchs zwei Tage lang geschlossen.",
+      "options": [
+        "infolge",
+        "zwecks",
+        "hinsichtlich",
+        "anlässlich"
+      ],
+      "answer": "infolge",
+      "explanation": "infolge (as a consequence of) introduces the cause of an event, here the burst pipe that closed the building."
+    },
+    {
+      "id": "pfg-12",
+      "type": "choice",
+      "prompt": "Der Antrag wurde ___ Prüfung der Kreditwürdigkeit an die zuständige Abteilung weitergeleitet.",
+      "options": [
+        "zwecks",
+        "unweit",
+        "angesichts"
+      ],
+      "answer": "zwecks",
+      "explanation": "zwecks (for the purpose of) states a purpose and is typical of official German; it is often used without an article."
+    },
+    {
+      "id": "pfg-13",
+      "type": "choice",
+      "prompt": "Die Regierung hat ___ der dramatischen Lage an den Finanzmärkten eine Sondersitzung einberufen.",
+      "options": [
+        "angesichts",
+        "mithilfe",
+        "unweit"
+      ],
+      "answer": "angesichts",
+      "explanation": "angesichts (in view of / faced with) introduces a situation that prompts a reaction, here the emergency meeting."
+    },
+    {
+      "id": "pfg-14",
+      "type": "type",
+      "prompt": "Aufgrund ___ Sanierungsarbeiten bleibt das Museum voraussichtlich bis Ende März geschlossen.",
+      "hint": "(die umfangreichen)",
+      "answers": [
+        "der umfangreichen"
+      ],
+      "explanation": "aufgrund takes the genitive; in the genitive plural die becomes der and the adjective takes -en: der umfangreichen Sanierungsarbeiten."
+    },
+    {
+      "id": "pfg-15",
+      "type": "type",
+      "prompt": "Mithilfe ___ Verfahrens lässt sich der Energieverbrauch in der Produktion erheblich senken.",
+      "hint": "(ein neuartiges)",
+      "answers": [
+        "eines neuartigen"
+      ],
+      "explanation": "mithilfe takes the genitive: ein neuartiges Verfahren becomes eines neuartigen Verfahrens."
+    },
+    {
+      "id": "pfg-16",
+      "type": "order",
+      "words": [
+        "Welche",
+        "Maßnahmen",
+        "werden",
+        "hinsichtlich",
+        "des",
+        "Datenschutzes",
+        "ergriffen?"
+      ],
+      "answers": [
+        "Welche Maßnahmen werden hinsichtlich des Datenschutzes ergriffen?"
+      ],
+      "translation": "What measures are being taken with regard to data protection?",
+      "explanation": "The question word comes first, then the finite verb; the participle ergriffen goes last. hinsichtlich takes the genitive: des Datenschutzes."
+    },
+    {
+      "id": "pfg-17",
+      "type": "type",
+      "prompt": "Unweit ___ Grenze befindet sich ein ehemaliges Kloster, das heute als Tagungszentrum genutzt wird.",
+      "hint": "(die französische)",
+      "answers": [
+        "der französischen"
+      ],
+      "explanation": "unweit takes the genitive: die französische Grenze becomes der französischen Grenze."
+    },
+    {
+      "id": "pfg-18",
+      "type": "type",
+      "prompt": "Hinsichtlich ___ Anfrage vom 3. März teilen wir Ihnen mit, dass die Unterlagen bereits versandt wurden.",
+      "hint": "(Ihre)",
+      "answers": [
+        "Ihrer"
+      ],
+      "explanation": "hinsichtlich takes the genitive: the feminine possessive Ihre Anfrage becomes Ihrer Anfrage. Formal Ihr stays capitalised."
+    },
+    {
+      "id": "pfg-19",
+      "type": "order",
+      "words": [
+        "Wie",
+        "viele",
+        "Stellen",
+        "wurden",
+        "infolge",
+        "der",
+        "Fusion",
+        "abgebaut?"
+      ],
+      "answers": [
+        "Wie viele Stellen wurden infolge der Fusion abgebaut?"
+      ],
+      "translation": "How many jobs were cut as a result of the merger?",
+      "explanation": "Wie viele Stellen is the question phrase and comes first, followed by the finite verb; infolge takes the genitive der Fusion."
+    },
+    {
+      "id": "pfg-20",
+      "type": "choice",
+      "prompt": "Der Bürgermeister hielt ___ des 100-jährigen Bestehens der Stiftung eine Festrede.",
+      "options": [
+        "anlässlich",
+        "infolge",
+        "zwecks"
+      ],
+      "answer": "anlässlich",
+      "explanation": "anlässlich (on the occasion of) introduces a festive event such as an anniversary and takes the genitive."
+    },
+    {
+      "id": "pfg-21",
+      "type": "choice",
+      "prompt": "Bislang gab es ___ der Geschäftsleitung keine offizielle Stellungnahme zu den Vorwürfen.",
+      "options": [
+        "seitens",
+        "unweit",
+        "zwecks"
+      ],
+      "answer": "seitens",
+      "explanation": "seitens (on the part of) names who acts or responds, here the management, and takes the genitive."
+    },
+    {
+      "id": "pfg-22",
+      "type": "choice",
+      "prompt": "Der Künstler verzichtete auf sein Honorar ___ eines Hilfsfonds für die Opfer der Flutkatastrophe.",
+      "options": [
+        "zugunsten",
+        "angesichts",
+        "infolge"
+      ],
+      "answer": "zugunsten",
+      "explanation": "zugunsten (in favour of / for the benefit of) names who benefits and takes the genitive: eines Hilfsfonds."
+    },
+    {
+      "id": "pfg-23",
+      "type": "type",
+      "prompt": "Der Stadtrat hat angesichts ___ Baukosten beschlossen, das Projekt vorerst auf Eis zu legen.",
+      "hint": "(die explodierenden)",
+      "answers": [
+        "der explodierenden"
+      ],
+      "explanation": "angesichts takes the genitive; genitive plural: die explodierenden Baukosten becomes der explodierenden Baukosten."
+    },
+    {
+      "id": "pfg-24",
+      "type": "order",
+      "words": [
+        "Wir",
+        "suchen",
+        "ein",
+        "Tagungshotel,",
+        "das",
+        "unweit",
+        "des",
+        "Hauptbahnhofs",
+        "liegt."
+      ],
+      "answers": [
+        "Wir suchen ein Tagungshotel, das unweit des Hauptbahnhofs liegt."
+      ],
+      "translation": "We are looking for a conference hotel that is located not far from the main station.",
+      "explanation": "In the relative clause the verb liegt goes last; unweit takes the genitive des Hauptbahnhofs."
+    },
+    {
+      "id": "pfg-25",
+      "type": "choice",
+      "prompt": "Die Regierung hielt ___ aller Einwände der Opposition an dem umstrittenen Gesetzentwurf fest.",
+      "options": [
+        "ungeachtet",
+        "aufgrund",
+        "hinsichtlich"
+      ],
+      "answer": "ungeachtet",
+      "explanation": "ungeachtet (regardless of) is concessive: the government persisted despite the objections. It takes the genitive."
+    },
+    {
+      "id": "pfg-26",
+      "type": "type",
+      "prompt": "Angesichts ___ Energiepreise erwägen zahlreiche Betriebe, ihre Produktion ins Ausland zu verlagern.",
+      "hint": "(steigend, no article)",
+      "answers": [
+        "steigender"
+      ],
+      "explanation": "With no article, the adjective shows the genitive plural itself with the strong ending -er: angesichts steigender Energiepreise."
+    },
+    {
+      "id": "pfg-27",
+      "type": "order",
+      "words": [
+        "Können",
+        "Sie",
+        "uns",
+        "zwecks",
+        "Terminabstimmung",
+        "Ihre",
+        "Telefonnummer",
+        "mitteilen?"
+      ],
+      "answers": [
+        "Können Sie uns zwecks Terminabstimmung Ihre Telefonnummer mitteilen?",
+        "Können Sie uns Ihre Telefonnummer zwecks Terminabstimmung mitteilen?"
+      ],
+      "translation": "Could you give us your phone number for the purpose of arranging an appointment?",
+      "explanation": "Modal verb first in the question, infinitive mitteilen last; zwecks Terminabstimmung is typically used without an article."
+    },
+    {
+      "id": "pfg-28",
+      "type": "order",
+      "words": [
+        "Ob",
+        "das",
+        "Projekt",
+        "mithilfe",
+        "staatlicher",
+        "Fördermittel",
+        "zustande",
+        "kommt,",
+        "ist",
+        "fraglich."
+      ],
+      "answers": [
+        "Ob das Projekt mithilfe staatlicher Fördermittel zustande kommt, ist fraglich.",
+        "Ob mithilfe staatlicher Fördermittel das Projekt zustande kommt, ist fraglich."
+      ],
+      "translation": "Whether the project will materialise with the help of state funding is doubtful.",
+      "explanation": "The ob-clause is the subject and puts its verb last (zustande kommt); mithilfe takes the genitive plural staatlicher Fördermittel."
+    },
+    {
+      "id": "pfg-29",
+      "type": "choice",
+      "prompt": "Die Staatsanwaltschaft stellte die Ermittlungen gegen den Bürgermeister mangels ___ ein.",
+      "options": [
+        "Beweisen",
+        "Beweise"
+      ],
+      "answer": "Beweisen",
+      "explanation": "mangels takes the genitive, but in a bare plural (no article or adjective) Beweise would not show the case, so the dative is used: mangels Beweisen. With an adjective the genitive is visible: mangels ausreichender Beweise."
+    },
+    {
+      "id": "pfg-30",
+      "type": "choice",
+      "prompt": "Die Gebühren wurden gemäß ___ Beschluss des Stadtrats vom 12. Mai angepasst.",
+      "options": [
+        "dem",
+        "des",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "Unlike the formal genitive prepositions, gemäß (in accordance with) takes the dative: gemäß dem Beschluss. The genitive (des Beschlusses) is a common error."
+    }
+  ]
+}

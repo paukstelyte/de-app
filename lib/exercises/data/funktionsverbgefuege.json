@@ -1,0 +1,402 @@
+{
+  "slug": "funktionsverbgefuege",
+  "instructions": "Complete each fixed verb-noun phrase with the right verb, noun or preposition, or put the words in the correct order.",
+  "items": [
+    {
+      "id": "fvg-01",
+      "type": "choice",
+      "prompt": "Das Ministerium wird den betroffenen Gemeinden zusätzliche Mittel zur Verfügung ___.",
+      "options": [
+        "stellen",
+        "geben",
+        "machen",
+        "bringen"
+      ],
+      "answer": "stellen",
+      "explanation": "etwas zur Verfügung stellen = to provide something. The noun Verfügung carries the meaning; stellen is the fixed verb."
+    },
+    {
+      "id": "fvg-02",
+      "type": "choice",
+      "prompt": "Nach monatelangen Verhandlungen hat der Vorstand schließlich eine Entscheidung ___.",
+      "options": [
+        "getroffen",
+        "gemacht",
+        "genommen",
+        "gestellt"
+      ],
+      "answer": "getroffen",
+      "explanation": "eine Entscheidung treffen = to decide. German does not say *eine Entscheidung machen."
+    },
+    {
+      "id": "fvg-03",
+      "type": "choice",
+      "prompt": "Das neue Gesetz ___ am 1. Januar des kommenden Jahres in Kraft.",
+      "options": [
+        "tritt",
+        "kommt",
+        "geht",
+        "steht"
+      ],
+      "answer": "tritt",
+      "explanation": "in Kraft treten = to come into force. The fixed verb is treten (er tritt), not kommen."
+    },
+    {
+      "id": "fvg-04",
+      "type": "choice",
+      "prompt": "Für die ausgeschriebene Stelle ___ nur Bewerber mit abgeschlossenem Hochschulstudium in Frage.",
+      "options": [
+        "kommen",
+        "stellen",
+        "treten",
+        "fallen"
+      ],
+      "answer": "kommen",
+      "explanation": "in Frage kommen = to be possible / eligible. Contrast: etwas in Frage stellen = to question something (needs an object)."
+    },
+    {
+      "id": "fvg-05",
+      "type": "choice",
+      "prompt": "Die Kommission hat sämtliche Einwände der Anwohner sorgfältig in Betracht ___.",
+      "options": [
+        "gezogen",
+        "genommen",
+        "gestellt",
+        "gebracht"
+      ],
+      "answer": "gezogen",
+      "explanation": "etwas in Betracht ziehen = to take something into consideration. The fixed verb is ziehen (Partizip II: gezogen)."
+    },
+    {
+      "id": "fvg-06",
+      "type": "choice",
+      "prompt": "Der Bürgermeister weigerte sich, zu den Vorwürfen der Opposition öffentlich Stellung zu ___.",
+      "options": [
+        "nehmen",
+        "geben",
+        "machen",
+        "treffen"
+      ],
+      "answer": "nehmen",
+      "explanation": "zu etwas Stellung nehmen = to comment on / take a position on something, the formal equivalent of sich äußern."
+    },
+    {
+      "id": "fvg-07",
+      "type": "choice",
+      "prompt": "Angesichts der steigenden Infektionszahlen hat das Gesundheitsamt umgehend die notwendigen Maßnahmen in die Wege ___.",
+      "options": [
+        "geleitet",
+        "gebracht",
+        "gestellt",
+        "gesetzt"
+      ],
+      "answer": "geleitet",
+      "explanation": "etwas in die Wege leiten = to initiate / set something in motion. The fixed verb is leiten (geleitet)."
+    },
+    {
+      "id": "fvg-08",
+      "type": "choice",
+      "prompt": "Die Abgeordnete hat in der Ausschusssitzung die Missstände in den Pflegeheimen zur Sprache ___.",
+      "options": [
+        "gebracht",
+        "gestellt",
+        "gekommen",
+        "genommen"
+      ],
+      "answer": "gebracht",
+      "explanation": "etwas zur Sprache bringen = to raise / bring up a subject. The passive-like counterpart is zur Sprache kommen (be raised), which takes no object."
+    },
+    {
+      "id": "fvg-09",
+      "type": "choice",
+      "prompt": "Der Bericht der Rechnungsprüfer hat in der Öffentlichkeit große Beachtung ___.",
+      "options": [
+        "gefunden",
+        "genommen",
+        "getroffen",
+        "gestellt"
+      ],
+      "answer": "gefunden",
+      "explanation": "Beachtung finden = to receive attention (be noticed). finden is the fixed verb with Beachtung, Anerkennung, Zustimmung."
+    },
+    {
+      "id": "fvg-10",
+      "type": "choice",
+      "prompt": "Die drastischen Sparmaßnahmen hatten einen deutlichen Rückgang der öffentlichen Investitionen zur ___.",
+      "options": [
+        "Folge",
+        "Ursache",
+        "Wirkung",
+        "Bedingung"
+      ],
+      "answer": "Folge",
+      "explanation": "etwas zur Folge haben = to result in something. Only Folge forms this fixed phrase with zur and haben."
+    },
+    {
+      "id": "fvg-11",
+      "type": "choice",
+      "prompt": "Der umstrittene Gesetzentwurf wird in der nächsten Plenarsitzung erneut ___ Diskussion gestellt.",
+      "options": [
+        "zur",
+        "in",
+        "unter",
+        "auf"
+      ],
+      "answer": "zur",
+      "explanation": "etwas zur Diskussion stellen = to put something up for discussion. Many Funktionsverbgefüge use zu + dative noun (zur, zum)."
+    },
+    {
+      "id": "fvg-12",
+      "type": "choice",
+      "prompt": "Die überarbeitete Datenschutzregelung kommt in sämtlichen Abteilungen ab sofort ___ Anwendung.",
+      "options": [
+        "zur",
+        "in",
+        "auf",
+        "unter"
+      ],
+      "answer": "zur",
+      "explanation": "zur Anwendung kommen = to be applied. It is a passive-like alternative to angewendet werden."
+    },
+    {
+      "id": "fvg-13",
+      "type": "choice",
+      "prompt": "Wer gegen geltende Umweltauflagen verstößt, muss damit rechnen, ___ Rechenschaft gezogen zu werden.",
+      "options": [
+        "zur",
+        "in",
+        "unter",
+        "auf"
+      ],
+      "answer": "zur",
+      "explanation": "jemanden zur Rechenschaft ziehen = to hold someone accountable. The preposition is fixed: zur (zu + der)."
+    },
+    {
+      "id": "fvg-14",
+      "type": "choice",
+      "prompt": "Der Ausschuss hat die Bedenken der Umweltverbände bei seiner abschließenden Bewertung offenbar nicht in ___ gezogen.",
+      "options": [
+        "Betracht",
+        "Rücksicht",
+        "Beachtung",
+        "Anspruch"
+      ],
+      "answer": "Betracht",
+      "explanation": "in Betracht ziehen = to consider. Rücksicht goes with nehmen (Rücksicht nehmen auf), Anspruch with nehmen (in Anspruch nehmen)."
+    },
+    {
+      "id": "fvg-15",
+      "type": "choice",
+      "prompt": "Wer die Leistungen der Pflegeversicherung in ___ nehmen möchte, muss zunächst einen schriftlichen Antrag stellen.",
+      "options": [
+        "Anspruch",
+        "Betracht",
+        "Kauf",
+        "Kraft"
+      ],
+      "answer": "Anspruch",
+      "explanation": "etwas in Anspruch nehmen = to make use of / claim something, e.g. a service or benefit."
+    },
+    {
+      "id": "fvg-16",
+      "type": "choice",
+      "prompt": "Um die vereinbarten Lieferfristen einhalten zu können, nimmt das Unternehmen erheblich höhere Transportkosten in ___.",
+      "options": [
+        "Kauf",
+        "Anspruch",
+        "Betracht",
+        "Angriff"
+      ],
+      "answer": "Kauf",
+      "explanation": "etwas in Kauf nehmen = to accept a disadvantage for the sake of a goal. It has nothing to do with buying."
+    },
+    {
+      "id": "fvg-17",
+      "type": "choice",
+      "prompt": "Nachdem die Finanzierung gesichert war, hat die Stadt die Sanierung der maroden Brücke endlich in ___ genommen.",
+      "options": [
+        "Angriff",
+        "Kauf",
+        "Anspruch",
+        "Kraft"
+      ],
+      "answer": "Angriff",
+      "explanation": "etwas in Angriff nehmen = to tackle / start work on something. Here it means the renovation was begun."
+    },
+    {
+      "id": "fvg-18",
+      "type": "choice",
+      "prompt": "Die Ergebnisse der Untersuchung ___ derzeit noch unter Fachleuten zur Diskussion.",
+      "options": [
+        "stehen",
+        "stellen",
+        "bringen",
+        "setzen"
+      ],
+      "answer": "stehen",
+      "explanation": "zur Diskussion stehen = to be under discussion (a state, no object). zur Diskussion stellen = to put up for discussion, which needs an object."
+    },
+    {
+      "id": "fvg-19",
+      "type": "type",
+      "prompt": "Im vergangenen Herbst ___ die Tarifverhandlungen zwischen Gewerkschaft und Arbeitgebern überraschend ins Stocken.",
+      "hint": "(geraten, Präteritum)",
+      "answers": [
+        "gerieten"
+      ],
+      "explanation": "ins Stocken geraten = to stall. geraten is a strong verb: geraten – geriet – ist geraten; plural Präteritum: gerieten."
+    },
+    {
+      "id": "fvg-20",
+      "type": "type",
+      "prompt": "Der Vorschlag der Kommission ___ bei mehreren Mitgliedstaaten auf heftigen Widerstand.",
+      "hint": "(stoßen, Präteritum)",
+      "answers": [
+        "stieß"
+      ],
+      "explanation": "auf Widerstand stoßen = to meet with resistance. stoßen – stieß – ist gestoßen."
+    },
+    {
+      "id": "fvg-21",
+      "type": "type",
+      "prompt": "Nachdem die Verordnung in Kraft ___ war, mussten alle Betriebe ihre internen Abläufe grundlegend anpassen.",
+      "hint": "(treten)",
+      "answers": [
+        "getreten"
+      ],
+      "explanation": "in Kraft treten forms its perfect tenses with sein: Die Verordnung war in Kraft getreten (Plusquamperfekt)."
+    },
+    {
+      "id": "fvg-22",
+      "type": "type",
+      "prompt": "Der Angeklagte ___ in der gestrigen Verhandlung erstmals ausführlich Stellung zu den gegen ihn erhobenen Vorwürfen.",
+      "hint": "(nehmen, Präteritum)",
+      "answers": [
+        "nahm"
+      ],
+      "explanation": "Stellung nehmen zu = to comment on. nehmen – nahm – genommen; the noun Stellung stays at the end of the middle field."
+    },
+    {
+      "id": "fvg-23",
+      "type": "type",
+      "prompt": "Mehrere unabhängige Gutachter haben die Zuverlässigkeit der vorgelegten Daten öffentlich in Frage ___.",
+      "hint": "(stellen)",
+      "answers": [
+        "gestellt"
+      ],
+      "explanation": "etwas in Frage (infrage) stellen = to call something into question. Perfect: haben … in Frage gestellt."
+    },
+    {
+      "id": "fvg-24",
+      "type": "type",
+      "prompt": "Die Forschungsergebnisse wurden von der internationalen Fachwelt mit großem Interesse zur ___ genommen.",
+      "hint": "(noun; = were noted)",
+      "answers": [
+        "Kenntnis"
+      ],
+      "explanation": "etwas zur Kenntnis nehmen = to take note of something. Kenntnis is a feminine noun, hence zur (zu + der)."
+    },
+    {
+      "id": "fvg-25",
+      "type": "choice",
+      "prompt": "Infolge der anhaltenden Dürre ist die Trinkwasserversorgung der gesamten Region ernsthaft in ___ geraten.",
+      "options": [
+        "Gefahr",
+        "Kraft",
+        "Frage",
+        "Betracht"
+      ],
+      "answer": "Gefahr",
+      "explanation": "in Gefahr geraten = to become endangered. geraten + in expresses getting into a (usually negative) state, like in Schwierigkeiten geraten."
+    },
+    {
+      "id": "fvg-26",
+      "type": "type",
+      "prompt": "Das Unternehmen ___ seine Kunden erst nach mehreren Wochen davon in Kenntnis, dass ihre Daten von dem Angriff betroffen waren.",
+      "hint": "(setzen, Präteritum)",
+      "answers": [
+        "setzte"
+      ],
+      "explanation": "jemanden von etwas in Kenntnis setzen = to inform someone of something (formal). setzen is regular: setzte."
+    },
+    {
+      "id": "fvg-27",
+      "type": "order",
+      "words": [
+        "Die",
+        "Verordnung",
+        "tritt",
+        "in",
+        "Kraft,",
+        "sobald",
+        "sie",
+        "veröffentlicht",
+        "ist."
+      ],
+      "answers": [
+        "Die Verordnung tritt in Kraft, sobald sie veröffentlicht ist."
+      ],
+      "translation": "The regulation comes into force as soon as it has been published.",
+      "explanation": "In a main clause the finite verb tritt is in position 2 and in Kraft goes to the end, like a separable prefix; in the sobald clause the verb goes last."
+    },
+    {
+      "id": "fvg-28",
+      "type": "order",
+      "words": [
+        "Ob",
+        "weitere",
+        "Mittel",
+        "zur",
+        "Verfügung",
+        "gestellt",
+        "werden,",
+        "ist",
+        "unklar."
+      ],
+      "answers": [
+        "Ob weitere Mittel zur Verfügung gestellt werden, ist unklar."
+      ],
+      "translation": "It is unclear whether further funds will be made available.",
+      "explanation": "In the ob clause, zur Verfügung stays directly before the verb cluster gestellt werden; the clause then fills position 1, so ist follows it."
+    },
+    {
+      "id": "fvg-29",
+      "type": "order",
+      "words": [
+        "Wann",
+        "wird",
+        "der",
+        "Ausschuss",
+        "eine",
+        "endgültige",
+        "Entscheidung",
+        "treffen?"
+      ],
+      "answers": [
+        "Wann wird der Ausschuss eine endgültige Entscheidung treffen?"
+      ],
+      "translation": "When will the committee make a final decision?",
+      "explanation": "eine Entscheidung treffen: the noun phrase comes right before the infinitive treffen, which stands at the end after the finite verb wird."
+    },
+    {
+      "id": "fvg-30",
+      "type": "order",
+      "words": [
+        "Ob",
+        "das",
+        "Angebot",
+        "überhaupt",
+        "in",
+        "Frage",
+        "kommt,",
+        "bleibt",
+        "abzuwarten."
+      ],
+      "answers": [
+        "Ob das Angebot überhaupt in Frage kommt, bleibt abzuwarten."
+      ],
+      "translation": "It remains to be seen whether the offer is even an option.",
+      "explanation": "In the ob clause the fixed noun part in Frage stands directly before the final verb kommt; the whole clause is position 1, so bleibt comes next."
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "slug": "correlate-es-da",
+  "instructions": "Choose or type the placeholder (es or a da- word) that points ahead to the following clause, or put the words in order.",
+  "items": [
+    {
+      "id": "kor-01",
+      "type": "choice",
+      "prompt": "Die Kommission hat ausdrücklich ___ hingewiesen, dass die Antragsfrist am Monatsende abläuft.",
+      "options": [
+        "darauf",
+        "daran",
+        "dafür",
+        "davon"
+      ],
+      "answer": "darauf",
+      "explanation": "hinweisen auf + dass-clause: the da-word darauf points ahead to the clause that follows."
+    },
+    {
+      "id": "kor-02",
+      "type": "choice",
+      "prompt": "Viele Beschäftigte haben sich inzwischen ___ gewöhnt, überwiegend im Homeoffice zu arbeiten.",
+      "options": [
+        "daran",
+        "darauf",
+        "damit",
+        "dazu"
+      ],
+      "answer": "daran",
+      "explanation": "sich gewöhnen an: the zu-infinitive is announced by daran (da + an)."
+    },
+    {
+      "id": "kor-03",
+      "type": "choice",
+      "prompt": "Der Erfolg der Reform hängt maßgeblich ___ ab, ob die Länder ausreichende Mittel bereitstellen.",
+      "options": [
+        "davon",
+        "daran",
+        "darauf",
+        "damit"
+      ],
+      "answer": "davon",
+      "explanation": "abhängen von: davon is the correlate that points to the ob-clause; it cannot be left out here."
+    },
+    {
+      "id": "kor-04",
+      "type": "choice",
+      "prompt": "Die Gewerkschaft besteht ___, dass die Vereinbarung rückwirkend in Kraft tritt.",
+      "options": [
+        "darauf",
+        "daran",
+        "dabei",
+        "darüber"
+      ],
+      "answer": "darauf",
+      "explanation": "bestehen auf (to insist on) + dass-clause: darauf is required as the correlate."
+    },
+    {
+      "id": "kor-05",
+      "type": "choice",
+      "prompt": "Die Studie geht ___ aus, dass der Energiebedarf in den kommenden Jahrzehnten weiter steigen wird.",
+      "options": [
+        "davon",
+        "darauf",
+        "daran",
+        "dafür"
+      ],
+      "answer": "davon",
+      "explanation": "ausgehen von (to assume): the dass-clause is anticipated by davon."
+    },
+    {
+      "id": "kor-06",
+      "type": "choice",
+      "prompt": "Nach langer Debatte sprach sich der Ausschuss ___ aus, das umstrittene Verfahren vorerst auszusetzen.",
+      "options": [
+        "dafür",
+        "darauf",
+        "daran",
+        "davon"
+      ],
+      "answer": "dafür",
+      "explanation": "sich aussprechen für (to come out in favour of): dafür points ahead to the zu-infinitive."
+    },
+    {
+      "id": "kor-07",
+      "type": "choice",
+      "prompt": "Ein Großteil der Verzögerungen ist ___ zurückzuführen, dass die Zuständigkeiten nicht eindeutig geregelt waren.",
+      "options": [
+        "darauf",
+        "daran",
+        "davon",
+        "dazu"
+      ],
+      "answer": "darauf",
+      "explanation": "zurückführen auf (to attribute to): darauf is obligatory before the dass-clause."
+    },
+    {
+      "id": "kor-08",
+      "type": "choice",
+      "prompt": "Die Verwaltung bemüht sich seit Monaten ___, die Bearbeitungszeiten spürbar zu verkürzen.",
+      "options": [
+        "darum",
+        "darauf",
+        "dafür",
+        "daran"
+      ],
+      "answer": "darum",
+      "explanation": "sich bemühen um (to strive for): the correlate is darum (da + um)."
+    },
+    {
+      "id": "kor-09",
+      "type": "choice",
+      "prompt": "Die Berichterstattung hat maßgeblich ___ beigetragen, dass die Öffentlichkeit für das Thema sensibilisiert wurde.",
+      "options": [
+        "dazu",
+        "dafür",
+        "daran",
+        "darauf"
+      ],
+      "answer": "dazu",
+      "explanation": "beitragen zu (to contribute to): dazu anticipates the dass-clause."
+    },
+    {
+      "id": "kor-10",
+      "type": "choice",
+      "prompt": "Fachleute warnen eindringlich ___, die langfristigen Risiken der Technologie zu unterschätzen.",
+      "options": [
+        "davor",
+        "darauf",
+        "dagegen",
+        "damit"
+      ],
+      "answer": "davor",
+      "explanation": "warnen vor (to warn against): davor points ahead to the zu-infinitive."
+    },
+    {
+      "id": "kor-11",
+      "type": "choice",
+      "prompt": "Die Verhandlungspartner haben sich ___ verständigt, die Entscheidung auf das kommende Jahr zu vertagen.",
+      "options": [
+        "darauf",
+        "daran",
+        "davon",
+        "dazu"
+      ],
+      "answer": "darauf",
+      "explanation": "sich verständigen auf (to agree on): the agreed content in the zu-clause is announced by darauf."
+    },
+    {
+      "id": "kor-12",
+      "type": "choice",
+      "prompt": "Ich halte ___ für unverzichtbar, dass die Maßnahme von unabhängiger Seite evaluiert wird.",
+      "options": [
+        "es",
+        "dafür",
+        "daran",
+        "darauf"
+      ],
+      "answer": "es",
+      "explanation": "halten für + adjective: es stands as the object placeholder for the dass-clause and is required here."
+    },
+    {
+      "id": "kor-13",
+      "type": "choice",
+      "prompt": "Der Vorstand findet ___ bedauerlich, dass die Verhandlungen ergebnislos abgebrochen wurden.",
+      "options": [
+        "es",
+        "darüber",
+        "dafür",
+        "davon"
+      ],
+      "answer": "es",
+      "explanation": "finden + adjective + dass-clause: es is the obligatory object placeholder (Ich finde es wichtig, dass ...)."
+    },
+    {
+      "id": "kor-14",
+      "type": "choice",
+      "prompt": "Angesichts der angespannten Haushaltslage geht ___ nun vor allem darum, die Ausgaben auf das Notwendige zu beschränken.",
+      "options": [
+        "es",
+        "das",
+        "dafür",
+        "davon"
+      ],
+      "answer": "es",
+      "explanation": "In es geht darum, … es is the fixed impersonal subject and cannot be dropped even when another phrase stands first; darum then points to the zu-infinitive."
+    },
+    {
+      "id": "kor-15",
+      "type": "choice",
+      "prompt": "Erst nach monatelangen Verhandlungen gelang ___ den Vermittlern, einen tragfähigen Kompromiss zu erzielen.",
+      "options": [
+        "es",
+        "das",
+        "dazu",
+        "damit"
+      ],
+      "answer": "es",
+      "explanation": "gelingen with a zu-infinitive as subject: es stands in for that clause (Es gelang ihm, ... / gelang es ihm, ...)."
+    },
+    {
+      "id": "kor-16",
+      "type": "choice",
+      "prompt": "Die Opposition verwahrte sich entschieden ___, im Parlament als bloße Blockadekraft dargestellt zu werden.",
+      "options": [
+        "dagegen",
+        "davor",
+        "darüber",
+        "dafür"
+      ],
+      "answer": "dagegen",
+      "explanation": "sich verwahren gegen (to protest strongly against) takes gegen, so the correlate dagegen points ahead to the zu-infinitive."
+    },
+    {
+      "id": "kor-17",
+      "type": "choice",
+      "prompt": "Dass die Maßnahme Wirkung zeigt, ___ inzwischen durch mehrere Studien belegt.",
+      "options": [
+        "ist",
+        "ist es",
+        "es ist"
+      ],
+      "answer": "ist",
+      "explanation": "When the dass-clause itself stands in first position, the placeholder es is dropped: Dass ..., ist belegt."
+    },
+    {
+      "id": "kor-18",
+      "type": "choice",
+      "prompt": "Letztlich kommt es ___ an, ob die Bevölkerung die neuen Regelungen akzeptiert.",
+      "options": [
+        "darauf",
+        "daran",
+        "davon",
+        "dazu"
+      ],
+      "answer": "darauf",
+      "explanation": "ankommen auf (to depend on): es kommt darauf an, ob ... — darauf is obligatory before the ob-clause."
+    },
+    {
+      "id": "kor-19",
+      "type": "type",
+      "prompt": "Die Ministerin rechnet fest ___, dass der Gesetzentwurf noch vor der Sommerpause verabschiedet wird.",
+      "hint": "(rechnen mit)",
+      "answers": [
+        "damit"
+      ],
+      "explanation": "rechnen mit + dass-clause: the correlate is damit (da + mit)."
+    },
+    {
+      "id": "kor-20",
+      "type": "type",
+      "prompt": "Die bisherigen Befunde deuten ___ hin, dass die ursprünglichen Annahmen revidiert werden müssen.",
+      "hint": "(hindeuten auf)",
+      "answers": [
+        "darauf"
+      ],
+      "explanation": "hindeuten auf: darauf announces the dass-clause; before a vowel the da-word takes -r-."
+    },
+    {
+      "id": "kor-21",
+      "type": "type",
+      "prompt": "Kritiker zweifeln ___, dass die Maßnahme die erhoffte Wirkung entfalten wird.",
+      "hint": "(zweifeln an)",
+      "answers": [
+        "daran"
+      ],
+      "explanation": "zweifeln an: daran (da + r + an) points ahead to the dass-clause."
+    },
+    {
+      "id": "kor-22",
+      "type": "type",
+      "prompt": "Der Konzern verpflichtet sich ___, seine Emissionen bis 2035 zu halbieren.",
+      "hint": "(sich verpflichten zu)",
+      "answers": [
+        "dazu"
+      ],
+      "explanation": "sich verpflichten zu: the commitment in the zu-infinitive is announced by dazu."
+    },
+    {
+      "id": "kor-23",
+      "type": "type",
+      "prompt": "Das Gericht hat noch nicht ___ entschieden, ob das Verfahren eingestellt wird.",
+      "hint": "(entscheiden über)",
+      "answers": [
+        "darüber"
+      ],
+      "explanation": "entscheiden über + ob-clause: darüber (da + r + über) anticipates the ob-clause. Here it could also be left out, but formal texts often use it."
+    },
+    {
+      "id": "kor-24",
+      "type": "type",
+      "prompt": "Der Erfolg des Projekts beruht vor allem ___, dass alle Beteiligten frühzeitig eingebunden wurden.",
+      "hint": "(beruhen auf)",
+      "answers": [
+        "darauf"
+      ],
+      "explanation": "beruhen auf (to be based on): darauf is required before the dass-clause."
+    },
+    {
+      "id": "kor-25",
+      "type": "type",
+      "prompt": "Die Kommission hält ___ für geboten, die geltenden Grenzwerte erneut zu überprüfen.",
+      "hint": "(placeholder for the zu-clause)",
+      "answers": [
+        "es"
+      ],
+      "explanation": "halten für + adjective (geboten): es is the object placeholder for the following zu-infinitive."
+    },
+    {
+      "id": "kor-26",
+      "type": "order",
+      "words": [
+        "Es",
+        "kommt",
+        "darauf",
+        "an,",
+        "wie",
+        "die",
+        "Kommission",
+        "entscheidet."
+      ],
+      "answers": [
+        "Es kommt darauf an, wie die Kommission entscheidet."
+      ],
+      "translation": "It depends on how the commission decides.",
+      "explanation": "es kommt darauf an: es is the fixed subject, darauf points to the wie-clause, which has the verb at the end."
+    },
+    {
+      "id": "kor-27",
+      "type": "order",
+      "words": [
+        "Dass",
+        "die",
+        "Reform",
+        "scheitert,",
+        "gilt",
+        "als",
+        "unwahrscheinlich."
+      ],
+      "answers": [
+        "Dass die Reform scheitert, gilt als unwahrscheinlich."
+      ],
+      "translation": "That the reform will fail is considered unlikely.",
+      "explanation": "The dass-clause fills the first position itself, so no placeholder es is used; the main verb gilt follows directly."
+    },
+    {
+      "id": "kor-28",
+      "type": "order",
+      "words": [
+        "Die",
+        "Behörde",
+        "legt",
+        "Wert",
+        "darauf,",
+        "dass",
+        "Fristen",
+        "eingehalten",
+        "werden."
+      ],
+      "answers": [
+        "Die Behörde legt Wert darauf, dass Fristen eingehalten werden."
+      ],
+      "translation": "The authority attaches importance to deadlines being met.",
+      "explanation": "Wert legen auf: darauf comes at the end of the main clause, right before the comma and the dass-clause it announces."
+    },
+    {
+      "id": "kor-29",
+      "type": "order",
+      "words": [
+        "Es",
+        "empfiehlt",
+        "sich,",
+        "den",
+        "Antrag",
+        "frühzeitig",
+        "einzureichen."
+      ],
+      "answers": [
+        "Es empfiehlt sich, den Antrag frühzeitig einzureichen.",
+        "Es empfiehlt sich, frühzeitig den Antrag einzureichen."
+      ],
+      "translation": "It is advisable to submit the application early.",
+      "explanation": "sich empfehlen with a zu-infinitive: es fills the subject slot; inside the zu-clause the object and frühzeitig may swap."
+    },
+    {
+      "id": "kor-30",
+      "type": "order",
+      "words": [
+        "Uns",
+        "liegt",
+        "viel",
+        "daran,",
+        "dass",
+        "das",
+        "Verfahren",
+        "transparent",
+        "bleibt."
+      ],
+      "answers": [
+        "Uns liegt viel daran, dass das Verfahren transparent bleibt."
+      ],
+      "translation": "It matters a great deal to us that the procedure remains transparent.",
+      "explanation": "jemandem liegt (viel) an etwas: daran closes the main clause and points to the dass-clause; no es is needed because uns fills position one."
+    }
+  ]
+}

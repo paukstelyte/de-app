@@ -1,0 +1,370 @@
+{
+  "slug": "verbs-with-genitive",
+  "instructions": "Fill each gap with the correct genitive form or the verb that governs the genitive object.",
+  "items": [
+    {
+      "id": "vwg-01",
+      "type": "choice",
+      "prompt": "Am Jahrestag der Katastrophe gedachte der Bundespräsident in einer bewegenden Rede ___ Opfer.",
+      "options": [
+        "der",
+        "den",
+        "die",
+        "denen"
+      ],
+      "answer": "der",
+      "explanation": "gedenken takes a genitive object: die Opfer (plural) → der Opfer."
+    },
+    {
+      "id": "vwg-02",
+      "type": "choice",
+      "prompt": "Am Volkstrauertag ___ man der Gefallenen beider Weltkriege.",
+      "options": [
+        "gedenkt",
+        "erinnert",
+        "denkt",
+        "bedenkt"
+      ],
+      "answer": "gedenkt",
+      "explanation": "Only gedenken takes a bare genitive object (der Gefallenen); erinnern needs sich + an, denken needs an, bedenken takes the accusative."
+    },
+    {
+      "id": "vwg-03",
+      "type": "choice",
+      "prompt": "Die Umsetzung des Vorhabens bedarf zunächst ___ ausdrücklichen Beschlusses des Gemeinderats.",
+      "options": [
+        "eines",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "answer": "eines",
+      "explanation": "bedürfen takes the genitive: ein ausdrücklicher Beschluss → eines ausdrücklichen Beschlusses."
+    },
+    {
+      "id": "vwg-04",
+      "type": "choice",
+      "prompt": "Die geplante Reform des Verfahrens ___ einer gründlichen rechtlichen Überprüfung.",
+      "options": [
+        "bedarf",
+        "braucht",
+        "benötigt",
+        "erfordert"
+      ],
+      "answer": "bedarf",
+      "explanation": "Only bedürfen governs the genitive (einer gründlichen Überprüfung); brauchen, benötigen and erfordern would need the accusative eine gründliche Überprüfung."
+    },
+    {
+      "id": "vwg-05",
+      "type": "choice",
+      "prompt": "Die Ministerin war sich ___ Tragweite ihrer Entscheidung durchaus bewusst.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "sich einer Sache bewusst sein takes the genitive: die Tragweite → der Tragweite."
+    },
+    {
+      "id": "vwg-06",
+      "type": "choice",
+      "prompt": "Bei der Abstimmung über den umstrittenen Gesetzentwurf enthielten sich zwölf Abgeordnete ___ Stimme.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "sich einer Sache enthalten takes the genitive: die Stimme → sich der Stimme enthalten (to abstain)."
+    },
+    {
+      "id": "vwg-07",
+      "type": "choice",
+      "prompt": "Die Stadt rühmt sich seit jeher ___ ältesten Universität des Landes.",
+      "options": [
+        "der",
+        "die",
+        "dem",
+        "den"
+      ],
+      "answer": "der",
+      "explanation": "sich einer Sache rühmen (to boast of) takes the genitive: die älteste Universität → der ältesten Universität."
+    },
+    {
+      "id": "vwg-08",
+      "type": "choice",
+      "prompt": "Nach seiner rechtskräftigen Verurteilung wurde der Diplomat ___ Landes verwiesen.",
+      "options": [
+        "des",
+        "dem",
+        "das",
+        "den"
+      ],
+      "answer": "des",
+      "explanation": "jemanden einer Sache verweisen takes the genitive: das Land → des Landes verweisen (to expel from the country)."
+    },
+    {
+      "id": "vwg-09",
+      "type": "choice",
+      "prompt": "Der frühere Geschäftsführer wurde ___ Betrugs in mehreren Fällen angeklagt.",
+      "options": [
+        "des",
+        "dem",
+        "den",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "jemanden einer Sache anklagen names the charge in the genitive: der Betrug → des Betrugs."
+    },
+    {
+      "id": "vwg-10",
+      "type": "choice",
+      "prompt": "Trotz zahlreicher Kritik erfreut sich das Programm nach wie vor ___ Beliebtheit.",
+      "options": [
+        "großer",
+        "große",
+        "großen",
+        "großem"
+      ],
+      "answer": "großer",
+      "explanation": "sich einer Sache erfreuen takes the genitive; without an article the feminine genitive adjective ending is -er: große Beliebtheit → großer Beliebtheit."
+    },
+    {
+      "id": "vwg-11",
+      "type": "choice",
+      "prompt": "Nach Bekanntwerden der Vorwürfe wurde der Vorsitzende vorläufig ___ Amtes enthoben.",
+      "options": [
+        "seines",
+        "seinem",
+        "sein",
+        "seinen"
+      ],
+      "answer": "seines",
+      "explanation": "jemanden einer Sache entheben takes the genitive: sein Amt → seines Amtes entheben (to remove from office)."
+    },
+    {
+      "id": "vwg-12",
+      "type": "choice",
+      "prompt": "In einer offiziellen Stellungnahme bezichtigte die Regierung die Opposition ___ gezielten Desinformation.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "jemanden einer Sache bezichtigen takes the genitive for the accusation: die Desinformation → der Desinformation."
+    },
+    {
+      "id": "vwg-13",
+      "type": "choice",
+      "prompt": "Im Nachhinein schämte sie sich ___ unbedachten Äußerung, die sie in der Sitzung gemacht hatte.",
+      "options": [
+        "ihrer",
+        "ihre",
+        "ihrem",
+        "ihren"
+      ],
+      "answer": "ihrer",
+      "explanation": "In formal German sich einer Sache schämen takes the genitive: ihre Äußerung → ihrer Äußerung."
+    },
+    {
+      "id": "vwg-14",
+      "type": "choice",
+      "prompt": "Ein derart respektloses Verhalten im Plenum ist ___ Abgeordneten schlicht nicht würdig.",
+      "options": [
+        "eines",
+        "einem",
+        "einen",
+        "ein"
+      ],
+      "answer": "eines",
+      "explanation": "The adjective würdig takes the genitive: ein Abgeordneter → eines Abgeordneten würdig sein."
+    },
+    {
+      "id": "vwg-15",
+      "type": "choice",
+      "prompt": "Bewerberinnen und Bewerber müssen ___ deutschen Sprache in Wort und Schrift mächtig sein.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "einer Sache mächtig sein (to have command of) takes the genitive: die deutsche Sprache → der deutschen Sprache."
+    },
+    {
+      "id": "vwg-16",
+      "type": "choice",
+      "prompt": "Der Mitarbeiter wurde ___ Diebstahls vertraulicher Firmendaten beschuldigt, konnte die Vorwürfe jedoch entkräften.",
+      "options": [
+        "des",
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "jemanden einer Sache beschuldigen takes the genitive: der Diebstahl → des Diebstahls."
+    },
+    {
+      "id": "vwg-17",
+      "type": "choice",
+      "prompt": "Im Zuge des Putschversuchs bemächtigten sich die Aufständischen ___ Rundfunkgebäudes.",
+      "options": [
+        "des",
+        "den",
+        "dem",
+        "das"
+      ],
+      "answer": "des",
+      "explanation": "sich einer Sache bemächtigen (to seize) takes the genitive: das Rundfunkgebäude → des Rundfunkgebäudes."
+    },
+    {
+      "id": "vwg-18",
+      "type": "choice",
+      "prompt": "Das zuständige Jugendamt hat sich ___ Falls unmittelbar nach der Meldung angenommen.",
+      "options": [
+        "des",
+        "den",
+        "dem",
+        "der"
+      ],
+      "answer": "des",
+      "explanation": "sich einer Sache annehmen (to take care of) takes the genitive: der Fall → des Falls."
+    },
+    {
+      "id": "vwg-19",
+      "type": "choice",
+      "prompt": "Der Konzern versuchte, sich ___ Altlasten auf dem Werksgelände möglichst kostengünstig zu entledigen.",
+      "options": [
+        "der",
+        "die",
+        "den",
+        "denen"
+      ],
+      "answer": "der",
+      "explanation": "sich einer Sache entledigen (to get rid of) takes the genitive: die Altlasten (plural) → der Altlasten."
+    },
+    {
+      "id": "vwg-20",
+      "type": "choice",
+      "prompt": "Unter dem autoritären Regime wurde die Bevölkerung ___ grundlegendsten Rechte beraubt.",
+      "options": [
+        "ihrer",
+        "ihre",
+        "ihren",
+        "ihnen"
+      ],
+      "answer": "ihrer",
+      "explanation": "jemanden einer Sache berauben takes the genitive: ihre Rechte (plural) → ihrer Rechte."
+    },
+    {
+      "id": "vwg-21",
+      "type": "choice",
+      "prompt": "Die vom Anwalt vorgebrachte Behauptung ___ bei genauerer Betrachtung jeder Grundlage.",
+      "options": [
+        "entbehrt",
+        "fehlt",
+        "mangelt",
+        "vermisst"
+      ],
+      "answer": "entbehrt",
+      "explanation": "entbehren takes the genitive (jeder Grundlage entbehren = to lack any basis); fehlen would need Der Behauptung fehlt jede Grundlage, mangeln needs an, vermissen the accusative."
+    },
+    {
+      "id": "vwg-22",
+      "type": "type",
+      "prompt": "Am Jahrestag der Befreiung ___ der Bundestag in einer Gedenkstunde der Opfer des Nationalsozialismus.",
+      "hint": "(gedenken, Präteritum)",
+      "answers": [
+        "gedachte"
+      ],
+      "explanation": "gedenken is irregular: gedenken – gedachte – hat gedacht; its object der Opfer is in the genitive."
+    },
+    {
+      "id": "vwg-23",
+      "type": "type",
+      "prompt": "Für die Genehmigung des Umbaus bedarf es ___ des Eigentümers.",
+      "hint": "(die schriftliche Zustimmung)",
+      "answers": [
+        "der schriftlichen Zustimmung"
+      ],
+      "explanation": "es bedarf + genitive: die schriftliche Zustimmung → der schriftlichen Zustimmung."
+    },
+    {
+      "id": "vwg-24",
+      "type": "type",
+      "prompt": "Nach einem mehrwöchigen Indizienprozess wurde der Angeklagte ___ schuldig gesprochen.",
+      "hint": "(der Mord)",
+      "answers": [
+        "des Mordes",
+        "des Mords"
+      ],
+      "explanation": "einer Sache schuldig sein / sprechen takes the genitive: der Mord → des Mordes (or des Mords)."
+    },
+    {
+      "id": "vwg-25",
+      "type": "type",
+      "prompt": "Bevor die Vorsitzende die Abstimmung eröffnete, vergewisserte sie sich ___ des Gremiums.",
+      "hint": "(die Beschlussfähigkeit)",
+      "answers": [
+        "der Beschlussfähigkeit"
+      ],
+      "explanation": "sich einer Sache vergewissern (to make sure of) takes the genitive: die Beschlussfähigkeit → der Beschlussfähigkeit."
+    },
+    {
+      "id": "vwg-26",
+      "type": "type",
+      "prompt": "Zur Auswertung der erhobenen Daten bediente sich die Forschungsgruppe ___, das sich bereits in früheren Studien bewährt hatte.",
+      "hint": "(ein qualitatives Verfahren)",
+      "answers": [
+        "eines qualitativen Verfahrens"
+      ],
+      "explanation": "sich einer Sache bedienen (to make use of) takes the genitive: ein qualitatives Verfahren → eines qualitativen Verfahrens."
+    },
+    {
+      "id": "vwg-27",
+      "type": "type",
+      "prompt": "Viele Bürgerinnen und Bürger sind sich ___ dieser Maßnahme offenbar nicht bewusst.",
+      "hint": "(die langfristigen Folgen)",
+      "answers": [
+        "der langfristigen Folgen"
+      ],
+      "explanation": "sich einer Sache bewusst sein takes the genitive: die langfristigen Folgen (plural) → der langfristigen Folgen."
+    },
+    {
+      "id": "vwg-28",
+      "type": "type",
+      "prompt": "Nach monatelangen verdeckten Ermittlungen wurde der Beamte schließlich ___ überführt.",
+      "hint": "(die Bestechlichkeit)",
+      "answers": [
+        "der Bestechlichkeit"
+      ],
+      "explanation": "jemanden einer Sache überführen (to convict of) takes the genitive: die Bestechlichkeit → der Bestechlichkeit."
+    },
+    {
+      "id": "vwg-29",
+      "type": "type",
+      "prompt": "Das neu eröffnete Museum erfreut sich ___ bei Besuchern aus dem In- und Ausland.",
+      "hint": "(wachsendes Interesse)",
+      "answers": [
+        "wachsenden Interesses"
+      ],
+      "explanation": "sich einer Sache erfreuen takes the genitive; without an article a masculine/neuter genitive adjective ends in -en: wachsendes Interesse → wachsenden Interesses."
+    },
+    {
+      "id": "vwg-30",
+      "type": "type",
+      "prompt": "Obwohl die Beweislage dünn war, schien sich die Staatsanwältin ___ völlig sicher zu sein.",
+      "hint": "(ihre Sache)",
+      "answers": [
+        "ihrer Sache"
+      ],
+      "explanation": "sich einer Sache sicher sein takes the genitive: ihre Sache → sich ihrer Sache sicher sein (to be confident of one's case)."
+    }
+  ]
+}

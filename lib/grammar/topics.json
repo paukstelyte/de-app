@@ -889,49 +889,91 @@
     "title": "Switching between noun style and verb style",
     "level": "C1",
     "group": "Other",
-    "summary": "Turning clauses into noun phrases and back, a key skill for formal writing: Weil es stark regnete … ↔ Wegen des starken Regens … Nachdem er zurückgekehrt war … ↔ Nach seiner Rückkehr …"
+    "summary": "Turning clauses into noun phrases and back, a key skill for formal writing: Weil es stark regnete … ↔ Wegen des starken Regens … Nachdem er zurückgekehrt war … ↔ Nach seiner Rückkehr …",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/nominal-verbal-style/practice"
+      }
+    ]
   },
   {
     "slug": "funktionsverbgefuege",
     "title": "Fixed verb-noun phrases (Funktionsverbgefüge)",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "Formal phrases where a noun carries the meaning and the verb is almost empty: zur Verfügung stellen (provide), in Frage kommen (be possible), eine Entscheidung treffen (decide), in Kraft treten (come into force)."
+    "summary": "Formal phrases where a noun carries the meaning and the verb is almost empty: zur Verfügung stellen (provide), in Frage kommen (be possible), eine Entscheidung treffen (decide), in Kraft treten (come into force).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/funktionsverbgefuege/practice"
+      }
+    ]
   },
   {
     "slug": "connectors-advanced",
     "title": "Advanced connectors (sofern, indem, wohingegen …)",
     "level": "C1",
     "group": "Linking ideas",
-    "summary": "Precise links between ideas: indem (by doing), sofern (provided that), wohingegen (whereas), insofern … als (to the extent that), geschweige denn (let alone), je nachdem (depending on)."
+    "summary": "Precise links between ideas: indem (by doing), sofern (provided that), wohingegen (whereas), insofern … als (to the extent that), geschweige denn (let alone), je nachdem (depending on).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/connectors-advanced/practice"
+      }
+    ]
   },
   {
     "slug": "prepositions-formal-genitive",
     "title": "Formal prepositions with the genitive",
     "level": "C1",
     "group": "Prepositions",
-    "summary": "Written German uses many genitive prepositions: aufgrund, angesichts, hinsichtlich, mithilfe, infolge, zwecks, unweit. Aufgrund des Streiks fallen alle Züge aus."
+    "summary": "Written German uses many genitive prepositions: aufgrund, angesichts, hinsichtlich, mithilfe, infolge, zwecks, unweit. Aufgrund des Streiks fallen alle Züge aus.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/prepositions-formal-genitive/practice"
+      }
+    ]
   },
   {
     "slug": "verbs-with-genitive",
     "title": "Verbs and adjectives with the genitive",
     "level": "C1",
     "group": "Cases",
-    "summary": "A few formal verbs and adjectives take a genitive object: gedenken (remember), bedürfen (need), sich bewusst sein, sich einer Sache schämen. Wir gedenken der Opfer."
+    "summary": "A few formal verbs and adjectives take a genitive object: gedenken (remember), bedürfen (need), sich bewusst sein, sich einer Sache schämen. Wir gedenken der Opfer.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/verbs-with-genitive/practice"
+      }
+    ]
   },
   {
     "slug": "correlate-es-da",
     "title": "Placeholder es and da- words (Korrelat)",
     "level": "C1",
     "group": "Sentence structure",
-    "summary": "es or a da- word can point ahead to a whole clause: Ich finde es wichtig, dass du kommst. Ich freue mich darauf, dich zu sehen. Knowing when they're required, optional or wrong is a C1 skill."
+    "summary": "es or a da- word can point ahead to a whole clause: Ich finde es wichtig, dass du kommst. Ich freue mich darauf, dich zu sehen. Knowing when they're required, optional or wrong is a C1 skill.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/correlate-es-da/practice"
+      }
+    ]
   },
   {
     "slug": "separable-inseparable-pairs",
     "title": "Verbs that can be separable or not (übersetzen, umfahren)",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "Some prefixes (über-, um-, durch-, unter-, wieder-) can be separable or not, with different meanings and stress: Er setzt mit der Fähre über (crosses over) vs. Er übersetzt den Text (translates)."
+    "summary": "Some prefixes (über-, um-, durch-, unter-, wieder-) can be separable or not, with different meanings and stress: Er setzt mit der Fähre über (crosses over) vs. Er übersetzt den Text (translates).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/separable-inseparable-pairs/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-i-set-phrases",
