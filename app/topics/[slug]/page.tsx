@@ -84,7 +84,7 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
         {accuracy && accuracy.total > 0 && (
           <p className="text-sm">
             Your accuracy so far: <b>{percent(accuracy)}%</b> over {accuracy.total} answers.{" "}
-            <Link href="/progress" className="underline underline-offset-2">See your progress</Link>
+            <Link href={topic.slug === "noun-gender" ? "/progress" : "/learning"} className="underline underline-offset-2">See your progress</Link>
           </p>
         )}
         {topic.rulesHref && (

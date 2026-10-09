@@ -10,7 +10,7 @@ Browser checks for Customized Learning, driven by [playwright-cli](https://www.n
 | PDF, HEIC photo, Word | Each upload creates a "Lektion 7" document with `prepositions-dative` / `dative-case`, listed under "Your focus now" |
 | Blank image | "No German grammar topics found", no topics |
 | Storage | After every upload the `learning-uploads` bucket is empty (read-only SQL, printed with its result) |
-| Focus | "Remove from focus" hides a topic; "Add to my focus" on `/topics/modal-verbs` adds it |
+| Focus | "Remove from my focus" hides a topic; "Add to my focus" on `/topics/modal-verbs` adds it |
 | Delete | A deleted document is gone after reload |
 | Other user | The second account sees none of the first account's documents or focus |
 | Rejections | A `.doc` file and 6 photos show the plain error messages and use no quota or storage |

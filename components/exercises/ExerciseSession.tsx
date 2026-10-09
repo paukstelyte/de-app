@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { recordExerciseAnswer } from "@/app/topics/[slug]/practice/actions";
-import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, shuffle } from "@/lib/exercises/check";
+import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle } from "@/lib/exercises/check";
 import type { ChoiceItem, ExerciseItem, OrderItem, TypeItem } from "@/lib/exercises/types";
 
 const card = "border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]";
@@ -51,14 +51,14 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
     return (
       <div className={`flex flex-col items-center gap-4 p-8 text-center ${card}`}>
         <h2 className="text-xl font-semibold">{mode === "mistakes" ? "Mistakes round complete!" : "Round complete!"}</h2>
-        <p role="status" className="text-sm text-zinc-600 dark:text-zinc-400">You got {score} of {round.length}</p>
+        <p id="round-score" role="status" className="text-sm text-zinc-600 dark:text-zinc-400">You got {score} of {round.length}</p>
         <div className="flex flex-wrap justify-center gap-3">
           {misses.length > 0 && (
-            <button type="button" autoFocus onClick={() => start(misses, "mistakes")} className={pillPrimary}>
+            <button type="button" autoFocus aria-describedby="round-score" onClick={() => start(misses, "mistakes")} className={pillPrimary}>
               Practise my mistakes ({misses.length})
             </button>
           )}
-          <button type="button" autoFocus={misses.length === 0} onClick={() => start(makeRound(items), "normal")} className={misses.length ? pillSecondary : pillPrimary}>
+          <button type="button" autoFocus={misses.length === 0} aria-describedby={misses.length === 0 ? "round-score" : undefined} onClick={() => start(makeRound(items), "normal")} className={misses.length ? pillSecondary : pillPrimary}>
             Next {ROUND_SIZE} →
           </button>
         </div>
@@ -104,6 +104,9 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
               <p className="text-sm">
                 Answer: <b lang="de">{solution}</b>
               </p>
+            )}
+            {!answered.correct && item.type === "type" && item.answers.some((a) => normalise(a).toLowerCase() === normalise(answered.answer).toLowerCase()) && (
+              <p className="text-sm">Check the capital letters.</p>
             )}
             <p className="text-sm text-zinc-700 dark:text-zinc-300">{item.explanation}</p>
             <button type="button" autoFocus onClick={() => { setAnswered(null); setIndex(index + 1); }} className={`self-start ${pillPrimary}`}>
