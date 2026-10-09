@@ -1,0 +1,446 @@
+{
+  "slug": "complex-sentence-structure",
+  "instructions": "Choose, type or build the form that completes these multi-layered sentences with embedded clauses, participle phrases and verb clusters.",
+  "items": [
+    {
+      "id": "csc-01",
+      "type": "choice",
+      "prompt": "Die Auswirkungen der von der Zentralbank angekündigten Zinserhöhung auf die Kreditvergabe ___ umstritten.",
+      "options": [
+        "sind",
+        "ist",
+        "wird",
+        "war"
+      ],
+      "answer": "sind",
+      "explanation": "The subject is die Auswirkungen (plural), not Zentralbank or Zinserhöhung buried in the attributes, so the verb is plural: sind."
+    },
+    {
+      "id": "csc-02",
+      "type": "choice",
+      "prompt": "Bei den im Rahmen der Studie ___ Daten handelt es sich lediglich um Schätzwerte.",
+      "options": [
+        "erhobenen",
+        "erhobene",
+        "erhoben",
+        "erhebenden"
+      ],
+      "answer": "erhobenen",
+      "explanation": "The extended participle sits between den and Daten; dative plural after den takes -en, and the data are collected (Partizip II): den … erhobenen Daten."
+    },
+    {
+      "id": "csc-03",
+      "type": "type",
+      "prompt": "Die in der Branche seit Jahren ___ Missstände sind nun öffentlich geworden.",
+      "hint": "(herrschen)",
+      "answers": [
+        "herrschenden"
+      ],
+      "explanation": "Partizip I (ongoing state) as an attribute: herrschend + -en after die in the plural: die … herrschenden Missstände."
+    },
+    {
+      "id": "csc-04",
+      "type": "order",
+      "words": [
+        "Die",
+        "vom",
+        "Ministerium",
+        "zugesagten",
+        "Mittel",
+        "sind",
+        "nie",
+        "ausgezahlt",
+        "worden."
+      ],
+      "answers": [
+        "Die vom Ministerium zugesagten Mittel sind nie ausgezahlt worden."
+      ],
+      "translation": "The funds promised by the ministry have never been paid out.",
+      "explanation": "A participle phrase (vom Ministerium zugesagten) precedes the noun, and the perfect passive puts ausgezahlt worden at the end."
+    },
+    {
+      "id": "csc-05",
+      "type": "order",
+      "words": [
+        "Das",
+        "Gutachten,",
+        "auf",
+        "dem",
+        "das",
+        "Urteil",
+        "beruht,",
+        "gilt",
+        "als",
+        "widerlegt."
+      ],
+      "answers": [
+        "Das Gutachten, auf dem das Urteil beruht, gilt als widerlegt."
+      ],
+      "translation": "The expert report on which the verdict is based is considered refuted.",
+      "explanation": "The relative clause with preposition (auf dem … beruht) is embedded directly after its noun; the main verb gilt then follows in second position."
+    },
+    {
+      "id": "csc-06",
+      "type": "choice",
+      "prompt": "Das Verfahren, in ___ Verlauf mehrere Zeugen ihre Aussagen widerrufen hatten, wurde schließlich eingestellt.",
+      "options": [
+        "dessen",
+        "deren",
+        "dem",
+        "das"
+      ],
+      "answer": "dessen",
+      "explanation": "in dessen Verlauf = in the course of which; Verfahren is neuter, so the genitive relative pronoun is dessen."
+    },
+    {
+      "id": "csc-07",
+      "type": "choice",
+      "prompt": "Die Richterin, deren Urteil, ___ zahlreiche Juristen scharf kritisiert hatten, später aufgehoben wurde, äußerte sich nicht.",
+      "options": [
+        "das",
+        "dem",
+        "den",
+        "dessen"
+      ],
+      "answer": "das",
+      "explanation": "The innermost relative clause refers to Urteil (neuter) and it is the accusative object of kritisieren: das."
+    },
+    {
+      "id": "csc-08",
+      "type": "type",
+      "prompt": "Das Abkommen, auf ___ Einhaltung sich beide Staaten verpflichtet hatten, wurde wiederholt gebrochen.",
+      "hint": "(relative pronoun)",
+      "answers": [
+        "dessen"
+      ],
+      "explanation": "auf dessen Einhaltung = to whose observance; Abkommen is neuter, so the genitive relative pronoun is dessen."
+    },
+    {
+      "id": "csc-09",
+      "type": "choice",
+      "prompt": "Die Frage, ob die Kosten, die bei der Sanierung entstanden sind, erstattet werden, ___ noch nicht geklärt.",
+      "options": [
+        "ist",
+        "sind",
+        "werden",
+        "seien"
+      ],
+      "answer": "ist",
+      "explanation": "The subject of the main clause is die Frage (singular); the plural Kosten belongs to the embedded clauses, so the verb is ist."
+    },
+    {
+      "id": "csc-10",
+      "type": "order",
+      "words": [
+        "Ob",
+        "das",
+        "Gesetz,",
+        "das",
+        "gestern",
+        "verabschiedet",
+        "wurde,",
+        "greift,",
+        "bleibt",
+        "abzuwarten."
+      ],
+      "answers": [
+        "Ob das Gesetz, das gestern verabschiedet wurde, greift, bleibt abzuwarten."
+      ],
+      "translation": "Whether the law that was passed yesterday will take effect remains to be seen.",
+      "explanation": "The ob-clause is the subject and contains a relative clause; its own verb greift comes after the embedded clause, then the main verb bleibt."
+    },
+    {
+      "id": "csc-11",
+      "type": "choice",
+      "prompt": "Es war ihm nicht bewusst gewesen, ___ weitreichend die Folgen jener Entscheidung sein würden, die er damals getroffen hatte.",
+      "options": [
+        "wie",
+        "dass",
+        "ob",
+        "als"
+      ],
+      "answer": "wie",
+      "explanation": "An indirect question about degree needs wie + adjective (wie weitreichend); the relative clause on Entscheidung is moved to the end of the sentence."
+    },
+    {
+      "id": "csc-12",
+      "type": "type",
+      "prompt": "Es ist nicht auszuschließen, dass der Vertrag, den die Parteien unter erheblichem Zeitdruck ___ haben, Lücken aufweist.",
+      "hint": "(aushandeln)",
+      "answers": [
+        "ausgehandelt"
+      ],
+      "explanation": "In the relative clause the perfect needs the participle before haben; separable aushandeln forms ausgehandelt."
+    },
+    {
+      "id": "csc-13",
+      "type": "order",
+      "words": [
+        "Die",
+        "Ministerin",
+        "bestreitet,",
+        "von",
+        "den",
+        "Vorgängen",
+        "gewusst",
+        "zu",
+        "haben."
+      ],
+      "answers": [
+        "Die Ministerin bestreitet, von den Vorgängen gewusst zu haben."
+      ],
+      "translation": "The minister denies having known about the incidents.",
+      "explanation": "A perfect infinitive (gewusst zu haben) ends the infinitive clause and expresses that the knowing would lie before the denying."
+    },
+    {
+      "id": "csc-14",
+      "type": "type",
+      "prompt": "Die Akten sollen bereits vor Beginn der Ermittlungen vernichtet ___ sein.",
+      "hint": "(werden)",
+      "answers": [
+        "worden"
+      ],
+      "explanation": "Perfect passive infinitive: vernichtet worden sein; in the passive, werden has the participle worden, not geworden."
+    },
+    {
+      "id": "csc-15",
+      "type": "order",
+      "words": [
+        "Es",
+        "ist",
+        "anzunehmen,",
+        "dass",
+        "sie",
+        "davon",
+        "gewusst",
+        "haben",
+        "muss."
+      ],
+      "answers": [
+        "Es ist anzunehmen, dass sie davon gewusst haben muss."
+      ],
+      "translation": "It can be assumed that she must have known about it.",
+      "explanation": "Subjective müssen with a perfect infinitive: in the dass-clause the finite modal muss comes last, after gewusst haben."
+    },
+    {
+      "id": "csc-16",
+      "type": "choice",
+      "prompt": "Die bis zur nächsten Sitzung noch ___ Anträge liegen dem Ausschuss vollständig vor.",
+      "options": [
+        "zu prüfenden",
+        "zu prüfende",
+        "geprüften",
+        "prüfenden"
+      ],
+      "answer": "zu prüfenden",
+      "explanation": "The gerundive zu + Partizip I (zu prüfend = to be examined) works like an adjective: die … zu prüfenden Anträge."
+    },
+    {
+      "id": "csc-17",
+      "type": "choice",
+      "prompt": "Die Geschäftsführung hat die Bilanz, obwohl der Verdacht auf Unregelmäßigkeiten bestand, nicht unabhängig prüfen ___.",
+      "options": [
+        "lassen",
+        "gelassen",
+        "zu lassen",
+        "lässt"
+      ],
+      "answer": "lassen",
+      "explanation": "With a dependent infinitive, lassen in the perfect uses the infinitive instead of gelassen (Ersatzinfinitiv): hat … prüfen lassen."
+    },
+    {
+      "id": "csc-18",
+      "type": "choice",
+      "prompt": "Man wirft der Behörde vor, dass sie die Anwohner rechtzeitig hätte informieren ___.",
+      "options": [
+        "müssen",
+        "gemusst",
+        "zu müssen"
+      ],
+      "answer": "müssen",
+      "explanation": "With a dependent infinitive, the modal takes the Ersatzinfinitiv (müssen, not gemusst), and hätte moves in front of the whole verb cluster."
+    },
+    {
+      "id": "csc-19",
+      "type": "order",
+      "words": [
+        "Dass",
+        "er",
+        "hätte",
+        "zurücktreten",
+        "müssen,",
+        "räumte",
+        "der",
+        "Minister",
+        "ein."
+      ],
+      "answers": [
+        "Dass er hätte zurücktreten müssen, räumte der Minister ein."
+      ],
+      "translation": "The minister admitted that he should have resigned.",
+      "explanation": "With the Ersatzinfinitiv, the finite verb hätte stands before the infinitives even in a dass-clause: hätte zurücktreten müssen."
+    },
+    {
+      "id": "csc-20",
+      "type": "choice",
+      "prompt": "Wir bedauern außerordentlich, dass wir die vereinbarte Frist nicht ___.",
+      "options": [
+        "haben einhalten können",
+        "einhalten können haben",
+        "einhalten gekonnt haben",
+        "haben eingehalten können"
+      ],
+      "answer": "haben einhalten können",
+      "explanation": "In a subordinate clause with an Ersatzinfinitiv, the finite auxiliary haben goes in front of the infinitives: haben einhalten können."
+    },
+    {
+      "id": "csc-21",
+      "type": "choice",
+      "prompt": "Der Verlag bestätigte, dass die Autorin den Roman, den sie seit Jahrzehnten ___, nun doch veröffentlichen wird.",
+      "options": [
+        "hatte schreiben wollen",
+        "schreiben wollen hatte",
+        "schreiben gewollt hatte",
+        "hatte geschrieben wollen"
+      ],
+      "answer": "hatte schreiben wollen",
+      "explanation": "Pluperfect of a modal with an infinitive: hatte + schreiben wollen; hatte goes in front of the double infinitive, even inside a relative clause."
+    },
+    {
+      "id": "csc-22",
+      "type": "type",
+      "prompt": "Die Autorin gestand, dass sie das Manuskript einst ___ vernichten wollen, es dann aber doch ihrem Verleger übergeben hatte.",
+      "hint": "(haben, Plusquamperfekt)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "Pluperfect with an Ersatzinfinitiv: the finite hatte comes before vernichten wollen, not at the very end of the dass-clause."
+    },
+    {
+      "id": "csc-23",
+      "type": "order",
+      "words": [
+        "Was",
+        "genau",
+        "hatte",
+        "verhandelt",
+        "werden",
+        "sollen,",
+        "wusste",
+        "niemand."
+      ],
+      "answers": [
+        "Was genau hatte verhandelt werden sollen, wusste niemand."
+      ],
+      "translation": "Nobody knew what exactly had been supposed to be negotiated.",
+      "explanation": "The finite hatte precedes the cluster verhandelt werden sollen (passive + modal); the whole clause is the object of wusste."
+    },
+    {
+      "id": "csc-24",
+      "type": "type",
+      "prompt": "Die Verhandlungen, in deren Verlauf beide Seiten erhebliche Zugeständnisse ___ machen müssen, endeten ergebnislos.",
+      "hint": "(haben, Präteritum)",
+      "answers": [
+        "hatten"
+      ],
+      "explanation": "In the relative clause the pluperfect of müssen + infinitive puts the finite hatten before the double infinitive: hatten machen müssen."
+    },
+    {
+      "id": "csc-25",
+      "type": "order",
+      "words": [
+        "Niemand",
+        "bestreitet,",
+        "dass",
+        "die",
+        "Maßnahme",
+        "hätte",
+        "ergriffen",
+        "werden",
+        "sollen."
+      ],
+      "answers": [
+        "Niemand bestreitet, dass die Maßnahme hätte ergriffen werden sollen."
+      ],
+      "translation": "Nobody disputes that the measure should have been taken.",
+      "explanation": "Passive + modal in Konjunktiv II past: hätte comes first, then participle, werden and the modal infinitive sollen."
+    },
+    {
+      "id": "csc-26",
+      "type": "type",
+      "prompt": "Es steht außer Frage, dass die Sicherheitsmängel längst hätten ___ werden müssen.",
+      "hint": "(beheben)",
+      "answers": [
+        "behoben"
+      ],
+      "explanation": "In the cluster hätten … werden müssen the passive participle of beheben comes right before werden: hätten behoben werden müssen."
+    },
+    {
+      "id": "csc-27",
+      "type": "choice",
+      "prompt": "Der Ausschuss stellte fest, dass die Unterlagen deutlich früher ___.",
+      "options": [
+        "hätten vorgelegt werden müssen",
+        "vorgelegt werden müssen hätten",
+        "vorgelegt werden gemusst hätten",
+        "hätten müssen vorgelegt werden"
+      ],
+      "answer": "hätten vorgelegt werden müssen",
+      "explanation": "Four-verb cluster: the finite hätten stands before everything, followed by participle, passive werden and the modal in the Ersatzinfinitiv."
+    },
+    {
+      "id": "csc-28",
+      "type": "order",
+      "words": [
+        "Unklar",
+        "bleibt,",
+        "ob",
+        "der",
+        "Antrag",
+        "hätte",
+        "genehmigt",
+        "werden",
+        "dürfen."
+      ],
+      "answers": [
+        "Unklar bleibt, ob der Antrag hätte genehmigt werden dürfen."
+      ],
+      "translation": "It remains unclear whether the application could legitimately have been approved.",
+      "explanation": "In the ob-clause the finite hätte precedes the cluster genehmigt werden dürfen because dürfen is an Ersatzinfinitiv."
+    },
+    {
+      "id": "csc-29",
+      "type": "order",
+      "words": [
+        "Man",
+        "hätte",
+        "Einspruch",
+        "einlegen",
+        "können,",
+        "wäre",
+        "die",
+        "Frist",
+        "nicht",
+        "verstrichen."
+      ],
+      "answers": [
+        "Man hätte Einspruch einlegen können, wäre die Frist nicht verstrichen."
+      ],
+      "translation": "One could have lodged an objection had the deadline not expired.",
+      "explanation": "Main clause with hätte … einlegen können; the condition without wenn starts with the finite verb wäre, which is fixed in first position."
+    },
+    {
+      "id": "csc-30",
+      "type": "choice",
+      "prompt": "Die Kommission empfahl, das Projekt so lange auszusetzen, ___ die Umweltverträglichkeit, die bislang nicht geprüft worden ist, nachgewiesen ist.",
+      "options": [
+        "bis",
+        "solange",
+        "bevor",
+        "als"
+      ],
+      "answer": "bis",
+      "explanation": "The correlate so lange in the main clause pairs with bis (until): so lange aussetzen, bis … nachgewiesen ist."
+    }
+  ]
+}

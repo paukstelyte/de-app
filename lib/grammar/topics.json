@@ -980,48 +980,90 @@
     "title": "Konjunktiv I in set phrases and instructions",
     "level": "C2",
     "group": "Verbs and tenses",
-    "summary": "Fixed expressions and recipe or instruction style use Konjunktiv I: Es lebe die Freiheit! Gott sei Dank. Man nehme 200 g Mehl. Sei es, wie es sei."
+    "summary": "Fixed expressions and recipe or instruction style use Konjunktiv I: Es lebe die Freiheit! Gott sei Dank. Man nehme 200 g Mehl. Sei es, wie es sei.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-i-set-phrases/practice"
+      }
+    ]
   },
   {
     "slug": "hedging-formal-style",
     "title": "Hedging and nuance in formal writing",
     "level": "C2",
     "group": "Other",
-    "summary": "Academic and professional German softens claims with Konjunktiv II and modal verbs: Es wäre zu prüfen, ob … Dies dürfte darauf zurückzuführen sein, dass … Man könnte einwenden, dass …"
+    "summary": "Academic and professional German softens claims with Konjunktiv II and modal verbs: Es wäre zu prüfen, ob … Dies dürfte darauf zurückzuführen sein, dass … Man könnte einwenden, dass …",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/hedging-formal-style/practice"
+      }
+    ]
   },
   {
     "slug": "complex-sentence-structure",
     "title": "Complex sentences with several layers",
     "level": "C2",
     "group": "Sentence structure",
-    "summary": "Long sentences with clauses inside clauses, extended participle phrases and several verbs at the end, as in legal, academic or literary texts: … dass er das Buch, das er seit Jahren hatte schreiben wollen, endlich beendet hat."
+    "summary": "Long sentences with clauses inside clauses, extended participle phrases and several verbs at the end, as in legal, academic or literary texts: … dass er das Buch, das er seit Jahren hatte schreiben wollen, endlich beendet hat.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/complex-sentence-structure/practice"
+      }
+    ]
   },
   {
     "slug": "word-order-emphasis",
     "title": "Word order for emphasis (fronting and moving to the end)",
     "level": "C2",
     "group": "Sentence structure",
-    "summary": "Choosing what goes first or last to shift emphasis: Den Film habe ich gesehen, das Buch nicht. Moving parts after the final verb in speech and journalism: Ich habe ihn gesehen gestern im Park."
+    "summary": "Choosing what goes first or last to shift emphasis: Den Film habe ich gesehen, das Buch nicht. Moving parts after the final verb in speech and journalism: Ich habe ihn gesehen gestern im Park.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/word-order-emphasis/practice"
+      }
+    ]
   },
   {
     "slug": "modal-particle-combinations",
     "title": "Combining modal particles (doch mal, ja wohl, halt eben)",
     "level": "C2",
     "group": "Other",
-    "summary": "Native speakers stack particles for fine shades of meaning: Komm doch mal her! Das ist ja wohl nicht dein Ernst! Das ist halt eben so."
+    "summary": "Native speakers stack particles for fine shades of meaning: Komm doch mal her! Das ist ja wohl nicht dein Ernst! Das ist halt eben so.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/modal-particle-combinations/practice"
+      }
+    ]
   },
   {
     "slug": "spoken-vs-written-grammar",
     "title": "Spoken vs written grammar",
     "level": "C2",
     "group": "Other",
-    "summary": "What changes between registers and regions: wegen + dative in speech, weil with main-clause word order (weil ich hab keine Zeit), Perfekt vs Präteritum in north and south, the tun + infinitive form (Ich tu gerade kochen)."
+    "summary": "What changes between registers and regions: wegen + dative in speech, weil with main-clause word order (weil ich hab keine Zeit), Perfekt vs Präteritum in north and south, the tun + infinitive form (Ich tu gerade kochen).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/spoken-vs-written-grammar/practice"
+      }
+    ]
   },
   {
     "slug": "word-formation-advanced",
     "title": "Word formation: prefixes and suffixes",
     "level": "C2",
     "group": "Other",
-    "summary": "Building and decoding words: ver-, zer-, ent- and er- change a verb's meaning (verlaufen, zerbrechen, entkommen, erkämpfen); suffixes like -lich, -ig, -bar, -sam and -haft make adjectives with different shades."
+    "summary": "Building and decoding words: ver-, zer-, ent- and er- change a verb's meaning (verlaufen, zerbrechen, entkommen, erkämpfen); suffixes like -lich, -ig, -bar, -sam and -haft make adjectives with different shades.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/word-formation-advanced/practice"
+      }
+    ]
   }
 ]

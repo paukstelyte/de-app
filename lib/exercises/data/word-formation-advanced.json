@@ -1,0 +1,347 @@
+{
+  "slug": "word-formation-advanced",
+  "instructions": "Choose or type the word whose prefix or suffix gives exactly the meaning the context requires.",
+  "items": [
+    {
+      "id": "wfa-01",
+      "type": "choice",
+      "prompt": "Auf dem Weg zum Tagungszentrum hatte sich die Delegation in der weitläufigen Altstadt ___, sodass die Eröffnungsrede ohne sie begann.",
+      "options": [
+        "verlaufen",
+        "entlaufen",
+        "zerlaufen",
+        "belaufen"
+      ],
+      "answer": "verlaufen",
+      "explanation": "sich verlaufen: ver- often marks going wrong (to get lost walking). entlaufen = to run away, zerlaufen = to melt, sich belaufen auf = to amount to."
+    },
+    {
+      "id": "wfa-02",
+      "type": "choice",
+      "prompt": "Trotz umfangreicher Fahndungsmaßnahmen gelang es dem Verdächtigen, über die grüne Grenze zu ___.",
+      "options": [
+        "entkommen",
+        "verkommen",
+        "bekommen",
+        "umkommen"
+      ],
+      "answer": "entkommen",
+      "explanation": "ent- expresses getting away from something: entkommen = to escape. verkommen = to decay, umkommen = to perish."
+    },
+    {
+      "id": "wfa-03",
+      "type": "choice",
+      "prompt": "Infolge der Erschütterungen durch die Sprengarbeiten ___ eine wertvolle Porzellanvase, deren Restaurierung nun das Landesamt für Denkmalpflege übernimmt.",
+      "options": [
+        "zerbrach",
+        "verbrach",
+        "erbrach",
+        "unterbrach"
+      ],
+      "answer": "zerbrach",
+      "explanation": "zer- means 'into pieces': zerbrechen = to shatter. verbrechen = to commit (a crime), erbrechen = to vomit/break open."
+    },
+    {
+      "id": "wfa-04",
+      "type": "choice",
+      "prompt": "Die Gewerkschaft hat sich die Lohnerhöhung in zähen, wochenlangen Verhandlungen hart ___.",
+      "options": [
+        "erkämpft",
+        "bekämpft",
+        "umkämpft"
+      ],
+      "answer": "erkämpft",
+      "explanation": "er- marks achieving something through the action: sich etwas erkämpfen = to win by fighting. bekämpfen = to fight against, umkämpft = contested."
+    },
+    {
+      "id": "wfa-05",
+      "type": "choice",
+      "prompt": "In der Hektik hatte sich der Sachbearbeiter bei der Berechnung der Fördersumme um mehrere tausend Euro ___.",
+      "options": [
+        "verrechnet",
+        "errechnet",
+        "berechnet"
+      ],
+      "answer": "verrechnet",
+      "explanation": "Reflexive ver- often means doing something wrongly: sich verrechnen = to miscalculate. errechnen/berechnen = to calculate."
+    },
+    {
+      "id": "wfa-06",
+      "type": "choice",
+      "prompt": "Nach der Aufdeckung der Unregelmäßigkeiten wurde der Vorstandsvorsitzende mit sofortiger Wirkung seines Amtes ___.",
+      "options": [
+        "enthoben",
+        "erhoben",
+        "verhoben",
+        "behoben"
+      ],
+      "answer": "enthoben",
+      "explanation": "ent- expresses removal: jemanden seines Amtes entheben = to remove someone from office (with genitive)."
+    },
+    {
+      "id": "wfa-07",
+      "type": "choice",
+      "prompt": "Zwei der Bergsteiger sind in jener Nacht in fast 7000 Metern Höhe ___; ihre Leichname konnten erst Wochen später geborgen werden.",
+      "options": [
+        "erfroren",
+        "verfroren",
+        "eingefroren",
+        "gefroren"
+      ],
+      "answer": "erfroren",
+      "explanation": "er- can mean the action ends in death: erfrieren = to freeze to death. verfroren is an adjective meaning 'sensitive to cold'."
+    },
+    {
+      "id": "wfa-08",
+      "type": "choice",
+      "prompt": "Angesichts der rapide steigenden Infektionszahlen sah sich die Landesregierung gezwungen, die geltenden Schutzmaßnahmen erneut zu ___.",
+      "options": [
+        "verschärfen",
+        "entschärfen"
+      ],
+      "answer": "verschärfen",
+      "explanation": "ver- + adjective means 'make more X': verschärfen = to tighten. ent- reverses it: entschärfen = to defuse, relax."
+    },
+    {
+      "id": "wfa-09",
+      "type": "choice",
+      "prompt": "Erst nach monatelanger Analyse gelang es dem Labor, den Code zu ___ und damit die Herkunft der Schadsoftware zweifelsfrei zu klären.",
+      "options": [
+        "entschlüsseln",
+        "verschlüsseln"
+      ],
+      "answer": "entschlüsseln",
+      "explanation": "ent- reverses a process: entschlüsseln = to decode, the opposite of verschlüsseln = to encrypt."
+    },
+    {
+      "id": "wfa-10",
+      "type": "choice",
+      "prompt": "Nach dem Tod des Herrschers ist das einst mächtige Reich binnen weniger Jahrzehnte in zahlreiche rivalisierende Teilfürstentümer ___.",
+      "options": [
+        "zerfallen",
+        "verfallen",
+        "entfallen"
+      ],
+      "answer": "zerfallen",
+      "explanation": "zerfallen in = to break up into parts. verfallen = to decay or expire, entfallen = to be dropped or slip one's mind."
+    },
+    {
+      "id": "wfa-11",
+      "type": "choice",
+      "prompt": "Mit seinen unbedachten Äußerungen im Untersuchungsausschuss hat der Minister das Vertrauen der Wähler endgültig ___.",
+      "options": [
+        "verspielt",
+        "erspielt",
+        "bespielt"
+      ],
+      "answer": "verspielt",
+      "explanation": "ver- can mean losing or wasting through the action: verspielen = to squander. erspielen = to win by playing."
+    },
+    {
+      "id": "wfa-12",
+      "type": "choice",
+      "prompt": "Der Gutachter bemühte sich, seine Ausführungen auch für die Laienrichter ___ zu formulieren.",
+      "options": [
+        "verständlich",
+        "verständig"
+      ],
+      "answer": "verständlich",
+      "explanation": "-lich here means 'able to be understood': verständlich = comprehensible. verständig describes a sensible, reasonable person."
+    },
+    {
+      "id": "wfa-13",
+      "type": "choice",
+      "prompt": "In den Wochen vor der Buchmesse herrschte in den Fluren des Verlagshauses ein ___ Treiben, das selbst erfahrene Mitarbeiter an ihre Belastungsgrenze brachte.",
+      "options": [
+        "geschäftiges",
+        "geschäftliches"
+      ],
+      "answer": "geschäftiges",
+      "explanation": "-ig often describes a quality: geschäftig = bustling. -lich relates to the noun: geschäftlich = business-related."
+    },
+    {
+      "id": "wfa-14",
+      "type": "choice",
+      "prompt": "Das hochgradig ___ Messgerät reagiert bereits auf geringste Temperaturschwankungen und darf daher nur in klimatisierten Räumen betrieben werden.",
+      "options": [
+        "empfindliche",
+        "empfindsame",
+        "empfundene"
+      ],
+      "answer": "empfindliche",
+      "explanation": "empfindlich = sensitive (also of instruments, easily affected); empfindsam = emotionally sensitive, used for people."
+    },
+    {
+      "id": "wfa-15",
+      "type": "choice",
+      "prompt": "Der Eingriff dauert zwar nur wenige Minuten, ist aber so ___, dass er grundsätzlich unter örtlicher Betäubung durchgeführt wird.",
+      "options": [
+        "schmerzhaft",
+        "schmerzlich"
+      ],
+      "answer": "schmerzhaft",
+      "explanation": "schmerzhaft = physically painful; schmerzlich = emotionally painful (ein schmerzlicher Verlust)."
+    },
+    {
+      "id": "wfa-16",
+      "type": "choice",
+      "prompt": "Der Datensatz enthielt zahlreiche ___ Einträge, die vor der statistischen Auswertung aufwendig bereinigt werden mussten.",
+      "options": [
+        "fehlerhafte",
+        "fehlbare",
+        "fehlerlose"
+      ],
+      "answer": "fehlerhafte",
+      "explanation": "-haft means 'having X': fehlerhaft = containing errors. fehlbar = fallible (of people), fehlerlos = flawless."
+    },
+    {
+      "id": "wfa-17",
+      "type": "choice",
+      "prompt": "Die Forderungen der Gewerkschaft seien in dieser Höhe schlicht nicht ___, ließ der Arbeitgeberverband in einer Stellungnahme verlauten.",
+      "options": [
+        "finanzierbar",
+        "finanziell",
+        "finanzierend"
+      ],
+      "answer": "finanzierbar",
+      "explanation": "-bar on a verb stem gives a passive possibility: finanzierbar = able to be financed."
+    },
+    {
+      "id": "wfa-18",
+      "type": "choice",
+      "prompt": "Nach einem ___ Aufenthalt in der Rehabilitationsklinik kehrte die Abteilungsleiterin schrittweise an ihren Arbeitsplatz zurück.",
+      "options": [
+        "zweiwöchigen",
+        "zweiwöchentlichen"
+      ],
+      "answer": "zweiwöchigen",
+      "explanation": "-ig with time words gives duration: zweiwöchig = lasting two weeks. -lich gives repetition: zweiwöchentlich = every two weeks."
+    },
+    {
+      "id": "wfa-19",
+      "type": "choice",
+      "prompt": "Die Studie untersucht, wie sich anhaltender Schlafmangel auf die ___ Leistungsfähigkeit älterer Arbeitnehmer auswirkt.",
+      "options": [
+        "geistige",
+        "geistliche",
+        "geisterhafte"
+      ],
+      "answer": "geistige",
+      "explanation": "geistig = mental, intellectual; geistlich = religious, clerical; geisterhaft = ghostly."
+    },
+    {
+      "id": "wfa-20",
+      "type": "choice",
+      "prompt": "Die feinen Haarrisse im Tragwerk der Brücke sind mit bloßem Auge kaum ___, weshalb die Prüfer auf Ultraschallverfahren zurückgreifen.",
+      "options": [
+        "sichtbar",
+        "sichtlich",
+        "sichtig"
+      ],
+      "answer": "sichtbar",
+      "explanation": "-bar: sichtbar = able to be seen. sichtlich = evidently, used as an adverb (sichtlich erleichtert), not for physical visibility."
+    },
+    {
+      "id": "wfa-21",
+      "type": "choice",
+      "prompt": "Die trotzige Reaktion des Abgeordneten auf die durchaus berechtigte Kritik wirkte geradezu ___ und trug kaum zur Versachlichung der Debatte bei.",
+      "options": [
+        "kindisch",
+        "kindlich"
+      ],
+      "answer": "kindisch",
+      "explanation": "-isch is often pejorative: kindisch = childish (immature behaviour). kindlich = childlike, neutral or positive."
+    },
+    {
+      "id": "wfa-22",
+      "type": "type",
+      "prompt": "Die Handschrift im Testament war stellenweise kaum ___, sodass das Nachlassgericht einen Schriftsachverständigen hinzuzog.",
+      "hint": "(from lesen: 'legible')",
+      "answers": [
+        "leserlich",
+        "lesbar"
+      ],
+      "explanation": "Both mean legible: leserlich is the usual word for handwriting, lesbar (lesen + -bar, can be read) is also correct."
+    },
+    {
+      "id": "wfa-23",
+      "type": "type",
+      "prompt": "Der Entwurf ist zwar ambitioniert, unter den gegenwärtigen haushaltsrechtlichen Rahmenbedingungen jedoch kaum ___.",
+      "hint": "(durchführen + -bar)",
+      "answers": [
+        "durchführbar"
+      ],
+      "explanation": "-bar on the verb stem: durchführen → durchführbar = feasible, able to be carried out."
+    },
+    {
+      "id": "wfa-24",
+      "type": "type",
+      "prompt": "Der Untersuchungshäftling war während eines Klinikaufenthalts ___ und konnte erst nach einer mehrtägigen Fahndung gefasst werden.",
+      "hint": "(fliehen with ent-, Partizip II)",
+      "answers": [
+        "entflohen"
+      ],
+      "explanation": "ent- + fliehen = to escape from custody; Partizip II entflohen, with sein (war entflohen)."
+    },
+    {
+      "id": "wfa-25",
+      "type": "type",
+      "prompt": "Die Fertigstellung des Klinikneubaus hat sich infolge anhaltender Lieferengpässe um mehrere Monate ___.",
+      "hint": "(zögern with ver-, Partizip II)",
+      "answers": [
+        "verzögert"
+      ],
+      "explanation": "ver- + zögern: sich verzögern = to be delayed. Inseparable prefix, so no ge-: verzögert."
+    },
+    {
+      "id": "wfa-26",
+      "type": "type",
+      "prompt": "Durch beharrliche Lobbyarbeit hat der Verband die umstrittene Ausnahmeregelung letztlich ___, obwohl das Ministerium sie zunächst abgelehnt hatte.",
+      "hint": "(zwingen with er-, Partizip II)",
+      "answers": [
+        "erzwungen"
+      ],
+      "explanation": "er- marks achieving a result: erzwingen = to force through. Inseparable prefix, so no ge-: erzwungen."
+    },
+    {
+      "id": "wfa-27",
+      "type": "type",
+      "prompt": "Die Druckwelle der Explosion hatte die Fensterscheiben im Umkreis von mehreren hundert Metern ___.",
+      "hint": "(Trümmer → verb with zer-, Partizip II)",
+      "answers": [
+        "zertrümmert"
+      ],
+      "explanation": "zer- + Trümmer gives zertrümmern = to smash to pieces; Partizip II without ge-: zertrümmert."
+    },
+    {
+      "id": "wfa-28",
+      "type": "type",
+      "prompt": "Die Zeugin machte bei ihrer Vernehmung derart ___ Angaben, dass die Staatsanwaltschaft weitere Ermittlungen in Betracht zog.",
+      "hint": "(Lücke + -haft)",
+      "answers": [
+        "lückenhafte"
+      ],
+      "explanation": "-haft on a noun means 'having X': Lücke → lückenhaft = incomplete. Plural without article: lückenhafte Angaben."
+    },
+    {
+      "id": "wfa-29",
+      "type": "type",
+      "prompt": "Die Aufarbeitung des Skandals gestaltete sich äußerst ___, da zahlreiche Unterlagen vorsätzlich vernichtet worden waren.",
+      "hint": "(Mühe + -sam)",
+      "answers": [
+        "mühsam"
+      ],
+      "explanation": "-sam forms adjectives describing a tendency or quality: Mühe → mühsam = laborious."
+    },
+    {
+      "id": "wfa-30",
+      "type": "type",
+      "prompt": "Das Gutachten wurde der Öffentlichkeit erst nach ___ Prüfung durch die Aufsichtsbehörde zugänglich gemacht.",
+      "hint": "(Grund + -lich)",
+      "answers": [
+        "gründlicher"
+      ],
+      "explanation": "-lich often adds an umlaut: Grund → gründlich = thorough. nach + dative, no article: nach gründlicher Prüfung."
+    }
+  ]
+}

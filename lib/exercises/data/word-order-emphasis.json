@@ -1,0 +1,414 @@
+{
+  "slug": "word-order-emphasis",
+  "instructions": "Choose the word order that gives the emphasis described, or put the words in the order shown by the tiles.",
+  "items": [
+    {
+      "id": "woe-01",
+      "type": "choice",
+      "prompt": "___, die Haushaltsvorlage hingegen wies er zurück. (contrast: the bill, not the budget proposal)",
+      "options": [
+        "Den Gesetzentwurf billigte der Minister",
+        "Den Gesetzentwurf der Minister billigte",
+        "Billigte der Minister den Gesetzentwurf"
+      ],
+      "answer": "Den Gesetzentwurf billigte der Minister",
+      "explanation": "Fronting the object Den Gesetzentwurf sets up the contrast; the finite verb still comes second and the subject follows it."
+    },
+    {
+      "id": "woe-02",
+      "type": "order",
+      "words": [
+        "Den",
+        "Vertrag",
+        "hat",
+        "sie",
+        "unterzeichnet,",
+        "die",
+        "Zusatzvereinbarung",
+        "nicht."
+      ],
+      "answers": [
+        "Den Vertrag hat sie unterzeichnet, die Zusatzvereinbarung nicht."
+      ],
+      "translation": "She signed the contract, but not the supplementary agreement.",
+      "explanation": "The contrasted object Den Vertrag is fronted, the verb stays second, and the contrasting object is added after the comma with nicht."
+    },
+    {
+      "id": "woe-03",
+      "type": "choice",
+      "prompt": "In der Begründung ___ jedoch mit keinem Wort erwähnt.",
+      "options": [
+        "wird dieser Aspekt",
+        "dieser Aspekt wird"
+      ],
+      "answer": "wird dieser Aspekt",
+      "explanation": "A fronted prepositional phrase fills position 1, so the finite verb wird comes second and the subject dieser Aspekt follows it."
+    },
+    {
+      "id": "woe-04",
+      "type": "choice",
+      "prompt": "Gelesen ___, überzeugt hat es mich allerdings nicht.",
+      "options": [
+        "habe ich das Gutachten durchaus",
+        "ich habe das Gutachten durchaus",
+        "das Gutachten habe ich durchaus"
+      ],
+      "answer": "habe ich das Gutachten durchaus",
+      "explanation": "A fronted participle (Gelesen) fills position 1 on its own, so the auxiliary habe comes straight after it, then the subject."
+    },
+    {
+      "id": "woe-05",
+      "type": "order",
+      "words": [
+        "Unterschätzen",
+        "sollte",
+        "man",
+        "diese",
+        "Entwicklung",
+        "keinesfalls."
+      ],
+      "answers": [
+        "Unterschätzen sollte man diese Entwicklung keinesfalls."
+      ],
+      "translation": "This development should by no means be underestimated.",
+      "explanation": "The infinitive Unterschätzen is fronted for emphasis; the modal sollte stays in second position and the rest follows in the middle field."
+    },
+    {
+      "id": "woe-06",
+      "type": "choice",
+      "prompt": "Erfahrung in der Krisenkommunikation ___. (emphasis on 'experience': he has none)",
+      "options": [
+        "hat er keine",
+        "er hat keine",
+        "keine hat er"
+      ],
+      "answer": "hat er keine",
+      "explanation": "In split fronting the noun goes to position 1 and its determiner keine stays at the end of the middle field; the verb hat is second."
+    },
+    {
+      "id": "woe-07",
+      "type": "order",
+      "words": [
+        "Rücklagen",
+        "hatte",
+        "die",
+        "Gemeinde",
+        "keine",
+        "mehr."
+      ],
+      "answers": [
+        "Rücklagen hatte die Gemeinde keine mehr."
+      ],
+      "translation": "The municipality had no reserves left.",
+      "explanation": "Split fronting: the noun Rücklagen moves to the front for emphasis while keine stays behind; the verb hatte remains second."
+    },
+    {
+      "id": "woe-08",
+      "type": "choice",
+      "prompt": "___, heute sieht man das anders. (contrast: back then vs. today)",
+      "options": [
+        "Damals galt diese Praxis als unbedenklich",
+        "Damals diese Praxis galt als unbedenklich",
+        "Galt damals diese Praxis als unbedenklich"
+      ],
+      "answer": "Damals galt diese Praxis als unbedenklich",
+      "explanation": "Fronting Damals contrasts it with heute in the next clause; after a fronted adverb the verb galt must come second, before the subject."
+    },
+    {
+      "id": "woe-09",
+      "type": "choice",
+      "prompt": "Nicht der Inhalt ___, sondern der Ton.",
+      "options": [
+        "hat die Leser empört",
+        "die Leser hat empört",
+        "empört hat die Leser"
+      ],
+      "answer": "hat die Leser empört",
+      "explanation": "A negated subject (Nicht der Inhalt) can be fronted to contrast it with sondern ...; the finite verb hat follows directly, the participle goes to the end."
+    },
+    {
+      "id": "woe-10",
+      "type": "choice",
+      "prompt": "Dass die Maßnahme wirkt, ___.",
+      "options": [
+        "bezweifeln inzwischen selbst ihre Befürworter",
+        "selbst ihre Befürworter bezweifeln inzwischen",
+        "inzwischen bezweifeln selbst ihre Befürworter"
+      ],
+      "answer": "bezweifeln inzwischen selbst ihre Befürworter",
+      "explanation": "A fronted dass-clause counts as position 1, so the finite verb bezweifeln must come immediately after the comma."
+    },
+    {
+      "id": "woe-11",
+      "type": "order",
+      "words": [
+        "Ob",
+        "die",
+        "Reform",
+        "greift,",
+        "bleibt",
+        "abzuwarten."
+      ],
+      "answers": [
+        "Ob die Reform greift, bleibt abzuwarten."
+      ],
+      "translation": "Whether the reform will take effect remains to be seen.",
+      "explanation": "The ob-clause is fronted as the topic and occupies position 1; the finite verb bleibt follows it directly."
+    },
+    {
+      "id": "woe-12",
+      "type": "choice",
+      "prompt": "Unkonventionell ___, doch die Ergebnisse sprechen für sich.",
+      "options": [
+        "mögen seine Methoden sein",
+        "seine Methoden mögen sein",
+        "mögen sein seine Methoden"
+      ],
+      "answer": "mögen seine Methoden sein",
+      "explanation": "The predicative adjective is fronted to concede a point; the modal mögen is second, the subject follows, and the infinitive sein goes to the end."
+    },
+    {
+      "id": "woe-13",
+      "type": "choice",
+      "prompt": "Theoretisch ___, empirisch jedoch ist sie kaum belegt.",
+      "options": [
+        "mag die These überzeugen",
+        "die These mag überzeugen",
+        "mag überzeugen die These"
+      ],
+      "answer": "mag die These überzeugen",
+      "explanation": "Contrasting adverbs (theoretisch / empirisch) are fronted in both clauses; the modal mag is second and the infinitive überzeugen goes to the end."
+    },
+    {
+      "id": "woe-14",
+      "type": "choice",
+      "prompt": "Festlegen ___ zu diesem Zeitpunkt niemand.",
+      "options": [
+        "wollte sich",
+        "sich wollte"
+      ],
+      "answer": "wollte sich",
+      "explanation": "The fronted infinitive Festlegen fills position 1, so the modal wollte comes second; the reflexive sich stays behind in the middle field."
+    },
+    {
+      "id": "woe-15",
+      "type": "order",
+      "words": [
+        "Zugestimmt",
+        "hat",
+        "dem",
+        "Antrag",
+        "nur",
+        "eine",
+        "Fraktion."
+      ],
+      "answers": [
+        "Zugestimmt hat dem Antrag nur eine Fraktion."
+      ],
+      "translation": "Only one parliamentary group agreed to the motion.",
+      "explanation": "Fronting the participle Zugestimmt puts the new information, the subject nur eine Fraktion, at the end of the sentence where it gets the stress."
+    },
+    {
+      "id": "woe-16",
+      "type": "choice",
+      "prompt": "Den entscheidenden Hinweis ___. (emphasis on the source of the tip)",
+      "options": [
+        "lieferte schließlich eine anonyme Quelle",
+        "schließlich lieferte eine anonyme Quelle",
+        "eine anonyme Quelle lieferte schließlich"
+      ],
+      "answer": "lieferte schließlich eine anonyme Quelle",
+      "explanation": "The known object is fronted so that the new subject eine anonyme Quelle lands at the end, in focus; the verb must still be second."
+    },
+    {
+      "id": "woe-17",
+      "type": "choice",
+      "prompt": "Dieser Befund wurde lange nicht hinterfragt. ___ erst mehrere neuere Studien.",
+      "options": [
+        "Widerlegt haben ihn",
+        "Ihn widerlegt haben",
+        "Widerlegt ihn haben"
+      ],
+      "answer": "Widerlegt haben ihn",
+      "explanation": "The participle Widerlegt is fronted for emphasis, haben stays second, and the unstressed pronoun ihn (= der Befund) comes before the new subject mehrere neuere Studien."
+    },
+    {
+      "id": "woe-18",
+      "type": "choice",
+      "prompt": "Erst nach zähen Verhandlungen ___ auf einen Kompromiss.",
+      "options": [
+        "einigte man sich",
+        "man einigte sich",
+        "einigte sich man"
+      ],
+      "answer": "einigte man sich",
+      "explanation": "After the fronted phrase the verb comes second; in the middle field the subject pronoun man precedes the reflexive sich."
+    },
+    {
+      "id": "woe-19",
+      "type": "choice",
+      "prompt": "Die Stiftung hat ___ verliehen. (answering: Wem hat die Stiftung das Stipendium verliehen?)",
+      "options": [
+        "es einer Doktorandin aus Leipzig",
+        "einer Doktorandin aus Leipzig es"
+      ],
+      "answer": "es einer Doktorandin aus Leipzig",
+      "explanation": "Known information comes before new: the unstressed pronoun es (the scholarship) goes first, the new recipient last, right before the verb."
+    },
+    {
+      "id": "woe-20",
+      "type": "choice",
+      "prompt": "Selbst dem Ministerium ___ die Zahlen zu hoch gegriffen.",
+      "options": [
+        "erschienen die Zahlen",
+        "die Zahlen erschienen",
+        "die Zahlen sind erschienen"
+      ],
+      "answer": "erschienen die Zahlen",
+      "explanation": "The dative object Selbst dem Ministerium is fronted for emphasis and fills position 1, so the verb erschienen comes second and the subject die Zahlen follows it."
+    },
+    {
+      "id": "woe-21",
+      "type": "choice",
+      "prompt": "___ mehrere Bürgerinitiativen gegen das Vorhaben.",
+      "options": [
+        "Es protestierten",
+        "Es protestierte",
+        "Protestierten es"
+      ],
+      "answer": "Es protestierten",
+      "explanation": "Placeholder es fills position 1 so the new subject can come later; the verb agrees with the real subject mehrere Bürgerinitiativen (plural)."
+    },
+    {
+      "id": "woe-22",
+      "type": "order",
+      "words": [
+        "Es",
+        "meldeten",
+        "sich",
+        "zahlreiche",
+        "Zeugen",
+        "bei",
+        "der",
+        "Polizei."
+      ],
+      "answers": [
+        "Es meldeten sich zahlreiche Zeugen bei der Polizei."
+      ],
+      "translation": "Numerous witnesses came forward to the police.",
+      "explanation": "The placeholder es fills position 1 so that the new subject zahlreiche Zeugen is moved into the middle field, after the verb and sich."
+    },
+    {
+      "id": "woe-23",
+      "type": "choice",
+      "prompt": "Der Vorstand hat ___ abgelehnt, sondern nur dessen Zeitplan.",
+      "options": [
+        "nicht den Vorschlag selbst",
+        "den Vorschlag selbst nicht",
+        "den Vorschlag nicht selbst"
+      ],
+      "answer": "nicht den Vorschlag selbst",
+      "explanation": "For a contrast with sondern, nicht stands directly before the element it negates: nicht den Vorschlag selbst, sondern ..."
+    },
+    {
+      "id": "woe-24",
+      "type": "choice",
+      "prompt": "Den Bericht des Rechnungshofs, ___ hat bis heute niemand ernst genommen.",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "In left dislocation (spoken or informal style) a resuming pronoun takes the same case as the fronted phrase: Den Bericht ..., den hat ..."
+    },
+    {
+      "id": "woe-25",
+      "type": "choice",
+      "prompt": "Die war von Anfang an eine Fehlinvestition, ___. (chatting with a colleague)",
+      "options": [
+        "die neue Lagerhalle",
+        "der neuen Lagerhalle",
+        "von der neuen Lagerhalle"
+      ],
+      "answer": "die neue Lagerhalle",
+      "explanation": "In speech, a phrase can be added after the clause to clarify a pronoun; it repeats the pronoun's case, here nominative like Die."
+    },
+    {
+      "id": "woe-26",
+      "type": "order",
+      "words": [
+        "Die",
+        "Verhandlungen",
+        "sind",
+        "gescheitert",
+        "an",
+        "der",
+        "Frage",
+        "der",
+        "Finanzierung."
+      ],
+      "answers": [
+        "Die Verhandlungen sind gescheitert an der Frage der Finanzierung."
+      ],
+      "translation": "The negotiations failed over the question of funding.",
+      "explanation": "In journalism a prepositional phrase can be moved after the participle (Ausklammerung) so that it stands at the end and gets the emphasis."
+    },
+    {
+      "id": "woe-27",
+      "type": "order",
+      "words": [
+        "Die",
+        "Arbeitslosenquote",
+        "ist",
+        "erneut",
+        "gesunken",
+        "im",
+        "Vergleich",
+        "zum",
+        "Vorjahresmonat."
+      ],
+      "answers": [
+        "Die Arbeitslosenquote ist erneut gesunken im Vergleich zum Vorjahresmonat."
+      ],
+      "translation": "The unemployment rate has fallen again compared with the same month last year.",
+      "explanation": "News style often places the comparison im Vergleich zu ... after the participle, relieving the middle field and stressing the reference point."
+    },
+    {
+      "id": "woe-28",
+      "type": "choice",
+      "prompt": "Der Rechnungshof stellte fest, dass die Kosten ___.",
+      "options": [
+        "deutlich höher ausgefallen sind als veranschlagt",
+        "deutlich höher ausgefallen als veranschlagt sind",
+        "sind deutlich höher ausgefallen als veranschlagt"
+      ],
+      "answer": "deutlich höher ausgefallen sind als veranschlagt",
+      "explanation": "An als-comparison is often placed after the whole verb cluster; the finite verb sind still closes the dass-clause before it."
+    },
+    {
+      "id": "woe-29",
+      "type": "choice",
+      "prompt": "Bekannt wurde, dass der Konzern ___.",
+      "options": [
+        "Stellen abbauen will in erheblichem Umfang",
+        "Stellen abbauen in erheblichem Umfang will",
+        "will Stellen abbauen in erheblichem Umfang"
+      ],
+      "answer": "Stellen abbauen will in erheblichem Umfang",
+      "explanation": "A phrase moved after the verb in a dass-clause must follow the complete verb cluster abbauen will; nothing may come between the verbs."
+    },
+    {
+      "id": "woe-30",
+      "type": "choice",
+      "prompt": "Es ist fraglich, ob sich die Lage so rasch ___.",
+      "options": [
+        "stabilisieren wird wie erhofft",
+        "stabilisieren wie erhofft wird",
+        "wird stabilisieren wie erhofft"
+      ],
+      "answer": "stabilisieren wird wie erhofft",
+      "explanation": "The wie-comparison is moved after the complete verb cluster stabilisieren wird, which keeps the finite verb last within the ob-clause."
+    }
+  ]
+}

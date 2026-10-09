@@ -1,0 +1,422 @@
+{
+  "slug": "modal-particle-combinations",
+  "instructions": "Choose or type the particle combination, in the right order, that matches the tone in brackets, or put the words in order.",
+  "items": [
+    {
+      "id": "mpc-01",
+      "type": "choice",
+      "prompt": "Das ist ___ nicht dein Ernst, dass du den Vertrag ungelesen unterschrieben hast! (indignant: surely you can't be serious)",
+      "options": [
+        "ja wohl",
+        "wohl ja",
+        "doch mal",
+        "denn eigentlich"
+      ],
+      "answer": "ja wohl",
+      "explanation": "ja wohl expresses indignation and expects agreement; ja always comes before wohl in the middle field."
+    },
+    {
+      "id": "mpc-02",
+      "type": "order",
+      "words": [
+        "Das",
+        "können",
+        "Sie",
+        "ja",
+        "wohl",
+        "kaum",
+        "ernst",
+        "meinen!"
+      ],
+      "answers": [
+        "Das können Sie ja wohl kaum ernst meinen!"
+      ],
+      "translation": "Surely you can't seriously mean that!",
+      "explanation": "ja wohl adds indignation; the cluster follows the pronoun subject Sie and precedes kaum, with the infinitive meinen at the end."
+    },
+    {
+      "id": "mpc-03",
+      "type": "choice",
+      "prompt": "Wenn du mit der Gliederung nicht weiterkommst, schau dir ___ die Beispielarbeiten vom letzten Semester an. (friendly, low-pressure suggestion)",
+      "options": [
+        "doch mal",
+        "mal doch",
+        "ja wohl",
+        "denn eigentlich"
+      ],
+      "answer": "doch mal",
+      "explanation": "doch mal softens an imperative into a friendly suggestion; mal always comes last in a particle cluster."
+    },
+    {
+      "id": "mpc-04",
+      "type": "order",
+      "words": [
+        "Schauen",
+        "Sie",
+        "sich",
+        "die",
+        "Unterlagen",
+        "doch",
+        "mal",
+        "in",
+        "Ruhe",
+        "an."
+      ],
+      "answers": [
+        "Schauen Sie sich die Unterlagen doch mal in Ruhe an.",
+        "Schauen Sie sich doch mal die Unterlagen in Ruhe an."
+      ],
+      "translation": "Why not take a look at the documents at your leisure?",
+      "explanation": "doch mal turns the formal imperative into a friendly suggestion; doch precedes mal, and the cluster can stand before or after the object die Unterlagen."
+    },
+    {
+      "id": "mpc-05",
+      "type": "choice",
+      "prompt": "Die Fristen sind gesetzlich festgelegt, da kann man ___ nichts machen. (resigned: that's just the way it is)",
+      "options": [
+        "eben halt",
+        "doch mal",
+        "denn eigentlich",
+        "ruhig mal"
+      ],
+      "answer": "eben halt",
+      "explanation": "eben halt (or halt eben) doubles the resigned 'that's just how it is' meaning; both particles mark something as unchangeable."
+    },
+    {
+      "id": "mpc-06",
+      "type": "order",
+      "words": [
+        "Da",
+        "muss",
+        "man",
+        "sich",
+        "halt",
+        "eben",
+        "nach",
+        "der",
+        "Decke",
+        "strecken."
+      ],
+      "answers": [
+        "Da muss man sich halt eben nach der Decke strecken.",
+        "Da muss man sich eben halt nach der Decke strecken."
+      ],
+      "translation": "You just have to make do with what you have.",
+      "explanation": "halt and eben share the resigned meaning and can be stacked in either order; they follow the reflexive sich and precede the idiom nach der Decke strecken."
+    },
+    {
+      "id": "mpc-07",
+      "type": "type",
+      "prompt": "Ruf ___ bei der Behörde an und frag nach, ob dein Antrag inzwischen bearbeitet worden ist. (friendly, encouraging suggestion)",
+      "hint": "(mal / doch)",
+      "answers": [
+        "doch mal"
+      ],
+      "explanation": "In a softened imperative doch comes first and mal last: Ruf doch mal an."
+    },
+    {
+      "id": "mpc-08",
+      "type": "choice",
+      "prompt": "Wie bist du ___ auf die Idee gekommen, dich ausgerechnet bei dieser Behörde zu bewerben? (genuinely curious about the background)",
+      "options": [
+        "denn eigentlich",
+        "eigentlich denn",
+        "ja wohl",
+        "doch mal"
+      ],
+      "answer": "denn eigentlich",
+      "explanation": "In questions denn signals interest and eigentlich asks about the real background; denn precedes eigentlich."
+    },
+    {
+      "id": "mpc-09",
+      "type": "order",
+      "words": [
+        "Was",
+        "haben",
+        "Sie",
+        "denn",
+        "eigentlich",
+        "gegen",
+        "den",
+        "Vorschlag",
+        "einzuwenden?"
+      ],
+      "answers": [
+        "Was haben Sie denn eigentlich gegen den Vorschlag einzuwenden?",
+        "Was haben Sie gegen den Vorschlag denn eigentlich einzuwenden?"
+      ],
+      "translation": "What exactly do you have against the proposal?",
+      "explanation": "denn eigentlich makes the question curious or slightly challenging; denn precedes eigentlich, and the cluster may stand before or after gegen den Vorschlag."
+    },
+    {
+      "id": "mpc-10",
+      "type": "type",
+      "prompt": "Was machst du ___ beruflich, wenn ich fragen darf? (casual, curious question: by the way)",
+      "hint": "(eigentlich / denn)",
+      "answers": [
+        "denn eigentlich"
+      ],
+      "explanation": "In a curious question the order is denn + eigentlich: Was machst du denn eigentlich beruflich?"
+    },
+    {
+      "id": "mpc-11",
+      "type": "choice",
+      "prompt": "Fang ___ mit der Einleitung an, ich komme nach, sobald das Telefonat beendet ist. (go ahead and start in the meantime)",
+      "options": [
+        "schon mal",
+        "mal schon",
+        "ja wohl",
+        "denn eigentlich"
+      ],
+      "answer": "schon mal",
+      "explanation": "schon mal means 'go ahead and do it in the meantime'; mal comes last in the cluster."
+    },
+    {
+      "id": "mpc-12",
+      "type": "choice",
+      "prompt": "Wenn die Methode nicht funktioniert, probier ___ einen anderen Ansatz – was bleibt dir sonst übrig? (shrugging, matter-of-fact advice)",
+      "options": [
+        "halt mal",
+        "mal halt",
+        "denn eigentlich",
+        "ja wohl"
+      ],
+      "answer": "halt mal",
+      "explanation": "halt adds a shrugging 'well then' and mal softens the imperative; halt comes before mal."
+    },
+    {
+      "id": "mpc-13",
+      "type": "choice",
+      "prompt": "Nimm dir ___ ein paar Tage frei, bevor das neue Projekt anläuft – das hast du dir redlich verdient. (reassuring: go ahead, feel free)",
+      "options": [
+        "ruhig mal",
+        "ja wohl",
+        "denn eigentlich",
+        "eben halt"
+      ],
+      "answer": "ruhig mal",
+      "explanation": "ruhig mal gives reassuring permission ('feel free'); ruhig comes before mal."
+    },
+    {
+      "id": "mpc-14",
+      "type": "choice",
+      "prompt": "Du hast ___ immer Pech mit deinen Vermietern! (sympathetic exclamation: you really do always have such bad luck)",
+      "options": [
+        "aber auch",
+        "auch aber",
+        "denn eigentlich",
+        "ruhig mal"
+      ],
+      "answer": "aber auch",
+      "explanation": "aber auch intensifies an exclamation of sympathy or surprise; aber always precedes auch."
+    },
+    {
+      "id": "mpc-15",
+      "type": "choice",
+      "prompt": "Hätte ich ___ früher auf meinen Steuerberater gehört! (bitter regret)",
+      "options": [
+        "doch bloß",
+        "bloß doch",
+        "ja wohl",
+        "eben halt"
+      ],
+      "answer": "doch bloß",
+      "explanation": "Unreal wishes in Konjunktiv II use doch bloß or doch nur; doch comes first."
+    },
+    {
+      "id": "mpc-16",
+      "type": "order",
+      "words": [
+        "Hättest",
+        "du",
+        "doch",
+        "bloß",
+        "auf",
+        "mich",
+        "gehört!"
+      ],
+      "answers": [
+        "Hättest du doch bloß auf mich gehört!"
+      ],
+      "translation": "If only you had listened to me!",
+      "explanation": "In a verb-first wish the cluster doch bloß follows the subject du and precedes the prepositional object."
+    },
+    {
+      "id": "mpc-17",
+      "type": "type",
+      "prompt": "Wenn er ___ einmal pünktlich zu einer Besprechung erschienen wäre! (exasperated wish)",
+      "hint": "(nur / doch)",
+      "answers": [
+        "doch nur"
+      ],
+      "explanation": "In wenn-wishes doch nur expresses longing or exasperation; doch comes before nur."
+    },
+    {
+      "id": "mpc-18",
+      "type": "choice",
+      "prompt": "Wo bleibt sie ___? Die Verhandlung hat bereits vor zwanzig Minuten begonnen. (increasingly worried and puzzled)",
+      "options": [
+        "denn nur",
+        "nur denn",
+        "ja wohl",
+        "doch mal"
+      ],
+      "answer": "denn nur",
+      "explanation": "denn nur (or denn bloß) turns a question into an anxious, puzzled one; denn comes first."
+    },
+    {
+      "id": "mpc-19",
+      "type": "type",
+      "prompt": "Was hast du dir ___ dabei gedacht, die vertraulichen Unterlagen offen liegen zu lassen? (exasperated reproach)",
+      "hint": "(bloß / denn)",
+      "answers": [
+        "denn bloß"
+      ],
+      "explanation": "denn bloß makes a w-question a reproach ('what on earth were you thinking'); denn precedes bloß."
+    },
+    {
+      "id": "mpc-20",
+      "type": "choice",
+      "prompt": "Sie haben ___ nicht vergessen, dass die Sitzung heute schon um neun beginnt? (anxious, hoping to be reassured that they haven't)",
+      "options": [
+        "doch wohl",
+        "wohl doch",
+        "halt mal",
+        "denn eigentlich"
+      ],
+      "answer": "doch wohl",
+      "explanation": "doch wohl in a declarative question expresses worry while expecting a reassuring 'no'; doch precedes wohl."
+    },
+    {
+      "id": "mpc-21",
+      "type": "order",
+      "words": [
+        "Du",
+        "hast",
+        "doch",
+        "wohl",
+        "nicht",
+        "vergessen,",
+        "den",
+        "Antrag",
+        "einzureichen?"
+      ],
+      "answers": [
+        "Du hast doch wohl nicht vergessen, den Antrag einzureichen?"
+      ],
+      "translation": "Surely you haven't forgotten to submit the application?",
+      "explanation": "doch wohl stands before nicht in the middle field; the zu-infinitive clause follows after the comma."
+    },
+    {
+      "id": "mpc-22",
+      "type": "type",
+      "prompt": "Sie werden ___ verstehen, dass wir Ihre Bewerbung unter diesen Umständen nicht berücksichtigen können. (pointed: surely you will understand)",
+      "hint": "(wohl / ja)",
+      "answers": [
+        "ja wohl"
+      ],
+      "explanation": "ja wohl gives a statement a pointed, slightly sharp 'surely' tone; ja comes before wohl."
+    },
+    {
+      "id": "mpc-23",
+      "type": "choice",
+      "prompt": "Er hat ___ vergessen, die Bescheinigung beizulegen – obwohl ich ihn dreimal daran erinnert habe! (indignant astonishment: he actually went and did it)",
+      "options": [
+        "doch tatsächlich",
+        "denn eigentlich",
+        "ruhig mal",
+        "eben halt"
+      ],
+      "answer": "doch tatsächlich",
+      "explanation": "doch tatsächlich expresses indignant surprise that something really happened; doch comes before tatsächlich."
+    },
+    {
+      "id": "mpc-24",
+      "type": "choice",
+      "prompt": "Er kann sich den Umzug in die Innenstadt leisten, er verdient ___ seit seiner Beförderung deutlich mehr. (justifying: after all, as we know)",
+      "options": [
+        "ja auch",
+        "auch ja",
+        "denn mal",
+        "ruhig mal"
+      ],
+      "answer": "ja auch",
+      "explanation": "ja auch gives a known justification ('after all'); ja always precedes auch."
+    },
+    {
+      "id": "mpc-25",
+      "type": "choice",
+      "prompt": "Ich wollte mich ___ gar nicht zu dem Thema äußern, aber die Diskussion hat mich dann doch provoziert. (admitting: as you know, I hadn't really meant to)",
+      "options": [
+        "ja eigentlich",
+        "denn mal",
+        "doch wohl",
+        "ruhig mal"
+      ],
+      "answer": "ja eigentlich",
+      "explanation": "ja marks shared knowledge and eigentlich the original intention; together: ja eigentlich, in that order."
+    },
+    {
+      "id": "mpc-26",
+      "type": "choice",
+      "prompt": "Das stimmt ___, aber du darfst die langfristigen Folgen der Maßnahme nicht außer Acht lassen. (conceding a point before objecting)",
+      "options": [
+        "ja schon",
+        "schon ja",
+        "doch mal",
+        "denn eigentlich"
+      ],
+      "answer": "ja schon",
+      "explanation": "ja schon concedes a point before an aber-objection; ja comes before schon."
+    },
+    {
+      "id": "mpc-27",
+      "type": "choice",
+      "prompt": "Was willst du ___ mit drei Hochschulabschlüssen, wenn du ohnehin nie im Fach arbeiten willst? (sceptical: what's the point at all)",
+      "options": [
+        "denn überhaupt",
+        "überhaupt denn",
+        "doch mal",
+        "ruhig mal"
+      ],
+      "answer": "denn überhaupt",
+      "explanation": "denn überhaupt questions the whole premise ('what's the point at all'); denn comes before überhaupt."
+    },
+    {
+      "id": "mpc-28",
+      "type": "choice",
+      "prompt": "Wer mag das ___ gewesen sein, der um drei Uhr nachts noch Sturm geklingelt hat? (musing, speculative question to oneself)",
+      "options": [
+        "denn wohl",
+        "wohl denn",
+        "halt mal",
+        "ruhig mal"
+      ],
+      "answer": "denn wohl",
+      "explanation": "In speculative questions denn wohl expresses wondering; denn always precedes wohl."
+    },
+    {
+      "id": "mpc-29",
+      "type": "choice",
+      "prompt": "Nachdem sich die Fraktion im Vorfeld heillos zerstritten hatte, fiel das Ergebnis der Abstimmung ___ entsprechend knapp aus. (written register: as was to be expected)",
+      "options": [
+        "denn auch",
+        "auch denn",
+        "doch mal",
+        "ruhig mal"
+      ],
+      "answer": "denn auch",
+      "explanation": "In formal written German denn auch means 'accordingly, as expected' and confirms a consequence; denn precedes auch."
+    },
+    {
+      "id": "mpc-30",
+      "type": "type",
+      "prompt": "Die Regierung hatte die Reform ohne vorherige Anhörung durchgesetzt; es kam ___ prompt zu heftigen Protesten. (as was to be expected)",
+      "hint": "(auch / denn)",
+      "answers": [
+        "denn auch"
+      ],
+      "explanation": "denn auch marks a predictable consequence in formal texts; the order is always denn + auch."
+    }
+  ]
+}

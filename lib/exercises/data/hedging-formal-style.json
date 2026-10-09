@@ -1,0 +1,412 @@
+{
+  "slug": "hedging-formal-style",
+  "instructions": "Choose or type the form that softens the claim in formal German, or put the words in the correct order.",
+  "items": [
+    {
+      "id": "hfs-01",
+      "type": "choice",
+      "prompt": "Es wäre zu prüfen, ___ die vorgeschlagenen Maßnahmen tatsächlich zu einer nachhaltigen Senkung der Emissionen führen.",
+      "options": [
+        "ob",
+        "dass",
+        "wenn",
+        "falls"
+      ],
+      "answer": "ob",
+      "explanation": "Es wäre zu prüfen opens an open question, so it is followed by an indirect yes/no question with ob, not a dass-clause."
+    },
+    {
+      "id": "hfs-02",
+      "type": "choice",
+      "prompt": "Dies ___ darauf zurückzuführen sein, dass die Stichprobe vergleichsweise klein war.",
+      "options": [
+        "dürfte",
+        "dürften",
+        "durfte",
+        "darf"
+      ],
+      "answer": "dürfte",
+      "explanation": "Konjunktiv II dürfte + infinitive marks a cautious assumption ('this is probably due to'); the subject dies is singular."
+    },
+    {
+      "id": "hfs-03",
+      "type": "choice",
+      "prompt": "Der Rückgang der Antragszahlen dürfte vor allem ___ zurückzuführen sein, dass die Zugangsvoraussetzungen verschärft wurden.",
+      "options": [
+        "darauf",
+        "dafür",
+        "davon",
+        "daran"
+      ],
+      "answer": "darauf",
+      "explanation": "The phrase is zurückzuführen sein auf + accusative; before a dass-clause the preposition becomes the correlate darauf."
+    },
+    {
+      "id": "hfs-04",
+      "type": "choice",
+      "prompt": "Gegen diese Auslegung ___ man einwenden, dass sie den historischen Kontext der Vorschrift weitgehend außer Acht lässt.",
+      "options": [
+        "könnte",
+        "könnten",
+        "könntest"
+      ],
+      "answer": "könnte",
+      "explanation": "Man könnte einwenden, dass … introduces a possible objection politely; man takes the third person singular könnte."
+    },
+    {
+      "id": "hfs-05",
+      "type": "choice",
+      "prompt": "Die vorliegenden Befunde legen die Vermutung ___, dass der Effekt bislang deutlich überschätzt wurde.",
+      "options": [
+        "nahe",
+        "vor",
+        "dar",
+        "fest"
+      ],
+      "answer": "nahe",
+      "explanation": "etwas legt die Vermutung nahe ('suggests the assumption') is a fixed hedging phrase that avoids claiming proof."
+    },
+    {
+      "id": "hfs-06",
+      "type": "choice",
+      "prompt": "Es ist nicht ___, dass die Maßnahme unbeabsichtigte Nebenwirkungen nach sich zieht.",
+      "options": [
+        "auszuschließen",
+        "ausschließen",
+        "ausschließlich"
+      ],
+      "answer": "auszuschließen",
+      "explanation": "sein + zu-infinitive expresses (im)possibility; with a separable verb zu goes between prefix and stem: auszuschließen. ausschließlich means 'exclusively'."
+    },
+    {
+      "id": "hfs-07",
+      "type": "choice",
+      "prompt": "Gegen dieses Argument ___ sich jedoch einwenden, dass es die langfristigen Folgen der Reform ausblendet.",
+      "options": [
+        "ließe",
+        "ließen",
+        "lassen"
+      ],
+      "answer": "ließe",
+      "explanation": "es ließe sich + infinitive ('one could …') is an impersonal Konjunktiv II hedge; with es the verb is singular: ließe."
+    },
+    {
+      "id": "hfs-08",
+      "type": "choice",
+      "prompt": "Der Widerspruch zwischen beiden Studien ist nur ___: Bei genauerer Betrachtung lassen sich die Befunde durchaus miteinander vereinbaren.",
+      "options": [
+        "scheinbar",
+        "anscheinend",
+        "vermutlich"
+      ],
+      "answer": "scheinbar",
+      "explanation": "scheinbar means 'only seemingly, not in reality'; anscheinend means 'apparently, probably true'. Here the contradiction is not real."
+    },
+    {
+      "id": "hfs-09",
+      "type": "choice",
+      "prompt": "Die Einwände der Opposition ___ in der kommenden Ausschusssitzung erneut zur Sprache kommen.",
+      "options": [
+        "dürften",
+        "dürfte",
+        "durfte"
+      ],
+      "answer": "dürften",
+      "explanation": "dürften + infinitive expresses a likely future development; the plural subject die Einwände needs dürften."
+    },
+    {
+      "id": "hfs-10",
+      "type": "choice",
+      "prompt": "Die neuen Vorschriften scheinen ihr eigentliches Ziel bislang weitgehend ___.",
+      "options": [
+        "verfehlt zu haben",
+        "zu verfehlt haben",
+        "verfehlt haben",
+        "verfehlen zu haben"
+      ],
+      "answer": "verfehlt zu haben",
+      "explanation": "scheinen + zu-infinitive hedges a claim; for a past event use the perfect infinitive: Partizip II + zu haben."
+    },
+    {
+      "id": "hfs-11",
+      "type": "choice",
+      "prompt": "Inwieweit sich die Ergebnisse auf andere Altersgruppen übertragen lassen, ___ weiterer Untersuchungen.",
+      "options": [
+        "bedürfte",
+        "bräuchte",
+        "benötigte"
+      ],
+      "answer": "bedürfte",
+      "explanation": "Only bedürfen takes a genitive object (weiterer Untersuchungen); the Konjunktiv II bedürfte keeps the statement tentative."
+    },
+    {
+      "id": "hfs-12",
+      "type": "choice",
+      "prompt": "Es ___ jedoch verfehlt, die Verantwortung für die Verzögerungen allein den Behörden zuzuschreiben.",
+      "options": [
+        "wäre",
+        "würde",
+        "hätte"
+      ],
+      "answer": "wäre",
+      "explanation": "Es wäre verfehlt, … zu … ('it would be wrong to …') softens a criticism; verfehlt sein needs the Konjunktiv II of sein: wäre."
+    },
+    {
+      "id": "hfs-13",
+      "type": "choice",
+      "prompt": "Man ___ meinen, die Debatte sei längst abgeschlossen, doch neue Studien werfen erneut grundlegende Fragen auf.",
+      "options": [
+        "sollte",
+        "dürfte",
+        "soll"
+      ],
+      "answer": "sollte",
+      "explanation": "Man sollte meinen ('one would think') is a fixed Konjunktiv II phrase introducing an expectation that is then qualified; indicative soll or dürfte don't form this idiom."
+    },
+    {
+      "id": "hfs-14",
+      "type": "choice",
+      "prompt": "Aus heutiger Sicht ___ die Entscheidung, das Verfahren auszusetzen, wohl anders getroffen worden.",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "wäre",
+      "explanation": "The Konjunktiv II past of the passive is wäre + Partizip II + worden: wäre … getroffen worden."
+    },
+    {
+      "id": "hfs-15",
+      "type": "choice",
+      "prompt": "Es spricht einiges ___, dass die Inflation ihren Höhepunkt bereits überschritten hat.",
+      "options": [
+        "dafür",
+        "darauf",
+        "davon",
+        "daran"
+      ],
+      "answer": "dafür",
+      "explanation": "Es spricht einiges dafür, dass … ('there is some evidence that …') uses sprechen für, so the correlate is dafür."
+    },
+    {
+      "id": "hfs-16",
+      "type": "choice",
+      "prompt": "Die Ergebnisse sind insofern mit Vorsicht zu interpretieren, ___ die Befragung ausschließlich online durchgeführt wurde.",
+      "options": [
+        "als",
+        "weil",
+        "dass",
+        "da"
+      ],
+      "answer": "als",
+      "explanation": "insofern … als is a two-part connector that limits a claim ('to the extent that'); insofern is always completed by als."
+    },
+    {
+      "id": "hfs-17",
+      "type": "type",
+      "prompt": "Bei einer Ausweitung des Programms ___ mit erheblichen Mehrkosten zu rechnen.",
+      "hint": "(sein – Konjunktiv II)",
+      "answers": [
+        "wäre"
+      ],
+      "explanation": "sein + zu-infinitive (mit etwas ist zu rechnen) in Konjunktiv II, wäre, presents the consequence as a hypothetical one."
+    },
+    {
+      "id": "hfs-18",
+      "type": "type",
+      "prompt": "Diese Deutung ___ jedoch zu kurz greifen, da sie wirtschaftliche Faktoren weitgehend ausblendet.",
+      "hint": "(dürfen – Konjunktiv II)",
+      "answers": [
+        "dürfte"
+      ],
+      "explanation": "dürfte + infinitive gives a cautious judgement ('probably falls short'); singular subject diese Deutung → dürfte."
+    },
+    {
+      "id": "hfs-19",
+      "type": "type",
+      "prompt": "Es ___ sich empfehlen, die Ergebnisse vor der Veröffentlichung extern begutachten zu lassen.",
+      "hint": "(werden – Konjunktiv II)",
+      "answers": [
+        "würde"
+      ],
+      "explanation": "es würde sich empfehlen ('it would be advisable') turns a direct recommendation into a polite, tentative one."
+    },
+    {
+      "id": "hfs-20",
+      "type": "type",
+      "prompt": "Die Kommission ___ gut daran getan, die Betroffenen frühzeitig in das Verfahren einzubeziehen.",
+      "hint": "(haben – Konjunktiv II)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "gut daran tun forms its perfect with haben; Konjunktiv II past hätte … getan voices criticism of a past decision diplomatically."
+    },
+    {
+      "id": "hfs-21",
+      "type": "type",
+      "prompt": "Nach derzeitigem Kenntnisstand ___ der Schaden auf einen Bedienungsfehler zurückzuführen sein.",
+      "hint": "(können – Konjunktiv II)",
+      "answers": [
+        "könnte"
+      ],
+      "explanation": "könnte + infinitive presents a cause as one possibility among others; singular subject der Schaden → könnte."
+    },
+    {
+      "id": "hfs-22",
+      "type": "type",
+      "prompt": "Ohne diese Zusatzannahme ___ sich die beobachteten Abweichungen kaum erklären.",
+      "hint": "(lassen – Konjunktiv II)",
+      "answers": [
+        "ließen"
+      ],
+      "explanation": "sich lassen + infinitive replaces a passive ('could hardly be explained'); plural subject die Abweichungen → ließen."
+    },
+    {
+      "id": "hfs-23",
+      "type": "type",
+      "prompt": "Dem Gutachten zufolge ___ die Behörde ihre Aufsichtspflicht verletzt haben.",
+      "hint": "(sollen – Präsens)",
+      "answers": [
+        "soll"
+      ],
+      "explanation": "sollen + perfect infinitive reports a claim made by others ('is said to have'); the writer hedges by distancing themselves from it."
+    },
+    {
+      "id": "hfs-24",
+      "type": "order",
+      "words": [
+        "Es",
+        "wäre",
+        "zu",
+        "prüfen,",
+        "ob",
+        "die",
+        "Regelung",
+        "verhältnismäßig",
+        "ist."
+      ],
+      "answers": [
+        "Es wäre zu prüfen, ob die Regelung verhältnismäßig ist."
+      ],
+      "translation": "It would need to be examined whether the regulation is proportionate.",
+      "explanation": "Es wäre zu prüfen keeps the verb wäre in second position; in the ob-clause the finite verb ist goes to the end."
+    },
+    {
+      "id": "hfs-25",
+      "type": "order",
+      "words": [
+        "Dies",
+        "dürfte",
+        "auf",
+        "die",
+        "gestiegenen",
+        "Energiekosten",
+        "zurückzuführen",
+        "sein."
+      ],
+      "answers": [
+        "Dies dürfte auf die gestiegenen Energiekosten zurückzuführen sein."
+      ],
+      "translation": "This is probably due to the increased energy costs.",
+      "explanation": "The modal dürfte stands in second position; zurückzuführen sein goes to the end, with sein as the final infinitive."
+    },
+    {
+      "id": "hfs-26",
+      "type": "order",
+      "words": [
+        "Man",
+        "könnte",
+        "einwenden,",
+        "dass",
+        "die",
+        "Stichprobe",
+        "zu",
+        "klein",
+        "war."
+      ],
+      "answers": [
+        "Man könnte einwenden, dass die Stichprobe zu klein war."
+      ],
+      "translation": "One could object that the sample was too small.",
+      "explanation": "In the main clause könnte is in second position and einwenden at the end; in the dass-clause war moves to the end."
+    },
+    {
+      "id": "hfs-27",
+      "type": "order",
+      "words": [
+        "Es",
+        "ließe",
+        "sich",
+        "argumentieren,",
+        "dass",
+        "die",
+        "Reform",
+        "zu",
+        "spät",
+        "kam."
+      ],
+      "answers": [
+        "Es ließe sich argumentieren, dass die Reform zu spät kam."
+      ],
+      "translation": "It could be argued that the reform came too late.",
+      "explanation": "es ließe sich + infinitive: sich follows the finite verb ließe directly and the infinitive argumentieren closes the main clause."
+    },
+    {
+      "id": "hfs-28",
+      "type": "order",
+      "words": [
+        "Die",
+        "Ergebnisse",
+        "scheinen",
+        "die",
+        "Hypothese",
+        "zu",
+        "bestätigen."
+      ],
+      "answers": [
+        "Die Ergebnisse scheinen die Hypothese zu bestätigen."
+      ],
+      "translation": "The results appear to confirm the hypothesis.",
+      "explanation": "scheinen is in second position and the zu-infinitive zu bestätigen goes to the end, after the object die Hypothese."
+    },
+    {
+      "id": "hfs-29",
+      "type": "order",
+      "words": [
+        "Es",
+        "ist",
+        "nicht",
+        "auszuschließen,",
+        "dass",
+        "sich",
+        "die",
+        "Lage",
+        "verschärft."
+      ],
+      "answers": [
+        "Es ist nicht auszuschließen, dass sich die Lage verschärft.",
+        "Es ist nicht auszuschließen, dass die Lage sich verschärft."
+      ],
+      "translation": "It cannot be ruled out that the situation will worsen.",
+      "explanation": "In the dass-clause the verb verschärft goes last; the reflexive sich usually comes before a noun subject, but after it is also correct."
+    },
+    {
+      "id": "hfs-30",
+      "type": "order",
+      "words": [
+        "Inwieweit",
+        "dies",
+        "zutrifft,",
+        "bliebe",
+        "noch",
+        "zu",
+        "klären."
+      ],
+      "answers": [
+        "Inwieweit dies zutrifft, bliebe noch zu klären."
+      ],
+      "translation": "To what extent this applies would still remain to be clarified.",
+      "explanation": "The inwieweit-clause fills the first position, so the Konjunktiv II bliebe follows it directly; zu klären goes to the end."
+    }
+  ]
+}

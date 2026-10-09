@@ -1,0 +1,389 @@
+{
+  "slug": "spoken-vs-written-grammar",
+  "instructions": "Choose, type or order the form that fits the register or region given in brackets.",
+  "items": [
+    {
+      "id": "svw-01",
+      "type": "choice",
+      "prompt": "Wegen ___ Streik bei der Bahn bin ich zu spät gekommen. (chat with a friend)",
+      "options": [
+        "dem",
+        "des",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "In everyday speech wegen often takes the dative: wegen dem Streik. The genitive would need the -s ending (wegen des Streiks)."
+    },
+    {
+      "id": "svw-02",
+      "type": "choice",
+      "prompt": "Wegen ___ anhaltenden Streiks im Nahverkehr wird die Anhörung auf einen späteren Termin verlegt. (official notice)",
+      "options": [
+        "des",
+        "dem",
+        "den"
+      ],
+      "answer": "des",
+      "explanation": "Written and official German uses wegen + genitive: wegen des anhaltenden Streiks (note the genitive -s on Streiks)."
+    },
+    {
+      "id": "svw-03",
+      "type": "choice",
+      "prompt": "Du musst ___ nicht extra früher losfahren. (chat with a friend)",
+      "options": [
+        "wegen mir",
+        "wegen mich",
+        "wegen ich"
+      ],
+      "answer": "wegen mir",
+      "explanation": "Colloquially wegen combines with the dative pronoun: wegen mir. The accusative mich and nominative ich are wrong in any register."
+    },
+    {
+      "id": "svw-04",
+      "type": "choice",
+      "prompt": "Sie brauchen den Termin ___ nicht zu verschieben. (formal email to a client)",
+      "options": [
+        "meinetwegen",
+        "wegen mir",
+        "wegen mich"
+      ],
+      "answer": "meinetwegen",
+      "explanation": "In formal writing the pronoun forms meinetwegen, deinetwegen, Ihretwegen replace colloquial wegen mir."
+    },
+    {
+      "id": "svw-05",
+      "type": "choice",
+      "prompt": "Trotz ___ eindringlichen Appells der Fachleute wurde das Verfahren unverändert fortgesetzt. (academic text)",
+      "options": [
+        "des",
+        "dem",
+        "den"
+      ],
+      "answer": "des",
+      "explanation": "Formal written German uses trotz + genitive: trotz des eindringlichen Appells (genitive -s on Appells)."
+    },
+    {
+      "id": "svw-06",
+      "type": "choice",
+      "prompt": "Trotz ___ Regen sind wir noch an den See gefahren. (chat with a friend)",
+      "options": [
+        "dem",
+        "des",
+        "den"
+      ],
+      "answer": "dem",
+      "explanation": "In speech trotz, like wegen, often takes the dative: trotz dem Regen. The genitive would be trotz des Regens."
+    },
+    {
+      "id": "svw-07",
+      "type": "choice",
+      "prompt": "Die Maßnahme wurde vorläufig ausgesetzt, ___ die Finanzierung war zu diesem Zeitpunkt nicht gesichert. (formal report)",
+      "options": [
+        "denn",
+        "weil",
+        "obwohl"
+      ],
+      "answer": "denn",
+      "explanation": "A causal clause with main-clause (verb-second) order needs denn in writing; weil + verb-second is only colloquial."
+    },
+    {
+      "id": "svw-08",
+      "type": "choice",
+      "prompt": "Ich komm heute nicht mit, ___ ich hab ehrlich gesagt keinen Nerv mehr für Menschenmassen. (voice message to a friend)",
+      "options": [
+        "weil",
+        "dass",
+        "damit"
+      ],
+      "answer": "weil",
+      "explanation": "In spoken German weil is often followed by main-clause order after a short pause: weil ich hab keinen Nerv mehr."
+    },
+    {
+      "id": "svw-09",
+      "type": "choice",
+      "prompt": "Der Antrag wurde abgelehnt, weil ___. (official decision)",
+      "options": [
+        "die erforderlichen Nachweise fehlten",
+        "es fehlten die erforderlichen Nachweise",
+        "fehlten die erforderlichen Nachweise"
+      ],
+      "answer": "die erforderlichen Nachweise fehlten",
+      "explanation": "In written German weil introduces a subordinate clause with the finite verb at the end; weil + verb-second is spoken only."
+    },
+    {
+      "id": "svw-10",
+      "type": "choice",
+      "prompt": "Wir könnten am Samstag wandern gehen – ___, da soll es ja den ganzen Tag regnen. (talking to a friend)",
+      "options": [
+        "obwohl",
+        "trotzdem",
+        "weil"
+      ],
+      "answer": "obwohl",
+      "explanation": "Spoken obwohl can start a correction of what was just said, followed by main-clause order: obwohl, da soll es ja regnen."
+    },
+    {
+      "id": "svw-11",
+      "type": "choice",
+      "prompt": "Die Studie wurde veröffentlicht, obwohl ___. (academic review)",
+      "options": [
+        "die Datengrundlage umstritten war",
+        "die Datengrundlage war umstritten",
+        "war die Datengrundlage umstritten"
+      ],
+      "answer": "die Datengrundlage umstritten war",
+      "explanation": "In written German obwohl introduces a subordinate clause with the verb at the end; the corrective verb-second obwohl is spoken only."
+    },
+    {
+      "id": "svw-12",
+      "type": "choice",
+      "prompt": "Ich ___ gerade die Steuererklärung machen, ruf mich später an. (Ruhrgebiet, phone call with a friend)",
+      "options": [
+        "tu",
+        "werde",
+        "hab"
+      ],
+      "answer": "tu",
+      "explanation": "Regional and colloquial German uses tun + infinitive to mark an ongoing action: Ich tu gerade ... machen."
+    },
+    {
+      "id": "svw-13",
+      "type": "choice",
+      "prompt": "Verstehen ___ ich das schon, nur halte ich es nicht für richtig. (heated discussion among colleagues)",
+      "options": [
+        "tu",
+        "bin",
+        "habe"
+      ],
+      "answer": "tu",
+      "explanation": "When the infinitive is moved to the front for emphasis, spoken German uses tun as the finite verb: Verstehen tu ich das schon."
+    },
+    {
+      "id": "svw-14",
+      "type": "choice",
+      "prompt": "Wir ___ Ihnen die vollständigen Unterlagen bis Ende der Woche zukommen lassen. (formal letter)",
+      "options": [
+        "werden",
+        "tun",
+        "täten"
+      ],
+      "answer": "werden",
+      "explanation": "Formal written German never uses tun as an auxiliary; the future is expressed with werden + infinitive."
+    },
+    {
+      "id": "svw-15",
+      "type": "choice",
+      "prompt": "Die Kommission ___ derzeit noch über die eingereichten Stellungnahmen. (press release)",
+      "options": [
+        "berät",
+        "ist am Beraten",
+        "tut beraten"
+      ],
+      "answer": "berät",
+      "explanation": "Written German uses the simple present for ongoing actions; the am-progressive (ist am Beraten) and tun + infinitive are colloquial."
+    },
+    {
+      "id": "svw-16",
+      "type": "choice",
+      "prompt": "Gestern ___ ich stundenlang beim Amt im Wartezimmer gesessen. (Viennese speaker, chatting)",
+      "options": [
+        "bin",
+        "hab",
+        "wurde"
+      ],
+      "answer": "bin",
+      "explanation": "In Austria and southern Germany sitzen, stehen and liegen form the Perfekt with sein: ich bin gesessen; northern speakers say ich habe gesessen."
+    },
+    {
+      "id": "svw-17",
+      "type": "choice",
+      "prompt": "Wir ___ den ganzen Abend an der Bushaltestelle gestanden. (Hamburg speaker, chatting)",
+      "options": [
+        "haben",
+        "sind",
+        "wurden"
+      ],
+      "answer": "haben",
+      "explanation": "In northern German stehen, sitzen and liegen form the Perfekt with haben: wir haben gestanden; sind gestanden is southern."
+    },
+    {
+      "id": "svw-18",
+      "type": "choice",
+      "prompt": "Die tatsächlichen Kosten lagen deutlich höher ___ ursprünglich veranschlagt. (audit report)",
+      "options": [
+        "als",
+        "wie",
+        "als wie"
+      ],
+      "answer": "als",
+      "explanation": "Standard written German uses als after a comparative; wie and als wie after a comparative are colloquial or regional."
+    },
+    {
+      "id": "svw-19",
+      "type": "choice",
+      "prompt": "Das ist doch ___ Lena ihr Fahrrad! (chatting with a neighbour)",
+      "options": [
+        "der",
+        "die",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "Colloquial German expresses possession with dative + possessive: der Lena ihr Fahrrad (dative feminine der)."
+    },
+    {
+      "id": "svw-20",
+      "type": "choice",
+      "prompt": "Laut Gutachten weist das Fahrzeug ___ erhebliche Schäden auf. (insurance report)",
+      "options": [
+        "des Versicherungsnehmers",
+        "vom Versicherungsnehmer",
+        "dem Versicherungsnehmer sein"
+      ],
+      "answer": "des Versicherungsnehmers",
+      "explanation": "Written German marks possession with the genitive; von + dative and dative + sein are colloquial."
+    },
+    {
+      "id": "svw-21",
+      "type": "choice",
+      "prompt": "Das ist der Kollege, ___ wo immer so früh ins Büro kommt. (Bavarian speaker, chatting)",
+      "options": [
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": "der",
+      "explanation": "Bavarian speech can add wo after the relative pronoun; the pronoun still takes its normal case: der (subject)."
+    },
+    {
+      "id": "svw-22",
+      "type": "choice",
+      "prompt": "Der Sachbearbeiter, ___ für Ihren Antrag zuständig ist, ist derzeit nicht erreichbar. (formal letter)",
+      "options": [
+        "der",
+        "der wo",
+        "wo"
+      ],
+      "answer": "der",
+      "explanation": "Standard written German uses the relative pronoun alone; der wo and wo as relative markers are regional speech."
+    },
+    {
+      "id": "svw-23",
+      "type": "type",
+      "prompt": "Sie schloss die Akte, ___ das Licht aus und verließ wortlos das Büro. (novel, past narration)",
+      "hint": "(ausmachen)",
+      "answers": [
+        "machte"
+      ],
+      "explanation": "Written narrative uses the Präteritum throughout: schloss, machte ... aus, verließ."
+    },
+    {
+      "id": "svw-24",
+      "type": "type",
+      "prompt": "Und dann ist er einfach ohne ein Wort aus dem Zimmer ___. (Munich speaker, telling a story)",
+      "hint": "(gehen)",
+      "answers": [
+        "gegangen"
+      ],
+      "explanation": "Southern German speech has almost lost the Präteritum and narrates in the Perfekt: ist ... gegangen."
+    },
+    {
+      "id": "svw-25",
+      "type": "type",
+      "prompt": "Die Polizei ___ am Abend den Bahnhof weiträumig ab. (news report)",
+      "hint": "(absperren)",
+      "answers": [
+        "sperrte"
+      ],
+      "explanation": "News reports narrate past events in the Präteritum; the separable prefix ab goes to the end: sperrte ... ab."
+    },
+    {
+      "id": "svw-26",
+      "type": "type",
+      "prompt": "Im Anschluss an die Sitzung ___ der Ausschuss eine gemeinsame Erklärung. (press release)",
+      "hint": "(verabschieden)",
+      "answers": [
+        "verabschiedete"
+      ],
+      "explanation": "Formal written reports use the Präteritum for completed past events: der Ausschuss verabschiedete."
+    },
+    {
+      "id": "svw-27",
+      "type": "order",
+      "words": [
+        "Die",
+        "Frist",
+        "wurde",
+        "verlängert,",
+        "weil",
+        "die",
+        "Gutachten",
+        "noch",
+        "nicht",
+        "vorlagen."
+      ],
+      "answers": [
+        "Die Frist wurde verlängert, weil die Gutachten noch nicht vorlagen."
+      ],
+      "translation": "(formal report) The deadline was extended because the expert reports were not yet available.",
+      "explanation": "In writing weil sends the finite verb to the end of the clause: weil die Gutachten noch nicht vorlagen."
+    },
+    {
+      "id": "svw-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "bleib",
+        "heute",
+        "daheim,",
+        "weil",
+        "ich",
+        "hab",
+        "keine",
+        "Zeit."
+      ],
+      "answers": [
+        "Ich bleib heute daheim, weil ich hab keine Zeit."
+      ],
+      "translation": "(chatting with a friend) I'm staying at home today because I don't have time.",
+      "explanation": "In casual speech weil can be followed by main-clause order (weil ich hab keine Zeit), especially after a short pause."
+    },
+    {
+      "id": "svw-29",
+      "type": "order",
+      "words": [
+        "Die",
+        "Sitzung",
+        "wurde",
+        "vertagt,",
+        "denn",
+        "der",
+        "Bericht",
+        "lag",
+        "nicht",
+        "vor."
+      ],
+      "answers": [
+        "Die Sitzung wurde vertagt, denn der Bericht lag nicht vor."
+      ],
+      "translation": "(formal minutes) The meeting was adjourned because the report was not available.",
+      "explanation": "denn joins two main clauses, so the verb stays in second position: denn der Bericht lag nicht vor."
+    },
+    {
+      "id": "svw-30",
+      "type": "order",
+      "words": [
+        "Kochen",
+        "tut",
+        "er",
+        "eigentlich",
+        "ganz",
+        "gern."
+      ],
+      "answers": [
+        "Kochen tut er eigentlich ganz gern."
+      ],
+      "translation": "(colloquial speech) As for cooking, he actually quite likes it.",
+      "explanation": "Colloquial German can front the infinitive for emphasis and use tun as the finite verb in second position."
+    }
+  ]
+}

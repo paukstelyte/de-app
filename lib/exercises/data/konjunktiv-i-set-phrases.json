@@ -1,0 +1,402 @@
+{
+  "slug": "konjunktiv-i-set-phrases",
+  "instructions": "Choose, type or arrange the Konjunktiv I form used in fixed expressions, wishes, and formal instructions or definitions.",
+  "items": [
+    {
+      "id": "kisp-01",
+      "type": "choice",
+      "prompt": "Die Operation ist, Gott ___ Dank, ohne jegliche Komplikationen verlaufen.",
+      "options": [
+        "sei",
+        "ist",
+        "wäre",
+        "war"
+      ],
+      "answer": "sei",
+      "explanation": "Gott sei Dank is a frozen optative (Konjunktiv I of sein: 'thanks be to God'); the indicative ist or Konjunktiv II wäre is impossible here."
+    },
+    {
+      "id": "kisp-02",
+      "type": "choice",
+      "prompt": "Nach dem Sturz des Regimes skandierten die Demonstrierenden: „Es ___ die Freiheit!“",
+      "options": [
+        "lebe",
+        "lebt",
+        "leben",
+        "lebte"
+      ],
+      "answer": "lebe",
+      "explanation": "Es lebe … ! is a fixed acclamation with Konjunktiv I lebe (third person singular, ending -e); es is a placeholder, the subject is die Freiheit."
+    },
+    {
+      "id": "kisp-03",
+      "type": "type",
+      "prompt": "Auf dem Grabstein des langjährigen Bürgermeisters steht: „Er ___ in Frieden.“",
+      "hint": "(ruhen, Konjunktiv I)",
+      "answers": [
+        "ruhe"
+      ],
+      "explanation": "Er ruhe in Frieden is an optative wish: Konjunktiv I third person singular = stem + -e (ruh- + e)."
+    },
+    {
+      "id": "kisp-04",
+      "type": "choice",
+      "prompt": "In der Schöpfungsgeschichte spricht Gott: „Es ___ Licht.“",
+      "options": [
+        "werde",
+        "wird",
+        "würde",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "The biblical command Es werde Licht uses Konjunktiv I of werden (werde) to express a solemn wish or command, not a statement."
+    },
+    {
+      "id": "kisp-05",
+      "type": "choice",
+      "prompt": "Man ___ das Gemüse in gleichmäßige Würfel und dünste es anschließend in Butter an.",
+      "options": [
+        "schneide",
+        "schneidet",
+        "schnitte",
+        "schneiden"
+      ],
+      "answer": "schneide",
+      "explanation": "Recipe style uses Konjunktiv I with man (man schneide); the parallel verb dünste shows the same mood, so indicative schneidet would clash."
+    },
+    {
+      "id": "kisp-06",
+      "type": "choice",
+      "prompt": "Vor der Inbetriebnahme ___ man die Sicherheitshinweise und bewahre die Anleitung sorgfältig auf.",
+      "options": [
+        "lese",
+        "liest",
+        "läse",
+        "lesen"
+      ],
+      "answer": "lese",
+      "explanation": "Instruction style: man + Konjunktiv I (lese, without the indicative vowel change ie); it matches the following bewahre. läse is Konjunktiv II."
+    },
+    {
+      "id": "kisp-07",
+      "type": "type",
+      "prompt": "Man ___ die Mischung bei mittlerer Hitze unter ständigem Rühren etwa zehn Minuten köcheln.",
+      "hint": "(lassen, Konjunktiv I)",
+      "answers": [
+        "lasse"
+      ],
+      "explanation": "Recipe instructions use man + Konjunktiv I: lassen → man lasse (no umlaut, unlike indicative lässt)."
+    },
+    {
+      "id": "kisp-08",
+      "type": "order",
+      "words": [
+        "Man",
+        "gebe",
+        "die",
+        "Sahne",
+        "erst",
+        "kurz",
+        "vor",
+        "dem",
+        "Servieren",
+        "hinzu."
+      ],
+      "answers": [
+        "Man gebe die Sahne erst kurz vor dem Servieren hinzu.",
+        "Man gebe erst kurz vor dem Servieren die Sahne hinzu."
+      ],
+      "translation": "Add the cream only shortly before serving.",
+      "explanation": "Recipe Konjunktiv I: man gebe … hinzu, with the separable prefix hinzu at the end; the object may stand before or after the time phrase."
+    },
+    {
+      "id": "kisp-09",
+      "type": "choice",
+      "prompt": "Sollte es, Gott ___, zu einem Störfall kommen, greift unverzüglich der Notfallplan.",
+      "options": [
+        "behüte",
+        "behütet",
+        "behütete",
+        "behüten"
+      ],
+      "answer": "behüte",
+      "explanation": "Gott behüte (also Gott bewahre) is a fixed parenthetical wish with Konjunktiv I: 'God forbid'."
+    },
+    {
+      "id": "kisp-10",
+      "type": "type",
+      "prompt": "Der Himmel ___ uns vor einem derartigen Szenario, das die gesamte Region destabilisieren würde!",
+      "hint": "(bewahren, Konjunktiv I)",
+      "answers": [
+        "bewahre"
+      ],
+      "explanation": "An optative wish addressed to a third person (der Himmel) takes Konjunktiv I: bewahren → der Himmel bewahre ('Heaven forbid / Heaven preserve us')."
+    },
+    {
+      "id": "kisp-11",
+      "type": "choice",
+      "prompt": "Viele Betroffene meldeten sich nicht, sei es aus Scham, ___ es aus Unkenntnis der Rechtslage.",
+      "options": [
+        "sei",
+        "ist",
+        "wäre",
+        "war"
+      ],
+      "answer": "sei",
+      "explanation": "The paired formula sei es … sei es ('whether … or') lists alternatives; both halves keep the Konjunktiv I sei."
+    },
+    {
+      "id": "kisp-12",
+      "type": "choice",
+      "prompt": "Sei es, wie es ___: Der Vertrag ist rechtskräftig unterzeichnet und kann nicht mehr angefochten werden.",
+      "options": [
+        "sei",
+        "ist",
+        "wäre",
+        "war"
+      ],
+      "answer": "sei",
+      "explanation": "Sei es, wie es sei ('be that as it may') is a fixed concessive formula with Konjunktiv I in both parts."
+    },
+    {
+      "id": "kisp-13",
+      "type": "choice",
+      "prompt": "Dem sei, wie ihm ___: Die Einspruchsfrist ist bereits seit drei Wochen verstrichen.",
+      "options": [
+        "wolle",
+        "will",
+        "wollte",
+        "möge"
+      ],
+      "answer": "wolle",
+      "explanation": "Dem sei, wie ihm wolle ('however that may be') is fixed: Konjunktiv I sei and wolle (not indicative will)."
+    },
+    {
+      "id": "kisp-14",
+      "type": "choice",
+      "prompt": "Die Regierung ist entschlossen, das Haushaltsdefizit zu senken, koste es, was es ___.",
+      "options": [
+        "wolle",
+        "will",
+        "wollte",
+        "möge"
+      ],
+      "answer": "wolle",
+      "explanation": "koste es, was es wolle ('whatever it takes') is a fixed formula with Konjunktiv I koste and wolle."
+    },
+    {
+      "id": "kisp-15",
+      "type": "type",
+      "prompt": "Die Geschäftsführung hält an der Umstrukturierung fest, ___, was da wolle.",
+      "hint": "(kommen)",
+      "answers": [
+        "komme"
+      ],
+      "explanation": "komme, was (da) wolle ('come what may') is a fixed concessive formula with Konjunktiv I komme and wolle."
+    },
+    {
+      "id": "kisp-16",
+      "type": "order",
+      "words": [
+        "Wie",
+        "dem",
+        "auch",
+        "sei,",
+        "das",
+        "Verfahren",
+        "muss",
+        "neu",
+        "aufgerollt",
+        "werden."
+      ],
+      "answers": [
+        "Wie dem auch sei, das Verfahren muss neu aufgerollt werden."
+      ],
+      "translation": "Be that as it may, the proceedings must be reopened.",
+      "explanation": "Wie dem auch sei is a fixed concessive formula with Konjunktiv I; it stands outside the main clause, so muss still comes after das Verfahren."
+    },
+    {
+      "id": "kisp-17",
+      "type": "type",
+      "prompt": "Der Ausschuss wird dem Antrag nicht zustimmen, es ___ denn, die Finanzierung ist langfristig gesichert.",
+      "hint": "(sein)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "es sei denn ('unless') is a fixed Konjunktiv I conjunction phrase; it is always sei, never ist."
+    },
+    {
+      "id": "kisp-18",
+      "type": "choice",
+      "prompt": "In seiner Festrede rief der Rektor: „___ die Absolventinnen und Absolventen ihr Wissen stets verantwortungsvoll einsetzen!“",
+      "options": [
+        "Mögen",
+        "Möge",
+        "Mochten",
+        "Mögt"
+      ],
+      "answer": "Mögen",
+      "explanation": "An optative wish with mögen takes Konjunktiv I; the plural subject (die Absolventinnen und Absolventen) needs mögen, not möge."
+    },
+    {
+      "id": "kisp-19",
+      "type": "order",
+      "words": [
+        "Möge",
+        "die",
+        "Konferenz",
+        "zu",
+        "einer",
+        "tragfähigen",
+        "Einigung",
+        "führen!"
+      ],
+      "answers": [
+        "Möge die Konferenz zu einer tragfähigen Einigung führen!"
+      ],
+      "translation": "May the conference lead to a viable agreement!",
+      "explanation": "A solemn wish puts Konjunktiv I möge first, with the infinitive führen at the end of the clause."
+    },
+    {
+      "id": "kisp-20",
+      "type": "type",
+      "prompt": "Zur Veranschaulichung der Messergebnisse ___ man Abbildung 3 im Anhang.",
+      "hint": "(vergleichen, Konjunktiv I)",
+      "answers": [
+        "vergleiche"
+      ],
+      "explanation": "Academic cross-references use man + Konjunktiv I: man vergleiche (abbreviated vgl.)."
+    },
+    {
+      "id": "kisp-21",
+      "type": "choice",
+      "prompt": "Zu den methodischen Einschränkungen der Studie ___ man die Ausführungen in Kapitel 4.",
+      "options": [
+        "vergleiche",
+        "vergleichen",
+        "verglich",
+        "vergliche"
+      ],
+      "answer": "vergleiche",
+      "explanation": "Man vergleiche is the academic reference formula (vgl.): singular man + Konjunktiv I ending -e; vergliche is Konjunktiv II."
+    },
+    {
+      "id": "kisp-22",
+      "type": "order",
+      "words": [
+        "Man",
+        "bedenke",
+        "die",
+        "langfristigen",
+        "Folgen",
+        "einer",
+        "solchen",
+        "Entscheidung."
+      ],
+      "answers": [
+        "Man bedenke die langfristigen Folgen einer solchen Entscheidung."
+      ],
+      "translation": "Consider the long-term consequences of such a decision.",
+      "explanation": "man + Konjunktiv I (man bedenke) is a formal, impersonal appeal to the reader, typical of essays and commentary."
+    },
+    {
+      "id": "kisp-23",
+      "type": "type",
+      "prompt": "Man ___ sich vor, welche Folgen ein solcher Präzedenzfall für die künftige Rechtsprechung hätte.",
+      "hint": "(stellen, Konjunktiv I)",
+      "answers": [
+        "stelle"
+      ],
+      "explanation": "Man stelle sich vor is a formal invitation to the reader with Konjunktiv I; the hypothetical content then uses Konjunktiv II (hätte)."
+    },
+    {
+      "id": "kisp-24",
+      "type": "choice",
+      "prompt": "Nur am Rande ___ erwähnt, dass die Stichprobe für die Gesamtbevölkerung nicht repräsentativ ist.",
+      "options": [
+        "sei",
+        "seien",
+        "wäre",
+        "würde"
+      ],
+      "answer": "sei",
+      "explanation": "Academic asides use a Konjunktiv I passive formula: (es) sei erwähnt/angemerkt; the subject is the dass-clause, so singular sei."
+    },
+    {
+      "id": "kisp-25",
+      "type": "order",
+      "words": [
+        "Es",
+        "sei",
+        "darauf",
+        "hingewiesen,",
+        "dass",
+        "die",
+        "Frist",
+        "nicht",
+        "verlängerbar",
+        "ist."
+      ],
+      "answers": [
+        "Es sei darauf hingewiesen, dass die Frist nicht verlängerbar ist."
+      ],
+      "translation": "It should be pointed out that the deadline cannot be extended.",
+      "explanation": "Es sei darauf hingewiesen is a formal Konjunktiv I formula in official texts; es is a placeholder and the dass-clause follows."
+    },
+    {
+      "id": "kisp-26",
+      "type": "type",
+      "prompt": "Als Beleg für diese These ___ der Hinweis auf die jüngste Erhebung des Statistischen Bundesamtes.",
+      "hint": "(genügen, Konjunktiv I)",
+      "answers": [
+        "genüge"
+      ],
+      "explanation": "Formal argumentation uses Konjunktiv I to mean 'let … suffice': der Hinweis genüge (stem genüg- + e); indicative genügt would be a plain statement."
+    },
+    {
+      "id": "kisp-27",
+      "type": "type",
+      "prompt": "Ob die Maßnahme tatsächlich die gewünschte Wirkung entfaltet, ___ dahingestellt.",
+      "hint": "(sein, Konjunktiv I)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "… sei dahingestellt ('remains to be seen / let that be left open') is a fixed formula with Konjunktiv I sei."
+    },
+    {
+      "id": "kisp-28",
+      "type": "choice",
+      "prompt": "Gegeben ___ ein gleichschenkliges Dreieck mit der Basis c und der Höhe h.",
+      "options": [
+        "sei",
+        "seien",
+        "wäre",
+        "werde"
+      ],
+      "answer": "sei",
+      "explanation": "Mathematical texts set up assumptions with Konjunktiv I: Gegeben sei …; the subject (ein Dreieck) is singular, so sei."
+    },
+    {
+      "id": "kisp-29",
+      "type": "choice",
+      "prompt": "Es ___ a und b zwei natürliche Zahlen mit a > b.",
+      "options": [
+        "seien",
+        "sei",
+        "wären"
+      ],
+      "answer": "seien",
+      "explanation": "In mathematical definitions the assumption takes Konjunktiv I; the real subject a und b is plural, so seien (es is only a placeholder)."
+    },
+    {
+      "id": "kisp-30",
+      "type": "type",
+      "prompt": "Im Folgenden ___ f eine auf dem Intervall [a, b] stetige Funktion.",
+      "hint": "(sein, Konjunktiv I)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "Mathematical definitions introduce objects with Konjunktiv I: Sei f … / Im Folgenden sei f … ('let f be')."
+    }
+  ]
+}
