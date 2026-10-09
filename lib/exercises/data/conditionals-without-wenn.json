@@ -1,0 +1,460 @@
+{
+  "slug": "conditionals-without-wenn",
+  "instructions": "Complete or build each condition that starts with the verb instead of wenn (Sollte …, Hätte …, Wäre …).",
+  "items": [
+    {
+      "id": "cond-01",
+      "type": "choice",
+      "prompt": "Sollte sich die Lage weiter verschärfen, ___ wir den Betrieb vorübergehend ein.",
+      "options": [
+        "stellen",
+        "würden",
+        "sollten"
+      ],
+      "answer": "stellen",
+      "explanation": "A real condition with Sollte is followed by an indicative main clause starting with its verb: stellen wir … ein."
+    },
+    {
+      "id": "cond-02",
+      "type": "choice",
+      "prompt": "Hätten wir die Risiken rechtzeitig erkannt, ___ uns viel Ärger erspart geblieben.",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "wäre",
+      "explanation": "erspart bleiben forms the perfect with sein, so the unreal past result is wäre … erspart geblieben."
+    },
+    {
+      "id": "cond-03",
+      "type": "choice",
+      "prompt": "Wäre die Nachfrage größer, ___ sich die Investition durchaus lohnen.",
+      "options": [
+        "würde",
+        "wurde",
+        "wird"
+      ],
+      "answer": "würde",
+      "explanation": "Unreal present result after Wäre …: würde + infinitive (würde sich lohnen)."
+    },
+    {
+      "id": "cond-04",
+      "type": "choice",
+      "prompt": "Hätte der Zug keine Verspätung gehabt, ___ wir den Anschluss noch erreicht.",
+      "options": [
+        "hätten",
+        "wären",
+        "würden"
+      ],
+      "answer": "hätten",
+      "explanation": "erreichen forms the perfect with haben, so the unreal past result is hätten … erreicht."
+    },
+    {
+      "id": "cond-05",
+      "type": "choice",
+      "prompt": "Hätte man die Brücke rechtzeitig saniert, ___ das Unglück nie passiert.",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "wäre",
+      "explanation": "passieren forms the perfect with sein: wäre … passiert."
+    },
+    {
+      "id": "cond-06",
+      "type": "order",
+      "words": [
+        "Sollten",
+        "Sie",
+        "verhindert",
+        "sein,",
+        "sagen",
+        "Sie",
+        "bitte",
+        "rechtzeitig",
+        "ab."
+      ],
+      "answers": [
+        "Sollten Sie verhindert sein, sagen Sie bitte rechtzeitig ab."
+      ],
+      "translation": "Should you be unable to attend, please cancel in good time.",
+      "explanation": "Sollten Sie … replaces falls Sie …; the main clause is a polite imperative starting with its verb."
+    },
+    {
+      "id": "cond-07",
+      "type": "order",
+      "words": [
+        "Wären",
+        "wir",
+        "früher",
+        "aufgebrochen,",
+        "hätten",
+        "wir",
+        "den",
+        "Gipfel",
+        "erreicht."
+      ],
+      "answers": [
+        "Wären wir früher aufgebrochen, hätten wir den Gipfel erreicht."
+      ],
+      "translation": "Had we set off earlier, we would have reached the summit.",
+      "explanation": "aufbrechen takes sein (Wären … aufgebrochen), erreichen takes haben (hätten … erreicht)."
+    },
+    {
+      "id": "cond-08",
+      "type": "order",
+      "words": [
+        "Wäre",
+        "ich",
+        "nicht",
+        "so",
+        "erschöpft,",
+        "würde",
+        "ich",
+        "dich",
+        "begleiten."
+      ],
+      "answers": [
+        "Wäre ich nicht so erschöpft, würde ich dich begleiten."
+      ],
+      "translation": "If I weren't so exhausted, I would come with you.",
+      "explanation": "Wäre ich … = wenn ich … wäre; the result clause starts with würde and ends with the infinitive."
+    },
+    {
+      "id": "cond-09",
+      "type": "order",
+      "words": [
+        "Sollte",
+        "der",
+        "Vertrag",
+        "gekündigt",
+        "werden,",
+        "erlischt",
+        "der",
+        "Anspruch."
+      ],
+      "answers": [
+        "Sollte der Vertrag gekündigt werden, erlischt der Anspruch."
+      ],
+      "translation": "Should the contract be terminated, the claim lapses.",
+      "explanation": "A formal Sollte-condition with a passive infinitive; the main clause is indicative and starts with its verb."
+    },
+    {
+      "id": "cond-10",
+      "type": "type",
+      "prompt": "Sollte die Lieferung beschädigt sein, ___ Sie uns bitte umgehend.",
+      "hint": "(benachrichtigen)",
+      "answers": [
+        "benachrichtigen"
+      ],
+      "explanation": "After a Sollte-condition, a polite Sie-imperative often follows: benachrichtigen Sie uns."
+    },
+    {
+      "id": "cond-11",
+      "type": "type",
+      "prompt": "Hätte ich mehr Spielraum, ___ ich das Problem anders angehen.",
+      "hint": "(können, Konjunktiv II)",
+      "answers": [
+        "könnte"
+      ],
+      "explanation": "Unreal present result: Konjunktiv II of können is könnte."
+    },
+    {
+      "id": "cond-12",
+      "type": "choice",
+      "prompt": "Sollten Unklarheiten bestehen, ___ Sie sich bitte an die Kundenbetreuung.",
+      "options": [
+        "wenden",
+        "wendet",
+        "wende"
+      ],
+      "answer": "wenden",
+      "explanation": "Polite Sie-imperative after the condition: wenden Sie sich … an."
+    },
+    {
+      "id": "cond-13",
+      "type": "choice",
+      "prompt": "Wäre die Expedition früher gestartet, ___ sie nicht in den Schneesturm geraten.",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "wäre",
+      "explanation": "geraten (to get into) forms the perfect with sein: wäre … geraten."
+    },
+    {
+      "id": "cond-14",
+      "type": "choice",
+      "prompt": "Wäre er nicht so stur, ___ man mit ihm vernünftig reden.",
+      "options": [
+        "könnte",
+        "konnte",
+        "kann"
+      ],
+      "answer": "könnte",
+      "explanation": "Unreal present: both clauses in Konjunktiv II – könnte, not past konnte or present kann."
+    },
+    {
+      "id": "cond-15",
+      "type": "order",
+      "words": [
+        "Hätten",
+        "wir",
+        "mehr",
+        "Personal,",
+        "könnten",
+        "wir",
+        "schneller",
+        "expandieren."
+      ],
+      "answers": [
+        "Hätten wir mehr Personal, könnten wir schneller expandieren."
+      ],
+      "translation": "If we had more staff, we could expand faster.",
+      "explanation": "Hätten wir … = wenn wir … hätten; the result clause starts with könnten."
+    },
+    {
+      "id": "cond-16",
+      "type": "order",
+      "words": [
+        "Gäbe",
+        "es",
+        "keine",
+        "Subventionen,",
+        "wäre",
+        "das",
+        "Produkt",
+        "unbezahlbar."
+      ],
+      "answers": [
+        "Gäbe es keine Subventionen, wäre das Produkt unbezahlbar."
+      ],
+      "translation": "If there were no subsidies, the product would be unaffordable.",
+      "explanation": "Gäbe (Konjunktiv II of geben) opens the condition: Gäbe es … = wenn es … gäbe."
+    },
+    {
+      "id": "cond-17",
+      "type": "order",
+      "words": [
+        "Hätte",
+        "sie",
+        "früher",
+        "Bescheid",
+        "gesagt,",
+        "hätten",
+        "wir",
+        "umdisponieren",
+        "können."
+      ],
+      "answers": [
+        "Hätte sie früher Bescheid gesagt, hätten wir umdisponieren können."
+      ],
+      "translation": "Had she told us earlier, we could have rearranged things.",
+      "explanation": "Unreal past with a modal in the result: hätten … umdisponieren können (double infinitive)."
+    },
+    {
+      "id": "cond-18",
+      "type": "order",
+      "words": [
+        "Sollte",
+        "die",
+        "Verbindung",
+        "abbrechen,",
+        "wählen",
+        "Sie",
+        "sich",
+        "erneut",
+        "ein."
+      ],
+      "answers": [
+        "Sollte die Verbindung abbrechen, wählen Sie sich erneut ein."
+      ],
+      "translation": "Should the connection drop, dial in again.",
+      "explanation": "Sollte replaces falls for a possible event; the main clause is an imperative starting with wählen."
+    },
+    {
+      "id": "cond-19",
+      "type": "type",
+      "prompt": "Wäre das Konzert nicht ausverkauft gewesen, ___ wir hingegangen.",
+      "hint": "(sein, Konjunktiv II)",
+      "answers": [
+        "wären"
+      ],
+      "explanation": "hingehen takes sein; unreal past result: wären … hingegangen."
+    },
+    {
+      "id": "cond-20",
+      "type": "type",
+      "prompt": "Hätte der Fahrer rechtzeitig gebremst, ___ es nicht zu dem Zusammenstoß gekommen.",
+      "hint": "(sein, Konjunktiv II)",
+      "answers": [
+        "wäre"
+      ],
+      "explanation": "zu etwas kommen takes sein: es wäre nicht zum Zusammenstoß gekommen."
+    },
+    {
+      "id": "cond-21",
+      "type": "choice",
+      "prompt": "Hättest du mich vorgewarnt, ___ ich mich besser vorbereitet.",
+      "options": [
+        "hätte",
+        "wäre",
+        "würde"
+      ],
+      "answer": "hätte",
+      "explanation": "Reflexive verbs take haben in the perfect: hätte mich vorbereitet."
+    },
+    {
+      "id": "cond-22",
+      "type": "choice",
+      "prompt": "Wäre ich an ihrer Stelle, ___ ich auf einer schriftlichen Zusage bestehen.",
+      "options": [
+        "würde",
+        "wäre",
+        "hätte"
+      ],
+      "answer": "würde",
+      "explanation": "Advice with Wäre ich …: the result clause uses würde + infinitive (würde bestehen)."
+    },
+    {
+      "id": "cond-23",
+      "type": "choice",
+      "prompt": "Wären die Unterlagen vollständig gewesen, ___ man den Antrag sofort bewilligt.",
+      "options": [
+        "hätte",
+        "wäre",
+        "würde"
+      ],
+      "answer": "hätte",
+      "explanation": "bewilligen takes haben: hätte … bewilligt."
+    },
+    {
+      "id": "cond-24",
+      "type": "order",
+      "words": [
+        "Wäre",
+        "der",
+        "Flug",
+        "nicht",
+        "annulliert",
+        "worden,",
+        "wären",
+        "wir",
+        "längst",
+        "zu",
+        "Hause."
+      ],
+      "answers": [
+        "Wäre der Flug nicht annulliert worden, wären wir längst zu Hause."
+      ],
+      "translation": "If the flight hadn't been cancelled, we would have been home long ago.",
+      "explanation": "A passive condition (Wäre … annulliert worden) with a present-time result (wären … zu Hause)."
+    },
+    {
+      "id": "cond-25",
+      "type": "order",
+      "words": [
+        "Hättest",
+        "du",
+        "mir",
+        "geholfen,",
+        "wäre",
+        "ich",
+        "schneller",
+        "fertig",
+        "gewesen."
+      ],
+      "answers": [
+        "Hättest du mir geholfen, wäre ich schneller fertig gewesen."
+      ],
+      "translation": "Had you helped me, I would have finished sooner.",
+      "explanation": "Hättest du … geholfen = wenn du … geholfen hättest; result: wäre … fertig gewesen."
+    },
+    {
+      "id": "cond-26",
+      "type": "order",
+      "words": [
+        "Sollte",
+        "jemand",
+        "nach",
+        "mir",
+        "fragen,",
+        "bin",
+        "ich",
+        "in",
+        "einer",
+        "Besprechung."
+      ],
+      "answers": [
+        "Sollte jemand nach mir fragen, bin ich in einer Besprechung."
+      ],
+      "translation": "Should anyone ask for me, I'm in a meeting.",
+      "explanation": "Sollte + subject opens a possible condition; the indicative main clause starts with bin."
+    },
+    {
+      "id": "cond-27",
+      "type": "order",
+      "words": [
+        "Wäre",
+        "die",
+        "Miete",
+        "nicht",
+        "so",
+        "horrend,",
+        "würde",
+        "ich",
+        "sofort",
+        "einziehen."
+      ],
+      "answers": [
+        "Wäre die Miete nicht so horrend, würde ich sofort einziehen."
+      ],
+      "translation": "If the rent weren't so exorbitant, I would move in at once.",
+      "explanation": "Wäre … = wenn … wäre; the result clause starts with würde."
+    },
+    {
+      "id": "cond-28",
+      "type": "order",
+      "words": [
+        "Hätte",
+        "ich",
+        "das",
+        "Passwort",
+        "parat,",
+        "könnte",
+        "ich",
+        "die",
+        "Datei",
+        "öffnen."
+      ],
+      "answers": [
+        "Hätte ich das Passwort parat, könnte ich die Datei öffnen."
+      ],
+      "translation": "If I had the password to hand, I could open the file.",
+      "explanation": "Hätte ich … = wenn ich … hätte; result clause with könnte + infinitive."
+    },
+    {
+      "id": "cond-29",
+      "type": "type",
+      "prompt": "Hätten wir rechtzeitig reserviert, ___ wir einen besseren Tisch bekommen.",
+      "hint": "(haben, Konjunktiv II)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "bekommen takes haben: hätten … bekommen (unreal past)."
+    },
+    {
+      "id": "cond-30",
+      "type": "type",
+      "prompt": "Wäre die Zugverbindung besser, ___ ich öfter zu Besuch.",
+      "hint": "(kommen – one-word Konjunktiv II form)",
+      "answers": [
+        "käme"
+      ],
+      "explanation": "The gap takes one word, so the synthetic Konjunktiv II of kommen: käme (würde … kommen would need two words)."
+    }
+  ]
+}

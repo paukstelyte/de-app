@@ -1,0 +1,413 @@
+{
+  "slug": "futur-ii",
+  "instructions": "Complete or build each sentence in the future perfect (werden + participle + haben/sein).",
+  "items": [
+    {
+      "id": "fut2-01",
+      "type": "choice",
+      "prompt": "Bis Ende des Quartals ___ wir sämtliche Altlasten beseitigt haben.",
+      "options": [
+        "werden",
+        "sind",
+        "haben",
+        "wurden"
+      ],
+      "answer": "werden",
+      "explanation": "Futur II starts with the present of werden: wir werden … beseitigt haben (finished by the end of the quarter)."
+    },
+    {
+      "id": "fut2-02",
+      "type": "choice",
+      "prompt": "Bis zur Abstimmung wird der Ausschuss den Gesetzentwurf gründlich geprüft ___.",
+      "options": [
+        "haben",
+        "sein",
+        "werden"
+      ],
+      "answer": "haben",
+      "explanation": "prüfen forms its perfect with haben, so the Futur II ends in geprüft haben."
+    },
+    {
+      "id": "fut2-03",
+      "type": "choice",
+      "prompt": "Die Delegation wird inzwischen in Genf eingetroffen ___.",
+      "options": [
+        "sein",
+        "haben",
+        "werden"
+      ],
+      "answer": "sein",
+      "explanation": "eintreffen (to arrive) forms its perfect with sein: eingetroffen sein. inzwischen marks a guess about what has already happened."
+    },
+    {
+      "id": "fut2-04",
+      "type": "choice",
+      "prompt": "Der Paketbote wird das Paket wohl beim Nachbarn abgegeben ___.",
+      "options": [
+        "haben",
+        "sein",
+        "worden"
+      ],
+      "answer": "haben",
+      "explanation": "wohl + Futur II is a guess about the past. abgeben takes haben; worden would only fit a passive with das Paket as subject."
+    },
+    {
+      "id": "fut2-05",
+      "type": "choice",
+      "prompt": "Keine Sorge, bis du zurückkommst, ___ ich die Wohnung längst aufgeräumt haben.",
+      "options": [
+        "werde",
+        "habe",
+        "würde",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "Something completed before a future moment: ich werde … aufgeräumt haben. würde would make it hypothetical, which the context does not."
+    },
+    {
+      "id": "fut2-06",
+      "type": "choice",
+      "prompt": "Morgen um diese Zeit ___ wir die Prüfung schon hinter uns gebracht haben.",
+      "options": [
+        "werden",
+        "würden",
+        "haben",
+        "sind"
+      ],
+      "answer": "werden",
+      "explanation": "Morgen um diese Zeit points to a future moment by which the action is complete: werden + hinter uns gebracht haben."
+    },
+    {
+      "id": "fut2-07",
+      "type": "choice",
+      "prompt": "Bis zur Eröffnung wird man die Mängel hoffentlich ___ haben.",
+      "options": [
+        "behoben",
+        "beheben",
+        "behebt",
+        "gehoben"
+      ],
+      "answer": "behoben",
+      "explanation": "Futur II needs the past participle: beheben → behoben (no ge- because of the prefix be-). gehoben is the participle of heben."
+    },
+    {
+      "id": "fut2-08",
+      "type": "choice",
+      "prompt": "Bis zum Herbst wird der Grundwasserspiegel deutlich gesunken ___.",
+      "options": [
+        "sein",
+        "haben",
+        "werden"
+      ],
+      "answer": "sein",
+      "explanation": "sinken is a change of state and takes sein, so the Futur II ends in gesunken sein."
+    },
+    {
+      "id": "fut2-09",
+      "type": "choice",
+      "prompt": "Bei dem Verkehr wird die Feuerwehr wohl erst spät am Unfallort ___ sein.",
+      "options": [
+        "eingetroffen",
+        "eintreffen",
+        "getroffen",
+        "eintraf"
+      ],
+      "answer": "eingetroffen",
+      "explanation": "Separable eintreffen puts -ge- after the prefix: ein-ge-troffen. getroffen (from treffen) means met/hit, not arrived."
+    },
+    {
+      "id": "fut2-10",
+      "type": "choice",
+      "prompt": "Bis die Bauarbeiten abgeschlossen sind, ___ Jahre vergangen sein.",
+      "options": [
+        "werden",
+        "wird",
+        "sind",
+        "haben"
+      ],
+      "answer": "werden",
+      "explanation": "The subject is Jahre (plural), so werden; vergehen takes sein: Jahre werden vergangen sein."
+    },
+    {
+      "id": "fut2-11",
+      "type": "type",
+      "prompt": "Bis zur Konferenz werde ich die Präsentation ___ haben.",
+      "hint": "(überarbeiten)",
+      "answers": [
+        "überarbeitet"
+      ],
+      "explanation": "überarbeiten has an inseparable prefix (über- is unstressed), so the participle has no ge-: überarbeitet."
+    },
+    {
+      "id": "fut2-12",
+      "type": "type",
+      "prompt": "Bis 2035 wird die Stadt sämtliche Kohlekraftwerke ___ haben.",
+      "hint": "(stilllegen)",
+      "answers": [
+        "stillgelegt"
+      ],
+      "explanation": "stilllegen is separable: still-ge-legt. Futur II = wird + participle + haben."
+    },
+    {
+      "id": "fut2-13",
+      "type": "type",
+      "prompt": "Bis die Verhandlungen beginnen, wird der Anwalt die Akten ___ haben.",
+      "hint": "(durchsehen)",
+      "answers": [
+        "durchgesehen"
+      ],
+      "explanation": "durchsehen (to look through) is separable here, so -ge- goes after durch: durchgesehen."
+    },
+    {
+      "id": "fut2-14",
+      "type": "type",
+      "prompt": "Sie hat nicht abgesagt – sie wird den Termin wohl ___ haben.",
+      "hint": "(verschwitzen, colloquial: forget)",
+      "answers": [
+        "verschwitzt"
+      ],
+      "explanation": "wohl + Futur II guesses about the past. verschwitzen has the prefix ver-, so no ge-: verschwitzt."
+    },
+    {
+      "id": "fut2-15",
+      "type": "type",
+      "prompt": "Die Wanderer werden bei diesem Nebel wohl vom Weg ___ sein.",
+      "hint": "(abkommen)",
+      "answers": [
+        "abgekommen"
+      ],
+      "explanation": "vom Weg abkommen (to stray from the path) takes sein; the separable participle is ab-ge-kommen."
+    },
+    {
+      "id": "fut2-16",
+      "type": "type",
+      "prompt": "Bis zur Wahl wird die Partei ihr Programm grundlegend ___ haben.",
+      "hint": "(überdenken)",
+      "answers": [
+        "überdacht"
+      ],
+      "explanation": "überdenken is inseparable and irregular like denken: überdacht (no ge-)."
+    },
+    {
+      "id": "fut2-17",
+      "type": "type",
+      "prompt": "Wenn wir endlich ankommen, ___ der Film längst angefangen haben.",
+      "hint": "(werden)",
+      "answers": [
+        "wird"
+      ],
+      "explanation": "Singular subject der Film: wird … angefangen haben – the film will already have started by then."
+    },
+    {
+      "id": "fut2-18",
+      "type": "type",
+      "prompt": "Die Gäste ___ bei dem Stau wohl erst nach Mitternacht angekommen sein.",
+      "hint": "(werden)",
+      "answers": [
+        "werden"
+      ],
+      "explanation": "Plural subject die Gäste: werden … angekommen sein, a guess (wohl) about something already past."
+    },
+    {
+      "id": "fut2-19",
+      "type": "type",
+      "prompt": "Bis zum Jahresende wird sich die Lage hoffentlich ___ haben.",
+      "hint": "(entspannen)",
+      "answers": [
+        "entspannt"
+      ],
+      "explanation": "Reflexive verbs form the perfect with haben: sich entspannt haben. ent- is inseparable, so no ge-."
+    },
+    {
+      "id": "fut2-20",
+      "type": "type",
+      "prompt": "Bis du diese Nachricht liest, werde ich schon in den Flieger gestiegen ___.",
+      "hint": "(haben or sein?)",
+      "answers": [
+        "sein"
+      ],
+      "explanation": "steigen (movement) takes sein, so the Futur II ends in gestiegen sein."
+    },
+    {
+      "id": "fut2-21",
+      "type": "type",
+      "prompt": "Bis Mitte Mai wird das Gericht über die Klage ___ haben.",
+      "hint": "(entscheiden)",
+      "answers": [
+        "entschieden"
+      ],
+      "explanation": "entscheiden is strong and inseparable: entschieden, without ge-."
+    },
+    {
+      "id": "fut2-22",
+      "type": "type",
+      "prompt": "In zehn Jahren werden Roboter viele Routinetätigkeiten ___ haben.",
+      "hint": "(übernehmen)",
+      "answers": [
+        "übernommen"
+      ],
+      "explanation": "übernehmen (to take over) is inseparable and strong: übernommen."
+    },
+    {
+      "id": "fut2-23",
+      "type": "order",
+      "words": [
+        "Bis",
+        "wann",
+        "werden",
+        "Sie",
+        "den",
+        "Bericht",
+        "fertiggestellt",
+        "haben?"
+      ],
+      "answers": [
+        "Bis wann werden Sie den Bericht fertiggestellt haben?"
+      ],
+      "translation": "By when will you have completed the report?",
+      "explanation": "Question word Bis wann first, werden second; the participle and haben close the sentence."
+    },
+    {
+      "id": "fut2-24",
+      "type": "order",
+      "words": [
+        "Ich",
+        "nehme",
+        "an,",
+        "dass",
+        "sie",
+        "die",
+        "Frist",
+        "versäumt",
+        "haben",
+        "wird."
+      ],
+      "answers": [
+        "Ich nehme an, dass sie die Frist versäumt haben wird."
+      ],
+      "translation": "I assume that she will have missed the deadline.",
+      "explanation": "In the dass-clause the finite verb wird moves to the very end: versäumt haben wird."
+    },
+    {
+      "id": "fut2-25",
+      "type": "order",
+      "words": [
+        "Wird",
+        "sie",
+        "bis",
+        "dahin",
+        "eine",
+        "Lösung",
+        "gefunden",
+        "haben?"
+      ],
+      "answers": [
+        "Wird sie bis dahin eine Lösung gefunden haben?"
+      ],
+      "translation": "Will she have found a solution by then?",
+      "explanation": "Yes/no question: Wird first, the pronoun sie directly after it, and gefunden haben at the end."
+    },
+    {
+      "id": "fut2-26",
+      "type": "order",
+      "words": [
+        "Ob",
+        "sie",
+        "die",
+        "Stelle",
+        "wohl",
+        "bekommen",
+        "haben",
+        "wird?"
+      ],
+      "answers": [
+        "Ob sie die Stelle wohl bekommen haben wird?",
+        "Ob sie wohl die Stelle bekommen haben wird?"
+      ],
+      "translation": "I wonder whether she got the job.",
+      "explanation": "An independent ob-question with wohl speculates about the past; wird stands last as in any ob-clause."
+    },
+    {
+      "id": "fut2-27",
+      "type": "order",
+      "words": [
+        "Wie",
+        "viele",
+        "Kilometer",
+        "wird",
+        "er",
+        "bis",
+        "heute",
+        "Abend",
+        "zurückgelegt",
+        "haben?"
+      ],
+      "answers": [
+        "Wie viele Kilometer wird er bis heute Abend zurückgelegt haben?"
+      ],
+      "translation": "How many kilometres will he have covered by this evening?",
+      "explanation": "Wie viele Kilometer fills first position, wird is second, and zurückgelegt haben closes the sentence."
+    },
+    {
+      "id": "fut2-28",
+      "type": "order",
+      "words": [
+        "Ich",
+        "bin",
+        "sicher,",
+        "dass",
+        "die",
+        "Preise",
+        "bis",
+        "dahin",
+        "gestiegen",
+        "sein",
+        "werden."
+      ],
+      "answers": [
+        "Ich bin sicher, dass die Preise bis dahin gestiegen sein werden.",
+        "Ich bin sicher, dass bis dahin die Preise gestiegen sein werden."
+      ],
+      "translation": "I am sure that prices will have risen by then.",
+      "explanation": "In the dass-clause werden goes last: gestiegen sein werden. bis dahin can stand before or after the subject."
+    },
+    {
+      "id": "fut2-29",
+      "type": "order",
+      "words": [
+        "Jonas",
+        "wird",
+        "den",
+        "Schlüssel",
+        "wohl",
+        "verlegt",
+        "haben."
+      ],
+      "answers": [
+        "Jonas wird den Schlüssel wohl verlegt haben.",
+        "Jonas wird wohl den Schlüssel verlegt haben."
+      ],
+      "translation": "Jonas has probably mislaid the key.",
+      "explanation": "wird + verlegt haben with wohl is a guess about the past; wohl may come before or after the object."
+    },
+    {
+      "id": "fut2-30",
+      "type": "order",
+      "words": [
+        "Wo",
+        "wird",
+        "er",
+        "nur",
+        "so",
+        "lange",
+        "geblieben",
+        "sein?"
+      ],
+      "answers": [
+        "Wo wird er nur so lange geblieben sein?"
+      ],
+      "translation": "Where on earth can he have been all this time?",
+      "explanation": "A wondering question about the past: wird second, bleiben takes sein, so geblieben sein at the end."
+    }
+  ]
+}

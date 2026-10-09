@@ -798,49 +798,91 @@
     "title": "Future perfect (Futur II)",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "For something that will be finished by a point in the future, or a guess about the past: werden + participle + haben/sein. Bis Montag werde ich es geschafft haben. Er wird wohl den Zug verpasst haben."
+    "summary": "For something that will be finished by a point in the future, or a guess about the past: werden + participle + haben/sein. Bis Montag werde ich es geschafft haben. Er wird wohl den Zug verpasst haben.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/futur-ii/practice"
+      }
+    ]
   },
   {
     "slug": "modal-verbs-subjective",
     "title": "Modal verbs for assumptions and hearsay",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "Modal verbs can show how sure you are or where information came from: Sie muss krank sein (I'm sure), Er dürfte zu Hause sein (probably), Er soll sehr reich sein (people say), Sie will es allein geschafft haben (she claims)."
+    "summary": "Modal verbs can show how sure you are or where information came from: Sie muss krank sein (I'm sure), Er dürfte zu Hause sein (probably), Er soll sehr reich sein (people say), Sie will es allein geschafft haben (she claims).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/modal-verbs-subjective/practice"
+      }
+    ]
   },
   {
     "slug": "passive-impersonal",
     "title": "Impersonal passive and passive with dative verbs",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "The passive also works without a subject: Hier wird nicht geraucht. Am Samstag wird getanzt. Verbs with a dative object keep the dative: Mir wurde geholfen (not Ich wurde geholfen)."
+    "summary": "The passive also works without a subject: Hier wird nicht geraucht. Am Samstag wird getanzt. Verbs with a dative object keep the dative: Mir wurde geholfen (not Ich wurde geholfen).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/passive-impersonal/practice"
+      }
+    ]
   },
   {
     "slug": "konjunktiv-i-advanced",
     "title": "Reported speech in all tenses (Konjunktiv I)",
     "level": "C1",
     "group": "Verbs and tenses",
-    "summary": "Reporting past events, questions and requests: Er sagte, er habe es nicht gewusst. Sie fragte, ob ich Zeit hätte. Er meinte, ich solle warten."
+    "summary": "Reporting past events, questions and requests: Er sagte, er habe es nicht gewusst. Sie fragte, ob ich Zeit hätte. Er meinte, ich solle warten.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/konjunktiv-i-advanced/practice"
+      }
+    ]
   },
   {
     "slug": "conditionals-without-wenn",
     "title": "Conditions without wenn",
     "level": "C1",
     "group": "Linking ideas",
-    "summary": "In formal German a condition can start with the verb instead of wenn: Sollte es regnen, bleiben wir zu Hause. Hätte ich das gewusst, wäre ich gekommen."
+    "summary": "In formal German a condition can start with the verb instead of wenn: Sollte es regnen, bleiben wir zu Hause. Hätte ich das gewusst, wäre ich gekommen.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/conditionals-without-wenn/practice"
+      }
+    ]
   },
   {
     "slug": "participle-phrases-extended",
     "title": "Extended participle phrases",
     "level": "C1",
     "group": "Adjectives",
-    "summary": "Long descriptions packed between the article and the noun, typical of newspapers and academic texts: die von der Regierung gestern beschlossenen Maßnahmen (the measures that the government decided yesterday)."
+    "summary": "Long descriptions packed between the article and the noun, typical of newspapers and academic texts: die von der Regierung gestern beschlossenen Maßnahmen (the measures that the government decided yesterday).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/participle-phrases-extended/practice"
+      }
+    ]
   },
   {
     "slug": "participle-clauses",
     "title": "Participle clauses (Im Büro angekommen, …)",
     "level": "C1",
     "group": "Linking ideas",
-    "summary": "A participle can replace a whole clause: Im Büro angekommen, rief sie sofort an (= Als sie im Büro angekommen war, …). Vom Lärm geweckt, stand er auf."
+    "summary": "A participle can replace a whole clause: Im Büro angekommen, rief sie sofort an (= Als sie im Büro angekommen war, …). Vom Lärm geweckt, stand er auf.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/participle-clauses/practice"
+      }
+    ]
   },
   {
     "slug": "nominal-verbal-style",

@@ -8,58 +8,65 @@ import s4 from "./data/articles-definite-indefinite.json" with { type: "json" };
 import s5 from "./data/comparative-superlative.json" with { type: "json" };
 import s6 from "./data/compound-nouns.json" with { type: "json" };
 import s7 from "./data/concessive-obwohl-trotzdem.json" with { type: "json" };
-import s8 from "./data/consequence-deshalb.json" with { type: "json" };
-import s9 from "./data/coordinating-conjunctions.json" with { type: "json" };
-import s10 from "./data/dative-case.json" with { type: "json" };
-import s11 from "./data/future-tense.json" with { type: "json" };
-import s12 from "./data/genitive-case.json" with { type: "json" };
-import s13 from "./data/imperative.json" with { type: "json" };
-import s14 from "./data/indefinite-pronouns.json" with { type: "json" };
-import s15 from "./data/indirect-questions.json" with { type: "json" };
-import s16 from "./data/infinitive-clauses-ohne-statt.json" with { type: "json" };
-import s17 from "./data/infinitive-with-zu.json" with { type: "json" };
-import s18 from "./data/konjunktiv-i-reported-speech.json" with { type: "json" };
-import s19 from "./data/konjunktiv-ii-hypothetical.json" with { type: "json" };
-import s20 from "./data/konjunktiv-ii-past.json" with { type: "json" };
-import s21 from "./data/konjunktiv-ii-polite.json" with { type: "json" };
-import s22 from "./data/modal-particles.json" with { type: "json" };
-import s23 from "./data/modal-verbs.json" with { type: "json" };
-import s24 from "./data/n-declension.json" with { type: "json" };
-import s25 from "./data/negation-nicht-kein.json" with { type: "json" };
-import s26 from "./data/nominalisation.json" with { type: "json" };
-import s27 from "./data/ordinal-numbers-dates.json" with { type: "json" };
-import s28 from "./data/participles-as-adjectives.json" with { type: "json" };
-import s29 from "./data/passive-advanced.json" with { type: "json" };
-import s30 from "./data/passive-alternatives.json" with { type: "json" };
-import s31 from "./data/passive-present-past.json" with { type: "json" };
-import s32 from "./data/past-modal-verbs.json" with { type: "json" };
-import s33 from "./data/past-perfect.json" with { type: "json" };
-import s34 from "./data/past-sein-haben.json" with { type: "json" };
-import s35 from "./data/perfect-tense.json" with { type: "json" };
-import s36 from "./data/personal-pronouns.json" with { type: "json" };
-import s37 from "./data/plural-nouns.json" with { type: "json" };
-import s38 from "./data/possessive-articles.json" with { type: "json" };
-import s39 from "./data/prepositions-accusative.json" with { type: "json" };
-import s40 from "./data/prepositions-dative.json" with { type: "json" };
-import s41 from "./data/prepositions-genitive.json" with { type: "json" };
-import s42 from "./data/present-tense-regular.json" with { type: "json" };
-import s43 from "./data/present-tense-stem-change.json" with { type: "json" };
-import s44 from "./data/pronouns-accusative-dative.json" with { type: "json" };
-import s45 from "./data/questions.json" with { type: "json" };
-import s46 from "./data/reflexive-verbs.json" with { type: "json" };
-import s47 from "./data/relative-clauses-advanced.json" with { type: "json" };
-import s48 from "./data/relative-clauses.json" with { type: "json" };
-import s49 from "./data/sein-haben.json" with { type: "json" };
-import s50 from "./data/separable-verbs.json" with { type: "json" };
-import s51 from "./data/simple-past.json" with { type: "json" };
-import s52 from "./data/subordinate-clauses.json" with { type: "json" };
-import s53 from "./data/time-prepositions.json" with { type: "json" };
-import s54 from "./data/two-part-conjunctions.json" with { type: "json" };
-import s55 from "./data/two-way-prepositions.json" with { type: "json" };
-import s56 from "./data/um-zu-damit.json" with { type: "json" };
-import s57 from "./data/verbs-with-dative.json" with { type: "json" };
-import s58 from "./data/verbs-with-prepositions.json" with { type: "json" };
-import s59 from "./data/word-order-verb-second.json" with { type: "json" };
+import s8 from "./data/conditionals-without-wenn.json" with { type: "json" };
+import s9 from "./data/consequence-deshalb.json" with { type: "json" };
+import s10 from "./data/coordinating-conjunctions.json" with { type: "json" };
+import s11 from "./data/dative-case.json" with { type: "json" };
+import s12 from "./data/futur-ii.json" with { type: "json" };
+import s13 from "./data/future-tense.json" with { type: "json" };
+import s14 from "./data/genitive-case.json" with { type: "json" };
+import s15 from "./data/imperative.json" with { type: "json" };
+import s16 from "./data/indefinite-pronouns.json" with { type: "json" };
+import s17 from "./data/indirect-questions.json" with { type: "json" };
+import s18 from "./data/infinitive-clauses-ohne-statt.json" with { type: "json" };
+import s19 from "./data/infinitive-with-zu.json" with { type: "json" };
+import s20 from "./data/konjunktiv-i-advanced.json" with { type: "json" };
+import s21 from "./data/konjunktiv-i-reported-speech.json" with { type: "json" };
+import s22 from "./data/konjunktiv-ii-hypothetical.json" with { type: "json" };
+import s23 from "./data/konjunktiv-ii-past.json" with { type: "json" };
+import s24 from "./data/konjunktiv-ii-polite.json" with { type: "json" };
+import s25 from "./data/modal-particles.json" with { type: "json" };
+import s26 from "./data/modal-verbs-subjective.json" with { type: "json" };
+import s27 from "./data/modal-verbs.json" with { type: "json" };
+import s28 from "./data/n-declension.json" with { type: "json" };
+import s29 from "./data/negation-nicht-kein.json" with { type: "json" };
+import s30 from "./data/nominalisation.json" with { type: "json" };
+import s31 from "./data/ordinal-numbers-dates.json" with { type: "json" };
+import s32 from "./data/participle-clauses.json" with { type: "json" };
+import s33 from "./data/participle-phrases-extended.json" with { type: "json" };
+import s34 from "./data/participles-as-adjectives.json" with { type: "json" };
+import s35 from "./data/passive-advanced.json" with { type: "json" };
+import s36 from "./data/passive-alternatives.json" with { type: "json" };
+import s37 from "./data/passive-impersonal.json" with { type: "json" };
+import s38 from "./data/passive-present-past.json" with { type: "json" };
+import s39 from "./data/past-modal-verbs.json" with { type: "json" };
+import s40 from "./data/past-perfect.json" with { type: "json" };
+import s41 from "./data/past-sein-haben.json" with { type: "json" };
+import s42 from "./data/perfect-tense.json" with { type: "json" };
+import s43 from "./data/personal-pronouns.json" with { type: "json" };
+import s44 from "./data/plural-nouns.json" with { type: "json" };
+import s45 from "./data/possessive-articles.json" with { type: "json" };
+import s46 from "./data/prepositions-accusative.json" with { type: "json" };
+import s47 from "./data/prepositions-dative.json" with { type: "json" };
+import s48 from "./data/prepositions-genitive.json" with { type: "json" };
+import s49 from "./data/present-tense-regular.json" with { type: "json" };
+import s50 from "./data/present-tense-stem-change.json" with { type: "json" };
+import s51 from "./data/pronouns-accusative-dative.json" with { type: "json" };
+import s52 from "./data/questions.json" with { type: "json" };
+import s53 from "./data/reflexive-verbs.json" with { type: "json" };
+import s54 from "./data/relative-clauses-advanced.json" with { type: "json" };
+import s55 from "./data/relative-clauses.json" with { type: "json" };
+import s56 from "./data/sein-haben.json" with { type: "json" };
+import s57 from "./data/separable-verbs.json" with { type: "json" };
+import s58 from "./data/simple-past.json" with { type: "json" };
+import s59 from "./data/subordinate-clauses.json" with { type: "json" };
+import s60 from "./data/time-prepositions.json" with { type: "json" };
+import s61 from "./data/two-part-conjunctions.json" with { type: "json" };
+import s62 from "./data/two-way-prepositions.json" with { type: "json" };
+import s63 from "./data/um-zu-damit.json" with { type: "json" };
+import s64 from "./data/verbs-with-dative.json" with { type: "json" };
+import s65 from "./data/verbs-with-prepositions.json" with { type: "json" };
+import s66 from "./data/word-order-verb-second.json" with { type: "json" };
 
 export const EXERCISE_SETS: Record<string, ExerciseSet> = {
   "accusative-case": s0 as ExerciseSet,
@@ -70,56 +77,63 @@ export const EXERCISE_SETS: Record<string, ExerciseSet> = {
   "comparative-superlative": s5 as ExerciseSet,
   "compound-nouns": s6 as ExerciseSet,
   "concessive-obwohl-trotzdem": s7 as ExerciseSet,
-  "consequence-deshalb": s8 as ExerciseSet,
-  "coordinating-conjunctions": s9 as ExerciseSet,
-  "dative-case": s10 as ExerciseSet,
-  "future-tense": s11 as ExerciseSet,
-  "genitive-case": s12 as ExerciseSet,
-  "imperative": s13 as ExerciseSet,
-  "indefinite-pronouns": s14 as ExerciseSet,
-  "indirect-questions": s15 as ExerciseSet,
-  "infinitive-clauses-ohne-statt": s16 as ExerciseSet,
-  "infinitive-with-zu": s17 as ExerciseSet,
-  "konjunktiv-i-reported-speech": s18 as ExerciseSet,
-  "konjunktiv-ii-hypothetical": s19 as ExerciseSet,
-  "konjunktiv-ii-past": s20 as ExerciseSet,
-  "konjunktiv-ii-polite": s21 as ExerciseSet,
-  "modal-particles": s22 as ExerciseSet,
-  "modal-verbs": s23 as ExerciseSet,
-  "n-declension": s24 as ExerciseSet,
-  "negation-nicht-kein": s25 as ExerciseSet,
-  "nominalisation": s26 as ExerciseSet,
-  "ordinal-numbers-dates": s27 as ExerciseSet,
-  "participles-as-adjectives": s28 as ExerciseSet,
-  "passive-advanced": s29 as ExerciseSet,
-  "passive-alternatives": s30 as ExerciseSet,
-  "passive-present-past": s31 as ExerciseSet,
-  "past-modal-verbs": s32 as ExerciseSet,
-  "past-perfect": s33 as ExerciseSet,
-  "past-sein-haben": s34 as ExerciseSet,
-  "perfect-tense": s35 as ExerciseSet,
-  "personal-pronouns": s36 as ExerciseSet,
-  "plural-nouns": s37 as ExerciseSet,
-  "possessive-articles": s38 as ExerciseSet,
-  "prepositions-accusative": s39 as ExerciseSet,
-  "prepositions-dative": s40 as ExerciseSet,
-  "prepositions-genitive": s41 as ExerciseSet,
-  "present-tense-regular": s42 as ExerciseSet,
-  "present-tense-stem-change": s43 as ExerciseSet,
-  "pronouns-accusative-dative": s44 as ExerciseSet,
-  "questions": s45 as ExerciseSet,
-  "reflexive-verbs": s46 as ExerciseSet,
-  "relative-clauses-advanced": s47 as ExerciseSet,
-  "relative-clauses": s48 as ExerciseSet,
-  "sein-haben": s49 as ExerciseSet,
-  "separable-verbs": s50 as ExerciseSet,
-  "simple-past": s51 as ExerciseSet,
-  "subordinate-clauses": s52 as ExerciseSet,
-  "time-prepositions": s53 as ExerciseSet,
-  "two-part-conjunctions": s54 as ExerciseSet,
-  "two-way-prepositions": s55 as ExerciseSet,
-  "um-zu-damit": s56 as ExerciseSet,
-  "verbs-with-dative": s57 as ExerciseSet,
-  "verbs-with-prepositions": s58 as ExerciseSet,
-  "word-order-verb-second": s59 as ExerciseSet,
+  "conditionals-without-wenn": s8 as ExerciseSet,
+  "consequence-deshalb": s9 as ExerciseSet,
+  "coordinating-conjunctions": s10 as ExerciseSet,
+  "dative-case": s11 as ExerciseSet,
+  "futur-ii": s12 as ExerciseSet,
+  "future-tense": s13 as ExerciseSet,
+  "genitive-case": s14 as ExerciseSet,
+  "imperative": s15 as ExerciseSet,
+  "indefinite-pronouns": s16 as ExerciseSet,
+  "indirect-questions": s17 as ExerciseSet,
+  "infinitive-clauses-ohne-statt": s18 as ExerciseSet,
+  "infinitive-with-zu": s19 as ExerciseSet,
+  "konjunktiv-i-advanced": s20 as ExerciseSet,
+  "konjunktiv-i-reported-speech": s21 as ExerciseSet,
+  "konjunktiv-ii-hypothetical": s22 as ExerciseSet,
+  "konjunktiv-ii-past": s23 as ExerciseSet,
+  "konjunktiv-ii-polite": s24 as ExerciseSet,
+  "modal-particles": s25 as ExerciseSet,
+  "modal-verbs-subjective": s26 as ExerciseSet,
+  "modal-verbs": s27 as ExerciseSet,
+  "n-declension": s28 as ExerciseSet,
+  "negation-nicht-kein": s29 as ExerciseSet,
+  "nominalisation": s30 as ExerciseSet,
+  "ordinal-numbers-dates": s31 as ExerciseSet,
+  "participle-clauses": s32 as ExerciseSet,
+  "participle-phrases-extended": s33 as ExerciseSet,
+  "participles-as-adjectives": s34 as ExerciseSet,
+  "passive-advanced": s35 as ExerciseSet,
+  "passive-alternatives": s36 as ExerciseSet,
+  "passive-impersonal": s37 as ExerciseSet,
+  "passive-present-past": s38 as ExerciseSet,
+  "past-modal-verbs": s39 as ExerciseSet,
+  "past-perfect": s40 as ExerciseSet,
+  "past-sein-haben": s41 as ExerciseSet,
+  "perfect-tense": s42 as ExerciseSet,
+  "personal-pronouns": s43 as ExerciseSet,
+  "plural-nouns": s44 as ExerciseSet,
+  "possessive-articles": s45 as ExerciseSet,
+  "prepositions-accusative": s46 as ExerciseSet,
+  "prepositions-dative": s47 as ExerciseSet,
+  "prepositions-genitive": s48 as ExerciseSet,
+  "present-tense-regular": s49 as ExerciseSet,
+  "present-tense-stem-change": s50 as ExerciseSet,
+  "pronouns-accusative-dative": s51 as ExerciseSet,
+  "questions": s52 as ExerciseSet,
+  "reflexive-verbs": s53 as ExerciseSet,
+  "relative-clauses-advanced": s54 as ExerciseSet,
+  "relative-clauses": s55 as ExerciseSet,
+  "sein-haben": s56 as ExerciseSet,
+  "separable-verbs": s57 as ExerciseSet,
+  "simple-past": s58 as ExerciseSet,
+  "subordinate-clauses": s59 as ExerciseSet,
+  "time-prepositions": s60 as ExerciseSet,
+  "two-part-conjunctions": s61 as ExerciseSet,
+  "two-way-prepositions": s62 as ExerciseSet,
+  "um-zu-damit": s63 as ExerciseSet,
+  "verbs-with-dative": s64 as ExerciseSet,
+  "verbs-with-prepositions": s65 as ExerciseSet,
+  "word-order-verb-second": s66 as ExerciseSet,
 };

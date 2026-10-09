@@ -1,0 +1,405 @@
+{
+  "slug": "konjunktiv-i-advanced",
+  "instructions": "Choose, type or arrange the correct form for formal written reported speech (Konjunktiv I; Konjunktiv II where Konjunktiv I looks like the indicative).",
+  "items": [
+    {
+      "id": "kia-01",
+      "type": "choice",
+      "prompt": "Der Pressesprecher erklärte, der Minister ___ von den Vorgängen nichts gewusst.",
+      "options": [
+        "habe",
+        "hat",
+        "hatte"
+      ],
+      "answer": "habe",
+      "explanation": "In a formal press report, the past is reported with Konjunktiv I habe + participle. hat/hatte are indicative."
+    },
+    {
+      "id": "kia-02",
+      "type": "choice",
+      "prompt": "Im Bericht heißt es, die Delegation ___ bereits am Vortag abgereist.",
+      "options": [
+        "sei",
+        "ist",
+        "habe"
+      ],
+      "answer": "sei",
+      "explanation": "abreisen takes sein, so the formal report uses sei + participle; ist is indicative."
+    },
+    {
+      "id": "kia-03",
+      "type": "choice",
+      "prompt": "Die Journalistin wollte wissen, ___ die Regierung die Steuern erhöhen werde.",
+      "options": [
+        "ob",
+        "dass",
+        "wenn"
+      ],
+      "answer": "ob",
+      "explanation": "A reported yes/no question is introduced by ob, with Konjunktiv I (werde) at the end."
+    },
+    {
+      "id": "kia-04",
+      "type": "choice",
+      "prompt": "Der Richter fragte den Zeugen, ___ er sich zur Tatzeit aufgehalten habe.",
+      "options": [
+        "wo",
+        "ob",
+        "dass"
+      ],
+      "answer": "wo",
+      "explanation": "A reported W-question keeps its question word (wo: sich aufhalten needs a place); the Konjunktiv I verb goes last."
+    },
+    {
+      "id": "kia-05",
+      "type": "choice",
+      "prompt": "Laut Protokoll riet die Ärztin dem Patienten, er ___ das Rauchen aufgeben.",
+      "options": [
+        "solle",
+        "soll",
+        "sollen"
+      ],
+      "answer": "solle",
+      "explanation": "In formal written reporting, advice and requests use Konjunktiv I of sollen: er solle. soll is indicative."
+    },
+    {
+      "id": "kia-06",
+      "type": "choice",
+      "prompt": "Der Vorsitzende bat die Mitglieder, sie ___ sich in der Debatte kurz fassen.",
+      "options": [
+        "sollten",
+        "sollen",
+        "solle"
+      ],
+      "answer": "sollten",
+      "explanation": "Plural Konjunktiv I sollen looks like the indicative, so formal reporting switches to Konjunktiv II sollten."
+    },
+    {
+      "id": "kia-07",
+      "type": "choice",
+      "prompt": "In ihrer Stellungnahme erklärten die Gewerkschaften, sie ___ kein Vertrauen mehr in die Geschäftsleitung.",
+      "options": [
+        "hätten",
+        "haben",
+        "habe"
+      ],
+      "answer": "hätten",
+      "explanation": "Plural Konjunktiv I haben = indicative, so the formal statement uses Konjunktiv II hätten."
+    },
+    {
+      "id": "kia-08",
+      "type": "choice",
+      "prompt": "Die Zentralbank teilte mit, sie ___ die Zinsen vorerst nicht anheben.",
+      "options": [
+        "werde",
+        "wird",
+        "wurde"
+      ],
+      "answer": "werde",
+      "explanation": "Formal report of a future statement: Konjunktiv I werde + infinitive. wird is indicative, wurde is past."
+    },
+    {
+      "id": "kia-09",
+      "type": "choice",
+      "prompt": "Laut Polizeibericht gab der Zeuge an, er ___ den Unfall nicht verhindern können.",
+      "options": [
+        "habe",
+        "sei",
+        "werde"
+      ],
+      "answer": "habe",
+      "explanation": "Modal verbs form the perfect with haben and a double infinitive: er habe nicht verhindern können."
+    },
+    {
+      "id": "kia-10",
+      "type": "choice",
+      "prompt": "Die Polizei teilte mit, der Täter ___ in Richtung Innenstadt geflohen.",
+      "options": [
+        "sei",
+        "habe",
+        "werde"
+      ],
+      "answer": "sei",
+      "explanation": "fliehen (movement) forms the perfect with sein, so the report uses sei + geflohen."
+    },
+    {
+      "id": "kia-11",
+      "type": "choice",
+      "prompt": "Der Bürgermeister erklärte öffentlich, die Anwohner ___ sich auf längere Bauarbeiten einstellen.",
+      "options": [
+        "müssten",
+        "müssen",
+        "müsse"
+      ],
+      "answer": "müssten",
+      "explanation": "Plural müssen looks the same in Konjunktiv I and the indicative, so the formal report uses Konjunktiv II müssten."
+    },
+    {
+      "id": "kia-12",
+      "type": "choice",
+      "prompt": "Die Kommission fragte in ihrem Schreiben, wie hoch die Kosten des Projekts ___.",
+      "options": [
+        "seien",
+        "sind",
+        "sei"
+      ],
+      "answer": "seien",
+      "explanation": "die Kosten is plural; sein has its own plural Konjunktiv I seien, distinct from sind."
+    },
+    {
+      "id": "kia-13",
+      "type": "type",
+      "prompt": "Die Autorin betonte im Interview, sie ___ sich bei ihrem Roman auf historische Quellen gestützt.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "Reported past in a formal text: Konjunktiv I habe + participle (sich stützen takes haben)."
+    },
+    {
+      "id": "kia-14",
+      "type": "type",
+      "prompt": "Laut Protokoll erklärte der Angeklagte, er ___ nie in der Wohnung des Opfers gewesen.",
+      "hint": "(sein)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "Konjunktiv I of sein for er is sei; reported past: sei + gewesen."
+    },
+    {
+      "id": "kia-15",
+      "type": "type",
+      "prompt": "Die Ermittler gaben an, die Verdächtigen ___ umfassend ausgesagt.",
+      "hint": "(haben)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "Plural haben equals the indicative, so formal reporting uses Konjunktiv II hätten + participle."
+    },
+    {
+      "id": "kia-16",
+      "type": "type",
+      "prompt": "Der Sprecher erklärte, die Verhandlungen ___ in der Nacht gescheitert.",
+      "hint": "(sein)",
+      "answers": [
+        "seien"
+      ],
+      "explanation": "scheitern takes sein; plural Konjunktiv I seien differs from sind, so it is used directly."
+    },
+    {
+      "id": "kia-17",
+      "type": "type",
+      "prompt": "Die Ministerin kündigte in der Pressekonferenz an, sie ___ einen Gesetzentwurf vorlegen.",
+      "hint": "(werden)",
+      "answers": [
+        "werde"
+      ],
+      "explanation": "Reported future in a formal setting: Konjunktiv I werde + infinitive."
+    },
+    {
+      "id": "kia-18",
+      "type": "type",
+      "prompt": "Im Protokoll steht, die Kollegin habe gefragt, ob ich die Unterlagen schon erhalten ___.",
+      "hint": "(haben)",
+      "answers": [
+        "hätte"
+      ],
+      "explanation": "Konjunktiv I ich habe looks like the indicative, so the formal report uses Konjunktiv II hätte."
+    },
+    {
+      "id": "kia-19",
+      "type": "type",
+      "prompt": "Der Vermieter ließ schriftlich ausrichten, man ___ die Nebenkosten bis Monatsende überweisen.",
+      "hint": "(sollen)",
+      "answers": [
+        "solle"
+      ],
+      "explanation": "A reported instruction in formal writing uses Konjunktiv I of sollen: man solle."
+    },
+    {
+      "id": "kia-20",
+      "type": "type",
+      "prompt": "Die Moderatorin wollte wissen, warum die Behörden nicht früher eingegriffen ___.",
+      "hint": "(haben)",
+      "answers": [
+        "hätten"
+      ],
+      "explanation": "Plural Konjunktiv I haben = indicative, so formal reporting uses hätten + participle."
+    },
+    {
+      "id": "kia-21",
+      "type": "type",
+      "prompt": "In der Mitteilung hieß es, die Pläne ___ bereits vor Monaten verworfen worden.",
+      "hint": "(sein)",
+      "answers": [
+        "seien"
+      ],
+      "explanation": "Reported perfect passive: Konjunktiv I of sein + participle + worden (die Pläne seien verworfen worden)."
+    },
+    {
+      "id": "kia-22",
+      "type": "type",
+      "prompt": "In seinem Attest schrieb der Arzt, der Patient ___ sich vorerst nicht körperlich belasten.",
+      "hint": "(dürfen)",
+      "answers": [
+        "dürfe"
+      ],
+      "explanation": "Reported prohibitions use Konjunktiv I of dürfen in formal writing: er dürfe nicht."
+    },
+    {
+      "id": "kia-23",
+      "type": "order",
+      "words": [
+        "Sie",
+        "gab",
+        "an,",
+        "sie",
+        "habe",
+        "von",
+        "nichts",
+        "gewusst."
+      ],
+      "answers": [
+        "Sie gab an, sie habe von nichts gewusst."
+      ],
+      "translation": "She stated that she had known nothing.",
+      "explanation": "Reported past without dass: main-clause order, Konjunktiv I habe second, participle gewusst at the end."
+    },
+    {
+      "id": "kia-24",
+      "type": "order",
+      "words": [
+        "Er",
+        "behauptete,",
+        "er",
+        "sei",
+        "zur",
+        "Tatzeit",
+        "verreist",
+        "gewesen."
+      ],
+      "answers": [
+        "Er behauptete, er sei zur Tatzeit verreist gewesen."
+      ],
+      "translation": "He claimed he had been away at the time of the crime.",
+      "explanation": "sei + verreist gewesen: the Konjunktiv I auxiliary is second, the participles close the clause."
+    },
+    {
+      "id": "kia-25",
+      "type": "order",
+      "words": [
+        "Der",
+        "Reporter",
+        "fragte,",
+        "ob",
+        "die",
+        "Entscheidung",
+        "bereits",
+        "gefallen",
+        "sei."
+      ],
+      "answers": [
+        "Der Reporter fragte, ob die Entscheidung bereits gefallen sei."
+      ],
+      "translation": "The reporter asked whether the decision had already been made.",
+      "explanation": "A reported yes/no question with ob sends the Konjunktiv I verb (sei) to the very end."
+    },
+    {
+      "id": "kia-26",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kommissarin",
+        "wollte",
+        "wissen,",
+        "wohin",
+        "der",
+        "Verdächtige",
+        "geflohen",
+        "sei."
+      ],
+      "answers": [
+        "Die Kommissarin wollte wissen, wohin der Verdächtige geflohen sei."
+      ],
+      "translation": "The inspector wanted to know where the suspect had fled to.",
+      "explanation": "A reported W-question keeps wohin; geflohen sei stands at the end."
+    },
+    {
+      "id": "kia-27",
+      "type": "order",
+      "words": [
+        "Die",
+        "Behörde",
+        "riet,",
+        "man",
+        "solle",
+        "das",
+        "Leitungswasser",
+        "abkochen."
+      ],
+      "answers": [
+        "Die Behörde riet, man solle das Leitungswasser abkochen."
+      ],
+      "translation": "The authority advised that tap water should be boiled.",
+      "explanation": "A reported recommendation: Konjunktiv I solle second in the clause, the infinitive abkochen last."
+    },
+    {
+      "id": "kia-28",
+      "type": "order",
+      "words": [
+        "Der",
+        "Konzern",
+        "teilte",
+        "mit,",
+        "er",
+        "werde",
+        "Stellen",
+        "abbauen."
+      ],
+      "answers": [
+        "Der Konzern teilte mit, er werde Stellen abbauen."
+      ],
+      "translation": "The corporation announced that it would cut jobs.",
+      "explanation": "Reported future without dass: werde in second position, abbauen at the end."
+    },
+    {
+      "id": "kia-29",
+      "type": "order",
+      "words": [
+        "Die",
+        "Veranstalter",
+        "erklärten,",
+        "alle",
+        "Karten",
+        "seien",
+        "verkauft",
+        "worden."
+      ],
+      "answers": [
+        "Die Veranstalter erklärten, alle Karten seien verkauft worden."
+      ],
+      "translation": "The organisers stated that all tickets had been sold.",
+      "explanation": "Reported perfect passive: plural Konjunktiv I seien + verkauft worden."
+    },
+    {
+      "id": "kia-30",
+      "type": "order",
+      "words": [
+        "Der",
+        "Abgeordnete",
+        "fragte,",
+        "warum",
+        "die",
+        "Mittel",
+        "gekürzt",
+        "worden",
+        "seien."
+      ],
+      "answers": [
+        "Der Abgeordnete fragte, warum die Mittel gekürzt worden seien."
+      ],
+      "translation": "The MP asked why the funds had been cut.",
+      "explanation": "Reported W-question in the passive: the whole verb group gekürzt worden seien goes to the end."
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "slug": "participle-clauses",
+  "instructions": "Complete or build each sentence with the correct participle clause.",
+  "items": [
+    {
+      "id": "pc-01",
+      "type": "choice",
+      "prompt": "In Wien ___, bezog sie zunächst ein kleines Zimmer im Studentenheim.",
+      "options": [
+        "angekommen",
+        "ankommend",
+        "ankommen",
+        "angekommene"
+      ],
+      "answer": "angekommen",
+      "explanation": "The arrival is completed before the main action, so Partizip II: In Wien angekommen = Nachdem sie in Wien angekommen war."
+    },
+    {
+      "id": "pc-02",
+      "type": "choice",
+      "prompt": "Leise vor sich hin ___, ging der alte Mann die Gasse entlang.",
+      "options": [
+        "murmelnd",
+        "gemurmelt",
+        "murmeln",
+        "murmelte"
+      ],
+      "answer": "murmelnd",
+      "explanation": "He murmurs while walking – simultaneous and active, so Partizip I: murmelnd."
+    },
+    {
+      "id": "pc-03",
+      "type": "choice",
+      "prompt": "Durch das Gewitter aus dem Schlaf ___, konnte Lena nicht wieder einschlafen.",
+      "options": [
+        "gerissen",
+        "reißend",
+        "reißen",
+        "gerissene"
+      ],
+      "answer": "gerissen",
+      "explanation": "Lena was jolted awake (passive meaning, completed), so Partizip II: aus dem Schlaf gerissen."
+    },
+    {
+      "id": "pc-04",
+      "type": "choice",
+      "prompt": "Von der Kritik sichtlich ___, verließ der Regisseur die Pressekonferenz.",
+      "options": [
+        "getroffen",
+        "treffend",
+        "treffen",
+        "getroffene"
+      ],
+      "answer": "getroffen",
+      "explanation": "The director was hurt by the criticism (passive meaning): Partizip II getroffen. treffend would mean 'apt'."
+    },
+    {
+      "id": "pc-05",
+      "type": "choice",
+      "prompt": "Von der langen Reise ___, ging Tom früh zu Bett.",
+      "options": [
+        "erschöpft",
+        "erschöpfend",
+        "erschöpfen",
+        "erschöpfte"
+      ],
+      "answer": "erschöpft",
+      "explanation": "Tom was exhausted by the trip (passive state): Partizip II erschöpft. erschöpfend means 'exhausting' (active)."
+    },
+    {
+      "id": "pc-06",
+      "type": "choice",
+      "prompt": "Den Vertrag ___, atmete die Geschäftsführerin erleichtert auf.",
+      "options": [
+        "unterzeichnet",
+        "unterzeichnend",
+        "unterzeichnen"
+      ],
+      "answer": "unterzeichnet",
+      "explanation": "The signing is finished before the relief, so Partizip II. unterzeichnen is inseparable: unterzeichnet, no ge-."
+    },
+    {
+      "id": "pc-07",
+      "type": "choice",
+      "prompt": "In ihre Arbeit ___, bemerkte sie nicht, wie die Zeit verging.",
+      "options": [
+        "vertieft",
+        "vertiefend",
+        "vertiefen",
+        "vertiefte"
+      ],
+      "answer": "vertieft",
+      "explanation": "in etwas vertieft sein (absorbed in) describes a state, so Partizip II: In ihre Arbeit vertieft."
+    },
+    {
+      "id": "pc-08",
+      "type": "choice",
+      "prompt": "Im Hotel angekommen, ___.",
+      "options": [
+        "packte sie sofort ihren Koffer aus",
+        "war das Zimmer noch nicht fertig",
+        "wurde ihr Koffer ausgepackt"
+      ],
+      "answer": "packte sie sofort ihren Koffer aus",
+      "explanation": "The participle clause refers to the subject of the main clause: the person who arrived must be the subject (sie), not das Zimmer or der Koffer."
+    },
+    {
+      "id": "pc-09",
+      "type": "choice",
+      "prompt": "Zur Abteilungsleiterin ___, musste sie plötzlich ein Team von zwanzig Leuten führen.",
+      "options": [
+        "befördert",
+        "befördernd",
+        "befördern",
+        "beförderte"
+      ],
+      "answer": "befördert",
+      "explanation": "She was promoted (passive, completed): Partizip II befördert, without ge- because of the prefix be-."
+    },
+    {
+      "id": "pc-10",
+      "type": "choice",
+      "prompt": "Im Nachhinein ___, war die Entscheidung goldrichtig.",
+      "options": [
+        "betrachtet",
+        "betrachtend",
+        "betrachten",
+        "betrachtete"
+      ],
+      "answer": "betrachtet",
+      "explanation": "Im Nachhinein betrachtet (looking back) is a fixed participle phrase with the Partizip II."
+    },
+    {
+      "id": "pc-11",
+      "type": "choice",
+      "prompt": "Streng ___, handelt es sich hier gar nicht um einen Vertrag.",
+      "options": [
+        "genommen",
+        "nehmend",
+        "nehmen",
+        "nimmt"
+      ],
+      "answer": "genommen",
+      "explanation": "Streng genommen (strictly speaking) is a fixed participle phrase with the Partizip II."
+    },
+    {
+      "id": "pc-12",
+      "type": "choice",
+      "prompt": "Anders ___: Das Projekt ist gescheitert.",
+      "options": [
+        "ausgedrückt",
+        "ausdrückend",
+        "ausdrücken",
+        "ausgedrückte"
+      ],
+      "answer": "ausgedrückt",
+      "explanation": "Anders ausgedrückt (in other words) is a fixed participle phrase; ausdrücken is separable: aus-ge-drückt."
+    },
+    {
+      "id": "pc-13",
+      "type": "type",
+      "prompt": "Erst vor Kurzem ___, kennt er sich in der Stadt noch kaum aus.",
+      "hint": "(zuziehen)",
+      "answers": [
+        "zugezogen"
+      ],
+      "explanation": "Moving here is completed, so Partizip II; zuziehen is separable: zu-ge-zogen."
+    },
+    {
+      "id": "pc-14",
+      "type": "type",
+      "prompt": "Ein Lied vor sich hin ___, räumte Anna die Küche auf.",
+      "hint": "(summen)",
+      "answers": [
+        "summend"
+      ],
+      "explanation": "Humming and tidying happen at the same time, so Partizip I: summen → summend."
+    },
+    {
+      "id": "pc-15",
+      "type": "type",
+      "prompt": "Vom Erfolg ___, gründete sie gleich ein zweites Unternehmen.",
+      "hint": "(beflügeln)",
+      "answers": [
+        "beflügelt"
+      ],
+      "explanation": "She was spurred on by her success (passive meaning): Partizip II beflügelt, no ge- after be-."
+    },
+    {
+      "id": "pc-16",
+      "type": "type",
+      "prompt": "Die Formalitäten ___, konnten wir endlich in die Wohnung einziehen.",
+      "hint": "(erledigen)",
+      "answers": [
+        "erledigt"
+      ],
+      "explanation": "The paperwork was finished first, so Partizip II with its object in front: Die Formalitäten erledigt."
+    },
+    {
+      "id": "pc-17",
+      "type": "type",
+      "prompt": "Nichts Böses ___, öffnete sie dem Fremden die Tür.",
+      "hint": "(ahnen)",
+      "answers": [
+        "ahnend"
+      ],
+      "explanation": "Suspecting nothing while opening the door is simultaneous and active: Partizip I ahnend."
+    },
+    {
+      "id": "pc-18",
+      "type": "type",
+      "prompt": "Vom Gericht ___, verließ der Angeklagte erleichtert den Saal.",
+      "hint": "(freisprechen)",
+      "answers": [
+        "freigesprochen"
+      ],
+      "explanation": "He was acquitted (passive, completed): separable frei-ge-sprochen."
+    },
+    {
+      "id": "pc-19",
+      "type": "type",
+      "prompt": "Den Blick starr auf den Boden ___, hörte er sich die Vorwürfe an.",
+      "hint": "(richten)",
+      "answers": [
+        "gerichtet"
+      ],
+      "explanation": "Den Blick auf etwas gerichtet is a fixed pattern: object + Partizip II describing his posture."
+    },
+    {
+      "id": "pc-20",
+      "type": "type",
+      "prompt": "Den Bericht gerade erst ___, erhielt Jonas schon neue Anweisungen.",
+      "hint": "(abschicken)",
+      "answers": [
+        "abgeschickt"
+      ],
+      "explanation": "Sending the report came first, so Partizip II; separable: ab-ge-schickt."
+    },
+    {
+      "id": "pc-21",
+      "type": "type",
+      "prompt": "Ehrlich ___, ich halte wenig von diesem Vorschlag.",
+      "hint": "(sagen)",
+      "answers": [
+        "gesagt"
+      ],
+      "explanation": "Ehrlich gesagt (to be honest) is a fixed participle phrase with the Partizip II."
+    },
+    {
+      "id": "pc-22",
+      "type": "type",
+      "prompt": "Von der Antwort ___, legte sie wortlos auf.",
+      "hint": "(enttäuschen)",
+      "answers": [
+        "enttäuscht"
+      ],
+      "explanation": "She was disappointed by the answer (passive meaning); ent- is inseparable, so no ge-: enttäuscht."
+    },
+    {
+      "id": "pc-23",
+      "type": "order",
+      "words": [
+        "Am",
+        "Ziel",
+        "angelangt,",
+        "ließen",
+        "sich",
+        "die",
+        "Wanderer",
+        "ins",
+        "Gras",
+        "fallen."
+      ],
+      "answers": [
+        "Am Ziel angelangt, ließen sich die Wanderer ins Gras fallen.",
+        "Am Ziel angelangt, ließen die Wanderer sich ins Gras fallen."
+      ],
+      "translation": "Having reached their destination, the hikers dropped onto the grass.",
+      "explanation": "The participle clause fills first position, so the verb ließen follows; sich can stand before or after a noun subject."
+    },
+    {
+      "id": "pc-24",
+      "type": "order",
+      "words": [
+        "Durch",
+        "den",
+        "Anruf",
+        "beunruhigt,",
+        "fuhr",
+        "sie",
+        "sofort",
+        "nach",
+        "Hause."
+      ],
+      "answers": [
+        "Durch den Anruf beunruhigt, fuhr sie sofort nach Hause."
+      ],
+      "translation": "Worried by the call, she drove home at once.",
+      "explanation": "A Partizip II clause in front counts as one position, so the finite verb fuhr comes next, then the subject."
+    },
+    {
+      "id": "pc-25",
+      "type": "order",
+      "words": [
+        "Von",
+        "Zweifeln",
+        "geplagt,",
+        "zog",
+        "er",
+        "seine",
+        "Bewerbung",
+        "zurück."
+      ],
+      "answers": [
+        "Von Zweifeln geplagt, zog er seine Bewerbung zurück."
+      ],
+      "translation": "Plagued by doubts, he withdrew his application.",
+      "explanation": "The participle clause gives the reason (= weil er von Zweifeln geplagt war); the main clause starts with zog."
+    },
+    {
+      "id": "pc-26",
+      "type": "order",
+      "words": [
+        "Die",
+        "Koffer",
+        "gepackt,",
+        "warteten",
+        "wir",
+        "auf",
+        "das",
+        "Taxi."
+      ],
+      "answers": [
+        "Die Koffer gepackt, warteten wir auf das Taxi."
+      ],
+      "translation": "With our cases packed, we waited for the taxi.",
+      "explanation": "In the participle clause the object comes before the participle; the main clause then starts with warteten."
+    },
+    {
+      "id": "pc-27",
+      "type": "order",
+      "words": [
+        "Auf",
+        "eine",
+        "Antwort",
+        "hoffend,",
+        "starrte",
+        "sie",
+        "auf",
+        "ihr",
+        "Handy."
+      ],
+      "answers": [
+        "Auf eine Antwort hoffend, starrte sie auf ihr Handy."
+      ],
+      "translation": "Hoping for an answer, she stared at her phone.",
+      "explanation": "Partizip I (hoffend) for a simultaneous action, with its complement auf eine Antwort in front of it."
+    },
+    {
+      "id": "pc-28",
+      "type": "order",
+      "words": [
+        "Er",
+        "verließ",
+        "den",
+        "Raum,",
+        "die",
+        "Tür",
+        "hinter",
+        "sich",
+        "zuschlagend."
+      ],
+      "answers": [
+        "Er verließ den Raum, die Tür hinter sich zuschlagend."
+      ],
+      "translation": "He left the room, slamming the door behind him.",
+      "explanation": "A participle clause can also follow the main clause, after a comma; it refers to the subject er."
+    },
+    {
+      "id": "pc-29",
+      "type": "order",
+      "words": [
+        "Nach",
+        "dem",
+        "passenden",
+        "Wort",
+        "suchend,",
+        "hielt",
+        "der",
+        "Redner",
+        "inne."
+      ],
+      "answers": [
+        "Nach dem passenden Wort suchend, hielt der Redner inne."
+      ],
+      "translation": "Searching for the right word, the speaker paused.",
+      "explanation": "The Partizip I clause fills first position, so hielt comes second and the separable prefix inne goes to the end."
+    },
+    {
+      "id": "pc-30",
+      "type": "order",
+      "words": [
+        "Von",
+        "allen",
+        "Kollegen",
+        "herzlich",
+        "begrüßt,",
+        "fühlte",
+        "sich",
+        "Lena",
+        "sofort",
+        "wohl."
+      ],
+      "answers": [
+        "Von allen Kollegen herzlich begrüßt, fühlte sich Lena sofort wohl.",
+        "Von allen Kollegen herzlich begrüßt, fühlte Lena sich sofort wohl."
+      ],
+      "translation": "Warmly welcomed by all her colleagues, Lena felt at ease at once.",
+      "explanation": "After the Partizip II clause the finite verb comes next; the reflexive sich can stand before or after the noun subject."
+    }
+  ]
+}

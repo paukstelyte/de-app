@@ -1,0 +1,420 @@
+{
+  "slug": "participle-phrases-extended",
+  "instructions": "Choose or build the correct extended participle phrase between the article and the noun.",
+  "items": [
+    {
+      "id": "ppe-01",
+      "type": "choice",
+      "prompt": "Die von der Regierung gestern beschlossen___ Maßnahmen stoßen auf Kritik.",
+      "options": [
+        "e",
+        "en",
+        "er",
+        "es"
+      ],
+      "answer": "en",
+      "explanation": "Plural after die takes -en: die … beschlossenen Maßnahmen. The whole extension sits between article and noun."
+    },
+    {
+      "id": "ppe-02",
+      "type": "choice",
+      "prompt": "Ein seit Jahren leer stehend___ Fabrikgebäude soll abgerissen werden.",
+      "options": [
+        "es",
+        "e",
+        "en",
+        "er"
+      ],
+      "answer": "es",
+      "explanation": "After ein the neuter nominative ending is -es (ein … stehendes Gebäude), because ein itself shows no gender."
+    },
+    {
+      "id": "ppe-03",
+      "type": "choice",
+      "prompt": "Wir haben den im Fachjournal veröffentlicht___ Aufsatz gründlich gelesen.",
+      "options": [
+        "e",
+        "en",
+        "er",
+        "es"
+      ],
+      "answer": "en",
+      "explanation": "Accusative masculine after den: -en (den … veröffentlichten Aufsatz)."
+    },
+    {
+      "id": "ppe-04",
+      "type": "choice",
+      "prompt": "Die Firma kündigte dem seit Monaten krankgeschrieben___ Mitarbeiter.",
+      "options": [
+        "e",
+        "en",
+        "er",
+        "es"
+      ],
+      "answer": "en",
+      "explanation": "Dative masculine after dem: -en (dem … krankgeschriebenen Mitarbeiter)."
+    },
+    {
+      "id": "ppe-05",
+      "type": "choice",
+      "prompt": "Er gilt als ein in Fachkreisen hoch angesehen___ Wissenschaftler.",
+      "options": [
+        "er",
+        "e",
+        "en",
+        "es"
+      ],
+      "answer": "er",
+      "explanation": "After gelten als the noun is nominative; after ein, masculine nominative takes -er: ein angesehener Wissenschaftler."
+    },
+    {
+      "id": "ppe-06",
+      "type": "choice",
+      "prompt": "Die Ergebnisse der an der Studie teilnehmend___ Patienten werden ausgewertet.",
+      "options": [
+        "en",
+        "e",
+        "er",
+        "es"
+      ],
+      "answer": "en",
+      "explanation": "Genitive plural after der: -en (der … teilnehmenden Patienten)."
+    },
+    {
+      "id": "ppe-07",
+      "type": "choice",
+      "prompt": "Das im letzten Jahr ___ Gesetz hat sich bewährt.",
+      "options": [
+        "verabschiedete",
+        "verabschiedende",
+        "verabschiedet",
+        "verabschiedetes"
+      ],
+      "answer": "verabschiedete",
+      "explanation": "The law was passed (passive, completed): Partizip II + -e after das (neuter nominative)."
+    },
+    {
+      "id": "ppe-08",
+      "type": "choice",
+      "prompt": "Die derzeit rasant ___ Mieten belasten viele Haushalte.",
+      "options": [
+        "steigenden",
+        "gestiegenen",
+        "steigende",
+        "gestiegene"
+      ],
+      "answer": "steigenden",
+      "explanation": "derzeit = happening now, so Partizip I (steigend); plural after die takes -en."
+    },
+    {
+      "id": "ppe-09",
+      "type": "choice",
+      "prompt": "Der von Experten lange ___ Zusammenbruch des Marktes blieb aus.",
+      "options": [
+        "befürchtete",
+        "befürchtende",
+        "befürchteten",
+        "befürchtet"
+      ],
+      "answer": "befürchtete",
+      "explanation": "The collapse was feared (passive): Partizip II befürchtet + -e for masculine nominative after der."
+    },
+    {
+      "id": "ppe-10",
+      "type": "choice",
+      "prompt": "Die gerade im Bundestag ihre Rede ___ Ministerin wurde unterbrochen.",
+      "options": [
+        "haltende",
+        "gehaltene",
+        "haltenden",
+        "gehaltenen"
+      ],
+      "answer": "haltende",
+      "explanation": "The minister is giving the speech right now (active, simultaneous): Partizip I haltend + -e after die (feminine nominative)."
+    },
+    {
+      "id": "ppe-11",
+      "type": "choice",
+      "prompt": "Die bereits vor Wochen ___ Rechnung ist immer noch nicht bezahlt.",
+      "options": [
+        "verschickte",
+        "verschickende",
+        "verschickten",
+        "verschickt"
+      ],
+      "answer": "verschickte",
+      "explanation": "The invoice was sent (passive, completed): Partizip II verschickt + -e for feminine nominative after die."
+    },
+    {
+      "id": "ppe-12",
+      "type": "choice",
+      "prompt": "Die bis Freitag ___ Aufgaben sind umfangreich.",
+      "options": [
+        "zu erledigenden",
+        "zu erledigende",
+        "erledigenden"
+      ],
+      "answer": "zu erledigenden",
+      "explanation": "zu + Partizip I means 'must be done': die zu erledigenden Aufgaben. Without zu, erledigenden would mean the tasks themselves are doing something."
+    },
+    {
+      "id": "ppe-13",
+      "type": "type",
+      "prompt": "Die in Asien ___ Bauteile sind deutlich günstiger.",
+      "hint": "(herstellen)",
+      "answers": [
+        "hergestellten"
+      ],
+      "explanation": "Passive, completed: separable her-ge-stellt + -en (plural after die)."
+    },
+    {
+      "id": "ppe-14",
+      "type": "type",
+      "prompt": "Die vor der Küste ___ Wale ziehen viele Touristen an.",
+      "hint": "(leben)",
+      "answers": [
+        "lebenden"
+      ],
+      "explanation": "Ongoing state, active: Partizip I lebend + -en (plural after die)."
+    },
+    {
+      "id": "ppe-15",
+      "type": "type",
+      "prompt": "Er bezweifelt die von der Zeitung ___ Zahlen.",
+      "hint": "(nennen)",
+      "answers": [
+        "genannten"
+      ],
+      "explanation": "nennen has an irregular Partizip II genannt; plural accusative after die takes -en."
+    },
+    {
+      "id": "ppe-16",
+      "type": "type",
+      "prompt": "Das seit Jahrzehnten ___ Familienunternehmen wurde verkauft.",
+      "hint": "(bestehen)",
+      "answers": [
+        "bestehende"
+      ],
+      "explanation": "The company has existed and still exists: Partizip I bestehend + -e (neuter nominative after das)."
+    },
+    {
+      "id": "ppe-17",
+      "type": "type",
+      "prompt": "Wir danken allen ehrenamtlich im Verein ___ Mitgliedern.",
+      "hint": "(mitarbeiten)",
+      "answers": [
+        "mitarbeitenden"
+      ],
+      "explanation": "Active and ongoing: Partizip I mitarbeitend; after allen (dative plural) the ending is -en."
+    },
+    {
+      "id": "ppe-18",
+      "type": "type",
+      "prompt": "Der von der Polizei ___ Verdächtige schweigt bisher.",
+      "hint": "(festnehmen)",
+      "answers": [
+        "festgenommene"
+      ],
+      "explanation": "Separable verb: fest-ge-nommen; masculine nominative after der takes -e."
+    },
+    {
+      "id": "ppe-19",
+      "type": "type",
+      "prompt": "Die morgen zu ___ Entscheidung betrifft alle Mitarbeiter.",
+      "hint": "(treffen)",
+      "answers": [
+        "treffende"
+      ],
+      "explanation": "zu + Partizip I (treffend) = must be made; feminine nominative after die takes -e."
+    },
+    {
+      "id": "ppe-20",
+      "type": "type",
+      "prompt": "Ein schwer zu ___ Problem beschäftigt die Forscher.",
+      "hint": "(lösen)",
+      "answers": [
+        "lösendes"
+      ],
+      "explanation": "zu + Partizip I = can/must be solved; after ein, neuter nominative takes -es: ein schwer zu lösendes Problem."
+    },
+    {
+      "id": "ppe-21",
+      "type": "type",
+      "prompt": "Mit dem vor einer Woche ___ Wagen hatte er schon eine Panne.",
+      "hint": "(erwerben)",
+      "answers": [
+        "erworbenen"
+      ],
+      "explanation": "erwerben has the irregular Partizip II erworben; dative masculine after dem takes -en."
+    },
+    {
+      "id": "ppe-22",
+      "type": "type",
+      "prompt": "Die wegen des Sturms ___ Konzerte werden im Herbst nachgeholt.",
+      "hint": "(absagen)",
+      "answers": [
+        "abgesagten"
+      ],
+      "explanation": "Separable verb: ab-ge-sagt; plural after die takes -en."
+    },
+    {
+      "id": "ppe-23",
+      "type": "order",
+      "words": [
+        "Die",
+        "Zahl",
+        "der",
+        "bei",
+        "dem",
+        "Unglück",
+        "verletzten",
+        "Personen",
+        "steigt."
+      ],
+      "answers": [
+        "Die Zahl der bei dem Unglück verletzten Personen steigt."
+      ],
+      "translation": "The number of people injured in the accident is rising.",
+      "explanation": "The extended attribute bei dem Unglück verletzten sits inside the genitive phrase, between der and Personen."
+    },
+    {
+      "id": "ppe-24",
+      "type": "order",
+      "words": [
+        "Das",
+        "von",
+        "vielen",
+        "Bürgern",
+        "kritisierte",
+        "Bauprojekt",
+        "wurde",
+        "gestoppt."
+      ],
+      "answers": [
+        "Das von vielen Bürgern kritisierte Bauprojekt wurde gestoppt."
+      ],
+      "translation": "The building project criticised by many citizens was stopped.",
+      "explanation": "The agent phrase von vielen Bürgern comes before the participle kritisierte, all between das and Bauprojekt."
+    },
+    {
+      "id": "ppe-25",
+      "type": "order",
+      "words": [
+        "Sie",
+        "las",
+        "den",
+        "ihr",
+        "von",
+        "einem",
+        "Kollegen",
+        "empfohlenen",
+        "Roman."
+      ],
+      "answers": [
+        "Sie las den ihr von einem Kollegen empfohlenen Roman."
+      ],
+      "translation": "She read the novel that a colleague had recommended to her.",
+      "explanation": "Even a dative pronoun (ihr) goes inside the extension, after the article and before the participle."
+    },
+    {
+      "id": "ppe-26",
+      "type": "order",
+      "words": [
+        "Die",
+        "gestern",
+        "vom",
+        "Parlament",
+        "verabschiedete",
+        "Reform",
+        "tritt",
+        "sofort",
+        "in",
+        "Kraft."
+      ],
+      "answers": [
+        "Die gestern vom Parlament verabschiedete Reform tritt sofort in Kraft.",
+        "Die vom Parlament gestern verabschiedete Reform tritt sofort in Kraft."
+      ],
+      "translation": "The reform passed by parliament yesterday takes effect immediately.",
+      "explanation": "Extensions precede the participle; the time phrase gestern and the agent vom Parlament can swap."
+    },
+    {
+      "id": "ppe-27",
+      "type": "order",
+      "words": [
+        "Die",
+        "auf",
+        "dem",
+        "Schreibtisch",
+        "liegenden",
+        "Unterlagen",
+        "sind",
+        "vertraulich."
+      ],
+      "answers": [
+        "Die auf dem Schreibtisch liegenden Unterlagen sind vertraulich."
+      ],
+      "translation": "The documents lying on the desk are confidential.",
+      "explanation": "Partizip I liegenden with its place phrase forms one block between die and Unterlagen."
+    },
+    {
+      "id": "ppe-28",
+      "type": "order",
+      "words": [
+        "Man",
+        "diskutiert",
+        "über",
+        "die",
+        "von",
+        "Experten",
+        "geforderten",
+        "Reformen."
+      ],
+      "answers": [
+        "Man diskutiert über die von Experten geforderten Reformen."
+      ],
+      "translation": "People are discussing the reforms demanded by experts.",
+      "explanation": "After the preposition über the whole phrase die … geforderten Reformen follows, with the agent before the participle."
+    },
+    {
+      "id": "ppe-29",
+      "type": "order",
+      "words": [
+        "Der",
+        "bis",
+        "Montag",
+        "zu",
+        "lösende",
+        "Konflikt",
+        "beschäftigt",
+        "die",
+        "Firma."
+      ],
+      "answers": [
+        "Der bis Montag zu lösende Konflikt beschäftigt die Firma."
+      ],
+      "translation": "The conflict that must be resolved by Monday is occupying the company.",
+      "explanation": "zu + Partizip I (zu lösende) with the extension bis Montag stands between der and Konflikt."
+    },
+    {
+      "id": "ppe-30",
+      "type": "order",
+      "words": [
+        "Die",
+        "Folgen",
+        "des",
+        "seit",
+        "Jahren",
+        "anhaltenden",
+        "Fachkräftemangels",
+        "sind",
+        "spürbar."
+      ],
+      "answers": [
+        "Die Folgen des seit Jahren anhaltenden Fachkräftemangels sind spürbar."
+      ],
+      "translation": "The effects of the skills shortage that has lasted for years are noticeable.",
+      "explanation": "The extension seit Jahren anhaltenden sits inside the genitive phrase between des and Fachkräftemangels."
+    }
+  ]
+}

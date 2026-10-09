@@ -1,0 +1,393 @@
+{
+  "slug": "modal-verbs-subjective",
+  "instructions": "Choose, type or arrange the modal verb that shows how sure the speaker is, a rumour, or someone's own claim.",
+  "items": [
+    {
+      "id": "msv-01",
+      "type": "choice",
+      "prompt": "Im ganzen Haus ist es dunkel und der Briefkasten quillt über – die Nachbarn ___ verreist sein.",
+      "options": [
+        "müssen",
+        "wollen",
+        "dürfen"
+      ],
+      "answer": "müssen",
+      "explanation": "The speaker draws a firm conclusion from evidence: müssen. wollen would be the neighbours' own claim; indicative dürfen has no 'probably' meaning (that is dürften)."
+    },
+    {
+      "id": "msv-02",
+      "type": "type",
+      "prompt": "Er hat drei Nächte kaum geschlafen; er ___ völlig erschöpft sein.",
+      "hint": "(müssen – I'm sure)",
+      "answers": [
+        "muss"
+      ],
+      "explanation": "Subjective müssen = the speaker is almost certain from the evidence: er muss erschöpft sein."
+    },
+    {
+      "id": "msv-03",
+      "type": "choice",
+      "prompt": "Einem Bericht der Lokalzeitung zufolge ___ der Bürgermeister in die Affäre verwickelt sein.",
+      "options": [
+        "soll",
+        "will",
+        "darf"
+      ],
+      "answer": "soll",
+      "explanation": "zufolge names a third-party source, so hearsay sollen. will would be the mayor's own claim; darf has no subjective meaning."
+    },
+    {
+      "id": "msv-04",
+      "type": "order",
+      "words": [
+        "Sie",
+        "muss",
+        "den",
+        "Termin",
+        "völlig",
+        "vergessen",
+        "haben."
+      ],
+      "answers": [
+        "Sie muss den Termin völlig vergessen haben."
+      ],
+      "translation": "She must have completely forgotten the appointment.",
+      "explanation": "müssen + past infinitive (vergessen haben) = a firm conclusion about the past."
+    },
+    {
+      "id": "msv-05",
+      "type": "type",
+      "prompt": "Laut Wetterdienst ___ es am Wochenende zu schweren Unwettern kommen.",
+      "hint": "(sollen – forecast)",
+      "answers": [
+        "soll"
+      ],
+      "explanation": "Laut + source: sollen passes on what others say without the speaker vouching for it."
+    },
+    {
+      "id": "msv-06",
+      "type": "choice",
+      "prompt": "Der Angeklagte ___ zur Tatzeit zu Hause gewesen sein – doch Zeugen haben ihn am Tatort gesehen.",
+      "options": [
+        "will",
+        "muss",
+        "dürfte"
+      ],
+      "answer": "will",
+      "explanation": "wollen = the subject's own claim, which the speaker doubts. muss and dürfte would mean the speaker believes it, which the witnesses contradict."
+    },
+    {
+      "id": "msv-07",
+      "type": "choice",
+      "prompt": "Nach meiner Schätzung ___ die Renovierung etwa drei Monate dauern – ganz sicher bin ich mir aber nicht.",
+      "options": [
+        "dürfte",
+        "muss",
+        "will"
+      ],
+      "answer": "dürfte",
+      "explanation": "dürfte = probably, a cautious estimate. muss contradicts 'not quite sure'; will (a claim) makes no sense for a renovation."
+    },
+    {
+      "id": "msv-08",
+      "type": "type",
+      "prompt": "Die Maschine muss bereits vor einer Stunde ___ sein.",
+      "hint": "(landen)",
+      "answers": [
+        "gelandet"
+      ],
+      "explanation": "A conclusion about the past uses modal + past infinitive; landen takes sein: gelandet sein."
+    },
+    {
+      "id": "msv-09",
+      "type": "choice",
+      "prompt": "Ausgeschlossen ist es nicht: Der Fehler ___ auch an der Software liegen.",
+      "options": [
+        "könnte",
+        "muss",
+        "will"
+      ],
+      "answer": "könnte",
+      "explanation": "'Not ruled out' signals a mere possibility: könnte. muss would be near-certainty."
+    },
+    {
+      "id": "msv-10",
+      "type": "order",
+      "words": [
+        "Der",
+        "Konzern",
+        "soll",
+        "Millionen",
+        "an",
+        "Steuern",
+        "hinterzogen",
+        "haben."
+      ],
+      "answers": [
+        "Der Konzern soll Millionen an Steuern hinterzogen haben."
+      ],
+      "translation": "The corporation is said to have evaded millions in taxes.",
+      "explanation": "Hearsay sollen + past infinitive (hinterzogen haben) reports a rumour about the past."
+    },
+    {
+      "id": "msv-11",
+      "type": "choice",
+      "prompt": "Das ___ unmöglich der echte Vertrag sein – die Unterschrift fehlt.",
+      "options": [
+        "kann",
+        "muss",
+        "soll"
+      ],
+      "answer": "kann",
+      "explanation": "kann unmöglich / kann nicht = the speaker rules it out. muss unmöglich and soll unmöglich are not idiomatic."
+    },
+    {
+      "id": "msv-12",
+      "type": "type",
+      "prompt": "Du ___ dich verrechnet haben, die Summe stimmt nicht.",
+      "hint": "(müssen)",
+      "answers": [
+        "musst"
+      ],
+      "explanation": "With du, müssen is musst; with the past infinitive verrechnet haben it is a firm conclusion about the past."
+    },
+    {
+      "id": "msv-13",
+      "type": "choice",
+      "prompt": "Ich bin mir sicher: Jemand ___ sich an den Unterlagen zu schaffen gemacht haben, sie liegen völlig durcheinander.",
+      "options": [
+        "muss",
+        "will",
+        "darf"
+      ],
+      "answer": "muss",
+      "explanation": "'Ich bin mir sicher' plus visible evidence = subjective müssen. Nobody is claiming anything (will), and darf has no inference meaning."
+    },
+    {
+      "id": "msv-14",
+      "type": "order",
+      "words": [
+        "Lena",
+        "will",
+        "von",
+        "dem",
+        "Plan",
+        "nichts",
+        "gewusst",
+        "haben."
+      ],
+      "answers": [
+        "Lena will von dem Plan nichts gewusst haben."
+      ],
+      "translation": "Lena claims not to have known anything about the plan.",
+      "explanation": "wollen + past infinitive = the subject's own claim about the past, which the speaker doubts."
+    },
+    {
+      "id": "msv-15",
+      "type": "type",
+      "prompt": "Die beiden Firmen ___ über eine Fusion verhandelt haben, heißt es in Branchenkreisen.",
+      "hint": "(sollen)",
+      "answers": [
+        "sollen"
+      ],
+      "explanation": "heißt es = rumour, so hearsay sollen; plural subject die beiden Firmen takes sollen."
+    },
+    {
+      "id": "msv-16",
+      "type": "choice",
+      "prompt": "Er ___ das Problem ganz allein gelöst haben, aber ich habe meine Zweifel.",
+      "options": [
+        "will",
+        "muss",
+        "dürfte"
+      ],
+      "answer": "will",
+      "explanation": "wollen reports his own claim, which the speaker doubts. muss and dürfte would mean the speaker believes it."
+    },
+    {
+      "id": "msv-17",
+      "type": "type",
+      "prompt": "Der Schaden ___ sich auf mehrere tausend Euro belaufen, schätzt der Gutachter vorsichtig.",
+      "hint": "(dürfen – probably)",
+      "answers": [
+        "dürfte"
+      ],
+      "explanation": "Konjunktiv II dürfte = probably: a cautious estimate, weaker than muss and stronger than könnte."
+    },
+    {
+      "id": "msv-18",
+      "type": "choice",
+      "prompt": "Die Unterlagen müssen auf dem Postweg verloren ___.",
+      "options": [
+        "gegangen sein",
+        "gehen",
+        "gegangen haben",
+        "gegangen"
+      ],
+      "answer": "gegangen sein",
+      "explanation": "A conclusion about the past needs the past infinitive; verloren gehen takes sein: verloren gegangen sein."
+    },
+    {
+      "id": "msv-19",
+      "type": "type",
+      "prompt": "Die Verzögerung ___ mit dem Streik zusammenhängen, aber das ist reine Spekulation.",
+      "hint": "(können – possibility)",
+      "answers": [
+        "könnte",
+        "kann"
+      ],
+      "explanation": "könnte (or kann) expresses a possibility the speaker leaves open."
+    },
+    {
+      "id": "msv-20",
+      "type": "order",
+      "words": [
+        "Wer",
+        "soll",
+        "das",
+        "behauptet",
+        "haben?"
+      ],
+      "answers": [
+        "Wer soll das behauptet haben?"
+      ],
+      "translation": "Who is supposed to have said that?",
+      "explanation": "sollen in a question queries a rumour: Wer soll … behauptet haben? The past infinitive closes the sentence."
+    },
+    {
+      "id": "msv-21",
+      "type": "choice",
+      "prompt": "Er will den Gipfel ohne Sauerstoffflasche erreicht ___.",
+      "options": [
+        "haben",
+        "sein",
+        "hat"
+      ],
+      "answer": "haben",
+      "explanation": "erreichen forms its perfect with haben, so the past infinitive is erreicht haben."
+    },
+    {
+      "id": "msv-22",
+      "type": "type",
+      "prompt": "Sie soll in jungen Jahren als Diplomatin in Moskau ___ haben.",
+      "hint": "(arbeiten)",
+      "answers": [
+        "gearbeitet"
+      ],
+      "explanation": "Hearsay about the past: sollen + participle + haben, so arbeiten → gearbeitet."
+    },
+    {
+      "id": "msv-23",
+      "type": "choice",
+      "prompt": "Wie man hört, soll der Vorstand nächste Woche ___.",
+      "options": [
+        "zurücktreten",
+        "zurückgetreten sein",
+        "zurückgetreten"
+      ],
+      "answer": "zurücktreten",
+      "explanation": "nächste Woche is future, so sollen takes the present infinitive zurücktreten."
+    },
+    {
+      "id": "msv-24",
+      "type": "type",
+      "prompt": "Das ___ nicht stimmen, ich war doch bei der Sitzung dabei!",
+      "hint": "(können – impossible)",
+      "answers": [
+        "kann"
+      ],
+      "explanation": "kann nicht = the speaker rejects the idea as impossible because of their own experience."
+    },
+    {
+      "id": "msv-25",
+      "type": "order",
+      "words": [
+        "Alles",
+        "deutet",
+        "darauf",
+        "hin,",
+        "dass",
+        "er",
+        "die",
+        "E-Mail",
+        "übersehen",
+        "haben",
+        "muss."
+      ],
+      "answers": [
+        "Alles deutet darauf hin, dass er die E-Mail übersehen haben muss."
+      ],
+      "translation": "Everything suggests that he must have overlooked the email.",
+      "explanation": "In a dass-clause the modal goes to the very end, after the past infinitive: übersehen haben muss."
+    },
+    {
+      "id": "msv-26",
+      "type": "choice",
+      "prompt": "Die Burg soll im 12. Jahrhundert errichtet ___.",
+      "options": [
+        "worden sein",
+        "sein",
+        "geworden sein",
+        "werden"
+      ],
+      "answer": "worden sein",
+      "explanation": "Hearsay about a past passive event needs the past passive infinitive: errichtet worden sein (worden, not geworden)."
+    },
+    {
+      "id": "msv-27",
+      "type": "type",
+      "prompt": "Die beiden ___ den Unfall nicht bemerkt haben – so jedenfalls ihre eigene Aussage.",
+      "hint": "(wollen)",
+      "answers": [
+        "wollen"
+      ],
+      "explanation": "'their own statement' = the subjects' claim, so wollen; plural die beiden takes wollen."
+    },
+    {
+      "id": "msv-28",
+      "type": "order",
+      "words": [
+        "Das",
+        "dürfte",
+        "kein",
+        "Zufall",
+        "gewesen",
+        "sein."
+      ],
+      "answers": [
+        "Das dürfte kein Zufall gewesen sein."
+      ],
+      "translation": "That was probably no coincidence.",
+      "explanation": "dürfte + past infinitive (gewesen sein) is a cautious assumption about the past."
+    },
+    {
+      "id": "msv-29",
+      "type": "choice",
+      "prompt": "Der Brief liegt geöffnet auf ihrem Schreibtisch, sie ___ ihn also schon gelesen haben.",
+      "options": [
+        "dürfte",
+        "will",
+        "darf"
+      ],
+      "answer": "dürfte",
+      "explanation": "also signals the speaker's own inference: dürfte = probably. Nobody is claiming anything (will), and darf has no 'probably' meaning."
+    },
+    {
+      "id": "msv-30",
+      "type": "order",
+      "words": [
+        "Er",
+        "soll",
+        "ein",
+        "Vermögen",
+        "geerbt",
+        "haben."
+      ],
+      "answers": [
+        "Er soll ein Vermögen geerbt haben."
+      ],
+      "translation": "He is said to have inherited a fortune.",
+      "explanation": "sollen + past infinitive (geerbt haben) passes on a rumour about the past."
+    }
+  ]
+}

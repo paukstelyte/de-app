@@ -1,0 +1,393 @@
+{
+  "slug": "passive-impersonal",
+  "instructions": "Complete or build each sentence using the subjectless (impersonal) passive or the passive of verbs with a dative object.",
+  "items": [
+    {
+      "id": "pimp-01",
+      "type": "choice",
+      "prompt": "Auf dem Gelände des Klinikums wird grundsätzlich nicht ___.",
+      "options": [
+        "geraucht",
+        "rauchen",
+        "geraucht worden"
+      ],
+      "answer": "geraucht",
+      "explanation": "Subjectless passive: wird + Partizip II, no subject at all. geraucht worden would need sein (ist … geraucht worden)."
+    },
+    {
+      "id": "pimp-02",
+      "type": "choice",
+      "prompt": "Es ___ bis in die frühen Morgenstunden getanzt und gefeiert.",
+      "options": [
+        "wurde",
+        "wurden",
+        "hat",
+        "war"
+      ],
+      "answer": "wurde",
+      "explanation": "es is only a placeholder in first position, not a subject, so werden stays 3rd person singular: Es wurde getanzt."
+    },
+    {
+      "id": "pimp-03",
+      "type": "choice",
+      "prompt": "Den Flutopfern ___ unbürokratisch geholfen.",
+      "options": [
+        "wurde",
+        "wurden",
+        "sind"
+      ],
+      "answer": "wurde",
+      "explanation": "helfen keeps its dative object, so there is no subject and the verb is singular: Den Flutopfern wurde geholfen."
+    },
+    {
+      "id": "pimp-04",
+      "type": "choice",
+      "prompt": "Nach dem Unfall wurde ___ umgehend Erste Hilfe geleistet.",
+      "options": [
+        "dem Fahrer",
+        "der Fahrer",
+        "den Fahrer"
+      ],
+      "answer": "dem Fahrer",
+      "explanation": "jemandem Hilfe leisten takes a dative for the person; the passive keeps it: dem Fahrer wurde Hilfe geleistet."
+    },
+    {
+      "id": "pimp-05",
+      "type": "choice",
+      "prompt": "Während der Prüfung darf weder gesprochen noch ___ werden.",
+      "options": [
+        "abgeschrieben",
+        "abschreiben",
+        "abgeschrieben worden"
+      ],
+      "answer": "abgeschrieben",
+      "explanation": "Impersonal passive with a modal: darf + Partizip II + werden (abgeschrieben werden)."
+    },
+    {
+      "id": "pimp-06",
+      "type": "choice",
+      "prompt": "Bisher wurde ___ den Gesetzentwurf noch nicht abgestimmt.",
+      "options": [
+        "über",
+        "von",
+        "für",
+        "an"
+      ],
+      "answer": "über",
+      "explanation": "abstimmen über + accusative keeps its preposition in the subjectless passive: über den Entwurf wurde abgestimmt."
+    },
+    {
+      "id": "pimp-07",
+      "type": "choice",
+      "prompt": "Den Teilnehmern ___ im Anschluss die Urkunden überreicht.",
+      "options": [
+        "wurden",
+        "wurde",
+        "worden"
+      ],
+      "answer": "wurden",
+      "explanation": "The accusative object becomes the subject (die Urkunden, plural), so wurden; den Teilnehmern stays dative."
+    },
+    {
+      "id": "pimp-08",
+      "type": "choice",
+      "prompt": "Uns ___ mitgeteilt, dass der Flug gestrichen worden sei.",
+      "options": [
+        "wurde",
+        "wurden",
+        "sind"
+      ],
+      "answer": "wurde",
+      "explanation": "The dass-clause is the subject, so the verb is singular; uns stays dative: Uns wurde mitgeteilt, dass …"
+    },
+    {
+      "id": "pimp-09",
+      "type": "choice",
+      "prompt": "Dem Antrag wurde ohne Gegenstimme ___.",
+      "options": [
+        "stattgegeben",
+        "stattgeben",
+        "stattgegebene"
+      ],
+      "answer": "stattgegeben",
+      "explanation": "einem Antrag stattgeben takes the dative, so the passive has no subject: Dem Antrag wurde stattgegeben."
+    },
+    {
+      "id": "pimp-10",
+      "type": "choice",
+      "prompt": "Bislang ___ auf unsere Beschwerde nicht reagiert.",
+      "options": [
+        "wurde",
+        "wurde es",
+        "wurden"
+      ],
+      "answer": "wurde",
+      "explanation": "Placeholder es appears only in first position. When Bislang comes first, es disappears: Bislang wurde … reagiert."
+    },
+    {
+      "id": "pimp-11",
+      "type": "choice",
+      "prompt": "Der Jubilarin wurde von der Belegschaft herzlich ___.",
+      "options": [
+        "gratuliert",
+        "beglückwünscht",
+        "gratulieren"
+      ],
+      "answer": "gratuliert",
+      "explanation": "gratulieren takes the dative (der Jubilarin). beglückwünschen takes the accusative and would need die Jubilarin as subject."
+    },
+    {
+      "id": "pimp-12",
+      "type": "choice",
+      "prompt": "Die Kunden ___ nicht rechtzeitig informiert.",
+      "options": [
+        "wurden",
+        "wurde"
+      ],
+      "answer": "wurden",
+      "explanation": "informieren takes the accusative, so die Kunden becomes a nominative subject and werden agrees: wurden."
+    },
+    {
+      "id": "pimp-13",
+      "type": "type",
+      "prompt": "In diesem Restaurant wird ausschließlich mit Karte ___.",
+      "hint": "(bezahlen)",
+      "answers": [
+        "bezahlt"
+      ],
+      "explanation": "Subjectless passive: wird + Partizip II. bezahlen has the prefix be-, so no ge-: bezahlt."
+    },
+    {
+      "id": "pimp-14",
+      "type": "type",
+      "prompt": "Den Betroffenen muss schnell und unbürokratisch ___ werden.",
+      "hint": "(helfen)",
+      "answers": [
+        "geholfen"
+      ],
+      "explanation": "helfen keeps its dative (den Betroffenen); with a modal: muss + geholfen + werden."
+    },
+    {
+      "id": "pimp-15",
+      "type": "type",
+      "prompt": "Es wird ___, die Türen stets geschlossen zu halten.",
+      "hint": "(bitten)",
+      "answers": [
+        "gebeten"
+      ],
+      "explanation": "Formal notices use the subjectless passive with es in first position: Es wird gebeten, … (bitten → gebeten)."
+    },
+    {
+      "id": "pimp-16",
+      "type": "type",
+      "prompt": "Den Helfern wurde öffentlich für ihren Einsatz ___.",
+      "hint": "(danken)",
+      "answers": [
+        "gedankt"
+      ],
+      "explanation": "danken takes the dative, which stays in the passive: den Helfern wurde gedankt."
+    },
+    {
+      "id": "pimp-17",
+      "type": "type",
+      "prompt": "Den Warnungen der Experten ___ jahrelang kein Glauben geschenkt.",
+      "hint": "(werden, Präteritum)",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "Glauben schenken: the accusative kein Glauben becomes the (singular) subject, den Warnungen stays dative: wurde."
+    },
+    {
+      "id": "pimp-18",
+      "type": "type",
+      "prompt": "In dem Haus ist den ganzen Winter über nicht geheizt ___.",
+      "hint": "(werden)",
+      "answers": [
+        "worden"
+      ],
+      "explanation": "Perfect of the impersonal passive: ist + Partizip II + worden (not geworden)."
+    },
+    {
+      "id": "pimp-19",
+      "type": "type",
+      "prompt": "Bei der Versammlung wurde lange und heftig ___.",
+      "hint": "(streiten)",
+      "answers": [
+        "gestritten"
+      ],
+      "explanation": "streiten is intransitive, so only a subjectless passive is possible: es wurde gestritten."
+    },
+    {
+      "id": "pimp-20",
+      "type": "type",
+      "prompt": "Ihm ___ gekündigt, obwohl er seit zwanzig Jahren in der Firma war.",
+      "hint": "(werden, Präteritum)",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "kündigen takes the dative (ihm), so there is no subject: Ihm wurde gekündigt – never 'Er wurde gekündigt'."
+    },
+    {
+      "id": "pimp-21",
+      "type": "type",
+      "prompt": "Den Bedenken der Anwohner muss endlich Rechnung ___ werden.",
+      "hint": "(tragen)",
+      "answers": [
+        "getragen"
+      ],
+      "explanation": "einer Sache Rechnung tragen keeps the dative (den Bedenken); with a modal: muss Rechnung getragen werden."
+    },
+    {
+      "id": "pimp-22",
+      "type": "type",
+      "prompt": "Im Plenum wurde stundenlang debattiert und schließlich ___.",
+      "hint": "(abstimmen)",
+      "answers": [
+        "abgestimmt"
+      ],
+      "explanation": "Both verbs are used without an object, so both are subjectless passive: wurde … abgestimmt (separable ab-ge-stimmt)."
+    },
+    {
+      "id": "pimp-23",
+      "type": "order",
+      "words": [
+        "Es",
+        "wurde",
+        "bis",
+        "spät",
+        "in",
+        "die",
+        "Nacht",
+        "debattiert."
+      ],
+      "answers": [
+        "Es wurde bis spät in die Nacht debattiert."
+      ],
+      "translation": "There was debating until late at night.",
+      "explanation": "Placeholder es fills first position when nothing else does; it is not a subject, so wurde stays singular."
+    },
+    {
+      "id": "pimp-24",
+      "type": "order",
+      "words": [
+        "Sonntags",
+        "wird",
+        "bei",
+        "uns",
+        "nicht",
+        "gearbeitet."
+      ],
+      "answers": [
+        "Sonntags wird bei uns nicht gearbeitet."
+      ],
+      "translation": "We don't work on Sundays here.",
+      "explanation": "A time adverb fills first position, so no es is needed: Sonntags wird … gearbeitet."
+    },
+    {
+      "id": "pimp-25",
+      "type": "order",
+      "words": [
+        "Mir",
+        "wurde",
+        "von",
+        "niemandem",
+        "geholfen."
+      ],
+      "answers": [
+        "Mir wurde von niemandem geholfen."
+      ],
+      "translation": "Nobody helped me.",
+      "explanation": "The dative mir is kept and the verb stays singular – not 'Ich wurde geholfen'."
+    },
+    {
+      "id": "pimp-26",
+      "type": "order",
+      "words": [
+        "Wird",
+        "darüber",
+        "noch",
+        "abgestimmt?"
+      ],
+      "answers": [
+        "Wird darüber noch abgestimmt?",
+        "Wird noch darüber abgestimmt?"
+      ],
+      "translation": "Is there still going to be a vote on it?",
+      "explanation": "Subjectless passive question: Wird first, abgestimmt last; darüber and noch can swap."
+    },
+    {
+      "id": "pimp-27",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß",
+        "nicht,",
+        "ob",
+        "dort",
+        "noch",
+        "gestreikt",
+        "wird."
+      ],
+      "answers": [
+        "Ich weiß nicht, ob dort noch gestreikt wird."
+      ],
+      "translation": "I don't know whether there is still a strike there.",
+      "explanation": "Subjectless passive in an ob-clause: no es, and wird goes to the very end."
+    },
+    {
+      "id": "pimp-28",
+      "type": "order",
+      "words": [
+        "Anna",
+        "beklagt",
+        "sich,",
+        "dass",
+        "ihr",
+        "nie",
+        "zugehört",
+        "wird."
+      ],
+      "answers": [
+        "Anna beklagt sich, dass ihr nie zugehört wird."
+      ],
+      "translation": "Anna complains that nobody ever listens to her.",
+      "explanation": "zuhören takes the dative (ihr); in the dass-clause wird stands last."
+    },
+    {
+      "id": "pimp-29",
+      "type": "order",
+      "words": [
+        "Wurde",
+        "bei",
+        "euch",
+        "auch",
+        "so",
+        "viel",
+        "gestritten?"
+      ],
+      "answers": [
+        "Wurde bei euch auch so viel gestritten?",
+        "Wurde auch bei euch so viel gestritten?"
+      ],
+      "translation": "Was there as much arguing at your place too?",
+      "explanation": "Impersonal passive question: Wurde first, Partizip II last; auch can stand before or after bei euch."
+    },
+    {
+      "id": "pimp-30",
+      "type": "order",
+      "words": [
+        "Den",
+        "Opfern",
+        "wurde",
+        "eine",
+        "Entschädigung",
+        "zugesprochen."
+      ],
+      "answers": [
+        "Den Opfern wurde eine Entschädigung zugesprochen."
+      ],
+      "translation": "The victims were awarded compensation.",
+      "explanation": "The accusative object becomes the subject (eine Entschädigung, singular: wurde); the dative den Opfern stays."
+    }
+  ]
+}
