@@ -1,0 +1,421 @@
+{
+  "slug": "separable-verbs",
+  "instructions": "Complete or build each sentence with the correct separable verb form.",
+  "items": [
+    {
+      "id": "sepv-01",
+      "type": "choice",
+      "prompt": "Ich stehe um 7 Uhr ___.",
+      "options": [
+        "auf",
+        "mit",
+        "zu",
+        "aus"
+      ],
+      "answer": "auf",
+      "explanation": "aufstehen is separable: the verb stehe stays in position 2 and the prefix auf goes to the end."
+    },
+    {
+      "id": "sepv-02",
+      "type": "choice",
+      "prompt": "Anna kauft im Supermarkt ___.",
+      "options": [
+        "ein",
+        "auf",
+        "an"
+      ],
+      "answer": "ein",
+      "explanation": "einkaufen splits in a main clause: Anna kauft ... ein."
+    },
+    {
+      "id": "sepv-03",
+      "type": "choice",
+      "prompt": "Der Zug fährt um acht Uhr ___.",
+      "options": [
+        "ab",
+        "aus",
+        "mit"
+      ],
+      "answer": "ab",
+      "explanation": "abfahren: fährt ... ab. The prefix ab sits at the end of the main clause."
+    },
+    {
+      "id": "sepv-04",
+      "type": "type",
+      "prompt": "Tom ruft seine Mutter jeden Tag ___.",
+      "hint": "(anrufen)",
+      "answers": [
+        "an"
+      ],
+      "explanation": "anrufen splits: Tom ruft ... an. Only the prefix an is missing here."
+    },
+    {
+      "id": "sepv-05",
+      "type": "type",
+      "prompt": "Lena macht das Fenster ___.",
+      "hint": "(aufmachen)",
+      "answers": [
+        "auf"
+      ],
+      "explanation": "aufmachen splits: Lena macht ... auf. The prefix auf goes to the end."
+    },
+    {
+      "id": "sepv-06",
+      "type": "choice",
+      "prompt": "Wann kommst du in Berlin ___?",
+      "options": [
+        "an",
+        "auf",
+        "zu",
+        "ein"
+      ],
+      "answer": "an",
+      "explanation": "ankommen splits in a question too: Wann kommst du ... an?"
+    },
+    {
+      "id": "sepv-07",
+      "type": "choice",
+      "prompt": "Er sieht den ganzen Abend ___.",
+      "options": [
+        "fern",
+        "auf",
+        "zu"
+      ],
+      "answer": "fern",
+      "explanation": "fernsehen is separable: Er sieht ... fern."
+    },
+    {
+      "id": "sepv-08",
+      "type": "type",
+      "prompt": "Jonas ___ jeden Morgen um sechs Uhr auf.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "steht"
+      ],
+      "explanation": "The conjugated verb stays in position 2 (er steht); the prefix auf is already at the end."
+    },
+    {
+      "id": "sepv-09",
+      "type": "type",
+      "prompt": "Ich ___ am Samstag im Supermarkt ein.",
+      "hint": "(einkaufen)",
+      "answers": [
+        "kaufe"
+      ],
+      "explanation": "Conjugate the base verb (ich kaufe) and send the prefix ein to the end."
+    },
+    {
+      "id": "sepv-10",
+      "type": "type",
+      "prompt": "Der Bus ___ um neun Uhr in Köln an.",
+      "hint": "(ankommen)",
+      "answers": [
+        "kommt"
+      ],
+      "explanation": "ankommen: the base verb kommt takes the -t ending and an goes to the end."
+    },
+    {
+      "id": "sepv-11",
+      "type": "choice",
+      "prompt": "Kommst du heute Abend ___?",
+      "options": [
+        "mit",
+        "auf",
+        "zu"
+      ],
+      "answer": "mit",
+      "explanation": "mitkommen splits: Kommst du ... mit? Here the prefix mit means 'along'."
+    },
+    {
+      "id": "sepv-12",
+      "type": "order",
+      "words": [
+        "Wann",
+        "stehst",
+        "du",
+        "auf?"
+      ],
+      "answers": [
+        "Wann stehst du auf?"
+      ],
+      "translation": "When do you get up?",
+      "explanation": "In a main clause the prefix leaves the verb and goes to the end: Wann stehst du auf?"
+    },
+    {
+      "id": "sepv-13",
+      "type": "order",
+      "words": [
+        "Kaufst",
+        "du",
+        "heute",
+        "ein?"
+      ],
+      "answers": [
+        "Kaufst du heute ein?"
+      ],
+      "translation": "Are you going shopping today?",
+      "explanation": "In a yes/no question the verb is first and the prefix is still last."
+    },
+    {
+      "id": "sepv-14",
+      "type": "order",
+      "words": [
+        "Wann",
+        "kommt",
+        "der",
+        "Zug",
+        "an?"
+      ],
+      "answers": [
+        "Wann kommt der Zug an?"
+      ],
+      "translation": "When does the train arrive?",
+      "explanation": "In a main clause the prefix leaves the verb and goes to the end: kommt in position 2, an at the end."
+    },
+    {
+      "id": "sepv-15",
+      "type": "order",
+      "words": [
+        "Rufst",
+        "du",
+        "mich",
+        "bitte",
+        "an?"
+      ],
+      "answers": [
+        "Rufst du mich bitte an?"
+      ],
+      "translation": "Will you call me, please?",
+      "explanation": "anrufen: the conjugated verb comes first in the question and an stays at the end."
+    },
+    {
+      "id": "sepv-16",
+      "type": "order",
+      "words": [
+        "Tom",
+        "macht",
+        "die",
+        "Tür",
+        "zu."
+      ],
+      "answers": [
+        "Tom macht die Tür zu."
+      ],
+      "translation": "Tom closes the door.",
+      "explanation": "zumachen splits: macht in position 2 and zu at the end."
+    },
+    {
+      "id": "sepv-17",
+      "type": "order",
+      "words": [
+        "Lena",
+        "räumt",
+        "ihr",
+        "Zimmer",
+        "auf."
+      ],
+      "answers": [
+        "Lena räumt ihr Zimmer auf."
+      ],
+      "translation": "Lena tidies her room.",
+      "explanation": "aufräumen splits: räumt in position 2 and auf at the end."
+    },
+    {
+      "id": "sepv-18",
+      "type": "order",
+      "words": [
+        "Warum",
+        "kommst",
+        "du",
+        "nicht",
+        "mit?"
+      ],
+      "answers": [
+        "Warum kommst du nicht mit?"
+      ],
+      "translation": "Why aren't you coming along?",
+      "explanation": "In a W-question the prefix still goes to the end, after nicht."
+    },
+    {
+      "id": "sepv-19",
+      "type": "order",
+      "words": [
+        "Siehst",
+        "du",
+        "heute",
+        "Abend",
+        "fern?"
+      ],
+      "answers": [
+        "Siehst du heute Abend fern?"
+      ],
+      "translation": "Are you watching TV this evening?",
+      "explanation": "fernsehen splits: in a yes/no question Siehst comes first and the prefix fern goes to the very end."
+    },
+    {
+      "id": "sepv-20",
+      "type": "order",
+      "words": [
+        "Wen",
+        "lädst",
+        "du",
+        "zur",
+        "Party",
+        "ein?"
+      ],
+      "answers": [
+        "Wen lädst du zur Party ein?"
+      ],
+      "translation": "Who are you inviting to the party?",
+      "explanation": "einladen splits: lädst in position 2 after Wen, and the prefix ein at the end."
+    },
+    {
+      "id": "sepv-21",
+      "type": "order",
+      "words": [
+        "Wann",
+        "rufst",
+        "du",
+        "deine",
+        "Mutter",
+        "an?"
+      ],
+      "answers": [
+        "Wann rufst du deine Mutter an?"
+      ],
+      "translation": "When are you calling your mother?",
+      "explanation": "anrufen splits: rufst in position 2, the object deine Mutter in between, and an at the end."
+    },
+    {
+      "id": "sepv-22",
+      "type": "type",
+      "prompt": "Ich muss morgen früh ___.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "aufstehen"
+      ],
+      "explanation": "After a modal verb the infinitive stays together: aufstehen (no splitting)."
+    },
+    {
+      "id": "sepv-23",
+      "type": "choice",
+      "prompt": "Anna will heute Abend ___.",
+      "options": [
+        "fernsehen",
+        "fern sehen",
+        "sehen fern"
+      ],
+      "answer": "fernsehen",
+      "explanation": "With a modal verb the separable verb stays together as an infinitive at the end: fernsehen."
+    },
+    {
+      "id": "sepv-24",
+      "type": "order",
+      "words": [
+        "Musst",
+        "du",
+        "morgen",
+        "früh",
+        "aufstehen?"
+      ],
+      "answers": [
+        "Musst du morgen früh aufstehen?"
+      ],
+      "translation": "Do you have to get up early tomorrow?",
+      "explanation": "With a modal verb the separable verb is not split: aufstehen stays together as an infinitive at the end."
+    },
+    {
+      "id": "sepv-25",
+      "type": "choice",
+      "prompt": "Ich weiß, dass er um 7 Uhr ___.",
+      "options": [
+        "aufsteht",
+        "steht auf",
+        "auf steht"
+      ],
+      "answer": "aufsteht",
+      "explanation": "In a subordinate clause the verb goes last and joins its prefix: dass er aufsteht."
+    },
+    {
+      "id": "sepv-26",
+      "type": "type",
+      "prompt": "Anna ist müde, weil sie früh ___.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "aufsteht"
+      ],
+      "explanation": "After weil the conjugated verb goes to the end and the prefix rejoins it: aufsteht."
+    },
+    {
+      "id": "sepv-27",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "Tom",
+        "heute",
+        "einkauft."
+      ],
+      "answers": [
+        "Ich weiß, dass Tom heute einkauft."
+      ],
+      "translation": "I know that Tom is shopping today.",
+      "explanation": "After dass the verb goes last and the prefix joins it again: einkauft."
+    },
+    {
+      "id": "sepv-28",
+      "type": "order",
+      "words": [
+        "Anna",
+        "sagt,",
+        "dass",
+        "der",
+        "Bus",
+        "um",
+        "acht",
+        "abfährt."
+      ],
+      "answers": [
+        "Anna sagt, dass der Bus um acht abfährt."
+      ],
+      "translation": "Anna says the bus leaves at eight.",
+      "explanation": "In a dass-clause the prefix rejoins the verb at the end: abfährt."
+    },
+    {
+      "id": "sepv-29",
+      "type": "order",
+      "words": [
+        "Er",
+        "fragt,",
+        "ob",
+        "du",
+        "mitkommst."
+      ],
+      "answers": [
+        "Er fragt, ob du mitkommst."
+      ],
+      "translation": "He asks whether you are coming along.",
+      "explanation": "After ob the verb goes last and the prefix rejoins it: mitkommst."
+    },
+    {
+      "id": "sepv-30",
+      "type": "order",
+      "words": [
+        "Um",
+        "wie",
+        "viel",
+        "Uhr",
+        "fängt",
+        "der",
+        "Unterricht",
+        "an?"
+      ],
+      "answers": [
+        "Um wie viel Uhr fängt der Unterricht an?"
+      ],
+      "translation": "What time does the lesson start?",
+      "explanation": "anfangen splits: fängt comes right after the question phrase Um wie viel Uhr, and an goes to the end."
+    }
+  ]
+}

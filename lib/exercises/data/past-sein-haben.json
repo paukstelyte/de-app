@@ -1,0 +1,354 @@
+{
+  "slug": "past-sein-haben",
+  "instructions": "Choose or type the correct simple past form of sein (war) or haben (hatte), or put the words in order.",
+  "items": [
+    {
+      "id": "psh-01",
+      "type": "choice",
+      "prompt": "Gestern ___ ich müde.",
+      "options": [
+        "war",
+        "hatte",
+        "waren"
+      ],
+      "answer": "war",
+      "explanation": "Being tired is a state, so you need sein: ich war (not hatte)."
+    },
+    {
+      "id": "psh-02",
+      "type": "choice",
+      "prompt": "Wir ___ keine Zeit.",
+      "options": [
+        "hatten",
+        "waren",
+        "hatte"
+      ],
+      "answer": "hatten",
+      "explanation": "Zeit haben uses haben; wir takes -en in the simple past: wir hatten."
+    },
+    {
+      "id": "psh-03",
+      "type": "choice",
+      "prompt": "Anna ___ gestern im Kino.",
+      "options": [
+        "war",
+        "waren",
+        "warst"
+      ],
+      "answer": "war",
+      "explanation": "er/sie/es takes the same form as ich in the simple past of sein: Anna war."
+    },
+    {
+      "id": "psh-04",
+      "type": "choice",
+      "prompt": "Tom ___ gestern Kopfschmerzen.",
+      "options": [
+        "hatte",
+        "hatten",
+        "war"
+      ],
+      "answer": "hatte",
+      "explanation": "Kopfschmerzen haben uses haben; er/sie/es has no extra ending: Tom hatte."
+    },
+    {
+      "id": "psh-05",
+      "type": "choice",
+      "prompt": "Du ___ gestern nicht in der Schule.",
+      "options": [
+        "warst",
+        "war",
+        "waren",
+        "wart"
+      ],
+      "answer": "warst",
+      "explanation": "du takes -st in the simple past of sein: du warst."
+    },
+    {
+      "id": "psh-06",
+      "type": "choice",
+      "prompt": "Ihr ___ im Urlaub, oder?",
+      "options": [
+        "wart",
+        "waren",
+        "war"
+      ],
+      "answer": "wart",
+      "explanation": "ihr takes -t in the simple past of sein: ihr wart."
+    },
+    {
+      "id": "psh-07",
+      "type": "choice",
+      "prompt": "Meine Eltern ___ letzte Woche in Wien.",
+      "options": [
+        "waren",
+        "war",
+        "wart"
+      ],
+      "answer": "waren",
+      "explanation": "wir, sie (plural) and Sie take -en: sie waren. Plural subject, so waren."
+    },
+    {
+      "id": "psh-08",
+      "type": "choice",
+      "prompt": "Ich ___ als Kind einen Hund.",
+      "options": [
+        "hatte",
+        "war",
+        "hatten"
+      ],
+      "answer": "hatte",
+      "explanation": "ich hatte: haben in the simple past. ich and er/sie/es share the form hatte."
+    },
+    {
+      "id": "psh-09",
+      "type": "choice",
+      "prompt": "Du ___ gestern Geburtstag, oder?",
+      "options": [
+        "hattest",
+        "hatte",
+        "hattet"
+      ],
+      "answer": "hattest",
+      "explanation": "du takes -st: du hattest. hattet would be for ihr."
+    },
+    {
+      "id": "psh-10",
+      "type": "choice",
+      "prompt": "Ihr ___ gestern Hunger, nicht wahr?",
+      "options": [
+        "hattet",
+        "hatten",
+        "hattest"
+      ],
+      "answer": "hattet",
+      "explanation": "ihr takes -t: ihr hattet. hattest is for du, hatten for wir/sie."
+    },
+    {
+      "id": "psh-11",
+      "type": "choice",
+      "prompt": "Das Wetter ___ am Samstag schön.",
+      "options": [
+        "war",
+        "hatte",
+        "waren"
+      ],
+      "answer": "war",
+      "explanation": "Describing weather or a state uses sein: das Wetter war schön."
+    },
+    {
+      "id": "psh-12",
+      "type": "choice",
+      "prompt": "Die Kinder ___ gestern keine Hausaufgaben.",
+      "options": [
+        "hatten",
+        "hatte",
+        "hattet"
+      ],
+      "answer": "hatten",
+      "explanation": "Plural subject (die Kinder = sie) takes -en: sie hatten."
+    },
+    {
+      "id": "psh-13",
+      "type": "type",
+      "prompt": "Letztes Jahr ___ wir in Spanien.",
+      "hint": "(sein)",
+      "answers": [
+        "waren"
+      ],
+      "explanation": "wir takes -en in the simple past of sein: wir waren."
+    },
+    {
+      "id": "psh-14",
+      "type": "type",
+      "prompt": "Ich ___ gestern sehr müde.",
+      "hint": "(sein)",
+      "answers": [
+        "war"
+      ],
+      "explanation": "ich war: the simple past of sein has no ending for ich."
+    },
+    {
+      "id": "psh-15",
+      "type": "type",
+      "prompt": "Lena ___ gestern keinen Hunger.",
+      "hint": "(haben)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "er/sie/es hatte: no ending, just like ich hatte."
+    },
+    {
+      "id": "psh-16",
+      "type": "type",
+      "prompt": "Wo ___ du gestern Abend?",
+      "hint": "(sein)",
+      "answers": [
+        "warst"
+      ],
+      "explanation": "du warst: add -st to war."
+    },
+    {
+      "id": "psh-17",
+      "type": "type",
+      "prompt": "Ihr ___ gestern sehr laut, oder?",
+      "hint": "(sein)",
+      "answers": [
+        "wart"
+      ],
+      "explanation": "ihr wart: add -t to war."
+    },
+    {
+      "id": "psh-18",
+      "type": "type",
+      "prompt": "Mein Bruder ___ früher ein Fahrrad.",
+      "hint": "(haben)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "er hatte: the simple past of haben is hatte, and er/sie/es adds no ending."
+    },
+    {
+      "id": "psh-19",
+      "type": "type",
+      "prompt": "Die Kinder ___ gestern im Park.",
+      "hint": "(sein)",
+      "answers": [
+        "waren"
+      ],
+      "explanation": "Plural subject: sie waren."
+    },
+    {
+      "id": "psh-20",
+      "type": "type",
+      "prompt": "Ich ___ am Montag viel Arbeit.",
+      "hint": "(haben)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "ich hatte: ich and er/sie/es share the form hatte, with no extra ending."
+    },
+    {
+      "id": "psh-21",
+      "type": "type",
+      "prompt": "Du ___ gestern keine Zeit, oder?",
+      "hint": "(haben)",
+      "answers": [
+        "hattest"
+      ],
+      "explanation": "du hattest: add -st to hatte."
+    },
+    {
+      "id": "psh-22",
+      "type": "type",
+      "prompt": "Wir ___ am Sonntag bei Oma.",
+      "hint": "(sein)",
+      "answers": [
+        "waren"
+      ],
+      "explanation": "wir waren: add -en to war."
+    },
+    {
+      "id": "psh-23",
+      "type": "type",
+      "prompt": "Ihr ___ gestern Glück.",
+      "hint": "(haben)",
+      "answers": [
+        "hattet"
+      ],
+      "explanation": "ihr hattet: add -t to hatte."
+    },
+    {
+      "id": "psh-24",
+      "type": "type",
+      "prompt": "Das Essen ___ gestern sehr gut.",
+      "hint": "(sein)",
+      "answers": [
+        "war"
+      ],
+      "explanation": "es/das Essen = er/sie/es, so war."
+    },
+    {
+      "id": "psh-25",
+      "type": "type",
+      "prompt": "Die Hotels ___ im Sommer sehr teuer.",
+      "hint": "(sein)",
+      "answers": [
+        "waren"
+      ],
+      "explanation": "Plural subject takes -en: die Hotels waren."
+    },
+    {
+      "id": "psh-26",
+      "type": "type",
+      "prompt": "Wir ___ als Kinder einen Garten.",
+      "hint": "(haben)",
+      "answers": [
+        "hatten"
+      ],
+      "explanation": "wir hatten: add -n to hatte."
+    },
+    {
+      "id": "psh-27",
+      "type": "order",
+      "words": [
+        "Wie",
+        "war",
+        "dein",
+        "Urlaub?"
+      ],
+      "answers": [
+        "Wie war dein Urlaub?"
+      ],
+      "translation": "How was your holiday?",
+      "explanation": "A question word comes first and the verb war stays in second place; the subject dein Urlaub follows the verb."
+    },
+    {
+      "id": "psh-28",
+      "type": "order",
+      "words": [
+        "Warum",
+        "warst",
+        "du",
+        "gestern",
+        "nicht",
+        "da?"
+      ],
+      "answers": [
+        "Warum warst du gestern nicht da?"
+      ],
+      "translation": "Why weren't you there yesterday?",
+      "explanation": "The question word is first, then the verb in second place: warst (du-form of sein)."
+    },
+    {
+      "id": "psh-29",
+      "type": "order",
+      "words": [
+        "Hatte",
+        "Anna",
+        "gestern",
+        "Kopfschmerzen?"
+      ],
+      "answers": [
+        "Hatte Anna gestern Kopfschmerzen?"
+      ],
+      "translation": "Did Anna have a headache yesterday?",
+      "explanation": "In a yes/no question the verb comes first: Hatte Anna ...? Kopfschmerzen haben uses haben."
+    },
+    {
+      "id": "psh-30",
+      "type": "order",
+      "words": [
+        "Wo",
+        "wart",
+        "ihr",
+        "am",
+        "Wochenende?"
+      ],
+      "answers": [
+        "Wo wart ihr am Wochenende?"
+      ],
+      "translation": "Where were you (all) at the weekend?",
+      "explanation": "Question word first, verb second: wart is the ihr-form of sein."
+    }
+  ]
+}

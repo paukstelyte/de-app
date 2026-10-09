@@ -1,0 +1,373 @@
+{
+  "slug": "sein-haben",
+  "instructions": "Choose, type or arrange the correct form of sein or haben.",
+  "items": [
+    {
+      "id": "sh-01",
+      "type": "choice",
+      "prompt": "Ich ___ müde.",
+      "options": [
+        "bin",
+        "ist",
+        "bist",
+        "sind"
+      ],
+      "answer": "bin",
+      "explanation": "sein with ich: ich bin."
+    },
+    {
+      "id": "sh-02",
+      "type": "type",
+      "prompt": "Du ___ heute sehr nett.",
+      "hint": "(sein)",
+      "answers": [
+        "bist"
+      ],
+      "explanation": "sein with du: du bist."
+    },
+    {
+      "id": "sh-03",
+      "type": "choice",
+      "prompt": "Anna ___ eine Schwester.",
+      "options": [
+        "hat",
+        "ist",
+        "haben",
+        "hast"
+      ],
+      "answer": "hat",
+      "explanation": "haben with er/sie/es: sie hat. Having a sister uses haben, not sein."
+    },
+    {
+      "id": "sh-04",
+      "type": "choice",
+      "prompt": "Wir ___ im Park.",
+      "options": [
+        "sind",
+        "seid",
+        "bin",
+        "ist"
+      ],
+      "answer": "sind",
+      "explanation": "sein with wir: wir sind."
+    },
+    {
+      "id": "sh-05",
+      "type": "type",
+      "prompt": "Ich ___ einen Hund.",
+      "hint": "(haben)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "haben with ich: ich habe."
+    },
+    {
+      "id": "sh-06",
+      "type": "choice",
+      "prompt": "Ihr ___ zu Hause.",
+      "options": [
+        "seid",
+        "sind",
+        "bist",
+        "habt"
+      ],
+      "answer": "seid",
+      "explanation": "sein with ihr: ihr seid (not sind, which is for wir/sie/Sie)."
+    },
+    {
+      "id": "sh-07",
+      "type": "type",
+      "prompt": "Er ___ Lehrer.",
+      "hint": "(sein)",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "sein with er/sie/es: er ist. Jobs are described with sein."
+    },
+    {
+      "id": "sh-08",
+      "type": "type",
+      "prompt": "Wir ___ Hunger.",
+      "hint": "(haben)",
+      "answers": [
+        "haben"
+      ],
+      "explanation": "German says Hunger haben (to have hunger): wir haben."
+    },
+    {
+      "id": "sh-09",
+      "type": "choice",
+      "prompt": "Du ___ ein Auto.",
+      "options": [
+        "hast",
+        "hat",
+        "habe",
+        "bist"
+      ],
+      "answer": "hast",
+      "explanation": "haben with du: du hast."
+    },
+    {
+      "id": "sh-10",
+      "type": "type",
+      "prompt": "Ihr ___ heute Zeit.",
+      "hint": "(haben)",
+      "answers": [
+        "habt"
+      ],
+      "explanation": "haben with ihr: ihr habt."
+    },
+    {
+      "id": "sh-11",
+      "type": "choice",
+      "prompt": "Tom und Lena ___ Freunde.",
+      "options": [
+        "sind",
+        "ist",
+        "seid",
+        "haben"
+      ],
+      "answer": "sind",
+      "explanation": "Two people are plural, so sein takes sie-form: sie sind."
+    },
+    {
+      "id": "sh-12",
+      "type": "type",
+      "prompt": "Lena ___ Kopfschmerzen.",
+      "hint": "(haben)",
+      "answers": [
+        "hat"
+      ],
+      "explanation": "haben with er/sie/es: sie hat. German uses haben for aches."
+    },
+    {
+      "id": "sh-13",
+      "type": "choice",
+      "prompt": "Entschuldigung, ___ Sie Herr Müller?",
+      "options": [
+        "sind",
+        "seid",
+        "bist",
+        "ist"
+      ],
+      "answer": "sind",
+      "explanation": "The polite Sie always takes the sie-form: Sie sind."
+    },
+    {
+      "id": "sh-14",
+      "type": "type",
+      "prompt": "Meine Eltern ___ in Berlin.",
+      "hint": "(sein)",
+      "answers": [
+        "sind"
+      ],
+      "explanation": "A plural subject takes sind: meine Eltern sind."
+    },
+    {
+      "id": "sh-15",
+      "type": "choice",
+      "prompt": "Ich ___ 25 Jahre alt.",
+      "options": [
+        "bin",
+        "habe",
+        "ist",
+        "hat"
+      ],
+      "answer": "bin",
+      "explanation": "German gives age with sein, not haben: ich bin 25 Jahre alt."
+    },
+    {
+      "id": "sh-16",
+      "type": "choice",
+      "prompt": "Wie alt ___ du?",
+      "options": [
+        "bist",
+        "hast",
+        "ist",
+        "bin"
+      ],
+      "answer": "bist",
+      "explanation": "Age uses sein; with du it is du bist."
+    },
+    {
+      "id": "sh-17",
+      "type": "type",
+      "prompt": "Das Wetter ___ heute schön.",
+      "hint": "(sein)",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "sein with es/das Wetter: es ist, das Wetter ist."
+    },
+    {
+      "id": "sh-18",
+      "type": "choice",
+      "prompt": "Ich ___ Angst vor Spinnen.",
+      "options": [
+        "habe",
+        "bin",
+        "hat",
+        "habt"
+      ],
+      "answer": "habe",
+      "explanation": "Angst haben is a fixed phrase with haben: ich habe Angst."
+    },
+    {
+      "id": "sh-19",
+      "type": "type",
+      "prompt": "Das Kind ___ keine Zeit.",
+      "hint": "(haben)",
+      "answers": [
+        "hat"
+      ],
+      "explanation": "haben with er/sie/es: das Kind hat."
+    },
+    {
+      "id": "sh-20",
+      "type": "choice",
+      "prompt": "Woher ___ ihr?",
+      "options": [
+        "seid",
+        "sind",
+        "habt",
+        "bist"
+      ],
+      "answer": "seid",
+      "explanation": "sein with ihr: ihr seid. sind is for wir/sie/Sie, habt is a form of haben."
+    },
+    {
+      "id": "sh-21",
+      "type": "choice",
+      "prompt": "Ich ___ gestern Pizza gegessen.",
+      "options": [
+        "habe",
+        "bin",
+        "hat",
+        "hast"
+      ],
+      "answer": "habe",
+      "explanation": "haben is also the helper verb for most verbs in the perfect tense: ich habe gegessen (not bin)."
+    },
+    {
+      "id": "sh-22",
+      "type": "type",
+      "prompt": "Die Kinder ___ heute keine Schule.",
+      "hint": "(haben)",
+      "answers": [
+        "haben"
+      ],
+      "explanation": "Die Kinder = sie (plural), so haben keeps the infinitive form: sie haben."
+    },
+    {
+      "id": "sh-23",
+      "type": "type",
+      "prompt": "Wir ___ viel gelernt.",
+      "hint": "(haben)",
+      "answers": [
+        "haben"
+      ],
+      "explanation": "haben as a helper verb: lernen forms the perfect with haben, and wir takes haben."
+    },
+    {
+      "id": "sh-24",
+      "type": "choice",
+      "prompt": "Herr Weber, ___ Sie einen Moment Zeit?",
+      "options": [
+        "haben",
+        "habt",
+        "hat",
+        "sind"
+      ],
+      "answer": "haben",
+      "explanation": "Zeit haben uses haben, and the polite Sie takes the plural form: Sie haben."
+    },
+    {
+      "id": "sh-25",
+      "type": "type",
+      "prompt": "Ihr ___ schon gegessen.",
+      "hint": "(haben)",
+      "answers": [
+        "habt"
+      ],
+      "explanation": "haben as a helper verb for essen; with ihr the form is ihr habt."
+    },
+    {
+      "id": "sh-26",
+      "type": "choice",
+      "prompt": "Mein Bruder ___ krank.",
+      "options": [
+        "ist",
+        "hat",
+        "bist",
+        "sind"
+      ],
+      "answer": "ist",
+      "explanation": "Being ill is a state, so German uses sein: mein Bruder (= er) ist krank."
+    },
+    {
+      "id": "sh-27",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "heute",
+        "Zeit?"
+      ],
+      "answers": [
+        "Hast du heute Zeit?"
+      ],
+      "translation": "Do you have time today?",
+      "explanation": "In a yes/no question the verb comes first: Hast du ...?"
+    },
+    {
+      "id": "sh-28",
+      "type": "order",
+      "words": [
+        "Warum",
+        "bist",
+        "du",
+        "so",
+        "müde?"
+      ],
+      "answers": [
+        "Warum bist du so müde?"
+      ],
+      "translation": "Why are you so tired?",
+      "explanation": "In a question with a question word, the conjugated verb is second: bist."
+    },
+    {
+      "id": "sh-29",
+      "type": "order",
+      "words": [
+        "Anna",
+        "sagt,",
+        "dass",
+        "sie",
+        "müde",
+        "ist."
+      ],
+      "answers": [
+        "Anna sagt, dass sie müde ist."
+      ],
+      "translation": "Anna says that she is tired.",
+      "explanation": "In a dass-clause the conjugated verb goes to the end: sie müde ist."
+    },
+    {
+      "id": "sh-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "er",
+        "Hunger",
+        "hat."
+      ],
+      "answers": [
+        "Ich weiß, dass er Hunger hat."
+      ],
+      "translation": "I know that he is hungry.",
+      "explanation": "In a dass-clause the conjugated verb goes to the end: er Hunger hat."
+    }
+  ]
+}

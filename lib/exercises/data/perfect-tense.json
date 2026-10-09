@@ -1,0 +1,350 @@
+{
+  "slug": "perfect-tense",
+  "instructions": "Complete or build each sentence in the Perfekt, choosing haben or sein and the correct past participle.",
+  "items": [
+    {
+      "id": "pf-01",
+      "type": "choice",
+      "prompt": "Ich ___ gestern Pizza gegessen.",
+      "options": [
+        "habe",
+        "bin"
+      ],
+      "answer": "habe",
+      "explanation": "essen is not a movement verb, so it takes haben: ich habe gegessen."
+    },
+    {
+      "id": "pf-02",
+      "type": "choice",
+      "prompt": "Wir ___ nach Berlin gefahren.",
+      "options": [
+        "sind",
+        "haben"
+      ],
+      "answer": "sind",
+      "explanation": "fahren (a journey from A to B) is a movement verb, so it takes sein: wir sind gefahren."
+    },
+    {
+      "id": "pf-03",
+      "type": "choice",
+      "prompt": "Anna ___ ein Buch gelesen.",
+      "options": [
+        "hat",
+        "ist"
+      ],
+      "answer": "hat",
+      "explanation": "lesen has no movement or change of state, so it takes haben: sie hat gelesen."
+    },
+    {
+      "id": "pf-04",
+      "type": "choice",
+      "prompt": "Tom ___ um sieben Uhr aufgestanden.",
+      "options": [
+        "ist",
+        "hat"
+      ],
+      "answer": "ist",
+      "explanation": "aufstehen is a change of position (lying → standing), so it takes sein: er ist aufgestanden."
+    },
+    {
+      "id": "pf-05",
+      "type": "choice",
+      "prompt": "Am Wochenende ___ wir Fußball gespielt.",
+      "options": [
+        "haben",
+        "sind"
+      ],
+      "answer": "haben",
+      "explanation": "spielen has no movement or change of state, so it takes haben: wir haben gespielt."
+    },
+    {
+      "id": "pf-06",
+      "type": "choice",
+      "prompt": "Ich ___ gestern nach Hause gegangen.",
+      "options": [
+        "bin",
+        "habe"
+      ],
+      "answer": "bin",
+      "explanation": "gehen is a movement verb, so it takes sein: ich bin gegangen."
+    },
+    {
+      "id": "pf-07",
+      "type": "choice",
+      "prompt": "Lena ___ zur Schule gelaufen.",
+      "options": [
+        "ist",
+        "hat"
+      ],
+      "answer": "ist",
+      "explanation": "laufen with a destination (zur Schule) is movement from A to B, so it takes sein: sie ist gelaufen."
+    },
+    {
+      "id": "pf-08",
+      "type": "choice",
+      "prompt": "Er ___ im Bett geschlafen.",
+      "options": [
+        "hat",
+        "ist"
+      ],
+      "answer": "hat",
+      "explanation": "schlafen takes haben: you stay in one place and nothing changes, so it is not a movement verb: er hat geschlafen."
+    },
+    {
+      "id": "pf-09",
+      "type": "choice",
+      "prompt": "Sie ___ zu Hause geblieben.",
+      "options": [
+        "ist",
+        "hat"
+      ],
+      "answer": "ist",
+      "explanation": "bleiben is a fixed exception: no movement, but it still takes sein. Learn it as sie ist geblieben."
+    },
+    {
+      "id": "pf-10",
+      "type": "choice",
+      "prompt": "Ich habe einen Kaffee ___.",
+      "options": [
+        "getrunken",
+        "getrinkt",
+        "trinkt",
+        "getrinken"
+      ],
+      "answer": "getrunken",
+      "explanation": "trinken is a strong verb: the participle is getrunken, not getrinkt."
+    },
+    {
+      "id": "pf-11",
+      "type": "choice",
+      "prompt": "Wir haben Fußball ___.",
+      "options": [
+        "gespielt",
+        "gespielen",
+        "spielt"
+      ],
+      "answer": "gespielt",
+      "explanation": "Regular verbs form the participle as ge- + stem + -t: gespielt."
+    },
+    {
+      "id": "pf-12",
+      "type": "choice",
+      "prompt": "Hast du das Fenster ___?",
+      "options": [
+        "geöffnet",
+        "geöffnt",
+        "öffnet",
+        "geöffnen"
+      ],
+      "answer": "geöffnet",
+      "explanation": "Stems ending in -t, -d or consonant + n (öffn-) add -et: ge + öffn + et = geöffnet."
+    },
+    {
+      "id": "pf-13",
+      "type": "choice",
+      "prompt": "Er hat mich gestern ___.",
+      "options": [
+        "angerufen",
+        "geanrufen",
+        "anruft",
+        "angeruft"
+      ],
+      "answer": "angerufen",
+      "explanation": "Separable verbs put ge- between prefix and stem: an + ge + rufen = angerufen."
+    },
+    {
+      "id": "pf-14",
+      "type": "choice",
+      "prompt": "Sie hat das Paket ___.",
+      "options": [
+        "bekommen",
+        "gebekommen",
+        "bekommt"
+      ],
+      "answer": "bekommen",
+      "explanation": "Verbs with the inseparable prefix be- take no ge-: bekommen."
+    },
+    {
+      "id": "pf-15",
+      "type": "type",
+      "prompt": "Ich habe Brot ___.",
+      "hint": "(kaufen)",
+      "answers": [
+        "gekauft"
+      ],
+      "explanation": "Regular verb: ge- + stem + -t = gekauft."
+    },
+    {
+      "id": "pf-16",
+      "type": "type",
+      "prompt": "Tom hat den ganzen Tag ___.",
+      "hint": "(arbeiten)",
+      "answers": [
+        "gearbeitet"
+      ],
+      "explanation": "A stem ending in -t adds -et: gearbeitet."
+    },
+    {
+      "id": "pf-17",
+      "type": "type",
+      "prompt": "Hast du schon ___?",
+      "hint": "(essen)",
+      "answers": [
+        "gegessen"
+      ],
+      "explanation": "essen is strong: ge- + essen = gegessen (with haben)."
+    },
+    {
+      "id": "pf-18",
+      "type": "type",
+      "prompt": "Anna ist nach Hamburg ___.",
+      "hint": "(fahren)",
+      "answers": [
+        "gefahren"
+      ],
+      "explanation": "fahren is strong with sein for a journey: gefahren."
+    },
+    {
+      "id": "pf-19",
+      "type": "type",
+      "prompt": "Er hat einen Film ___.",
+      "hint": "(sehen)",
+      "answers": [
+        "gesehen"
+      ],
+      "explanation": "sehen is strong: gesehen, with haben."
+    },
+    {
+      "id": "pf-20",
+      "type": "type",
+      "prompt": "Wir haben Musik ___.",
+      "hint": "(hören)",
+      "answers": [
+        "gehört"
+      ],
+      "explanation": "Regular verb: ge- + hör + -t = gehört."
+    },
+    {
+      "id": "pf-21",
+      "type": "type",
+      "prompt": "Sie hat mir ein Geschenk ___.",
+      "hint": "(geben)",
+      "answers": [
+        "gegeben"
+      ],
+      "explanation": "geben is strong: gegeben, with haben."
+    },
+    {
+      "id": "pf-22",
+      "type": "type",
+      "prompt": "Ich habe den Bus ___.",
+      "hint": "(verpassen)",
+      "answers": [
+        "verpasst"
+      ],
+      "explanation": "The inseparable prefix ver- means no ge-: verpasst."
+    },
+    {
+      "id": "pf-23",
+      "type": "type",
+      "prompt": "Wir haben im Restaurant ___.",
+      "hint": "(bezahlen)",
+      "answers": [
+        "bezahlt"
+      ],
+      "explanation": "The inseparable prefix be- means no ge-: bezahlt."
+    },
+    {
+      "id": "pf-24",
+      "type": "type",
+      "prompt": "Jonas ist früh ___.",
+      "hint": "(aufstehen)",
+      "answers": [
+        "aufgestanden"
+      ],
+      "explanation": "Separable and strong: auf + ge + standen, with sein: aufgestanden."
+    },
+    {
+      "id": "pf-25",
+      "type": "type",
+      "prompt": "Ich habe lange ___.",
+      "hint": "(schlafen)",
+      "answers": [
+        "geschlafen"
+      ],
+      "explanation": "schlafen is strong and takes haben: geschlafen."
+    },
+    {
+      "id": "pf-26",
+      "type": "type",
+      "prompt": "Wohin bist du gestern ___?",
+      "hint": "(gehen)",
+      "answers": [
+        "gegangen"
+      ],
+      "explanation": "gehen takes sein, and the participle is gegangen."
+    },
+    {
+      "id": "pf-27",
+      "type": "type",
+      "prompt": "Sie hat ihre Freundin ___.",
+      "hint": "(besuchen)",
+      "answers": [
+        "besucht"
+      ],
+      "explanation": "The inseparable prefix be- means no ge-: besucht."
+    },
+    {
+      "id": "pf-28",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "gestern",
+        "Fußball",
+        "gespielt?"
+      ],
+      "answers": [
+        "Hast du gestern Fußball gespielt?"
+      ],
+      "translation": "Did you play football yesterday?",
+      "explanation": "In a Perfekt question, haben comes first and the participle goes to the end."
+    },
+    {
+      "id": "pf-29",
+      "type": "order",
+      "words": [
+        "Ich",
+        "weiß,",
+        "dass",
+        "Anna",
+        "nach",
+        "Hause",
+        "gegangen",
+        "ist."
+      ],
+      "answers": [
+        "Ich weiß, dass Anna nach Hause gegangen ist."
+      ],
+      "translation": "I know that Anna went home.",
+      "explanation": "In a dass-clause the conjugated verb (ist) goes last, after the participle."
+    },
+    {
+      "id": "pf-30",
+      "type": "order",
+      "words": [
+        "Wann",
+        "bist",
+        "du",
+        "nach",
+        "Berlin",
+        "gefahren?"
+      ],
+      "answers": [
+        "Wann bist du nach Berlin gefahren?"
+      ],
+      "translation": "When did you travel to Berlin?",
+      "explanation": "In a W-question the auxiliary is second and the participle stays at the end."
+    }
+  ]
+}

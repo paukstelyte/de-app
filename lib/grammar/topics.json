@@ -96,42 +96,78 @@
     "title": "sein and haben",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "The two most important irregular verbs: ich bin, du bist, er ist …; ich habe, du hast, er hat … They are also the helper verbs for the perfect tense."
+    "summary": "The two most important irregular verbs: ich bin, du bist, er ist …; ich habe, du hast, er hat … They are also the helper verbs for the perfect tense.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/sein-haben/practice"
+      }
+    ]
   },
   {
     "slug": "separable-verbs",
     "title": "Separable verbs",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "Verbs like aufstehen and einkaufen split in a main clause: the prefix goes to the end. Ich stehe um 7 Uhr auf. In the infinitive and at the end of a subordinate clause they stay together."
+    "summary": "Verbs like aufstehen and einkaufen split in a main clause: the prefix goes to the end. Ich stehe um 7 Uhr auf. In the infinitive and at the end of a subordinate clause they stay together.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/separable-verbs/practice"
+      }
+    ]
   },
   {
     "slug": "modal-verbs",
     "title": "Modal verbs (können, müssen, wollen …)",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "können, müssen, dürfen, sollen, wollen and möchten combine with a second verb in the infinitive at the end: Ich kann gut schwimmen. ich and er/sie/es have the same form: ich kann, er kann."
+    "summary": "können, müssen, dürfen, sollen, wollen and möchten combine with a second verb in the infinitive at the end: Ich kann gut schwimmen. ich and er/sie/es have the same form: ich kann, er kann.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/modal-verbs/practice"
+      }
+    ]
   },
   {
     "slug": "imperative",
     "title": "The imperative (giving instructions)",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "Three forms for du, ihr and Sie: Komm! Kommt! Kommen Sie! The du form drops -st and the pronoun: du fährst → Fahr!"
+    "summary": "Three forms for du, ihr and Sie: Komm! Kommt! Kommen Sie! The du form drops -st and the pronoun: du fährst → Fahr!",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/imperative/practice"
+      }
+    ]
   },
   {
     "slug": "perfect-tense",
     "title": "Perfect tense (Perfekt)",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "The usual spoken past: haben or sein plus the past participle at the end. Ich habe Pizza gegessen. Verbs of movement or change use sein: Ich bin nach Berlin gefahren."
+    "summary": "The usual spoken past: haben or sein plus the past participle at the end. Ich habe Pizza gegessen. Verbs of movement or change use sein: Ich bin nach Berlin gefahren.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/perfect-tense/practice"
+      }
+    ]
   },
   {
     "slug": "past-sein-haben",
     "title": "Simple past of sein and haben (war, hatte)",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "Even in speech, sein and haben usually use the simple past: Ich war krank. Wir hatten keine Zeit."
+    "summary": "Even in speech, sein and haben usually use the simple past: Ich war krank. Wir hatten keine Zeit.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/past-sein-haben/practice"
+      }
+    ]
   },
   {
     "slug": "word-order-verb-second",

@@ -1,0 +1,368 @@
+{
+  "slug": "modal-verbs",
+  "instructions": "Choose, type or arrange the correct modal verb form with the infinitive at the end.",
+  "items": [
+    {
+      "id": "modal-01",
+      "type": "choice",
+      "prompt": "Tom ___ gut schwimmen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können",
+        "könnt"
+      ],
+      "answer": "kann",
+      "explanation": "With er/sie/es, können has no ending: er kann. kannst is for du, können for wir/sie."
+    },
+    {
+      "id": "modal-02",
+      "type": "choice",
+      "prompt": "Anna ___ heute arbeiten.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen",
+        "müsst"
+      ],
+      "answer": "muss",
+      "explanation": "müssen in the singular: ich muss, er/sie/es muss. musst belongs to du."
+    },
+    {
+      "id": "modal-03",
+      "type": "choice",
+      "prompt": "Wir ___ jetzt nach Hause gehen.",
+      "options": [
+        "wollen",
+        "will",
+        "willst",
+        "wollt"
+      ],
+      "answer": "wollen",
+      "explanation": "With wir the modal takes the infinitive form: wir wollen. The second verb gehen stays at the end."
+    },
+    {
+      "id": "modal-04",
+      "type": "choice",
+      "prompt": "Hier ___ man nicht rauchen.",
+      "options": [
+        "darf",
+        "dürfen",
+        "darfst",
+        "dürft"
+      ],
+      "answer": "darf",
+      "explanation": "man takes the er/sie/es form: man darf. dürfen expresses permission or, with nicht, prohibition."
+    },
+    {
+      "id": "modal-05",
+      "type": "choice",
+      "prompt": "Du ___ mir helfen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answer": "kannst",
+      "explanation": "With du, the modal ends in -st: du kannst. The second verb helfen stays in the infinitive."
+    },
+    {
+      "id": "modal-06",
+      "type": "choice",
+      "prompt": "Ich ___ einen Kaffee, bitte.",
+      "options": [
+        "möchte",
+        "möchtest",
+        "möchten"
+      ],
+      "answer": "möchte",
+      "explanation": "möchten for a polite wish: ich möchte, du möchtest, er/sie/es möchte. ich and er/sie/es share the same form."
+    },
+    {
+      "id": "modal-07",
+      "type": "choice",
+      "prompt": "Die Kinder ___ im Garten spielen.",
+      "options": [
+        "dürfen",
+        "darf",
+        "darfst"
+      ],
+      "answer": "dürfen",
+      "explanation": "The plural subject die Kinder (= sie) needs the plural form dürfen. The singular darf has an a without umlaut."
+    },
+    {
+      "id": "modal-08",
+      "type": "choice",
+      "prompt": "Ihr ___ leise sein.",
+      "options": [
+        "sollt",
+        "soll",
+        "sollen"
+      ],
+      "answer": "sollt",
+      "explanation": "With ihr the ending is -t: ihr sollt. sollen expresses a duty or request from someone else."
+    },
+    {
+      "id": "modal-09",
+      "type": "choice",
+      "prompt": "Lena ___ morgen früh aufstehen.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answer": "muss",
+      "explanation": "Lena is er/sie/es, so müssen becomes muss. The separable verb aufstehen goes to the end as an infinitive."
+    },
+    {
+      "id": "modal-10",
+      "type": "choice",
+      "prompt": "Mein Bruder ___ sehr gut Gitarre spielen.",
+      "options": [
+        "kann",
+        "können",
+        "kannst"
+      ],
+      "answer": "kann",
+      "explanation": "mein Bruder = er, and er has the same form as ich: kann. The infinitive spielen comes last."
+    },
+    {
+      "id": "modal-11",
+      "type": "choice",
+      "prompt": "Was ___ du trinken?",
+      "options": [
+        "möchtest",
+        "möchte",
+        "möchten"
+      ],
+      "answer": "möchtest",
+      "explanation": "With du, möchten ends in -st: du möchtest. The infinitive trinken is at the end of the question."
+    },
+    {
+      "id": "modal-12",
+      "type": "choice",
+      "prompt": "Leider ___ ich heute nicht kommen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answer": "kann",
+      "explanation": "ich kann: ich and er/sie/es have the same form. nicht stands before the infinitive kommen at the end."
+    },
+    {
+      "id": "modal-13",
+      "type": "type",
+      "prompt": "Am Montag ___ ich lange arbeiten.",
+      "hint": "(müssen)",
+      "answers": [
+        "muss"
+      ],
+      "explanation": "ich muss: the modal verb müssen has no umlaut in the singular. The main verb arbeiten stays at the end."
+    },
+    {
+      "id": "modal-14",
+      "type": "type",
+      "prompt": "Wir ___ am Samstag ins Kino gehen.",
+      "hint": "(wollen)",
+      "answers": [
+        "wollen"
+      ],
+      "explanation": "With wir the modal is the same as the infinitive: wir wollen. gehen stays at the end."
+    },
+    {
+      "id": "modal-15",
+      "type": "type",
+      "prompt": "Hier ___ du nicht parken.",
+      "hint": "(dürfen)",
+      "answers": [
+        "darfst"
+      ],
+      "explanation": "du darfst: dürfen changes ü to a in the singular (ich darf, du darfst, er darf)."
+    },
+    {
+      "id": "modal-16",
+      "type": "type",
+      "prompt": "Mein Vater ___ sehr gut kochen.",
+      "hint": "(können)",
+      "answers": [
+        "kann"
+      ],
+      "explanation": "er kann: no ending for ich and er/sie/es, and ö becomes a in the singular."
+    },
+    {
+      "id": "modal-17",
+      "type": "type",
+      "prompt": "Ihr ___ pünktlich sein.",
+      "hint": "(müssen)",
+      "answers": [
+        "müsst"
+      ],
+      "explanation": "ihr müsst: in the plural müssen keeps its umlaut, and ihr takes -t."
+    },
+    {
+      "id": "modal-18",
+      "type": "type",
+      "prompt": "Was ___ Sie trinken?",
+      "hint": "(möchten)",
+      "answers": [
+        "möchten"
+      ],
+      "explanation": "With Sie (formal) and wir/sie, the form is möchten. The infinitive trinken is at the end."
+    },
+    {
+      "id": "modal-19",
+      "type": "type",
+      "prompt": "Der Arzt sagt: Du ___ mehr Wasser trinken.",
+      "hint": "(sollen)",
+      "answers": [
+        "sollst"
+      ],
+      "explanation": "du sollst: sollen keeps its o in all forms, and du takes -st. It expresses advice or a duty."
+    },
+    {
+      "id": "modal-20",
+      "type": "type",
+      "prompt": "Die Schüler ___ im Unterricht nicht essen.",
+      "hint": "(dürfen)",
+      "answers": [
+        "dürfen"
+      ],
+      "explanation": "Plural subject die Schüler = sie, so the plural form dürfen is used, with ü."
+    },
+    {
+      "id": "modal-21",
+      "type": "type",
+      "prompt": "Mein Opa ___ nicht gut hören.",
+      "hint": "(können)",
+      "answers": [
+        "kann"
+      ],
+      "explanation": "er kann: mein Opa = er. The negation nicht stays before the infinitive hören."
+    },
+    {
+      "id": "modal-22",
+      "type": "type",
+      "prompt": "Am Wochenende ___ er nicht arbeiten.",
+      "hint": "(müssen)",
+      "answers": [
+        "muss"
+      ],
+      "explanation": "er muss: singular müssen has no ending. nicht müssen means 'not have to': er muss nicht arbeiten = he does not have to work."
+    },
+    {
+      "id": "modal-23",
+      "type": "type",
+      "prompt": "Heute ___ ich dir ein Eis kaufen.",
+      "hint": "(wollen)",
+      "answers": [
+        "will"
+      ],
+      "explanation": "ich will: wollen changes o to i in the singular, and ich has no ending (ich will, du willst, er will)."
+    },
+    {
+      "id": "modal-24",
+      "type": "type",
+      "prompt": "Im Auto ___ man nicht telefonieren.",
+      "hint": "(dürfen)",
+      "answers": [
+        "darf"
+      ],
+      "explanation": "man takes the er/sie/es form: man darf. With nicht it expresses a prohibition."
+    },
+    {
+      "id": "modal-25",
+      "type": "order",
+      "words": [
+        "Ich",
+        "kann",
+        "gut",
+        "schwimmen."
+      ],
+      "answers": [
+        "Ich kann gut schwimmen."
+      ],
+      "translation": "I can swim well.",
+      "explanation": "The conjugated modal is in position 2; the second verb schwimmen goes to the end as an infinitive."
+    },
+    {
+      "id": "modal-26",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "bitte",
+        "helfen?"
+      ],
+      "answers": [
+        "Kannst du mir bitte helfen?"
+      ],
+      "translation": "Can you help me, please?",
+      "explanation": "In a yes/no question the modal comes first; the infinitive helfen stays at the end."
+    },
+    {
+      "id": "modal-27",
+      "type": "order",
+      "words": [
+        "Darf",
+        "ich",
+        "hier",
+        "sitzen?"
+      ],
+      "answers": [
+        "Darf ich hier sitzen?"
+      ],
+      "translation": "May I sit here?",
+      "explanation": "The modal darf starts the question, and the infinitive sitzen goes to the end."
+    },
+    {
+      "id": "modal-28",
+      "type": "order",
+      "words": [
+        "Was",
+        "möchtest",
+        "du",
+        "essen?"
+      ],
+      "answers": [
+        "Was möchtest du essen?"
+      ],
+      "translation": "What would you like to eat?",
+      "explanation": "In a W-question the modal is in position 2 after Was, and the infinitive essen is last."
+    },
+    {
+      "id": "modal-29",
+      "type": "order",
+      "words": [
+        "Anna",
+        "will",
+        "nicht",
+        "zur",
+        "Schule",
+        "gehen."
+      ],
+      "answers": [
+        "Anna will nicht zur Schule gehen."
+      ],
+      "translation": "Anna does not want to go to school.",
+      "explanation": "The modal will is in position 2; nicht comes before gehen, which is last."
+    },
+    {
+      "id": "modal-30",
+      "type": "order",
+      "words": [
+        "Wann",
+        "musst",
+        "du",
+        "morgen",
+        "aufstehen?"
+      ],
+      "answers": [
+        "Wann musst du morgen aufstehen?"
+      ],
+      "translation": "When do you have to get up tomorrow?",
+      "explanation": "After the question word the modal is in position 2; the separable verb aufstehen stays whole at the end."
+    }
+  ]
+}

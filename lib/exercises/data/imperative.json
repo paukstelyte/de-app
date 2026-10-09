@@ -1,0 +1,368 @@
+{
+  "slug": "imperative",
+  "instructions": "Choose or type the correct imperative form, or put the words in order.",
+  "items": [
+    {
+      "id": "imp-01",
+      "type": "choice",
+      "prompt": "Lena, ___ bitte her!",
+      "options": [
+        "komm",
+        "kommst",
+        "kommt",
+        "kommen"
+      ],
+      "answer": "komm",
+      "explanation": "The du imperative drops -st and the pronoun: du kommst → Komm!"
+    },
+    {
+      "id": "imp-02",
+      "type": "choice",
+      "prompt": "Kinder, ___ bitte leise!",
+      "options": [
+        "seid",
+        "sei",
+        "bist",
+        "sind"
+      ],
+      "answer": "seid",
+      "explanation": "The ihr imperative of sein is Seid! (du: Sei!, Sie: Seien Sie!)."
+    },
+    {
+      "id": "imp-03",
+      "type": "choice",
+      "prompt": "Frau Meier, ___ Sie bitte Platz!",
+      "options": [
+        "nehmen",
+        "nimm",
+        "nehmt",
+        "nimmt"
+      ],
+      "answer": "nehmen",
+      "explanation": "The Sie imperative uses the infinitive plus Sie: Nehmen Sie Platz!"
+    },
+    {
+      "id": "imp-04",
+      "type": "choice",
+      "prompt": "Tom, ___ bitte das Fenster!",
+      "options": [
+        "öffne",
+        "öffnest",
+        "öffnet",
+        "öffnen"
+      ],
+      "answer": "öffne",
+      "explanation": "A stem ending in consonant + n (öffn-) needs -e in the du imperative to be pronounceable: öffnen → Öffne!"
+    },
+    {
+      "id": "imp-05",
+      "type": "choice",
+      "prompt": "Anna, ___ nicht so schnell!",
+      "options": [
+        "fahr",
+        "fährst",
+        "fahrt",
+        "fähr"
+      ],
+      "answer": "fahr",
+      "explanation": "The du form drops -st and keeps the stem vowel for fahren (a, no umlaut): Fahr!"
+    },
+    {
+      "id": "imp-06",
+      "type": "choice",
+      "prompt": "Jonas, ___ das Buch bitte!",
+      "options": [
+        "lies",
+        "liest",
+        "lest",
+        "lesen"
+      ],
+      "answer": "lies",
+      "explanation": "Stem-changing e → i verbs keep the change in the du imperative: lesen → Lies!"
+    },
+    {
+      "id": "imp-07",
+      "type": "choice",
+      "prompt": "Kinder, ___ jetzt eure Hausaufgaben!",
+      "options": [
+        "macht",
+        "mach",
+        "machen",
+        "machst"
+      ],
+      "answer": "macht",
+      "explanation": "The ihr imperative is the same as the ihr present form without the pronoun: Macht!"
+    },
+    {
+      "id": "imp-08",
+      "type": "choice",
+      "prompt": "Herr Braun, ___ Sie bitte einen Moment!",
+      "options": [
+        "warten",
+        "wartet",
+        "warte",
+        "wart"
+      ],
+      "answer": "warten",
+      "explanation": "The Sie imperative is infinitive + Sie: Warten Sie!"
+    },
+    {
+      "id": "imp-09",
+      "type": "choice",
+      "prompt": "Anna, ___ bitte nicht so laut!",
+      "options": [
+        "sprich",
+        "sprichst",
+        "sprecht",
+        "sprechen"
+      ],
+      "answer": "sprich",
+      "explanation": "sprechen is e → i: du sprichst → Sprich! (no ending, no pronoun)."
+    },
+    {
+      "id": "imp-10",
+      "type": "choice",
+      "prompt": "Tom und Lena, ___ bitte pünktlich!",
+      "options": [
+        "kommt",
+        "komm",
+        "kommen",
+        "kommst"
+      ],
+      "answer": "kommt",
+      "explanation": "For two or more friends (ihr) the imperative is the ihr form: Kommt!"
+    },
+    {
+      "id": "imp-11",
+      "type": "type",
+      "prompt": "Anna, ___ bitte die Tür!",
+      "hint": "(schließen)",
+      "answers": [
+        "schließ",
+        "schließe"
+      ],
+      "explanation": "The du imperative drops -st and the pronoun: du schließt → Schließ! The -e ending (Schließe!) is optional."
+    },
+    {
+      "id": "imp-12",
+      "type": "type",
+      "prompt": "Tom, ___ bitte einen Tee!",
+      "hint": "(trinken)",
+      "answers": [
+        "trink",
+        "trinke"
+      ],
+      "explanation": "du trinkst → Trink! The pronoun and -st disappear; the -e ending (Trinke!) is optional."
+    },
+    {
+      "id": "imp-13",
+      "type": "type",
+      "prompt": "Jonas, ___ bitte nicht so lange!",
+      "hint": "(arbeiten)",
+      "answers": [
+        "arbeite"
+      ],
+      "explanation": "Verbs with a stem ending in -t need an -e in the du imperative: Arbeite!"
+    },
+    {
+      "id": "imp-14",
+      "type": "type",
+      "prompt": "Anna, ___ bitte das Brot!",
+      "hint": "(nehmen)",
+      "answers": [
+        "nimm"
+      ],
+      "explanation": "nehmen is e → i: du nimmst → Nimm! The stem change stays."
+    },
+    {
+      "id": "imp-15",
+      "type": "type",
+      "prompt": "Lena, ___ mir bitte!",
+      "hint": "(helfen)",
+      "answers": [
+        "hilf"
+      ],
+      "explanation": "helfen is e → i: du hilfst → Hilf!"
+    },
+    {
+      "id": "imp-16",
+      "type": "type",
+      "prompt": "Anna, ___ bitte mehr Gemüse!",
+      "hint": "(essen)",
+      "answers": [
+        "iss"
+      ],
+      "explanation": "essen is e → i: du isst → Iss!"
+    },
+    {
+      "id": "imp-17",
+      "type": "type",
+      "prompt": "Kinder, ___ bitte die Hände!",
+      "hint": "(waschen)",
+      "answers": [
+        "wascht"
+      ],
+      "explanation": "The ihr imperative equals the ihr form without the pronoun: ihr wascht → Wascht!"
+    },
+    {
+      "id": "imp-18",
+      "type": "type",
+      "prompt": "Tom und Anna, ___ mir bitte!",
+      "hint": "(helfen)",
+      "answers": [
+        "helft"
+      ],
+      "explanation": "For ihr, use the ihr form: ihr helft → Helft! No stem change here."
+    },
+    {
+      "id": "imp-19",
+      "type": "type",
+      "prompt": "Frau Klein, ___ Sie bitte den Text!",
+      "hint": "(lesen)",
+      "answers": [
+        "lesen"
+      ],
+      "explanation": "The Sie imperative is the infinitive followed by Sie: Lesen Sie!"
+    },
+    {
+      "id": "imp-20",
+      "type": "type",
+      "prompt": "Entschuldigung, ___ Sie bitte langsam!",
+      "hint": "(sprechen)",
+      "answers": [
+        "sprechen"
+      ],
+      "explanation": "With Sie, the verb stays in its infinitive form: Sprechen Sie langsam!"
+    },
+    {
+      "id": "imp-21",
+      "type": "type",
+      "prompt": "Tom, ___ bitte nicht böse!",
+      "hint": "(sein)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "sein is irregular: Sei! (du), Seid! (ihr), Seien Sie! (Sie)."
+    },
+    {
+      "id": "imp-22",
+      "type": "type",
+      "prompt": "Bitte ___ Sie vorsichtig!",
+      "hint": "(sein)",
+      "answers": [
+        "seien"
+      ],
+      "explanation": "The Sie imperative of sein is Seien Sie! It is irregular."
+    },
+    {
+      "id": "imp-23",
+      "type": "type",
+      "prompt": "Tom, ___ bitte das Licht an!",
+      "hint": "(anmachen)",
+      "answers": [
+        "mach",
+        "mache"
+      ],
+      "explanation": "With separable verbs the prefix goes to the end: Mach das Licht an! The -e (Mache) is optional."
+    },
+    {
+      "id": "imp-24",
+      "type": "type",
+      "prompt": "Kinder, ___ bitte die Musik aus!",
+      "hint": "(ausmachen)",
+      "answers": [
+        "macht"
+      ],
+      "explanation": "ihr form of a separable verb: Macht die Musik aus! The prefix aus goes last."
+    },
+    {
+      "id": "imp-25",
+      "type": "type",
+      "prompt": "Tom, ___ bitte den Schlüssel nicht!",
+      "hint": "(vergessen)",
+      "answers": [
+        "vergiss"
+      ],
+      "explanation": "vergessen is e → i: du vergisst → Vergiss! nicht goes after the object: Vergiss den Schlüssel nicht!"
+    },
+    {
+      "id": "imp-26",
+      "type": "type",
+      "prompt": "Anna, ___ bitte vorsichtig!",
+      "hint": "(fahren)",
+      "answers": [
+        "fahr",
+        "fahre"
+      ],
+      "explanation": "du fährst → Fahr! The a → ä change is dropped in the imperative; the -e ending (Fahre!) is optional."
+    },
+    {
+      "id": "imp-27",
+      "type": "order",
+      "words": [
+        "Mach",
+        "bitte",
+        "das",
+        "Licht",
+        "an!"
+      ],
+      "answers": [
+        "Mach bitte das Licht an!",
+        "Mach das Licht bitte an!"
+      ],
+      "translation": "Please turn on the light.",
+      "explanation": "Separable verbs send the prefix to the end of an imperative sentence: Mach ... an!"
+    },
+    {
+      "id": "imp-28",
+      "type": "order",
+      "words": [
+        "Rufen",
+        "Sie",
+        "mich",
+        "bitte",
+        "morgen",
+        "an!"
+      ],
+      "answers": [
+        "Rufen Sie mich bitte morgen an!",
+        "Rufen Sie mich morgen bitte an!"
+      ],
+      "translation": "Please call me tomorrow.",
+      "explanation": "The Sie imperative puts the verb first, then Sie; the prefix an goes to the end."
+    },
+    {
+      "id": "imp-29",
+      "type": "order",
+      "words": [
+        "Seid",
+        "bitte",
+        "nicht",
+        "so",
+        "laut!"
+      ],
+      "answers": [
+        "Seid bitte nicht so laut!"
+      ],
+      "translation": "Please don't be so loud.",
+      "explanation": "The ihr imperative of sein is Seid; nicht comes before the adjective."
+    },
+    {
+      "id": "imp-30",
+      "type": "order",
+      "words": [
+        "Lena,",
+        "geh",
+        "bitte",
+        "nach",
+        "Hause!"
+      ],
+      "answers": [
+        "Lena, geh bitte nach Hause!",
+        "Lena, bitte geh nach Hause!"
+      ],
+      "translation": "Lena, please go home.",
+      "explanation": "The du imperative puts the verb first (after the name): gehen → Geh!"
+    }
+  ]
+}
