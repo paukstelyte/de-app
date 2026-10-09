@@ -1,0 +1,346 @@
+{
+  "slug": "accusative-case",
+  "instructions": "Fill the gap with the correct accusative form of the article.",
+  "items": [
+    {
+      "id": "akk-01",
+      "type": "choice",
+      "prompt": "Ich sehe ___ Mann.",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "sehen takes an accusative object, and masculine der becomes den: Ich sehe den Mann."
+    },
+    {
+      "id": "akk-02",
+      "type": "choice",
+      "prompt": "Wir kaufen ___ Tisch.",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "kaufen takes a direct object in the accusative: der Tisch becomes den Tisch."
+    },
+    {
+      "id": "akk-03",
+      "type": "choice",
+      "prompt": "Tom hat ___ Hund.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answer": "einen",
+      "explanation": "haben takes the accusative, and masculine ein becomes einen: einen Hund."
+    },
+    {
+      "id": "akk-04",
+      "type": "choice",
+      "prompt": "Anna liest ___ Buch.",
+      "options": [
+        "das",
+        "den",
+        "dem"
+      ],
+      "answer": "das",
+      "explanation": "Neuter articles do not change in the accusative: das Buch stays das Buch."
+    },
+    {
+      "id": "akk-05",
+      "type": "choice",
+      "prompt": "Ich trinke ___ Kaffee.",
+      "options": [
+        "einen",
+        "ein",
+        "einem"
+      ],
+      "answer": "einen",
+      "explanation": "Kaffee is masculine, so the direct object takes einen in the accusative."
+    },
+    {
+      "id": "akk-06",
+      "type": "choice",
+      "prompt": "Lena kauft ___ Tasche.",
+      "options": [
+        "die",
+        "den",
+        "der"
+      ],
+      "answer": "die",
+      "explanation": "Feminine articles do not change in the accusative: die Tasche stays die Tasche."
+    },
+    {
+      "id": "akk-07",
+      "type": "choice",
+      "prompt": "Er hat ___ Schwester.",
+      "options": [
+        "eine",
+        "einen",
+        "einem"
+      ],
+      "answer": "eine",
+      "explanation": "Feminine eine stays eine in the accusative; only masculine changes."
+    },
+    {
+      "id": "akk-08",
+      "type": "choice",
+      "prompt": "Ich brauche ___ Stift.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answer": "einen",
+      "explanation": "Stift is masculine; the accusative of ein is einen."
+    },
+    {
+      "id": "akk-09",
+      "type": "choice",
+      "prompt": "Jonas isst ___ Apfel.",
+      "options": [
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "den",
+      "explanation": "Apfel is masculine, so the direct object is den Apfel in the accusative."
+    },
+    {
+      "id": "akk-10",
+      "type": "choice",
+      "prompt": "Wir besuchen ___ Lehrer.",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "besuchen takes the accusative: der Lehrer becomes den Lehrer."
+    },
+    {
+      "id": "akk-11",
+      "type": "choice",
+      "prompt": "Sie hat ___ Auto.",
+      "options": [
+        "ein",
+        "einen",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Auto is neuter, and neuter ein does not change in the accusative."
+    },
+    {
+      "id": "akk-12",
+      "type": "choice",
+      "prompt": "Ich habe ___ Bruder.",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "answer": "keinen",
+      "explanation": "kein follows the pattern of ein: masculine accusative is keinen."
+    },
+    {
+      "id": "akk-13",
+      "type": "choice",
+      "prompt": "Hast du ___ Schlüssel?",
+      "options": [
+        "den",
+        "der",
+        "dem"
+      ],
+      "answer": "den",
+      "explanation": "Schlüssel is masculine; the direct object of haben is den Schlüssel."
+    },
+    {
+      "id": "akk-14",
+      "type": "choice",
+      "prompt": "Anna nimmt ___ Bus.",
+      "options": [
+        "den",
+        "der",
+        "die"
+      ],
+      "answer": "den",
+      "explanation": "nehmen takes the accusative: der Bus becomes den Bus."
+    },
+    {
+      "id": "akk-15",
+      "type": "choice",
+      "prompt": "Wir suchen ___ Bahnhof.",
+      "options": [
+        "den",
+        "der",
+        "das"
+      ],
+      "answer": "den",
+      "explanation": "Bahnhof is masculine, so the object of suchen is den Bahnhof."
+    },
+    {
+      "id": "akk-16",
+      "type": "choice",
+      "prompt": "Ich möchte ___ Kuchen.",
+      "options": [
+        "einen",
+        "ein",
+        "einem"
+      ],
+      "answer": "einen",
+      "explanation": "Kuchen is masculine; the direct object takes einen."
+    },
+    {
+      "id": "akk-17",
+      "type": "choice",
+      "prompt": "Der Mann kauft ___ Zeitung.",
+      "options": [
+        "die",
+        "den",
+        "der"
+      ],
+      "answer": "die",
+      "explanation": "Zeitung is feminine, so the article stays die in the accusative."
+    },
+    {
+      "id": "akk-18",
+      "type": "choice",
+      "prompt": "Ich sehe ___ Kinder im Park.",
+      "options": [
+        "die",
+        "den",
+        "der"
+      ],
+      "answer": "die",
+      "explanation": "Plural articles do not change in the accusative: die Kinder."
+    },
+    {
+      "id": "akk-19",
+      "type": "choice",
+      "prompt": "Wir haben ___ Garten.",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "answer": "keinen",
+      "explanation": "Garten is masculine, so the negated object takes keinen."
+    },
+    {
+      "id": "akk-20",
+      "type": "choice",
+      "prompt": "Ich esse ___ Salat.",
+      "options": [
+        "einen",
+        "eine",
+        "ein"
+      ],
+      "answer": "einen",
+      "explanation": "Salat is masculine; ein becomes einen in the accusative."
+    },
+    {
+      "id": "akk-21",
+      "type": "type",
+      "prompt": "Wir brauchen ___ Kühlschrank.",
+      "hint": "(der Kühlschrank)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "Kühlschrank is masculine and the direct object of brauchen, so der becomes den."
+    },
+    {
+      "id": "akk-22",
+      "type": "type",
+      "prompt": "Sie kauft ___ Pullover.",
+      "hint": "(ein Pullover)",
+      "answers": [
+        "einen"
+      ],
+      "explanation": "Pullover is masculine, so ein becomes einen in the accusative."
+    },
+    {
+      "id": "akk-23",
+      "type": "type",
+      "prompt": "Tom öffnet ___ Tür.",
+      "hint": "(die Tür)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Tür is feminine, and feminine die does not change in the accusative."
+    },
+    {
+      "id": "akk-24",
+      "type": "type",
+      "prompt": "Ich suche ___ Ausgang.",
+      "hint": "(der Ausgang)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "Ausgang is masculine and the object of suchen, so der changes to den."
+    },
+    {
+      "id": "akk-25",
+      "type": "type",
+      "prompt": "Lena trinkt ___ Tee.",
+      "hint": "(ein Tee)",
+      "answers": [
+        "einen"
+      ],
+      "explanation": "Tee is masculine, so ein becomes einen in the accusative."
+    },
+    {
+      "id": "akk-26",
+      "type": "type",
+      "prompt": "Er hat ___ Katze.",
+      "hint": "(eine Katze)",
+      "answers": [
+        "eine"
+      ],
+      "explanation": "Feminine eine does not change in the accusative."
+    },
+    {
+      "id": "akk-27",
+      "type": "type",
+      "prompt": "Ich esse ___ Brot.",
+      "hint": "(das Brot)",
+      "answers": [
+        "das"
+      ],
+      "explanation": "Neuter das does not change in the accusative."
+    },
+    {
+      "id": "akk-28",
+      "type": "type",
+      "prompt": "Wir besuchen ___ Onkel in Berlin.",
+      "hint": "(der Onkel)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "besuchen takes the accusative, so der Onkel becomes den Onkel."
+    },
+    {
+      "id": "akk-29",
+      "type": "type",
+      "prompt": "Nein, ich habe ___ Computer.",
+      "hint": "(kein Computer)",
+      "answers": [
+        "keinen"
+      ],
+      "explanation": "Masculine kein becomes keinen in the accusative."
+    },
+    {
+      "id": "akk-30",
+      "type": "type",
+      "prompt": "Kaufst du ___ Rucksack?",
+      "hint": "(ein Rucksack)",
+      "answers": [
+        "einen"
+      ],
+      "explanation": "Rucksack is masculine; the accusative of ein is einen."
+    }
+  ]
+}

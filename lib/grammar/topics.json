@@ -174,42 +174,78 @@
     "title": "Word order: the verb in second position",
     "level": "A1",
     "group": "Sentence structure",
-    "summary": "In a main clause the conjugated verb is always the second element. If something else comes first, the subject moves behind the verb: Heute gehe ich ins Kino."
+    "summary": "In a main clause the conjugated verb is always the second element. If something else comes first, the subject moves behind the verb: Heute gehe ich ins Kino.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/word-order-verb-second/practice"
+      }
+    ]
   },
   {
     "slug": "questions",
     "title": "Questions (W-questions and yes/no questions)",
     "level": "A1",
     "group": "Sentence structure",
-    "summary": "W-questions start with a question word and the verb comes second: Wo wohnst du? Yes/no questions start with the verb: Wohnst du in Berlin?"
+    "summary": "W-questions start with a question word and the verb comes second: Wo wohnst du? Yes/no questions start with the verb: Wohnst du in Berlin?",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/questions/practice"
+      }
+    ]
   },
   {
     "slug": "coordinating-conjunctions",
     "title": "Joining sentences with und, aber, oder, denn",
     "level": "A1",
     "group": "Linking ideas",
-    "summary": "und, aber, oder, denn and sondern join two main clauses without changing the word order: Ich bin müde, aber ich gehe noch ins Kino."
+    "summary": "und, aber, oder, denn and sondern join two main clauses without changing the word order: Ich bin müde, aber ich gehe noch ins Kino.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/coordinating-conjunctions/practice"
+      }
+    ]
   },
   {
     "slug": "accusative-case",
     "title": "Accusative case",
     "level": "A1",
     "group": "Cases",
-    "summary": "The direct object is in the accusative. Only masculine articles change: der → den, ein → einen. Ich sehe den Mann. Ich kaufe einen Tisch."
+    "summary": "The direct object is in the accusative. Only masculine articles change: der → den, ein → einen. Ich sehe den Mann. Ich kaufe einen Tisch.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/accusative-case/practice"
+      }
+    ]
   },
   {
     "slug": "possessive-articles",
     "title": "Possessive articles (mein, dein, sein …)",
     "level": "A1",
     "group": "Pronouns",
-    "summary": "mein, dein, sein, ihr, unser, euer, ihr and Ihr take the same endings as ein: mein Bruder, meine Schwester, meinen Bruder (accusative)."
+    "summary": "mein, dein, sein, ihr, unser, euer, ihr and Ihr take the same endings as ein: mein Bruder, meine Schwester, meinen Bruder (accusative).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/possessive-articles/practice"
+      }
+    ]
   },
   {
     "slug": "time-prepositions",
     "title": "Time expressions (am, um, im)",
     "level": "A1",
     "group": "Prepositions",
-    "summary": "um for clock times (um 8 Uhr), am for days and parts of the day (am Montag, am Abend), im for months and seasons (im Mai, im Sommer)."
+    "summary": "um for clock times (um 8 Uhr), am for days and parts of the day (am Montag, am Abend), im for months and seasons (im Mai, im Sommer).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/time-prepositions/practice"
+      }
+    ]
   },
   {
     "slug": "dative-case",

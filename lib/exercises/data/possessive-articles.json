@@ -1,0 +1,342 @@
+{
+  "slug": "possessive-articles",
+  "instructions": "Fill in the correct form of the possessive article.",
+  "items": [
+    {
+      "id": "poss-01",
+      "type": "choice",
+      "prompt": "Das ist ___ Bruder.",
+      "options": [
+        "mein",
+        "meine"
+      ],
+      "answer": "mein",
+      "explanation": "Bruder is masculine, and in the nominative mein takes no ending, just like ein Bruder."
+    },
+    {
+      "id": "poss-02",
+      "type": "choice",
+      "prompt": "Das ist ___ Schwester.",
+      "options": [
+        "mein",
+        "meine"
+      ],
+      "answer": "meine",
+      "explanation": "Schwester is feminine, so mein takes -e, just like eine Schwester."
+    },
+    {
+      "id": "poss-03",
+      "type": "choice",
+      "prompt": "Hier ist ___ Auto.",
+      "options": [
+        "dein",
+        "deine"
+      ],
+      "answer": "dein",
+      "explanation": "Auto is neuter, and in the nominative dein has no ending, like ein Auto."
+    },
+    {
+      "id": "poss-04",
+      "type": "choice",
+      "prompt": "Wo ist ___ Tasche, Anna?",
+      "options": [
+        "dein",
+        "deine"
+      ],
+      "answer": "deine",
+      "explanation": "Tasche is feminine, so dein takes -e: deine Tasche."
+    },
+    {
+      "id": "poss-05",
+      "type": "choice",
+      "prompt": "Der Vater liebt ___ Familie.",
+      "options": [
+        "sein",
+        "seine",
+        "seinen"
+      ],
+      "answer": "seine",
+      "explanation": "The father is male, so sein-; Familie is feminine (accusative = nominative), so it takes -e: seine Familie."
+    },
+    {
+      "id": "poss-06",
+      "type": "choice",
+      "prompt": "Frau Klein besucht ___ Mutter.",
+      "options": [
+        "ihr",
+        "ihre",
+        "seine"
+      ],
+      "answer": "ihre",
+      "explanation": "Frau Klein is a woman, so her = ihr-; Mutter is feminine, so it takes -e: ihre Mutter."
+    },
+    {
+      "id": "poss-07",
+      "type": "choice",
+      "prompt": "Ich frage ___ Vater.",
+      "options": [
+        "mein",
+        "meinen",
+        "meine"
+      ],
+      "answer": "meinen",
+      "explanation": "Vater is the masculine accusative object of fragen, so mein takes -en, just like einen Vater."
+    },
+    {
+      "id": "poss-08",
+      "type": "choice",
+      "prompt": "Siehst du ___ Bruder?",
+      "options": [
+        "dein",
+        "deinen",
+        "deine"
+      ],
+      "answer": "deinen",
+      "explanation": "Bruder is the masculine object (accusative), so dein becomes deinen."
+    },
+    {
+      "id": "poss-09",
+      "type": "choice",
+      "prompt": "Wir besuchen ___ Opa.",
+      "options": [
+        "unser",
+        "unsere",
+        "unseren"
+      ],
+      "answer": "unseren",
+      "explanation": "Opa is a masculine accusative object, so unser takes -en: unseren Opa, like einen Opa."
+    },
+    {
+      "id": "poss-10",
+      "type": "choice",
+      "prompt": "Das ist ___ Haus.",
+      "options": [
+        "unser",
+        "unsere",
+        "unseren"
+      ],
+      "answer": "unser",
+      "explanation": "Haus is neuter in the nominative, so unser has no ending, like ein Haus."
+    },
+    {
+      "id": "poss-11",
+      "type": "choice",
+      "prompt": "Wo wohnt ___ Mutter, Lena?",
+      "options": [
+        "dein",
+        "deine",
+        "deinen"
+      ],
+      "answer": "deine",
+      "explanation": "Mutter is feminine, so dein takes -e: deine Mutter."
+    },
+    {
+      "id": "poss-12",
+      "type": "choice",
+      "prompt": "Guten Tag! Wie ist ___ Name, bitte?",
+      "options": [
+        "Ihr",
+        "Ihre",
+        "Ihren"
+      ],
+      "answer": "Ihr",
+      "explanation": "Name is masculine nominative, so no ending. The formal Sie form is written Ihr with a capital I."
+    },
+    {
+      "id": "poss-13",
+      "type": "choice",
+      "prompt": "Das sind ___ Kinder.",
+      "options": [
+        "unser",
+        "unsere",
+        "unseren"
+      ],
+      "answer": "unsere",
+      "explanation": "In the plural nominative the possessive takes -e: unsere Kinder (like keine Kinder)."
+    },
+    {
+      "id": "poss-14",
+      "type": "choice",
+      "prompt": "Das ist das Haus von Tom und Lisa. Dort ist ___ Garten.",
+      "options": [
+        "ihr",
+        "ihre",
+        "ihren"
+      ],
+      "answer": "ihr",
+      "explanation": "ihr (their) refers to Tom and Lisa; Garten is masculine nominative, so no ending."
+    },
+    {
+      "id": "poss-15",
+      "type": "choice",
+      "prompt": "Habt ihr ___ Ball dabei?",
+      "options": [
+        "euer",
+        "eure",
+        "euren"
+      ],
+      "answer": "euren",
+      "explanation": "Ball is a masculine accusative object, so euer takes -en (and drops the e): euren Ball."
+    },
+    {
+      "id": "poss-16",
+      "type": "choice",
+      "prompt": "Ist das ___ Fahrrad, Kinder?",
+      "options": [
+        "euer",
+        "eure",
+        "euren"
+      ],
+      "answer": "euer",
+      "explanation": "Fahrrad is neuter nominative, so euer has no ending, like ein Fahrrad."
+    },
+    {
+      "id": "poss-17",
+      "type": "choice",
+      "prompt": "Lena hat ___ Handy verloren.",
+      "options": [
+        "ihr",
+        "ihre",
+        "ihren"
+      ],
+      "answer": "ihr",
+      "explanation": "Handy is neuter, and in the accusative neuter has no ending, like ein Handy."
+    },
+    {
+      "id": "poss-18",
+      "type": "choice",
+      "prompt": "Ich lese ___ Buch.",
+      "options": [
+        "mein",
+        "meinen",
+        "meine"
+      ],
+      "answer": "mein",
+      "explanation": "Neuter accusative equals nominative: no ending, like ein Buch."
+    },
+    {
+      "id": "poss-19",
+      "type": "choice",
+      "prompt": "Ich suche ___ Brille.",
+      "options": [
+        "mein",
+        "meine",
+        "meinen"
+      ],
+      "answer": "meine",
+      "explanation": "Brille is feminine, and the accusative feminine takes -e: meine Brille."
+    },
+    {
+      "id": "poss-20",
+      "type": "choice",
+      "prompt": "Herr Braun, haben Sie ___ Ausweis dabei?",
+      "options": [
+        "Ihr",
+        "Ihre",
+        "Ihren"
+      ],
+      "answer": "Ihren",
+      "explanation": "Ausweis is a masculine accusative object, so the formal Ihr takes -en: Ihren Ausweis."
+    },
+    {
+      "id": "poss-21",
+      "type": "type",
+      "prompt": "Ich liebe ___ Eltern.",
+      "hint": "(ich)",
+      "answers": [
+        "meine"
+      ],
+      "explanation": "Eltern is plural, and the plural takes -e in the accusative: meine Eltern."
+    },
+    {
+      "id": "poss-22",
+      "type": "type",
+      "prompt": "Das ist Tom und das ist ___ Schwester.",
+      "hint": "(er)",
+      "answers": [
+        "seine"
+      ],
+      "explanation": "er becomes sein-; Schwester is feminine, so it takes -e: seine Schwester."
+    },
+    {
+      "id": "poss-23",
+      "type": "type",
+      "prompt": "Frau Schulz besucht ___ Bruder.",
+      "hint": "(sie)",
+      "answers": [
+        "ihren"
+      ],
+      "explanation": "sie (Frau Schulz) becomes ihr-; Bruder is masculine accusative, so it takes -en: ihren Bruder."
+    },
+    {
+      "id": "poss-24",
+      "type": "type",
+      "prompt": "Hast du ___ Jacke?",
+      "hint": "(du)",
+      "answers": [
+        "deine"
+      ],
+      "explanation": "du becomes dein-; Jacke is feminine, so it takes -e: deine Jacke."
+    },
+    {
+      "id": "poss-25",
+      "type": "type",
+      "prompt": "Wir suchen ___ Hund.",
+      "hint": "(wir)",
+      "answers": [
+        "unseren"
+      ],
+      "explanation": "wir becomes unser-; masculine accusative takes -en: unseren Hund."
+    },
+    {
+      "id": "poss-26",
+      "type": "type",
+      "prompt": "Wo sind ___ Schuhe, Tom?",
+      "hint": "(du)",
+      "answers": [
+        "deine"
+      ],
+      "explanation": "Plural nouns take -e after the possessive: deine Schuhe."
+    },
+    {
+      "id": "poss-27",
+      "type": "type",
+      "prompt": "Frau Weber, ist das ___ Tasche?",
+      "hint": "(Sie, formal)",
+      "answers": [
+        "Ihre"
+      ],
+      "explanation": "The formal Sie gives Ihr- with a capital I; Tasche is feminine, so Ihre Tasche."
+    },
+    {
+      "id": "poss-28",
+      "type": "type",
+      "prompt": "Ich nehme ___ Schirm mit.",
+      "hint": "(ich)",
+      "answers": [
+        "meinen"
+      ],
+      "explanation": "Schirm is masculine accusative, so mein takes -en: meinen Schirm."
+    },
+    {
+      "id": "poss-29",
+      "type": "type",
+      "prompt": "Kinder, esst bitte ___ Gemüse!",
+      "hint": "(ihr)",
+      "answers": [
+        "euer"
+      ],
+      "explanation": "ihr becomes euer; Gemüse is neuter accusative, so no ending: euer Gemüse."
+    },
+    {
+      "id": "poss-30",
+      "type": "type",
+      "prompt": "Tom kocht für ___ Freunde.",
+      "hint": "(er)",
+      "answers": [
+        "seine"
+      ],
+      "explanation": "für takes the accusative; plural Freunde takes -e: seine Freunde."
+    }
+  ]
+}

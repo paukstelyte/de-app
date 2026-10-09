@@ -1,0 +1,380 @@
+{
+  "slug": "time-prepositions",
+  "instructions": "Choose or type am, um or im to complete each time expression, or put the words in order.",
+  "items": [
+    {
+      "id": "time-01",
+      "type": "choice",
+      "prompt": "Der Unterricht beginnt ___ 9 Uhr.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um 9 Uhr."
+    },
+    {
+      "id": "time-02",
+      "type": "choice",
+      "prompt": "Ich habe ___ Montag Deutschkurs.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Days of the week take am: am Montag."
+    },
+    {
+      "id": "time-03",
+      "type": "choice",
+      "prompt": "Anna hat ___ Mai Geburtstag.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "im",
+      "explanation": "Months take im: im Mai."
+    },
+    {
+      "id": "time-04",
+      "type": "choice",
+      "prompt": "Wir essen ___ 12 Uhr zu Mittag.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um 12 Uhr."
+    },
+    {
+      "id": "time-05",
+      "type": "choice",
+      "prompt": "Tom spielt ___ Samstag Fußball.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Days of the week take am: am Samstag."
+    },
+    {
+      "id": "time-06",
+      "type": "choice",
+      "prompt": "Es ist kalt ___ Winter.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "im",
+      "explanation": "Seasons take im: im Winter."
+    },
+    {
+      "id": "time-07",
+      "type": "choice",
+      "prompt": "Wir gehen ___ Abend ins Kino.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Parts of the day take am: am Abend."
+    },
+    {
+      "id": "time-08",
+      "type": "choice",
+      "prompt": "Lena steht ___ 6 Uhr auf.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um 6 Uhr."
+    },
+    {
+      "id": "time-09",
+      "type": "choice",
+      "prompt": "Der Zug kommt ___ Morgen an.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Parts of the day take am: am Morgen (in the morning). Capital M shows it is the noun, not morgen = tomorrow."
+    },
+    {
+      "id": "time-10",
+      "type": "choice",
+      "prompt": "Im Garten blühen die Blumen ___ Frühling.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "im",
+      "explanation": "Seasons take im: im Frühling."
+    },
+    {
+      "id": "time-11",
+      "type": "choice",
+      "prompt": "Das Konzert beginnt ___ 20 Uhr.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um 20 Uhr."
+    },
+    {
+      "id": "time-12",
+      "type": "choice",
+      "prompt": "Jonas besucht uns ___ Sonntag.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Days of the week take am: am Sonntag."
+    },
+    {
+      "id": "time-13",
+      "type": "choice",
+      "prompt": "Wir fahren ___ August in Urlaub.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "im",
+      "explanation": "Months take im: im August."
+    },
+    {
+      "id": "time-14",
+      "type": "choice",
+      "prompt": "Die Bank schließt ___ 16.30 Uhr.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um 16.30 Uhr."
+    },
+    {
+      "id": "time-15",
+      "type": "choice",
+      "prompt": "Ich lerne gern ___ Nachmittag.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Parts of the day take am: am Nachmittag."
+    },
+    {
+      "id": "time-16",
+      "type": "choice",
+      "prompt": "Der Film endet ___ halb elf.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "um",
+      "explanation": "Clock times take um: um halb elf."
+    },
+    {
+      "id": "time-17",
+      "type": "choice",
+      "prompt": "Hier schneit es oft ___ Januar.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "im",
+      "explanation": "Months take im: im Januar."
+    },
+    {
+      "id": "time-18",
+      "type": "choice",
+      "prompt": "Meine Schwester arbeitet nicht ___ Wochenende.",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "The weekend works like a day: am Wochenende."
+    },
+    {
+      "id": "time-19",
+      "type": "choice",
+      "prompt": "Der Bus fährt ___ Freitag nicht.",
+      "options": [
+        "am",
+        "um",
+        "im",
+        "in"
+      ],
+      "answer": "am",
+      "explanation": "Days of the week take am: am Freitag."
+    },
+    {
+      "id": "time-20",
+      "type": "choice",
+      "prompt": "Hast du Zeit ___ Dienstag?",
+      "options": [
+        "am",
+        "um",
+        "im"
+      ],
+      "answer": "am",
+      "explanation": "Days of the week take am: am Dienstag."
+    },
+    {
+      "id": "time-21",
+      "type": "type",
+      "prompt": "Das Café öffnet ___ 8 Uhr.",
+      "hint": "(am / um / im)",
+      "answers": [
+        "um"
+      ],
+      "explanation": "Clock times take um: um 8 Uhr."
+    },
+    {
+      "id": "time-22",
+      "type": "type",
+      "prompt": "Wir haben ___ Donnerstag Besuch.",
+      "hint": "(am / um / im)",
+      "answers": [
+        "am"
+      ],
+      "explanation": "Days of the week take am: am Donnerstag."
+    },
+    {
+      "id": "time-23",
+      "type": "type",
+      "prompt": "Mein Bruder hat ___ Oktober Geburtstag.",
+      "hint": "(am / um / im)",
+      "answers": [
+        "im"
+      ],
+      "explanation": "Months take im: im Oktober."
+    },
+    {
+      "id": "time-24",
+      "type": "type",
+      "prompt": "Die Party ist ___ Samstagabend.",
+      "hint": "(am / um / im)",
+      "answers": [
+        "am"
+      ],
+      "explanation": "Samstagabend is a day plus part of the day, so it takes am: am Samstagabend."
+    },
+    {
+      "id": "time-25",
+      "type": "type",
+      "prompt": "Wir fahren ___ Sommer ans Meer.",
+      "hint": "(am / um / im)",
+      "answers": [
+        "im"
+      ],
+      "explanation": "Seasons take im: im Sommer."
+    },
+    {
+      "id": "time-26",
+      "type": "order",
+      "answers": [
+        "Beginnt der Kurs um 9 Uhr?"
+      ],
+      "words": [
+        "Beginnt",
+        "der",
+        "Kurs",
+        "um",
+        "9",
+        "Uhr?"
+      ],
+      "translation": "Does the course start at 9 o'clock?",
+      "explanation": "Clock times take um: um 9 Uhr."
+    },
+    {
+      "id": "time-27",
+      "type": "order",
+      "words": [
+        "Stehst",
+        "du",
+        "um",
+        "7",
+        "Uhr",
+        "auf?"
+      ],
+      "answers": [
+        "Stehst du um 7 Uhr auf?"
+      ],
+      "translation": "Do you get up at 7 o'clock?",
+      "explanation": "Clock times take um: um 7 Uhr. In the question the verb stehst comes first and auf goes to the end."
+    },
+    {
+      "id": "time-28",
+      "type": "order",
+      "words": [
+        "Kommt",
+        "Tom",
+        "am",
+        "Montag",
+        "nach",
+        "Hause?"
+      ],
+      "answers": [
+        "Kommt Tom am Montag nach Hause?"
+      ],
+      "translation": "Is Tom coming home on Monday?",
+      "explanation": "Days of the week take am: am Montag. The time phrase comes before nach Hause."
+    },
+    {
+      "id": "time-29",
+      "type": "order",
+      "words": [
+        "Wohin",
+        "fährst",
+        "du",
+        "im",
+        "Juli?"
+      ],
+      "answers": [
+        "Wohin fährst du im Juli?"
+      ],
+      "translation": "Where are you going in July?",
+      "explanation": "Months take im: im Juli."
+    },
+    {
+      "id": "time-30",
+      "type": "order",
+      "words": [
+        "Was",
+        "machst",
+        "du",
+        "am",
+        "Abend?"
+      ],
+      "answers": [
+        "Was machst du am Abend?"
+      ],
+      "translation": "What are you doing in the evening?",
+      "explanation": "Parts of the day take am: am Abend."
+    }
+  ]
+}

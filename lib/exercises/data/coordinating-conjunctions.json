@@ -1,0 +1,385 @@
+{
+  "slug": "coordinating-conjunctions",
+  "instructions": "Choose, type or arrange the words so the sentence uses und, aber, oder, denn or sondern correctly.",
+  "items": [
+    {
+      "id": "conj-01",
+      "type": "choice",
+      "prompt": "Ich trinke gern Tee ___ Kaffee.",
+      "options": [
+        "und",
+        "aber",
+        "denn"
+      ],
+      "answer": "und",
+      "explanation": "und joins two similar things: Tee und Kaffee."
+    },
+    {
+      "id": "conj-02",
+      "type": "choice",
+      "prompt": "Möchtest du Tee ___ Kaffee?",
+      "options": [
+        "oder",
+        "denn",
+        "aber"
+      ],
+      "answer": "oder",
+      "explanation": "oder offers a choice between two options."
+    },
+    {
+      "id": "conj-03",
+      "type": "choice",
+      "prompt": "Ich bin müde, ___ ich gehe noch ins Kino.",
+      "options": [
+        "aber",
+        "denn",
+        "oder"
+      ],
+      "answer": "aber",
+      "explanation": "aber introduces a contrast: tired, but still going out."
+    },
+    {
+      "id": "conj-04",
+      "type": "choice",
+      "prompt": "Tom geht nicht ins Büro, ___ er ist krank.",
+      "options": [
+        "denn",
+        "aber",
+        "oder"
+      ],
+      "answer": "denn",
+      "explanation": "denn gives the reason: he is ill, that is why he stays home."
+    },
+    {
+      "id": "conj-05",
+      "type": "choice",
+      "prompt": "Wir bleiben zu Hause, ___ es regnet.",
+      "options": [
+        "denn",
+        "aber",
+        "oder"
+      ],
+      "answer": "denn",
+      "explanation": "denn introduces the reason for the first clause."
+    },
+    {
+      "id": "conj-06",
+      "type": "choice",
+      "prompt": "Ich heiße Lena, ___ ich komme aus Wien.",
+      "options": [
+        "und",
+        "denn",
+        "sondern"
+      ],
+      "answer": "und",
+      "explanation": "und simply adds a second piece of information; denn would give a reason and sondern needs a nicht before it."
+    },
+    {
+      "id": "conj-07",
+      "type": "choice",
+      "prompt": "Hast du einen Bruder ___ eine Schwester?",
+      "options": [
+        "oder",
+        "denn",
+        "sondern"
+      ],
+      "answer": "oder",
+      "explanation": "oder asks about two alternatives."
+    },
+    {
+      "id": "conj-08",
+      "type": "choice",
+      "prompt": "Er spielt gern Fußball, ___ sie spielt lieber Tennis.",
+      "options": [
+        "aber",
+        "denn",
+        "oder"
+      ],
+      "answer": "aber",
+      "explanation": "aber contrasts two preferences."
+    },
+    {
+      "id": "conj-09",
+      "type": "choice",
+      "prompt": "Ich muss heute lernen, ___ ich habe morgen eine Prüfung.",
+      "options": [
+        "denn",
+        "aber",
+        "oder"
+      ],
+      "answer": "denn",
+      "explanation": "denn gives the reason for learning today: the exam tomorrow."
+    },
+    {
+      "id": "conj-10",
+      "type": "choice",
+      "prompt": "Der Film ist lang, ___ er ist sehr gut.",
+      "options": [
+        "aber",
+        "denn",
+        "oder"
+      ],
+      "answer": "aber",
+      "explanation": "aber contrasts a negative (long) with a positive (very good)."
+    },
+    {
+      "id": "conj-11",
+      "type": "choice",
+      "prompt": "Ich möchte ein Eis, ___ es ist heiß.",
+      "options": [
+        "denn",
+        "aber",
+        "oder"
+      ],
+      "answer": "denn",
+      "explanation": "denn gives the reason for wanting ice cream: it is hot."
+    },
+    {
+      "id": "conj-12",
+      "type": "choice",
+      "prompt": "Das Kleid ist schön, ___ es ist leider zu teuer.",
+      "options": [
+        "aber",
+        "denn",
+        "oder"
+      ],
+      "answer": "aber",
+      "explanation": "aber introduces a contrast: the dress is nice, but (unfortunately) too expensive."
+    },
+    {
+      "id": "conj-13",
+      "type": "choice",
+      "prompt": "Ich wohne nicht in Berlin, ___ in Hamburg.",
+      "options": [
+        "sondern",
+        "aber",
+        "oder"
+      ],
+      "answer": "sondern",
+      "explanation": "After a negation (nicht in Berlin), sondern gives the correct alternative; aber cannot correct a nicht."
+    },
+    {
+      "id": "conj-14",
+      "type": "choice",
+      "prompt": "Sie ist nicht Lehrerin, ___ Ärztin.",
+      "options": [
+        "sondern",
+        "aber",
+        "denn"
+      ],
+      "answer": "sondern",
+      "explanation": "sondern corrects a negated statement: nicht Lehrerin, sondern Ärztin. aber does not work after this kind of nicht."
+    },
+    {
+      "id": "conj-15",
+      "type": "choice",
+      "prompt": "Das Hotel ist nicht teuer, ___ sehr billig.",
+      "options": [
+        "sondern",
+        "aber",
+        "denn"
+      ],
+      "answer": "sondern",
+      "explanation": "sondern follows nicht and replaces teuer with the correct statement sehr billig; aber would not correct it."
+    },
+    {
+      "id": "conj-16",
+      "type": "choice",
+      "prompt": "Mein Bruder ist zehn, ___ meine Schwester ist acht.",
+      "options": [
+        "und",
+        "denn",
+        "sondern"
+      ],
+      "answer": "und",
+      "explanation": "und joins two facts; denn would make one the reason for the other, and sondern needs a nicht first."
+    },
+    {
+      "id": "conj-17",
+      "type": "choice",
+      "prompt": "Wir können ins Kino gehen ___ zu Hause bleiben.",
+      "options": [
+        "oder",
+        "denn",
+        "sondern"
+      ],
+      "answer": "oder",
+      "explanation": "oder joins two possibilities to choose from."
+    },
+    {
+      "id": "conj-18",
+      "type": "choice",
+      "prompt": "Ich fahre nicht mit dem Bus, ___ ich nehme das Fahrrad.",
+      "options": [
+        "sondern",
+        "aber",
+        "oder"
+      ],
+      "answer": "sondern",
+      "explanation": "nicht ... sondern replaces the negated option (the bus) with the correct one (the bike)."
+    },
+    {
+      "id": "conj-19",
+      "type": "choice",
+      "prompt": "Ich bleibe zu Hause, denn ___ krank.",
+      "options": [
+        "ich bin",
+        "bin ich"
+      ],
+      "answer": "ich bin",
+      "explanation": "After denn the word order does not change: subject first, verb second."
+    },
+    {
+      "id": "conj-20",
+      "type": "choice",
+      "prompt": "Tom ist müde, aber ___ noch Hausaufgaben.",
+      "options": [
+        "er macht",
+        "macht er"
+      ],
+      "answer": "er macht",
+      "explanation": "aber is a conjunction in position 0, so the clause keeps subject + verb."
+    },
+    {
+      "id": "conj-21",
+      "type": "choice",
+      "prompt": "Wir kaufen Brot, und ___ auch Käse.",
+      "options": [
+        "wir holen",
+        "holen wir"
+      ],
+      "answer": "wir holen",
+      "explanation": "und does not take a place in the clause: subject + verb stays normal."
+    },
+    {
+      "id": "conj-22",
+      "type": "type",
+      "prompt": "Zuerst lerne ich Deutsch, ___ dann gehe ich schwimmen.",
+      "hint": "(und / denn)",
+      "answers": [
+        "und"
+      ],
+      "explanation": "und links two actions in sequence (zuerst ... und dann); denn would wrongly make swimming the reason."
+    },
+    {
+      "id": "conj-23",
+      "type": "type",
+      "prompt": "Das ist nicht mein Handy, ___ das Handy von Tom.",
+      "hint": "(sondern / denn)",
+      "answers": [
+        "sondern"
+      ],
+      "explanation": "nicht ... sondern corrects the negated part: not my phone, but Tom's."
+    },
+    {
+      "id": "conj-24",
+      "type": "type",
+      "prompt": "Gehst du ins Kino ___ ins Theater?",
+      "hint": "(oder / und)",
+      "answers": [
+        "oder"
+      ],
+      "explanation": "oder offers two alternatives."
+    },
+    {
+      "id": "conj-25",
+      "type": "type",
+      "prompt": "Ich gehe nicht schwimmen, ___ es ist zu kalt.",
+      "hint": "(denn / aber)",
+      "answers": [
+        "denn"
+      ],
+      "explanation": "denn gives the reason; the verb stays in second place."
+    },
+    {
+      "id": "conj-26",
+      "type": "order",
+      "words": [
+        "Ich",
+        "bin",
+        "müde,",
+        "aber",
+        "ich",
+        "gehe",
+        "noch",
+        "ins",
+        "Kino."
+      ],
+      "answers": [
+        "Ich bin müde, aber ich gehe noch ins Kino."
+      ],
+      "translation": "I am tired, but I'm still going to the cinema.",
+      "explanation": "After aber the word order stays normal: subject, then verb."
+    },
+    {
+      "id": "conj-27",
+      "type": "order",
+      "words": [
+        "Anna",
+        "kocht,",
+        "und",
+        "Tom",
+        "deckt",
+        "den",
+        "Tisch."
+      ],
+      "answers": [
+        "Anna kocht, und Tom deckt den Tisch."
+      ],
+      "translation": "Anna cooks and Tom sets the table.",
+      "explanation": "und joins two main clauses without changing the verb position."
+    },
+    {
+      "id": "conj-28",
+      "type": "order",
+      "words": [
+        "Wir",
+        "bleiben",
+        "zu",
+        "Hause,",
+        "denn",
+        "es",
+        "regnet",
+        "stark."
+      ],
+      "answers": [
+        "Wir bleiben zu Hause, denn es regnet stark."
+      ],
+      "translation": "We stay at home because it is raining heavily.",
+      "explanation": "denn is followed by normal word order: es regnet, not regnet es."
+    },
+    {
+      "id": "conj-29",
+      "type": "order",
+      "words": [
+        "Möchtest",
+        "du",
+        "Tee",
+        "oder",
+        "Kaffee?"
+      ],
+      "answers": [
+        "Möchtest du Tee oder Kaffee?"
+      ],
+      "translation": "Would you like tea or coffee?",
+      "explanation": "oder joins the two choices; the question keeps the verb first."
+    },
+    {
+      "id": "conj-30",
+      "type": "order",
+      "words": [
+        "Er",
+        "ist",
+        "nicht",
+        "krank,",
+        "sondern",
+        "müde."
+      ],
+      "answers": [
+        "Er ist nicht krank, sondern müde."
+      ],
+      "translation": "He is not ill, but tired.",
+      "explanation": "sondern follows a negation and introduces the correction."
+    }
+  ]
+}

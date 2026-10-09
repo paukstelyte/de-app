@@ -1,0 +1,401 @@
+{
+  "slug": "word-order-verb-second",
+  "instructions": "Put the words in the correct order, or choose the correct verb position.",
+  "items": [
+    {
+      "id": "wo-01",
+      "type": "choice",
+      "prompt": "Heute ___ ins Kino.",
+      "options": [
+        "gehe ich",
+        "ich gehe"
+      ],
+      "answer": "gehe ich",
+      "explanation": "After the time word Heute, the verb comes second and the subject moves behind it: Heute gehe ich."
+    },
+    {
+      "id": "wo-02",
+      "type": "order",
+      "words": [
+        "Ich",
+        "wohne",
+        "in",
+        "Berlin."
+      ],
+      "answers": [
+        "Ich wohne in Berlin."
+      ],
+      "translation": "I live in Berlin.",
+      "explanation": "The conjugated verb stands in second position in a main clause; here the subject Ich is first, so the verb wohne follows it."
+    },
+    {
+      "id": "wo-03",
+      "type": "choice",
+      "prompt": "Morgen ___ nach Wien.",
+      "options": [
+        "fahren wir",
+        "wir fahren"
+      ],
+      "answer": "fahren wir",
+      "explanation": "Morgen is the first element, so the verb fahren must be second, before the subject wir."
+    },
+    {
+      "id": "wo-04",
+      "type": "order",
+      "words": [
+        "Tom",
+        "spielt",
+        "gern",
+        "Tennis."
+      ],
+      "answers": [
+        "Tom spielt gern Tennis."
+      ],
+      "translation": "Tom likes playing tennis.",
+      "explanation": "The verb spielt is second after the subject Tom, even with the adverb gern later in the sentence."
+    },
+    {
+      "id": "wo-05",
+      "type": "choice",
+      "prompt": "Gestern ___ krank.",
+      "options": [
+        "war ich",
+        "ich war"
+      ],
+      "answer": "war ich",
+      "explanation": "Gestern takes the first position, so the verb war comes second and ich follows: Gestern war ich krank."
+    },
+    {
+      "id": "wo-06",
+      "type": "choice",
+      "prompt": "Im Sommer ___ Eis.",
+      "options": [
+        "isst Tom",
+        "Tom isst"
+      ],
+      "answer": "isst Tom",
+      "explanation": "Im Sommer fills the first position, so the verb isst comes directly after it, before Tom."
+    },
+    {
+      "id": "wo-07",
+      "type": "order",
+      "words": [
+        "Mein",
+        "Bruder",
+        "spielt",
+        "Gitarre."
+      ],
+      "answers": [
+        "Mein Bruder spielt Gitarre."
+      ],
+      "translation": "My brother plays the guitar.",
+      "explanation": "Mein Bruder is one element (the subject), so the verb spielt is the second element, not the third word."
+    },
+    {
+      "id": "wo-08",
+      "type": "choice",
+      "prompt": "Wir ___ Fußball.",
+      "options": [
+        "spielen am Samstag",
+        "am Samstag spielen"
+      ],
+      "answer": "spielen am Samstag",
+      "explanation": "With Wir in first position the verb must come second; the time phrase follows it: Wir spielen am Samstag Fußball."
+    },
+    {
+      "id": "wo-09",
+      "type": "choice",
+      "prompt": "Im Winter ___ oft.",
+      "options": [
+        "schneit es",
+        "es schneit"
+      ],
+      "answer": "schneit es",
+      "explanation": "Im Winter is the first element, so the verb schneit comes second and es follows: Im Winter schneit es oft."
+    },
+    {
+      "id": "wo-10",
+      "type": "choice",
+      "prompt": "Am Abend ___ ein Buch.",
+      "options": [
+        "liest Lena",
+        "Lena liest"
+      ],
+      "answer": "liest Lena",
+      "explanation": "Am Abend takes the first position, so the verb liest is second and the subject Lena follows."
+    },
+    {
+      "id": "wo-11",
+      "type": "order",
+      "words": [
+        "Montag",
+        "hat",
+        "Tom",
+        "frei."
+      ],
+      "answers": [
+        "Montag hat Tom frei.",
+        "Tom hat Montag frei."
+      ],
+      "translation": "Tom has Monday off.",
+      "explanation": "Either Montag or Tom can come first, but the verb hat is always the second element."
+    },
+    {
+      "id": "wo-12",
+      "type": "choice",
+      "prompt": "Jetzt ___ Hunger.",
+      "options": [
+        "habe ich",
+        "ich habe"
+      ],
+      "answer": "habe ich",
+      "explanation": "Jetzt is first, so the verb habe must be in second position: Jetzt habe ich Hunger."
+    },
+    {
+      "id": "wo-13",
+      "type": "choice",
+      "prompt": "Im Büro ___ Kaffee.",
+      "options": [
+        "trinke ich",
+        "ich trinke"
+      ],
+      "answer": "trinke ich",
+      "explanation": "The place phrase Im Büro is in first position, so the verb trinke comes second and ich follows."
+    },
+    {
+      "id": "wo-14",
+      "type": "choice",
+      "prompt": "Heute Abend ___.",
+      "options": [
+        "koche ich Suppe",
+        "ich koche Suppe",
+        "ich Suppe koche"
+      ],
+      "answer": "koche ich Suppe",
+      "explanation": "Heute Abend counts as one element, so koche is second and ich follows; the verb never goes to the end of a main clause."
+    },
+    {
+      "id": "wo-15",
+      "type": "choice",
+      "prompt": "Dort ___.",
+      "options": [
+        "ist ein Café",
+        "ein Café ist"
+      ],
+      "answer": "ist ein Café",
+      "explanation": "Dort is first, so the verb ist comes second and the subject ein Café follows: Dort ist ein Café."
+    },
+    {
+      "id": "wo-16",
+      "type": "order",
+      "words": [
+        "Samstag",
+        "hat",
+        "Anna",
+        "Geburtstag."
+      ],
+      "answers": [
+        "Samstag hat Anna Geburtstag.",
+        "Anna hat Samstag Geburtstag."
+      ],
+      "translation": "Anna's birthday is on Saturday.",
+      "explanation": "Samstag or Anna can start the sentence; whichever comes first, the verb hat stays in second position."
+    },
+    {
+      "id": "wo-17",
+      "type": "choice",
+      "prompt": "Dann ___ den Bus.",
+      "options": [
+        "nehme ich",
+        "ich nehme"
+      ],
+      "answer": "nehme ich",
+      "explanation": "Dann is in first position, so the verb nehme is second and the subject ich comes behind it."
+    },
+    {
+      "id": "wo-18",
+      "type": "choice",
+      "prompt": "Hier ___.",
+      "options": [
+        "wohnt meine Tante",
+        "meine Tante wohnt"
+      ],
+      "answer": "wohnt meine Tante",
+      "explanation": "Hier is in first position, so the verb wohnt comes next and the subject meine Tante follows it."
+    },
+    {
+      "id": "wo-19",
+      "type": "order",
+      "words": [
+        "Die",
+        "Kinder",
+        "essen",
+        "gern",
+        "Pizza."
+      ],
+      "answers": [
+        "Die Kinder essen gern Pizza."
+      ],
+      "translation": "The children like eating pizza.",
+      "explanation": "Die Kinder is the subject and fills the first position, so the verb essen is second; gern comes after the verb."
+    },
+    {
+      "id": "wo-20",
+      "type": "choice",
+      "prompt": "Zuerst ___ Hausaufgaben.",
+      "options": [
+        "machen die Kinder",
+        "die Kinder machen"
+      ],
+      "answer": "machen die Kinder",
+      "explanation": "Zuerst takes the first place, so the verb machen is second and the subject die Kinder comes after it."
+    },
+    {
+      "id": "wo-21",
+      "type": "choice",
+      "prompt": "Jeden Tag ___.",
+      "options": [
+        "lernt Anna Deutsch",
+        "Anna lernt Deutsch",
+        "Anna Deutsch lernt"
+      ],
+      "answer": "lernt Anna Deutsch",
+      "explanation": "Jeden Tag is one element in first position, so the verb lernt is second and Anna follows it."
+    },
+    {
+      "id": "wo-22",
+      "type": "order",
+      "words": [
+        "Anna",
+        "kann",
+        "sehr",
+        "gut",
+        "kochen."
+      ],
+      "answers": [
+        "Anna kann sehr gut kochen."
+      ],
+      "translation": "Anna can cook very well.",
+      "explanation": "The conjugated modal verb kann is in second position; the infinitive kochen goes to the end."
+    },
+    {
+      "id": "wo-23",
+      "type": "choice",
+      "prompt": "Nach dem Essen ___ spazieren.",
+      "options": [
+        "gehen wir",
+        "wir gehen"
+      ],
+      "answer": "gehen wir",
+      "explanation": "Nach dem Essen is first, so gehen takes second position and wir follows: Nach dem Essen gehen wir spazieren."
+    },
+    {
+      "id": "wo-24",
+      "type": "order",
+      "words": [
+        "Mittwoch",
+        "hat",
+        "Jonas",
+        "Training."
+      ],
+      "answers": [
+        "Mittwoch hat Jonas Training.",
+        "Jonas hat Mittwoch Training."
+      ],
+      "translation": "Jonas has training on Wednesday.",
+      "explanation": "Mittwoch or Jonas can come first; the verb hat is always the second element."
+    },
+    {
+      "id": "wo-25",
+      "type": "choice",
+      "prompt": "Am Montag ___.",
+      "options": [
+        "arbeitet sie nicht",
+        "sie arbeitet nicht",
+        "sie nicht arbeitet"
+      ],
+      "answer": "arbeitet sie nicht",
+      "explanation": "Am Montag is the first element, so the verb arbeitet comes second, then sie, then nicht."
+    },
+    {
+      "id": "wo-26",
+      "type": "order",
+      "words": [
+        "Wo",
+        "arbeitet",
+        "dein",
+        "Vater?"
+      ],
+      "answers": [
+        "Wo arbeitet dein Vater?"
+      ],
+      "translation": "Where does your father work?",
+      "explanation": "In a W-question the question word is the first element, so the verb arbeitet is second, before dein Vater."
+    },
+    {
+      "id": "wo-27",
+      "type": "order",
+      "words": [
+        "Weihnachten",
+        "fährt",
+        "Lena",
+        "zu",
+        "Oma."
+      ],
+      "answers": [
+        "Weihnachten fährt Lena zu Oma.",
+        "Lena fährt Weihnachten zu Oma."
+      ],
+      "translation": "Lena is going to Grandma's at Christmas.",
+      "explanation": "Weihnachten or Lena can come first; the verb fährt is second either way, and zu Oma stays at the end."
+    },
+    {
+      "id": "wo-28",
+      "type": "order",
+      "words": [
+        "Was",
+        "kocht",
+        "ihr",
+        "heute?"
+      ],
+      "answers": [
+        "Was kocht ihr heute?"
+      ],
+      "translation": "What are you cooking today?",
+      "explanation": "Was is the first element, so the verb kocht comes second; the pronoun ihr follows it directly."
+    },
+    {
+      "id": "wo-29",
+      "type": "order",
+      "words": [
+        "Freitag",
+        "geht",
+        "Anna",
+        "ins",
+        "Kino."
+      ],
+      "answers": [
+        "Freitag geht Anna ins Kino.",
+        "Anna geht Freitag ins Kino."
+      ],
+      "translation": "Anna is going to the cinema on Friday.",
+      "explanation": "Freitag or Anna can open the sentence; the verb geht always takes second position."
+    },
+    {
+      "id": "wo-30",
+      "type": "order",
+      "words": [
+        "Lena",
+        "ruft",
+        "ihre",
+        "Oma",
+        "an."
+      ],
+      "answers": [
+        "Lena ruft ihre Oma an."
+      ],
+      "translation": "Lena calls her grandma.",
+      "explanation": "The conjugated part ruft is in second position; the separable prefix an goes to the very end."
+    }
+  ]
+}

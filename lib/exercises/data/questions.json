@@ -1,0 +1,409 @@
+{
+  "slug": "questions",
+  "instructions": "Complete or build each question correctly.",
+  "items": [
+    {
+      "id": "q-01",
+      "type": "order",
+      "words": [
+        "Wie",
+        "heißt",
+        "du?"
+      ],
+      "answers": [
+        "Wie heißt du?"
+      ],
+      "translation": "What is your name?",
+      "explanation": "W-question: Wie first, then the verb heißt in second position."
+    },
+    {
+      "id": "q-02",
+      "type": "order",
+      "words": [
+        "Wo",
+        "wohnst",
+        "du?"
+      ],
+      "answers": [
+        "Wo wohnst du?"
+      ],
+      "translation": "Where do you live?",
+      "explanation": "Wo comes first and the verb wohnst follows in second position: Wo wohnst du?"
+    },
+    {
+      "id": "q-03",
+      "type": "order",
+      "words": [
+        "Wohnst",
+        "du",
+        "in",
+        "Berlin?"
+      ],
+      "answers": [
+        "Wohnst du in Berlin?"
+      ],
+      "translation": "Do you live in Berlin?",
+      "explanation": "A yes/no question starts with the conjugated verb wohnst; the subject du comes right after it."
+    },
+    {
+      "id": "q-04",
+      "type": "choice",
+      "prompt": "Und ___ wohnst du? – In Hamburg.",
+      "options": [
+        "Wo",
+        "Woher",
+        "Wohin"
+      ],
+      "answer": "Wo",
+      "explanation": "Wo asks about the place where someone is or lives; woher asks about origin."
+    },
+    {
+      "id": "q-05",
+      "type": "order",
+      "words": [
+        "Was",
+        "machst",
+        "du?"
+      ],
+      "answers": [
+        "Was machst du?"
+      ],
+      "translation": "What are you doing?",
+      "explanation": "Was is the question word in first position; the verb machst comes second, then du."
+    },
+    {
+      "id": "q-06",
+      "type": "type",
+      "prompt": "Und wie ___ du? – Ich heiße Lena.",
+      "hint": "(heißen)",
+      "answers": [
+        "heißt"
+      ],
+      "explanation": "After the question word comes the verb in second position, conjugated for du: heißt."
+    },
+    {
+      "id": "q-07",
+      "type": "choice",
+      "prompt": "Und ___ ist das? – Das ist mein Bruder.",
+      "options": [
+        "Wer",
+        "Was",
+        "Wo"
+      ],
+      "answer": "Wer",
+      "explanation": "Wer asks about a person; was asks about a thing."
+    },
+    {
+      "id": "q-08",
+      "type": "order",
+      "words": [
+        "Woher",
+        "kommst",
+        "du?"
+      ],
+      "answers": [
+        "Woher kommst du?"
+      ],
+      "translation": "Where are you from?",
+      "explanation": "Woher asks about origin; the verb kommst stays in second position."
+    },
+    {
+      "id": "q-09",
+      "type": "order",
+      "words": [
+        "Hast",
+        "du",
+        "einen",
+        "Bruder?"
+      ],
+      "answers": [
+        "Hast du einen Bruder?"
+      ],
+      "translation": "Do you have a brother?",
+      "explanation": "A yes/no question puts the verb hast first and the subject du second: Hast du ...?"
+    },
+    {
+      "id": "q-10",
+      "type": "choice",
+      "prompt": "Und ___ du Kinder? – Ja, zwei.",
+      "options": [
+        "Hast",
+        "Hat",
+        "Habt"
+      ],
+      "answer": "Hast",
+      "explanation": "A yes/no question starts with the verb; for du the form is hast."
+    },
+    {
+      "id": "q-11",
+      "type": "order",
+      "words": [
+        "Kommt",
+        "Anna",
+        "aus",
+        "Spanien?"
+      ],
+      "answers": [
+        "Kommt Anna aus Spanien?"
+      ],
+      "translation": "Is Anna from Spain?",
+      "explanation": "A yes/no question puts the verb kommt first, then the subject Anna: Kommt Anna aus Spanien?"
+    },
+    {
+      "id": "q-12",
+      "type": "type",
+      "prompt": "Und woher ___ Sie? – Aus Österreich.",
+      "hint": "(kommen)",
+      "answers": [
+        "kommen"
+      ],
+      "explanation": "With the polite Sie the verb ends in -en: woher kommen Sie?"
+    },
+    {
+      "id": "q-13",
+      "type": "order",
+      "words": [
+        "Wann",
+        "beginnt",
+        "der",
+        "Kurs?"
+      ],
+      "answers": [
+        "Wann beginnt der Kurs?"
+      ],
+      "translation": "When does the course start?",
+      "explanation": "Wann comes first, the verb beginnt second, and the subject der Kurs after it."
+    },
+    {
+      "id": "q-14",
+      "type": "choice",
+      "prompt": "Und ___ kostet das? – Fünf Euro.",
+      "options": [
+        "Wie viel",
+        "Wie",
+        "Wann",
+        "Wo"
+      ],
+      "answer": "Wie viel",
+      "explanation": "Wie viel asks about an amount or price."
+    },
+    {
+      "id": "q-15",
+      "type": "order",
+      "words": [
+        "Wie",
+        "alt",
+        "ist",
+        "Tom?"
+      ],
+      "answers": [
+        "Wie alt ist Tom?"
+      ],
+      "translation": "How old is Tom?",
+      "explanation": "Wie alt is the question phrase; the verb ist follows directly in second position."
+    },
+    {
+      "id": "q-16",
+      "type": "order",
+      "words": [
+        "Was",
+        "kostet",
+        "das",
+        "Brot?"
+      ],
+      "answers": [
+        "Was kostet das Brot?"
+      ],
+      "translation": "How much does the bread cost?",
+      "explanation": "Was asks about the price here; the verb kostet is second and das Brot follows."
+    },
+    {
+      "id": "q-17",
+      "type": "type",
+      "prompt": "Und was ___ ihr heute Abend? – Wir gehen ins Kino.",
+      "hint": "(machen)",
+      "answers": [
+        "macht"
+      ],
+      "explanation": "For ihr the verb ends in -t: was macht ihr?"
+    },
+    {
+      "id": "q-18",
+      "type": "order",
+      "words": [
+        "Spielt",
+        "Lena",
+        "gern",
+        "Fußball?"
+      ],
+      "answers": [
+        "Spielt Lena gern Fußball?"
+      ],
+      "translation": "Does Lena like playing football?",
+      "explanation": "A yes/no question starts with spielt; the subject Lena follows and gern Fußball comes after it."
+    },
+    {
+      "id": "q-19",
+      "type": "choice",
+      "prompt": "Und ___ kommt der Bus? – Um acht Uhr.",
+      "options": [
+        "Wann",
+        "Wo",
+        "Wer",
+        "Warum"
+      ],
+      "answer": "Wann",
+      "explanation": "Wann asks about time."
+    },
+    {
+      "id": "q-20",
+      "type": "order",
+      "words": [
+        "Wer",
+        "ist",
+        "das?"
+      ],
+      "answers": [
+        "Wer ist das?"
+      ],
+      "translation": "Who is that?",
+      "explanation": "Wer asks about a person; the verb ist is second."
+    },
+    {
+      "id": "q-21",
+      "type": "order",
+      "words": [
+        "Möchtest",
+        "du",
+        "einen",
+        "Kaffee?"
+      ],
+      "answers": [
+        "Möchtest du einen Kaffee?"
+      ],
+      "translation": "Would you like a coffee?",
+      "explanation": "A yes/no question starts with the verb möchtest, then du, then the object einen Kaffee."
+    },
+    {
+      "id": "q-22",
+      "type": "type",
+      "prompt": "Und ___ wohnt Anna? – In Köln.",
+      "hint": "(question word for a place)",
+      "answers": [
+        "wo"
+      ],
+      "explanation": "The answer In Köln is the place where Anna lives, so the question word is wo (not woher or wohin)."
+    },
+    {
+      "id": "q-23",
+      "type": "order",
+      "words": [
+        "Wo",
+        "arbeitet",
+        "deine",
+        "Schwester?"
+      ],
+      "answers": [
+        "Wo arbeitet deine Schwester?"
+      ],
+      "translation": "Where does your sister work?",
+      "explanation": "The subject can be longer, but the verb arbeitet still stays in second position."
+    },
+    {
+      "id": "q-24",
+      "type": "type",
+      "prompt": "Und wann ___ der Film? – Um acht Uhr.",
+      "hint": "(beginnen)",
+      "answers": [
+        "beginnt"
+      ],
+      "explanation": "For er/sie/es and a singular noun the verb ends in -t: wann beginnt der Film?"
+    },
+    {
+      "id": "q-25",
+      "type": "order",
+      "words": [
+        "Warum",
+        "lernt",
+        "Jonas",
+        "Deutsch?"
+      ],
+      "answers": [
+        "Warum lernt Jonas Deutsch?"
+      ],
+      "translation": "Why is Jonas learning German?",
+      "explanation": "Warum asks for a reason; it comes first, the verb lernt second, then Jonas."
+    },
+    {
+      "id": "q-26",
+      "type": "choice",
+      "prompt": "Und ___ lernst du Deutsch? – Weil ich in Berlin arbeite.",
+      "options": [
+        "Warum",
+        "Wann",
+        "Wie"
+      ],
+      "answer": "Warum",
+      "explanation": "The answer gives a reason (weil ...), so the question word is warum."
+    },
+    {
+      "id": "q-27",
+      "type": "order",
+      "words": [
+        "Wohin",
+        "fährst",
+        "du",
+        "im",
+        "Urlaub?"
+      ],
+      "answers": [
+        "Wohin fährst du im Urlaub?"
+      ],
+      "translation": "Where are you going on holiday?",
+      "explanation": "Wohin asks about direction; the verb fährst is second."
+    },
+    {
+      "id": "q-28",
+      "type": "order",
+      "words": [
+        "Wann",
+        "fährt",
+        "der",
+        "Zug",
+        "nach",
+        "München?"
+      ],
+      "answers": [
+        "Wann fährt der Zug nach München?"
+      ],
+      "translation": "When does the train to Munich leave?",
+      "explanation": "Wann comes first and the verb fährt is second; der Zug follows, and nach München goes after it."
+    },
+    {
+      "id": "q-29",
+      "type": "type",
+      "prompt": "Und ___ du gern Musik? – Ja, sehr gern.",
+      "hint": "(hören)",
+      "answers": [
+        "hörst"
+      ],
+      "explanation": "A yes/no question starts with the verb; for du: hörst."
+    },
+    {
+      "id": "q-30",
+      "type": "order",
+      "words": [
+        "Kannst",
+        "du",
+        "mir",
+        "bitte",
+        "helfen?"
+      ],
+      "answers": [
+        "Kannst du mir bitte helfen?"
+      ],
+      "translation": "Can you help me, please?",
+      "explanation": "Yes/no question with a modal verb: the modal comes first, the infinitive (helfen) goes to the end."
+    }
+  ]
+}
