@@ -1,0 +1,334 @@
+{
+  "slug": "present-tense-regular",
+  "instructions": "Choose or type the correct present-tense form of the regular verb.",
+  "items": [
+    {
+      "id": "prs-reg-01",
+      "type": "choice",
+      "prompt": "Ich ___ gern Fußball.",
+      "options": [
+        "spiele",
+        "spielst",
+        "spielt"
+      ],
+      "answer": "spiele",
+      "explanation": "With ich the ending is -e: spielen → ich spiele."
+    },
+    {
+      "id": "prs-reg-02",
+      "type": "choice",
+      "prompt": "Anna ___ in Berlin.",
+      "options": [
+        "wohne",
+        "wohnt",
+        "wohnen"
+      ],
+      "answer": "wohnt",
+      "explanation": "With er/sie/es the ending is -t: sie wohnt."
+    },
+    {
+      "id": "prs-reg-03",
+      "type": "choice",
+      "prompt": "Du ___ jeden Tag Kaffee.",
+      "options": [
+        "trinke",
+        "trinkst",
+        "trinkt"
+      ],
+      "answer": "trinkst",
+      "explanation": "With du the ending is -st: du trinkst."
+    },
+    {
+      "id": "prs-reg-04",
+      "type": "choice",
+      "prompt": "Wir ___ in der Schule Deutsch.",
+      "options": [
+        "lernen",
+        "lernt",
+        "lernst"
+      ],
+      "answer": "lernen",
+      "explanation": "With wir the verb keeps the infinitive form: wir lernen."
+    },
+    {
+      "id": "prs-reg-05",
+      "type": "choice",
+      "prompt": "Tom und Lena ___ Musik.",
+      "options": [
+        "hört",
+        "hören",
+        "höre"
+      ],
+      "answer": "hören",
+      "explanation": "Tom und Lena = sie (plural), so the ending is -en: sie hören."
+    },
+    {
+      "id": "prs-reg-06",
+      "type": "choice",
+      "prompt": "Ihr ___ heute Pizza.",
+      "options": [
+        "kocht",
+        "kochen",
+        "kochst"
+      ],
+      "answer": "kocht",
+      "explanation": "With ihr the ending is -t: ihr kocht."
+    },
+    {
+      "id": "prs-reg-07",
+      "type": "choice",
+      "prompt": "Meine Mutter ___ im Supermarkt ein.",
+      "options": [
+        "kaufe",
+        "kaufst",
+        "kauft"
+      ],
+      "answer": "kauft",
+      "explanation": "Meine Mutter = sie (singular), so the ending is -t: sie kauft ein."
+    },
+    {
+      "id": "prs-reg-08",
+      "type": "choice",
+      "prompt": "Wann ___ du nach Hause?",
+      "options": [
+        "gehe",
+        "gehst",
+        "geht"
+      ],
+      "answer": "gehst",
+      "explanation": "The ending depends on the subject, not its position: du → -st."
+    },
+    {
+      "id": "prs-reg-09",
+      "type": "choice",
+      "prompt": "Jonas und ich ___ Tennis.",
+      "options": [
+        "spiele",
+        "spielt",
+        "spielen"
+      ],
+      "answer": "spielen",
+      "explanation": "Jonas und ich = wir, so the ending is -en: wir spielen."
+    },
+    {
+      "id": "prs-reg-10",
+      "type": "choice",
+      "prompt": "Du ___ deine Oma am Sonntag.",
+      "options": [
+        "besuche",
+        "besuchst",
+        "besucht"
+      ],
+      "answer": "besuchst",
+      "explanation": "With du the ending is -st: du besuchst."
+    },
+    {
+      "id": "prs-reg-11",
+      "type": "choice",
+      "prompt": "Du ___ heute im Büro.",
+      "options": [
+        "arbeitst",
+        "arbeitest",
+        "arbeitet"
+      ],
+      "answer": "arbeitest",
+      "explanation": "Stems ending in -t add an extra e before -st: du arbeitest."
+    },
+    {
+      "id": "prs-reg-12",
+      "type": "choice",
+      "prompt": "Ihr ___ schon lange auf den Bus.",
+      "options": [
+        "wartet",
+        "wartt",
+        "warten"
+      ],
+      "answer": "wartet",
+      "explanation": "Stems ending in -t add an extra e before -t: ihr wartet."
+    },
+    {
+      "id": "prs-reg-13",
+      "type": "choice",
+      "prompt": "Lena ___ jeden Sonntag im See.",
+      "options": [
+        "badt",
+        "badet",
+        "bade"
+      ],
+      "answer": "badet",
+      "explanation": "Stems ending in -d add an extra e before -t: sie badet."
+    },
+    {
+      "id": "prs-reg-14",
+      "type": "choice",
+      "prompt": "Der Lehrer ___ die Tür.",
+      "options": [
+        "öffnt",
+        "öffnet",
+        "öffne"
+      ],
+      "answer": "öffnet",
+      "explanation": "Stems ending in consonant + n (öffn-) add an extra e before -t: er öffnet."
+    },
+    {
+      "id": "prs-reg-15",
+      "type": "type",
+      "prompt": "Ich ___ in München.",
+      "hint": "(wohnen)",
+      "answers": [
+        "wohne"
+      ],
+      "explanation": "With ich the ending is -e: ich wohne."
+    },
+    {
+      "id": "prs-reg-16",
+      "type": "type",
+      "prompt": "Im Sommer ___ du nach Italien.",
+      "hint": "(reisen)",
+      "answers": [
+        "reist"
+      ],
+      "explanation": "The stem reis- already ends in -s, so du adds only -t: du reist (not reisst)."
+    },
+    {
+      "id": "prs-reg-17",
+      "type": "type",
+      "prompt": "Er ___ jeden Tag Deutsch.",
+      "hint": "(lernen)",
+      "answers": [
+        "lernt"
+      ],
+      "explanation": "With er/sie/es the ending is -t: er lernt."
+    },
+    {
+      "id": "prs-reg-18",
+      "type": "type",
+      "prompt": "Wir ___ ein Lied.",
+      "hint": "(singen)",
+      "answers": [
+        "singen"
+      ],
+      "explanation": "With wir the ending is -en: wir singen."
+    },
+    {
+      "id": "prs-reg-19",
+      "type": "type",
+      "prompt": "Ihr ___ ein Haus.",
+      "hint": "(suchen)",
+      "answers": [
+        "sucht"
+      ],
+      "explanation": "With ihr the ending is -t: ihr sucht."
+    },
+    {
+      "id": "prs-reg-20",
+      "type": "type",
+      "prompt": "Meine Eltern ___ eine Wohnung.",
+      "hint": "(suchen)",
+      "answers": [
+        "suchen"
+      ],
+      "explanation": "Meine Eltern = sie (plural), so the ending is -en: sie suchen."
+    },
+    {
+      "id": "prs-reg-21",
+      "type": "type",
+      "prompt": "Ich ___ Anna eine E-Mail.",
+      "hint": "(schreiben)",
+      "answers": [
+        "schreibe"
+      ],
+      "explanation": "With ich the ending is -e: ich schreibe."
+    },
+    {
+      "id": "prs-reg-22",
+      "type": "type",
+      "prompt": "Du ___ jeden Morgen.",
+      "hint": "(duschen)",
+      "answers": [
+        "duschst"
+      ],
+      "explanation": "The stem dusch- ends in -sch, so du simply takes -st: du duschst."
+    },
+    {
+      "id": "prs-reg-23",
+      "type": "type",
+      "prompt": "Ihr ___ zu laut.",
+      "hint": "(lachen)",
+      "answers": [
+        "lacht"
+      ],
+      "explanation": "With ihr the ending is -t: ihr lacht."
+    },
+    {
+      "id": "prs-reg-24",
+      "type": "type",
+      "prompt": "Am Samstag ___ du auf der Party.",
+      "hint": "(tanzen)",
+      "answers": [
+        "tanzt"
+      ],
+      "explanation": "The stem tanz- ends in -z, so du adds only -t: du tanzt (not tanzst)."
+    },
+    {
+      "id": "prs-reg-25",
+      "type": "type",
+      "prompt": "Wie ___ du?",
+      "hint": "(heißen)",
+      "answers": [
+        "heißt"
+      ],
+      "explanation": "The stem heiß- ends in -ß, so du adds only -t: du heißt (the same form as er heißt)."
+    },
+    {
+      "id": "prs-reg-26",
+      "type": "type",
+      "prompt": "Ihr ___ den Schlüssel nicht.",
+      "hint": "(finden)",
+      "answers": [
+        "findet"
+      ],
+      "explanation": "Stems ending in -d add an extra e before -t: ihr findet."
+    },
+    {
+      "id": "prs-reg-27",
+      "type": "type",
+      "prompt": "Du ___ viel.",
+      "hint": "(reden)",
+      "answers": [
+        "redest"
+      ],
+      "explanation": "Stems ending in -d add an extra e before -st: du redest."
+    },
+    {
+      "id": "prs-reg-28",
+      "type": "type",
+      "prompt": "Ich ___ das Fenster.",
+      "hint": "(öffnen)",
+      "answers": [
+        "öffne"
+      ],
+      "explanation": "With ich the ending is just -e: ich öffne. The extra e is only needed before -st and -t (du öffnest, er öffnet)."
+    },
+    {
+      "id": "prs-reg-29",
+      "type": "type",
+      "prompt": "Lena ___ am Montag nicht.",
+      "hint": "(arbeiten)",
+      "answers": [
+        "arbeitet"
+      ],
+      "explanation": "Stems ending in -t add an extra e before -t: sie arbeitet."
+    },
+    {
+      "id": "prs-reg-30",
+      "type": "type",
+      "prompt": "Du ___ im Meer.",
+      "hint": "(baden)",
+      "answers": [
+        "badest"
+      ],
+      "explanation": "Stems ending in -d add an extra e before -st: du badest."
+    }
+  ]
+}

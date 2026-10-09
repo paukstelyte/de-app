@@ -18,42 +18,78 @@
     "title": "Definite and indefinite articles",
     "level": "A1",
     "group": "Nouns and articles",
-    "summary": "der, die, das mean \"the\"; ein and eine mean \"a\". Use the indefinite article for something new and the definite one once it's known: Da ist ein Hund. Der Hund ist groß."
+    "summary": "der, die, das mean \"the\"; ein and eine mean \"a\". Use the indefinite article for something new and the definite one once it's known: Da ist ein Hund. Der Hund ist groß.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/articles-definite-indefinite/practice"
+      }
+    ]
   },
   {
     "slug": "plural-nouns",
     "title": "Plural forms of nouns",
     "level": "A1",
     "group": "Nouns and articles",
-    "summary": "German has several plural patterns: -e (Tage), -er with umlaut (Häuser), -(e)n (Frauen), -s (Autos) or no ending (Lehrer). The plural article is always die."
+    "summary": "German has several plural patterns: -e (Tage), -er with umlaut (Häuser), -(e)n (Frauen), -s (Autos) or no ending (Lehrer). The plural article is always die.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/plural-nouns/practice"
+      }
+    ]
   },
   {
     "slug": "negation-nicht-kein",
     "title": "Negation with nicht and kein",
     "level": "A1",
     "group": "Sentence structure",
-    "summary": "kein negates a noun that would have ein or no article (Ich habe kein Auto). nicht negates everything else: verbs, adjectives, nouns with der/die/das (Das ist nicht mein Auto)."
+    "summary": "kein negates a noun that would have ein or no article (Ich habe kein Auto). nicht negates everything else: verbs, adjectives, nouns with der/die/das (Das ist nicht mein Auto).",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/negation-nicht-kein/practice"
+      }
+    ]
   },
   {
     "slug": "personal-pronouns",
     "title": "Personal pronouns (ich, du, er …)",
     "level": "A1",
     "group": "Pronouns",
-    "summary": "ich, du, er, sie, es, wir, ihr, sie and Sie. du is informal, Sie is formal and always capitalised. er, sie and es follow the noun's gender: der Tisch → er."
+    "summary": "ich, du, er, sie, es, wir, ihr, sie and Sie. du is informal, Sie is formal and always capitalised. er, sie and es follow the noun's gender: der Tisch → er.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/personal-pronouns/practice"
+      }
+    ]
   },
   {
     "slug": "present-tense-regular",
     "title": "Present tense of regular verbs",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "Take the stem and add -e, -st, -t, -en, -t, -en: ich spiele, du spielst, er spielt. Stems ending in -t or -d add an extra e: du arbeitest."
+    "summary": "Take the stem and add -e, -st, -t, -en, -t, -en: ich spiele, du spielst, er spielt. Stems ending in -t or -d add an extra e: du arbeitest.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/present-tense-regular/practice"
+      }
+    ]
   },
   {
     "slug": "present-tense-stem-change",
     "title": "Present tense: stem-changing verbs",
     "level": "A1",
     "group": "Verbs and tenses",
-    "summary": "Some verbs change their vowel with du and er/sie/es: fahren → du fährst, lesen → er liest, nehmen → du nimmst. The other forms stay regular."
+    "summary": "Some verbs change their vowel with du and er/sie/es: fahren → du fährst, lesen → er liest, nehmen → du nimmst. The other forms stay regular.",
+    "exercises": [
+      {
+        "title": "Practice",
+        "href": "/topics/present-tense-stem-change/practice"
+      }
+    ]
   },
   {
     "slug": "sein-haben",

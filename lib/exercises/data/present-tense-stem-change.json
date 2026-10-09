@@ -1,0 +1,334 @@
+{
+  "slug": "present-tense-stem-change",
+  "instructions": "Choose or type the correct present-tense form of the verb.",
+  "items": [
+    {
+      "id": "stem-01",
+      "type": "choice",
+      "prompt": "Ich ___ einen Kaffee.",
+      "options": [
+        "nehme",
+        "nimmst",
+        "nimme"
+      ],
+      "answer": "nehme",
+      "explanation": "With ich, nehmen keeps its e: ich nehme. Only du (nimmst) and er/sie/es (nimmt) change the vowel."
+    },
+    {
+      "id": "stem-02",
+      "type": "type",
+      "prompt": "Ich ___ nach Hause.",
+      "hint": "(fahren)",
+      "answers": [
+        "fahre"
+      ],
+      "explanation": "With ich, fahren keeps its a: ich fahre. The change to ä only happens with du and er/sie/es."
+    },
+    {
+      "id": "stem-03",
+      "type": "choice",
+      "prompt": "Du ___ jeden Tag den Bus.",
+      "options": [
+        "fährst",
+        "fahrst",
+        "fahrt"
+      ],
+      "answer": "fährst",
+      "explanation": "fahren changes a → ä with du: du fährst. Without the umlaut (fahrst) the form is wrong."
+    },
+    {
+      "id": "stem-04",
+      "type": "type",
+      "prompt": "Du ___ am Samstag nach München.",
+      "hint": "(fahren)",
+      "answers": [
+        "fährst"
+      ],
+      "explanation": "du + fahren: the a becomes ä and you add -st: du fährst."
+    },
+    {
+      "id": "stem-05",
+      "type": "choice",
+      "prompt": "Er ___ ein Buch.",
+      "options": [
+        "liest",
+        "lesen",
+        "lest"
+      ],
+      "answer": "liest",
+      "explanation": "lesen changes e → ie with er/sie/es: er liest. The stem ends in -s, so er and du are both liest."
+    },
+    {
+      "id": "stem-06",
+      "type": "type",
+      "prompt": "Er ___ jeden Abend die Zeitung.",
+      "hint": "(lesen)",
+      "answers": [
+        "liest"
+      ],
+      "explanation": "er + lesen: e becomes ie and the ending is -t: er liest."
+    },
+    {
+      "id": "stem-07",
+      "type": "choice",
+      "prompt": "Wir ___ nach Berlin.",
+      "options": [
+        "fahren",
+        "fährt",
+        "fahrt"
+      ],
+      "answer": "fahren",
+      "explanation": "With wir there is no vowel change: wir fahren, the same as the infinitive."
+    },
+    {
+      "id": "stem-08",
+      "type": "type",
+      "prompt": "Du ___ viel Obst.",
+      "hint": "(essen)",
+      "answers": [
+        "isst"
+      ],
+      "explanation": "essen changes e → i with du; the stem ends in -ss, so du adds only -t: du isst."
+    },
+    {
+      "id": "stem-09",
+      "type": "choice",
+      "prompt": "Anna ___ gern Pizza.",
+      "options": [
+        "isst",
+        "esst",
+        "esse"
+      ],
+      "answer": "isst",
+      "explanation": "Anna = sie, and essen changes e → i with er/sie/es: sie isst."
+    },
+    {
+      "id": "stem-10",
+      "type": "type",
+      "prompt": "Was ___ du heute?",
+      "hint": "(nehmen)",
+      "answers": [
+        "nimmst"
+      ],
+      "explanation": "nehmen is irregular with du: e → i, the h drops and the m doubles: du nimmst."
+    },
+    {
+      "id": "stem-11",
+      "type": "choice",
+      "prompt": "Du ___ gut Deutsch.",
+      "options": [
+        "sprichst",
+        "sprechst",
+        "sprecht"
+      ],
+      "answer": "sprichst",
+      "explanation": "sprechen changes e → i with du: du sprichst."
+    },
+    {
+      "id": "stem-12",
+      "type": "type",
+      "prompt": "Lena ___ jeden Morgen Tee.",
+      "hint": "(nehmen)",
+      "answers": [
+        "nimmt"
+      ],
+      "explanation": "Lena = sie; nehmen becomes nimmt with er/sie/es (e → i, h drops, m doubles)."
+    },
+    {
+      "id": "stem-13",
+      "type": "choice",
+      "prompt": "Tom ___ heute lange.",
+      "options": [
+        "schläft",
+        "schlafen",
+        "schlaft"
+      ],
+      "answer": "schläft",
+      "explanation": "Tom = er, and schlafen changes a → ä with er/sie/es: er schläft."
+    },
+    {
+      "id": "stem-14",
+      "type": "type",
+      "prompt": "Wir ___ gern Bücher.",
+      "hint": "(lesen)",
+      "answers": [
+        "lesen"
+      ],
+      "explanation": "With wir there is no vowel change: wir lesen, the same as the infinitive."
+    },
+    {
+      "id": "stem-15",
+      "type": "choice",
+      "prompt": "Ihr ___ gern Comics.",
+      "options": [
+        "lest",
+        "liest",
+        "lesen"
+      ],
+      "answer": "lest",
+      "explanation": "With ihr there is no vowel change: ihr lest. Only du and er/sie/es say liest."
+    },
+    {
+      "id": "stem-16",
+      "type": "type",
+      "prompt": "Er ___ sehr gut Englisch.",
+      "hint": "(sprechen)",
+      "answers": [
+        "spricht"
+      ],
+      "explanation": "sprechen changes e → i with er/sie/es: er spricht."
+    },
+    {
+      "id": "stem-17",
+      "type": "choice",
+      "prompt": "Meine Mutter ___ mir bei den Hausaufgaben.",
+      "options": [
+        "hilft",
+        "helft",
+        "hilfst"
+      ],
+      "answer": "hilft",
+      "explanation": "Meine Mutter = sie, and helfen changes e → i with er/sie/es: sie hilft."
+    },
+    {
+      "id": "stem-18",
+      "type": "type",
+      "prompt": "Ihr ___ Brot.",
+      "hint": "(essen)",
+      "answers": [
+        "esst"
+      ],
+      "explanation": "With ihr there is no vowel change: ihr esst. Only du and er/sie/es say isst."
+    },
+    {
+      "id": "stem-19",
+      "type": "choice",
+      "prompt": "Papa, ___ du mir bitte das Salz?",
+      "options": [
+        "gibst",
+        "gebst",
+        "gibt"
+      ],
+      "answer": "gibst",
+      "explanation": "geben changes e → i with du: du gibst."
+    },
+    {
+      "id": "stem-20",
+      "type": "type",
+      "prompt": "Peter ___ am Wochenende bis zehn Uhr.",
+      "hint": "(schlafen)",
+      "answers": [
+        "schläft"
+      ],
+      "explanation": "Peter = er, and schlafen changes a → ä with er/sie/es: er schläft."
+    },
+    {
+      "id": "stem-21",
+      "type": "choice",
+      "prompt": "Der Zug ___ um acht Uhr.",
+      "options": [
+        "fährt",
+        "fahrt",
+        "fahren"
+      ],
+      "answer": "fährt",
+      "explanation": "der Zug = er, and fahren changes a → ä with er/sie/es: er fährt."
+    },
+    {
+      "id": "stem-22",
+      "type": "type",
+      "prompt": "Du ___ mir beim Kochen.",
+      "hint": "(helfen)",
+      "answers": [
+        "hilfst"
+      ],
+      "explanation": "helfen changes e → i with du: du hilfst."
+    },
+    {
+      "id": "stem-23",
+      "type": "choice",
+      "prompt": "Meine Eltern ___ jeden Morgen im Park.",
+      "options": [
+        "laufen",
+        "läuft",
+        "lauft"
+      ],
+      "answer": "laufen",
+      "explanation": "Meine Eltern = sie (plural), so there is no vowel change: sie laufen."
+    },
+    {
+      "id": "stem-24",
+      "type": "type",
+      "prompt": "Das Kind ___ den Hund.",
+      "hint": "(sehen)",
+      "answers": [
+        "sieht"
+      ],
+      "explanation": "das Kind = es, and sehen changes e → ie with er/sie/es: es sieht."
+    },
+    {
+      "id": "stem-25",
+      "type": "choice",
+      "prompt": "Lena ___ am Abend fern.",
+      "options": [
+        "sieht",
+        "seht",
+        "siehst"
+      ],
+      "answer": "sieht",
+      "explanation": "Lena = sie, and sehen changes e → ie with er/sie/es: sie sieht fern."
+    },
+    {
+      "id": "stem-26",
+      "type": "type",
+      "prompt": "Ich ___ dir ein Geschenk.",
+      "hint": "(geben)",
+      "answers": [
+        "gebe"
+      ],
+      "explanation": "With ich, geben keeps its e: ich gebe. Only du (gibst) and er/sie/es (gibt) change."
+    },
+    {
+      "id": "stem-27",
+      "type": "choice",
+      "prompt": "Du ___ eine schwere Tasche.",
+      "options": [
+        "trägst",
+        "tragst",
+        "trägt"
+      ],
+      "answer": "trägst",
+      "explanation": "tragen changes a → ä with du: du trägst."
+    },
+    {
+      "id": "stem-28",
+      "type": "type",
+      "prompt": "Der Hund ___ schnell.",
+      "hint": "(laufen)",
+      "answers": [
+        "läuft"
+      ],
+      "explanation": "der Hund = er, and laufen changes au → äu with er/sie/es: er läuft."
+    },
+    {
+      "id": "stem-29",
+      "type": "type",
+      "prompt": "Du ___ mit deiner Oma.",
+      "hint": "(sprechen)",
+      "answers": [
+        "sprichst"
+      ],
+      "explanation": "du + sprechen: e becomes i and you add -st: du sprichst."
+    },
+    {
+      "id": "stem-30",
+      "type": "type",
+      "prompt": "Mein Bruder ___ eine rote Jacke.",
+      "hint": "(tragen)",
+      "answers": [
+        "trägt"
+      ],
+      "explanation": "Mein Bruder = er, and tragen changes a → ä with er/sie/es: er trägt."
+    }
+  ]
+}

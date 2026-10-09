@@ -1,0 +1,332 @@
+{
+  "slug": "articles-definite-indefinite",
+  "instructions": "Choose or type the correct article (der, die, das, ein, eine) for each gap.",
+  "items": [
+    {
+      "id": "art-01",
+      "type": "choice",
+      "prompt": "Da ist ___ Hund.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Hund is masculine (der Hund), so the indefinite article is ein."
+    },
+    {
+      "id": "art-02",
+      "type": "choice",
+      "prompt": "Da ist ___ Katze.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "eine",
+      "explanation": "Katze is feminine (die Katze), so the indefinite article is eine."
+    },
+    {
+      "id": "art-03",
+      "type": "choice",
+      "prompt": "Das ist ___ Buch.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Buch is neuter (das Buch), so the indefinite article is ein."
+    },
+    {
+      "id": "art-04",
+      "type": "choice",
+      "prompt": "Hier ist ___ Tasche.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "eine",
+      "explanation": "Tasche is feminine (die Tasche), so you say eine Tasche."
+    },
+    {
+      "id": "art-05",
+      "type": "choice",
+      "prompt": "Dort steht ___ Tisch.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Tisch is masculine (der Tisch), so you say ein Tisch."
+    },
+    {
+      "id": "art-06",
+      "type": "choice",
+      "prompt": "Anna hat ___ Kind.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Kind is neuter (das Kind), so the indefinite article is ein."
+    },
+    {
+      "id": "art-07",
+      "type": "choice",
+      "prompt": "Hier ist ___ Lampe.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "Lampe is feminine, so the definite article is die."
+    },
+    {
+      "id": "art-08",
+      "type": "choice",
+      "prompt": "Wo ist ___ Bus?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "Bus is masculine, so the definite article is der."
+    },
+    {
+      "id": "art-09",
+      "type": "choice",
+      "prompt": "Wo ist ___ Auto?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "Auto is neuter, so the definite article is das."
+    },
+    {
+      "id": "art-10",
+      "type": "choice",
+      "prompt": "Da ist ein Hund. Heute ist ___ Hund sehr müde.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "The dog is already known, so use the definite article; Hund is masculine: der Hund."
+    },
+    {
+      "id": "art-11",
+      "type": "choice",
+      "prompt": "Ich habe eine Katze. Wie alt ist ___ Katze?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The cat has been mentioned, so use the definite article; Katze is feminine: die Katze."
+    },
+    {
+      "id": "art-12",
+      "type": "choice",
+      "prompt": "Wir haben ein Haus. Wo steht ___ Haus?",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "The house is now known, so use the definite article; Haus is neuter: das Haus."
+    },
+    {
+      "id": "art-13",
+      "type": "choice",
+      "prompt": "Ich besuche ___ Stadt.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "eine",
+      "explanation": "Stadt is feminine (die Stadt); feminine nouns take eine, also as an object."
+    },
+    {
+      "id": "art-14",
+      "type": "choice",
+      "prompt": "Ich kaufe ein Brot. Jetzt esse ich ___ Brot.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "das",
+      "explanation": "The bread is now known, so use the definite article; Brot is neuter: das Brot."
+    },
+    {
+      "id": "art-15",
+      "type": "choice",
+      "prompt": "Tom hat eine Idee. Ich finde ___ Idee gut.",
+      "options": [
+        "der",
+        "die",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The idea was just mentioned, so use the definite article; Idee is feminine: die Idee."
+    },
+    {
+      "id": "art-16",
+      "type": "choice",
+      "prompt": "Im Zimmer ist ___ Fenster.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Fenster is neuter (das Fenster), so the indefinite article is ein."
+    },
+    {
+      "id": "art-17",
+      "type": "choice",
+      "prompt": "Da kommt ___ Lehrerin.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "eine",
+      "explanation": "Lehrerin is feminine (die Lehrerin), and she is new in the conversation, so: eine Lehrerin."
+    },
+    {
+      "id": "art-18",
+      "type": "choice",
+      "prompt": "Tom ist ___ Freund von mir.",
+      "options": [
+        "ein",
+        "eine"
+      ],
+      "answer": "ein",
+      "explanation": "Freund is masculine (der Freund), so the indefinite article is ein: ein Freund von mir."
+    },
+    {
+      "id": "art-19",
+      "type": "type",
+      "prompt": "Da ist ___ Apfel.",
+      "hint": "(der Apfel, indefinite)",
+      "answers": [
+        "ein"
+      ],
+      "explanation": "Apfel is masculine, and the apple is new: ein Apfel."
+    },
+    {
+      "id": "art-20",
+      "type": "type",
+      "prompt": "Das ist ___ Schule.",
+      "hint": "(die Schule, indefinite)",
+      "answers": [
+        "eine"
+      ],
+      "explanation": "Schule is feminine, so the indefinite article is eine."
+    },
+    {
+      "id": "art-21",
+      "type": "type",
+      "prompt": "Ich habe ein Fahrrad. Jetzt ist ___ Fahrrad kaputt.",
+      "hint": "(das Fahrrad, definite)",
+      "answers": [
+        "das"
+      ],
+      "explanation": "The bike is already known, so use the definite article; Fahrrad is neuter: das."
+    },
+    {
+      "id": "art-22",
+      "type": "type",
+      "prompt": "Im Garten steht ein Baum. Wie hoch ist ___ Baum?",
+      "hint": "(der Baum, definite)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "The tree is already known, so use the definite article; Baum is masculine: der."
+    },
+    {
+      "id": "art-23",
+      "type": "type",
+      "prompt": "Anna kauft eine Jacke. Jetzt trägt sie ___ Jacke.",
+      "hint": "(die Jacke, definite)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "The jacket was just mentioned, so use the definite article; Jacke is feminine: die."
+    },
+    {
+      "id": "art-24",
+      "type": "type",
+      "prompt": "Hier ist ___ Zimmer.",
+      "hint": "(das Zimmer, indefinite)",
+      "answers": [
+        "ein"
+      ],
+      "explanation": "Zimmer is neuter, so the indefinite article is ein."
+    },
+    {
+      "id": "art-25",
+      "type": "type",
+      "prompt": "Wo ist ___ Küche?",
+      "hint": "(die Küche, definite)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Küche is feminine, so the definite article is die."
+    },
+    {
+      "id": "art-26",
+      "type": "type",
+      "prompt": "Wie ist ___ Wetter heute?",
+      "hint": "(das Wetter, definite)",
+      "answers": [
+        "das"
+      ],
+      "explanation": "Wetter is neuter, and the weather is a known thing: das Wetter."
+    },
+    {
+      "id": "art-27",
+      "type": "type",
+      "prompt": "Ich esse ___ Banane.",
+      "hint": "(die Banane, indefinite)",
+      "answers": [
+        "eine"
+      ],
+      "explanation": "Banane is feminine, so the indefinite article is eine."
+    },
+    {
+      "id": "art-28",
+      "type": "type",
+      "prompt": "Ich lese ___ Zeitung.",
+      "hint": "(die Zeitung, indefinite)",
+      "answers": [
+        "eine"
+      ],
+      "explanation": "Zeitung is feminine, so the indefinite article is eine."
+    },
+    {
+      "id": "art-29",
+      "type": "type",
+      "prompt": "Er hat ___ Problem.",
+      "hint": "(das Problem, indefinite)",
+      "answers": [
+        "ein"
+      ],
+      "explanation": "Problem is neuter, so the indefinite article is ein."
+    },
+    {
+      "id": "art-30",
+      "type": "type",
+      "prompt": "Wo ist ___ Schlüssel?",
+      "hint": "(der Schlüssel, definite)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Schlüssel is masculine, so the definite article is der."
+    }
+  ]
+}

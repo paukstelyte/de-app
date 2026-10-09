@@ -1,0 +1,350 @@
+{
+  "slug": "personal-pronouns",
+  "instructions": "Choose or type the correct personal pronoun for each gap.",
+  "items": [
+    {
+      "id": "pp-01",
+      "type": "choice",
+      "prompt": "Anna und ich gehen ins Kino. Heute Abend sehen ___ einen Film.",
+      "options": [
+        "wir",
+        "ihr",
+        "sie"
+      ],
+      "answer": "wir",
+      "explanation": "Anna and I = we, so the pronoun is wir."
+    },
+    {
+      "id": "pp-02",
+      "type": "choice",
+      "prompt": "Tom ist mein Bruder. Heute hat ___ Geburtstag.",
+      "options": [
+        "er",
+        "sie",
+        "es"
+      ],
+      "answer": "er",
+      "explanation": "Tom is a man, so he is replaced by er: er hat Geburtstag."
+    },
+    {
+      "id": "pp-03",
+      "type": "choice",
+      "prompt": "Lena ist meine Freundin. Am Samstag kommt ___ zu mir.",
+      "options": [
+        "er",
+        "sie",
+        "es"
+      ],
+      "answer": "sie",
+      "explanation": "Lena is a woman, so the name is replaced by sie."
+    },
+    {
+      "id": "pp-04",
+      "type": "choice",
+      "prompt": "Max, was machst ___ am Wochenende?",
+      "options": [
+        "du",
+        "Sie",
+        "er"
+      ],
+      "answer": "du",
+      "explanation": "You speak informally to one friend, so you use du."
+    },
+    {
+      "id": "pp-05",
+      "type": "choice",
+      "prompt": "Guten Tag, Frau Weber. Woher kommen ___?",
+      "options": [
+        "Sie",
+        "du",
+        "ihr"
+      ],
+      "answer": "Sie",
+      "explanation": "Sie is the formal you for an adult you do not know well; it is always capitalised."
+    },
+    {
+      "id": "pp-06",
+      "type": "choice",
+      "prompt": "Kinder, wo seid ___ denn?",
+      "options": [
+        "ihr",
+        "du",
+        "wir"
+      ],
+      "answer": "ihr",
+      "explanation": "ihr is the informal you for several people."
+    },
+    {
+      "id": "pp-07",
+      "type": "choice",
+      "prompt": "Meine Eltern sind im Urlaub. Heute besuchen ___ Rom.",
+      "options": [
+        "sie",
+        "er",
+        "es"
+      ],
+      "answer": "sie",
+      "explanation": "Plural sie (they) refers to my parents; it is not capitalised in the middle of a sentence."
+    },
+    {
+      "id": "pp-08",
+      "type": "choice",
+      "prompt": "Der Tisch ist neu. ___ ist sehr groß.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Er",
+      "explanation": "der Tisch is masculine, so it is replaced by er."
+    },
+    {
+      "id": "pp-09",
+      "type": "choice",
+      "prompt": "Die Lampe ist kaputt. ___ ist alt.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Sie",
+      "explanation": "die Lampe is feminine, so it is replaced by sie, even though it is a thing."
+    },
+    {
+      "id": "pp-10",
+      "type": "choice",
+      "prompt": "Das Buch ist spannend. ___ kostet zehn Euro.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Es",
+      "explanation": "das Buch is neuter, so it is replaced by es."
+    },
+    {
+      "id": "pp-11",
+      "type": "choice",
+      "prompt": "Ich habe einen Hund. ___ heißt Bello.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Er",
+      "explanation": "der Hund is masculine, so it is replaced by er."
+    },
+    {
+      "id": "pp-12",
+      "type": "choice",
+      "prompt": "Wir haben eine Katze. ___ schläft den ganzen Tag.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Sie",
+      "explanation": "die Katze is feminine, so it is replaced by sie."
+    },
+    {
+      "id": "pp-13",
+      "type": "choice",
+      "prompt": "Das Kind spielt im Garten. ___ lacht laut.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Es",
+      "explanation": "das Kind is neuter, so it is replaced by es, even though it is a person."
+    },
+    {
+      "id": "pp-14",
+      "type": "choice",
+      "prompt": "Hier ist mein Auto. ___ ist schon zehn Jahre alt.",
+      "options": [
+        "Es",
+        "Er",
+        "Sie"
+      ],
+      "answer": "Es",
+      "explanation": "das Auto is neuter, so it is replaced by es."
+    },
+    {
+      "id": "pp-15",
+      "type": "choice",
+      "prompt": "Peter und Maria sind Kollegen. ___ arbeiten bei einer Bank.",
+      "options": [
+        "Sie",
+        "Er",
+        "Es"
+      ],
+      "answer": "Sie",
+      "explanation": "Two people together = they, which is plural sie."
+    },
+    {
+      "id": "pp-16",
+      "type": "choice",
+      "prompt": "Ich suche meine Tasche. Wo ist ___?",
+      "options": [
+        "sie",
+        "er",
+        "es"
+      ],
+      "answer": "sie",
+      "explanation": "die Tasche is feminine, so sie is the pronoun for it."
+    },
+    {
+      "id": "pp-17",
+      "type": "choice",
+      "prompt": "Du und Tina, ___ seid meine besten Freunde.",
+      "options": [
+        "ihr",
+        "wir",
+        "sie"
+      ],
+      "answer": "ihr",
+      "explanation": "du + Tina are two people you speak to informally, so the pronoun is ihr (ihr seid)."
+    },
+    {
+      "id": "pp-18",
+      "type": "choice",
+      "prompt": "Entschuldigung, sind ___ Herr Braun?",
+      "options": [
+        "Sie",
+        "du",
+        "ihr"
+      ],
+      "answer": "Sie",
+      "explanation": "A stranger is addressed formally with Sie."
+    },
+    {
+      "id": "pp-19",
+      "type": "choice",
+      "prompt": "Mama, kannst ___ mir helfen?",
+      "options": [
+        "du",
+        "Sie",
+        "es"
+      ],
+      "answer": "du",
+      "explanation": "Family members are addressed informally with du."
+    },
+    {
+      "id": "pp-20",
+      "type": "choice",
+      "prompt": "Der Apfel ist rot. ___ schmeckt gut.",
+      "options": [
+        "Er",
+        "Sie",
+        "Es"
+      ],
+      "answer": "Er",
+      "explanation": "der Apfel is masculine, so it is replaced by er."
+    },
+    {
+      "id": "pp-21",
+      "type": "choice",
+      "prompt": "Jonas und ich sind müde. ___ gehen jetzt nach Hause.",
+      "options": [
+        "Wir",
+        "Ihr",
+        "Er"
+      ],
+      "answer": "Wir",
+      "explanation": "Jonas and I = we, which is wir."
+    },
+    {
+      "id": "pp-22",
+      "type": "choice",
+      "prompt": "Die Äpfel sind frisch. ___ kommen vom Markt.",
+      "options": [
+        "Sie",
+        "Er",
+        "Es"
+      ],
+      "answer": "Sie",
+      "explanation": "Plural nouns of any gender are replaced by plural sie."
+    },
+    {
+      "id": "pp-23",
+      "type": "type",
+      "prompt": "Das Wetter ist schön. Heute scheint die Sonne und ___ ist warm.",
+      "hint": "(es / er / sie)",
+      "answers": [
+        "es"
+      ],
+      "explanation": "Weather statements use the impersonal es."
+    },
+    {
+      "id": "pp-24",
+      "type": "type",
+      "prompt": "Frau Meier, haben ___ Kinder?",
+      "hint": "(formal you)",
+      "answers": [
+        "Sie"
+      ],
+      "explanation": "Formal you is Sie, always with a capital letter."
+    },
+    {
+      "id": "pp-25",
+      "type": "type",
+      "prompt": "Lara, wohnst ___ in Wien?",
+      "hint": "(informal you, one person)",
+      "answers": [
+        "du"
+      ],
+      "explanation": "One friend addressed informally takes du."
+    },
+    {
+      "id": "pp-26",
+      "type": "type",
+      "prompt": "Mein Bruder ist Lehrer. Jeden Tag fährt ___ mit dem Bus zur Schule.",
+      "hint": "(er / sie / es)",
+      "answers": [
+        "er"
+      ],
+      "explanation": "mein Bruder is one man (masculine), so he is replaced by er."
+    },
+    {
+      "id": "pp-27",
+      "type": "type",
+      "prompt": "Meine Schwester ist Ärztin. Am Montag arbeitet ___ im Krankenhaus.",
+      "hint": "(er / sie / es)",
+      "answers": [
+        "sie"
+      ],
+      "explanation": "Meine Schwester is feminine, so you use sie."
+    },
+    {
+      "id": "pp-28",
+      "type": "type",
+      "prompt": "Das Mädchen ist neun. Morgen feiert ___ Geburtstag.",
+      "hint": "(er / sie / es)",
+      "answers": [
+        "es"
+      ],
+      "explanation": "das Mädchen is grammatically neuter, so it is replaced by es."
+    },
+    {
+      "id": "pp-29",
+      "type": "type",
+      "prompt": "Jan und Eva, wann kommt ___ morgen?",
+      "hint": "(informal you, two people)",
+      "answers": [
+        "ihr"
+      ],
+      "explanation": "Two people addressed informally take ihr."
+    },
+    {
+      "id": "pp-30",
+      "type": "type",
+      "prompt": "Mein Freund und ich kochen gern. Am Sonntag essen ___ Pizza.",
+      "hint": "(wir / ihr / sie)",
+      "answers": [
+        "wir"
+      ],
+      "explanation": "My friend and I = we, so wir."
+    }
+  ]
+}

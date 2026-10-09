@@ -1,0 +1,362 @@
+{
+  "slug": "negation-nicht-kein",
+  "instructions": "Choose, type or arrange the correct negation with nicht or kein.",
+  "items": [
+    {
+      "id": "neg-01",
+      "type": "choice",
+      "prompt": "Ich habe ___ Auto.",
+      "options": [
+        "kein",
+        "nicht"
+      ],
+      "answer": "kein",
+      "explanation": "Auto would take ein here (Ich habe ein Auto), so it is negated with kein: kein Auto."
+    },
+    {
+      "id": "neg-02",
+      "type": "choice",
+      "prompt": "Das ist ___ mein Auto.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "A noun with a possessive (mein) is negated with nicht, never kein."
+    },
+    {
+      "id": "neg-03",
+      "type": "choice",
+      "prompt": "Wir trinken ___ Kaffee.",
+      "options": [
+        "kein",
+        "nicht"
+      ],
+      "answer": "kein",
+      "explanation": "Kaffee has no article here (Wir trinken Kaffee), so it is negated with kein."
+    },
+    {
+      "id": "neg-04",
+      "type": "choice",
+      "prompt": "Er kommt heute ___.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "Verbs are negated with nicht, placed at the end here."
+    },
+    {
+      "id": "neg-05",
+      "type": "choice",
+      "prompt": "Sie hat ___ Zeit.",
+      "options": [
+        "keine",
+        "kein",
+        "nicht"
+      ],
+      "answer": "keine",
+      "explanation": "Zeit is feminine, so kein takes the ending -e: keine Zeit."
+    },
+    {
+      "id": "neg-06",
+      "type": "choice",
+      "prompt": "Ich kenne den Mann ___.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "A noun with a definite article (den Mann) is negated with nicht."
+    },
+    {
+      "id": "neg-07",
+      "type": "choice",
+      "prompt": "Das Wetter ist ___ schön.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "Adjectives are negated with nicht: nicht schön."
+    },
+    {
+      "id": "neg-08",
+      "type": "choice",
+      "prompt": "Ich brauche ___ Hilfe.",
+      "options": [
+        "keine",
+        "kein",
+        "keinen"
+      ],
+      "answer": "keine",
+      "explanation": "Hilfe is feminine, so it is keine Hilfe."
+    },
+    {
+      "id": "neg-09",
+      "type": "choice",
+      "prompt": "Wir haben ___ Hund.",
+      "options": [
+        "kein",
+        "keine",
+        "keinen"
+      ],
+      "answer": "keinen",
+      "explanation": "Hund is masculine accusative (wir haben einen Hund), so keinen."
+    },
+    {
+      "id": "neg-10",
+      "type": "choice",
+      "prompt": "Er hat ___ Bruder.",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "answer": "keinen",
+      "explanation": "Bruder is masculine accusative (er hat einen Bruder), so keinen."
+    },
+    {
+      "id": "neg-11",
+      "type": "choice",
+      "prompt": "Ich esse ___ Fleisch.",
+      "options": [
+        "kein",
+        "nicht"
+      ],
+      "answer": "kein",
+      "explanation": "Fleisch has no article, so negate it with kein."
+    },
+    {
+      "id": "neg-12",
+      "type": "choice",
+      "prompt": "Das Kind schläft ___.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "The verb schläft is negated with nicht."
+    },
+    {
+      "id": "neg-13",
+      "type": "choice",
+      "prompt": "Am Sonntag arbeite ich ___.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "Nicht negates the verb and goes at the end of this short sentence."
+    },
+    {
+      "id": "neg-14",
+      "type": "choice",
+      "prompt": "Hier gibt es ___ Supermarkt.",
+      "options": [
+        "keinen",
+        "kein",
+        "keine"
+      ],
+      "answer": "keinen",
+      "explanation": "Es gibt takes the accusative; Supermarkt is masculine, so keinen."
+    },
+    {
+      "id": "neg-15",
+      "type": "choice",
+      "prompt": "Ich habe ___ Fragen.",
+      "options": [
+        "keine",
+        "keinen",
+        "kein"
+      ],
+      "answer": "keine",
+      "explanation": "In the plural, kein takes -e: keine Fragen."
+    },
+    {
+      "id": "neg-16",
+      "type": "choice",
+      "prompt": "Die Suppe ist ___ heiß.",
+      "options": [
+        "nicht",
+        "kein"
+      ],
+      "answer": "nicht",
+      "explanation": "Adjectives are negated with nicht, not kein."
+    },
+    {
+      "id": "neg-17",
+      "type": "choice",
+      "prompt": "Das ist ___ Problem.",
+      "options": [
+        "kein",
+        "nicht"
+      ],
+      "answer": "kein",
+      "explanation": "Problem would take ein here (Das ist ein Problem), so it is negated with kein: kein Problem."
+    },
+    {
+      "id": "neg-18",
+      "type": "choice",
+      "prompt": "Lena hat ___ Handy.",
+      "options": [
+        "kein",
+        "nicht",
+        "keine"
+      ],
+      "answer": "kein",
+      "explanation": "Handy would take ein here (Lena hat ein Handy); it is neuter, so: kein Handy."
+    },
+    {
+      "id": "neg-19",
+      "type": "type",
+      "prompt": "Ich habe ___ Geld.",
+      "hint": "(kein oder nicht?)",
+      "answers": [
+        "kein"
+      ],
+      "explanation": "Geld has no article, so it is negated with kein."
+    },
+    {
+      "id": "neg-20",
+      "type": "type",
+      "prompt": "Wir haben ___ Katze.",
+      "hint": "(kein)",
+      "answers": [
+        "keine"
+      ],
+      "explanation": "Katze is feminine, so kein becomes keine."
+    },
+    {
+      "id": "neg-21",
+      "type": "type",
+      "prompt": "Sie hat ___ Schwester.",
+      "hint": "(kein)",
+      "answers": [
+        "keine"
+      ],
+      "explanation": "Schwester is feminine: eine Schwester becomes keine Schwester."
+    },
+    {
+      "id": "neg-22",
+      "type": "type",
+      "prompt": "Anna wohnt ___ in Berlin.",
+      "hint": "(nicht oder kein?)",
+      "answers": [
+        "nicht"
+      ],
+      "explanation": "The verb phrase wohnt in Berlin is negated with nicht."
+    },
+    {
+      "id": "neg-23",
+      "type": "type",
+      "prompt": "Ich habe ___ Computer.",
+      "hint": "(kein)",
+      "answers": [
+        "keinen"
+      ],
+      "explanation": "Computer is masculine accusative, so keinen."
+    },
+    {
+      "id": "neg-24",
+      "type": "type",
+      "prompt": "Das sind ___ meine Schuhe.",
+      "hint": "(nicht oder kein?)",
+      "answers": [
+        "nicht"
+      ],
+      "explanation": "A noun with a possessive (meine) is negated with nicht."
+    },
+    {
+      "id": "neg-25",
+      "type": "type",
+      "prompt": "Wir haben ___ Kinder.",
+      "hint": "(kein)",
+      "answers": [
+        "keine"
+      ],
+      "explanation": "In the plural, kein takes -e: keine Kinder."
+    },
+    {
+      "id": "neg-26",
+      "type": "order",
+      "words": [
+        "Ich",
+        "habe",
+        "keine",
+        "Zeit."
+      ],
+      "answers": [
+        "Ich habe keine Zeit."
+      ],
+      "translation": "I have no time.",
+      "explanation": "Zeit has no article here (Ich habe Zeit), so it is negated with kein; Zeit is feminine, so keine Zeit."
+    },
+    {
+      "id": "neg-27",
+      "type": "order",
+      "words": [
+        "Das",
+        "ist",
+        "nicht",
+        "mein",
+        "Handy."
+      ],
+      "answers": [
+        "Das ist nicht mein Handy."
+      ],
+      "translation": "That is not my phone.",
+      "explanation": "With a possessive (mein), use nicht before the noun phrase."
+    },
+    {
+      "id": "neg-28",
+      "type": "order",
+      "words": [
+        "Lena",
+        "isst",
+        "Fisch",
+        "nicht",
+        "gern."
+      ],
+      "answers": [
+        "Lena isst Fisch nicht gern.",
+        "Fisch isst Lena nicht gern."
+      ],
+      "translation": "Lena doesn't like eating fish.",
+      "explanation": "nicht goes right before gern. Lena or Fisch can come first; the verb isst always stays in second position."
+    },
+    {
+      "id": "neg-29",
+      "type": "order",
+      "words": [
+        "Anna",
+        "findet",
+        "Deutsch",
+        "nicht",
+        "schwer."
+      ],
+      "answers": [
+        "Anna findet Deutsch nicht schwer.",
+        "Deutsch findet Anna nicht schwer."
+      ],
+      "translation": "Anna doesn't find German difficult.",
+      "explanation": "nicht negates the adjective schwer and goes right before it. Anna or Deutsch can come first; the verb stays second."
+    },
+    {
+      "id": "neg-30",
+      "type": "order",
+      "words": [
+        "Ich",
+        "verstehe",
+        "die",
+        "Frage",
+        "nicht."
+      ],
+      "answers": [
+        "Ich verstehe die Frage nicht."
+      ],
+      "translation": "I do not understand the question.",
+      "explanation": "With a definite article (die Frage), nicht goes at the end of the clause."
+    }
+  ]
+}

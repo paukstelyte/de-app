@@ -1,0 +1,347 @@
+{
+  "slug": "plural-nouns",
+  "instructions": "Choose or type the correct plural form for each gap.",
+  "items": [
+    {
+      "id": "pl-01",
+      "type": "choice",
+      "prompt": "Die Woche hat sieben ___.",
+      "options": [
+        "Tage",
+        "Tags",
+        "Tagen"
+      ],
+      "answer": "Tage",
+      "explanation": "Tage is the -e plural of der Tag."
+    },
+    {
+      "id": "pl-02",
+      "type": "choice",
+      "prompt": "Vor dem Haus stehen drei ___.",
+      "options": [
+        "Autos",
+        "Autoen",
+        "Auten"
+      ],
+      "answer": "Autos",
+      "explanation": "Foreign-origin words like Auto take -s in the plural: Autos."
+    },
+    {
+      "id": "pl-03",
+      "type": "choice",
+      "prompt": "Im Büro arbeiten viele ___.",
+      "options": [
+        "Frauen",
+        "Fraue",
+        "Fraus"
+      ],
+      "answer": "Frauen",
+      "explanation": "Feminine nouns often add -(e)n: die Frau → die Frauen."
+    },
+    {
+      "id": "pl-04",
+      "type": "choice",
+      "prompt": "In dieser Straße gibt es viele alte ___.",
+      "options": [
+        "Häuser",
+        "Hauser",
+        "Hause"
+      ],
+      "answer": "Häuser",
+      "explanation": "Haus takes -er and an umlaut: das Haus → die Häuser."
+    },
+    {
+      "id": "pl-05",
+      "type": "choice",
+      "prompt": "Unsere ___ sind sehr nett.",
+      "options": [
+        "Lehrer",
+        "Lehrers",
+        "Lehrern"
+      ],
+      "answer": "Lehrer",
+      "explanation": "Masculine nouns ending in -er usually add no plural ending: der Lehrer → die Lehrer. Only the article changes."
+    },
+    {
+      "id": "pl-06",
+      "type": "choice",
+      "prompt": "Auf dem Spielplatz spielen fünf ___.",
+      "options": [
+        "Kinder",
+        "Kindere",
+        "Kinden"
+      ],
+      "answer": "Kinder",
+      "explanation": "Kind takes -er in the plural: das Kind → die Kinder."
+    },
+    {
+      "id": "pl-07",
+      "type": "choice",
+      "prompt": "Im Regal stehen viele ___.",
+      "options": [
+        "Bücher",
+        "Bucher",
+        "Büchers"
+      ],
+      "answer": "Bücher",
+      "explanation": "Buch takes -er plus an umlaut: das Buch → die Bücher."
+    },
+    {
+      "id": "pl-08",
+      "type": "choice",
+      "prompt": "Ich kaufe drei ___ und zwei Birnen.",
+      "options": [
+        "Äpfel",
+        "Apfel",
+        "Apfeln"
+      ],
+      "answer": "Äpfel",
+      "explanation": "Apfel adds an umlaut and no ending: der Apfel → die Äpfel."
+    },
+    {
+      "id": "pl-09",
+      "type": "choice",
+      "prompt": "In Deutschland gibt es viele große ___.",
+      "options": [
+        "Städte",
+        "Stadte",
+        "Städten"
+      ],
+      "answer": "Städte",
+      "explanation": "Stadt takes an umlaut and -e: die Stadt → die Städte."
+    },
+    {
+      "id": "pl-10",
+      "type": "choice",
+      "prompt": "In der Küche stehen zwei ___.",
+      "options": [
+        "Tische",
+        "Tischen",
+        "Tischer"
+      ],
+      "answer": "Tische",
+      "explanation": "Tisch takes -e in the plural: der Tisch → die Tische."
+    },
+    {
+      "id": "pl-11",
+      "type": "choice",
+      "prompt": "Anna kauft schöne ___ für ihre Mutter.",
+      "options": [
+        "Blumen",
+        "Blume",
+        "Blumes"
+      ],
+      "answer": "Blumen",
+      "explanation": "Feminine nouns ending in -e take -n: die Blume → die Blumen."
+    },
+    {
+      "id": "pl-12",
+      "type": "choice",
+      "prompt": "In der Stadt gibt es viele ___.",
+      "options": [
+        "Hotels",
+        "Hotele",
+        "Hotelen"
+      ],
+      "answer": "Hotels",
+      "explanation": "Hotel is a loan word and takes -s: das Hotel → die Hotels."
+    },
+    {
+      "id": "pl-13",
+      "type": "choice",
+      "prompt": "Unsere Wohnung hat drei ___.",
+      "options": [
+        "Zimmer",
+        "Zimmers",
+        "Zimmere"
+      ],
+      "answer": "Zimmer",
+      "explanation": "Neuter nouns ending in -er add no plural ending: das Zimmer → die Zimmer."
+    },
+    {
+      "id": "pl-14",
+      "type": "choice",
+      "prompt": "Viele ___ und Väter warten vor der Schule.",
+      "options": [
+        "Mütter",
+        "Mutter",
+        "Mütten"
+      ],
+      "answer": "Mütter",
+      "explanation": "Mutter adds an umlaut but no ending in the plural: die Mutter → die Mütter."
+    },
+    {
+      "id": "pl-15",
+      "type": "choice",
+      "prompt": "Vor dem Essen waschen wir die ___.",
+      "options": [
+        "Hände",
+        "Hande",
+        "Händen"
+      ],
+      "answer": "Hände",
+      "explanation": "Hand takes an umlaut and -e: die Hand → die Hände."
+    },
+    {
+      "id": "pl-16",
+      "type": "choice",
+      "prompt": "Im Park laufen zwei ___.",
+      "options": [
+        "Hunde",
+        "Hunden",
+        "Hünde"
+      ],
+      "answer": "Hunde",
+      "explanation": "Hund takes -e without an umlaut: der Hund → die Hunde."
+    },
+    {
+      "id": "pl-17",
+      "type": "choice",
+      "prompt": "Lena und Anna sind meine ___.",
+      "options": [
+        "Freundinnen",
+        "Freundine",
+        "Freundins"
+      ],
+      "answer": "Freundinnen",
+      "explanation": "Feminine nouns in -in double the n and add -en: die Freundin → die Freundinnen."
+    },
+    {
+      "id": "pl-18",
+      "type": "choice",
+      "prompt": "Im Garten spielen ___ Kinder.",
+      "options": [
+        "die",
+        "der",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "The plural article is always die, whatever the singular gender."
+    },
+    {
+      "id": "pl-19",
+      "type": "choice",
+      "prompt": "Der Bus ist neu, aber ___ Busse sind alt.",
+      "options": [
+        "die",
+        "der",
+        "das"
+      ],
+      "answer": "die",
+      "explanation": "Busse is plural, so the article is die."
+    },
+    {
+      "id": "pl-20",
+      "type": "choice",
+      "prompt": "Zu Weihnachten bekommen die Kinder viele ___.",
+      "options": [
+        "Geschenke",
+        "Geschenken",
+        "Geschenks"
+      ],
+      "answer": "Geschenke",
+      "explanation": "Das Geschenk takes -e in the plural: die Geschenke."
+    },
+    {
+      "id": "pl-21",
+      "type": "type",
+      "prompt": "Im Zoo sehen wir viele ___.",
+      "hint": "(das Tier)",
+      "answers": [
+        "Tiere"
+      ],
+      "explanation": "Tier takes -e: das Tier → die Tiere."
+    },
+    {
+      "id": "pl-22",
+      "type": "type",
+      "prompt": "Auf dem Markt kaufe ich fünf ___.",
+      "hint": "(die Banane)",
+      "answers": [
+        "Bananen"
+      ],
+      "explanation": "Feminine nouns in -e take -n: die Banane → die Bananen."
+    },
+    {
+      "id": "pl-23",
+      "type": "type",
+      "prompt": "In meiner Tasche sind drei ___.",
+      "hint": "(der Schlüssel)",
+      "answers": [
+        "Schlüssel"
+      ],
+      "explanation": "Schlüssel stays exactly the same in the plural: der Schlüssel → die Schlüssel. Masculine nouns in -el usually add nothing; only the article (die) shows the plural."
+    },
+    {
+      "id": "pl-24",
+      "type": "type",
+      "prompt": "Im Winter tragen wir warme ___.",
+      "hint": "(der Mantel)",
+      "answers": [
+        "Mäntel"
+      ],
+      "explanation": "Mantel gets an umlaut and no ending: der Mantel → die Mäntel."
+    },
+    {
+      "id": "pl-25",
+      "type": "type",
+      "prompt": "Am Bahnhof stehen zwei ___.",
+      "hint": "(der Zug)",
+      "answers": [
+        "Züge"
+      ],
+      "explanation": "Zug takes an umlaut and -e: der Zug → die Züge."
+    },
+    {
+      "id": "pl-26",
+      "type": "type",
+      "prompt": "Im Kino laufen heute drei ___.",
+      "hint": "(der Film)",
+      "answers": [
+        "Filme"
+      ],
+      "explanation": "Film takes -e: der Film → die Filme."
+    },
+    {
+      "id": "pl-27",
+      "type": "type",
+      "prompt": "In der Schule haben wir nette ___.",
+      "hint": "(die Lehrerin)",
+      "answers": [
+        "Lehrerinnen"
+      ],
+      "explanation": "Feminine -in nouns double the n and add -en: die Lehrerin → die Lehrerinnen."
+    },
+    {
+      "id": "pl-28",
+      "type": "type",
+      "prompt": "Meine Eltern haben zwei ___.",
+      "hint": "(der Sohn)",
+      "answers": [
+        "Söhne"
+      ],
+      "explanation": "Sohn takes an umlaut and -e: der Sohn → die Söhne."
+    },
+    {
+      "id": "pl-29",
+      "type": "type",
+      "prompt": "In der Stadt gibt es viele ___.",
+      "hint": "(das Café)",
+      "answers": [
+        "Cafés"
+      ],
+      "explanation": "Words from French often take -s: das Café → die Cafés."
+    },
+    {
+      "id": "pl-30",
+      "type": "type",
+      "prompt": "Ich schreibe zwei ___ an meine Freunde.",
+      "hint": "(die E-Mail)",
+      "answers": [
+        "E-Mails",
+        "Mails"
+      ],
+      "explanation": "E-Mail takes -s in the plural: die E-Mail → die E-Mails."
+    }
+  ]
+}
