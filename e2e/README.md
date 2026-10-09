@@ -38,3 +38,19 @@ Set `BASE=https://…` to run against another deployment.
   the main account keeps two "removed" rows (`modal-verbs` and the topic removed in the focus check).
 - `fixtures/` holds only the German sample text "Lektion 7: Präpositionen mit Dativ …" (plus a one-line
   English `old.doc` placeholder); the 6 photos are copies of `blank.png` made in a temp folder at run time.
+
+## Grammar practice (`exercises.sh`)
+
+Checks the `/topics/<slug>/practice` pages: guest links and 404s, a full guest round (3 wrong, 7 right;
+"Practise my mistakes (3)"; "Next 10"; all three item types), no rows written for guests, answers saved
+to `public.attempts` when logged in (and "Your accuracy so far" on the topic page and the `/topics` card),
+no horizontal scroll at 390px, and Enter to submit/continue on a type item. The right and wrong answers
+come from `lib/exercises/data/<slug>.json`. No AI is involved, so it costs nothing.
+
+```bash
+export E2E_MAIN_EMAIL=…  E2E_MAIN_PASSWORD=…    # same accounts as above (the OTHER pair is only needed by lib.sh)
+export E2E_OTHER_EMAIL=… E2E_OTHER_PASSWORD=…
+bash e2e/exercises.sh                            # about 3 minutes
+```
+
+Side effect: each run adds 2 `modal-verbs` rows to the main account's `public.attempts` (they stay).
