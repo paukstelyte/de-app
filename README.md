@@ -78,7 +78,7 @@ The browser checks use the global `playwright-cli` and test accounts from enviro
 
 ## How changes are made
 
-Each change goes through a feature branch and a GitHub pull request. The `ai-code-reviewer` agent reviews the PR before it's merged, and its report is saved in [`docs/reviews/`](docs/reviews/) and posted on the PR:
+Each change goes through a feature branch and a GitHub pull request. The `ai-code-reviewer` agent ([`.claude/agents/ai-code-reviewer.md`](.claude/agents/ai-code-reviewer.md)) reviews the PR before it's merged. It reads the diff in a fresh context and reports dead code, duplication, over-engineering and silent behaviour changes as Critical / Warning / Suggestion; for each PR it was also asked to check the course's AI and security rules. Its report is saved in [`docs/reviews/`](docs/reviews/) and posted on the PR:
 
 - PR #1 Show the AI model and cost of each document: [report](docs/reviews/pr-1-model-and-cost.md)
 - PR #2 Add Practise my focus and send signed-out visitors to login: [report](docs/reviews/pr-2-practise-my-focus.md)
