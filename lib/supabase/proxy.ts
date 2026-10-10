@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-const PROTECTED_PATHS = ["/progress", "/account"];
+const PROTECTED_PATHS = ["/progress", "/account", "/learning"];
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
@@ -42,7 +42,7 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
-  // Guests can play; only personal pages need an account.
+  // Guests can play; personal pages (progress, account, Customized Learning) need an account.
   const { pathname, search } = request.nextUrl;
   if (!user && PROTECTED_PATHS.some((p) => pathname.startsWith(p))) {
     const url = request.nextUrl.clone();
