@@ -1,5 +1,6 @@
 -- Keep the upload counter small: the limits only look at the last 24 hours, so
--- each call to use_upload_quota() now also deletes rows older than 2 days.
+-- each successful call to use_upload_quota() now also deletes rows older than 2 days
+-- (a call refused at the limit rolls back, delete included; the next one cleans up).
 -- Same checks, limits, lock and grants as before (20261010100000).
 create or replace function public.use_upload_quota() returns void
 language plpgsql security definer set search_path = '' as $$
