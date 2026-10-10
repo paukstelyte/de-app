@@ -7,6 +7,7 @@ import { LevelBadge } from "@/components/LevelBadge";
 import type { GrammarTopic } from "@/lib/grammar/topics";
 import type { FocusItem } from "@/lib/learning/focus";
 import type { TopicProgress } from "@/lib/learning/progress";
+import { percent } from "@/lib/progress";
 
 const date = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
 
@@ -31,7 +32,7 @@ export function FocusList({ items, topics, progress }: { items: FocusItem[]; top
             </div>
             <p className="text-xs text-zinc-500">
               {topic.exercises?.length
-                ? p ? `${p.total} answers · ${Math.round((p.correct / p.total) * 100)}% correct · last practised ${date(p.lastPractised!)}` : "Not practised yet"
+                ? p ? `${p.total} answers · ${percent(p)}% correct · last practised ${date(p.lastPractised!)}` : "Not practised yet"
                 : "No exercises yet"}
             </p>
             <p className="text-xs text-zinc-500">

@@ -1,10 +1,18 @@
 "use client";
 
-import { useTheme } from "@/lib/theme/context";
+import { THEME_STORAGE_KEY } from "@/lib/theme/constants";
+
+// The inline script in the root layout sets the saved theme on <html> before
+// first paint, so the toggle only has to flip that attribute.
+function toggleTheme() {
+  const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, next);
+  } catch {} // storage blocked (e.g. some private windows): the theme just isn't remembered
+}
 
 export function ThemeToggle() {
-  const { toggleTheme } = useTheme();
-
   return (
     <button
       type="button"

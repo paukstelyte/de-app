@@ -10,12 +10,12 @@ export interface Score {
   total: number;
 }
 
-export interface TroubleWord {
+interface TroubleWord {
   id: string;
   misses: number;
 }
 
-export interface ProgressSummary {
+interface ProgressSummary {
   overall: Score;
   byArticle: Record<Article, Score>;
   byRule: Map<string, Score>;

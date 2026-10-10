@@ -18,7 +18,7 @@ export interface Flashcard {
   incorrectStreak: number;
 }
 
-export const STREAK_TO_CLASSIFY = 2;
+const STREAK_TO_CLASSIFY = 2;
 
 export function getFlashcardStatus(card: Flashcard): FlashcardStatus {
   return card.incorrectStreak >= STREAK_TO_CLASSIFY ? "needs-practice" : "unplayed";

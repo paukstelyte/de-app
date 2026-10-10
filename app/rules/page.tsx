@@ -1,18 +1,19 @@
 import Link from "next/link";
 import rules from "@/lib/flashcards/data/rules.json";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
+import { ARTICLES, type Article } from "@/lib/flashcards/types";
 import { PrintButton } from "@/components/PrintButton";
 
 
 interface RuleException {
   noun: string;
-  article: "der" | "die" | "das";
+  article: Article;
   note: string;
 }
 
 interface Rule {
   id: string;
-  article: "der" | "die" | "das";
+  article: Article;
   title: string;
   matchType: "suffix" | "semantic";
   suffixes?: string[];
@@ -91,7 +92,7 @@ export default function RulesPage() {
         </div>
       </section>
 
-      {(["der", "die", "das"] as const).map((article) => (
+      {ARTICLES.map((article) => (
         <section key={article} className="flex flex-col gap-4">
           <h2 className="text-xl font-semibold capitalize">{article}</h2>
           <div className="flex flex-col gap-4">
@@ -110,7 +111,7 @@ export default function RulesPage() {
 function PrintRules({ groups }: { groups: Record<Rule["article"], Rule[]> }) {
   return (
     <div className="hidden print:block">
-      {(["der", "die", "das"] as const).map((article, index) => (
+      {ARTICLES.map((article, index) => (
         <section
           key={article}
           className={index < 2 ? "break-after-page" : undefined}
@@ -198,7 +199,7 @@ function RuleCard({ rule }: { rule: Rule }) {
             {rule.exceptions.map((exception) => (
               <li key={exception.noun} className="text-sm">
                 <span className="font-medium capitalize">
-                  {exception.article} {exception.noun.replace(/^(der|die|das)\s+/i, "")}
+                  {exception.article} {bareNoun(exception.noun)}
                 </span>{" "}
                 <span className="text-zinc-600 dark:text-zinc-400">
                   — {formatRuleText(exception.note)}

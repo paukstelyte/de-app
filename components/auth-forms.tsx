@@ -13,6 +13,16 @@ const primaryButton =
 const secondaryButton =
   "flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 disabled:opacity-60 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800";
 const linkClass = "underline underline-offset-4";
+// Matches the server rule (supabase/config.toml: 8+ characters, letters and digits).
+const PASSWORD_RULE = "At least 8 characters, including a letter and a number.";
+const NEW_PASSWORD = {
+  required: true,
+  minLength: 8,
+  pattern: "(?=.*[A-Za-z])(?=.*\\d).{8,}",
+  title: PASSWORD_RULE,
+  autoComplete: "new-password",
+  hint: PASSWORD_RULE,
+};
 
 export function AuthCard({
   title,
@@ -161,7 +171,7 @@ export function SignUpForm() {
     <AuthCard title="Sign up" description="Track your progress and practise the words you get wrong.">
       <form onSubmit={handleSignUp} className="flex flex-col gap-4">
         <Field label="Email" type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <Field label="Password" type="password" required minLength={8} pattern="(?=.*[A-Za-z])(?=.*\d).{8,}" title="At least 8 characters, including a letter and a number." autoComplete="new-password" hint="At least 8 characters, including a letter and a number." value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Field label="Password" type="password" {...NEW_PASSWORD} value={password} onChange={(e) => setPassword(e.target.value)} />
         <Field label="Repeat password" type="password" required autoComplete="new-password" value={repeat} onChange={(e) => setRepeat(e.target.value)} />
         <ErrorText error={error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
@@ -244,7 +254,7 @@ export function UpdatePasswordForm() {
   return (
     <AuthCard title="Choose a new password">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <Field label="New password" type="password" required minLength={8} pattern="(?=.*[A-Za-z])(?=.*\d).{8,}" title="At least 8 characters, including a letter and a number." autoComplete="new-password" hint="At least 8 characters, including a letter and a number." value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Field label="New password" type="password" {...NEW_PASSWORD} value={password} onChange={(e) => setPassword(e.target.value)} />
         <ErrorText error={error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Saving…" : "Save new password"}

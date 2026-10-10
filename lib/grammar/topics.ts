@@ -15,7 +15,7 @@ export const LEVEL_NAMES: Record<Level, string> = {
   C2: "Proficient",
 };
 
-export type Exercise = { title: string; href: string };
+type Exercise = { title: string; href: string };
 export type GrammarTopic = {
   slug: string;
   title: string;

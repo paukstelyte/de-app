@@ -85,6 +85,7 @@ Each change goes through a feature branch and a GitHub pull request. The `ai-cod
 - PR #3 Document the AI feature, rules, references and test results: [report](docs/reviews/pr-3-docs.md)
 - PR #4 Guard server-only data files and clean up the upload counter: [report](docs/reviews/pr-4-server-only-and-cleanup.md)
 - PR #5 Add the ai-code-reviewer agent to the repo: [report](docs/reviews/pr-5-ai-code-reviewer-agent.md)
+- PR #6 Tidy up: safer theme toggle, shared helpers, accurate limit messages: [report](docs/reviews/pr-6-refactor-cleanup.md)
 
 Security scans (`/security-scan`, `/security-scan-changed`) run with three scanner agents (Supabase, Next.js, Vercel).
 

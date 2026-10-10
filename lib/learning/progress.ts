@@ -1,7 +1,7 @@
 // Per-topic progress from the answer history (public.attempts). The attempts
 // table names topics by catalogue slug, except the flashcards, which use "articles".
 
-export const slugForAttemptTopic = (topic: string): string => (topic === "articles" ? "noun-gender" : topic);
+const slugForAttemptTopic = (topic: string): string => (topic === "articles" ? "noun-gender" : topic);
 export type TopicProgress = { total: number; correct: number; lastPractised: string | null };
 
 export function topicProgress(rows: { topic: string; correct: boolean; created_at: string }[]): Record<string, TopicProgress> {

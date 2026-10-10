@@ -2,7 +2,7 @@
 // the checks applied to it. No imports, so `npm test` can load it into Node.
 
 export const MAX_TEXT = 8000;
-export const MAX_TOPICS = 6;
+const MAX_TOPICS = 6;
 export type Suggestion = { slug: string; reason: string; fromMistake: boolean };
 export type Analysis = { title: string; extractedText: string; noGrammar: boolean; topics: Suggestion[] };
 

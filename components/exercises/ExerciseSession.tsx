@@ -18,7 +18,7 @@ const muted = "border-zinc-200 text-zinc-400 dark:border-zinc-800 dark:text-zinc
 
 type Answered = { answer: string; correct: boolean };
 /** An exercise, optionally tagged with its topic when a round mixes topics ("Practise my focus"). */
-export type SessionItem = ExerciseItem & { topic?: string };
+type SessionItem = ExerciseItem & { topic?: string };
 type Result = { item: SessionItem; correct: boolean };
 
 // The round is shuffled with Math.random, so it is only rendered in the browser

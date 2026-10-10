@@ -2,7 +2,7 @@
 // you (plus any you added). Type-only import, so Node tests load it directly.
 import type { ExerciseItem, ExerciseSet } from "../exercises/types.ts";
 
-export type TopicItem = ExerciseItem & { topic: string };
+type TopicItem = ExerciseItem & { topic: string };
 
 /** The topics that have a practice set (noun-gender and unknown slugs drop out), in focus order. */
 export function practiceTopics(slugs: string[], sets: Record<string, ExerciseSet>): string[] {

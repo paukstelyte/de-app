@@ -1,13 +1,10 @@
 import { useMemo, useReducer } from "react";
 import type { Article, Flashcard } from "./types";
-import { buildPracticeOrder, ROUND_SIZE, shuffle } from "./practice";
+import { shuffle } from "@/lib/exercises/check";
+import type { Score } from "@/lib/progress";
+import { buildPracticeOrder, ROUND_SIZE } from "./practice";
 
-interface RoundScore {
-  correct: number;
-  total: number;
-}
-
-const EMPTY_SCORE: RoundScore = { correct: 0, total: 0 };
+const EMPTY_SCORE: Score = { correct: 0, total: 0 };
 
 interface SessionState {
   round: number;
@@ -18,14 +15,14 @@ interface SessionState {
   chosen: Article | null;
   // Score for the current deck only — resets every new deck. Recap answers
   // don't count toward it, since a recap isn't itself "a deck of 30".
-  deckScore: RoundScore;
+  deckScore: Score;
   // Session-wide stats shown at the bottom of the page — persist across
   // decks and are only reset by the Restart button.
   decksPlayed: number;
   mistakesLearned: number;
   // Accuracy tracked from base-round answers only, excluding "learn from
   // your mistakes" recap passes.
-  baseStats: RoundScore;
+  baseStats: Score;
 }
 
 const initialState: SessionState = {
@@ -48,7 +45,7 @@ type Action =
   | { type: "choose"; article: Article; wasCorrect: boolean; cardId: string; countsTowardStats: boolean }
   | { type: "advance"; crossedDeckBoundary: boolean };
 
-function addAnswer(score: RoundScore, wasCorrect: boolean): RoundScore {
+function addAnswer(score: Score, wasCorrect: boolean): Score {
   return {
     correct: score.correct + (wasCorrect ? 1 : 0),
     total: score.total + 1,
@@ -69,19 +66,7 @@ function sessionReducer(state: SessionState, action: Action): SessionState {
         deckScore: EMPTY_SCORE,
       };
     case "restart":
-      return {
-        ...state,
-        round: state.round + 1,
-        recapQueue: null,
-        wrongThisPass: [],
-        isRecap: false,
-        index: 0,
-        chosen: null,
-        deckScore: EMPTY_SCORE,
-        decksPlayed: 0,
-        mistakesLearned: 0,
-        baseStats: EMPTY_SCORE,
-      };
+      return { ...initialState, round: state.round + 1 };
     case "start_recap":
       return {
         ...state,
