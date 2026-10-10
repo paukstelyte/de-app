@@ -77,7 +77,7 @@ The update grant includes `topic_slug` because the app upserts with `on_conflict
 
 One row per upload, used only by `use_upload_quota()`. RLS is on, there are no policies and no privileges for `anon` or `authenticated`, so the API cannot read or write it.
 
-`public.use_upload_quota()` (security definer, callable by `authenticated` only) records an upload for `auth.uid()` and raises `P0001` ("Upload limit reached") at **10 uploads per user and 100 uploads for everyone per rolling 24 hours**. An advisory lock keeps concurrent calls from overshooting. It raises `42501` when not logged in.
+`public.use_upload_quota()` (security definer, callable by `authenticated` only) records an upload for `auth.uid()` and raises `P0001` ("Upload limit reached") at **10 uploads per user and 100 uploads for everyone per rolling 24 hours**. An advisory lock keeps concurrent calls from overshooting. It raises `42501` when not logged in. Each call also deletes rows older than 2 days, so the table stays small (migration `20261010130000`; the limits only look at the last 24 hours).
 
 ### Access rules
 

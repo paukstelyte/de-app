@@ -1,3 +1,4 @@
+import "server-only"; // reads the request's cookies; the build fails if browser code imports this
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 

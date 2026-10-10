@@ -1,3 +1,4 @@
+import "server-only"; // reads the user's answers; the build fails if browser code imports this
 import { createClient } from "@/lib/supabase/server";
 import { loadFlashcards } from "@/lib/flashcards/storage";
 import { summarize, type Attempt } from "@/lib/progress";

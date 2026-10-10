@@ -83,6 +83,7 @@ Each change goes through a feature branch and a GitHub pull request. The `ai-cod
 - PR #1 Show the AI model and cost of each document: [report](docs/reviews/pr-1-model-and-cost.md)
 - PR #2 Add Practise my focus and send signed-out visitors to login: [report](docs/reviews/pr-2-practise-my-focus.md)
 - PR #3 Document the AI feature, rules, references and test results: [report](docs/reviews/pr-3-docs.md)
+- PR #4 Guard server-only data files and clean up the upload counter: [report](docs/reviews/pr-4-server-only-and-cleanup.md)
 
 Security scans (`/security-scan`, `/security-scan-changed`) run with three scanner agents (Supabase, Next.js, Vercel).
 

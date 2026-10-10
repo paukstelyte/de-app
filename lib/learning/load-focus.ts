@@ -1,3 +1,4 @@
+import "server-only"; // reads the user's documents and focus; the build fails if browser code imports this
 import { buildFocus, type FocusOverride } from "@/lib/learning/focus";
 import type { Suggestion } from "@/lib/learning/suggestions";
 import type { createClient } from "@/lib/supabase/server";
