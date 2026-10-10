@@ -13,12 +13,12 @@ type Doc = {
   model: string | null; prompt_tokens: number | null; completion_tokens: number | null; cost_usd: number | string | null;
 };
 
-/** "Read by Gemini 2.5 Flash Lite · 3,120 tokens · $0.0004"; older documents saved before this was recorded show nothing. */
+/** "Read by Gemini 2.5 Flash Lite · 3,120 tokens · about $0.0004"; older documents saved before this was recorded show nothing. */
 function usageLine(doc: Doc): string | null {
   if (!doc.model) return null;
   const tokens = (doc.prompt_tokens ?? 0) + (doc.completion_tokens ?? 0);
   const cost = formatCost(doc.cost_usd === null ? null : Number(doc.cost_usd));
-  return [`Read by ${formatModel(doc.model)}`, tokens > 0 ? `${tokens.toLocaleString("en-GB")} tokens` : null, cost && `about ${cost}`].filter(Boolean).join(" · ");
+  return [`Read by ${formatModel(doc.model)}`, tokens > 0 ? `${tokens.toLocaleString("en-GB")} tokens` : null, cost && (cost.startsWith("under") ? cost : `about ${cost}`)].filter(Boolean).join(" · ");
 }
 const date = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
@@ -35,13 +35,14 @@ function DocumentItem({ doc, topics }: { doc: Doc; topics: Record<string, Gramma
   const [error, setError] = useState("");
   const [pending, start] = useTransition();
   const known = doc.suggestions.filter((s) => topics[s.slug]);
+  const usage = usageLine(doc);
   return (
     <li className="flex flex-col gap-3 border border-[var(--line)] bg-[var(--paper)] p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">{doc.title}</h3>
         <span className="text-xs text-zinc-500">{date(doc.created_at)}</span>
       </div>
-      {usageLine(doc) && <p className="text-xs text-zinc-500" title={doc.model ?? undefined}>{usageLine(doc)}</p>}
+      {usage && <p className="text-xs text-zinc-500" title={doc.model ?? undefined}>{usage}</p>}
       {doc.no_grammar || known.length === 0 ? (
         <p className="text-sm text-zinc-600 dark:text-zinc-400">No German grammar topics found in this document.</p>
       ) : (

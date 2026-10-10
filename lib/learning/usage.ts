@@ -29,5 +29,6 @@ export function formatModel(slug: string): string {
 export function formatCost(usd: number | null): string | null {
   if (usd === null) return null;
   if (usd === 0) return "$0";
+  if (usd < 0.000001) return "under $0.000001";
   return `$${Number(usd.toPrecision(usd < 0.001 ? 1 : 2))}`;
 }

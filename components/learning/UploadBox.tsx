@@ -6,10 +6,11 @@ import { analyseUpload } from "@/app/learning/actions";
 import { createClient } from "@/lib/supabase/client";
 import { listUserUploads } from "@/lib/learning/storage";
 import { BUCKET, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
+import { formatModel } from "@/lib/learning/usage";
 
 const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
 
-export function UploadBox({ userId, modelName, modelSlug }: { userId: string; modelName: string; modelSlug: string }) {
+export function UploadBox({ userId, modelSlug }: { userId: string; modelSlug: string }) {
   const router = useRouter();
   const [status, setStatus] = useState<{ kind: "idle" | "busy" | "error" | "done"; text: string }>({ kind: "idle", text: "" });
 
@@ -54,7 +55,7 @@ export function UploadBox({ userId, modelName, modelSlug }: { userId: string; mo
       </label>
       <p className="text-xs leading-5 text-zinc-500">{UPLOAD_NOTE}</p>
       <p className="text-xs text-zinc-500">
-        Documents are read by <b>{modelName}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter.
+        Documents are read by <b>{formatModel(modelSlug)}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter.
       </p>
       {status.text && (
         <p role={status.kind === "error" ? "alert" : "status"} className={`text-sm ${status.kind === "error" ? "text-red-600 dark:text-red-400" : status.kind === "done" ? "text-green-700 dark:text-green-400" : ""}`}>
