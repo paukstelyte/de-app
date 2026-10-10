@@ -49,8 +49,6 @@ export async function analyseDocument(input: {
         // PDFs: read natively by the model; never fall back to the paid OCR engine.
         plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
         max_tokens: 6000,
-        // Ask OpenRouter to include the cost in usage (for the cost indicator).
-        usage: { include: true },
       }),
       signal: AbortSignal.timeout(90_000),
     });
@@ -66,6 +64,7 @@ export async function analyseDocument(input: {
       analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
     } catch {}
     if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
+    // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
     return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "ai" };
   } catch (err) {
     console.error("analyseDocument failed:", err instanceof Error ? err.message : err);
