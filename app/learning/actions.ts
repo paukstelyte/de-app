@@ -4,15 +4,15 @@ import { revalidatePath } from "next/cache";
 import { getTopic } from "@/lib/grammar/topics";
 import { analyseDocument } from "@/lib/learning/analyse";
 import { extractDocxText } from "@/lib/learning/docx";
-import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, type UploadKind } from "@/lib/learning/uploads";
+import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, validateSelection } from "@/lib/learning/uploads";
 import { createClient } from "@/lib/supabase/server";
 
 const ERRORS = {
   loggedOut: "Please log in again.",
   files: "Something was wrong with the upload. Please try again.",
-  limit: "You've reached today's upload limit (10 a day). Please try again tomorrow.",
+  limit: "You've reached today's upload limit. Please try again tomorrow.",
   docLimit: "You've reached the limit of 200 saved documents. Delete some to upload new ones.",
-  pdfPages: "This PDF has more than 20 pages. Please upload a shorter part.",
+  pdfPages: `This PDF has more than ${MAX_PDF_PAGES} pages. Please upload a shorter part.`,
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
   generic: "Something went wrong — please try again.",
@@ -29,19 +29,16 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
   const storage = supabase.storage.from(BUCKET);
 
   try {
-    const mimes = owned.map((path) => mimeFor({ name: path, size: 0, type: "" }));
-    const first = mimes[0];
-    if (!first || mimes.some((m) => !m)) return { error: ERRORS.files };
-    const kind: UploadKind = first === "application/pdf" ? "pdf" : first.includes("wordprocessingml") ? "docx" : "images";
-    if (kind !== "images" && owned.length > 1) return { error: ERRORS.files };
-    if (kind === "images" && !mimes.every((m) => m!.startsWith("image/"))) return { error: ERRORS.files };
+    // Same rules as the browser check; sizes are checked after download.
+    const check = validateSelection(owned.map((name) => ({ name, size: 0 })));
+    if ("error" in check) return { error: ERRORS.files };
+    const { kind } = check;
 
     const files = [];
-    for (const [i, path] of owned.entries()) {
+    for (const path of owned) {
       const { data: blob, error } = await storage.download(path);
-      const mime = mimes[i]!;
       if (error || !blob || blob.size > MAX_FILE_BYTES) return { error: ERRORS.files };
-      files.push({ name: path.split("/").pop()!, mime, data: Buffer.from(await blob.arrayBuffer()) });
+      files.push({ name: path.split("/").pop()!, mime: mimeFor(path)!, data: Buffer.from(await blob.arrayBuffer()) });
     }
     // ponytail: counts uncompressed page objects only; PDFs storing pages in compressed object streams pass uncounted (cost still capped by 10 MB + daily quota). Inflate FlateDecode streams if long PDFs become a problem.
     if (kind === "pdf" && (files[0].data.toString("latin1").match(/\/Type\s*\/Page(?!s)/g)?.length ?? 0) > MAX_PDF_PAGES) {

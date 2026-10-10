@@ -2,8 +2,8 @@
 // learner's own additions and removals. Type-only import, so Node can load it.
 import type { Suggestion } from "./suggestions";
 
-export const FOCUS_DAYS = 30;
-export type FocusDoc = { id: number; title: string; createdAt: string; topics: Suggestion[] };
+const FOCUS_DAYS = 30;
+type FocusDoc = { id: number; title: string; createdAt: string; topics: Suggestion[] };
 export type FocusOverride = { slug: string; kind: "added" | "removed"; updatedAt: string };
 export type FocusItem = { slug: string; mistakes: number; documents: number; since: string; fromTitle: string | null; added: boolean };
 

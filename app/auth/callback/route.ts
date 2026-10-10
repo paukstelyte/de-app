@@ -4,7 +4,7 @@ import { safeRedirectPath } from "@/lib/safe-redirect";
 
 // Where Google sign-in lands (sign-up and password-reset emails go to
 // /auth/confirm instead). Exchanges the auth code Supabase appended to the URL
-// for a session, then sends the user on to `next` (default: the game page).
+// for a session, then sends the user on to `next` (default: /learning).
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
