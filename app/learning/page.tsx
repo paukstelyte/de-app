@@ -2,6 +2,8 @@ import Link from "next/link";
 import { DocumentList } from "@/components/learning/DocumentList";
 import { FocusList } from "@/components/learning/FocusList";
 import { UploadBox } from "@/components/learning/UploadBox";
+import { ANALYSIS_MODEL } from "@/lib/learning/analyse";
+import { formatModel } from "@/lib/learning/usage";
 import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
 import { buildFocus, type FocusOverride } from "@/lib/learning/focus";
@@ -41,7 +43,7 @@ export default async function LearningPage() {
   }
 
   const [{ data: docs }, { data: overrides }, attempts] = await Promise.all([
-    supabase.from("learning_documents").select("id, title, created_at, extracted_text, no_grammar, suggestions").order("created_at", { ascending: false }).limit(200),
+    supabase.from("learning_documents").select("id, title, created_at, extracted_text, no_grammar, suggestions, model, prompt_tokens, completion_tokens, cost_usd").order("created_at", { ascending: false }).limit(200),
     supabase.from("learning_focus").select("topic_slug, kind, updated_at"),
     getAllAttempts(),
   ]);
@@ -57,7 +59,7 @@ export default async function LearningPage() {
     <div className="flex flex-col gap-10">
       {intro}
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
-        <UploadBox userId={userId} />
+        <UploadBox userId={userId} modelName={formatModel(ANALYSIS_MODEL)} modelSlug={ANALYSIS_MODEL} />
         <section className="flex flex-col gap-3" aria-labelledby="focus-title">
           <h2 id="focus-title" className={heading}>Your focus now</h2>
           {isEmpty ? (

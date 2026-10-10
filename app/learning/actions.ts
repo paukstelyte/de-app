@@ -58,7 +58,10 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
     const a = result.analysis;
     const { data: row, error } = await supabase
       .from("learning_documents")
-      .insert({ title: a.title, extracted_text: a.extractedText, no_grammar: a.noGrammar, suggestions: a.topics })
+      .insert({
+        title: a.title, extracted_text: a.extractedText, no_grammar: a.noGrammar, suggestions: a.topics,
+        model: result.usage.model, prompt_tokens: result.usage.promptTokens, completion_tokens: result.usage.completionTokens, cost_usd: result.usage.costUsd,
+      })
       .select("id")
       .single();
     if (error || !row) {

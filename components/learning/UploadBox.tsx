@@ -9,7 +9,7 @@ import { BUCKET, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/
 
 const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
 
-export function UploadBox({ userId }: { userId: string }) {
+export function UploadBox({ userId, modelName, modelSlug }: { userId: string; modelName: string; modelSlug: string }) {
   const router = useRouter();
   const [status, setStatus] = useState<{ kind: "idle" | "busy" | "error" | "done"; text: string }>({ kind: "idle", text: "" });
 
@@ -53,6 +53,9 @@ export function UploadBox({ userId }: { userId: string }) {
         <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy"} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
       </label>
       <p className="text-xs leading-5 text-zinc-500">{UPLOAD_NOTE}</p>
+      <p className="text-xs text-zinc-500">
+        Documents are read by <b>{modelName}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter.
+      </p>
       {status.text && (
         <p role={status.kind === "error" ? "alert" : "status"} className={`text-sm ${status.kind === "error" ? "text-red-600 dark:text-red-400" : status.kind === "done" ? "text-green-700 dark:text-green-400" : ""}`}>
           {status.text}

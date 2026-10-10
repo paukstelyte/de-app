@@ -2,6 +2,7 @@ import "server-only"; // reads OPENROUTER_API_KEY
 import { TOPICS } from "@/lib/grammar/topics";
 import { ANALYSIS_SCHEMA, parseAnalysis, type Analysis } from "@/lib/learning/suggestions";
 import type { UploadKind } from "@/lib/learning/uploads";
+import { readUsage, type Usage } from "@/lib/learning/usage";
 
 // One fixed model (agreed): reads PDFs and photos itself, about $0.0004 per document.
 export const ANALYSIS_MODEL = "google/gemini-2.5-flash-lite";
@@ -20,7 +21,7 @@ export async function analyseDocument(input: {
   kind: UploadKind;
   files: { name: string; mime: string; data: Buffer }[];
   docxText?: string;
-}): Promise<{ analysis: Analysis } | { error: "ai" | "unreadable" }> {
+}): Promise<{ analysis: Analysis; usage: Usage } | { error: "ai" | "unreadable" }> {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) {
     console.error("analyseDocument: OPENROUTER_API_KEY is not set");
@@ -48,6 +49,8 @@ export async function analyseDocument(input: {
         // PDFs: read natively by the model; never fall back to the paid OCR engine.
         plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
         max_tokens: 6000,
+        // Ask OpenRouter to include the cost in usage (for the cost indicator).
+        usage: { include: true },
       }),
       signal: AbortSignal.timeout(90_000),
     });
@@ -63,7 +66,7 @@ export async function analyseDocument(input: {
       analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
     } catch {}
     if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
-    return analysis ? { analysis } : { error: "ai" };
+    return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "ai" };
   } catch (err) {
     console.error("analyseDocument failed:", err instanceof Error ? err.message : err);
     return { error: "ai" };
