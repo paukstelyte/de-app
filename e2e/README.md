@@ -6,7 +6,7 @@ Browser checks for Customized Learning, driven by [playwright-cli](https://www.n
 
 | Check | What it verifies |
 |---|---|
-| Guest and login | Guest `/learning` shows "Log in to use Customized Learning"; logging in lands on `/learning`; `/` redirects there |
+| Guest and login | Guest `/learning` and `/learning/practice` are redirected to `/login?next=…`; logging in lands on `/learning`; `/` redirects there |
 | PDF, HEIC photo, Word | Each upload creates a "Lektion 7" document with `prepositions-dative` / `dative-case`, listed under "Your focus now" |
 | Blank image | "No German grammar topics found", no topics |
 | Storage | After every upload the `learning-uploads` bucket is empty (read-only SQL, printed with its result) |
