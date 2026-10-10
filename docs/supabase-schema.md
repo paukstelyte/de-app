@@ -51,6 +51,12 @@ A saved upload: its extracted text and the AI's topic suggestions.
 | `no_grammar` | `boolean` | Defaults to `false` |
 | `suggestions` | `jsonb` | Array of at most 6 items, e.g. `{"slug":"dative-case","reason":"…","fromMistake":false}` |
 | `created_at` | `timestamptz` | Defaults to `now()` |
+| `model` | `text` | OpenRouter model slug that read the document, 1–100 characters; null on rows saved before 2026-10-10 |
+| `prompt_tokens` | `integer` | ≥ 0, from OpenRouter's `usage`; nullable |
+| `completion_tokens` | `integer` | ≥ 0, from OpenRouter's `usage`; nullable |
+| `cost_usd` | `numeric(12,8)` | 0 ≤ cost < 1, from OpenRouter's `usage.cost`; nullable |
+
+The usage columns power the model and cost line on each document card (migration `20261010120000`). Authenticated users have insert on them too (a user calling the API directly could write odd values to their own rows), so they are display-only and never used for billing or limits. There is still no update grant.
 
 Index: `(user_id, created_at desc)`. Limit: at most **200 documents per user**; the `learning_documents_limit` BEFORE INSERT trigger raises `P0001` ("Document limit reached"), also for direct API inserts.
 
