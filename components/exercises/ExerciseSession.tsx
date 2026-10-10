@@ -37,7 +37,7 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
   topicTitles?: Record<string, string>;
 }) {
   const mounted = useMounted();
-  const [round, setRound] = useState<SessionItem[]>(() => makeRound(items));
+  const [round, setRound] = useState(() => makeRound(items));
   const [roundNo, setRoundNo] = useState(0);
   const [mode, setMode] = useState<"normal" | "mistakes">("normal");
   const [index, setIndex] = useState(0);

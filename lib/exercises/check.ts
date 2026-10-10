@@ -27,6 +27,6 @@ export function shuffle<T>(xs: T[], rand: () => number = Math.random): T[] {
   return out;
 }
 
-export function makeRound(items: ExerciseItem[], size = ROUND_SIZE, rand: () => number = Math.random): ExerciseItem[] {
+export function makeRound<T extends ExerciseItem>(items: T[], size = ROUND_SIZE, rand: () => number = Math.random): T[] {
   return shuffle(items, rand).slice(0, size);
 }

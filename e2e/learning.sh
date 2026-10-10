@@ -60,6 +60,8 @@ upload_and_check() { # label file
 echo "== 1. Guest, login redirect"
 pw close >/dev/null; pw open "$BASE/learning" >/dev/null; pw resize 1280 800 >/dev/null; sleep 3
 check "guest /learning is sent to the login page (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/login\"" ]'
+pw goto "$BASE/learning/practice" >/dev/null; sleep 3
+check "guest /learning/practice is sent to the login page (at $(js '() => location.pathname + location.search'))" '[ "$(js "() => location.pathname + location.search")" = "\"/login?next=%2Flearning%2Fpractice\"" ]'
 login "$E2E_MAIN_EMAIL" "$E2E_MAIN_PASSWORD"
 check "logging in from /login lands on /learning (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
 pw goto "$BASE/" >/dev/null; sleep 3

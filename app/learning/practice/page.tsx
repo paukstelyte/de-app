@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { ExerciseSession } from "@/components/exercises/ExerciseSession";
 import { EXERCISE_SETS } from "@/lib/exercises/sets";
 import { TOPICS } from "@/lib/grammar/topics";
-import { focusPracticeItems } from "@/lib/learning/focus-practice";
+import { focusPracticeItems, practiceTopics } from "@/lib/learning/focus-practice";
 import { loadFocus } from "@/lib/learning/load-focus";
 import { createClient } from "@/lib/supabase/server";
 
@@ -17,7 +17,7 @@ export default async function FocusPracticePage() {
   if (!data?.claims) redirect("/login?next=/learning/practice"); // proxy.ts does this first
 
   const { focus } = await loadFocus(supabase);
-  const slugs = focus.map((f) => f.slug).filter((s) => Object.hasOwn(EXERCISE_SETS, s));
+  const slugs = practiceTopics(focus.map((f) => f.slug), EXERCISE_SETS);
   const items = focusPracticeItems(slugs, EXERCISE_SETS);
 
   return (
@@ -40,6 +40,7 @@ export default async function FocusPracticePage() {
           </p>
         )}
       </div>
+      {/* Every item carries its own topic, which is what answers are saved under; slug "focus" is only a placeholder. */}
       {items.length > 0 ? (
         <ExerciseSession
           slug="focus"
@@ -47,7 +48,6 @@ export default async function FocusPracticePage() {
           items={items}
           loggedIn
           backHref="/learning"
-          practiceHref="/learning/practice"
           topicTitles={TITLES}
         />
       ) : (

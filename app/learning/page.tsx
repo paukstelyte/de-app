@@ -7,6 +7,7 @@ import { ANALYSIS_MODEL } from "@/lib/learning/analyse";
 import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
 import { EXERCISE_SETS } from "@/lib/exercises/sets";
+import { practiceTopics } from "@/lib/learning/focus-practice";
 import { loadFocus } from "@/lib/learning/load-focus";
 import { topicProgress } from "@/lib/learning/progress";
 import { createClient } from "@/lib/supabase/server";
@@ -33,8 +34,8 @@ export default async function LearningPage() {
   // proxy.ts sends signed-out visitors to /login; this is a second guard.
   if (!userId) redirect("/login?next=/learning");
 
-  const [{ documents: docs, focus }, attempts] = await Promise.all([loadFocus(supabase), getAllAttempts()]);
-  const practiceSlugs = focus.map((f) => f.slug).filter((s) => Object.hasOwn(EXERCISE_SETS, s));
+  const [{ documents: docs, focus }, attempts] = await Promise.all([loadFocus(supabase, { withDocuments: true }), getAllAttempts()]);
+  const practiceSlugs = practiceTopics(focus.map((f) => f.slug), EXERCISE_SETS);
   const progress = topicProgress(attempts);
   const isEmpty = !docs?.length && focus.length === 0;
 
