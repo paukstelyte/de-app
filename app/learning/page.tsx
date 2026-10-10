@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { DocumentList } from "@/components/learning/DocumentList";
 import { FocusList } from "@/components/learning/FocusList";
 import { UploadBox } from "@/components/learning/UploadBox";
 import { ANALYSIS_MODEL } from "@/lib/learning/analyse";
 import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
-import { buildFocus, type FocusOverride } from "@/lib/learning/focus";
+import { EXERCISE_SETS } from "@/lib/exercises/sets";
+import { loadFocus } from "@/lib/learning/load-focus";
 import { topicProgress } from "@/lib/learning/progress";
-import type { Suggestion } from "@/lib/learning/suggestions";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Customized Learning" };
@@ -29,28 +30,11 @@ export default async function LearningPage() {
       </p>
     </div>
   );
-  if (!userId) {
-    return (
-      <div className="flex flex-col gap-6">
-        {intro}
-        <div className="flex flex-wrap gap-3">
-          <Link href="/login?next=/learning" className={pillPrimary}>Log in to use Customized Learning</Link>
-          <Link href="/auth/sign-up" className="inline-flex items-center rounded-full border border-[var(--line)] px-5 py-2.5 text-sm font-medium">Sign up</Link>
-        </div>
-      </div>
-    );
-  }
+  // proxy.ts sends signed-out visitors to /login; this is a second guard.
+  if (!userId) redirect("/login?next=/learning");
 
-  const [{ data: docs }, { data: overrides }, attempts] = await Promise.all([
-    supabase.from("learning_documents").select("id, title, created_at, extracted_text, no_grammar, suggestions, model, prompt_tokens, completion_tokens, cost_usd").order("created_at", { ascending: false }).limit(200),
-    supabase.from("learning_focus").select("topic_slug, kind, updated_at"),
-    getAllAttempts(),
-  ]);
-  const focus = buildFocus(
-    (docs ?? []).map((d) => ({ id: d.id, title: d.title, createdAt: d.created_at, topics: d.suggestions as Suggestion[] })),
-    (overrides ?? []).map((o) => ({ slug: o.topic_slug, kind: o.kind, updatedAt: o.updated_at }) as FocusOverride),
-    new Date(),
-  );
+  const [{ documents: docs, focus }, attempts] = await Promise.all([loadFocus(supabase), getAllAttempts()]);
+  const practiceSlugs = focus.map((f) => f.slug).filter((s) => Object.hasOwn(EXERCISE_SETS, s));
   const progress = topicProgress(attempts);
   const isEmpty = !docs?.length && focus.length === 0;
 
@@ -69,14 +53,21 @@ export default async function LearningPage() {
               <li className="pt-2">Or start now: <Link href="/topics" className="underline underline-offset-2">Grammar Topics</Link> · <Link href="/articles" className="underline underline-offset-2">der · die · das</Link></li>
             </ol>
           ) : (
-            <FocusList items={focus} topics={TOPIC_MAP} progress={progress} />
+            <>
+              {practiceSlugs.length > 0 && (
+                <Link href="/learning/practice" className={`${pillPrimary} self-start`}>
+                  Practise my focus ({practiceSlugs.length} {practiceSlugs.length === 1 ? "topic" : "topics"})
+                </Link>
+              )}
+              <FocusList items={focus} topics={TOPIC_MAP} progress={progress} />
+            </>
           )}
         </section>
       </div>
       {!!docs?.length && (
         <section className="flex flex-col gap-3" aria-labelledby="docs-title">
           <h2 id="docs-title" className={heading}>Your documents ({docs.length})</h2>
-          <DocumentList docs={docs.map((d) => ({ ...d, suggestions: d.suggestions as Suggestion[] }))} topics={TOPIC_MAP} />
+          <DocumentList docs={docs} topics={TOPIC_MAP} />
         </section>
       )}
     </div>

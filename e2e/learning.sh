@@ -59,7 +59,7 @@ upload_and_check() { # label file
 
 echo "== 1. Guest, login redirect"
 pw close >/dev/null; pw open "$BASE/learning" >/dev/null; pw resize 1280 800 >/dev/null; sleep 3
-check "guest /learning shows 'Log in to use Customized Learning'" 'text | grep -q "Log in to use Customized Learning"'
+check "guest /learning is sent to the login page (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/login\"" ]'
 login "$E2E_MAIN_EMAIL" "$E2E_MAIN_PASSWORD"
 check "logging in from /login lands on /learning (at $(js '() => location.pathname'))" '[ "$(js "() => location.pathname")" = "\"/learning\"" ]'
 pw goto "$BASE/" >/dev/null; sleep 3

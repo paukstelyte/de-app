@@ -17,16 +17,27 @@ const bad = "border-red-500 bg-red-50 text-red-700 dark:bg-red-950 dark:text-red
 const muted = "border-zinc-200 text-zinc-400 dark:border-zinc-800 dark:text-zinc-600";
 
 type Answered = { answer: string; correct: boolean };
-type Result = { item: ExerciseItem; correct: boolean };
+/** An exercise, optionally tagged with its topic when a round mixes topics ("Practise my focus"). */
+export type SessionItem = ExerciseItem & { topic?: string };
+type Result = { item: SessionItem; correct: boolean };
 
 // The round is shuffled with Math.random, so it is only rendered in the browser
 // (the server sends an empty card of the same size, like the flashcard game).
 const noop = () => () => {};
 const useMounted = () => useSyncExternalStore(noop, () => true, () => false);
 
-export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string; title: string; items: ExerciseItem[]; loggedIn: boolean }) {
+export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/topics/${slug}`, practiceHref = `/topics/${slug}/practice`, topicTitles }: {
+  slug: string;
+  title: string;
+  items: SessionItem[];
+  loggedIn: boolean;
+  backHref?: string;
+  practiceHref?: string;
+  /** Set for mixed rounds: shows each question's topic and saves the answer under it. */
+  topicTitles?: Record<string, string>;
+}) {
   const mounted = useMounted();
-  const [round, setRound] = useState(() => makeRound(items));
+  const [round, setRound] = useState<SessionItem[]>(() => makeRound(items));
   const [roundNo, setRoundNo] = useState(0);
   const [mode, setMode] = useState<"normal" | "mistakes">("normal");
   const [index, setIndex] = useState(0);
@@ -35,7 +46,7 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
 
   if (!mounted) return <div aria-hidden className={`min-h-[380px] ${card}`} />;
 
-  function start(next: ExerciseItem[], nextMode: "normal" | "mistakes") {
+  function start(next: SessionItem[], nextMode: "normal" | "mistakes") {
     setRound(next);
     setRoundNo((n) => n + 1);
     setMode(nextMode);
@@ -62,9 +73,9 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
             Next {ROUND_SIZE} →
           </button>
         </div>
-        <Link href={`/topics/${slug}`} className="text-sm underline underline-offset-2">Back to {title}</Link>
+        <Link href={backHref} className="text-sm underline underline-offset-2">Back to {title}</Link>
         {!loggedIn && (
-          <Link href={`/login?next=/topics/${slug}/practice`} className="text-sm underline underline-offset-2">Log in to save your progress</Link>
+          <Link href={`/login?next=${practiceHref}`} className="text-sm underline underline-offset-2">Log in to save your progress</Link>
         )}
       </div>
     );
@@ -77,7 +88,7 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
     setAnswered({ answer: a, correct });
     setResults((rs) => [...rs, { item, correct }]);
     // Fire-and-forget: a failed save must never block the exercise.
-    if (loggedIn) recordExerciseAnswer(slug, item.id, a).catch(console.error);
+    if (loggedIn) recordExerciseAnswer(item.topic ?? slug, item.id, a).catch(console.error);
   }
 
   const solution = item.type === "order" ? correctAnswer(item) : fill(item.prompt, correctAnswer(item));
@@ -87,6 +98,7 @@ export function ExerciseSession({ slug, title, items, loggedIn }: { slug: string
     <div className="flex flex-col gap-3">
       <p className="text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
         {mode === "mistakes" && "Mistakes · "}Question {index + 1} of {round.length} · {score} correct
+        {item.topic && topicTitles?.[item.topic] && <> · <Link href={`/topics/${item.topic}`} className="underline underline-offset-2">{topicTitles[item.topic]}</Link></>}
       </p>
       <div className={`flex min-h-[380px] flex-col justify-center gap-6 p-6 sm:p-10 ${card}`}>
         {item.type === "choice" && <ChoiceView key={key} item={item} {...view} />}
