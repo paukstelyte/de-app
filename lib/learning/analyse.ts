@@ -57,13 +57,14 @@ export async function analyseDocument(input: {
       return { error: "ai" };
     }
     const json = await res.json();
-    const choice = json?.choices?.[0]; // usage (tokens, cost) is always included in the response
+    const choice = json?.choices?.[0];
     const content = choice?.message?.content;
     let analysis: Analysis | null = null;
     try {
       analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
     } catch {}
     if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
+    // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
     return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "ai" };
   } catch (err) {
     console.error("analyseDocument failed:", err instanceof Error ? err.message : err);

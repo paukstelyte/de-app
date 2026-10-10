@@ -30,7 +30,7 @@ parts.push({ type: "file", file: { filename: f.name, file_data: `data:applicatio
 plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
 ```
 
-The app refuses PDFs over 20 pages before calling the model.
+Before calling the model, the app makes a best-effort page count and refuses PDFs over 20 pages. The count reads uncompressed page objects only, so a PDF that stores its pages in compressed object streams passes uncounted; the 10 MB limit and the daily upload limits still cap the cost.
 
 ## 2. Photos
 

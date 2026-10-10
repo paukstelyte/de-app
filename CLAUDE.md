@@ -70,7 +70,7 @@ How the app applies these rules:
 - The only OpenRouter call is in `lib/learning/analyse.ts`, which starts with `import "server-only"` and is called only from the server action in `app/learning/actions.ts`. The model slug is the `ANALYSIS_MODEL` constant there; change it in that one place.
 - PDFs are sent with the `file-parser` plugin set to `engine: "native"`. Never omit the engine: the default falls back to paid OCR.
 - The model must answer in the strict JSON schema in `lib/learning/suggestions.ts`; `parseAnalysis` keeps only catalogue topics. If a document has no readable text or no German grammar, the model must say so instead of guessing (a blank photo made it invent text in testing).
-- Uploaded files are deleted after every analysis, success or failure. Only the title, the text read and the suggestions are stored.
+- Uploaded files are deleted after every analysis, success or failure. What is stored per document: the title, the text read, the "no grammar" flag, the suggestions, and the model, token counts and cost. Each upload also adds a row (user and time) to the upload counter.
 
 The app does not use embeddings or RAG.
 

@@ -6,7 +6,7 @@ Live: https://de-app-six.vercel.app
 
 ## What it does
 
-1. **Customized Learning** (`/learning`, logged in). Upload a worksheet, textbook page, typed notes or homework: one PDF (up to 20 pages), one Word file, or up to 5 photos (JPG, PNG, WebP, HEIC), 10 MB each. An AI model reads it and picks the 3–6 grammar topics it practises from a fixed catalogue of 82 A1–C2 topics, mistakes first, each with a reason quoting your document. The result is saved, and the original file is deleted straight after reading.
+1. **Customized Learning** (`/learning`, logged in). Upload a worksheet, textbook page, typed notes or homework: one PDF (about 20 pages at most; the page count is a best-effort check), one Word file, or up to 5 photos (JPG, PNG, WebP, HEIC), 10 MB each. An AI model reads it and picks the 3–6 grammar topics it practises from a fixed catalogue of 82 A1–C2 topics, mistakes first, each with a reason quoting your document. The result is saved, and the original file is deleted straight after reading.
 2. **Your focus now.** The topics from your uploads of the last 30 days, ranked by mistakes and how often they come up, with your progress on each. Remove a topic, or add one from any topic page.
 3. **Practise my focus** (`/learning/practice`). One mixed round of exercises from exactly your focus topics.
 4. **Grammar Topics** (`/topics`, open to everyone). The 82-topic catalogue. Each topic has a practice page with 30 checked exercises (pick the answer, type the word, put the words in order), rounds of 10, an explanation after each answer, and "Practise my mistakes". The practice pages are labelled "still in test mode".
@@ -25,7 +25,7 @@ Guests can browse topics and practise without saving. Signed-out visitors who op
 | Input | PDF as a `file` part with the `file-parser` plugin set to the `native` engine; photos as base64 `image_url` parts; Word files read by a small built-in reader and sent as text |
 | Output | Strict JSON schema (`lib/learning/suggestions.ts`): title, the text read, "no grammar" flag, topics with reasons. Topics outside the catalogue are dropped |
 | Cost | About $0.0004 per document. Each document card shows the model, tokens and cost from OpenRouter's response |
-| Limits | 10 uploads a day per learner, 100 a day for everyone, 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
+| Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload counts even if the AI call then fails), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
 
 Details and the OpenRouter references: [`docs/openrouter-multimodal.md`](docs/openrouter-multimodal.md).
 
@@ -67,9 +67,10 @@ Every table with user data has row-level security with owner-only policies, and 
 | `npm run dev` | Dev server |
 | `npm run build` | Production build |
 | `npm run lint` | ESLint |
-| `npm test` | Unit tests (`lib/**/*.test.mjs`, Node's built-in test runner): upload rules, AI answer parsing, focus list, usage display, exercise checking, and validation of all 81 exercise files |
+| `npm test` | Unit tests (`lib/**/*.test.mjs`, Node's built-in test runner): upload rules, AI answer parsing, Word reader, focus list and focus practice, usage display, flashcard progress and trouble words, safe login redirects, exercise checking, and validation of all 81 exercise files |
 | `npm run sync:exercises` | After editing `lib/exercises/data/*.json`: regenerate `lib/exercises/sets.ts` and the practice links |
 | `bash e2e/learning.sh` | Browser checks of Customized Learning with a real AI call: login redirect, PDF/HEIC/Word/blank uploads, files deleted, focus, delete, and a **second user can't see the first user's documents** |
+| `npx supabase db query --linked --project-ref <ref> -f supabase/tests/cross-user-privacy.sql` | Database check that one user can't read, change or delete another user's documents, focus list, answers or files (rolled back, changes nothing) |
 | `bash e2e/exercises.sh` | Browser checks of the practice pages: guest round, mistakes replay, answers saved when logged in, phone width, keyboard |
 | `bash e2e/all-practice-pages.sh` | Opens all 81 practice pages and checks each shows its first question |
 
@@ -81,6 +82,7 @@ Each change goes through a feature branch and a GitHub pull request. The `ai-cod
 
 - PR #1 Show the AI model and cost of each document: [report](docs/reviews/pr-1-model-and-cost.md)
 - PR #2 Add Practise my focus and send signed-out visitors to login: [report](docs/reviews/pr-2-practise-my-focus.md)
+- PR #3 Document the AI feature, rules, references and test results: [report](docs/reviews/pr-3-docs.md)
 
 Security scans (`/security-scan`, `/security-scan-changed`) run with three scanner agents (Supabase, Next.js, Vercel).
 
