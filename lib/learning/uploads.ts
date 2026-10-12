@@ -10,7 +10,7 @@ export type UploadKind = "pdf" | "docx" | "images";
 type FileInfo = { name: string; size: number };
 
 export const UPLOAD_NOTE =
-  `Upload printed or typed learning material, such as textbook pages, worksheets, typed notes or homework, as a PDF, Word file or up to ${MAX_PHOTOS} photos (JPG, PNG, WebP or HEIC). Handwriting isn't supported. Don't upload documents with personal details.`;
+  "Textbook pages, worksheets, typed notes or homework. Handwriting isn't supported. Don't upload documents with personal details.";
 
 const MIME_BY_EXT: Record<string, { mime: string; kind: "pdf" | "docx" | "image" }> = {
   pdf: { mime: "application/pdf", kind: "pdf" },

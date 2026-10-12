@@ -4,8 +4,11 @@
 # Accounts come from the environment, never from this (public) repo:
 #   E2E_MAIN_EMAIL / E2E_MAIN_PASSWORD   the tester; its documents and focus are cleaned up
 #   E2E_OTHER_EMAIL / E2E_OTHER_PASSWORD a second account; only read
+# If a git-ignored .env.e2e file sits in the repo root, it is loaded first (see e2e/README.md).
 # BASE defaults to the local dev server.
 
+ENV_FILE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/.env.e2e"
+[ -f "$ENV_FILE" ] && { set -a; . "$ENV_FILE"; set +a; }
 BASE=${BASE:-http://localhost:3000}
 FAILED=0
 

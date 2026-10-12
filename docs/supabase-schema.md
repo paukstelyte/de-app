@@ -79,6 +79,10 @@ One row per upload, used only by `use_upload_quota()`. RLS is on, there are no p
 
 `public.use_upload_quota()` (security definer, callable by `authenticated` only) records an upload for `auth.uid()` and raises `P0001` ("Upload limit reached") at **10 uploads per user and 100 uploads for everyone per rolling 24 hours**. An advisory lock keeps concurrent calls from overshooting. It raises `42501` when not logged in. Each successful call also deletes rows older than 2 days (a refused call rolls back, delete included), so the table stays small (migration `20261010130000`; the limits only look at the last 24 hours).
 
+From migration `20261012100000`, `use_upload_quota()` returns the id of the row it recorded, and a second function, `public.upload_allowance()` (security definer, `authenticated` only, anon refused), returns the caller's `user_left`, `user_limit` (10), `shared_left` (of 100) and `next_free_at` (when the next slot frees up: 24 hours after the oldest counted upload of whichever limit is full). It exposes only the caller's own count and the shared total. The Customized Learning page shows these as "Uploads left today".
+
+When the AI read or the save fails, the server gives the upload back by deleting that row with the admin key (`giveBackUpload` in `app/learning/actions.ts`). There is deliberately no function users can call for this: a refund they could trigger themselves would let them undo successful uploads and bypass the cost cap. A read that succeeds but finds no grammar still counts, because the AI call cost money.
+
 ### Access rules
 
 | Who | `learning_documents` | `learning_focus` | `learning_upload_usage` |

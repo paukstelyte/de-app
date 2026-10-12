@@ -8,6 +8,7 @@ import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
 import { EXERCISE_SETS } from "@/lib/exercises/sets";
 import { practiceTopics } from "@/lib/learning/focus-practice";
+import { parseAllowance } from "@/lib/learning/allowance";
 import { loadFocus } from "@/lib/learning/load-focus";
 import { topicProgress } from "@/lib/learning/progress";
 import { createClient } from "@/lib/supabase/server";
@@ -34,7 +35,12 @@ export default async function LearningPage() {
   // proxy.ts sends signed-out visitors to /login; this is a second guard.
   if (!userId) redirect("/login?next=/learning");
 
-  const [{ documents: docs, focus }, attempts] = await Promise.all([loadFocus(supabase, { withDocuments: true }), getAllAttempts()]);
+  const [{ documents: docs, focus }, attempts, { data: allowanceRow }] = await Promise.all([
+    loadFocus(supabase, { withDocuments: true }),
+    getAllAttempts(),
+    supabase.rpc("upload_allowance"),
+  ]);
+  const allowance = parseAllowance(allowanceRow, docs?.length ?? 0);
   const practiceSlugs = practiceTopics(focus.map((f) => f.slug), EXERCISE_SETS);
   const progress = topicProgress(attempts);
   const isEmpty = !docs?.length && focus.length === 0;
@@ -43,7 +49,7 @@ export default async function LearningPage() {
     <div className="flex flex-col gap-10">
       {intro}
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
-        <UploadBox userId={userId} modelSlug={ANALYSIS_MODEL} />
+        <UploadBox userId={userId} modelSlug={ANALYSIS_MODEL} allowance={allowance} />
         <section className="flex flex-col gap-3" aria-labelledby="focus-title">
           <h2 id="focus-title" className={heading}>Your focus now</h2>
           {isEmpty ? (

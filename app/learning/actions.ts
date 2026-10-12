@@ -1,7 +1,9 @@
 "use server";
 
+import { createClient as createAdminClient } from "@supabase/supabase-js";
 import { revalidatePath } from "next/cache";
 import { getTopic } from "@/lib/grammar/topics";
+import { MAX_DOCUMENTS } from "@/lib/learning/allowance";
 import { analyseDocument } from "@/lib/learning/analyse";
 import { extractDocxText } from "@/lib/learning/docx";
 import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, validateSelection } from "@/lib/learning/uploads";
@@ -10,13 +12,21 @@ import { createClient } from "@/lib/supabase/server";
 const ERRORS = {
   loggedOut: "Please log in again.",
   files: "Something was wrong with the upload. Please try again.",
-  limit: "You've reached today's upload limit. Please try again tomorrow.",
-  docLimit: "You've reached the limit of 200 saved documents. Delete some to upload new ones.",
+  limit: "You've reached the upload limit. The box above shows when you can upload again.",
+  docLimit: `You've reached the limit of ${MAX_DOCUMENTS} saved documents. Delete some to upload new ones.`,
   pdfPages: `This PDF has more than ${MAX_PDF_PAGES} pages. Please upload a shorter part.`,
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
   generic: "Something went wrong — please try again.",
 };
+
+/** Gives an upload back when nothing was saved. Admin key, server only: users can't refund themselves. */
+async function giveBackUpload(id: number) {
+  if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
+  const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
+  const { error } = await admin.from("learning_upload_usage").delete().eq("id", id);
+  if (error) console.error("giving back the upload failed:", error.message);
+}
 
 /** Reads the uploaded files with AI, saves the result, and always deletes the files. */
 export async function analyseUpload(paths: unknown): Promise<{ id: number; noGrammar: boolean } | { error: string }> {
@@ -47,11 +57,14 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
     const docxText = kind === "docx" ? extractDocxText(files[0].data) ?? undefined : undefined;
     if (kind === "docx" && !docxText) return { error: ERRORS.docx };
 
-    const { error: quotaError } = await supabase.rpc("use_upload_quota");
-    if (quotaError) return { error: quotaError.code === "P0001" ? ERRORS.limit : ERRORS.generic };
+    const { data: usageId, error: quotaError } = await supabase.rpc("use_upload_quota");
+    if (quotaError || typeof usageId !== "number") return { error: quotaError?.code === "P0001" ? ERRORS.limit : ERRORS.generic };
 
     const result = await analyseDocument({ kind, files, docxText });
-    if ("error" in result) return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
+    if ("error" in result) {
+      await giveBackUpload(usageId);
+      return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
+    }
     const a = result.analysis;
     const { data: row, error } = await supabase
       .from("learning_documents")
@@ -63,6 +76,7 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
       .single();
     if (error || !row) {
       console.error("saving learning document failed:", error?.message);
+      await giveBackUpload(usageId);
       return { error: error?.code === "P0001" ? ERRORS.docLimit : ERRORS.generic };
     }
     revalidatePath("/learning");

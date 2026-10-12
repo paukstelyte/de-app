@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { analyseUpload } from "@/app/learning/actions";
+import { MAX_DOCUMENTS, freeAtLabel, type Allowance } from "@/lib/learning/allowance";
 import { createClient } from "@/lib/supabase/client";
 import { listUserUploads } from "@/lib/learning/storage";
 import { BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
@@ -10,7 +11,7 @@ import { formatModel } from "@/lib/learning/usage";
 
 const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
 
-export function UploadBox({ userId, modelSlug }: { userId: string; modelSlug: string }) {
+export function UploadBox({ userId, modelSlug, allowance }: { userId: string; modelSlug: string; allowance: Allowance | null }) {
   const router = useRouter();
   const [status, setStatus] = useState<{ kind: "idle" | "busy" | "error" | "done"; text: string }>({ kind: "idle", text: "" });
 
@@ -40,19 +41,40 @@ export function UploadBox({ userId, modelSlug }: { userId: string; modelSlug: st
       await storage.remove(paths);
       return { error: "Something went wrong — please try again." };
     });
+    router.refresh(); // updates "uploads left", whatever the outcome
     if ("error" in result) return setStatus({ kind: "error", text: result.error });
     setStatus({ kind: "done", text: result.noGrammar ? "Done — but we couldn't find German grammar topics in this document." : "Done! Your topics are below." });
-    router.refresh();
   }
+
+  const noneLeft = allowance !== null && allowance.userLeft === 0;
+  const sharedFull = allowance !== null && !noneLeft && allowance.sharedLeft === 0;
+  const blocked = noneLeft || sharedFull;
+  const freeAt = allowance?.nextFreeAt ? <time dateTime={allowance.nextFreeAt} suppressHydrationWarning>{freeAtLabel(allowance.nextFreeAt)}</time> : null;
 
   return (
     <section className="flex flex-col gap-4 border border-[var(--line)] bg-[var(--paper)] p-5 shadow-[8px_8px_0_var(--accent)] sm:p-6" aria-labelledby="upload-title">
       <h2 id="upload-title" className="text-lg font-semibold tracking-[-0.02em]">Upload what you&apos;re learning</h2>
-      <label className="flex cursor-pointer flex-col items-center gap-2 border-2 border-dashed border-[var(--line)] focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 px-4 py-8 text-center text-sm hover:border-zinc-900 dark:hover:border-zinc-100">
+      <label className={`flex flex-col items-center gap-2 border-2 border-dashed border-[var(--line)] px-4 py-8 text-center text-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 ${blocked ? "cursor-not-allowed opacity-50" : "cursor-pointer hover:border-zinc-900 dark:hover:border-zinc-100"}`}>
         <span className="font-semibold">Choose a PDF, a Word file or up to {MAX_PHOTOS} photos</span>
         <span className="text-zinc-500">PDF, DOCX, JPG, PNG, WebP or HEIC · up to {MAX_FILE_MB} MB each</span>
-        <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy"} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
+        <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy" || blocked} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
       </label>
+      {allowance && (
+        <div className="flex flex-col gap-2 border-t border-[var(--line)] pt-4 text-xs">
+          <div className="flex items-baseline justify-between gap-3">
+            <span className="font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">Uploads left today</span>
+            <span className="font-semibold tabular-nums">{allowance.userLeft} of {allowance.userLimit}</span>
+          </div>
+          <div className="flex gap-1" aria-hidden>
+            {Array.from({ length: allowance.userLimit }, (_, i) => (
+              <span key={i} className={`h-2 flex-1 border border-[var(--line)] ${i < allowance.userLeft ? "bg-[var(--accent)]" : ""}`} />
+            ))}
+          </div>
+          {noneLeft && <p role="status" className="text-sm">No uploads left. {freeAt ? <>Your next one frees up {freeAt}.</> : "Please try again later."}</p>}
+          {sharedFull && <p role="status" className="text-sm">Today&apos;s shared upload limit has been reached. {freeAt ? <>Try again {freeAt}.</> : "Try again later."}</p>}
+          <p className="text-zinc-500">{allowance.documents} of {MAX_DOCUMENTS} documents saved</p>
+        </div>
+      )}
       <p className="text-xs leading-5 text-zinc-500">{UPLOAD_NOTE}</p>
       <p className="text-xs text-zinc-500">
         Documents are read by <b>{formatModel(modelSlug)}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter.

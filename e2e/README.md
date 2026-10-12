@@ -27,6 +27,10 @@ export E2E_OTHER_EMAIL=… E2E_OTHER_PASSWORD=…   # second account; only read
 bash e2e/learning.sh
 ```
 
+Instead of exporting them each time, put the four variables in a `.env.e2e` file in the repo root. It is
+git-ignored (`.env*` in `.gitignore`), `e2e/lib.sh` loads it automatically, and it should be readable only by you
+(`chmod 600 .env.e2e`). Never paste the passwords into a chat, a commit or a doc.
+
 Set `BASE=https://…` to run against another deployment.
 
 ## Cost and side effects
