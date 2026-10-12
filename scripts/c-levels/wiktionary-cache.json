@@ -1,0 +1,1330 @@
+{
+ "Reportage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Fassade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Leiter": {
+  "article": null,
+  "reason": "more than one gender"
+ },
+ "Auseinandersetzung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Bewältigung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Verpflichtung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Durchsetzung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Wahrnehmung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rechtfertigung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Verschärfung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Benachteiligung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Verunsicherung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gewährleistung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Abwägung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Entfremdung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Beeinträchtigung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Zuspitzung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ernüchterung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Bevormundung": {
+  "article": "die",
+  "reason": ""
+ },
+ "Abhängigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nachhaltigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Glaubwürdigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Zuverlässigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gelassenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Selbstverständlichkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Zugehörigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gleichgültigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gegebenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nachlässigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Verbindlichkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Beschaffenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Befangenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Beharrlichkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Unverfrorenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Besonnenheit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rechtmäßigkeit": {
+  "article": "die",
+  "reason": ""
+ },
+ "Errungenschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Anhängerschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ärzteschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ortschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Lehrerschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Hinterlassenschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Körperschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Seilschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Täterschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Urheberschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gefolgschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Bürgschaft": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ambition": {
+  "article": "die",
+  "reason": ""
+ },
+ "Intuition": {
+  "article": "die",
+  "reason": ""
+ },
+ "Koalition": {
+  "article": "die",
+  "reason": ""
+ },
+ "Konfrontation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rezession": {
+  "article": "die",
+  "reason": ""
+ },
+ "Expansion": {
+  "article": "die",
+  "reason": ""
+ },
+ "Intervention": {
+  "article": "die",
+  "reason": ""
+ },
+ "Sanktion": {
+  "article": "die",
+  "reason": ""
+ },
+ "Konvention": {
+  "article": "die",
+  "reason": ""
+ },
+ "Subvention": {
+  "article": "die",
+  "reason": ""
+ },
+ "Provokation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Obsession": {
+  "article": "die",
+  "reason": ""
+ },
+ "Kompensation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Stagnation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Resignation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Legitimation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Implikation": {
+  "article": "die",
+  "reason": ""
+ },
+ "Aversion": {
+  "article": "die",
+  "reason": ""
+ },
+ "Konzession": {
+  "article": "die",
+  "reason": ""
+ },
+ "Indoktrination": {
+  "article": "die",
+  "reason": ""
+ },
+ "Mentalität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Kontinuität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Neutralität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Diversität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Authentizität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Mobilität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Spontaneität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Sensibilität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rivalität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Legitimität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Souveränität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rentabilität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Plausibilität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Seriosität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Banalität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Animosität": {
+  "article": "die",
+  "reason": ""
+ },
+ "Relevanz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Transparenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Insolvenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Dominanz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Turbulenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Instanz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Prominenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Diskrepanz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Resilienz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ambivalenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Koexistenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Abstinenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Divergenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Kohärenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Brisanz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Dekadenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Indifferenz": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rhetorik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Polemik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Thematik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Problematik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Symbolik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ästhetik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Mimik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gestik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Lyrik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Akustik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Dramatik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Systematik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Didaktik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Methodik": {
+  "article": "die",
+  "reason": ""
+ },
+ "Hierarchie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ideologie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Anarchie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Autonomie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Bürokratie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Empathie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Euphorie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nostalgie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Utopie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Hysterie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Diplomatie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Melancholie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Symmetrie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Analogie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Synergie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Hegemonie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Apathie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Monotonie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Oligarchie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Lethargie": {
+  "article": "die",
+  "reason": ""
+ },
+ "Konjunktur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Karikatur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Manufaktur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Professur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Legislatur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Klaviatur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nomenklatur": {
+  "article": "die",
+  "reason": ""
+ },
+ "Populismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Nationalismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Extremismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Liberalismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Pragmatismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Opportunismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Antisemitismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Narzissmus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fundamentalismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Kolonialismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Protektionismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Föderalismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Separatismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Skeptizismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fatalismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Konformismus": {
+  "article": null,
+  "reason": "no German entry"
+ },
+ "Pluralismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Dogmatismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Relativismus": {
+  "article": null,
+  "reason": "no German entry"
+ },
+ "Aktionismus": {
+  "article": "der",
+  "reason": ""
+ },
+ "Indikator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Aggressor": {
+  "article": "der",
+  "reason": ""
+ },
+ "Initiator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Organisator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Diktator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Koordinator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Katalysator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Kurator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Agitator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Multiplikator": {
+  "article": "der",
+  "reason": ""
+ },
+ "Repräsentant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Emigrant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Sympathisant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Spekulant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Querulant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Intrigant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Simulant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Ignorant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fabrikant": {
+  "article": "der",
+  "reason": ""
+ },
+ "Proband": {
+  "article": "der",
+  "reason": ""
+ },
+ "Pendant": {
+  "article": "das",
+  "reason": ""
+ },
+ "Schützling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Prüfling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Emporkömmling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Günstling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Weichling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Rohling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fremdling": {
+  "article": "der",
+  "reason": ""
+ },
+ "Podium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Kriterium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Spektrum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Kollegium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Forum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Konsortium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Refugium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Delirium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Moratorium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Kontinuum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Plenum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Votum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Pensum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Martyrium": {
+  "article": "das",
+  "reason": ""
+ },
+ "Konsument": {
+  "article": "der",
+  "reason": ""
+ },
+ "Sakrament": {
+  "article": "das",
+  "reason": ""
+ },
+ "Pergament": {
+  "article": "das",
+  "reason": ""
+ },
+ "Firmament": {
+  "article": "das",
+  "reason": ""
+ },
+ "Ressentiment": {
+  "article": "das",
+  "reason": ""
+ },
+ "Amüsement": {
+  "article": "das",
+  "reason": ""
+ },
+ "Raffinement": {
+  "article": "das",
+  "reason": ""
+ },
+ "Etablissement": {
+  "article": "das",
+  "reason": ""
+ },
+ "Unternehmertum": {
+  "article": null,
+  "reason": "no German entry"
+ },
+ "Beamtentum": {
+  "article": null,
+  "reason": "no German entry"
+ },
+ "Kleinbürgertum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Besitztum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Mäzenatentum": {
+  "article": "das",
+  "reason": ""
+ },
+ "Zugeständnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gleichnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Vorkommnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Versäumnis": {
+  "article": null,
+  "reason": "more than one gender"
+ },
+ "Besorgnis": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ersparnis": {
+  "article": null,
+  "reason": "more than one gender"
+ },
+ "Finsternis": {
+  "article": "die",
+  "reason": ""
+ },
+ "Zerwürfnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Hemmnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Behältnis": {
+  "article": "das",
+  "reason": ""
+ },
+ "Bedrängnis": {
+  "article": null,
+  "reason": "more than one gender"
+ },
+ "Trübsal": {
+  "article": "die",
+  "reason": ""
+ },
+ "Rinnsal": {
+  "article": "das",
+  "reason": ""
+ },
+ "Scheusal": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gefälle": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gedränge": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gerücht": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gewerbe": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gemisch": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gefüge": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gehorsam": {
+  "article": "der",
+  "reason": ""
+ },
+ "Genuss": {
+  "article": "der",
+  "reason": ""
+ },
+ "Gestalt": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gestank": {
+  "article": "der",
+  "reason": ""
+ },
+ "Gebaren": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gemetzel": {
+  "article": "das",
+  "reason": ""
+ },
+ "Getöse": {
+  "article": "das",
+  "reason": ""
+ },
+ "Geflecht": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gelübde": {
+  "article": "das",
+  "reason": ""
+ },
+ "Geplänkel": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gebilde": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gesuch": {
+  "article": "das",
+  "reason": ""
+ },
+ "Stigma": {
+  "article": "das",
+  "reason": ""
+ },
+ "Paradigma": {
+  "article": "das",
+  "reason": ""
+ },
+ "Prisma": {
+  "article": "das",
+  "reason": ""
+ },
+ "Schisma": {
+  "article": "das",
+  "reason": ""
+ },
+ "Phlegma": {
+  "article": "das",
+  "reason": ""
+ },
+ "Gegengewicht": {
+  "article": "das",
+  "reason": ""
+ },
+ "Schlusslicht": {
+  "article": "das",
+  "reason": ""
+ },
+ "Irrlicht": {
+  "article": "das",
+  "reason": ""
+ },
+ "Verzicht": {
+  "article": "der",
+  "reason": ""
+ },
+ "Zuversicht": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nachsicht": {
+  "article": "die",
+  "reason": ""
+ },
+ "Weitsicht": {
+  "article": "die",
+  "reason": ""
+ },
+ "Optimist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Pessimist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Spezialist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Komponist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Protagonist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Aktivist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Lobbyist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Pazifist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Opportunist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Extremist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Kolumnist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Separatist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Purist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fatalist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Moralist": {
+  "article": "der",
+  "reason": ""
+ },
+ "Palast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Kontrast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Ballast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Gymnasiast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Enthusiast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Morast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Bombast": {
+  "article": null,
+  "reason": "no German entry"
+ },
+ "Cineast": {
+  "article": "der",
+  "reason": ""
+ },
+ "Hast": {
+  "article": "die",
+  "reason": ""
+ },
+ "Käfig": {
+  "article": "der",
+  "reason": ""
+ },
+ "Rettich": {
+  "article": "der",
+  "reason": ""
+ },
+ "Kranich": {
+  "article": "der",
+  "reason": ""
+ },
+ "Bottich": {
+  "article": "der",
+  "reason": ""
+ },
+ "Fittich": {
+  "article": "der",
+  "reason": ""
+ },
+ "Wüterich": {
+  "article": "der",
+  "reason": ""
+ },
+ "Garage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Etage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Massage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Blamage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Sabotage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Spionage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Passage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Plantage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Courage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Collage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Montage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Hommage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Image": {
+  "article": "das",
+  "reason": ""
+ },
+ "Persiflage": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gage": {
+  "article": null,
+  "reason": "more than one gender"
+ },
+ "Parade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Marinade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Ballade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Olympiade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Blockade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Promenade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Gnade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Nomade": {
+  "article": "der",
+  "reason": ""
+ },
+ "Dekade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Eskapade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Kaskade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Maskerade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Tirade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Scharade": {
+  "article": "die",
+  "reason": ""
+ },
+ "Kassette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Tablette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Etikette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Silhouette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Marionette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Facette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Palette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Vignette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Pirouette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Operette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Statuette": {
+  "article": "die",
+  "reason": ""
+ },
+ "Plakette": {
+  "article": "die",
+  "reason": ""
+ }
+}
