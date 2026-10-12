@@ -50,6 +50,14 @@ set local role authenticated;
 insert into results select 'shared limit full: shared left / A left / wait time set', '0 / 1 / yes',
   shared_left || ' / ' || user_left || ' / ' || case when next_free_at is not null then 'yes' else 'no' end from public.upload_allowance();
 
+-- A signed-in user can't delete (give back) their own uploads through the API.
+do $$
+declare d text := 'allowed';
+begin
+  begin delete from public.learning_upload_usage; exception when insufficient_privilege then d := 'refused 42501'; end;
+  insert into results values ('A deletes usage rows directly (no self-refund)', 'refused 42501', d);
+end $$;
+
 -- Signed out.
 reset role;
 select set_config('request.jwt.claims', '', true);
@@ -64,5 +72,5 @@ begin
 end $$;
 
 reset role;
-select check_name, expected, result, case when expected = result or (expected = 'yes' and result = 'yes') then 'ok' else 'FAIL' end as status from results;
+select check_name, expected, result, case when expected = result then 'ok' else 'FAIL' end as status from results;
 rollback;

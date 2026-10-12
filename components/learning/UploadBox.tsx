@@ -1,13 +1,19 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { analyseUpload } from "@/app/learning/actions";
 import { MAX_DOCUMENTS, freeAtLabel, type Allowance } from "@/lib/learning/allowance";
 import { createClient } from "@/lib/supabase/client";
 import { listUserUploads } from "@/lib/learning/storage";
 import { BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
 import { formatModel } from "@/lib/learning/usage";
+
+/** The wait time in the reader's own timezone: empty on the server and during hydration, then filled in. */
+const noSubscribe = () => () => {};
+function useFreeAt(iso: string | null): string {
+  return useSyncExternalStore(noSubscribe, () => (iso ? freeAtLabel(iso) : ""), () => "");
+}
 
 const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
 
@@ -49,7 +55,12 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
   const noneLeft = allowance !== null && allowance.userLeft === 0;
   const sharedFull = allowance !== null && !noneLeft && allowance.sharedLeft === 0;
   const blocked = noneLeft || sharedFull;
-  const freeAt = allowance?.nextFreeAt ? <time dateTime={allowance.nextFreeAt} suppressHydrationWarning>{freeAtLabel(allowance.nextFreeAt)}</time> : null;
+  const freeAt = useFreeAt(allowance?.nextFreeAt ?? null);
+  const blockedMessage = noneLeft
+    ? `No uploads left. Your next one frees up ${freeAt || "within 24 hours"}.`
+    : sharedFull
+      ? `Today's shared upload limit has been reached. Try again ${freeAt || "later"}.`
+      : "";
 
   return (
     <section className="flex flex-col gap-4 border border-[var(--line)] bg-[var(--paper)] p-5 shadow-[8px_8px_0_var(--accent)] sm:p-6" aria-labelledby="upload-title">
@@ -57,7 +68,7 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
       <label className={`flex flex-col items-center gap-2 border-2 border-dashed border-[var(--line)] px-4 py-8 text-center text-sm focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 ${blocked ? "cursor-not-allowed opacity-50" : "cursor-pointer hover:border-zinc-900 dark:hover:border-zinc-100"}`}>
         <span className="font-semibold">Choose a PDF, a Word file or up to {MAX_PHOTOS} photos</span>
         <span className="text-zinc-500">PDF, DOCX, JPG, PNG, WebP or HEIC · up to {MAX_FILE_MB} MB each</span>
-        <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy" || blocked} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
+        <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy" || blocked} aria-describedby={blocked ? "allowance-note" : undefined} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
       </label>
       {allowance && (
         <div className="flex flex-col gap-2 border-t border-[var(--line)] pt-4 text-xs">
@@ -70,8 +81,7 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
               <span key={i} className={`h-2 flex-1 border border-[var(--line)] ${i < allowance.userLeft ? "bg-[var(--accent)]" : ""}`} />
             ))}
           </div>
-          {noneLeft && <p role="status" className="text-sm">No uploads left. {freeAt ? <>Your next one frees up {freeAt}.</> : "Please try again later."}</p>}
-          {sharedFull && <p role="status" className="text-sm">Today&apos;s shared upload limit has been reached. {freeAt ? <>Try again {freeAt}.</> : "Try again later."}</p>}
+          <p id="allowance-note" role="status" className={blockedMessage ? "text-sm" : "sr-only"}>{blockedMessage}</p>
           <p className="text-zinc-500">{allowance.documents} of {MAX_DOCUMENTS} documents saved</p>
         </div>
       )}

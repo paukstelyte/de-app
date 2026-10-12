@@ -12,7 +12,7 @@ import { createClient } from "@/lib/supabase/server";
 const ERRORS = {
   loggedOut: "Please log in again.",
   files: "Something was wrong with the upload. Please try again.",
-  limit: "You've reached the upload limit. The box above shows when you can upload again.",
+  limit: "You've reached the upload limit. \"Uploads left today\" shows when you can upload again.",
   docLimit: `You've reached the limit of ${MAX_DOCUMENTS} saved documents. Delete some to upload new ones.`,
   pdfPages: `This PDF has more than ${MAX_PDF_PAGES} pages. Please upload a shorter part.`,
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
@@ -20,7 +20,7 @@ const ERRORS = {
   generic: "Something went wrong — please try again.",
 };
 
-/** Gives an upload back when nothing was saved. Admin key, server only: users can't refund themselves. */
+/** Gives an upload back when the AI read failed (no result, so no paid answer to keep). A failed save is not given back: the AI call was already paid for. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number) {
   if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -57,6 +57,10 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
     const docxText = kind === "docx" ? extractDocxText(files[0].data) ?? undefined : undefined;
     if (kind === "docx" && !docxText) return { error: ERRORS.docx };
 
+    // Check the document limit before spending an AI call; the database trigger stays as the backstop.
+    const { count } = await supabase.from("learning_documents").select("id", { count: "exact", head: true });
+    if ((count ?? 0) >= MAX_DOCUMENTS) return { error: ERRORS.docLimit };
+
     const { data: usageId, error: quotaError } = await supabase.rpc("use_upload_quota");
     if (quotaError || typeof usageId !== "number") return { error: quotaError?.code === "P0001" ? ERRORS.limit : ERRORS.generic };
 
@@ -76,7 +80,6 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
       .single();
     if (error || !row) {
       console.error("saving learning document failed:", error?.message);
-      await giveBackUpload(usageId);
       return { error: error?.code === "P0001" ? ERRORS.docLimit : ERRORS.generic };
     }
     revalidatePath("/learning");

@@ -1,6 +1,7 @@
 // How many uploads and saved documents a learner has left, and when the next upload frees up.
 // No imports, so Node tests load it.
 
+// Keep in sync with the learning_documents_limit trigger in the database (migration 20261010100000).
 export const MAX_DOCUMENTS = 200;
 
 export type Allowance = { userLeft: number; userLimit: number; sharedLeft: number; nextFreeAt: string | null; documents: number };
