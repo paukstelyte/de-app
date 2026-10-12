@@ -22,9 +22,11 @@ insert into public.learning_focus (user_id, topic_slug, kind)
   on conflict (user_id, topic_slug) do nothing;
 insert into storage.objects (bucket_id, name)
   values ('learning-uploads', current_setting('test.user_a') || '/privacy-test/0.pdf');
+insert into public.learning_upload_usage (user_id) values (current_setting('test.user_a')::uuid);
 insert into results select 'setup: A has documents', '> 0', count(*)::text from public.learning_documents where user_id = current_setting('test.user_a')::uuid;
 insert into results select 'setup: A has focus rows', '> 0', count(*)::text from public.learning_focus where user_id = current_setting('test.user_a')::uuid;
 insert into results select 'setup: A has saved answers', '> 0', count(*)::text from public.attempts where user_id = current_setting('test.user_a')::uuid;
+insert into results select 'setup: A has upload-counter rows', '> 0', count(*)::text from public.learning_upload_usage where user_id = current_setting('test.user_a')::uuid;
 insert into results select 'setup: A has an uploaded file', '> 0', count(*)::text from storage.objects where bucket_id = 'learning-uploads' and (storage.foldername(name))[1] = current_setting('test.user_a');
 
 -- Now act as B.
@@ -45,6 +47,8 @@ begin
   insert into results values ('B reads A''s answers', '0', n::text);
   select count(*) into n from storage.objects where bucket_id = 'learning-uploads' and (storage.foldername(name))[1] = a::text;
   insert into results values ('B lists A''s uploaded files', '0', n::text);
+  select count(*) into n from public.learning_upload_usage where user_id = a;
+  insert into results values ('B reads A''s upload counter (RLS)', '0', n::text);
 
   -- Changing: row-level security limits update/delete to B's own rows.
   update public.learning_focus set kind = 'removed' where user_id = a; get diagnostics n = row_count;
@@ -55,9 +59,9 @@ begin
   -- through the Storage API, where the same own-folder policy applies.)
 
   -- Refused outright by grants (no permission at all).
-  begin select count(*) into n from public.learning_upload_usage;
-    insert into results values ('B reads the upload counter (no grant)', 'refused', n::text);
-  exception when insufficient_privilege then insert into results values ('B reads the upload counter (no grant)', 'refused', 'refused ' || sqlstate); end;
+  begin delete from public.learning_upload_usage where user_id = a;
+    insert into results values ('B deletes A''s upload counter rows (no grant)', 'refused', 'accepted');
+  exception when insufficient_privilege then insert into results values ('B deletes A''s upload counter rows (no grant)', 'refused', 'refused ' || sqlstate); end;
   begin insert into public.learning_focus (user_id, topic_slug, kind) values (a, 'dative-case', 'added');
     insert into results values ('B writes a row tagged with A''s id (no grant on user_id)', 'refused', 'accepted');
   exception when insufficient_privilege then insert into results values ('B writes a row tagged with A''s id (no grant on user_id)', 'refused', 'refused ' || sqlstate); end;
