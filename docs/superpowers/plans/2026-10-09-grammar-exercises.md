@@ -85,7 +85,7 @@ With no data files yet, the per-set checks simply loop zero times (test still pa
 
 **Unit tests `lib/exercises/check.test.mjs`:** normalise (`"  dem  Bus "` → `"dem Bus"`); isCorrect for each type including case sensitivity (`"Dem"` ≠ `"dem"`), multiple accepted answers, order with alternatives; correctAnswer; makeRound returns 10 distinct items from 30, all items if fewer than 10, deterministic with a seeded `rand`.
 
-- [ ] Write tests → run `npm test` → fail; implement → pass; `npx tsc --noEmit && npm run lint`; run `npm run sync:exercises` (0 sets) → sets.ts generated, topics.json unchanged (`git diff --stat` shows no topics.json change). Commit "Add exercise data model, checks and sync script".
+- [x] Write tests → run `npm test` → fail; implement → pass; `npx tsc --noEmit && npm run lint`; run `npm run sync:exercises` (0 sets) → sets.ts generated, topics.json unchanged (`git diff --stat` shows no topics.json change). Commit "Add exercise data model, checks and sync script".
 
 ---
 
@@ -118,7 +118,7 @@ export async function recordExerciseAnswer(slug: unknown, itemId: unknown, answe
   (`Object.hasOwn(EXERCISE_SETS, slug)` instead of `?.` to avoid prototype keys like `__proto__`.)
 - `lib/attempts.ts`: add `getTopicAccuracy(slug: string): Promise<{ total: number; correct: number } | null>` (null for guests; pages with `range` like `getAttempts`, selecting `correct` only, filtered by topic). Reuse the private pager rather than duplicating it.
 
-- [ ] Tests first for progress.ts change; `npm test && npx tsc --noEmit && npm run lint`; commit "Save exercise answers and count progress for every topic".
+- [x] Tests first for progress.ts change; `npm test && npx tsc --noEmit && npm run lint`; commit "Save exercise answers and count progress for every topic".
 
 ---
 
@@ -138,7 +138,7 @@ export async function recordExerciseAnswer(slug: unknown, itemId: unknown, answe
 - Round end: "You got 7 of 10", buttons "Practise my mistakes (3)" (only if misses; replays exactly those items), "Next 10" (new `makeRound`), link "Back to <topic>". Guests see "Log in to save your progress" link (`/login?next=/topics/<slug>/practice`).
 - German text gets `lang="de"`.
 
-- [ ] Build it; `npm test && npx tsc --noEmit && npm run lint && npm run build`. No real content exists yet, so browser checks of the page happen in Task 4 (its step 4). Commit "Add the practice page".
+- [x] Build it; `npm test && npx tsc --noEmit && npm run lint && npm run build`. No real content exists yet, so browser checks of the page happen in Task 4 (its step 4). Commit "Add the practice page".
 
 ---
 

@@ -61,7 +61,7 @@
 **Interfaces:**
 - Produces: `MAX_FILE_BYTES = 10 * 1024 * 1024`, `MAX_PHOTOS = 5`, `MAX_PDF_PAGES = 20`, `BUCKET = "learning-uploads"`, `type UploadKind = "pdf" | "docx" | "images"`, `type FileInfo = { name: string; size: number; type: string }`, `validateSelection(files: FileInfo[]): { kind: UploadKind } | { error: string }`, `mimeFor(file: FileInfo): string | null`, `storagePath(userId: string, batchId: string, index: number, fileName: string): string`, `ownedPaths(paths: unknown, userId: string): string[] | null`, `UPLOAD_NOTE: string`.
 
-- [ ] **Step 1: Write the failing tests** — `lib/learning/uploads.test.mjs`:
+- [x] **Step 1: Write the failing tests** — `lib/learning/uploads.test.mjs`:
 
 ```js
 // Run: npm test
@@ -116,9 +116,9 @@ test("ownedPaths only accepts 1–5 paths inside the caller's folder", () => {
 });
 ```
 
-- [ ] **Step 2: Run to verify they fail** — `npm test` → FAIL: `Cannot find module '…/lib/learning/uploads.ts'`.
+- [x] **Step 2: Run to verify they fail** — `npm test` → FAIL: `Cannot find module '…/lib/learning/uploads.ts'`.
 
-- [ ] **Step 3: Implement** — `lib/learning/uploads.ts`:
+- [x] **Step 3: Implement** — `lib/learning/uploads.ts`:
 
 ```ts
 // What can be uploaded to Customized Learning, and where it's stored.
@@ -179,8 +179,8 @@ export function ownedPaths(paths: unknown, userId: string): string[] | null {
 }
 ```
 
-- [ ] **Step 4: Run tests** — `npm test && npx tsc --noEmit` → all pass, no type errors.
-- [ ] **Step 5: Commit** — `git add lib/learning/uploads.ts lib/learning/uploads.test.mjs && git commit -m "Add upload rules for Customized Learning"`
+- [x] **Step 4: Run tests** — `npm test && npx tsc --noEmit` → all pass, no type errors.
+- [x] **Step 5: Commit** — `git add lib/learning/uploads.ts lib/learning/uploads.test.mjs && git commit -m "Add upload rules for Customized Learning"`
 
 ---
 
@@ -191,7 +191,7 @@ export function ownedPaths(paths: unknown, userId: string): string[] | null {
 **Interfaces:**
 - Produces: `ANALYSIS_SCHEMA` (JSON schema object for OpenRouter `response_format`), `type Suggestion = { slug: string; reason: string; fromMistake: boolean }`, `type Analysis = { title: string; extractedText: string; noGrammar: boolean; topics: Suggestion[] }`, `parseAnalysis(raw: unknown, knownSlugs: Set<string>): Analysis | null`, `MAX_TEXT = 8000`, `MAX_TOPICS = 6`.
 
-- [ ] **Step 1: Failing tests** — `lib/learning/suggestions.test.mjs`:
+- [x] **Step 1: Failing tests** — `lib/learning/suggestions.test.mjs`:
 
 ```js
 // Run: npm test
@@ -249,9 +249,9 @@ test("the schema is strict and lists the four fields", () => {
 });
 ```
 
-- [ ] **Step 2: Run** — `npm test` → FAIL (module not found).
+- [x] **Step 2: Run** — `npm test` → FAIL (module not found).
 
-- [ ] **Step 3: Implement** — `lib/learning/suggestions.ts`:
+- [x] **Step 3: Implement** — `lib/learning/suggestions.ts`:
 
 ```ts
 // The AI's answer for an uploaded document: the JSON schema it must follow and
@@ -317,8 +317,8 @@ export function parseAnalysis(raw: unknown, knownSlugs: Set<string>): Analysis |
 }
 ```
 
-- [ ] **Step 4: Run** — `npm test && npx tsc --noEmit` → pass.
-- [ ] **Step 5: Commit** — `git commit -m "Add parsing and checks for the AI's topic suggestions"`
+- [x] **Step 4: Run** — `npm test && npx tsc --noEmit` → pass.
+- [x] **Step 5: Commit** — `git commit -m "Add parsing and checks for the AI's topic suggestions"`
 
 ---
 
@@ -330,7 +330,7 @@ export function parseAnalysis(raw: unknown, knownSlugs: Set<string>): Analysis |
 - Consumes: `Suggestion` (Task 2).
 - Produces: `FOCUS_DAYS = 30`; `type FocusDoc = { id: number; title: string; createdAt: string; topics: Suggestion[] }`; `type FocusOverride = { slug: string; kind: "added" | "removed"; updatedAt: string }`; `type FocusItem = { slug: string; mistakes: number; documents: number; since: string; fromTitle: string | null; added: boolean }`; `buildFocus(docs, overrides, now: Date): FocusItem[]`. `ATTEMPT_TOPIC_SLUG: Record<string, string>` (`{ articles: "noun-gender" }`); `type TopicProgress = { total: number; correct: number; lastPractised: string | null }`; `topicProgress(rows: { topic: string; correct: boolean; created_at: string }[]): Record<string, TopicProgress>`.
 
-- [ ] **Step 1: Failing tests** — `lib/learning/focus.test.mjs`:
+- [x] **Step 1: Failing tests** — `lib/learning/focus.test.mjs`:
 
 ```js
 // Run: npm test
@@ -383,9 +383,9 @@ test("topicProgress maps the flashcard topic to noun-gender and counts answers",
 });
 ```
 
-- [ ] **Step 2: Run** — `npm test` → FAIL.
+- [x] **Step 2: Run** — `npm test` → FAIL.
 
-- [ ] **Step 3: Implement** — `lib/learning/focus.ts`:
+- [x] **Step 3: Implement** — `lib/learning/focus.ts`:
 
 ```ts
 // "Your focus now": the topics from recent uploads, combined, plus the
@@ -448,8 +448,8 @@ export function topicProgress(rows: { topic: string; correct: boolean; created_a
 }
 ```
 
-- [ ] **Step 4: Run** — `npm test && npx tsc --noEmit && npm run lint` → pass. (If lint flags the unused `_latest`, use `const { latest, ...item } = i; void latest; return item;`.)
-- [ ] **Step 5: Commit** — `git commit -m "Add focus list and per-topic progress logic"`
+- [x] **Step 4: Run** — `npm test && npx tsc --noEmit && npm run lint` → pass. (If lint flags the unused `_latest`, use `const { latest, ...item } = i; void latest; return item;`.)
+- [x] **Step 5: Commit** — `git commit -m "Add focus list and per-topic progress logic"`
 
 ---
 
@@ -460,7 +460,7 @@ export function topicProgress(rows: { topic: string; correct: boolean; created_a
 **Interfaces:**
 - Produces: tables `public.learning_documents` (`id bigint`, `user_id uuid`, `title text`, `extracted_text text`, `no_grammar boolean`, `suggestions jsonb`, `created_at timestamptz`), `public.learning_focus` (`user_id`, `topic_slug`, `kind`, `updated_at`; PK `(user_id, topic_slug)`), `public.learning_upload_usage`; function `public.use_upload_quota()` (raises `P0001` "Upload limit reached"); trigger cap 200 (`P0001` "Document limit reached"); private bucket `learning-uploads` with per-user-folder policies.
 
-- [ ] **Step 1: Write the failing SQL test** (scratchpad, rolled back) — `learning-test.sql`:
+- [x] **Step 1: Write the failing SQL test** (scratchpad, rolled back) — `learning-test.sql`:
 
 ```sql
 begin;
@@ -494,7 +494,7 @@ rollback;
 
 Run: `npx supabase db query --project-ref cenzahkgbbnmgzikxvsz -f learning-test.sql` → expect failures (relations missing).
 
-- [ ] **Step 2: Write the migration** — `supabase/migrations/20261010100000_customized_learning.sql`:
+- [x] **Step 2: Write the migration** — `supabase/migrations/20261010100000_customized_learning.sql`:
 
 ```sql
 -- Customized Learning: saved documents with AI topic suggestions, the
@@ -599,10 +599,10 @@ create policy "Users delete their own uploads" on storage.objects
   using (bucket_id = 'learning-uploads' and (storage.foldername(name))[1] = (select auth.uid())::text);
 ```
 
-- [ ] **Step 3: Apply (ask the user first)** — `echo y | npx supabase db push --project-ref cenzahkgbbnmgzikxvsz`. If `insert into storage.buckets` or the storage policies are refused for permission reasons, stop and report: the bucket and policies can then be created in the Supabase dashboard (Storage → New bucket; Policies) with the same values.
-- [ ] **Step 4: Run the SQL test again** → expected: 1 accepted, 2 P0001, 3 accepted, 4 42501, 5 yes, 6 `false 10485760`. Show the SQL with the results.
-- [ ] **Step 5: Document** — add a `public.learning_documents`, `public.learning_focus`, `public.learning_upload_usage` and storage section to `docs/supabase-schema.md` (columns, access rules table, limits, bucket).
-- [ ] **Step 6: Commit** — `git commit -m "Add Customized Learning tables, upload quota and private upload bucket"`
+- [x] **Step 3: Apply (ask the user first)** — `echo y | npx supabase db push --project-ref cenzahkgbbnmgzikxvsz`. If `insert into storage.buckets` or the storage policies are refused for permission reasons, stop and report: the bucket and policies can then be created in the Supabase dashboard (Storage → New bucket; Policies) with the same values.
+- [x] **Step 4: Run the SQL test again** → expected: 1 accepted, 2 P0001, 3 accepted, 4 42501, 5 yes, 6 `false 10485760`. Show the SQL with the results.
+- [x] **Step 5: Document** — add a `public.learning_documents`, `public.learning_focus`, `public.learning_upload_usage` and storage section to `docs/supabase-schema.md` (columns, access rules table, limits, bucket).
+- [x] **Step 6: Commit** — `git commit -m "Add Customized Learning tables, upload quota and private upload bucket"`
 
 ---
 
@@ -613,7 +613,7 @@ create policy "Users delete their own uploads" on storage.objects
 **Interfaces:**
 - Produces: `extractDocxText(buf: Buffer): string | null`; `analyseDocument(input: { kind: UploadKind; files: { name: string; mime: string; data: Buffer }[]; docxText?: string }): Promise<{ analysis: Analysis } | { error: "ai" | "unreadable" }>`; `ANALYSIS_MODEL`.
 
-- [ ] **Step 1: Failing test** — `lib/learning/docx.test.mjs`:
+- [x] **Step 1: Failing test** — `lib/learning/docx.test.mjs`:
 
 ```js
 // Run: npm test
@@ -636,7 +636,7 @@ test("returns null for files that aren't Word documents", () => {
 });
 ```
 
-- [ ] **Step 2: Run** → FAIL. **Step 3: Implement** `lib/learning/docx.ts`:
+- [x] **Step 2: Run** → FAIL. **Step 3: Implement** `lib/learning/docx.ts`:
 
 ```ts
 // Reads the plain text of a .docx (a zip with word/document.xml) using only
@@ -691,7 +691,7 @@ export function extractDocxText(buf: Buffer): string | null {
 }
 ```
 
-- [ ] **Step 4: Run** → pass. **Step 5: Implement** `lib/learning/analyse.ts`:
+- [x] **Step 4: Run** → pass. **Step 5: Implement** `lib/learning/analyse.ts`:
 
 ```ts
 import "server-only"; // reads OPENROUTER_API_KEY
@@ -761,8 +761,8 @@ export async function analyseDocument(input: {
 }
 ```
 
-- [ ] **Step 6: Live check** (scratchpad script, ~$0.002, run with `node --env-file=.env.local`; it may import `lib/learning/suggestions.ts` but not `analyse.ts`, which is server-only — copy the request shape): send (a) the sample text as `.docx` text, (b) a generated one-page PDF of the same text, (c) the HEIC photo from earlier testing, (d) a **blank white PNG**. Expected: (a)–(c) suggest `prepositions-dative` (and/or `dative-case`) with reasons quoting "mit dem Bus"; (d) `noGrammar: true`, empty `extractedText`, no topics. If (d) invents text, strengthen the prompt and re-check.
-- [ ] **Step 7: Commit** — `git commit -m "Add Word reader and AI document analysis"`
+- [x] **Step 6: Live check** (scratchpad script, ~$0.002, run with `node --env-file=.env.local`; it may import `lib/learning/suggestions.ts` but not `analyse.ts`, which is server-only — copy the request shape): send (a) the sample text as `.docx` text, (b) a generated one-page PDF of the same text, (c) the HEIC photo from earlier testing, (d) a **blank white PNG**. Expected: (a)–(c) suggest `prepositions-dative` (and/or `dative-case`) with reasons quoting "mit dem Bus"; (d) `noGrammar: true`, empty `extractedText`, no topics. If (d) invents text, strengthen the prompt and re-check.
+- [x] **Step 7: Commit** — `git commit -m "Add Word reader and AI document analysis"`
 
 ---
 
@@ -774,7 +774,7 @@ export async function analyseDocument(input: {
 - Consumes: `ownedPaths`, `BUCKET`, `MAX_FILE_BYTES`, `MAX_PDF_PAGES`, `mimeFor` (Task 1); `extractDocxText`, `analyseDocument` (Task 5); `getTopic` (catalogue).
 - Produces: `analyseUpload(paths: unknown): Promise<{ id: number } | { error: string }>`, `deleteDocument(id: unknown): Promise<{ error?: string }>`, `setFocus(slug: unknown, kind: unknown): Promise<{ error?: string }>`.
 
-- [ ] **Step 1: Implement:**
+- [x] **Step 1: Implement:**
 
 ```ts
 "use server";
@@ -877,8 +877,8 @@ export async function setFocus(slug: unknown, kind: unknown): Promise<{ error?: 
 }
 ```
 
-- [ ] **Step 2: Check** — `npx tsc --noEmit && npm run lint` → clean. (Upsert relies on `user_id` defaulting to `auth.uid()`; if PostgREST requires the conflict column in the payload, add `user_id: userId` and grant insert on `user_id` — the RLS `with check` still pins it to the caller.)
-- [ ] **Step 3: Commit** — `git commit -m "Add server actions for uploads, documents and focus"`
+- [x] **Step 2: Check** — `npx tsc --noEmit && npm run lint` → clean. (Upsert relies on `user_id` defaulting to `auth.uid()`; if PostgREST requires the conflict column in the payload, add `user_id: userId` and grant insert on `user_id` — the RLS `with check` still pins it to the caller.)
+- [x] **Step 3: Commit** — `git commit -m "Add server actions for uploads, documents and focus"`
 
 ---
 
@@ -912,7 +912,7 @@ export async function setFocus(slug: unknown, kind: unknown): Promise<{ error?: 
 
 Empty state (no documents, no focus): the upload card plus "How it works: 1 Upload what you're learning · 2 We read it · 3 You get topics to practise, with links", and links to Grammar Topics and the der·die·das flashcards. Guests: the page heading, a short description and "Log in to use Customized Learning" / "Sign up" buttons.
 
-- [ ] **Step 1: `components/learning/UploadBox.tsx`** (client):
+- [x] **Step 1: `components/learning/UploadBox.tsx`** (client):
 
 ```tsx
 "use client";
@@ -973,7 +973,7 @@ export function UploadBox({ userId }: { userId: string }) {
 }
 ```
 
-- [ ] **Step 2: `components/learning/FocusList.tsx`** (client) — renders `FocusItem[]` joined with catalogue topics and progress:
+- [x] **Step 2: `components/learning/FocusList.tsx`** (client) — renders `FocusItem[]` joined with catalogue topics and progress:
 
 ```tsx
 "use client";
@@ -1028,7 +1028,7 @@ export function FocusList({ items, topics, progress }: { items: FocusItem[]; top
 }
 ```
 
-- [ ] **Step 3: `components/learning/DocumentList.tsx`** (client):
+- [x] **Step 3: `components/learning/DocumentList.tsx`** (client):
 
 ```tsx
 "use client";
@@ -1100,7 +1100,7 @@ function DocumentItem({ doc, topics }: { doc: Doc; topics: Record<string, Gramma
 }
 ```
 
-- [ ] **Step 4: `components/learning/FocusButton.tsx`** (client):
+- [x] **Step 4: `components/learning/FocusButton.tsx`** (client):
 
 ```tsx
 "use client";
@@ -1128,7 +1128,7 @@ export function FocusButton({ slug, inFocus }: { slug: string; inFocus: boolean 
 }
 ```
 
-- [ ] **Step 5: `app/learning/page.tsx`** (server):
+- [x] **Step 5: `app/learning/page.tsx`** (server):
 
 ```tsx
 import Link from "next/link";
@@ -1215,7 +1215,7 @@ export default async function LearningPage() {
 }
 ```
 
-- [ ] **Step 6: Topic page** — in `app/topics/[slug]/page.tsx`, add after the `articles` line:
+- [x] **Step 6: Topic page** — in `app/topics/[slug]/page.tsx`, add after the `articles` line:
 
 ```tsx
 const supabase = await createClient();
@@ -1235,8 +1235,8 @@ async function isInFocus(supabase: Awaited<ReturnType<typeof createClient>>, slu
 
 and render `{loggedIn && <FocusButton slug={topic.slug} inFocus={inFocus} />}` as the last child of the Practise section. Imports: `createClient` from `@/lib/supabase/server`, `FocusButton` from `@/components/learning/FocusButton`. The page becomes dynamic (reads cookies); `generateStaticParams` still limits it to catalogue slugs.
 
-- [ ] **Step 7: Check** — `npm test && npx tsc --noEmit && npm run lint && npm run build` → clean; `/learning` in the route list.
-- [ ] **Step 8: Commit** — `git commit -m "Add the Customized Learning page"`
+- [x] **Step 7: Check** — `npm test && npx tsc --noEmit && npm run lint && npm run build` → clean; `/learning` in the route list.
+- [x] **Step 8: Commit** — `git commit -m "Add the Customized Learning page"`
 
 ---
 
@@ -1244,20 +1244,20 @@ and render `{loggedIn && <FocusButton slug={topic.slug} inFocus={inFocus} />}` a
 
 **Files:** Modify `lib/safe-redirect.ts`, `lib/safe-redirect.test.mjs`, `app/page.tsx`, `components/NavBar.tsx`, `supabase/templates/confirmation.html`
 
-- [ ] **Step 1: Failing test** — in `lib/safe-redirect.test.mjs`, change the default-fallback expectations from `"/articles"` to `"/learning"` (e.g. `assert.equal(safeRedirectPath(null), "/learning")`). Run → FAIL.
-- [ ] **Step 2: Implement** — `export function safeRedirectPath(raw, fallback = "/learning")`. Run → PASS. (This covers email/password login, Google sign-in and the confirmation link, which all use it.)
-- [ ] **Step 3: Front page** — in `app/page.tsx`: logged in (`getClaims`) → `redirect("/learning")` (unless `?account=deleted`, which only happens signed out). Guests: lead with Customized Learning ("Upload what you're learning and get grammar topics to practise", Sign up / Log in buttons), then "Try it without an account": Grammar Topics and der·die·das cards. Keep the account-deleted notice.
-- [ ] **Step 4: Nav** — `LINKS = [{ href: "/learning", label: "Customized Learning", also: [] }, { href: "/topics", label: "Grammar Topics", also: ["/articles", "/rules"] }]`.
+- [x] **Step 1: Failing test** — in `lib/safe-redirect.test.mjs`, change the default-fallback expectations from `"/articles"` to `"/learning"` (e.g. `assert.equal(safeRedirectPath(null), "/learning")`). Run → FAIL.
+- [x] **Step 2: Implement** — `export function safeRedirectPath(raw, fallback = "/learning")`. Run → PASS. (This covers email/password login, Google sign-in and the confirmation link, which all use it.)
+- [x] **Step 3: Front page** — in `app/page.tsx`: logged in (`getClaims`) → `redirect("/learning")` (unless `?account=deleted`, which only happens signed out). Guests: lead with Customized Learning ("Upload what you're learning and get grammar topics to practise", Sign up / Log in buttons), then "Try it without an account": Grammar Topics and der·die·das cards. Keep the account-deleted notice.
+- [x] **Step 4: Nav** — `LINKS = [{ href: "/learning", label: "Customized Learning", also: [] }, { href: "/topics", label: "Grammar Topics", also: ["/articles", "/rules"] }]`.
 - [ ] **Step 5: Confirmation email** — change `next=/articles` to `next=/learning` in `supabase/templates/confirmation.html`; `npx supabase config diff --project-ref …` should show only the template; **ask the user** before `echo y | npx supabase config push --project-ref …`.
-- [ ] **Step 6: Check + commit** — `npm test && npx tsc --noEmit && npm run lint && npm run build`; `git commit -m "Make Customized Learning the landing page"`
+- [x] **Step 6: Check + commit** — `npm test && npx tsc --noEmit && npm run lint && npm run build`; `git commit -m "Make Customized Learning the landing page"`
 
 ---
 
 ### Task 9: Privacy page and docs
 
-- [ ] **Step 1:** `app/privacy/page.tsx` — "What we store": *Your Customized Learning documents: the title, the text read from each document and the suggested topics; the original files are deleted straight after reading. Your focus list.* "Services": *OpenRouter and Google: when you upload a document, it's sent through OpenRouter to Google's Gemini model to read it and suggest topics. Don't upload documents with personal details.* "Deleting": *…your documents and focus list.*
-- [ ] **Step 2:** `docs/supabase-schema.md` (if not done in Task 4) and `.env.example` comment (`OPENROUTER_API_KEY` powers Customized Learning).
-- [ ] **Step 3: Commit** — `git commit -m "Update privacy page and docs for Customized Learning"`
+- [x] **Step 1:** `app/privacy/page.tsx` — "What we store": *Your Customized Learning documents: the title, the text read from each document and the suggested topics; the original files are deleted straight after reading. Your focus list.* "Services": *OpenRouter and Google: when you upload a document, it's sent through OpenRouter to Google's Gemini model to read it and suggest topics. Don't upload documents with personal details.* "Deleting": *…your documents and focus list.*
+- [x] **Step 2:** `docs/supabase-schema.md` (if not done in Task 4) and `.env.example` comment (`OPENROUTER_API_KEY` powers Customized Learning).
+- [x] **Step 3: Commit** — `git commit -m "Update privacy page and docs for Customized Learning"`
 
 ---
 
@@ -1265,7 +1265,7 @@ and render `{loggedIn && <FocusButton slug={topic.slug} inFocus={inFocus} />}` a
 
 **Files:** Create `e2e/lib.sh` (login/logout/eval helpers as in the removed RAG checks, accounts from `E2E_MAIN_*` / `E2E_OTHER_*`), `e2e/learning.sh`, `e2e/fixtures/` (`lektion7.pdf` generated from the sample text, `lektion7.heic`, `lektion7.docx`, `blank.png`), `e2e/README.md`
 
-- [ ] **Step 1:** `e2e/learning.sh` checks (each prints ✅/❌, ends with `RESULT: PASS|FAIL`), using `playwright-cli upload`:
+- [x] **Step 1:** `e2e/learning.sh` checks (each prints ✅/❌, ends with `RESULT: PASS|FAIL`), using `playwright-cli upload`:
   1. Guest `/learning` shows "Log in to use Customized Learning"; logging in from `/login` lands on `/learning`; `/` redirects there when logged in.
   2. Upload the PDF → a document titled with "Lektion 7"/"Präpositionen" appears, with `prepositions-dative` or `dative-case` among its topics, and "Your focus now" lists it.
   3. Upload the HEIC photo and the Word file → same topics.
@@ -1276,6 +1276,6 @@ and render `{loggedIn && <FocusButton slug={topic.slug} inFocus={inFocus} />}` a
   8. User B (`E2E_OTHER`) sees none of user A's documents or focus.
   9. Unsupported file (`.doc`) and 6 photos show the plain error messages without uploading.
   Clean up: delete created documents and focus rows through the page.
-- [ ] **Step 2:** Run `npm test`, `npm run build`, and `bash e2e/learning.sh` against `npm run dev` → all pass.
-- [ ] **Step 3:** Run `/security-scan-changed` and fix confirmed findings (test-first).
+- [x] **Step 2:** Run `npm test`, `npm run build`, and `bash e2e/learning.sh` against `npm run dev` → all pass.
+- [x] **Step 3:** Run `/security-scan-changed` and fix confirmed findings (test-first).
 - [ ] **Step 4:** With the user's OK: merge into `main`, push, re-run `e2e/learning.sh` with `BASE=https://de-app-six.vercel.app`, update the "How DE-app works" explainer.
