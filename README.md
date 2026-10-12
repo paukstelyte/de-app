@@ -76,6 +76,8 @@ Every table with user data has row-level security with owner-only policies, and 
 
 The browser checks use the global `playwright-cli` and test accounts from environment variables; see [`e2e/README.md`](e2e/README.md). Latest results: [`docs/testing.md`](docs/testing.md).
 
+**New packages wait 7 days.** `.npmrc` sets `min-release-age=7`, so npm only picks package versions published at least 7 days ago. If `npm install <pkg>`, `npm update` or `npm audit fix` fails with `ETARGET` "No matching version found ... with a date before ...", the version you asked for is too new: wait, or pin an older version. Exempting one package (`min-release-age-exclude[]=<pkg>` in `.npmrc`) needs a reason and review. Versions already in `package-lock.json` are not re-checked, and global installs (`npm i -g`) and commands run outside this folder are not covered.
+
 ## How changes are made
 
 Each change goes through a feature branch and a GitHub pull request. The `ai-code-reviewer` agent ([`.claude/agents/ai-code-reviewer.md`](.claude/agents/ai-code-reviewer.md)) reviews the PR before it's merged. It reads the diff in a fresh context and reports dead code, duplication, over-engineering and silent behaviour changes as Critical / Warning / Suggestion. Each review request also listed the course's AI and security rules to check, and the reports record those checks. Its report is saved in [`docs/reviews/`](docs/reviews/) and posted on the PR:
