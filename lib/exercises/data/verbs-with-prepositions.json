@@ -125,7 +125,7 @@
       "prompt": "Jonas gratuliert seiner Schwester ___ Geburtstag.",
       "options": [
         "zum",
-        "am",
+        "fürs",
         "im",
         "vom"
       ],
@@ -200,7 +200,7 @@
     {
       "id": "vwp-16",
       "type": "choice",
-      "prompt": "Du wartest auf den Bus. ___ wartest du?",
+      "prompt": "Du wartest auf eine Antwort. ___ wartest du?",
       "options": [
         "Worauf",
         "Wofür",

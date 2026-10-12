@@ -325,17 +325,17 @@
       "id": "prep-acc-27",
       "type": "order",
       "words": [
-        "Ist",
-        "das",
-        "Geschenk",
+        "Der",
+        "Kuchen",
+        "ist",
         "für",
-        "mich?"
+        "uns."
       ],
       "answers": [
-        "Ist das Geschenk für mich?"
+        "Der Kuchen ist für uns."
       ],
-      "translation": "Is the present for me?",
-      "explanation": "für takes the accusative: ich becomes mich."
+      "translation": "The cake is for us.",
+      "explanation": "für takes the accusative: wir becomes uns."
     },
     {
       "id": "prep-acc-28",

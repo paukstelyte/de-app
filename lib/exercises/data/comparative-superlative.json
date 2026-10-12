@@ -38,12 +38,12 @@
     {
       "id": "comp-04",
       "type": "type",
-      "prompt": "Anna läuft am ___.",
-      "hint": "(schnell)",
+      "prompt": "Anna singt am ___.",
+      "hint": "(schön)",
       "answers": [
-        "schnellsten"
+        "schönsten"
       ],
-      "explanation": "Superlative of an adverb: am + adjective + -sten: schnell → am schnellsten."
+      "explanation": "Superlative of an adverb: am + adjective + -sten: schön → am schönsten."
     },
     {
       "id": "comp-05",
@@ -89,7 +89,7 @@
     {
       "id": "comp-09",
       "type": "choice",
-      "prompt": "Berlin ist größer ___ Bonn.",
+      "prompt": "Mein Bruder ist größer ___ ich.",
       "options": [
         "als",
         "wie"
@@ -196,15 +196,15 @@
       "words": [
         "Tom",
         "ist",
-        "älter",
+        "fleißiger",
         "als",
         "Anna."
       ],
       "answers": [
-        "Tom ist älter als Anna."
+        "Tom ist fleißiger als Anna."
       ],
-      "translation": "Tom is older than Anna.",
-      "explanation": "The comparative älter is followed by als and the person being compared."
+      "translation": "Tom is more hard-working than Anna.",
+      "explanation": "The comparative fleißiger (fleißig + -er) is followed by als and the person being compared."
     },
     {
       "id": "comp-20",

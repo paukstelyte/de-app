@@ -145,12 +145,12 @@
     {
       "id": "nvs-12",
       "type": "type",
-      "prompt": "Als der Friedensvertrag unterzeichnet wurde, waren beide Außenminister anwesend. → Bei der ___ des Friedensvertrags waren beide Außenminister anwesend.",
-      "hint": "(unterzeichnen)",
+      "prompt": "Als die neue Botschaft eröffnet wurde, waren beide Außenminister anwesend. → Bei der ___ der neuen Botschaft waren beide Außenminister anwesend.",
+      "hint": "(eröffnen)",
       "answers": [
-        "Unterzeichnung"
+        "Eröffnung"
       ],
-      "explanation": "A temporal als-clause becomes bei + dative; unterzeichnen → die Unterzeichnung, with the object in the genitive (des Vertrags)."
+      "explanation": "A temporal als-clause becomes bei + dative; eröffnen → die Eröffnung, with the object in the genitive (der neuen Botschaft)."
     },
     {
       "id": "nvs-13",

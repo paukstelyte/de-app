@@ -160,15 +160,15 @@
     {
       "id": "gen-13",
       "type": "choice",
-      "prompt": "Das Dach des ___ ist rot.",
+      "prompt": "Der Lehrer des ___ ist sehr nett.",
       "options": [
-        "Hauses",
-        "Haus",
-        "Hauss",
-        "Hausen"
+        "Kurses",
+        "Kurs",
+        "Kurss",
+        "Kursen"
       ],
-      "answer": "Hauses",
-      "explanation": "Neuter nouns ending in -s add -es in the genitive: das Haus → des Hauses."
+      "answer": "Kurses",
+      "explanation": "Nouns ending in -s add -es in the genitive: der Kurs → des Kurses."
     },
     {
       "id": "gen-14",

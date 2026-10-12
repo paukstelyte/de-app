@@ -358,7 +358,7 @@
         "Wo",
         "ist",
         "die",
-        "Tasche,",
+        "Zeitung,",
         "die",
         "auf",
         "dem",
@@ -366,9 +366,9 @@
         "lag?"
       ],
       "answers": [
-        "Wo ist die Tasche, die auf dem Tisch lag?"
+        "Wo ist die Zeitung, die auf dem Tisch lag?"
       ],
-      "translation": "Where is the bag that was on the table?",
+      "translation": "Where is the newspaper that was on the table?",
       "explanation": "The relative clause die ... lag? ends with the verb lag; the pronoun die is feminine nominative."
     },
     {
@@ -378,17 +378,17 @@
         "Tom",
         "kennt",
         "die",
-        "Frau,",
-        "mit",
-        "der",
+        "Firma,",
+        "für",
+        "die",
         "ich",
         "arbeite."
       ],
       "answers": [
-        "Tom kennt die Frau, mit der ich arbeite."
+        "Tom kennt die Firma, für die ich arbeite."
       ],
-      "translation": "Tom knows the woman I work with.",
-      "explanation": "The preposition comes before the pronoun (mit der) and the verb arbeite ends the clause."
+      "translation": "Tom knows the company I work for.",
+      "explanation": "The preposition comes before the pronoun (für + accusative feminine: für die) and the verb arbeite ends the clause."
     },
     {
       "id": "rel-30",

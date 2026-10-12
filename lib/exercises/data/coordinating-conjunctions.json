@@ -295,20 +295,19 @@
       "id": "conj-26",
       "type": "order",
       "words": [
-        "Ich",
-        "bin",
-        "müde,",
+        "Das",
+        "Wetter",
+        "ist",
+        "schlecht,",
         "aber",
-        "ich",
-        "gehe",
-        "noch",
-        "ins",
-        "Kino."
+        "wir",
+        "gehen",
+        "spazieren."
       ],
       "answers": [
-        "Ich bin müde, aber ich gehe noch ins Kino."
+        "Das Wetter ist schlecht, aber wir gehen spazieren."
       ],
-      "translation": "I am tired, but I'm still going to the cinema.",
+      "translation": "The weather is bad, but we are going for a walk.",
       "explanation": "After aber the word order stays normal: subject, then verb."
     },
     {
@@ -333,35 +332,35 @@
       "id": "conj-28",
       "type": "order",
       "words": [
-        "Wir",
-        "bleiben",
-        "zu",
-        "Hause,",
+        "Ich",
+        "esse",
+        "nichts,",
         "denn",
-        "es",
-        "regnet",
-        "stark."
+        "ich",
+        "habe",
+        "keinen",
+        "Hunger."
       ],
       "answers": [
-        "Wir bleiben zu Hause, denn es regnet stark."
+        "Ich esse nichts, denn ich habe keinen Hunger."
       ],
-      "translation": "We stay at home because it is raining heavily.",
-      "explanation": "denn is followed by normal word order: es regnet, not regnet es."
+      "translation": "I'm not eating anything because I'm not hungry.",
+      "explanation": "denn is followed by normal word order: ich habe, not habe ich."
     },
     {
       "id": "conj-29",
       "type": "order",
       "words": [
-        "Möchtest",
+        "Trinkst",
         "du",
-        "Tee",
+        "Wasser",
         "oder",
-        "Kaffee?"
+        "Saft?"
       ],
       "answers": [
-        "Möchtest du Tee oder Kaffee?"
+        "Trinkst du Wasser oder Saft?"
       ],
-      "translation": "Would you like tea or coffee?",
+      "translation": "Do you drink water or juice?",
       "explanation": "oder joins the two choices; the question keeps the verb first."
     },
     {

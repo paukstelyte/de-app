@@ -207,12 +207,12 @@
     {
       "id": "pas-19",
       "type": "type",
-      "prompt": "Der Brief wurde gestern ___.",
-      "hint": "(schreiben)",
+      "prompt": "Der Schlüssel wurde im Park ___.",
+      "hint": "(finden)",
       "answers": [
-        "geschrieben"
+        "gefunden"
       ],
-      "explanation": "schreiben has the irregular participle geschrieben."
+      "explanation": "finden has the irregular participle gefunden."
     },
     {
       "id": "pas-20",
@@ -266,17 +266,17 @@
       "type": "order",
       "words": [
         "Die",
-        "Hausaufgaben",
+        "Blumen",
         "werden",
         "von",
         "den",
         "Kindern",
-        "gemacht."
+        "gegossen."
       ],
       "answers": [
-        "Die Hausaufgaben werden von den Kindern gemacht."
+        "Die Blumen werden von den Kindern gegossen."
       ],
-      "translation": "The homework is done by the children.",
+      "translation": "The flowers are watered by the children.",
       "explanation": "Plural subject takes werden; von + dative names the doer; the participle comes last."
     },
     {

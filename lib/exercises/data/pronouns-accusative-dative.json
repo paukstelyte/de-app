@@ -304,17 +304,16 @@
       "id": "pron-28",
       "type": "order",
       "words": [
-        "Kannst",
+        "Hilfst",
         "du",
         "mir",
-        "bitte",
-        "helfen?"
+        "morgen?"
       ],
       "answers": [
-        "Kannst du mir bitte helfen?"
+        "Hilfst du mir morgen?"
       ],
-      "translation": "Can you help me, please?",
-      "explanation": "helfen needs the dative: mir, placed before bitte and the infinitive at the end."
+      "translation": "Will you help me tomorrow?",
+      "explanation": "helfen needs the dative: mir. The pronoun comes right after the subject du, before the time word morgen."
     },
     {
       "id": "pron-29",

@@ -135,7 +135,7 @@
     {
       "id": "fut-11",
       "type": "choice",
-      "prompt": "Es ___ morgen bestimmt regnen.",
+      "prompt": "Das Wetter ___ morgen bestimmt schön sein.",
       "options": [
         "wird",
         "werde",
@@ -143,7 +143,7 @@
         "werden"
       ],
       "answer": "wird",
-      "explanation": "werden also expresses a prediction. With es the form is wird."
+      "explanation": "werden also expresses a prediction. With das Wetter (= es) the form is wird."
     },
     {
       "id": "fut-12",
@@ -221,12 +221,12 @@
     {
       "id": "fut-19",
       "type": "type",
-      "prompt": "Ich werde dich morgen ___.",
-      "hint": "(anrufen)",
+      "prompt": "Ich werde dich morgen vom Bahnhof ___.",
+      "hint": "(abholen)",
       "answers": [
-        "anrufen"
+        "abholen"
       ],
-      "explanation": "After werden the separable verb stays whole in the infinitive at the end: anrufen."
+      "explanation": "After werden the separable verb stays whole in the infinitive at the end: abholen."
     },
     {
       "id": "fut-20",

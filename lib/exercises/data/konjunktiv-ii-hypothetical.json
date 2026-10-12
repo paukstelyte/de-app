@@ -343,19 +343,19 @@
       "id": "konj2-29",
       "type": "order",
       "words": [
-        "An",
-        "deiner",
-        "Stelle",
+        "Ohne",
+        "dich",
         "würde",
         "ich",
-        "ihn",
-        "anrufen."
+        "das",
+        "nicht",
+        "schaffen."
       ],
       "answers": [
-        "An deiner Stelle würde ich ihn anrufen."
+        "Ohne dich würde ich das nicht schaffen."
       ],
-      "translation": "In your place I would call him.",
-      "explanation": "Advice: würde in second position, infinitive anrufen at the end."
+      "translation": "Without you I wouldn't manage it.",
+      "explanation": "Unreal situation: würde stays in second position after Ohne dich, and the infinitive schaffen goes to the end."
     },
     {
       "id": "konj2-30",

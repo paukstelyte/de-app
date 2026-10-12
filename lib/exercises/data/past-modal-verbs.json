@@ -5,7 +5,7 @@
     {
       "id": "pm-01",
       "type": "choice",
-      "prompt": "Gestern ___ ich nicht kommen.",
+      "prompt": "Gestern ___ ich nicht schlafen.",
       "options": [
         "konnte",
         "konnten",
@@ -137,19 +137,19 @@
     {
       "id": "pm-12",
       "type": "choice",
-      "prompt": "Warum ___ du gestern nicht kommen?",
+      "prompt": "Warum ___ du letzte Woche nicht zum Kurs kommen?",
       "options": [
         "konntest",
         "konnte",
         "kannst"
       ],
       "answer": "konntest",
-      "explanation": "du + simple past: konntest (konnte + -st). kannst is present tense and does not fit gestern."
+      "explanation": "du + simple past: konntest (konnte + -st). kannst is present tense and does not fit letzte Woche."
     },
     {
       "id": "pm-13",
       "type": "type",
-      "prompt": "Gestern ___ ich lange arbeiten.",
+      "prompt": "Gestern ___ ich lange auf den Bus warten.",
       "hint": "(müssen)",
       "answers": [
         "musste"
@@ -234,7 +234,7 @@
       "answers": [
         "konnte"
       ],
-      "explanation": "Modal verbs prefer the simple past: ich konnte instead of ich habe ... gekonnt."
+      "explanation": "Modal verbs prefer the simple past: ich konnte instead of the perfect ich habe ... anrufen können."
     },
     {
       "id": "pm-22",
@@ -343,16 +343,15 @@
       "words": [
         "Durftest",
         "du",
-        "als",
-        "Kind",
-        "lange",
-        "fernsehen?"
+        "früher",
+        "Süßigkeiten",
+        "essen?"
       ],
       "answers": [
-        "Durftest du als Kind lange fernsehen?"
+        "Durftest du früher Süßigkeiten essen?"
       ],
-      "translation": "Were you allowed to watch TV for long as a child?",
-      "explanation": "In a yes/no question durftest (du-form, no umlaut) comes first; the infinitive fernsehen goes last."
+      "translation": "Were you allowed to eat sweets in the past?",
+      "explanation": "In a yes/no question durftest (du-form, no umlaut) comes first; the infinitive essen goes last."
     },
     {
       "id": "pm-30",

@@ -239,17 +239,17 @@
     {
       "id": "pp-23",
       "type": "type",
-      "prompt": "Als wir am Bahnhof ankamen, ___ der Zug schon abgefahren.",
+      "prompt": "Als ich aufwachte, ___ die Sonne schon aufgegangen.",
       "hint": "(haben oder sein)",
       "answers": [
         "war"
       ],
-      "explanation": "abfahren is a movement verb, so the past perfect uses war."
+      "explanation": "aufgehen is a change of state and takes sein, so the past perfect uses war."
     },
     {
       "id": "pp-24",
       "type": "type",
-      "prompt": "Nachdem ich gefrühstückt ___, putzte ich die Zähne.",
+      "prompt": "Nachdem ich gefrühstückt ___, putzte ich mir die Zähne.",
       "hint": "(haben oder sein)",
       "answers": [
         "hatte"
@@ -310,7 +310,7 @@
         "Nachdem Tom angekommen war, rief er Lena an."
       ],
       "translation": "After Tom had arrived, he called Lena.",
-      "explanation": "The finite war ends the nachdem clause; rief follows in position one of the main clause."
+      "explanation": "The finite war ends the nachdem clause; that clause fills position one, so rief comes right after the comma."
     },
     {
       "id": "pp-28",

@@ -82,7 +82,8 @@
         "wohnt."
       ],
       "answers": [
-        "Tom weiß nicht, wo Anna wohnt."
+        "Tom weiß nicht, wo Anna wohnt.",
+        "Anna weiß nicht, wo Tom wohnt."
       ],
       "translation": "Tom doesn't know where Anna lives.",
       "explanation": "The question word wo opens the subordinate clause; wohnt is last."

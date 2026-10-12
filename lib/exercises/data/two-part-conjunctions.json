@@ -18,7 +18,7 @@
     {
       "id": "tpc-02",
       "type": "choice",
-      "prompt": "Wir haben weder Zeit ___ Geld.",
+      "prompt": "Wir haben weder ein Auto ___ ein Fahrrad.",
       "options": [
         "noch",
         "oder",
@@ -237,7 +237,7 @@
     {
       "id": "tpc-20",
       "type": "type",
-      "prompt": "Sie spricht sowohl Spanisch ___ Italienisch.",
+      "prompt": "Für den Kuchen brauchen wir sowohl Mehl ___ Zucker.",
       "hint": "(sowohl … ?)",
       "answers": [
         "als auch",
@@ -410,7 +410,8 @@
         "Urlaub."
       ],
       "answers": [
-        "Tom hat weder Zeit noch Geld für den Urlaub."
+        "Tom hat weder Zeit noch Geld für den Urlaub.",
+        "Tom hat weder Geld noch Zeit für den Urlaub."
       ],
       "translation": "Tom has neither time nor money for the holiday.",
       "explanation": "weder … noch places both negated objects before the shared phrase."

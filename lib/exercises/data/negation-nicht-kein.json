@@ -29,11 +29,12 @@
       "type": "choice",
       "prompt": "Wir trinken ___ Kaffee.",
       "options": [
+        "keinen",
         "kein",
         "nicht"
       ],
-      "answer": "kein",
-      "explanation": "Kaffee has no article here (Wir trinken Kaffee), so it is negated with kein."
+      "answer": "keinen",
+      "explanation": "Kaffee has no article here (Wir trinken Kaffee), so it is negated with kein. Kaffee is masculine and the object, so: keinen Kaffee."
     },
     {
       "id": "neg-04",
@@ -282,15 +283,15 @@
       "type": "order",
       "words": [
         "Ich",
-        "habe",
+        "trinke",
         "keine",
-        "Zeit."
+        "Milch."
       ],
       "answers": [
-        "Ich habe keine Zeit."
+        "Ich trinke keine Milch."
       ],
-      "translation": "I have no time.",
-      "explanation": "Zeit has no article here (Ich habe Zeit), so it is negated with kein; Zeit is feminine, so keine Zeit."
+      "translation": "I don't drink milk.",
+      "explanation": "Milch has no article here (Ich trinke Milch), so it is negated with kein; Milch is feminine, so keine Milch."
     },
     {
       "id": "neg-27",

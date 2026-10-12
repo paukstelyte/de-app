@@ -197,7 +197,7 @@
     {
       "id": "imp-17",
       "type": "type",
-      "prompt": "Kinder, ___ bitte die Hände!",
+      "prompt": "Kinder, ___ euch bitte die Hände!",
       "hint": "(waschen)",
       "answers": [
         "wascht"
@@ -257,13 +257,13 @@
     {
       "id": "imp-23",
       "type": "type",
-      "prompt": "Tom, ___ bitte das Licht an!",
-      "hint": "(anmachen)",
+      "prompt": "Tom, ___ bitte deine Mutter an!",
+      "hint": "(anrufen)",
       "answers": [
-        "mach",
-        "mache"
+        "ruf",
+        "rufe"
       ],
-      "explanation": "With separable verbs the prefix goes to the end: Mach das Licht an! The -e (Mache) is optional."
+      "explanation": "With separable verbs the prefix goes to the end: Ruf deine Mutter an! The -e (Rufe) is optional."
     },
     {
       "id": "imp-24",

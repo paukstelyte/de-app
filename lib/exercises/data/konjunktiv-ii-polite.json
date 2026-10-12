@@ -76,14 +76,14 @@
     {
       "id": "kj-07",
       "type": "choice",
-      "prompt": "Wir ___ gern zwei Karten für das Konzert.",
+      "prompt": "Mein Mann ___ gern ein Bier.",
       "options": [
+        "hätte",
         "hätten",
-        "hättet",
-        "hätte"
+        "hättet"
       ],
-      "answer": "hätten",
-      "explanation": "With wir the Konjunktiv II of haben is hätten; hättet is for ihr, hätte for ich/er/sie."
+      "answer": "hätte",
+      "explanation": "With er/sie (mein Mann) the Konjunktiv II of haben is hätte; hätten is for wir/Sie, hättet for ihr."
     },
     {
       "id": "kj-08",
@@ -98,7 +98,7 @@
     {
       "id": "kj-09",
       "type": "choice",
-      "prompt": "Entschuldigung, ___ Sie mir helfen?",
+      "prompt": "Entschuldigung, ___ Sie mir bitte den Weg zeigen?",
       "options": [
         "könnten",
         "könntest",
@@ -288,7 +288,7 @@
     {
       "id": "kj-24",
       "type": "choice",
-      "prompt": "Herr Weber, ___ Sie bitte das Fenster zumachen?",
+      "prompt": "Herr Weber, ___ Sie bitte langsamer sprechen?",
       "options": [
         "würden",
         "würdest",

@@ -53,7 +53,7 @@
     {
       "id": "kj2p-05",
       "type": "choice",
-      "prompt": "Ich ___ das Buch gelesen, wenn ich es gekannt hätte.",
+      "prompt": "Ich ___ das Buch gelesen, wenn ich davon gewusst hätte.",
       "options": [
         "hätte",
         "wäre",

@@ -160,12 +160,12 @@
     {
       "id": "pimp-14",
       "type": "type",
-      "prompt": "Den Betroffenen muss schnell und unbürokratisch ___ werden.",
-      "hint": "(helfen)",
+      "prompt": "Dieser Darstellung muss entschieden ___ werden.",
+      "hint": "(widersprechen)",
       "answers": [
-        "geholfen"
+        "widersprochen"
       ],
-      "explanation": "helfen keeps its dative (den Betroffenen); with a modal: muss + geholfen + werden."
+      "explanation": "widersprechen keeps its dative (dieser Darstellung); with a modal: muss + widersprochen + werden (inseparable wider-, no ge-)."
     },
     {
       "id": "pimp-15",

@@ -173,19 +173,19 @@
     {
       "id": "ip-15",
       "type": "choice",
-      "prompt": "In Spanien ___ man spät zu Abend.",
+      "prompt": "Am Sonntag ___ man in Deutschland oft lange.",
       "options": [
-        "isst",
-        "essen",
-        "esst"
+        "schläft",
+        "schlafen",
+        "schlaft"
       ],
-      "answer": "isst",
-      "explanation": "man takes the er/sie/es form of the verb: man isst."
+      "answer": "schläft",
+      "explanation": "man takes the er/sie/es form of the verb, including the vowel change: man schläft."
     },
     {
       "id": "ip-16",
       "type": "choice",
-      "prompt": "Hier ___ man sehr gut Pizza.",
+      "prompt": "Hier ___ man sehr gute Pizza.",
       "options": [
         "bekommt",
         "bekommen",

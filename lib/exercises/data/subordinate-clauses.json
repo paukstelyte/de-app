@@ -67,12 +67,12 @@
     {
       "id": "sub-05",
       "type": "type",
-      "prompt": "Ich weiß nicht, ___ er kommt.",
+      "prompt": "Ich frage meinen Chef, ___ ich morgen frei habe.",
       "hint": "(if / whether)",
       "answers": [
         "ob"
       ],
-      "explanation": "ob means whether/if in indirect yes/no questions: Kommt er? becomes ob er kommt."
+      "explanation": "ob means whether/if in indirect yes/no questions: Habe ich frei? becomes ob ich frei habe."
     },
     {
       "id": "sub-06",
@@ -430,12 +430,12 @@
     {
       "id": "sub-28",
       "type": "type",
-      "prompt": "Ruf mich an, wenn du Zeit ___.",
-      "hint": "(haben)",
+      "prompt": "Ruf mich an, wenn du zu Hause ___.",
+      "hint": "(sein)",
       "answers": [
-        "hast"
+        "bist"
       ],
-      "explanation": "In the wenn clause the verb goes to the end and agrees with du: hast."
+      "explanation": "In the wenn clause the verb goes to the end and agrees with du: bist."
     },
     {
       "id": "sub-29",

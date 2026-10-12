@@ -323,7 +323,7 @@
     {
       "id": "ohne-26",
       "type": "type",
-      "prompt": "Der Chef redet viel, statt ___ die Mitarbeiter ihre Ideen zeigen dürfen.",
+      "prompt": "Der Chef redet viel, statt ___ die Mitarbeiter ihre Ideen vorstellen dürfen.",
       "hint": "(zu oder dass?)",
       "answers": [
         "dass"
@@ -377,10 +377,11 @@
         "half."
       ],
       "answers": [
-        "Lena kochte allein, statt dass Tom ihr half."
+        "Lena kochte allein, statt dass Tom ihr half.",
+        "Lena kochte allein, statt dass ihr Tom half."
       ],
       "translation": "Lena cooked alone instead of Tom helping her.",
-      "explanation": "Different subjects (Lena / Tom): statt dass + a full clause with the conjugated verb at the end."
+      "explanation": "Different subjects (Lena / Tom): statt dass + a full clause with the conjugated verb at the end; ihr may also come before Tom."
     },
     {
       "id": "ohne-30",
