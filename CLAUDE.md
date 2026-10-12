@@ -96,10 +96,9 @@ The app does not use embeddings or RAG.
 - Every new Supabase table needs RLS policies and the anon-access revoke (see `docs/supabase-schema.md`).
 - All secrets should live in *env files
 - Changes go through a feature branch and a pull request; run the `ai-code-reviewer` agent on the PR before merging and save its report in `docs/reviews/`.
-- Before merging, suggest needed usability tests with Playwright 
+- Before merging, suggest needed usability tests with Playwright
 - Propose security scans: `/security-scan` weekly to confirm the whole codebase is clean, and `/security-scan-changed` on every feature branch and pull request, to catch new problems before they merge into main.
 - npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too).
-
 
 ## Do Not
 
