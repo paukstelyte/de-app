@@ -270,15 +270,15 @@
     {
       "id": "kisp-21",
       "type": "choice",
-      "prompt": "Zu den methodischen Einschränkungen der Studie ___ man die Ausführungen in Kapitel 4.",
+      "prompt": "Bei der Interpretation der Ergebnisse ___ man insbesondere die methodischen Einschränkungen, die in Kapitel 4 erläutert werden.",
       "options": [
-        "vergleiche",
-        "vergleichen",
-        "verglich",
-        "vergliche"
+        "beachte",
+        "beachten",
+        "beachtet",
+        "beachtete"
       ],
-      "answer": "vergleiche",
-      "explanation": "Man vergleiche is the academic reference formula (vgl.): singular man + Konjunktiv I ending -e; vergliche is Konjunktiv II."
+      "answer": "beachte",
+      "explanation": "Man beachte ('note') is an academic pointer to the reader: singular man + Konjunktiv I ending -e; beachtet is indicative, beachtete past or Konjunktiv II."
     },
     {
       "id": "kisp-22",

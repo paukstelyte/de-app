@@ -309,12 +309,12 @@
     {
       "id": "csc-22",
       "type": "type",
-      "prompt": "Die Autorin gestand, dass sie das Manuskript einst ___ vernichten wollen, es dann aber doch ihrem Verleger übergeben hatte.",
+      "prompt": "Der Zeuge räumte ein, dass er den Unfallort zunächst ___ verlassen wollen, dann aber doch auf die Polizei gewartet hatte.",
       "hint": "(haben, Plusquamperfekt)",
       "answers": [
         "hatte"
       ],
-      "explanation": "Pluperfect with an Ersatzinfinitiv: the finite hatte comes before vernichten wollen, not at the very end of the dass-clause."
+      "explanation": "Pluperfect with an Ersatzinfinitiv: the finite hatte comes before verlassen wollen, not at the very end of the dass-clause."
     },
     {
       "id": "csc-23",

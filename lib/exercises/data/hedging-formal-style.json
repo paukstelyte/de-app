@@ -18,7 +18,7 @@
     {
       "id": "hfs-02",
       "type": "choice",
-      "prompt": "Dies ___ darauf zurückzuführen sein, dass die Stichprobe vergleichsweise klein war.",
+      "prompt": "Dies ___ vor allem mit der vergleichsweise kleinen Stichprobe zusammenhängen.",
       "options": [
         "dürfte",
         "dürften",
@@ -26,7 +26,7 @@
         "darf"
       ],
       "answer": "dürfte",
-      "explanation": "Konjunktiv II dürfte + infinitive marks a cautious assumption ('this is probably due to'); the subject dies is singular."
+      "explanation": "Konjunktiv II dürfte + infinitive marks a cautious assumption ('this is probably connected with'); the subject dies is singular."
     },
     {
       "id": "hfs-03",
@@ -88,7 +88,7 @@
         "lassen"
       ],
       "answer": "ließe",
-      "explanation": "es ließe sich + infinitive ('one could …') is an impersonal Konjunktiv II hedge; with es the verb is singular: ließe."
+      "explanation": "ließe sich + infinitive ('one could …') is an impersonal Konjunktiv II hedge; the dass-clause acts as a singular subject, so ließe."
     },
     {
       "id": "hfs-08",

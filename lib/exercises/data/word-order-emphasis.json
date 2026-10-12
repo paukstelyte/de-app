@@ -258,7 +258,7 @@
     {
       "id": "woe-20",
       "type": "choice",
-      "prompt": "Selbst dem Ministerium ___ die Zahlen zu hoch gegriffen.",
+      "prompt": "Selbst dem Ministerium ___ zu hoch gegriffen.",
       "options": [
         "erschienen die Zahlen",
         "die Zahlen erschienen",
