@@ -43,7 +43,7 @@ npm run dev                  # http://localhost:3000
 |---|---|---|
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase → Project Settings → API | Public by design |
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase → Project Settings → API Keys | The publishable (anon) key; safe in the browser, row-level security protects the data |
-| `SUPABASE_SECRET_KEY` | Supabase → Project Settings → API Keys | **Server-only**, used only by "Delete my account" (`app/account/actions.ts`). Never prefix with `NEXT_PUBLIC_` |
+| `SUPABASE_SECRET_KEY` | Supabase → Project Settings → API Keys | **Server-only**, used only in server code: "Delete my account" (`app/account/actions.ts`) and giving an upload back when the AI read fails (`app/learning/actions.ts`). Never prefix with `NEXT_PUBLIC_` |
 | `OPENROUTER_API_KEY` | OpenRouter → Keys | **Server-only**, used only in `lib/learning/analyse.ts`. Never prefix with `NEXT_PUBLIC_` |
 
 `.env.local` is git-ignored (`.env*` in `.gitignore`, except `.env.example`, which holds no values). On Vercel the two secret keys are set for Production only and marked Sensitive.
