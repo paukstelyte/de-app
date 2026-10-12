@@ -9,12 +9,21 @@ function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+// Suffixes ("-ung") must end at a word boundary, prefixes ("Ge-") must start
+// at one, so "-age" doesn't bold inside "non-agentive" nor "-e" inside "-el".
+function entryPattern(entry: string): string {
+  const body = escapeRegExp(entry);
+  if (entry.startsWith("-")) return `${body}(?![a-zäöüß])`;
+  if (entry.endsWith("-")) return `(?<![a-zäöüß])${body}`;
+  return body;
+}
+
 const ALL_SUFFIXES = Array.from(
   new Set((rules as RuleLike[]).flatMap((rule) => rule.suffixes ?? [])),
 ).sort((a, b) => b.length - a.length);
 
 const PATTERN = ALL_SUFFIXES.length
-  ? new RegExp(`(${ALL_SUFFIXES.map(escapeRegExp).join("|")})`, "i")
+  ? new RegExp(`(${ALL_SUFFIXES.map(entryPattern).join("|")})`, "i")
   : null;
 
 /** Bolds the suffix/prefix (e.g. "-ung", "Ge-") a rule's explanation hinges
