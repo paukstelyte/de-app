@@ -13,7 +13,7 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 | Live upload check (production) | 1 PDF and 5 photos through the live site after the 5-file folder cap went live; storage empty afterwards | **PASS** (2026-10-09) |
 | `bash e2e/exercises.sh` | Browser, no AI: practice pages, guest round, mistakes replay, answers saved when logged in, accuracy shown, phone width, keyboard | **PASS, 27/27 checks** (2026-10-10) |
 | `lib/flashcards/data.test.mjs` (part of `npm test`) | Deck data: the original 976 cards unchanged, valid unique ids, articles, levels and rules, no duplicate nouns, ending rules match their words, each band has a full round, every rule has 3+ cards | **7 / 7 pass** (2026-10-12) |
-| `bash e2e/articles.sh` | Browser, guest, no AI: A · B · C · All picker, level badge, band C gives only C1/C2 cards, old saved level converted, new rules on `/rules`, phone width | **PASS, 22/22 checks** (2026-10-12, local) |
+| `bash e2e/articles.sh` | Browser, guest, no AI: A · B · C · All picker, level badge, band C gives only C1/C2 cards, old saved level converted, new rules on `/rules`, phone width | **PASS, 22/22 checks** (2026-10-12, local; also on the live site after PR #15 was deployed, same day) |
 | `bash e2e/all-practice-pages.sh` | Browser: all 81 practice pages show their first question with no console errors | **PASS, 81/81** (2026-10-10, local; also passed on the live site 2026-10-09) |
 
 Browser checks use the global `playwright-cli` against `BASE` (default `http://localhost:3000`). Test accounts come from environment variables, never from the repo; see [`e2e/README.md`](../e2e/README.md).
