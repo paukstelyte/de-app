@@ -310,19 +310,20 @@
       "type": "order",
       "words": [
         "Es",
-        "kommt",
-        "darauf",
-        "an,",
-        "wie",
+        "handelt",
+        "sich",
+        "darum,",
         "die",
-        "Kommission",
-        "entscheidet."
+        "Kosten",
+        "gerecht",
+        "zu",
+        "verteilen."
       ],
       "answers": [
-        "Es kommt darauf an, wie die Kommission entscheidet."
+        "Es handelt sich darum, die Kosten gerecht zu verteilen."
       ],
-      "translation": "It depends on how the commission decides.",
-      "explanation": "es kommt darauf an: es is the fixed subject, darauf points to the wie-clause, which has the verb at the end."
+      "translation": "The point is to distribute the costs fairly.",
+      "explanation": "es handelt sich darum (the point is): es is the fixed subject, and darum points ahead to the zu-infinitive at the end."
     },
     {
       "id": "kor-27",

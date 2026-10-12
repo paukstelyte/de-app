@@ -7,13 +7,13 @@
       "type": "choice",
       "prompt": "In Wien ___, bezog sie zunächst ein kleines Zimmer im Studentenheim.",
       "options": [
-        "angekommen",
-        "ankommend",
-        "ankommen",
-        "angekommene"
+        "eingetroffen",
+        "eintreffend",
+        "eintreffen",
+        "eingetroffene"
       ],
-      "answer": "angekommen",
-      "explanation": "The arrival is completed before the main action, so Partizip II: In Wien angekommen = Nachdem sie in Wien angekommen war."
+      "answer": "eingetroffen",
+      "explanation": "The arrival is completed before the main action, so Partizip II: In Wien eingetroffen = Nachdem sie in Wien eingetroffen war."
     },
     {
       "id": "pc-02",

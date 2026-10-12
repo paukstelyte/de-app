@@ -373,8 +373,7 @@
       "id": "ca-25",
       "type": "order",
       "answers": [
-        "Die Opposition lehnte den Entwurf ab, wohingegen die Koalition zustimmte.",
-        "Die Koalition lehnte den Entwurf ab, wohingegen die Opposition zustimmte."
+        "Die Opposition lehnte den Entwurf ab, wohingegen die Koalition zustimmte."
       ],
       "words": [
         "Die",
@@ -389,7 +388,7 @@
         "zustimmte."
       ],
       "translation": "The opposition rejected the draft, whereas the coalition agreed.",
-      "explanation": "wohingegen is subordinating, so in its clause the separable verb stays together at the end: zustimmte. (Opposition and Koalition can swap roles.)"
+      "explanation": "wohingegen is subordinating, so in its clause the separable verb stays together at the end: zustimmte."
     },
     {
       "id": "ca-26",

@@ -174,15 +174,15 @@
     {
       "id": "fvg-14",
       "type": "choice",
-      "prompt": "Der Ausschuss hat die Bedenken der Umweltverbände bei seiner abschließenden Bewertung offenbar nicht in ___ gezogen.",
+      "prompt": "Nach dem Stromausfall dauerte es Stunden, bis die Techniker die Anlage wieder in ___ setzen konnten.",
       "options": [
+        "Gang",
         "Betracht",
-        "Rücksicht",
-        "Beachtung",
-        "Anspruch"
+        "Anspruch",
+        "Angriff"
       ],
-      "answer": "Betracht",
-      "explanation": "in Betracht ziehen = to consider. Rücksicht goes with nehmen (Rücksicht nehmen auf), Anspruch with nehmen (in Anspruch nehmen)."
+      "answer": "Gang",
+      "explanation": "etwas in Gang setzen = to get something going. Betracht goes with ziehen (in Betracht ziehen); Anspruch and Angriff go with nehmen."
     },
     {
       "id": "fvg-15",
@@ -312,12 +312,12 @@
     {
       "id": "fvg-26",
       "type": "type",
-      "prompt": "Das Unternehmen ___ seine Kunden erst nach mehreren Wochen davon in Kenntnis, dass ihre Daten von dem Angriff betroffen waren.",
+      "prompt": "Das Verfassungsgericht ___ die umstrittene Regelung vorläufig außer Kraft.",
       "hint": "(setzen, Präteritum)",
       "answers": [
         "setzte"
       ],
-      "explanation": "jemanden von etwas in Kenntnis setzen = to inform someone of something (formal). setzen is regular: setzte."
+      "explanation": "etwas außer Kraft setzen = to suspend or repeal something (formal). setzen is regular: setzte."
     },
     {
       "id": "fvg-27",

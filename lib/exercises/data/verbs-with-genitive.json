@@ -5,7 +5,7 @@
     {
       "id": "vwg-01",
       "type": "choice",
-      "prompt": "Am Jahrestag der Katastrophe gedachte der Bundespräsident in einer bewegenden Rede ___ Opfer.",
+      "prompt": "Mit einer Schweigeminute will die Belegschaft ___ verstorbenen Kollegen gedenken.",
       "options": [
         "der",
         "den",
@@ -13,7 +13,7 @@
         "denen"
       ],
       "answer": "der",
-      "explanation": "gedenken takes a genitive object: die Opfer (plural) → der Opfer."
+      "explanation": "gedenken takes a genitive object: die verstorbenen Kollegen (plural) → der verstorbenen Kollegen."
     },
     {
       "id": "vwg-02",
@@ -122,7 +122,7 @@
     {
       "id": "vwg-10",
       "type": "choice",
-      "prompt": "Trotz zahlreicher Kritik erfreut sich das Programm nach wie vor ___ Beliebtheit.",
+      "prompt": "Trotz anhaltender Kritik erfreut sich das Programm nach wie vor ___ Beliebtheit.",
       "options": [
         "großer",
         "große",
