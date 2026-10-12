@@ -48,12 +48,13 @@ answer_now() { # slug mode
   esac
   echo "$kind" >> "$TMP/types"; sleep 0.5
 }
-cont() { click "Continue →"; sleep 0.4; }
+# After a WRONG answer the page waits for a click on empty space; after a RIGHT one the next question
+# appears by itself after 1.5 s (so wait 2 s, never click: that would skip the next question).
+cont() { js "() => { document.body.click(); return 1 }" >/dev/null; sleep 0.5; }
 # Play n questions of the current round; the first $3 are answered wrong, the rest right.
 play() { # slug n nwrong
   for i in $(seq 1 "$2"); do
-    if [ "$i" -le "$3" ]; then answer_now "$1" wrong; else answer_now "$1" right; fi
-    cont
+    if [ "$i" -le "$3" ]; then answer_now "$1" wrong; cont; else answer_now "$1" right; sleep 2; fi
   done
 }
 # Is there a link whose href is exactly $1 / whose href contains $1?
@@ -119,31 +120,103 @@ for s in dative-case separable-verbs; do
 done
 pw resize 1280 800 >/dev/null
 
-echo "== 6. Keyboard: type item, Enter submits, Enter continues"
-pw goto "$BASE/topics/simple-past/practice" >/dev/null; sleep 3
-found=0
-for i in $(seq 1 10); do
-  q=$(qprobe)
-  if echo "$q" | grep -q '"kind": *"type"'; then found=1; break; fi
-  answer_now simple-past right; cont
-done
-check "reached a type item" '[ "$found" = 1 ]'
-if [ "$found" = 1 ]; then
-  n0=$(position | grep -oiE "Question [0-9]+" | grep -oE "[0-9]+")
+# Walk the round on $1 (answering right) until the current question is of kind $2; reshuffle up to 5 times.
+goto_kind() { # slug kind
+  local t i q
+  for t in 1 2 3 4 5; do
+    pw goto "$BASE/topics/$1/practice" >/dev/null; sleep 3
+    for i in $(seq 1 10); do
+      q=$(qprobe); echo "$q" | grep -q "\"kind\": *\"$2\"" && return 0
+      answer_now "$1" right; sleep 2
+    done
+  done
+  return 1
+}
+qnum() { position | grep -oiE "Question [0-9]+" | grep -oE "[0-9]+"; }
+no_continue_button() { [ "$(js "() => ![...document.querySelectorAll('button')].some(b=>/continue/i.test(b.textContent))")" = true ]; }
+
+echo "== 6. Keyboard: type item, Enter submits; right moves on by itself; wrong waits for Enter"
+goto_kind simple-past type; found=$?
+check "reached a type item" '[ "$found" = 0 ]'
+if [ "$found" = 0 ]; then
+  q=$(qprobe); n0=$(qnum)
   ans=$(echo "$q" | python3 "$TMP/solve.py" simple-past right | python3 -c 'import json,sys;print(json.loads(sys.stdin.read())["text"])')
   echo "     typing '$ans'"
-  pw type "$ans" >/dev/null; pw press Enter >/dev/null; sleep 1
-  check "Enter submits the typed answer ('Correct!' feedback)" 'has_text "Correct!"'
+  pw type "$ans" >/dev/null; pw press Enter >/dev/null
+  snap=$(text) # one read right after Enter (the browser is slow, so don't sleep first: the page moves on after 1.5 s)
+  check "Enter submits the typed answer ('Correct!' feedback)" 'echo "$snap" | grep -qF "Correct!"'
+  check "no Continue button after answering" 'no_continue_button'
+  check "the submitting Enter did not skip ahead (still question $n0)" 'echo "$snap" | grep -qiE "Question $n0 of"'
+  sleep 2
+  n1=$(qnum)
+  check "right answer moved on by itself, by exactly one (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+fi
+goto_kind simple-past type; found=$?
+check "reached another type item" '[ "$found" = 0 ]'
+if [ "$found" = 0 ]; then
+  n0=$(qnum)
+  pw type "xxx" >/dev/null; pw press Enter >/dev/null; sleep 1
+  check "wrong typed answer shows 'Not quite.'" 'has_text "Not quite."'
+  check "wrong answer shows the hint 'Tap or click anywhere, or press Enter to continue'" 'has_text "Tap or click anywhere, or press Enter to continue"'
+  check "no Continue button after a wrong answer" 'no_continue_button'
+  sleep 2.5
+  check "wrong answer waits (still question $n0 after 3.5 s)" '[ "$(qnum)" = "$n0" ] && has_text "Not quite."'
   pw press Enter >/dev/null; sleep 1
-  n1=$(position | grep -oiE "Question [0-9]+" | grep -oE "[0-9]+")
-  check "second Enter continues (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+  n1=$(qnum)
+  check "Enter continues after a wrong answer (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+fi
+
+echo "== 7. Arrow keys on a choice item and an order item; click continues a wrong answer"
+goto_kind simple-past choice; found=$?
+check "reached a choice item" '[ "$found" = 0 ]'
+if [ "$found" = 0 ]; then
+  OPT="() => { const b=[...document.querySelectorAll('button[lang=de]')]; return JSON.stringify(b.indexOf(document.activeElement)); }"
+  check "first option is focused on a choice item" '[ "$(js "$OPT")" = "\"0\"" ]'
+  pw press ArrowRight >/dev/null; sleep 0.3
+  check "→ moves focus to the second option" '[ "$(js "$OPT")" = "\"1\"" ]'
+  pw press ArrowLeft >/dev/null; pw press ArrowLeft >/dev/null; sleep 0.3
+  check "← twice wraps to the last option" '[ "$(js "() => { const b=[...document.querySelectorAll(\"button[lang=de]\")]; return b.indexOf(document.activeElement) === b.length - 1 }")" = true ]'
+  pw press ArrowRight >/dev/null; pw press ArrowRight >/dev/null; sleep 0.3
+  n0=$(qnum)
+  pw press Enter >/dev/null; sleep 0.8
+  check "Enter picks the focused option (feedback shown)" 'has_text "Correct!" || has_text "Not quite."'
+  check "no Continue button after answering a choice item" 'no_continue_button'
+  if has_text "Not quite."; then
+    sleep 2.5
+    check "a wrong choice waits (still question $n0)" '[ "$(qnum)" = "$n0" ]'
+    cont; n1=$(qnum)
+    check "a click on empty space continues (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+  else
+    sleep 2; n1=$(qnum)
+    check "a right choice moves on by itself (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+  fi
+fi
+goto_kind simple-past choice; found=$?
+if [ "$found" = 0 ]; then
+  n0=$(qnum); answer_now simple-past wrong; sleep 2.5
+  check "wrong choice by click waits for 2.5 s (question $n0)" '[ "$(qnum)" = "$n0" ] && has_text "Not quite."'
+  pw press Enter >/dev/null; sleep 1; n1=$(qnum)
+  check "Enter continues a wrong choice (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
+fi
+goto_kind separable-verbs order; found=$?
+check "reached an order item" '[ "$found" = 0 ]'
+if [ "$found" = 0 ]; then
+  TILE="() => document.activeElement.getAttribute('data-i')"
+  check "first word tile is focused on an order item" '[ "$(js "$TILE")" = "\"0\"" ]'
+  pw press ArrowRight >/dev/null; sleep 0.3
+  check "→ moves focus to the next word tile" '[ "$(js "$TILE")" = "\"1\"" ]'
+  n0=$(qnum); answer_now separable-verbs wrong; sleep 2.5
+  check "wrong order answer waits (question $n0) and shows the hint" '[ "$(qnum)" = "$n0" ] && has_text "Tap or click anywhere, or press Enter to continue"'
+  check "no Continue button after an order answer" 'no_continue_button'
+  cont; n1=$(qnum)
+  check "click continues a wrong order answer (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'
 fi
 
 echo "== 4. Logged in: answers are saved, accuracy shows"
 login "$E2E_MAIN_EMAIL" "$E2E_MAIN_PASSWORD"
 B=$(sql_value "$CNT_SQL"); sql "$CNT_SQL"
 pw goto "$BASE/topics/modal-verbs/practice" >/dev/null; sleep 3
-answer_now modal-verbs wrong; cont; answer_now modal-verbs right; sleep 3
+answer_now modal-verbs right; sleep 2; answer_now modal-verbs wrong; sleep 3
 check "two items answered ('Question 2 of 10 · 1 correct')" 'has_text "Question 2 of 10 · 1 correct"'
 sql "$ROWS_SQL"
 A=$(sql_value "$CNT_SQL"); sql "$CNT_SQL"

@@ -6,15 +6,15 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 
 | Suite | What it covers | Latest result |
 |---|---|---|
-| `npm test` | Unit tests: upload rules, AI answer parsing, Word reader (incl. zip-bomb cap), focus list, usage display, answer checking, and validation of all 81 exercise files | **154 / 154 pass** (2026-10-12) |
+| `npm test` | Unit tests: upload rules, AI answer parsing, Word reader (incl. zip-bomb cap), focus list, usage display, answer checking, and validation of all 81 exercise files | **158 / 158 pass** (2026-10-12) |
 | `supabase/tests/cross-user-privacy.sql` | Database: a signed-in user can't read, change or delete another user's AI outputs, focus list, answers or upload files | **16/16 checks pass** (2026-10-10) |
 | `supabase/tests/upload-allowance.sql` | Database: "uploads left" counts, next-free time, the 11th upload refused, a given-back upload freeing a slot, the shared limit, no self-refund through the API, anon refused | **11/11 checks pass** (2026-10-12, live database, rolled back) |
-| `bash e2e/learning.sh` | Browser, real AI call: login redirect, PDF / HEIC / Word / blank-photo uploads, files deleted after reading, focus, delete, second user isolation | **27/29 on the live site** (2026-10-12, after PRs #7–#10, accounts `e2e-main` / `e2e-other`). The 2 failures were check 9: the script read the new always-present "uploads left" live region instead of the upload message (a test bug from PR #7, not an app bug). With the selector fixed, the two message checks of check 9 were re-run alone on the live site and both rejection messages were read correctly. Its quota and storage checks had already passed in the full run, and the card still showed the same uploads left afterwards. The same bug made every real upload print "(no result after 90s)" and wait 90 s; those checks still passed because they read the new document and the storage folder, not the message. The new check 1 (login redirects) passed. The live card showed "6 of 10" uploads left after the run's 4 uploads. |
+| `bash e2e/learning.sh` | Browser, real AI call: login redirect, PDF / HEIC / Word / blank-photo uploads, files deleted after reading, focus, delete, second user isolation | **PASS, all checks, local dev server** (2026-10-12, branch `feature/smoother-answers-handwriting`, accounts `e2e-main` / `e2e-other`). A blank photo now shows "We couldn't read any text in this photo...", saves no document, and the upload counter now goes up by one (an unreadable photo counts: giving it back let blank photos bypass the daily spend limit). The updated check 4 and the 4-upload quota pre-check have **not been run yet** (the test account's daily quota is mostly used; `bash -n e2e/learning.sh` passes). The PASS above predates this change. Earlier: **27/29** on the live site on 2026-10-12 (the 2 failures were a test bug in the check 9 selector, since fixed). |
 | Live upload check (production) | 1 PDF and 5 photos through the live site after the 5-file folder cap went live; storage empty afterwards | **PASS** (2026-10-09) |
-| `bash e2e/exercises.sh` | Browser, no AI: practice pages, guest round, mistakes replay, answers saved when logged in, accuracy shown, phone width, keyboard | **PASS, 27/27 checks** (2026-10-10) |
+| `bash e2e/exercises.sh` | Browser, no AI: practice pages, guest round, mistakes replay, answers saved when logged in, accuracy shown, phone width, keyboard | **PASS, 51 checks** (2026-10-12, local, after the final review fixes) |
 | `lib/flashcards/data.test.mjs` (part of `npm test`) | Deck data: the original 976 cards unchanged, valid unique ids, articles, levels and rules, no duplicate nouns, ending rules match their words, each band has a full round, every rule has 3+ cards | **7 / 7 pass** (2026-10-12) |
-| `bash e2e/articles.sh` | Browser, guest, no AI: A · B · C · All picker, level badge, band C gives only C1/C2 cards, old saved level converted, new rules on `/rules`, phone width | **PASS, 22/22 checks** (2026-10-12, local; also passed on the live site 2026-10-12, after PR #15 was deployed) |
-| `bash e2e/all-practice-pages.sh` | Browser: all 81 practice pages show their first question with no console errors | **PASS, 81/81** (2026-10-10, local; also passed on the live site 2026-10-09) |
+| `bash e2e/articles.sh` | Browser, guest, no AI: A · B · C · All picker, level badge, band C gives only C1/C2 cards, old saved level converted, new rules on `/rules`, phone width | **PASS, 33 checks** (2026-10-12, local, after the final review fixes; an earlier version also passed on the live site 2026-10-12) |
+| `bash e2e/all-practice-pages.sh` | Browser: all 81 practice pages show their first question with no console errors | **PASS, 81/81** (2026-10-12, local; also passed on the live site 2026-10-09) |
 
 Browser checks use the global `playwright-cli` against `BASE` (default `http://localhost:3000`). Test accounts come from environment variables, never from the repo; see [`e2e/README.md`](../e2e/README.md).
 
@@ -27,9 +27,18 @@ Browser checks use the global `playwright-cli` against `BASE` (default `http://l
 - *Your focus now* lists them;
 - the upload folder in Supabase Storage is empty afterwards.
 
-The HEIC photo and the Word file give the same topics. A blank image gives "No German grammar topics found" and no invented text.
+The HEIC photo and the Word file give the same topics. A blank image is not saved: the player sees "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger." and the upload still counts.
 
 PR #1 added a manual real-upload check of the model and cost display (before PR #3 removed the deprecated `usage: { include: true }` request option; OpenRouter documents usage as always included, so the display is unchanged, and the next real upload will confirm it). The upload box named `google/gemini-2.5-flash-lite`. The card showed "Read by Gemini 2.5 Flash Lite · 3,406 tokens · about $0.0004". The saved row held 3,169 prompt and 237 completion tokens and $0.0004117.
+
+## Handwriting (real AI, 2026-10-12)
+
+8 of the owner's own handwritten note pages (not in the repo), sent to `google/gemini-2.5-flash-lite` before and after the prompt was improved for handwriting (sideways photos, crossed-out words left out, `[?]` for unreadable words, colour and underlining read as emphasis only). Total cost about $0.0063 for the 8 pages after, $0.0056 before.
+
+- Same quality overall: all 8 pages read, titles and topics sensible, none flagged `fromMistake` (the notes have no teacher corrections). Topic lists are a little longer (5-6 instead of 3-5).
+- Page 5 (grammar notes on conjunctions) failed in the first run (invalid answer, no result) and now reads fine.
+- Not fixed: `[?]` was never used (the model still guesses garbled words), and crossed-out words on page 1 (opinion phrases) ("Das", "Dass") are still in the text. The sideways sentence-structure page is read in a different order (words grouped by column), not clearly better.
+- Teacher-correction marks on printed homework are still untested.
 
 ## Signed-out lockout
 

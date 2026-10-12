@@ -6,11 +6,11 @@ Live: https://de-app-six.vercel.app
 
 ## What it does
 
-1. **Customized Learning** (`/learning`, logged in). Upload a worksheet, textbook page, typed notes or homework: one PDF (about 20 pages at most; the page count is a best-effort check), one Word file, or up to 5 photos (JPG, PNG, WebP, HEIC), 10 MB each. An AI model reads it and picks the 3–6 grammar topics it practises from a fixed catalogue of 82 A1–C2 topics, mistakes first, each with a reason quoting your document. The result is saved, and the original file is deleted straight after reading.
+1. **Customized Learning** (`/learning`, logged in). Upload a worksheet, textbook page, typed or neatly handwritten notes, or homework: one PDF (about 20 pages at most; the page count is a best-effort check), one Word file, or up to 5 photos (JPG, PNG, WebP, HEIC), 10 MB each. An AI model reads it and picks the 3–6 grammar topics it practises from a fixed catalogue of 82 A1–C2 topics, mistakes first, each with a reason quoting your document. The result is saved, and the original file is deleted straight after reading.
 2. **Your focus now.** The topics from your uploads of the last 30 days, ranked by mistakes and how often they come up, with your progress on each. Remove a topic, or add one from any topic page.
 3. **Practise my focus** (`/learning/practice`). One mixed round of exercises from exactly your focus topics.
-4. **Grammar Topics** (`/topics`, open to everyone). The 82-topic catalogue. Each topic has a practice page with 30 checked exercises (pick the answer, type the word, put the words in order), rounds of 10, an explanation after each answer, and "Practise my mistakes". The practice pages are labelled "still in test mode".
-5. **der · die · das** (`/articles`). The original flashcard game for noun gender: 1,286 A1–C2 nouns (pick A, B, C or All), every answer explained by its rule.
+4. **Grammar Topics** (`/topics`, open to everyone). The 82-topic catalogue. Each topic has a practice page with 30 checked exercises (pick the answer, type the word, put the words in order), rounds of 10, an explanation after each answer, and "Practise my mistakes". Correct answers move on by themselves after 1.5 s; after a mistake, click anywhere or press Enter (on the der · die · das cards, also after a correct answer on a card with an exception note). ← / → move between answers. The practice pages are labelled "still in test mode".
+5. **der · die · das** (`/articles`). The original flashcard game for noun gender: 1,286 A1–C2 nouns (pick A, B, C or All), every answer explained by its rule, answered the same way (← / → and Enter work too).
 
 **Why AI is the core.** The catalogue and exercises are generic. The AI is what connects them to *your* lessons: it reads your own material and decides what you should practise now. Without it the app wouldn't know what you're learning.
 
@@ -69,10 +69,10 @@ Every table with user data has row-level security with owner-only policies, and 
 | `npm run lint` | ESLint |
 | `npm test` | Unit tests (`lib/**/*.test.mjs`, Node's built-in test runner): upload rules, AI answer parsing, Word reader, focus list and focus practice, usage display, flashcard progress and trouble words, safe login redirects, exercise checking, and validation of all 81 exercise files |
 | `npm run sync:exercises` | After editing `lib/exercises/data/*.json`: regenerate `lib/exercises/sets.ts` and the practice links |
-| `bash e2e/learning.sh` | Browser checks of Customized Learning with a real AI call: login redirect, PDF/HEIC/Word/blank uploads, files deleted, focus, delete, and a **second user can't see the first user's documents** |
+| `bash e2e/learning.sh` | Browser checks of Customized Learning with a real AI call: login redirect, PDF/HEIC/Word uploads, unreadable photo refused (and still counted as an upload), files deleted, focus, delete, and a **second user can't see the first user's documents** |
 | `npx supabase db query --linked --project-ref <ref> -f supabase/tests/cross-user-privacy.sql` | Database check that one user can't read, change or delete another user's documents, focus list, answers or files (rolled back, changes nothing) |
-| `bash e2e/exercises.sh` | Browser checks of the practice pages: guest round, mistakes replay, answers saved when logged in, phone width, keyboard |
-| `bash e2e/articles.sh` | Browser checks of the der · die · das level picker (A · B · C · All), saved-choice conversion, new rules on `/rules`, phone width; guest only |
+| `bash e2e/exercises.sh` | Browser checks of the practice pages: guest round, mistakes replay, answers saved when logged in, phone width, keyboard (arrow keys, no Continue button, auto-advance) |
+| `bash e2e/articles.sh` | Browser checks of the der · die · das level picker (A · B · C · All), saved-choice conversion, new rules on `/rules`, phone width, arrow keys, wrong answers and exception cards wait for a click or Enter; guest only |
 | `bash e2e/all-practice-pages.sh` | Opens all 81 practice pages and checks each shows its first question |
 
 The browser checks use the global `playwright-cli` and test accounts from environment variables; see [`e2e/README.md`](e2e/README.md). Latest results: [`docs/testing.md`](docs/testing.md).
@@ -111,7 +111,7 @@ Security scans (`/security-scan`, `/security-scan-changed`) run with three scann
 
 ## Known limits
 
-- Handwriting isn't supported; uploads should be printed or typed material.
+- Neat handwriting is read well, but the AI still guesses unclear words (it never wrote `[?]` in testing) and can keep crossed-out words. Teacher correction marks on handwritten pages are untested. A photo with no readable text is refused and not saved.
 - Emails are sent through Brevo's free plan (300/day) from a Gmail sender, so some may land in spam. A custom domain would fix that.
 - Stats are computed from a user's whole answer history on each page load. That's fine for thousands of answers; move it into SQL if histories get much larger.
 - The 100-uploads-a-day app-wide cap protects the AI budget but can be used up by about 10 accounts.

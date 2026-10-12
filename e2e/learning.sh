@@ -2,7 +2,7 @@
 # Browser checks for Customized Learning (/learning, /topics). See e2e/README.md.
 # The MAIN account must be a disposable test account: this script adds documents and focus rows
 # to it, and the page cannot delete focus rows (it only marks them 'removed').
-# Real uploads call the AI (about $0.0005 each) and use 4 of the main account's 10 uploads/day.
+# Real uploads call the AI (about $0.0005 each) and use 4 of the main account's 10 uploads/day (PDF, HEIC, Word and the blank photo, which counts too).
 cd "$(dirname "$0")/.." || exit 2
 source e2e/lib.sh
 FX="$PWD/e2e/fixtures"
@@ -26,7 +26,7 @@ choose() { pw goto "$BASE/learning" >/dev/null; sleep 3; pw click "text=Choose a
 wait_upload() {
   for i in $(seq 1 90); do sleep 1
     m=$(js "() => document.querySelector('#upload-title')?.parentElement.querySelector('[role=status]:not(#allowance-note),[role=alert]')?.textContent || ''" | unjson)
-    case "$m" in Done*|*"didn't"*|*wrong*|Please*|Each*|"Upload one"*|"Upload at most"*|Choose*) echo "$m"; return;; esac
+    case "$m" in Done*|*"didn't"*|"We couldn't"*|*wrong*|Please*|Each*|"Upload one"*|"Upload at most"*|Choose*) echo "$m"; return;; esac
   done; echo "(no result after 90s)"
 }
 # Newest document: its title, then its topic links; and the "Your focus now" links.
@@ -42,13 +42,17 @@ delete_newest_doc() { # clicks Delete then Yes, delete it on the first document
 # Upload a real fixture, wait, then check the new document (check 2/3/4) and the storage folder (check 5).
 upload_and_check() { # label file
   echo "-- upload $1"
+  pw goto "$BASE/learning" >/dev/null; sleep 3; DOCS_BEFORE=$(doc_count)
+  USAGE_BEFORE=$(sql_value "$USAGE_SQL")
   choose "$FX/$2"; msg=$(wait_upload); echo "     page says: $msg"; sleep 2
   pw goto "$BASE/learning" >/dev/null; sleep 3
   TITLE=$(newest_title); TOPICS=$(newest_topics); FOCUS=$(focus_topics)
   echo "     newest document: '$TITLE' topics: $TOPICS"; echo "     focus: $FOCUS"
   case "$2" in
     blank.png)
-      check "$1: 'No German grammar topics found', no topics, focus unchanged" '[ -z "$TOPICS" ] && text | grep -q "No German grammar topics found"' ;;
+      check "$1: page says 'We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.'" '[ "$msg" = "We couldn'"'"'t read any text in this photo. Try a sharper photo in good light, or write a little larger." ]'
+      check "$1: no new document saved" '[ "$(doc_count)" = "$DOCS_BEFORE" ]'
+      check "$1: upload counter went up by one (an unreadable photo still counts)" '[ "$(sql_value "$USAGE_SQL")" = "$((USAGE_BEFORE + 1))" ]' ;;
     *)
       check "$1: document appears (title mentions lesson 7 or dative prepositions (the AI title varies, any language))" 'echo "$TITLE" | grep -qiE "Lektion 7|Lesson 7|Pr.positionen|Dative Prepositions"'
       check "$1: topics include prepositions-dative or dative-case" 'echo "$TOPICS" | grep -qE "$TOPIC_RE"'

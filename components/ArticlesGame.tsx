@@ -15,6 +15,8 @@ import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
 import { StatusBadge } from "@/components/StatusBadge";
 import { RULE_TEXT_BY_ID } from "@/lib/flashcards/storage";
 import { CORRECT_STREAK_TO_CLEAR, percent } from "@/lib/progress";
+import { useAdvance } from "@/lib/useAdvance";
+import { useArrowKeys } from "@/lib/useArrowKeys";
 
 const buttonBase =
   "rounded-lg border px-4 py-3 text-sm font-medium capitalize transition-colors";
@@ -113,7 +115,7 @@ export function ArticlesGame({
           <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">How to use</h2>
           <ul className="mt-3 list-disc space-y-2 pl-4 text-xs leading-5 text-zinc-600 dark:text-zinc-400">
             <li>Choose a level, then pick der, die or das. The card flips to show the rule behind the answer.</li>
-            <li>Tap the card or press Enter to go to the next word.</li>
+            <li>A correct answer moves on by itself; after a mistake, or on a card with an exception note, click anywhere or press Enter. Use ← and → to choose, Enter to pick.</li>
             <li>
               After {ROUND_SIZE} words, replay the ones you missed or start the
               next {ROUND_SIZE}. Overall accuracy keeps counting until you restart.
@@ -311,14 +313,18 @@ function Game({
 }) {
   const { cards } = useFlashcards();
   const card = cards.find((c) => c.id === cardId);
+  const answersRef = useArrowKeys<HTMLDivElement>();
+  useAdvance(chosen !== null, !!card && chosen === card.article && !card.exception, onAdvance);
   if (!card) return null;
 
   const isCorrect = chosen === card.article;
+  const waits = !!chosen && (!isCorrect || !!card.exception); // otherwise a correct answer moves on by itself
 
   return (
     <div className="flex flex-col gap-3">
       <p role="status" className="sr-only">
         {chosen && (isCorrect ? "Correct!" : `Not quite. It's ${card.article} ${card.noun}.`)}
+        {chosen && waits && " Press Enter to continue."}
       </p>
       <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
         <span>{positionLabel}</span>
@@ -336,11 +342,8 @@ function Game({
       </div>
 
       <div
-        onClick={() => {
-          if (chosen) onAdvance();
-        }}
         className={`relative flex min-h-[380px] flex-col items-center justify-center overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-8 text-center shadow-[8px_8px_0_var(--accent)] sm:p-12 ${
-          chosen ? "cursor-pointer" : ""
+          waits ? "cursor-pointer" : ""
         }`}
       >
         <span className="absolute right-5 top-5" data-card-level aria-label={`Level ${card.level}`}>
@@ -349,7 +352,7 @@ function Game({
         <span className="absolute bottom-5 left-5 h-5 w-5 border-b border-l border-[var(--line)]" />
         <p className="text-4xl font-bold tracking-[-0.06em] sm:text-5xl">{card.noun}</p>
 
-        <div className="mt-8 grid w-full max-w-sm grid-cols-3 gap-3">
+        <div ref={answersRef} className="mt-8 grid w-full max-w-sm grid-cols-3 gap-3">
           {ARTICLES.map((article) => {
             if (!chosen) {
               return (
@@ -413,19 +416,7 @@ function Game({
               </div>
             )}
 
-            {/* Clicking anywhere on the card advances too; this button is what
-                keyboard and screen-reader users land on after answering. */}
-            <button
-              type="button"
-              autoFocus
-              onClick={(event) => {
-                event.stopPropagation();
-                onAdvance();
-              }}
-              className="self-center rounded text-xs text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300"
-            >
-              Tap or press Enter to continue →
-            </button>
+            {waits && <p className="self-center text-xs text-zinc-500 dark:text-zinc-400">Tap or click anywhere, or press Enter to continue</p>}
           </div>
         )}
       </div>

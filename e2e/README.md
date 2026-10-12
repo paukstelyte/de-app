@@ -8,7 +8,7 @@ Browser checks for Customized Learning, driven by [playwright-cli](https://www.n
 |---|---|
 | Guest and login | Guest `/learning` and `/learning/practice` are redirected to `/login?next=…`; logging in lands on `/learning`; `/` redirects there |
 | PDF, HEIC photo, Word | Each upload creates a "Lektion 7" document with `prepositions-dative` / `dative-case`, listed under "Your focus now" |
-| Blank image | "No German grammar topics found", no topics |
+| Blank image | "We couldn't read any text in this photo…" message, no document saved, upload counter goes up by one (it still counts) |
 | Storage | After every upload the `learning-uploads` bucket is empty (read-only SQL, printed with its result) |
 | Focus | "Remove from my focus" hides a topic; "Add to my focus" on `/topics/modal-verbs` adds it |
 | Delete | A deleted document is gone after reload |
@@ -48,7 +48,7 @@ Set `BASE=https://…` to run against another deployment.
 Checks the `/topics/<slug>/practice` pages: guest links and 404s, a full guest round (3 wrong, 7 right;
 "Practise my mistakes (3)"; "Next 10"; all three item types), no rows written for guests, answers saved
 to `public.attempts` when logged in (and "Your accuracy so far" on the topic page and the `/topics` card),
-no horizontal scroll at 390px, and Enter to submit/continue on a type item. The right and wrong answers
+no horizontal scroll at 390px, Enter to submit on a type item, no Continue button, correct answers moving on by themselves (wrong ones waiting for a click or Enter), and ← / → on choice and word-order items (51 checks). The right and wrong answers
 come from `lib/exercises/data/<slug>.json`. No AI is involved, so it costs nothing.
 
 ```bash
@@ -72,7 +72,7 @@ bash e2e/all-practice-pages.sh                   # about 2 minutes
 
 Checks the der · die · das level picker as a guest: A · B · C · All with All as the default, a level badge on each card,
 band C giving only C1/C2 cards (answered by keyboard), an old saved level converted, the new rules on `/rules`, and no
-horizontal scroll at 390px. No accounts, no AI, nothing saved.
+horizontal scroll at 390px. Also: ← / → move between der · die · das, a wrong answer waits, a click anywhere or Enter continues, and Restart still restarts (33 checks). No accounts, no AI, nothing saved.
 
 ```bash
 bash e2e/articles.sh                             # about 1 minute
