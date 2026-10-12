@@ -21,10 +21,10 @@ const ERRORS = {
 };
 
 /** Gives an upload back when the AI read failed (no result, so no paid answer to keep). A failed save is not given back: the AI call was already paid for. Admin key, server only: users can't refund themselves. */
-async function giveBackUpload(id: number) {
+async function giveBackUpload(id: number, userId: string) {
   if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
-  const { error } = await admin.from("learning_upload_usage").delete().eq("id", id);
+  const { error } = await admin.from("learning_upload_usage").delete().eq("id", id).eq("user_id", userId); // the admin key skips row-level security, so pin the row to its owner here
   if (error) console.error("giving back the upload failed:", error.message);
 }
 
@@ -66,7 +66,7 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
 
     const result = await analyseDocument({ kind, files, docxText });
     if ("error" in result) {
-      await giveBackUpload(usageId);
+      await giveBackUpload(usageId, userId);
       return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
     }
     const a = result.analysis;

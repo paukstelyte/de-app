@@ -5,7 +5,7 @@
 - **Date:** 2026-10-12
 - **Reviewer:** the `ai-code-reviewer` subagent (`.claude/agents/ai-code-reviewer.md`), run on `git diff main...feature/upload-allowance` before merging. It read the diff and the previous quota migration; it did not run tests or SQL.
 - **Scope:** migration `20261012100000_upload_allowance.sql`, `app/learning/actions.ts`, `app/learning/page.tsx`, `components/learning/UploadBox.tsx`, `lib/learning/allowance.ts` and its test, `supabase/tests/upload-allowance.sql`, `e2e/lib.sh`, docs.
-- **Course-requirement checks requested:** OpenRouter server-side only, no `NEXT_PUBLIC_` secrets, `SUPABASE_SECRET_KEY` only in server code, RLS on every new table, no new packages. (`/security-scan-changed` was not available in the session that made this change; the reviewer's security checks below stand in for it, and a separate scan is still advisable before the next release.)
+- **Course-requirement checks requested:** OpenRouter server-side only, no `NEXT_PUBLIC_` secrets, `SUPABASE_SECRET_KEY` only in server code, RLS on every new table, no new packages. (The security scan of the changed files was run afterwards; see the last section.)
 
 ## Verdict
 Approve with changes. Migration, grants and deploy order are sound; two Warnings needed fixing before merge.
@@ -57,3 +57,20 @@ None.
 | Suggestion: `UPLOAD_NOTE` | Noted here: the note lost the format list and "such as" wording because the dropzone label directly above already shows them. |
 
 Re-run after the fixes: `npm test` 132/132, `tsc` and lint clean, `supabase/tests/upload-allowance.sql` 11/11.
+
+## Security scan of the changed files (2026-10-12)
+
+The three scanners (Supabase, Next.js, Vercel) ran read-only on the 14 changed files of the 2 commits, following the `/security-scan-changed` procedure. The Supabase scanner checked the live database with read-only selects. Result: **0 critical, 0 high, 0 medium, 4 low.**
+
+| # | Low finding | Flagged by | Action |
+|---|---|---|---|
+| 1 | The admin delete in `giveBackUpload` matched on the row id only (the admin key skips row-level security). Not exploitable today: the id always comes from the caller's own quota call. | Next.js | Fixed: the delete also matches `user_id`. |
+| 2 | An upload is given back on any AI failure, including `unreadable`, so someone who can trigger failures reliably could make calls without using quota. | Supabase | Accepted. `unreadable` happens before any AI call (no cost); a failed AI call costs almost nothing; the daily upload cap still limits successful reads. Refunds after a paid, saved result are not given. |
+| 3 | `SUPABASE_SECRET_KEY` must be set for Production and marked Sensitive in Vercel, because refunds now read it. If missing, nothing crashes; the refund is skipped and logged. | Vercel | **To confirm in the Vercel dashboard** (the scanner could not read it: Vercel CLI not installed). |
+| 4 | `upload_allowance()` shows any signed-in user the shared remaining count and the time the oldest upload frees up. No user ids or rows. | Supabase | Accepted: intended, and the shared limit is what the page has to explain. |
+
+Also noted and not acted on: the document-count pre-check can race with a parallel upload (the database trigger still enforces the limit, costing one wasted AI call), and the admin client is built in two places (a shared `lib/supabase/admin.ts` is optional).
+
+**Checked and fine:** both functions are refused for `anon` and open to `authenticated` only (live ACLs); `security definer` with an empty `search_path`; exactly one `use_upload_quota`, returning `bigint`; `learning_upload_usage` closed to `anon` and `authenticated` with RLS on; no secret in client code or props; no secret in this branch's commits; `.env.e2e` and `.env.local` git-ignored and untracked; migration-before-code deploy order is safe.
+
+**Not checked:** Vercel dashboard settings, live security headers, whether a secret was committed earlier in history (only this branch's commits were searched), dependency versions.
