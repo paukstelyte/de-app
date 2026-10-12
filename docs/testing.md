@@ -7,7 +7,7 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 | Suite | What it covers | Latest result |
 |---|---|---|
 | `npm test` | Unit tests: upload rules, AI answer parsing, Word reader (incl. zip-bomb cap), focus list, usage display, answer checking, and validation of all 81 exercise files | **158 / 158 pass** (2026-10-12) |
-| `supabase/tests/cross-user-privacy.sql` | Database: a signed-in user can't read, change or delete another user's AI outputs, focus list, answers or upload files | **16/16 checks pass** (2026-10-10) |
+| `supabase/tests/cross-user-privacy.sql` | Database: a signed-in user can't read, change or delete another user's AI outputs, focus list, answers or upload files, or their upload-counter rows | **19/19 checks pass** (2026-10-12, live database, rolled back; 16/16 on 2026-10-10) |
 | `supabase/tests/upload-allowance.sql` | Database: "uploads left" counts, next-free time, the 11th upload refused, a given-back upload freeing a slot, the shared limit, no self-refund through the API, anon refused | **11/11 checks pass** (2026-10-12, live database, rolled back) |
 | `bash e2e/learning.sh` | Browser, real AI call: login redirect, PDF / HEIC / Word / blank-photo uploads, files deleted after reading, focus, delete, second user isolation | **PASS, all checks, local dev server** (2026-10-12, branch `feature/smoother-answers-handwriting`, accounts `e2e-main` / `e2e-other`). A blank photo now shows "We couldn't read any text in this photo...", saves no document, and the upload counter now goes up by one (an unreadable photo counts: giving it back let blank photos bypass the daily spend limit). The updated check 4 and the 4-upload quota pre-check have **not been run yet** (the test account's daily quota is mostly used; `bash -n e2e/learning.sh` passes). The PASS above predates this change. Earlier: **27/29** on the live site on 2026-10-12 (the 2 failures were a test bug in the check 9 selector, since fixed). |
 | Live upload check (production) | 1 PDF and 5 photos through the live site after the 5-file folder cap went live; storage empty afterwards | **PASS** (2026-10-09) |
@@ -40,6 +40,10 @@ PR #1 added a manual real-upload check of the model and cost display (before PR 
 - Not fixed: `[?]` was never used (the model still guesses garbled words), and crossed-out words on page 1 (opinion phrases) ("Das", "Dass") are still in the text. The sideways sentence-structure page is read in a different order (words grouped by column), not clearly better.
 - Teacher-correction marks on printed homework are still untested.
 
+## AI cost per document
+
+From the cost shown on each document card (OpenRouter's response), 2026-10-12: the one-page sample worksheet (`e2e/fixtures/lektion7.pdf`) cost about $0.0005 (3,568 tokens); a photo of several textbook pages cost about $0.002 (7,747 tokens); single handwritten note pages cost about $0.0007–0.001 each.
+
 ## Signed-out lockout
 
 - `/learning`, `/learning/practice`, `/progress` and `/account` redirect signed-out visitors to `/login?next=…`. This is done by `lib/supabase/proxy.ts`, plus a guard in each page.
@@ -64,23 +68,26 @@ Two independent checks show one learner's AI context can't be reached by another
 npx supabase db query --linked --project-ref <ref> -f supabase/tests/cross-user-privacy.sql
 ```
 
-Result on 2026-10-10:
+Result on 2026-10-12 (re-run after the upload counter got its owner-scoped read policy, with a positive control that A can read their own rows; the first run on 2026-10-10 passed 16/16):
 
 | Check | Expected | Result |
 |---|---|---|
 | setup: both test users exist | yes | yes |
-| setup: A has documents | > 0 | 2 |
+| setup: A has documents | > 0 | 3 |
 | setup: A has focus rows | > 0 | 3 |
-| setup: A has saved answers | > 0 | 80 |
+| setup: A has saved answers | > 0 | 140 |
+| setup: A has upload-counter rows | > 0 | 3 |
 | setup: A has an uploaded file | > 0 | 1 |
+| A reads their own upload counter (owner policy) | > 0 | 3 |
 | B is signed in as B | yes | yes |
 | B reads A's documents (AI outputs) | 0 | 0 |
 | B reads A's focus list | 0 | 0 |
 | B reads A's answers | 0 | 0 |
 | B lists A's uploaded files | 0 | 0 |
+| B reads A's upload counter (RLS) | 0 | 0 |
 | B changes A's focus list (RLS on update) | 0 | 0 |
 | B deletes A's documents (RLS on delete) | 0 | 0 |
-| B reads the upload counter (no grant) | refused | refused 42501 |
+| B deletes A's upload counter rows (no grant) | refused | refused 42501 |
 | B writes a row tagged with A's id (no grant on user_id) | refused | refused 42501 |
 | after: A's document still there | 1 | 1 |
 | after: A's uploaded file still there | 1 | 1 |
@@ -88,7 +95,7 @@ Result on 2026-10-10:
 What each kind of check shows:
 
 - **The "0" rows** are row-level security at work: the rows exist, but B's queries never see or touch them.
-- **The two "refused" rows** come from grants. Users have no access to the upload counter at all, and no permission to set `user_id`, so a row can't even be written under someone else's name.
+- **The two "refused" rows** come from grants. Users can read only their own upload-counter rows and can never delete or write them, and have no permission to set `user_id`, so a row can't even be written under someone else's name.
 - **File deletes** can't be tested in SQL, because Supabase blocks deleting storage rows with SQL for everyone. They go through the Storage API, where the same own-folder policy applies, which is covered by the browser checks. Afterwards, no test document or file remained in the database.
 
 Earlier rolled-back SQL tests, run when the migrations were applied, also showed four refusals:

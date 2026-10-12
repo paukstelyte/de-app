@@ -24,10 +24,16 @@ Guests can browse topics and practise without saving. Signed-out visitors who op
 | Where the call happens | `lib/learning/analyse.ts` (server-only), called from the server action in `app/learning/actions.ts` |
 | Input | PDF as a `file` part with the `file-parser` plugin set to the `native` engine; photos as base64 `image_url` parts; Word files read by a small built-in reader and sent as text |
 | Output | Strict JSON schema (`lib/learning/suggestions.ts`): title, the text read, "no grammar" flag, topics with reasons. Topics outside the catalogue are dropped |
-| Cost | About $0.0004 per document. Each document card shows the model, tokens and cost from OpenRouter's response |
-| Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload counts even if the AI call then fails), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
+| Cost | About $0.0005 for a one-page worksheet, up to about $0.002 for several textbook pages (both measured on 2026-10-12; see `docs/testing.md`). Each document card shows the model, tokens and cost from OpenRouter's response |
+| Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload is given back only if the AI call fails; a failed save or a photo with no readable text still counts), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
 
 Details and the OpenRouter references: [`docs/openrouter-multimodal.md`](docs/openrouter-multimodal.md).
+
+![Customized Learning after reading a worksheet: the document card shows "Read by Gemini 2.5 Flash Lite · 3,568 tokens · about $0.0005", the grammar topics the AI picked with a reason quoting the worksheet, and "Your focus now" built from them](docs/screenshots/customized-learning.png)
+
+## Optional task
+
+**Showing which model read each document and how many tokens it used.** Every saved document records the model, prompt and completion tokens and cost from OpenRouter's response (`lib/learning/usage.ts`, stored per document), and the card shows them: "Read by Gemini 2.5 Flash Lite · 3,568 tokens · about $0.0005". The upload box also names the model before you upload.
 
 Built with Next.js (App Router), TypeScript, Tailwind CSS 4, Supabase (auth, Postgres with row-level security, Storage) and OpenRouter, deployed on Vercel.
 

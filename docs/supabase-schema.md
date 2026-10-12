@@ -75,20 +75,20 @@ The update grant includes `topic_slug` because the app upserts with `on_conflict
 
 ### `public.learning_upload_usage`
 
-One row per upload, used only by `use_upload_quota()`. RLS is on, there are no policies and no privileges for `anon` or `authenticated`, so the API cannot read or write it.
+One row per upload, written only by `use_upload_quota()`. RLS is on. Since migration `20261012130000` a signed-in user may **read their own rows** (policy "Users read their own upload usage", `select` granted to `authenticated`); nobody can insert, update or delete through the API, and `anon` has no privileges.
 
 `public.use_upload_quota()` (security definer, callable by `authenticated` only) records an upload for `auth.uid()` and raises `P0001` ("Upload limit reached") at **10 uploads per user and 100 uploads for everyone per rolling 24 hours**. An advisory lock keeps concurrent calls from overshooting. It raises `42501` when not logged in. Each successful call also deletes rows older than 2 days (a refused call rolls back, delete included), so the table stays small (migration `20261010130000`; the limits only look at the last 24 hours).
 
 From migration `20261012100000`, `use_upload_quota()` returns the id of the row it recorded, and a second function, `public.upload_allowance()` (security definer, `authenticated` only, anon refused), returns the caller's `user_left`, `user_limit` (10), `shared_left` (of 100) and `next_free_at` (when the next slot frees up: 24 hours after the oldest counted upload of whichever limit is full). It exposes only the caller's own count and the shared total. The Customized Learning page shows these as "Uploads left today".
 
-When the AI read or the save fails, the server gives the upload back by deleting that row with the admin key (`giveBackUpload` in `app/learning/actions.ts`). There is deliberately no function users can call for this: a refund they could trigger themselves would let them undo successful uploads and bypass the cost cap. A read that succeeds but finds no grammar still counts, because the AI call cost money.
+When the AI read fails (no usable answer), the server gives the upload back by deleting that row with the admin key (`giveBackUpload` in `app/learning/actions.ts`). A failed save and a photo with no readable text are **not** given back: the AI call was already paid for, and giving blank photos back would let them bypass the daily limits. There is deliberately no function users can call to give an upload back.
 
 ### Access rules
 
 | Who | `learning_documents` | `learning_focus` | `learning_upload_usage` |
 |---|---|---|---|
 | Signed out (`anon`) | ❌ no privileges | ❌ no privileges | ❌ no privileges |
-| Logged in (`authenticated`) | select and delete own rows; insert own rows (`title`, `extracted_text`, `no_grammar`, `suggestions` only); no update | select and delete own rows; insert (`topic_slug`, `kind`, `updated_at`); update (`topic_slug`, `kind`, `updated_at`) on own rows | ❌ only through `use_upload_quota()` |
+| Logged in (`authenticated`) | select and delete own rows; insert own rows (`title`, `extracted_text`, `no_grammar`, `suggestions` only); no update | select and delete own rows; insert (`topic_slug`, `kind`, `updated_at`); update (`topic_slug`, `kind`, `updated_at`) on own rows | select own rows only (policy since `20261012130000`); writes only through `use_upload_quota()` |
 | Server admin key | ✅ (bypasses RLS) | ✅ | ✅ |
 
 ### Storage bucket `learning-uploads`
