@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "sync:exercises": "node scripts/sync-exercises.mjs",
-    "test": "node --no-warnings --test \"lib/**/*.test.mjs\""
+    "test": "node --no-warnings --test \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\""
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
