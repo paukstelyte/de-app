@@ -94,7 +94,7 @@ Koexistenz,die,die-enz-anz,C1,,news and politics
 Abstinenz,die,die-enz-anz,C1,,health and essays
 Divergenz,die,die-enz-anz,C2,,academic
 Kohärenz,die,die-enz-anz,C2,,academic
-Brisanz,die,die-enz-anz,C2,,news and politics
+Brisanz,die,die-enz-anz,C1,,news and politics
 Dekadenz,die,die-enz-anz,C2,,essays and culture
 Indifferenz,die,die-enz-anz,C2,,literary and essays
 Rhetorik,die,die-ik,C1,,politics and academic
@@ -183,12 +183,10 @@ Emporkömmling,der,der-ling,C2,,literary and essays
 Günstling,der,der-ling,C2,,history and politics
 Weichling,der,der-ling,C2,,literary and essays
 Rohling,der,der-ling,C2,,news and literary
-Fremdling,der,der-ling,C2,,literary
 Podium,das,das-um,C1,,public life and events
 Kriterium,das,das-um,C1,,academic and work
 Spektrum,das,das-um,C1,,academic and news
 Kollegium,das,das-um,C1,,education and work
-Forum,das,das-um,C1,,public life and media
 Konsortium,das,das-um,C1,,business news
 Refugium,das,das-um,C2,,essays and literary
 Delirium,das,das-um,C2,,medicine and literary
@@ -203,9 +201,7 @@ Sakrament,das,das-ment,C2,,religion and culture
 Pergament,das,das-ment,C2,,history and culture
 Firmament,das,das-ment,C2,,literary
 Ressentiment,das,das-ment,C2,,essays and politics
-Amüsement,das,das-ment,C2,,literary and essays
 Raffinement,das,das-ment,C2,,literary and essays
-Etablissement,das,das-ment,C2,,literary and business
 Kleinbürgertum,das,das-tum,C2,,essays and history
 Besitztum,das,das-tum,C2,,legal and literary
 Mäzenatentum,das,das-tum,C2,,arts and culture
@@ -222,14 +218,11 @@ Rinnsal,das,das-nis-sal,C2,,literary
 Scheusal,das,das-nis-sal,C2,,literary and essays
 Gefälle,das,das-ge-prefix,C1,,economics and public debate
 Gedränge,das,das-ge-prefix,C1,,news and everyday educated
-Gerücht,das,das-ge-prefix,C1,,news and media
 Gewerbe,das,das-ge-prefix,C1,,business and administrative
 Gemisch,das,das-ge-prefix,C1,,science and everyday educated
 Gefüge,das,das-ge-prefix,C1,,academic and essays
 Gehorsam,der,das-ge-prefix,C1,'Obedience' is masculine and not neuter despite the Ge- prefix.,essays and literary
-Genuss,der,das-ge-prefix,C1,'Enjoyment' is masculine and not neuter despite the Ge- prefix; like der Geschmack it belongs to the masculine minority.,culture and everyday educated
 Gestalt,die,das-ge-prefix,C1,'Form' or 'figure' is feminine despite the Ge- prefix.,literary and academic
-Gestank,der,das-ge-prefix,C1,'Stench' is masculine and not neuter despite the Ge- prefix.,everyday educated and news
 Gebaren,das,das-ge-prefix,C2,,news and essays
 Gemetzel,das,das-ge-prefix,C2,,news and literary
 Getöse,das,das-ge-prefix,C2,,literary and news
@@ -242,14 +235,12 @@ Stigma,das,das-ma,C1,,news and public debate
 Paradigma,das,das-ma,C1,,academic
 Prisma,das,das-ma,C2,,science and figurative
 Schisma,das,das-ma,C2,,religion and politics
-Phlegma,das,das-ma,C2,,literary and personality
 Gegengewicht,das,das-icht,C1,,news and politics
 Schlusslicht,das,das-icht,C1,,news and sport
 Irrlicht,das,das-icht,C2,,literary
-Verzicht,der,das-icht,C1,'Renunciation' comes from the verb verzichten and is masculine; the -icht here is part of the stem and not the neuter -icht ending.,news and legal
+Verzicht,der,das-icht,C1,'Renunciation' is masculine because it is the noun of the verb verzichten (der Verzicht auf etwas); it is not one of the neuter -icht words like das Licht.,news and legal
 Zuversicht,die,das-icht,C1,'Confidence' is one of the -sicht nouns and stays feminine like die Sicht.,news and essays
-Nachsicht,die,das-icht,C1,'Leniency' is one of the -sicht nouns and stays feminine like die Sicht.,essays and everyday educated
-Weitsicht,die,das-icht,C1,'Foresight' is one of the -sicht nouns and stays feminine like die Sicht.,politics and essays
+Frist,die,der-ist,C1,"Means deadline, a short native word and not a person, so the -ist person rule doesn't apply.",work legal and news
 Optimist,der,der-ist,B2,,everyday educated
 Pessimist,der,der-ist,B2,,everyday educated
 Spezialist,der,der-ist,B2,,work life
@@ -268,7 +259,7 @@ Moralist,der,der-ist,C2,,essays and literary
 Palast,der,der-ast,B2,,history and travel
 Kontrast,der,der-ast,C1,,arts and essays
 Ballast,der,der-ast,C1,,essays and figurative
-Gymnasiast,der,der-ast,C1,,education
+Gymnasiast,der,der-ast,B2,,education
 Enthusiast,der,der-ast,C2,,culture and essays
 Morast,der,der-ast,C2,,literary and figurative
 Cineast,der,der-ast,C2,,film and culture
@@ -276,8 +267,6 @@ Hast,die,der-ast,C2,A one-syllable word (haste) like die Last; the rule is for l
 Käfig,der,der-ich-ig,B2,,everyday educated
 Rettich,der,der-ich-ig,B2,,food and everyday
 Kranich,der,der-ich-ig,C2,,nature and literary
-Bottich,der,der-ich-ig,C2,,crafts and literary
-Fittich,der,der-ich-ig,C2,,literary and idiomatic
 Wüterich,der,der-ich-ig,C2,,literary and essays
 Garage,die,die-age,B2,,everyday
 Etage,die,die-age,B2,,everyday and housing
@@ -302,14 +291,13 @@ Olympiade,die,die-ade,C1,,sport and education
 Blockade,die,die-ade,C1,,news and politics
 Promenade,die,die-ade,C1,,travel and literary
 Gnade,die,die-ade,B2,,literary and legal
-Nomade,der,die-ade,C1,A word for a (male) person so masculine like other person nouns.,essays and culture
+Nomade,der,die-ade,C1,A word for a person (nomad) and therefore masculine like other male person nouns; a woman is die Nomadin.,essays and culture
 Dekade,die,die-ade,C1,,news and academic
 Eskapade,die,die-ade,C2,,news and literary
 Kaskade,die,die-ade,C2,,literary and figurative
 Maskerade,die,die-ade,C2,,literary and figurative
 Tirade,die,die-ade,C2,,news and literary
 Scharade,die,die-ade,C2,,literary and figurative
-Kassette,die,die-ette,B2,,everyday
 Tablette,die,die-ette,B2,,everyday and health
 Etikette,die,die-ette,C1,,public life and manners
 Silhouette,die,die-ette,C1,,arts and literary
