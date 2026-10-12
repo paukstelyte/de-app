@@ -1,3 +1,22 @@
 {
-  "permissions": {}
+  "permissions": {
+    "ask": [
+      "Bash(vercel deploy*)",
+      "Bash(npx vercel deploy*)",
+      "Bash(bash .agents/skills/deploy-to-vercel/*)",
+      "Bash(sh .agents/skills/deploy-to-vercel/*)",
+      "Bash(.agents/skills/deploy-to-vercel/*)",
+      "Bash(supabase db push*)",
+      "Bash(npx supabase db push*)"
+    ],
+    "deny": [
+      "Read(./.env.local)",
+      "Bash(cat .env.local*)",
+      "Bash(head .env.local*)",
+      "Bash(tail .env.local*)",
+      "Bash(less .env.local*)",
+      "Bash(more .env.local*)",
+      "Bash(grep * .env.local*)"
+    ]
+  }
 }

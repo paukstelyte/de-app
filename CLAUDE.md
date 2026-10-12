@@ -50,9 +50,9 @@ The app runs locally at `localhost:3000` and live at https://de-app-six.vercel.a
 
 ## General Requirements
 
-* At least two pages, including one detail page with its own address/route.
+
 * The word list and the exercises are built-in and the same for everyone; users can't add, edit or delete them.
-* Every flashcard word has a level (A1–B2); the player picks a level before a round. Grammar topics span A1–C2.
+* Every flashcard word has a level (A1–C2); the player picks a level before a round. Grammar topics span A1–C2.
 * A short description on how to use the app is shown
 * Logged-in users' answers, documents and focus changes persist in Supabase; guest progress persists in LocalStorage.
 * No blank screens: show a readable empty-state message when there is no data yet, and a friendly "not found" message for a route/address that doesn't exist.
@@ -96,13 +96,10 @@ The app does not use embeddings or RAG.
 - Every new Supabase table needs RLS policies and the anon-access revoke (see `docs/supabase-schema.md`).
 - All secrets should live in *env files
 - Changes go through a feature branch and a pull request; run the `ai-code-reviewer` agent on the PR before merging and save its report in `docs/reviews/`.
-- Before merging, suggest needed usability and security tests
-- Propose security scans at these moments:
+- Before merging, suggest needed usability tests with Playwright 
+- Propose security scans: `/security-scan` weekly to confirm the whole codebase is clean, and `/security-scan-changed` on every feature branch and pull request, to catch new problems before they merge into main.
+- npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too).
 
-  | Command | When to use it |
-  |---|---|
-  | `/security-scan` | Periodically (monthly, or before a big release or production deploy) to confirm the whole codebase is clean. |
-  | `/security-scan-changed` | On every feature branch and pull request, to catch new problems before they merge into main. |
 
 ## Do Not
 
