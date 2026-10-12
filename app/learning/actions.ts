@@ -6,7 +6,7 @@ import { getTopic } from "@/lib/grammar/topics";
 import { MAX_DOCUMENTS } from "@/lib/learning/allowance";
 import { analyseDocument } from "@/lib/learning/analyse";
 import { extractDocxText } from "@/lib/learning/docx";
-import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, validateSelection } from "@/lib/learning/uploads";
+import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, photoUnreadable, validateSelection } from "@/lib/learning/uploads";
 import { createClient } from "@/lib/supabase/server";
 
 const ERRORS = {
@@ -16,11 +16,12 @@ const ERRORS = {
   docLimit: `You've reached the limit of ${MAX_DOCUMENTS} saved documents. Delete some to upload new ones.`,
   pdfPages: `This PDF has more than ${MAX_PDF_PAGES} pages. Please upload a shorter part.`,
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
+  unreadablePhoto: "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
   generic: "Something went wrong — please try again.",
 };
 
-/** Gives an upload back when the AI read failed (no result, so no paid answer to keep). A failed save is not given back: the AI call was already paid for. Admin key, server only: users can't refund themselves. */
+/** Gives an upload back when the AI read failed or read no text from a photo (no result, so no paid answer to keep). A failed save is not given back: the AI call was already paid for. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number, userId: string) {
   if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -70,6 +71,10 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
       return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
     }
     const a = result.analysis;
+    if (photoUnreadable(kind, a.extractedText)) {
+      await giveBackUpload(usageId, userId);
+      return { error: ERRORS.unreadablePhoto };
+    }
     const { data: row, error } = await supabase
       .from("learning_documents")
       .insert({

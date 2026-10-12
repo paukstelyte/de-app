@@ -9,12 +9,12 @@ export const ANALYSIS_MODEL = "google/gemini-2.5-flash-lite";
 const KNOWN = new Set(TOPICS.map((t) => t.slug));
 const CATALOGUE = TOPICS.map((t) => `${t.slug} | ${t.level} | ${t.title}`).join("\n");
 
-const PROMPT = `You help a learner of German. Read the attached document (a textbook page, worksheet, notes or homework).
-1. extractedText: transcribe the document's text (max 8000 characters). If there is no readable text, use "" and never invent text.
+const PROMPT = `You help a learner of German. Read the attached document (a textbook page, worksheet, notes or homework). It may be printed, typed or handwritten, and a photo may be sideways or upside down: read it in the right orientation.
+1. extractedText: transcribe the document's text (max 8000 characters). Leave out crossed-out words. Write [?] for a word you can't read. If there is no readable text, use "" and never invent text.
 2. noGrammar: true if there is no readable text or the document contains no German grammar.
 3. topics: 3 to 6 grammar topics the learner should practise, chosen ONLY from this list (use the slug exactly):
 ${CATALOGUE}
-Base topics ONLY on what is in the document. Put topics where the document shows a mistake (for example a teacher's correction) first and set fromMistake to true. For each topic give a one-line reason that quotes the document.
+Base topics ONLY on what is in the document. Words in another colour, underlined or boxed are emphasis (what the learner marked as important): rank those topics higher, but they are NOT mistakes. Only clear correction marks (a word crossed out and rewritten, a tick or cross, a correction in the margin) are mistakes: put those topics first and set fromMistake to true. For each topic give a one-line reason that quotes the document.
 4. title: a short title for the document, for example "Textbook p. 34: dative prepositions".`;
 
 export async function analyseDocument(input: {
