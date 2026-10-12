@@ -78,7 +78,7 @@
     {
       "id": "ord-07",
       "type": "choice",
-      "prompt": "Wir wohnen im ___ Stock.",
+      "prompt": "Das Büro ist im ___ Stock.",
       "options": [
         "achten",
         "achte",
@@ -181,11 +181,11 @@
       "id": "ord-16",
       "type": "type",
       "prompt": "Wir fahren am ___ Mai nach Wien.",
-      "hint": "(1.)",
+      "hint": "(13.)",
       "answers": [
-        "ersten"
+        "dreizehnten"
       ],
-      "explanation": "After am/im (dative) the ordinal ends in -en: am ersten Mai."
+      "explanation": "dreizehn → dreizehnte (add -te up to 19); after am (dative) it ends in -en: am dreizehnten Mai."
     },
     {
       "id": "ord-17",
@@ -200,7 +200,7 @@
     {
       "id": "ord-18",
       "type": "type",
-      "prompt": "Der Kurs beginnt am ___ Oktober.",
+      "prompt": "Die Ferien beginnen am ___ Oktober.",
       "hint": "(6.)",
       "answers": [
         "sechsten"
@@ -242,16 +242,16 @@
       "id": "ord-22",
       "type": "type",
       "prompt": "Das Konzert ist am ___ November.",
-      "hint": "(11.)",
+      "hint": "(17.)",
       "answers": [
-        "elften"
+        "siebzehnten"
       ],
-      "explanation": "elf → elfte (add -te up to 19), plus -n after am: am elften November."
+      "explanation": "siebzehn → siebzehnte (add -te up to 19), plus -n after am: am siebzehnten November."
     },
     {
       "id": "ord-23",
       "type": "type",
-      "prompt": "Heute ist der ___ Juni.",
+      "prompt": "Gestern war der ___ Juni.",
       "hint": "(12.)",
       "answers": [
         "zwölfte"
@@ -272,11 +272,11 @@
       "id": "ord-25",
       "type": "type",
       "prompt": "Mein Vater hat am ___ Mai Geburtstag.",
-      "hint": "(20.)",
+      "hint": "(19.)",
       "answers": [
-        "zwanzigsten"
+        "neunzehnten"
       ],
-      "explanation": "zwanzig + -ste, and -n after am: am zwanzigsten Mai."
+      "explanation": "Up to 19 ordinals add -te: neunzehn → neunzehnte, plus -n after am: am neunzehnten Mai."
     },
     {
       "id": "ord-26",

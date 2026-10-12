@@ -45,18 +45,19 @@
       "id": "dat-04",
       "type": "order",
       "words": [
-        "Ich",
-        "gebe",
+        "Der",
+        "Vater",
+        "kauft",
         "dem",
-        "Kind",
-        "das",
-        "Buch."
+        "Sohn",
+        "ein",
+        "Eis."
       ],
       "answers": [
-        "Ich gebe dem Kind das Buch."
+        "Der Vater kauft dem Sohn ein Eis."
       ],
-      "translation": "I give the child the book.",
-      "explanation": "The person (dative, dem Kind) usually comes before the thing (accusative, das Buch)."
+      "translation": "The father buys his son an ice cream.",
+      "explanation": "The person (dative, dem Sohn) usually comes before the thing (accusative, ein Eis)."
     },
     {
       "id": "dat-05",
@@ -182,7 +183,7 @@
         "Tom wohnt bei seinen Großeltern."
       ],
       "translation": "Tom lives with his grandparents.",
-      "explanation": "bei takes the dative; plural possessives end in -en (seinen) and the noun adds -n (Großeltern)."
+      "explanation": "bei takes the dative; plural possessives end in -en (seinen). Großeltern already ends in -n, so the noun does not change."
     },
     {
       "id": "dat-15",
@@ -237,17 +238,18 @@
       "id": "dat-19",
       "type": "order",
       "words": [
-        "Anna",
-        "schenkt",
+        "Lisa",
+        "schreibt",
         "ihrer",
-        "Mutter",
-        "Blumen."
+        "Freundin",
+        "einen",
+        "Brief."
       ],
       "answers": [
-        "Anna schenkt ihrer Mutter Blumen."
+        "Lisa schreibt ihrer Freundin einen Brief."
       ],
-      "translation": "Anna gives her mother flowers.",
-      "explanation": "The dative (ihrer Mutter, feminine -er) comes before the accusative (Blumen) here."
+      "translation": "Lisa writes her friend a letter.",
+      "explanation": "The dative (ihrer Freundin, feminine -er) comes before the accusative (einen Brief) here."
     },
     {
       "id": "dat-20",

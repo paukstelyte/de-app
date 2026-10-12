@@ -197,12 +197,12 @@
     {
       "id": "vdat-17",
       "type": "type",
-      "prompt": "Das Kleid gefällt ___ sehr.",
-      "hint": "(ich)",
+      "prompt": "Die Musik gefällt ___ sehr.",
+      "hint": "(wir)",
       "answers": [
-        "mir"
+        "uns"
       ],
-      "explanation": "gefallen needs the dative pronoun: ich → mir."
+      "explanation": "gefallen needs the dative pronoun: wir → uns."
     },
     {
       "id": "vdat-18",
@@ -217,12 +217,12 @@
     {
       "id": "vdat-19",
       "type": "type",
-      "prompt": "Das Handy gehört ___.",
-      "hint": "(er)",
+      "prompt": "Das Handy gehört ___ nicht.",
+      "hint": "(sie, she)",
       "answers": [
-        "ihm"
+        "ihr"
       ],
-      "explanation": "gehören + dative: er → ihm."
+      "explanation": "gehören + dative: sie (she) → ihr."
     },
     {
       "id": "vdat-20",

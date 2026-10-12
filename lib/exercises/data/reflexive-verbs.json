@@ -196,12 +196,12 @@
     {
       "id": "refl-17",
       "type": "type",
-      "prompt": "Warum ___ du dich so?",
-      "hint": "(sich ärgern)",
+      "prompt": "Warum ___ du dich nicht?",
+      "hint": "(sich beeilen)",
       "answers": [
-        "ärgerst"
+        "beeilst"
       ],
-      "explanation": "du-form of ärgern is ärgerst: du ärgerst dich."
+      "explanation": "du-form of beeilen is beeilst: du beeilst dich."
     },
     {
       "id": "refl-18",
@@ -226,12 +226,12 @@
     {
       "id": "refl-20",
       "type": "type",
-      "prompt": "Hast du ___ gut erholt?",
+      "prompt": "Nach der Arbeit musst du ___ erholen.",
       "hint": "(du → sich erholen)",
       "answers": [
         "dich"
       ],
-      "explanation": "du needs dich: du hast dich erholt."
+      "explanation": "du needs dich, also with a modal verb: du musst dich erholen."
     },
     {
       "id": "refl-21",
@@ -365,13 +365,13 @@
         "Kinder",
         "ziehen",
         "sich",
-        "schnell",
+        "warm",
         "an."
       ],
       "answers": [
-        "Die Kinder ziehen sich schnell an."
+        "Die Kinder ziehen sich warm an."
       ],
-      "translation": "The children get dressed quickly.",
+      "translation": "The children dress warmly.",
       "explanation": "Separable sich anziehen: the pronoun sits after the verb, an goes to the end."
     }
   ]
