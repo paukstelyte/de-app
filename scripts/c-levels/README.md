@@ -9,7 +9,7 @@ How the C1/C2 cards were made (design: `docs/superpowers/specs/2026-10-12-c-leve
    columns.
 3. An independent reviewer checks every row; then the owner fills `decision` with keep, drop,
    B2, C1 or C2.
-4. `node scripts/c-levels/apply.mjs` (added in PR 2): adds approved words to `lib/flashcards/data/seed.json`
+4. `node scripts/c-levels/apply.mjs`: adds approved words to `lib/flashcards/data/seed.json`
    (ids from `seed-996`) and each new rule with at least 3 approved words to `rules.json`.
    Running it twice changes nothing.
 

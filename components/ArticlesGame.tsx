@@ -5,8 +5,10 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo } from "react";
 import { recordAttempt } from "@/app/articles/actions";
 import { useFlashcards } from "@/lib/flashcards/context";
-import { ARTICLES, getFlashcardStatus, type Article, type Level } from "@/lib/flashcards/types";
-import { isAtOrBelow, useMaxLevel } from "@/lib/flashcards/level";
+import { ARTICLES, getFlashcardStatus, type Article } from "@/lib/flashcards/types";
+import { useBand } from "@/lib/flashcards/level";
+import { BANDS, BAND_LABELS, inBand, type Band } from "@/lib/flashcards/bands";
+import { LevelBadge } from "@/components/LevelBadge";
 import { ROUND_SIZE } from "@/lib/flashcards/practice";
 import { usePracticeSession } from "@/lib/flashcards/usePracticeSession";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
@@ -50,12 +52,12 @@ export function ArticlesGame({
 }) {
   const router = useRouter();
   const { cards, recordAnswer } = useFlashcards();
-  const [maxLevel, setMaxLevel] = useMaxLevel();
-  // Rounds draw only from the chosen levels ("Practise my mistakes" ignores
-  // them: a missed word is worth practising whatever its level).
+  const [band, setBand] = useBand();
+  // Rounds draw only from the chosen band ("Practise my mistakes" ignores
+  // it: a missed word is worth practising whatever its level).
   const levelCards = useMemo(
-    () => cards.filter((c) => isAtOrBelow(c.level, maxLevel)),
-    [cards, maxLevel],
+    () => cards.filter((c) => inBand(c.level, band)),
+    [cards, band],
   );
   const {
     queue,
@@ -99,7 +101,7 @@ export function ArticlesGame({
         <div>
           <div className="mb-4 h-2 w-12 bg-[var(--accent)]" />
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
-            <Link href="/topics/noun-gender" className="underline-offset-2 hover:underline">Grammar Topics › Noun gender · A1</Link>
+            <Link href="/topics/noun-gender" className="underline-offset-2 hover:underline">Grammar Topics › Noun gender</Link>
           </p>
           <h1 className="mt-3 text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">der · die · das</h1>
           <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
@@ -145,9 +147,9 @@ export function ArticlesGame({
       <div className="flex flex-col gap-4">
         {!mistakesOnly && (
           <LevelPicker
-            value={maxLevel}
-            onChange={(level) => {
-              setMaxLevel(level);
+            value={band}
+            onChange={(next) => {
+              setBand(next);
               nextRound(); // start a fresh round from the new word pool
             }}
           />
@@ -251,33 +253,27 @@ export function ArticlesGame({
   );
 }
 
-const LEVEL_OPTIONS: { value: Level; label: string }[] = [
-  { value: "A1", label: "A1" },
-  { value: "A2", label: "A1–A2" },
-  { value: "B1", label: "A1–B1" },
-  { value: "B2", label: "All (A1–B2)" },
-];
-
-function LevelPicker({ value, onChange }: { value: Level; onChange: (level: Level) => void }) {
+function LevelPicker({ value, onChange }: { value: Band; onChange: (band: Band) => void }) {
   return (
     <fieldset className="flex flex-wrap items-center gap-2">
       <legend className="sr-only">Word level</legend>
       <span aria-hidden className="mr-1 text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
         Level
       </span>
-      {LEVEL_OPTIONS.map((option) => (
+      {BANDS.map((option) => (
         <button
-          key={option.value}
+          key={option}
           type="button"
-          aria-pressed={value === option.value}
-          onClick={() => value !== option.value && onChange(option.value)}
+          aria-pressed={value === option}
+          aria-label={option === "all" ? "All levels" : `Level ${option} (${option}1 and ${option}2)`}
+          onClick={() => value !== option && onChange(option)}
           className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
-            value === option.value
+            value === option
               ? "border-zinc-900 bg-zinc-900 text-white dark:border-zinc-100 dark:bg-zinc-100 dark:text-zinc-900"
               : "border-zinc-300 text-zinc-600 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-800"
           }`}
         >
-          {option.label}
+          {BAND_LABELS[option]}
         </button>
       ))}
     </fieldset>
@@ -347,7 +343,9 @@ function Game({
           chosen ? "cursor-pointer" : ""
         }`}
       >
-        <span className="absolute right-5 top-5 text-[10px] font-medium uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-600">{card.level} · noun</span>
+        <span className="absolute right-5 top-5" data-card-level aria-label={`Level ${card.level}`}>
+          <LevelBadge level={card.level} />
+        </span>
         <span className="absolute bottom-5 left-5 h-5 w-5 border-b border-l border-[var(--line)]" />
         <p className="text-4xl font-bold tracking-[-0.06em] sm:text-5xl">{card.noun}</p>
 

@@ -10,7 +10,7 @@ Live: https://de-app-six.vercel.app
 2. **Your focus now.** The topics from your uploads of the last 30 days, ranked by mistakes and how often they come up, with your progress on each. Remove a topic, or add one from any topic page.
 3. **Practise my focus** (`/learning/practice`). One mixed round of exercises from exactly your focus topics.
 4. **Grammar Topics** (`/topics`, open to everyone). The 82-topic catalogue. Each topic has a practice page with 30 checked exercises (pick the answer, type the word, put the words in order), rounds of 10, an explanation after each answer, and "Practise my mistakes". The practice pages are labelled "still in test mode".
-5. **der · die · das** (`/articles`). The original flashcard game for noun gender: about 1,000 A1–B2 nouns, every answer explained by its rule.
+5. **der · die · das** (`/articles`). The original flashcard game for noun gender: 1,286 A1–C2 nouns (pick A, B, C or All), every answer explained by its rule.
 
 **Why AI is the core.** The catalogue and exercises are generic. The AI is what connects them to *your* lessons: it reads your own material and decides what you should practise now. Without it the app wouldn't know what you're learning.
 
@@ -72,6 +72,7 @@ Every table with user data has row-level security with owner-only policies, and 
 | `bash e2e/learning.sh` | Browser checks of Customized Learning with a real AI call: login redirect, PDF/HEIC/Word/blank uploads, files deleted, focus, delete, and a **second user can't see the first user's documents** |
 | `npx supabase db query --linked --project-ref <ref> -f supabase/tests/cross-user-privacy.sql` | Database check that one user can't read, change or delete another user's documents, focus list, answers or files (rolled back, changes nothing) |
 | `bash e2e/exercises.sh` | Browser checks of the practice pages: guest round, mistakes replay, answers saved when logged in, phone width, keyboard |
+| `bash e2e/articles.sh` | Browser checks of the der · die · das level picker (A · B · C · All), saved-choice conversion, new rules on `/rules`, phone width; guest only |
 | `bash e2e/all-practice-pages.sh` | Opens all 81 practice pages and checks each shows its first question |
 
 The browser checks use the global `playwright-cli` and test accounts from environment variables; see [`e2e/README.md`](e2e/README.md). Latest results: [`docs/testing.md`](docs/testing.md).

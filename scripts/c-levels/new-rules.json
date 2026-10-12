@@ -21,6 +21,6 @@
     "exceptions": [{ "noun": "der Nomade", "article": "der", "note": "A word for a person (nomad) and therefore masculine like other male person nouns; a woman is die Nomadin." }] },
   { "id": "die-ette", "article": "die", "title": "Nouns ending in -ette", "matchType": "suffix", "suffixes": ["-ette"],
     "description": "Nouns ending in -ette are feminine: die Silhouette, die Etikette, die Tablette. Don't confuse it with -ett without the final e, which is often neuter (das Ballett, das Kabinett).",
-    "examples": ["Silhouette", "Etikette", "Tablette", "Toilette", "Serviette", "Kassette"],
+    "examples": ["Silhouette", "Etikette", "Tablette", "Toilette", "Serviette"],
     "exceptions": [] }
 ]

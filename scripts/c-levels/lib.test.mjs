@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { parseCsv, toCsv } from "./csv.mjs";
-import { articleFromWikitext, checkRow, frequencyRanks, mergeDecisions, REVIEW_HEADERS, COMMON_RANK } from "./lib.mjs";
+import { applyReview, articleFromWikitext, checkRow, frequencyRanks, mergeDecisions, REVIEW_HEADERS, COMMON_RANK } from "./lib.mjs";
 
 test("CSV round trip keeps commas, quotes and line breaks", () => {
   const rows = [{ noun: "Nomade", exception: 'A person, so "der", not die\nsee -ade' }];
@@ -83,4 +83,43 @@ test("re-running the check keeps the owner's decision and note", () => {
     { noun: "Parade", status: "ok", decision: "", note: "" },
   ]);
   assert.equal(REVIEW_HEADERS.at(-2), "decision");
+});
+
+const seed0 = [
+  { id: "seed-0", noun: "Lehrer", article: "der", exception: "", ruleId: "der-agent-er", level: "A1" },
+  { id: "seed-995", noun: "Zeitung", article: "die", exception: "", ruleId: "die-ung", level: "A1" },
+];
+const rules0 = [{ id: "der-agent-er" }, { id: "die-ung" }];
+const newRules0 = [{ id: "die-age" }, { id: "die-ette" }];
+const r = (noun, decision, over = {}) => ({ noun, article: "die", ruleId: "die-age", level: "C1", exception: "", status: "ok", decision, ...over });
+const ageRows = [r("Reportage", "keep"), r("Sabotage", "C2"), r("Blamage", "keep"), r("Passage", "drop")];
+
+test("apply adds approved words from seed-996 and rules with 3+ words", () => {
+  const out = applyReview(seed0, rules0, newRules0, ageRows);
+  assert.equal(out.added, 3);
+  assert.deepEqual(out.seed.slice(2).map((c) => [c.id, c.noun, c.level]), [["seed-996", "Reportage", "C1"], ["seed-997", "Sabotage", "C2"], ["seed-998", "Blamage", "C1"]]);
+  assert.deepEqual(out.seed.slice(0, 2), seed0); // existing cards untouched
+  assert.deepEqual(out.rules.map((x) => x.id), ["der-agent-er", "die-ung", "die-age"]); // die-ette has no words
+});
+
+test("apply twice changes nothing", () => {
+  const once = applyReview(seed0, rules0, newRules0, ageRows);
+  const twice = applyReview(once.seed, once.rules, newRules0, ageRows);
+  assert.deepEqual(twice.seed, once.seed);
+  assert.deepEqual(twice.rules, once.rules);
+  assert.equal(twice.added, 0);
+});
+
+test("apply refuses undecided rows and kept blocked rows", () => {
+  assert.throws(() => applyReview(seed0, rules0, newRules0, [r("Reportage", "")]), /Reportage.*decision/);
+  assert.throws(() => applyReview(seed0, rules0, newRules0, [r("Reportage", "maybe")]), /decision/);
+  assert.throws(() => applyReview(seed0, rules0, newRules0, [r("Fassade", "keep", { status: "blocked" })]), /Fassade.*blocked/);
+  assert.equal(applyReview(seed0, rules0, newRules0, [r("Fassade", "drop", { status: "blocked" })]).added, 0);
+});
+
+test("a new rule with fewer than 3 words is left out, and so are its words", () => {
+  const two = [r("Reportage", "keep"), r("Sabotage", "keep")];
+  const out = applyReview(seed0, rules0, newRules0, two);
+  assert.equal(out.added, 0);
+  assert.deepEqual(out.rules.map((x) => x.id), ["der-agent-er", "die-ung"]);
 });

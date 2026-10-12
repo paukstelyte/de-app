@@ -7806,5 +7806,2485 @@
     "exception": "The generic word for 'letter' (as in 'a letter of the alphabet') is itself masculine, not neuter.",
     "ruleId": "das-letters",
     "level": "A1"
+  },
+  {
+    "id": "seed-996",
+    "noun": "Auseinandersetzung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-997",
+    "noun": "Bewältigung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-998",
+    "noun": "Verpflichtung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-999",
+    "noun": "Durchsetzung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1000",
+    "noun": "Wahrnehmung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1001",
+    "noun": "Rechtfertigung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1002",
+    "noun": "Verschärfung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1003",
+    "noun": "Benachteiligung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1004",
+    "noun": "Verunsicherung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1005",
+    "noun": "Gewährleistung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1006",
+    "noun": "Abwägung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1007",
+    "noun": "Entfremdung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1008",
+    "noun": "Beeinträchtigung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1009",
+    "noun": "Zuspitzung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1010",
+    "noun": "Ernüchterung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1011",
+    "noun": "Bevormundung",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ung",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1012",
+    "noun": "Abhängigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1013",
+    "noun": "Nachhaltigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1014",
+    "noun": "Glaubwürdigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1015",
+    "noun": "Zuverlässigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1016",
+    "noun": "Gelassenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1017",
+    "noun": "Selbstverständlichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1018",
+    "noun": "Zugehörigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1019",
+    "noun": "Gleichgültigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1020",
+    "noun": "Gegebenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1021",
+    "noun": "Nachlässigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1022",
+    "noun": "Verbindlichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1023",
+    "noun": "Beschaffenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1024",
+    "noun": "Befangenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1025",
+    "noun": "Beharrlichkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1026",
+    "noun": "Unverfrorenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1027",
+    "noun": "Besonnenheit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1028",
+    "noun": "Rechtmäßigkeit",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-heit-keit",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1029",
+    "noun": "Errungenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1030",
+    "noun": "Anhängerschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1031",
+    "noun": "Ärzteschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1032",
+    "noun": "Ortschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1033",
+    "noun": "Lehrerschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1034",
+    "noun": "Hinterlassenschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1035",
+    "noun": "Körperschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1036",
+    "noun": "Seilschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1037",
+    "noun": "Täterschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1038",
+    "noun": "Urheberschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1039",
+    "noun": "Gefolgschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1040",
+    "noun": "Bürgschaft",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-schaft",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1041",
+    "noun": "Ambition",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1042",
+    "noun": "Intuition",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1043",
+    "noun": "Koalition",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1044",
+    "noun": "Konfrontation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1045",
+    "noun": "Rezession",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1046",
+    "noun": "Expansion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1047",
+    "noun": "Intervention",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1048",
+    "noun": "Sanktion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1049",
+    "noun": "Konvention",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1050",
+    "noun": "Subvention",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1051",
+    "noun": "Provokation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1052",
+    "noun": "Obsession",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1053",
+    "noun": "Kompensation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1054",
+    "noun": "Stagnation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1055",
+    "noun": "Resignation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1056",
+    "noun": "Legitimation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1057",
+    "noun": "Implikation",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1058",
+    "noun": "Aversion",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1059",
+    "noun": "Konzession",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1060",
+    "noun": "Indoktrination",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-tion-sion",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1061",
+    "noun": "Mentalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1062",
+    "noun": "Kontinuität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1063",
+    "noun": "Neutralität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1064",
+    "noun": "Diversität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1065",
+    "noun": "Authentizität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1066",
+    "noun": "Mobilität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1067",
+    "noun": "Spontaneität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1068",
+    "noun": "Sensibilität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1069",
+    "noun": "Rivalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1070",
+    "noun": "Legitimität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1071",
+    "noun": "Souveränität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1072",
+    "noun": "Rentabilität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1073",
+    "noun": "Plausibilität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1074",
+    "noun": "Seriosität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1075",
+    "noun": "Banalität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1076",
+    "noun": "Animosität",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-taet",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1077",
+    "noun": "Relevanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1078",
+    "noun": "Transparenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1079",
+    "noun": "Insolvenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1080",
+    "noun": "Dominanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1081",
+    "noun": "Turbulenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1082",
+    "noun": "Instanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1083",
+    "noun": "Prominenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1084",
+    "noun": "Diskrepanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1085",
+    "noun": "Resilienz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1086",
+    "noun": "Ambivalenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1087",
+    "noun": "Koexistenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1088",
+    "noun": "Abstinenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1089",
+    "noun": "Divergenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1090",
+    "noun": "Kohärenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1091",
+    "noun": "Brisanz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1092",
+    "noun": "Dekadenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1093",
+    "noun": "Indifferenz",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-enz-anz",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1094",
+    "noun": "Rhetorik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1095",
+    "noun": "Polemik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1096",
+    "noun": "Thematik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1097",
+    "noun": "Problematik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1098",
+    "noun": "Symbolik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1099",
+    "noun": "Ästhetik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1100",
+    "noun": "Mimik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1101",
+    "noun": "Gestik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1102",
+    "noun": "Lyrik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1103",
+    "noun": "Akustik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1104",
+    "noun": "Dramatik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1105",
+    "noun": "Systematik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1106",
+    "noun": "Didaktik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1107",
+    "noun": "Methodik",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ik",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1108",
+    "noun": "Hierarchie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1109",
+    "noun": "Ideologie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1110",
+    "noun": "Anarchie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1111",
+    "noun": "Autonomie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1112",
+    "noun": "Bürokratie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1113",
+    "noun": "Empathie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1114",
+    "noun": "Euphorie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1115",
+    "noun": "Nostalgie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1116",
+    "noun": "Utopie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1117",
+    "noun": "Hysterie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1118",
+    "noun": "Diplomatie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1119",
+    "noun": "Melancholie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1120",
+    "noun": "Symmetrie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1121",
+    "noun": "Analogie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1122",
+    "noun": "Synergie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1123",
+    "noun": "Hegemonie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1124",
+    "noun": "Apathie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1125",
+    "noun": "Monotonie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1126",
+    "noun": "Oligarchie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1127",
+    "noun": "Lethargie",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ie",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1128",
+    "noun": "Konjunktur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1129",
+    "noun": "Karikatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1130",
+    "noun": "Manufaktur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1131",
+    "noun": "Professur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1132",
+    "noun": "Legislatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1133",
+    "noun": "Klaviatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1134",
+    "noun": "Nomenklatur",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ur",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1135",
+    "noun": "Populismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1136",
+    "noun": "Nationalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1137",
+    "noun": "Extremismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1138",
+    "noun": "Liberalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1139",
+    "noun": "Pragmatismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1140",
+    "noun": "Opportunismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1141",
+    "noun": "Antisemitismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1142",
+    "noun": "Narzissmus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-us",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1143",
+    "noun": "Fundamentalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1144",
+    "noun": "Kolonialismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1145",
+    "noun": "Protektionismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1146",
+    "noun": "Föderalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1147",
+    "noun": "Separatismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1148",
+    "noun": "Skeptizismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1149",
+    "noun": "Fatalismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1150",
+    "noun": "Pluralismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1151",
+    "noun": "Dogmatismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1152",
+    "noun": "Aktionismus",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ismus",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1153",
+    "noun": "Indikator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1154",
+    "noun": "Aggressor",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1155",
+    "noun": "Initiator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1156",
+    "noun": "Organisator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1157",
+    "noun": "Diktator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1158",
+    "noun": "Koordinator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1159",
+    "noun": "Katalysator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1160",
+    "noun": "Kurator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1161",
+    "noun": "Agitator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1162",
+    "noun": "Multiplikator",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-or",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1163",
+    "noun": "Repräsentant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1164",
+    "noun": "Emigrant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1165",
+    "noun": "Sympathisant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1166",
+    "noun": "Spekulant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1167",
+    "noun": "Querulant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1168",
+    "noun": "Intrigant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1169",
+    "noun": "Simulant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1170",
+    "noun": "Ignorant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1171",
+    "noun": "Fabrikant",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1172",
+    "noun": "Proband",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1173",
+    "noun": "Pendant",
+    "article": "das",
+    "exception": "A French loanword (counterpart) that keeps the neuter gender; it is not a person noun like the der words in -ant.",
+    "ruleId": "der-ant-and",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1174",
+    "noun": "Schützling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1175",
+    "noun": "Prüfling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1176",
+    "noun": "Emporkömmling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1177",
+    "noun": "Günstling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1178",
+    "noun": "Weichling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1179",
+    "noun": "Rohling",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ling",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1180",
+    "noun": "Podium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1181",
+    "noun": "Kriterium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1182",
+    "noun": "Spektrum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1183",
+    "noun": "Kollegium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1184",
+    "noun": "Konsortium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1185",
+    "noun": "Refugium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1186",
+    "noun": "Delirium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1187",
+    "noun": "Moratorium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1188",
+    "noun": "Kontinuum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1189",
+    "noun": "Plenum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1190",
+    "noun": "Votum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1191",
+    "noun": "Pensum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1192",
+    "noun": "Martyrium",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-um",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1193",
+    "noun": "Konsument",
+    "article": "der",
+    "exception": "A person noun (consumer) built with the Latin ending -ent; like other person nouns it is masculine. It only looks like a -ment word.",
+    "ruleId": "das-ment",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1194",
+    "noun": "Sakrament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1195",
+    "noun": "Pergament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1196",
+    "noun": "Firmament",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1197",
+    "noun": "Ressentiment",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1198",
+    "noun": "Raffinement",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ment",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1199",
+    "noun": "Kleinbürgertum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1200",
+    "noun": "Besitztum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1201",
+    "noun": "Mäzenatentum",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-tum",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1202",
+    "noun": "Zugeständnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1203",
+    "noun": "Gleichnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1204",
+    "noun": "Vorkommnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1205",
+    "noun": "Besorgnis",
+    "article": "die",
+    "exception": "'Concern' ends in -nis but is feminine; it belongs to the feminine minority in this group like die Kenntnis.",
+    "ruleId": "das-nis-sal",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1206",
+    "noun": "Finsternis",
+    "article": "die",
+    "exception": "'Darkness' ends in -nis but is feminine like die Wildnis.",
+    "ruleId": "das-nis-sal",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1207",
+    "noun": "Zerwürfnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1208",
+    "noun": "Hemmnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1209",
+    "noun": "Behältnis",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1210",
+    "noun": "Trübsal",
+    "article": "die",
+    "exception": "'Gloom' (as in Trübsal blasen) ends in -sal but is feminine unlike das Schicksal.",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1211",
+    "noun": "Rinnsal",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1212",
+    "noun": "Scheusal",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-nis-sal",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1213",
+    "noun": "Gefälle",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1214",
+    "noun": "Gedränge",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1215",
+    "noun": "Gewerbe",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1216",
+    "noun": "Gemisch",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1217",
+    "noun": "Gefüge",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1218",
+    "noun": "Gehorsam",
+    "article": "der",
+    "exception": "'Obedience' is masculine and not neuter despite the Ge- prefix.",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1219",
+    "noun": "Gestalt",
+    "article": "die",
+    "exception": "'Form' or 'figure' is feminine despite the Ge- prefix.",
+    "ruleId": "das-ge-prefix",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1220",
+    "noun": "Gebaren",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1221",
+    "noun": "Gemetzel",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1222",
+    "noun": "Getöse",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1223",
+    "noun": "Geflecht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1224",
+    "noun": "Gelübde",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1225",
+    "noun": "Geplänkel",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1226",
+    "noun": "Gebilde",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1227",
+    "noun": "Gesuch",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ge-prefix",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1228",
+    "noun": "Stigma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1229",
+    "noun": "Paradigma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1230",
+    "noun": "Prisma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1231",
+    "noun": "Schisma",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-ma",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1232",
+    "noun": "Gegengewicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1233",
+    "noun": "Schlusslicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1234",
+    "noun": "Irrlicht",
+    "article": "das",
+    "exception": "",
+    "ruleId": "das-icht",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1235",
+    "noun": "Verzicht",
+    "article": "der",
+    "exception": "'Renunciation' is masculine because it is the noun of the verb verzichten (der Verzicht auf etwas); it is not one of the neuter -icht words like das Licht.",
+    "ruleId": "das-icht",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1236",
+    "noun": "Zuversicht",
+    "article": "die",
+    "exception": "'Confidence' is one of the -sicht nouns and stays feminine like die Sicht.",
+    "ruleId": "das-icht",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1237",
+    "noun": "Frist",
+    "article": "die",
+    "exception": "Means deadline, a short native word and not a person, so the -ist person rule doesn't apply.",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1238",
+    "noun": "Optimist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1239",
+    "noun": "Pessimist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1240",
+    "noun": "Spezialist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1241",
+    "noun": "Komponist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1242",
+    "noun": "Protagonist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1243",
+    "noun": "Aktivist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1244",
+    "noun": "Lobbyist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1245",
+    "noun": "Pazifist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1246",
+    "noun": "Opportunist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1247",
+    "noun": "Extremist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1248",
+    "noun": "Kolumnist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1249",
+    "noun": "Separatist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1250",
+    "noun": "Purist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1251",
+    "noun": "Fatalist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1252",
+    "noun": "Moralist",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ist",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1253",
+    "noun": "Palast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1254",
+    "noun": "Kontrast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1255",
+    "noun": "Ballast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1256",
+    "noun": "Gymnasiast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1257",
+    "noun": "Enthusiast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1258",
+    "noun": "Morast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1259",
+    "noun": "Cineast",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ast",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1260",
+    "noun": "Hast",
+    "article": "die",
+    "exception": "A one-syllable word (haste) like die Last; the rule is for longer -ast nouns.",
+    "ruleId": "der-ast",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1261",
+    "noun": "Käfig",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ich-ig",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1262",
+    "noun": "Rettich",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ich-ig",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1263",
+    "noun": "Kranich",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ich-ig",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1264",
+    "noun": "Wüterich",
+    "article": "der",
+    "exception": "",
+    "ruleId": "der-ich-ig",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1265",
+    "noun": "Garage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1266",
+    "noun": "Etage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1267",
+    "noun": "Massage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1268",
+    "noun": "Reportage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1269",
+    "noun": "Blamage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1270",
+    "noun": "Sabotage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1271",
+    "noun": "Spionage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1272",
+    "noun": "Passage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1273",
+    "noun": "Plantage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1274",
+    "noun": "Courage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1275",
+    "noun": "Collage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1276",
+    "noun": "Montage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1277",
+    "noun": "Hommage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1278",
+    "noun": "Image",
+    "article": "das",
+    "exception": "An English loanword (public image) that ends in -age only in spelling; it is pronounced the English way and is neuter.",
+    "ruleId": "die-age",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1279",
+    "noun": "Persiflage",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-age",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1280",
+    "noun": "Parade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1281",
+    "noun": "Marinade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1282",
+    "noun": "Fassade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1283",
+    "noun": "Ballade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1284",
+    "noun": "Olympiade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1285",
+    "noun": "Blockade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1286",
+    "noun": "Promenade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1287",
+    "noun": "Gnade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1288",
+    "noun": "Nomade",
+    "article": "der",
+    "exception": "A word for a person (nomad) and therefore masculine like other male person nouns; a woman is die Nomadin.",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1289",
+    "noun": "Dekade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1290",
+    "noun": "Eskapade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1291",
+    "noun": "Kaskade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1292",
+    "noun": "Maskerade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1293",
+    "noun": "Tirade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1294",
+    "noun": "Scharade",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ade",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1295",
+    "noun": "Tablette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "B2"
+  },
+  {
+    "id": "seed-1296",
+    "noun": "Etikette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1297",
+    "noun": "Silhouette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1298",
+    "noun": "Marionette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1299",
+    "noun": "Facette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1300",
+    "noun": "Palette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1301",
+    "noun": "Vignette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C1"
+  },
+  {
+    "id": "seed-1302",
+    "noun": "Pirouette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1303",
+    "noun": "Operette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1304",
+    "noun": "Statuette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C2"
+  },
+  {
+    "id": "seed-1305",
+    "noun": "Plakette",
+    "article": "die",
+    "exception": "",
+    "ruleId": "die-ette",
+    "level": "C2"
   }
 ]

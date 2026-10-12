@@ -67,3 +67,13 @@ shows "Question 1 of 10" with an answer control and no console errors. No accoun
 ```bash
 bash e2e/all-practice-pages.sh                   # about 2 minutes
 ```
+
+## Level picker (`articles.sh`)
+
+Checks the der · die · das level picker as a guest: A · B · C · All with All as the default, a level badge on each card,
+band C giving only C1/C2 cards (answered by keyboard), an old saved level converted, the new rules on `/rules`, and no
+horizontal scroll at 390px. No accounts, no AI, nothing saved.
+
+```bash
+bash e2e/articles.sh                             # about 1 minute
+```
