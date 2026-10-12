@@ -29,8 +29,10 @@ well-explained advanced nouns, and in a mixed round a word's level is obvious at
 ## Data
 
 New cards have the same fields as today: `id`, `noun`, `article`, `exception`, `ruleId`,
-`level`. Ids continue from the end (`seed-976`, `seed-977`, …); existing ids are never
-changed or reused, because saved answers refer to them.
+`level`. Ids continue after the highest existing id: the deck has 976 cards but its ids go up
+to `seed-995`, because 20 cards were removed in the A1–B2 level pass, so new cards start at
+`seed-996`. Existing ids are never changed, and removed ids are never reused, because saved
+answers refer to them.
 
 Each new rule has the same fields as the existing ones (`id`, `article`, `title`,
 `matchType: "suffix"`, `suffixes`, `description`, `examples`, `exceptions`, `category`), with wording
@@ -65,8 +67,9 @@ rule); rules without it (colours, car brands, letters, and so on) get none.
    (article, natural current German, level, rule fit, exception text). Its findings are
    fixed before the owner sees the sheet.
 4. **Owner review**: the owner marks each row in `review.csv` as keep, drop or change level.
-5. **`apply.mjs`**: appends only approved rows to `seed.json` with new ids and adds the six
-   rules to `rules.json`. Refuses to run if any row is blocked or unreviewed, or if an id or
+5. **`apply.mjs`**: appends only approved rows to `seed.json` with new ids and adds to `rules.json` each new
+   rule that at least 3 approved words use (a rule with fewer is left out rather than shipped
+   thin). Refuses to run if any row is blocked or unreviewed, or if an id or
    noun would collide. Running it twice changes nothing.
 
 ## App changes
@@ -89,9 +92,9 @@ Expected band sizes: A ≈ 270, B ≈ 700, C ≈ 250 cards.
 - **Data test** (new, `lib/flashcards/data.test.mjs`, part of `npm test` and so of every
   Vercel build): unique ids; valid article, level (A1–C2) and existing ruleId on every card;
   **the original 976 cards unchanged** (id, noun and article checked against a recorded
-  fingerprint); new ids continue without gaps; suffix-rule cards end with a rule ending or
+  fingerprint); new ids start at `seed-996` and continue without gaps; suffix-rule cards end with a rule ending or
   carry exception text; no duplicate nouns; each band has at least 30 cards; every rule
-  has a title, description and its endings.
+  has a title, description and its endings, and at least 3 cards.
 - **Logic tests**: the band filter and the one-time conversion of old saved choices.
 - **Browser check** (new `e2e/articles.sh`, playwright-cli, no AI cost): picker shows
   A · B · C · All with All selected by default; choosing C gives only C1/C2 cards with the
