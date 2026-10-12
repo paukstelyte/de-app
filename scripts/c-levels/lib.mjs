@@ -1,4 +1,4 @@
-// Pure checks for C1/C2 candidate words; check.mjs and apply.mjs (added in PR 2) do the file and network work.
+// Pure checks for C1/C2 candidate words; check.mjs and apply.mjs do the file and network work.
 const ARTICLE_BY_GENUS = { m: "der", f: "die", n: "das" };
 const NEW_LEVELS = new Set(["B2", "C1", "C2"]);
 export const COMMON_RANK = 5000; // within the top 5,000 spoken words → "maybe B2 or lower"
@@ -63,4 +63,42 @@ export function mergeDecisions(newRows, oldRows) {
     const prev = old.get(r.noun.toLowerCase());
     return prev ? { ...r, decision: prev.decision ?? "", note: prev.note ?? "" } : r;
   });
+}
+
+const DECISIONS = new Set(["keep", "drop", "B2", "C1", "C2"]);
+const MIN_WORDS_PER_NEW_RULE = 3;
+
+/** Approved review rows → new seed and rules. Existing cards are never changed; new ids continue
+ * after the highest existing id; a noun already in the seed is skipped (so a re-run adds nothing);
+ * a new rule ships only with at least 3 words, otherwise it and its words are left out. */
+export function applyReview(seed, rules, newRules, rows) {
+  const problems = [];
+  rows.forEach((row, i) => {
+    const where = `row ${i + 2} (${row.noun})`;
+    if (!DECISIONS.has(row.decision)) problems.push(`${where}: decision must be keep, drop, B2, C1 or C2`);
+    else if (row.decision !== "drop" && row.status !== "ok") problems.push(`${where}: blocked rows can only be dropped`);
+  });
+  if (problems.length) throw new Error(problems.join("\n"));
+
+  const existingRuleIds = new Set(rules.map((rule) => rule.id));
+  const known = new Set(seed.map((c) => c.noun.toLowerCase()));
+  const approved = rows.filter((row) => row.decision !== "drop" && !known.has(row.noun.toLowerCase()));
+  const wordsPerRule = new Map();
+  for (const row of approved) wordsPerRule.set(row.ruleId, (wordsPerRule.get(row.ruleId) ?? 0) + 1);
+  const shippedNewRules = newRules.filter(
+    (rule) => !existingRuleIds.has(rule.id) && (wordsPerRule.get(rule.id) ?? 0) >= MIN_WORDS_PER_NEW_RULE,
+  );
+  const usable = new Set([...existingRuleIds, ...shippedNewRules.map((rule) => rule.id)]);
+
+  let next = Math.max(...seed.map((c) => Number(c.id.slice("seed-".length)))) + 1;
+  const added = [];
+  for (const row of approved) {
+    if (!usable.has(row.ruleId) || known.has(row.noun.toLowerCase())) continue;
+    known.add(row.noun.toLowerCase());
+    added.push({
+      id: `seed-${next++}`, noun: row.noun, article: row.article, exception: row.exception,
+      ruleId: row.ruleId, level: row.decision === "keep" ? row.level : row.decision,
+    });
+  }
+  return { seed: [...seed, ...added], rules: [...rules, ...shippedNewRules], added: added.length };
 }
