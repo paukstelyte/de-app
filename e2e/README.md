@@ -8,7 +8,7 @@ Browser checks for Customized Learning, driven by [playwright-cli](https://www.n
 |---|---|
 | Guest and login | Guest `/learning` and `/learning/practice` are redirected to `/login?next=…`; logging in lands on `/learning`; `/` redirects there |
 | PDF, HEIC photo, Word | Each upload creates a "Lektion 7" document with `prepositions-dative` / `dative-case`, listed under "Your focus now" |
-| Blank image | "We couldn't read any text in this photo…" message, no document saved, upload counter unchanged |
+| Blank image | "We couldn't read any text in this photo…" message, no document saved, upload counter goes up by one (it still counts) |
 | Storage | After every upload the `learning-uploads` bucket is empty (read-only SQL, printed with its result) |
 | Focus | "Remove from my focus" hides a topic; "Add to my focus" on `/topics/modal-verbs` adds it |
 | Delete | A deleted document is gone after reload |

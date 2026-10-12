@@ -4,7 +4,7 @@ Date: 2026-10-12. Agreed with the owner in a grilling session (10 questions) and
 
 ## Goal
 
-1. Answering flows without a Continue click: a correct answer moves on by itself; a wrong answer waits for one click anywhere (or Enter).
+1. Answering flows without a Continue click: a correct answer moves on by itself; a wrong answer, or a correct answer on a flashcard with an exception note, waits for one click anywhere (or Enter).
 2. Every set of answer boxes can be used with the arrow keys and Enter, as well as by clicking.
 3. Customized Learning reads handwritten notes and teacher corrections, not only printed or typed pages.
 
@@ -16,13 +16,13 @@ Date: 2026-10-12. Agreed with the owner in a grilling session (10 questions) and
 | Correct answer | Shows "Correct!" (on flashcards also the rule and any exception) and moves on by itself after **1.5 seconds**. |
 | Wrong answer | Stays, with the right answer and the explanation, until the player **clicks anywhere on the screen** or presses **Enter**. A click or Enter during a correct answer's 1.5 seconds skips the wait. |
 | Clicks that don't advance | Clicks on links, other buttons (Restart, the level picker, the nav) and text fields keep doing their own thing; they don't count as "continue". |
-| Continue buttons | The exercises' **Continue →** button and the flashcards' "Tap or press Enter to continue" button are removed. A short plain-text hint stays under a wrong answer: "Click anywhere or press Enter to continue". |
+| Continue buttons | The exercises' **Continue →** button and the flashcards' "Tap or press Enter to continue" button are removed. A short plain-text hint stays under an answer that waits (wrong, or correct on an exception card): "Tap or click anywhere, or press Enter to continue". |
 | Screen readers | The result is still announced (`role="status"`) before the next question appears. |
 | Arrow keys | **← / →** move between the der · die · das buttons, multiple-choice answers, the word tiles still to place in word-order questions, and the placed tiles (to remove one). Moving past the last box wraps to the first. **Enter** (and Space, as now) picks or places the focused box. Clicking still works. Typed answers are unchanged (type, then Enter). |
 | Number keys | Not added. |
 | Handwriting | Handwritten notes, and teacher corrections on printed or typed homework. The model stays **google/gemini-2.5-flash-lite** (owner's decision after the test). |
 | Colour | Words written in another colour, underlined or boxed mean **emphasis** ("this is important"): those topics rank higher. Only clear **correction marks** (crossed out and rewritten, a tick or cross, a note in the margin) count as mistakes (`fromMistake: true`). The owner's samples had no teacher corrections, so that path is untested. |
-| Unreadable photos | A photo upload where the model reads no text at all is **not saved**: the player sees "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger." and the upload is given back. This also covers a blank photo, which today is saved as "No German grammar topics found". Documents with readable text but no German grammar behave as now. |
+| Unreadable photos | A photo upload where the model reads no text at all is **not saved**: the player sees "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger." and the upload still counts (changed 2026-10-12 after the security scan: giving it back let blank photos bypass the spend limit). This also covers a blank photo, which today is saved as "No German grammar topics found". Documents with readable text but no German grammar behave as now. |
 | Upload note | "Textbook pages, worksheets, notes (typed or neatly handwritten) or homework. Don't upload documents with personal details." |
 
 ## Handwriting test (2026-10-12)
@@ -54,7 +54,7 @@ The strict JSON schema, the topic catalogue rule, the `file-parser` native engin
 - `components/ArticlesGame.tsx`: uses both hooks; removes the continue button; adds the wrong-answer hint.
 - `components/exercises/ExerciseSession.tsx`: uses both hooks (choice options, word tiles to place, placed tiles); removes Continue; adds the wrong-answer hint.
 - `lib/learning/analyse.ts`: prompt changes above.
-- `app/learning/actions.ts`: a photo upload whose `extractedText` is empty is refused with the new message and the upload given back (like a failed AI read).
+- `app/learning/actions.ts`: a photo upload whose `extractedText` is empty is refused with the new message; the upload is not given back, because the AI call was paid.
 - `lib/learning/uploads.ts`: new upload note.
 - Docs: CLAUDE.md (flashcard interaction rules, AI rules), README (handwriting), the how-to-use text on the flashcard page, `docs/testing.md`.
 
