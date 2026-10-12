@@ -1,4 +1,4 @@
-// Pure checks for C1/C2 candidate words; check.mjs and apply.mjs do the file and network work.
+// Pure checks for C1/C2 candidate words; check.mjs and apply.mjs (added in PR 2) do the file and network work.
 const ARTICLE_BY_GENUS = { m: "der", f: "die", n: "das" };
 const NEW_LEVELS = new Set(["B2", "C1", "C2"]);
 export const COMMON_RANK = 5000; // within the top 5,000 spoken words → "maybe B2 or lower"
@@ -35,12 +35,13 @@ function fitsRule(noun, rule) {
 }
 
 /** Blocks (status "blocked") stop a word; flags (frequency) only inform the review. */
-export function checkRow(row, { rulesById, existingNouns, ranks, wiktionary }) {
+export function checkRow(row, { rulesById, existingNouns, ranks, wiktionary, newRuleIds = new Set() }) {
   const blocks = [];
   const flags = [];
   const rule = rulesById.get(row.ruleId);
   if (!["der", "die", "das"].includes(row.article)) blocks.push(`bad article "${row.article}"`);
   if (!NEW_LEVELS.has(row.level)) blocks.push(`bad level "${row.level}"`);
+  if (row.level === "B2" && !newRuleIds.has(row.ruleId)) blocks.push("B2 is only for the six new rules");
   if (!rule) blocks.push(`unknown rule "${row.ruleId}"`);
   if (!wiktionary.article) blocks.push(`Wiktionary: ${wiktionary.reason}`);
   else if (wiktionary.article !== row.article) blocks.push(`Wiktionary says ${wiktionary.article}`);

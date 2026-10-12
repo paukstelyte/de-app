@@ -22,7 +22,7 @@
 - The frequency list is `de_50k.txt` from hermitdave/FrequencyWords (OpenSubtitles 2018, CC BY-SA 4.0), stored with its source and license noted.
 - Picker bands: A = A1+A2, B = B1+B2, C = C1+C2, plus All. **All is the default.** "Practise my mistakes" ignores the band.
 - Old saved choice (localStorage `de-app:max-level`): A1 or A2 → A, B1 → B, B2 → All.
-- Work happens on branch `feature/c-level-words`. Two PRs (PR 1: Tasks 1–5; PR 2: Tasks 6–10). Each PR: `ai-code-reviewer` report in `docs/reviews/`, `/security-scan-changed`, suggested usability tests. No merge, push or live change without the owner.
+- Work happens on branch `feature/c-level-words`. Two PRs (PR 1: Tasks 1–4; PR 2: Tasks 5–10). Each PR: `ai-code-reviewer` report in `docs/reviews/`, `/security-scan-changed`, suggested usability tests. No merge, push or live change without the owner.
 - Commit messages end with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 
 ## Review Focus

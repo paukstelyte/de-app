@@ -37,7 +37,7 @@ const rulesById = new Map([
   ["das-ge-prefix", { id: "das-ge-prefix", article: "das", matchType: "suffix", suffixes: ["ge-"] }],
   ["der-male-persons", { id: "der-male-persons", article: "der", matchType: "semantic" }],
 ]);
-const ctx = (over = {}) => ({ rulesById, existingNouns: new Set(["garage"]), ranks: new Map([["reportage", 20412], ["etage", 900]]), wiktionary: { article: "die", reason: "" }, ...over });
+const ctx = (over = {}) => ({ rulesById, newRuleIds: new Set(["die-age"]), existingNouns: new Set(["garage"]), ranks: new Map([["reportage", 20412], ["etage", 900]]), wiktionary: { article: "die", reason: "" }, ...over });
 const row = (over = {}) => ({ noun: "Reportage", article: "die", ruleId: "die-age", level: "C1", exception: "", ...over });
 
 test("a good row passes; frequency only flags", () => {
@@ -57,6 +57,13 @@ test("blocks: wrong or missing Wiktionary gender, duplicate, bad rule fit, bad l
   assert.match(blocked({ level: "A2" }).problems, /bad level/);
   assert.match(blocked({ ruleId: "nope" }).problems, /unknown rule/);
   assert.equal(blocked({ noun: "Fassade" }).status, "blocked");
+});
+
+test("B2 is only for the six new rules", () => {
+  assert.equal(checkRow(row({ level: "B2" }), ctx()).status, "ok");
+  const r = checkRow(row({ level: "B2", article: "das", ruleId: "das-ge-prefix", noun: "Gebirge" }), ctx({ wiktionary: { article: "das", reason: "" } }));
+  assert.equal(r.status, "blocked");
+  assert.match(r.problems, /B2 is only for the six new rules/);
 });
 
 test("prefix rules match the start; going against a rule needs exception text", () => {

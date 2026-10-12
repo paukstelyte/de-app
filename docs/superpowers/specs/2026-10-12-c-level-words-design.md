@@ -35,7 +35,7 @@ to `seed-995`, because 20 cards were removed in the A1–B2 level pass, so new c
 answers refer to them.
 
 Each new rule has the same fields as the existing ones (`id`, `article`, `title`,
-`matchType: "suffix"`, `suffixes`, `description`, `examples`, `exceptions`, `category`), with wording
+`matchType: "suffix"`, `suffixes`, `description`, `examples`, `exceptions`; `category` is only used by semantic rules), with wording
 researched from grammar sources and checked by the reviewer. On `/rules` and on the cards
 the ending is bold, as for the existing rules. Where a word breaks its rule (e.g.
 *der Nomade* under `-ade` → die), its `exception` text explains why, as existing exceptions
