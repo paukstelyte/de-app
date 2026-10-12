@@ -192,7 +192,7 @@
       "answers": [
         "gegessen"
       ],
-      "explanation": "essen is strong: ge- + essen = gegessen (with haben)."
+      "explanation": "essen is irregular: the participle is gegessen, with an extra g (not geessen), and it takes haben."
     },
     {
       "id": "pf-18",
@@ -314,20 +314,19 @@
       "id": "pf-29",
       "type": "order",
       "words": [
-        "Ich",
-        "weiß,",
-        "dass",
-        "Anna",
-        "nach",
-        "Hause",
-        "gegangen",
-        "ist."
+        "Am",
+        "Sonntag",
+        "sind",
+        "wir",
+        "ins",
+        "Kino",
+        "gegangen."
       ],
       "answers": [
-        "Ich weiß, dass Anna nach Hause gegangen ist."
+        "Am Sonntag sind wir ins Kino gegangen."
       ],
-      "translation": "I know that Anna went home.",
-      "explanation": "In a dass-clause the conjugated verb (ist) goes last, after the participle."
+      "translation": "We went to the cinema on Sunday.",
+      "explanation": "Am Sonntag is first, so the auxiliary sind comes second, then wir; the participle gegangen goes to the end."
     },
     {
       "id": "pf-30",

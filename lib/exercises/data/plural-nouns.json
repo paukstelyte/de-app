@@ -325,7 +325,7 @@
     {
       "id": "pl-29",
       "type": "type",
-      "prompt": "In der Stadt gibt es viele ___.",
+      "prompt": "Am Marktplatz gibt es zwei ___.",
       "hint": "(das Café)",
       "answers": [
         "Cafés"
