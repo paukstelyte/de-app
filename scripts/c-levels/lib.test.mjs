@@ -2,7 +2,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { parseCsv, toCsv } from "./csv.mjs";
-import { articleFromWikitext, checkRow, frequencyRanks, COMMON_RANK } from "./lib.mjs";
+import { articleFromWikitext, checkRow, frequencyRanks, mergeDecisions, REVIEW_HEADERS, COMMON_RANK } from "./lib.mjs";
 
 test("CSV round trip keeps commas, quotes and line breaks", () => {
   const rows = [{ noun: "Nomade", exception: 'A person, so "der", not die\nsee -ade' }];
@@ -66,4 +66,14 @@ test("prefix rules match the start; going against a rule needs exception text", 
   assert.match(checkRow(against, ctx({ wiktionary: { article: "der", reason: "" } })).problems, /no exception text/);
   const explained = row({ noun: "Nomage", article: "der", exception: "A person." });
   assert.equal(checkRow(explained, ctx({ wiktionary: { article: "der", reason: "" } })).status, "ok");
+});
+
+test("re-running the check keeps the owner's decision and note", () => {
+  const fresh = [{ noun: "Fassade", status: "ok", decision: "", note: "" }, { noun: "Parade", status: "ok", decision: "", note: "" }];
+  const old = [{ noun: "Fassade", decision: "C1", note: "fine" }];
+  assert.deepEqual(mergeDecisions(fresh, old), [
+    { noun: "Fassade", status: "ok", decision: "C1", note: "fine" },
+    { noun: "Parade", status: "ok", decision: "", note: "" },
+  ]);
+  assert.equal(REVIEW_HEADERS.at(-2), "decision");
 });

@@ -52,3 +52,14 @@ export function checkRow(row, { rulesById, existingNouns, ranks, wiktionary }) {
   else if (rank <= COMMON_RANK) flags.push("common: maybe B2 or lower");
   return { status: blocks.length ? "blocked" : "ok", problems: [...blocks, ...flags].join("; "), rank };
 }
+
+export const REVIEW_HEADERS = ["noun", "article", "ruleId", "level", "exception", "reason", "wiktionary", "rank", "problems", "status", "decision", "note"];
+
+/** Carries the owner's decision and note over from the previous review.csv, by noun. */
+export function mergeDecisions(newRows, oldRows) {
+  const old = new Map(oldRows.map((r) => [r.noun.toLowerCase(), r]));
+  return newRows.map((r) => {
+    const prev = old.get(r.noun.toLowerCase());
+    return prev ? { ...r, decision: prev.decision ?? "", note: prev.note ?? "" } : r;
+  });
+}
