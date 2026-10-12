@@ -239,7 +239,8 @@
       ],
       "answers": [
         "Der Kaffee ist kalt, trotzdem trinkt Anna ihn gern.",
-        "Der Kaffee ist kalt, Anna trinkt ihn trotzdem gern."
+        "Der Kaffee ist kalt, Anna trinkt ihn trotzdem gern.",
+        "Der Kaffee ist kalt, trotzdem trinkt ihn Anna gern."
       ],
       "translation": "The coffee is cold, but Anna still likes drinking it.",
       "explanation": "trotzdem can take position one (verb next) or stand after the verb: trotzdem trinkt Anna ihn / Anna trinkt ihn trotzdem gern."

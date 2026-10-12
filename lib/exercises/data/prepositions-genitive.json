@@ -5,14 +5,14 @@
     {
       "id": "pgen-01",
       "type": "choice",
-      "prompt": "Wir bleiben wegen ___ Regens zu Hause.",
+      "prompt": "Wir bleiben wegen ___ Schnees zu Hause.",
       "options": [
         "des",
         "der",
         "die"
       ],
       "answer": "des",
-      "explanation": "wegen takes the genitive. Masculine der Regen becomes des Regens."
+      "explanation": "wegen takes the genitive. Masculine der Schnee becomes des Schnees."
     },
     {
       "id": "pgen-02",
@@ -302,12 +302,12 @@
     {
       "id": "pgen-24",
       "type": "type",
-      "prompt": "Wegen des schlechten ___ spielen die Kinder drinnen.",
-      "hint": "(das Wetter)",
+      "prompt": "Wegen des starken ___ spielen die Kinder drinnen.",
+      "hint": "(das Gewitter)",
       "answers": [
-        "Wetters"
+        "Gewitters"
       ],
-      "explanation": "Neuter nouns take -s in the genitive: wegen des schlechten Wetters."
+      "explanation": "Neuter nouns take -s in the genitive: wegen des starken Gewitters."
     },
     {
       "id": "pgen-25",

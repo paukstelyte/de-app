@@ -141,12 +141,12 @@
     {
       "id": "deshalb-12",
       "type": "type",
-      "prompt": "Anna ist krank, deshalb ___ sie zu Hause.",
+      "prompt": "Heute ist Sonntag, deshalb ___ Lena lange im Bett.",
       "hint": "(bleiben)",
       "answers": [
         "bleibt"
       ],
-      "explanation": "After deshalb the conjugated verb comes next; with sie the form is bleibt."
+      "explanation": "After deshalb the conjugated verb comes next; with Lena the form is bleibt."
     },
     {
       "id": "deshalb-13",

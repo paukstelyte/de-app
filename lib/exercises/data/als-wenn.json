@@ -357,18 +357,21 @@
       "type": "order",
       "words": [
         "Wenn",
-        "es",
-        "morgen",
-        "schneit,",
-        "fahren",
-        "wir",
-        "Ski."
+        "ich",
+        "nächste",
+        "Woche",
+        "in",
+        "München",
+        "bin,",
+        "besuche",
+        "ich",
+        "dich."
       ],
       "answers": [
-        "Wenn es morgen schneit, fahren wir Ski."
+        "Wenn ich nächste Woche in München bin, besuche ich dich."
       ],
-      "translation": "If it snows tomorrow, we will go skiing.",
-      "explanation": "wenn for the future; schneit goes to the end and the main clause begins with the verb (fahren wir)."
+      "translation": "When I am in Munich next week, I will visit you.",
+      "explanation": "wenn for a future event; bin goes to the end and the main clause begins with the verb (besuche ich)."
     }
   ]
 }

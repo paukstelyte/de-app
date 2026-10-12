@@ -289,15 +289,15 @@
         "Lena",
         "versucht,",
         "jeden",
-        "Morgen",
+        "Abend",
         "früh",
-        "aufzustehen."
+        "einzuschlafen."
       ],
       "answers": [
-        "Lena versucht, jeden Morgen früh aufzustehen."
+        "Lena versucht, jeden Abend früh einzuschlafen."
       ],
-      "translation": "Lena tries to get up early every morning.",
-      "explanation": "Separable verb: zu goes inside, aufzustehen, at the end of the clause."
+      "translation": "Lena tries to fall asleep early every evening.",
+      "explanation": "Separable verb: zu goes inside, einzuschlafen, at the end of the clause."
     },
     {
       "id": "inf-zu-26",
@@ -321,18 +321,17 @@
       "type": "order",
       "words": [
         "Jonas",
-        "hofft,",
-        "bald",
-        "einen",
-        "Job",
+        "hat",
+        "aufgehört,",
+        "Fleisch",
         "zu",
-        "finden."
+        "essen."
       ],
       "answers": [
-        "Jonas hofft, bald einen Job zu finden."
+        "Jonas hat aufgehört, Fleisch zu essen."
       ],
-      "translation": "Jonas hopes to find a job soon.",
-      "explanation": "The object and time word come first, then zu finden at the end."
+      "translation": "Jonas has stopped eating meat.",
+      "explanation": "aufhören takes an infinitive with zu: the object comes first, then zu essen at the end."
     },
     {
       "id": "inf-zu-28",
@@ -378,15 +377,15 @@
         "Mia",
         "fängt",
         "an,",
-        "ihr",
-        "Zimmer",
-        "aufzuräumen."
+        "die",
+        "Einkäufe",
+        "auszupacken."
       ],
       "answers": [
-        "Mia fängt an, ihr Zimmer aufzuräumen."
+        "Mia fängt an, die Einkäufe auszupacken."
       ],
-      "translation": "Mia starts to tidy up her room.",
-      "explanation": "anfangen + infinitive with zu; the separable verb becomes aufzuräumen."
+      "translation": "Mia starts to unpack the shopping.",
+      "explanation": "anfangen + infinitive with zu; the separable verb becomes auszupacken."
     }
   ]
 }
