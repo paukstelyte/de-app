@@ -25,8 +25,9 @@ export function keyContinues(
 /** The next enabled index after `current` in direction `step`, wrapping; `current` if none other is enabled. */
 export function nextEnabled(current: number, enabled: boolean[], step: 1 | -1): number {
   const n = enabled.length;
+  const from = current < 0 ? (step > 0 ? -1 : n) : current; // nothing focused: → starts at the first, ← at the last
   for (let k = 1; k <= n; k++) {
-    const i = (((current + step * k) % n) + n) % n;
+    const i = (((from + step * k) % n) + n) % n;
     if (enabled[i] && i !== current) return i;
   }
   return current;

@@ -26,9 +26,46 @@ for i in 1 2 3 4 5; do
   cur=$(noun)
   check "card $i is a new card ($cur)" '[ -n "$cur" ] && [ "$cur" != "$prev" ]'
   prev=$cur
-  pw press Enter >/dev/null; sleep 1 # the first answer button is focused: answer with the keyboard
-  pw press Enter >/dev/null; sleep 1 # the focused "continue" button advances
+  pw press Enter >/dev/null; sleep 2 # the first answer button is focused: answer with the keyboard; a correct one moves on after 1.5 s
+  [ "$(noun)" = "$cur" ] && pw press Enter >/dev/null && sleep 1 # a wrong one waits: Enter continues
 done
+
+echo "== Arrow keys choose, Enter picks"
+pw goto "$BASE/articles" >/dev/null; sleep 3
+focused() { js "() => document.activeElement?.textContent.trim()"; }
+check "first answer focused" '[ "$(focused)" = "\"der\"" ]'
+pw press ArrowRight >/dev/null; sleep 0.3
+check "→ moves to die" '[ "$(focused)" = "\"die\"" ]'
+pw press ArrowLeft >/dev/null; pw press ArrowLeft >/dev/null; sleep 0.3
+check "← wraps to das" '[ "$(focused)" = "\"das\"" ]'
+before=$(noun); pw press Enter >/dev/null; sleep 0.5
+check "Enter picks it (feedback shown)" '[ "$(js "() => /Correct!|Not quite\\./.test(document.body.innerText)")" = "true" ]'
+sleep 2; [ "$(noun)" = "$before" ] && pw press Enter >/dev/null && sleep 1
+check "the next card appears without a continue button" '[ "$(noun)" != "$before" ] && [ "$(js "() => [...document.querySelectorAll(\"button\")].some(b=>/continue/i.test(b.textContent))")" = "false" ]'
+
+echo "== A wrong answer waits; a click on empty space, or Enter, continues; Restart still restarts"
+# Click "der" on fresh cards until one is wrong (a right one moves on by itself after 1.5 s).
+wrong_answer() {
+  for t in 1 2 3 4 5 6 7 8; do
+    js "() => { [...document.querySelectorAll('button')].find(b=>b.textContent.trim()==='der').click(); return 1 }" >/dev/null; sleep 0.5
+    [ "$(js "() => document.body.innerText.includes('Not quite.')")" = "true" ] && return 0
+    sleep 2
+  done
+  return 1
+}
+wrong_answer; got=$?
+check "got a wrong answer to test with" '[ $got = 0 ]'
+before=$(noun); sleep 2.5
+check "a wrong answer waits (no auto-advance)" '[ "$(noun)" = "$before" ]'
+check "the plain hint shows under it" '[ "$(js "() => document.body.innerText.includes(\"Click anywhere or press Enter to continue\")")" = "true" ]'
+js "() => { document.body.click(); return 1 }" >/dev/null; sleep 0.5
+check "a click on empty space continues" '[ "$(noun)" != "$before" ]'
+wrong_answer; before=$(noun); sleep 2.5
+pw press Enter >/dev/null; sleep 0.5
+check "Enter continues after a wrong answer" '[ "$(noun)" != "$before" ]'
+wrong_answer; sleep 1
+js "() => { [...document.querySelectorAll('button')].find(b=>b.textContent.trim()==='Restart').click(); return 1 }" >/dev/null; sleep 1
+check "Restart restarts (Card 1 of 30)" '[ "$(js "() => /card 1 of 30/i.test(document.body.innerText)")" = "true" ]'
 
 echo "== Old saved choice is converted"
 js "() => { localStorage.clear(); localStorage.setItem('de-app:max-level','B1'); return 1 }" >/dev/null; pw reload >/dev/null; sleep 3
