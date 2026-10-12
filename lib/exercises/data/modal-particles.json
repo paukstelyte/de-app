@@ -33,14 +33,14 @@
     {
       "id": "mp-03",
       "type": "choice",
-      "prompt": "Das ist ___ eine Überraschung! (pleasantly surprised at what you see)",
+      "prompt": "Du bist ___ ganz nass! (surprised at what you see)",
       "options": [
         "ja",
         "eben",
         "mal"
       ],
       "answer": "ja",
-      "explanation": "ja expresses surprise about something obvious in the situation: Das ist ja eine Überraschung!"
+      "explanation": "ja expresses surprise about something obvious in the situation: Du bist ja ganz nass!"
     },
     {
       "id": "mp-04",
@@ -108,14 +108,14 @@
     {
       "id": "mp-09",
       "type": "choice",
-      "prompt": "Wir haben genug Kuchen. Du kannst ___ noch ein Stück nehmen. (encouraging, no need to hold back)",
+      "prompt": "Wir haben genug Kuchen. Nimm ___ noch ein Stück! (encouraging, no need to hold back)",
       "options": [
         "ruhig",
         "eben",
         "wohl"
       ],
       "answer": "ruhig",
-      "explanation": "ruhig tells the listener there is no problem in doing something: Du kannst ruhig noch ein Stück nehmen."
+      "explanation": "ruhig tells the listener there is no problem in doing something: Nimm ruhig noch ein Stück!"
     },
     {
       "id": "mp-10",
@@ -216,7 +216,7 @@
         "ja"
       ],
       "answer": "etwa",
-      "explanation": "etwa in a yes/no question suggests the speaker expects or fears the answer is no."
+      "explanation": "etwa in a yes/no question shows surprise or suspicion: the speaker hopes the answer is no but fears it may be yes."
     },
     {
       "id": "mp-18",
@@ -269,17 +269,17 @@
       "id": "mp-22",
       "type": "order",
       "words": [
-        "Hast",
-        "du",
+        "Können",
+        "Sie",
+        "mir",
         "vielleicht",
-        "ein",
-        "Pflaster?"
+        "helfen?"
       ],
       "answers": [
-        "Hast du vielleicht ein Pflaster?"
+        "Können Sie mir vielleicht helfen?"
       ],
-      "translation": "Do you happen to have a plaster?",
-      "explanation": "vielleicht softens a yes/no question and follows the subject du."
+      "translation": "Could you help me, by any chance?",
+      "explanation": "vielleicht softens a polite request in question form and follows the pronouns Sie and mir."
     },
     {
       "id": "mp-23",

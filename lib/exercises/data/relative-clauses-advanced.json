@@ -57,7 +57,7 @@
     {
       "id": "relc-05",
       "type": "choice",
-      "prompt": "Alles, ___ ich weiß, habe ich dir gesagt.",
+      "prompt": "Ich habe nichts gefunden, ___ mir gefällt.",
       "options": [
         "was",
         "wer",
@@ -83,7 +83,7 @@
     {
       "id": "relc-07",
       "type": "choice",
-      "prompt": "Anna hat die Prüfung bestanden, ___ mich sehr freut.",
+      "prompt": "Der Zug hatte zwei Stunden Verspätung, ___ uns sehr geärgert hat.",
       "options": [
         "was",
         "wer",
