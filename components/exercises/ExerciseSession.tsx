@@ -5,7 +5,7 @@ import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { recordExerciseAnswer } from "@/app/topics/[slug]/practice/actions";
 import { useAdvance } from "@/lib/useAdvance";
 import { useArrowKeys } from "@/lib/useArrowKeys";
-import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle } from "@/lib/exercises/check";
+import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle, spell } from "@/lib/exercises/check";
 import type { ChoiceItem, ExerciseItem, OrderItem, TypeItem } from "@/lib/exercises/types";
 
 const card = "border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]";
@@ -121,7 +121,12 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
                 Answer: <b lang="de">{solution}</b>
               </p>
             )}
-            {!answered.correct && item.type === "type" && item.answers.some((a) => normalise(a).toLowerCase() === normalise(answered.answer).toLowerCase()) && (
+            {answered.correct && item.type === "type" && !item.answers.map(normalise).includes(normalise(answered.answer)) && (
+              <p className="text-sm">
+                Spelled: <b lang="de">{item.answers.find((a) => spell(a) === spell(answered.answer))}</b>
+              </p>
+            )}
+            {!answered.correct && item.type === "type" && item.answers.some((a) => spell(a).toLowerCase() === spell(answered.answer).toLowerCase()) && (
               <p className="text-sm">Check the capital letters.</p>
             )}
             <p className="text-sm text-zinc-700 dark:text-zinc-300">{item.explanation}</p>

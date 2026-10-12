@@ -9,8 +9,8 @@ export function normalise(s: string): string {
 }
 
 // Keyboards without German letters: ae/oe/ue/ss (and e for é) count as the letter.
-const SPELLED: Record<string, string> = { ä: "ae", ö: "oe", ü: "ue", Ä: "Ae", Ö: "Oe", Ü: "Ue", ß: "ss", é: "e" };
-const spell = (s: string) => normalise(s).replace(/[äöüÄÖÜßé]/g, (c) => SPELLED[c]);
+const SPELLED: Record<string, string> = { ä: "ae", ö: "oe", ü: "ue", Ä: "Ae", Ö: "Oe", Ü: "Ue", ß: "ss", é: "e", É: "E" };
+export const spell = (s: string) => normalise(s).replace(/[äöüÄÖÜßéÉ]/g, (c) => SPELLED[c]);
 
 export function isCorrect(item: ExerciseItem, answer: string): boolean {
   if (item.type === "choice") return answer === item.answer;
