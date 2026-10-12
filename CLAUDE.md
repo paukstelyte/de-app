@@ -29,7 +29,7 @@ The deck ships pre-seeded with `seed.json` (1,286 cards: A1 139, A2 133, B1 443,
 
 ### Exercise data (`lib/exercises/data/`)
 
-One JSON file per topic (81 files; noun-gender uses `/articles`), 30 items each, validated by `lib/exercises/data.test.mjs`. After adding or editing a file, run `npm run sync:exercises` (regenerates `lib/exercises/sets.ts` and the practice links in `lib/grammar/topics.json`). Never rename a topic slug or reuse an item id: saved answers refer to them.
+One JSON file per topic (81 files; noun-gender uses `/articles`), 30 items each, validated by `lib/exercises/data.test.mjs`. After adding or editing a file, run `npm run sync:exercises` (regenerates `lib/exercises/sets.ts` and the practice links in `lib/grammar/topics.json`). Never rename a topic slug or reuse an item id: saved answers refer to them. To find and fix weak items, run `/improve-exercises <level or slug>`: editor and verifier agents fix the sets, checks run, and it ends in a PR to approve (one level per PR, A1 → C2).
 
 ### Visual design
 
