@@ -50,11 +50,11 @@
       "type": "choice",
       "prompt": "Und ___ wohnst du? – In Hamburg.",
       "options": [
-        "Wo",
-        "Woher",
-        "Wohin"
+        "wo",
+        "woher",
+        "wohin"
       ],
-      "answer": "Wo",
+      "answer": "wo",
       "explanation": "Wo asks about the place where someone is or lives; woher asks about origin."
     },
     {
@@ -86,11 +86,11 @@
       "type": "choice",
       "prompt": "Und ___ ist das? – Das ist mein Bruder.",
       "options": [
-        "Wer",
-        "Was",
-        "Wo"
+        "wer",
+        "was",
+        "wo"
       ],
-      "answer": "Wer",
+      "answer": "wer",
       "explanation": "Wer asks about a person; was asks about a thing."
     },
     {
@@ -127,11 +127,11 @@
       "type": "choice",
       "prompt": "Und ___ du Kinder? – Ja, zwei.",
       "options": [
-        "Hast",
-        "Hat",
-        "Habt"
+        "hast",
+        "hat",
+        "habt"
       ],
-      "answer": "Hast",
+      "answer": "hast",
       "explanation": "A yes/no question starts with the verb; for du the form is hast."
     },
     {
@@ -179,12 +179,12 @@
       "type": "choice",
       "prompt": "Und ___ kostet das? – Fünf Euro.",
       "options": [
-        "Wie viel",
-        "Wie",
-        "Wann",
-        "Wo"
+        "wie viel",
+        "wie",
+        "wann",
+        "wo"
       ],
-      "answer": "Wie viel",
+      "answer": "wie viel",
       "explanation": "Wie viel asks about an amount or price."
     },
     {
@@ -247,12 +247,12 @@
       "type": "choice",
       "prompt": "Und ___ kommt der Bus? – Um acht Uhr.",
       "options": [
-        "Wann",
-        "Wo",
-        "Wer",
-        "Warum"
+        "wann",
+        "wo",
+        "wer",
+        "warum"
       ],
-      "answer": "Wann",
+      "answer": "wann",
       "explanation": "Wann asks about time."
     },
     {
@@ -339,11 +339,11 @@
       "type": "choice",
       "prompt": "Und ___ lernst du Deutsch? – Weil ich in Berlin arbeite.",
       "options": [
-        "Warum",
-        "Wann",
-        "Wie"
+        "warum",
+        "wann",
+        "wie"
       ],
-      "answer": "Warum",
+      "answer": "warum",
       "explanation": "The answer gives a reason (weil ...), so the question word is warum."
     },
     {

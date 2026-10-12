@@ -269,7 +269,7 @@
     {
       "id": "pp-23",
       "type": "type",
-      "prompt": "Das Wetter ist schön. Heute scheint die Sonne und ___ ist warm.",
+      "prompt": "Das Wetter ist schön. Heute ist ___ sehr warm.",
       "hint": "(es / er / sie)",
       "answers": [
         "es"

@@ -28,7 +28,7 @@
     {
       "id": "sh-03",
       "type": "choice",
-      "prompt": "Anna ___ eine Schwester.",
+      "prompt": "Anna ___ zwei Schwestern.",
       "options": [
         "hat",
         "ist",
@@ -36,7 +36,7 @@
         "hast"
       ],
       "answer": "hat",
-      "explanation": "haben with er/sie/es: sie hat. Having a sister uses haben, not sein."
+      "explanation": "haben with er/sie/es: sie hat. Having sisters uses haben, not sein."
     },
     {
       "id": "sh-04",
@@ -125,7 +125,7 @@
         "sind",
         "ist",
         "seid",
-        "haben"
+        "bin"
       ],
       "answer": "sind",
       "explanation": "Two people are plural, so sein takes sie-form: sie sind."
