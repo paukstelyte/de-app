@@ -1,23 +1,23 @@
 import { useSyncExternalStore } from "react";
-import { LEVELS, type Level } from "./types";
+import { bandFromStorage, type Band } from "./bands";
 
-/** The highest level a player wants to practise, remembered per browser. */
-const STORAGE_KEY = "de-app:max-level";
-const DEFAULT: Level = "B2"; // everything
+/** The level band a player wants to practise, remembered per browser. */
+const STORAGE_KEY = "de-app:level-band";
+const OLD_KEY = "de-app:max-level"; // before bands: the highest level, converted on read
+const DEFAULT: Band = "all";
 
 const listeners = new Set<() => void>();
 
-function read(): Level {
+function read(): Band {
   try {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    return LEVELS.includes(stored as Level) ? (stored as Level) : DEFAULT;
+    return bandFromStorage(window.localStorage.getItem(STORAGE_KEY), window.localStorage.getItem(OLD_KEY));
   } catch {
     return DEFAULT;
   }
 }
 
-export function useMaxLevel(): [Level, (level: Level) => void] {
-  const level = useSyncExternalStore(
+export function useBand(): [Band, (band: Band) => void] {
+  const band = useSyncExternalStore(
     (listener) => {
       listeners.add(listener);
       return () => listeners.delete(listener);
@@ -25,7 +25,7 @@ export function useMaxLevel(): [Level, (level: Level) => void] {
     read,
     () => DEFAULT, // server: localStorage doesn't exist
   );
-  function setLevel(next: Level) {
+  function setBand(next: Band) {
     try {
       window.localStorage.setItem(STORAGE_KEY, next);
     } catch {
@@ -33,9 +33,5 @@ export function useMaxLevel(): [Level, (level: Level) => void] {
     }
     listeners.forEach((l) => l());
   }
-  return [level, setLevel];
-}
-
-export function isAtOrBelow(level: Level, max: Level): boolean {
-  return LEVELS.indexOf(level) <= LEVELS.indexOf(max);
+  return [band, setBand];
 }
