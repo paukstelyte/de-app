@@ -29,6 +29,13 @@ insert into results select 'setup: A has saved answers', '> 0', count(*)::text f
 insert into results select 'setup: A has upload-counter rows', '> 0', count(*)::text from public.learning_upload_usage where user_id = current_setting('test.user_a')::uuid;
 insert into results select 'setup: A has an uploaded file', '> 0', count(*)::text from storage.objects where bucket_id = 'learning-uploads' and (storage.foldername(name))[1] = current_setting('test.user_a');
 
+-- Positive control: A can read their own upload-counter rows (the owner policy works,
+-- not just "nobody can read").
+select set_config('request.jwt.claims', json_build_object('sub', current_setting('test.user_a'), 'role', 'authenticated')::text, true);
+set local role authenticated;
+insert into results select 'A reads their own upload counter (owner policy)', '> 0', count(*)::text from public.learning_upload_usage where user_id = current_setting('test.user_a')::uuid;
+reset role;
+
 -- Now act as B.
 select set_config('request.jwt.claims', json_build_object('sub', current_setting('test.user_b'), 'role', 'authenticated')::text, true);
 set local role authenticated;
