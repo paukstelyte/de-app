@@ -157,7 +157,7 @@ if [ "$found" = 0 ]; then
   n0=$(qnum)
   pw type "xxx" >/dev/null; pw press Enter >/dev/null; sleep 1
   check "wrong typed answer shows 'Not quite.'" 'has_text "Not quite."'
-  check "wrong answer shows the hint 'Click anywhere or press Enter to continue'" 'has_text "Click anywhere or press Enter to continue"'
+  check "wrong answer shows the hint 'Tap or click anywhere, or press Enter to continue'" 'has_text "Tap or click anywhere, or press Enter to continue"'
   check "no Continue button after a wrong answer" 'no_continue_button'
   sleep 2.5
   check "wrong answer waits (still question $n0 after 3.5 s)" '[ "$(qnum)" = "$n0" ] && has_text "Not quite."'
@@ -206,7 +206,7 @@ if [ "$found" = 0 ]; then
   pw press ArrowRight >/dev/null; sleep 0.3
   check "→ moves focus to the next word tile" '[ "$(js "$TILE")" = "\"1\"" ]'
   n0=$(qnum); answer_now separable-verbs wrong; sleep 2.5
-  check "wrong order answer waits (question $n0) and shows the hint" '[ "$(qnum)" = "$n0" ] && has_text "Click anywhere or press Enter to continue"'
+  check "wrong order answer waits (question $n0) and shows the hint" '[ "$(qnum)" = "$n0" ] && has_text "Tap or click anywhere, or press Enter to continue"'
   check "no Continue button after an order answer" 'no_continue_button'
   cont; n1=$(qnum)
   check "click continues a wrong order answer (question $n0 -> ${n1:-round end})" '[ "$n1" = "$((n0 + 1))" ] || has_text "Round complete!"'

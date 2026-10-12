@@ -21,7 +21,7 @@ const ERRORS = {
   generic: "Something went wrong — please try again.",
 };
 
-/** Gives an upload back when the AI read failed or read no text from a photo (no result, so no paid answer to keep). A failed save is not given back: the AI call was already paid for. Admin key, server only: users can't refund themselves. */
+/** Gives an upload back only when the AI read failed (no paid answer). A failed save and an unreadable photo are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number, userId: string) {
   if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -72,7 +72,6 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
     }
     const a = result.analysis;
     if (photoUnreadable(kind, a.extractedText)) {
-      await giveBackUpload(usageId, userId);
       return { error: ERRORS.unreadablePhoto };
     }
     const { data: row, error } = await supabase

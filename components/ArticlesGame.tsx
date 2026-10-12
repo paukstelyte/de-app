@@ -115,7 +115,7 @@ export function ArticlesGame({
           <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">How to use</h2>
           <ul className="mt-3 list-disc space-y-2 pl-4 text-xs leading-5 text-zinc-600 dark:text-zinc-400">
             <li>Choose a level, then pick der, die or das. The card flips to show the rule behind the answer.</li>
-            <li>A correct answer moves on by itself; after a mistake, click anywhere or press Enter. Use ← and → to choose, Enter to pick.</li>
+            <li>A correct answer moves on by itself; after a mistake, or on a card with an exception note, click anywhere or press Enter. Use ← and → to choose, Enter to pick.</li>
             <li>
               After {ROUND_SIZE} words, replay the ones you missed or start the
               next {ROUND_SIZE}. Overall accuracy keeps counting until you restart.
@@ -314,15 +314,17 @@ function Game({
   const { cards } = useFlashcards();
   const card = cards.find((c) => c.id === cardId);
   const answersRef = useArrowKeys<HTMLDivElement>();
-  useAdvance(chosen !== null, !!card && chosen === card.article, onAdvance);
+  useAdvance(chosen !== null, !!card && chosen === card.article && !card.exception, onAdvance);
   if (!card) return null;
 
   const isCorrect = chosen === card.article;
+  const waits = !!chosen && (!isCorrect || !!card.exception); // otherwise a correct answer moves on by itself
 
   return (
     <div className="flex flex-col gap-3">
       <p role="status" className="sr-only">
         {chosen && (isCorrect ? "Correct!" : `Not quite. It's ${card.article} ${card.noun}.`)}
+        {chosen && waits && " Press Enter to continue."}
       </p>
       <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
         <span>{positionLabel}</span>
@@ -341,7 +343,7 @@ function Game({
 
       <div
         className={`relative flex min-h-[380px] flex-col items-center justify-center overflow-hidden border border-[var(--line)] bg-[var(--paper)] p-8 text-center shadow-[8px_8px_0_var(--accent)] sm:p-12 ${
-          chosen && !isCorrect ? "cursor-pointer" : ""
+          waits ? "cursor-pointer" : ""
         }`}
       >
         <span className="absolute right-5 top-5" data-card-level aria-label={`Level ${card.level}`}>
@@ -414,7 +416,7 @@ function Game({
               </div>
             )}
 
-            {!isCorrect && <p className="self-center text-xs text-zinc-400 dark:text-zinc-500">Click anywhere or press Enter to continue</p>}
+            {waits && <p className="self-center text-xs text-zinc-500 dark:text-zinc-400">Tap or click anywhere, or press Enter to continue</p>}
           </div>
         )}
       </div>

@@ -5,8 +5,9 @@ export const ADVANCE_DELAY_MS = 1500; // a correct answer stays this long, then 
 // Clicks on these keep doing their own thing (Restart, the level picker, links, text fields).
 const OWN_ACTION = "a, button, input, textarea, select, label, [role=button]";
 
-export function clickContinues(target: { closest(selector: string): unknown } | null): boolean {
-  return !target?.closest(OWN_ACTION);
+/** `hasSelection`: the person just selected text with the mouse, which is not a "continue". */
+export function clickContinues(target: { closest(selector: string): unknown } | null, hasSelection = false): boolean {
+  return !hasSelection && !target?.closest(OWN_ACTION);
 }
 
 /** Enter continues, except on a focused button or link (they act on Enter themselves) or an editable field. */

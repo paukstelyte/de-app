@@ -57,7 +57,7 @@ wrong_answer; got=$?
 check "got a wrong answer to test with" '[ $got = 0 ]'
 before=$(noun); sleep 2.5
 check "a wrong answer waits (no auto-advance)" '[ "$(noun)" = "$before" ]'
-check "the plain hint shows under it" '[ "$(js "() => document.body.innerText.includes(\"Click anywhere or press Enter to continue\")")" = "true" ]'
+check "the plain hint shows under it" '[ "$(js "() => document.body.innerText.includes(\"Tap or click anywhere, or press Enter to continue\")")" = "true" ]'
 js "() => { document.body.click(); return 1 }" >/dev/null; sleep 0.5
 check "a click on empty space continues" '[ "$(noun)" != "$before" ]'
 wrong_answer; before=$(noun); sleep 2.5

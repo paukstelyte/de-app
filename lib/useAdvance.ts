@@ -13,7 +13,7 @@ export function useAdvance(answered: boolean, correct: boolean, next: () => void
     if (!answered) return;
     let done = false;
     const go = () => { if (!done) { done = true; nextRef.current(); } };
-    const onClick = (e: MouseEvent) => { if (clickContinues(e.target as Element | null)) go(); };
+    const onClick = (e: MouseEvent) => { if (clickContinues(e.target as Element | null, !!window.getSelection()?.toString())) go(); };
     const onKey = (e: KeyboardEvent) => {
       if (keyContinues(e, document.activeElement as HTMLInputElement | null)) { e.preventDefault(); go(); }
     };

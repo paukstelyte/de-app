@@ -109,7 +109,7 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
         {item.type === "type" && <TypeView key={key} item={item} {...view} />}
         {item.type === "order" && <OrderView key={key} item={item} {...view} />}
         <p role="status" className="sr-only">
-          {answered && (answered.correct ? "Correct!" : `Not quite. Correct answer: ${solution}`)}
+          {answered && (answered.correct ? "Correct!" : `Not quite. Correct answer: ${solution}. Press Enter to continue.`)}
         </p>
         {answered && (
           <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-5">
@@ -125,7 +125,7 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
               <p className="text-sm">Check the capital letters.</p>
             )}
             <p className="text-sm text-zinc-700 dark:text-zinc-300">{item.explanation}</p>
-            {!answered.correct && <p className="text-xs text-zinc-400 dark:text-zinc-500">Click anywhere or press Enter to continue</p>}
+            {!answered.correct && <p className="text-xs text-zinc-500 dark:text-zinc-400">Tap or click anywhere, or press Enter to continue</p>}
           </div>
         )}
       </div>

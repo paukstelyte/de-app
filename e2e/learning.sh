@@ -2,7 +2,7 @@
 # Browser checks for Customized Learning (/learning, /topics). See e2e/README.md.
 # The MAIN account must be a disposable test account: this script adds documents and focus rows
 # to it, and the page cannot delete focus rows (it only marks them 'removed').
-# Real uploads call the AI (about $0.0005 each) and use 3 of the main account's 10 uploads/day (the blank photo is given back).
+# Real uploads call the AI (about $0.0005 each) and use 4 of the main account's 10 uploads/day (PDF, HEIC, Word and the blank photo, which counts too).
 cd "$(dirname "$0")/.." || exit 2
 source e2e/lib.sh
 FX="$PWD/e2e/fixtures"
@@ -13,10 +13,10 @@ BUCKET_SQL="select count(*) as objects from storage.objects where bucket_id = 'l
 USAGE_SQL="select count(*) as uploads_24h from public.learning_upload_usage where created_at > now() - interval '24 hours' and user_id = (select id from auth.users where email = '$E2E_MAIN_EMAIL')"
 FOCUS_SQL="select kind, topic_slug from public.learning_focus where user_id = (select id from auth.users where email = '$E2E_MAIN_EMAIL') order by topic_slug"
 
-# Quota pre-check: the run needs 3 of the main account's 10 uploads per day.
+# Quota pre-check: the run needs 4 of the main account's 10 uploads per day.
 USAGE0=$(sql_value "$USAGE_SQL")
 case "$USAGE0" in ''|*[!0-9]*) echo "Could not read upload usage (SQL failed); is supabase linked? Aborting."; exit 2;; esac
-[ "$USAGE0" -le 6 ] || { echo "Main account already used $USAGE0 of 10 uploads in 24h; this run needs 3. Aborting."; exit 2; }
+[ "$USAGE0" -le 6 ] || { echo "Main account already used $USAGE0 of 10 uploads in 24h; this run needs 4. Aborting."; exit 2; }
 TOPIC_RE='prepositions-dative|dative-case'
 
 # Open /learning, pick files like a user (click the drop zone, answer the file chooser).
@@ -52,7 +52,7 @@ upload_and_check() { # label file
     blank.png)
       check "$1: page says 'We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.'" '[ "$msg" = "We couldn'"'"'t read any text in this photo. Try a sharper photo in good light, or write a little larger." ]'
       check "$1: no new document saved" '[ "$(doc_count)" = "$DOCS_BEFORE" ]'
-      check "$1: upload counter unchanged (upload given back)" '[ "$(sql_value "$USAGE_SQL")" = "$USAGE_BEFORE" ]' ;;
+      check "$1: upload counter went up by one (an unreadable photo still counts)" '[ "$(sql_value "$USAGE_SQL")" = "$((USAGE_BEFORE + 1))" ]' ;;
     *)
       check "$1: document appears (title mentions lesson 7 or dative prepositions (the AI title varies, any language))" 'echo "$TITLE" | grep -qiE "Lektion 7|Lesson 7|Pr.positionen|Dative Prepositions"'
       check "$1: topics include prepositions-dative or dative-case" 'echo "$TOPICS" | grep -qE "$TOPIC_RE"'
