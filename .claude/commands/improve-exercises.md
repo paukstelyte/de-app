@@ -112,6 +112,5 @@ Write `docs/reviews/exercises-<level or slug>.md`:
 4. Tell the owner, in a few lines: PR link, items changed, anything flagged for them. Stop
    there; they approve the merge.
 
-When all six levels have been through this and merged, suggest one small PR that removes the
-"This exercise is still in test mode" label (`app/topics/[slug]/practice/page.tsx`,
-`app/learning/practice/page.tsx`).
+Keep the "This exercise is still in test mode" label on the practice pages, even after all
+levels are merged (the owner's decision, 2026-10-12). Only der · die · das has no label.
