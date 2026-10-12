@@ -22,9 +22,10 @@ TOPIC_RE='prepositions-dative|dative-case'
 # Open /learning, pick files like a user (click the drop zone, answer the file chooser).
 choose() { pw goto "$BASE/learning" >/dev/null; sleep 3; pw click "text=Choose a PDF" >/dev/null; pw upload "$@" >/dev/null; }
 # Waits up to 90s for the upload box to say "Done!" or show an error; prints that message.
+# (#allowance-note is the always-present "uploads left" live region, not the upload result.)
 wait_upload() {
   for i in $(seq 1 90); do sleep 1
-    m=$(js "() => document.querySelector('#upload-title')?.parentElement.querySelector('[role=status],[role=alert]')?.textContent || ''" | unjson)
+    m=$(js "() => document.querySelector('#upload-title')?.parentElement.querySelector('[role=status]:not(#allowance-note),[role=alert]')?.textContent || ''" | unjson)
     case "$m" in Done*|*"didn't"*|*wrong*|Please*|Each*|"Upload one"*|"Upload at most"*|Choose*) echo "$m"; return;; esac
   done; echo "(no result after 90s)"
 }
