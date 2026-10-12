@@ -70,6 +70,8 @@ How the app applies these rules:
 - The only OpenRouter call is in `lib/learning/analyse.ts`, which starts with `import "server-only"` and is called only from the server action in `app/learning/actions.ts`. The model slug is the `ANALYSIS_MODEL` constant there; change it in that one place.
 - PDFs are sent with the `file-parser` plugin set to `engine: "native"`. Never omit the engine: the default falls back to paid OCR.
 - The model must answer in the strict JSON schema in `lib/learning/suggestions.ts`; `parseAnalysis` keeps only catalogue topics. If a document has no readable text or no German grammar, the model must say so instead of guessing (a blank photo made it invent text in testing).
+- Handwritten notes are expected. The prompt asks the model to read sideways photos upright, leave out crossed-out words and write `[?]` for unreadable words (asked, not guaranteed: in testing it read neat handwriting well but still guessed unclear words and kept crossed-out ones). Colour, underlining and boxes mean emphasis, not mistakes; only clear correction marks count as mistakes (not yet tested on real teacher corrections).
+- A photo with no readable text is not saved: the user sees "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger." and the upload is given back.
 - Uploaded files are deleted after every analysis, success or failure. What is stored per document: the title, the text read, the "no grammar" flag, the suggestions, and the model, token counts and cost. Each upload also adds a row (user and time) to the upload counter.
 
 The app does not use embeddings or RAG.
@@ -83,7 +85,7 @@ The app does not use embeddings or RAG.
 * Restart gives a fresh deck and resets session-wide stats; "Next 30 words" only resets the per-deck score.
 * Session-wide stats (bottom of the game page, hidden in "Practise my mistakes" mode): Decks played, Mistakes fixed (a base-round miss later answered correctly in recap), Overall accuracy % (base-deck answers only).
 * Each card is a flip: the noun + der/die/das buttons on the front; picking one flips it in place (correct green, wrong red) to reveal the rule and any exception — no separate panel, no big "next" button.
-* Click anywhere on a flipped card to advance. The small "Tap or press Enter to continue" hint is a real button that receives focus after answering, and the first answer button is focused on each new card, so the game is fully keyboard-playable. The result is announced to screen readers via a `role="status"` live region.
+* Correct answers move on by themselves after 1.5 s. After a mistake, a click anywhere (not on links, buttons or fields) or Enter continues, and a hint "Click anywhere or press Enter to continue" shows only then. ← / → move between the der · die · das buttons and Enter picks, so the game is fully keyboard-playable. The first answer button is focused on each new card. The result is announced to screen readers via a `role="status"` live region. Topic practice and Practise my focus answer the same way.
 * On phones the card comes first; the intro/how-to sidebar moves below it.
 * A card is auto-flagged "needs practice" after 2 wrong answers in a row (shown as a badge) — not explained in the on-screen "how to use" copy.
 * Every answer shows the grammar rule; exceptions are explained too, not just the base rule.
@@ -98,7 +100,8 @@ The app does not use embeddings or RAG.
 - Changes go through a feature branch and a pull request; run the `ai-code-reviewer` agent on the PR before merging and save its report in `docs/reviews/`.
 - Before merging, suggest needed usability tests with Playwright
 - Propose security scans: `/security-scan` weekly to confirm the whole codebase is clean, and `/security-scan-changed` on every feature branch and pull request, to catch new problems before they merge into main.
-- npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too).
+- npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too)
+- when giving me technical option or asking me to install anything, explain in simple words why it's needed and what it would allow you to do
 
 ## Do Not
 
