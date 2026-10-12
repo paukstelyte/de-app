@@ -56,7 +56,7 @@ A saved upload: its extracted text and the AI's topic suggestions.
 | `completion_tokens` | `integer` | ≥ 0, from OpenRouter's `usage`; nullable |
 | `cost_usd` | `numeric(12,8)` | 0 ≤ cost < 1, from OpenRouter's `usage.cost`; nullable |
 
-The usage columns power the model and cost line on each document card (migration `20261010120000`). Authenticated users have insert on them too (a user calling the API directly could write odd values to their own rows), so they are display-only and never used for billing or limits. There is still no update grant.
+The usage columns power the model and cost line on each document card (migration `20261010120000`). Since migration `20261012160000` users have no insert on `learning_documents` at all: the server saves each document with the admin key after a real, counted AI read (`analyseUpload`, pinned to the caller's id), so the topics and the usage figures can't be forged. The figures are still display-only. There is no update grant.
 
 Index: `(user_id, created_at desc)`. Limit: at most **200 documents per user**; the `learning_documents_limit` BEFORE INSERT trigger raises `P0001` ("Document limit reached"), also for direct API inserts.
 
@@ -69,7 +69,7 @@ The learner's manual focus overrides. One row per user and topic; primary key `(
 | `user_id` | `uuid` | Defaults to `auth.uid()`; references `auth.users` **on delete cascade** |
 | `topic_slug` | `text` | Lowercase kebab-case, at most 64 characters |
 | `kind` | `text` | `added` or `removed` |
-| `updated_at` | `timestamptz` | Defaults to `now()` |
+| `updated_at` | `timestamptz` | Set by the database: `now()` on insert, the `learning_focus_touch` trigger on update (users can't write it, since `20261012160000`) |
 
 The update grant includes `topic_slug` because the app upserts with `on_conflict=user_id,topic_slug`, and PostgREST's `ON CONFLICT DO UPDATE` sets every payload column. RLS still pins rows to the caller, and `user_id` stays non-updatable.
 
@@ -88,7 +88,7 @@ When the AI read fails with no paid answer (a network failure or an error status
 | Who | `learning_documents` | `learning_focus` | `learning_upload_usage` |
 |---|---|---|---|
 | Signed out (`anon`) | ❌ no privileges | ❌ no privileges | ❌ no privileges |
-| Logged in (`authenticated`) | select and delete own rows; insert own rows (`title`, `extracted_text`, `no_grammar`, `suggestions` only); no update | select and delete own rows; insert (`topic_slug`, `kind`, `updated_at`); update (`topic_slug`, `kind`, `updated_at`) on own rows | select own rows only (policy since `20261012130000`); writes only through `use_upload_quota()` |
+| Logged in (`authenticated`) | select and delete own rows; no insert (the server saves documents with the admin key, since `20261012160000`); no update | select and delete own rows; insert (`topic_slug`, `kind`); update (`topic_slug`, `kind`) on own rows | select own rows only (policy since `20261012130000`); writes only through `use_upload_quota()` |
 | Server admin key | ✅ (bypasses RLS) | ✅ | ✅ |
 
 ### Storage bucket `learning-uploads`
@@ -98,7 +98,7 @@ Private. Holds files only in transit: the server reads an upload and deletes it 
 - Size limit 10 MB (`10485760` bytes).
 - Allowed types: PDF, DOCX, JPEG, PNG, WebP, HEIC, HEIF.
 - Policies on `storage.objects` (insert, select, delete), all `to authenticated`: a user may only touch objects under the folder named after their own id, `<user id>/…`. There is no update policy.
-- **Pending migration `20261010110000` (not yet applied):** tightens the insert policy so a new object must also match the path shape the server accepts (`<user id>/<batch id>/<digit>.<allowed ext>`) and the user's folder must hold fewer than 5 objects (counted by a new security definer function `public.learning_upload_count()`, since a policy can't query its own table). The app clears leftovers before each upload and on account deletion.
+- The insert policy (migration `20261010110000`) also requires the path shape the server accepts (`<user id>/<batch id>/<digit>.<allowed ext>`) and fewer than 5 objects in the user's folder, counted by the security definer function `private.learning_upload_count()` (a policy can't query its own table). Since `20261012160000` the function lives in the `private` schema, which the API doesn't expose. The app clears leftovers before each upload and on account deletion.
 
 ## Removed: the AI chat and its notes vector store
 

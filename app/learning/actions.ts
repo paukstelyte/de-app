@@ -1,12 +1,12 @@
 "use server";
 
-import { createClient as createAdminClient } from "@supabase/supabase-js";
 import { revalidatePath } from "next/cache";
 import { getTopic } from "@/lib/grammar/topics";
 import { MAX_DOCUMENTS } from "@/lib/learning/allowance";
 import { analyseDocument } from "@/lib/learning/analyse";
 import { extractDocxText } from "@/lib/learning/docx";
 import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, photoUnreadable, validateSelection } from "@/lib/learning/uploads";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 
 const ERRORS = {
@@ -24,8 +24,8 @@ const ERRORS = {
 
 /** Gives an upload back only when the AI read failed with no paid answer (see analyseDocument). A paid but unusable answer, a failed save and an unreadable photo are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number, userId: string) {
-  if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
-  const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
+  const admin = createAdminClient();
+  if (!admin) return;
   const { error } = await admin.from("learning_upload_usage").delete().eq("id", id).eq("user_id", userId); // the admin key skips row-level security, so pin the row to its owner here
   if (error) console.error("giving back the upload failed:", error.message);
 }
@@ -76,10 +76,14 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
     if (photoUnreadable(kind, a.extractedText)) {
       return { error: ERRORS.unreadablePhoto };
     }
-    const { data: row, error } = await supabase
+    // Saved with the admin key: users can't insert documents themselves, so a document always
+    // comes from a real, counted AI read. Pinned to the caller's own id.
+    const admin = createAdminClient();
+    if (!admin) return { error: ERRORS.generic };
+    const { data: row, error } = await admin
       .from("learning_documents")
       .insert({
-        title: a.title, extracted_text: a.extractedText, no_grammar: a.noGrammar, suggestions: a.topics,
+        user_id: userId, title: a.title, extracted_text: a.extractedText, no_grammar: a.noGrammar, suggestions: a.topics,
         model: result.usage.model, prompt_tokens: result.usage.promptTokens, completion_tokens: result.usage.completionTokens, cost_usd: result.usage.costUsd,
       })
       .select("id")
@@ -119,7 +123,7 @@ export async function setFocus(slug: unknown, kind: unknown): Promise<{ error?: 
   if (!data?.claims) return { error: ERRORS.loggedOut };
   const { error } = await supabase
     .from("learning_focus")
-    .upsert({ topic_slug: slug, kind, updated_at: new Date().toISOString() }, { onConflict: "user_id,topic_slug" });
+    .upsert({ topic_slug: slug, kind }, { onConflict: "user_id,topic_slug" }); // updated_at is set by the database
   if (error) {
     console.error("setFocus failed:", error.message);
     return { error: ERRORS.generic };

@@ -1,7 +1,7 @@
 "use server";
 
-import { createClient as createAdminClient } from "@supabase/supabase-js";
 import { redirect } from "next/navigation";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { CONFIRM_WORD } from "@/lib/account";
 import { BUCKET } from "@/lib/learning/uploads";
@@ -19,15 +19,8 @@ export async function deleteAccount(_prev: string | null, formData: FormData) {
   if (!userId) redirect("/login?next=/account");
 
   // Deleting a user needs the admin (secret) key, so it only ever runs here.
-  if (!process.env.SUPABASE_SECRET_KEY) {
-    console.error("deleteAccount: SUPABASE_SECRET_KEY is not set");
-    return "Account deletion isn't available right now. Please try again later.";
-  }
-  const admin = createAdminClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SECRET_KEY!,
-    { auth: { persistSession: false, autoRefreshToken: false } },
-  );
+  const admin = createAdminClient();
+  if (!admin) return "Account deletion isn't available right now. Please try again later.";
   try {
     const storage = admin.storage.from(BUCKET);
     const files = await listUserUploads(storage, userId);
