@@ -6,7 +6,7 @@ Totals: 0 critical · 0 high · 2 medium · 11 low. What happened to each findin
 | # | Severity | Finding (flagged by) | Outcome |
 |---|---|---|---|
 | 1 | Medium | An upload was given back even when OpenRouter had already charged (timeout, cut-off or unusable answer), so a long document could trigger paid calls without using the daily limits (Next.js) | **Fixed:** only a network failure or an error status gives the upload back (`lib/learning/analyse.ts`, `app/learning/actions.ts`) |
-| 2 | Medium | The test account password is in the public git history (commits `0bb0673`, `e544f7d`) (Vercel) | Owner's decision: the owner chose on 2026-10-06 to keep the test accounts as they are |
+| 2 | Medium | The test account password is in the public git history (commits `0bb0673`, `e544f7d`) (Vercel) | **Fixed:** both test accounts got new random passwords on 2026-10-12 (kept only in a git-ignored local file); the old one is refused |
 | 3 | Low | Logged-in users can insert `attempts.correct` themselves (Supabase) | Accepted: only their own stats change; the fix would need the admin key on every answer save |
 | 4 | Low | Users can insert `learning_documents` directly, skipping the quota and the AI (Supabase, Next.js) | **Fixed:** the server saves documents with the admin key; insert revoked (migration `20261012160000`) |
 | 5 | Low | Users can set `learning_focus.updated_at` (Supabase) | **Fixed:** set by the database (default and trigger); column grants revoked |
