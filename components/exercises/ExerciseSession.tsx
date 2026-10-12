@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { recordExerciseAnswer } from "@/app/topics/[slug]/practice/actions";
+import { useAdvance } from "@/lib/useAdvance";
+import { useArrowKeys } from "@/lib/useArrowKeys";
 import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle } from "@/lib/exercises/check";
 import type { ChoiceItem, ExerciseItem, OrderItem, TypeItem } from "@/lib/exercises/types";
 
@@ -43,6 +45,8 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState<Answered | null>(null);
   const [results, setResults] = useState<Result[]>([]);
+  const atEnd = index >= round.length;
+  useAdvance(!atEnd && answered !== null, !!answered?.correct, () => { setAnswered(null); setIndex((i) => i + 1); });
 
   if (!mounted) return <div aria-hidden className={`min-h-[380px] ${card}`} />;
 
@@ -121,9 +125,7 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
               <p className="text-sm">Check the capital letters.</p>
             )}
             <p className="text-sm text-zinc-700 dark:text-zinc-300">{item.explanation}</p>
-            <button type="button" autoFocus onClick={() => { setAnswered(null); setIndex(index + 1); }} className={`self-start ${pillPrimary}`}>
-              Continue →
-            </button>
+            {!answered.correct && <p className="text-xs text-zinc-400 dark:text-zinc-500">Click anywhere or press Enter to continue</p>}
           </div>
         )}
       </div>
@@ -144,10 +146,11 @@ const blank = <span className="inline-block min-w-16 border-b-2 border-current a
 
 function ChoiceView({ item, answered, onAnswer }: ViewProps<ChoiceItem>) {
   const [options] = useState(() => shuffle(item.options));
+  const groupRef = useArrowKeys<HTMLDivElement>();
   return (
     <>
       <Sentence prompt={item.prompt} gap={answered ? <u className="underline-offset-4">{answered.answer}</u> : blank} />
-      <div role="group" aria-label="Choose the answer" className="flex flex-wrap gap-3">
+      <div ref={groupRef} role="group" aria-label="Choose the answer" className="flex flex-wrap gap-3">
         {options.map((o, i) =>
           answered ? (
             <span key={o} lang="de" className={`${tile} ${o === item.answer ? good : o === answered.answer ? bad : muted}`}>{o}</span>
@@ -193,7 +196,8 @@ function TypeView({ item, answered, onAnswer }: ViewProps<TypeItem>) {
 function OrderView({ item, answered, onAnswer }: ViewProps<OrderItem>) {
   const [words] = useState(() => shuffle(item.words));
   const [placed, setPlaced] = useState<number[]>([]); // indices into `words`
-  const pool = useRef<HTMLDivElement>(null);
+  const pool = useArrowKeys<HTMLDivElement>(); // the word pool: refocus after a move, and ← / → between tiles
+  const placedKeys = useArrowKeys<HTMLDivElement>();
   // After a tile moves, keep keyboard focus in the tile pool (Check autofocuses once every tile is placed).
   const refocus = (i?: number) =>
     requestAnimationFrame(() =>
@@ -203,7 +207,7 @@ function OrderView({ item, answered, onAnswer }: ViewProps<OrderItem>) {
   return (
     <>
       {item.translation && <p className="text-sm text-zinc-500">{item.translation}</p>}
-      <div aria-label="Your sentence" role="group" lang="de" className={`flex min-h-14 flex-wrap items-center gap-2 border-b-2 pb-2 ${answered ? (answered.correct ? "border-emerald-500" : "border-red-500") : "border-zinc-300 dark:border-zinc-700"}`}>
+      <div ref={placedKeys} aria-label="Your sentence" role="group" lang="de" className={`flex min-h-14 flex-wrap items-center gap-2 border-b-2 pb-2 ${answered ? (answered.correct ? "border-emerald-500" : "border-red-500") : "border-zinc-300 dark:border-zinc-700"}`}>
         {placed.map((i) =>
           answered ? (
             <span key={i} className="text-xl font-semibold">{words[i]}</span>
