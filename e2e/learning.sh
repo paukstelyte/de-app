@@ -42,8 +42,7 @@ delete_newest_doc() { # clicks Delete then Yes, delete it on the first document
 # Upload a real fixture, wait, then check the new document (check 2/3/4) and the storage folder (check 5).
 upload_and_check() { # label file
   echo "-- upload $1"
-  DOCS_BEFORE=$(js "() => document.querySelectorAll('section[aria-labelledby=docs-title] > ul > li').length" 2>/dev/null)
-  [ -n "$DOCS_BEFORE" ] || { pw goto "$BASE/learning" >/dev/null; sleep 3; DOCS_BEFORE=$(doc_count); }
+  pw goto "$BASE/learning" >/dev/null; sleep 3; DOCS_BEFORE=$(doc_count)
   USAGE_BEFORE=$(sql_value "$USAGE_SQL")
   choose "$FX/$2"; msg=$(wait_upload); echo "     page says: $msg"; sleep 2
   pw goto "$BASE/learning" >/dev/null; sleep 3
