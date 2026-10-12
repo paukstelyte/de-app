@@ -18,10 +18,11 @@ const ERRORS = {
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
   unreadablePhoto: "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
+  paid: "Couldn't read this document. Nothing was saved, and this upload still counts. Try a shorter part of it.",
   generic: "Something went wrong — please try again.",
 };
 
-/** Gives an upload back only when the AI read failed (no paid answer). A failed save and an unreadable photo are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
+/** Gives an upload back only when the AI read failed with no paid answer (see analyseDocument). A paid but unusable answer, a failed save and an unreadable photo are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number, userId: string) {
   if (!process.env.SUPABASE_SECRET_KEY) return console.error("giveBackUpload: SUPABASE_SECRET_KEY is not set");
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SECRET_KEY, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -67,6 +68,7 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
 
     const result = await analyseDocument({ kind, files, docxText });
     if ("error" in result) {
+      if (result.error === "paid") return { error: ERRORS.paid };
       await giveBackUpload(usageId, userId);
       return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
     }

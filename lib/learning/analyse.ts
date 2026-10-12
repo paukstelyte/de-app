@@ -21,7 +21,9 @@ export async function analyseDocument(input: {
   kind: UploadKind;
   files: { name: string; mime: string; data: Buffer }[];
   docxText?: string;
-}): Promise<{ analysis: Analysis; usage: Usage } | { error: "ai" | "unreadable" }> {
+}): Promise<{ analysis: Analysis; usage: Usage } | { error: "ai" | "paid" | "unreadable" }> {
+  // "ai": no paid answer (no key, network failure, error status), so the upload is given back.
+  // "paid": OpenRouter may have charged (timeout, cut-off or unusable answer), so the upload counts.
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) {
     console.error("analyseDocument: OPENROUTER_API_KEY is not set");
@@ -38,8 +40,9 @@ export async function analyseDocument(input: {
   } else {
     for (const f of input.files) parts.push({ type: "image_url", image_url: { url: `data:${f.mime};base64,${f.data.toString("base64")}` } });
   }
+  let res: Response;
   try {
-    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json", "X-Title": "DE-app" },
       body: JSON.stringify({
@@ -52,10 +55,16 @@ export async function analyseDocument(input: {
       }),
       signal: AbortSignal.timeout(90_000),
     });
-    if (!res.ok) {
-      console.error("analyseDocument: OpenRouter", res.status, (await res.text()).slice(0, 300));
-      return { error: "ai" };
-    }
+  } catch (err) {
+    console.error("analyseDocument failed:", err instanceof Error ? err.message : err);
+    // A timeout may come after the model has started (and been billed); a network failure means no answer.
+    return { error: err instanceof Error && err.name === "TimeoutError" ? "paid" : "ai" };
+  }
+  if (!res.ok) {
+    console.error("analyseDocument: OpenRouter", res.status, (await res.text().catch(() => "")).slice(0, 300));
+    return { error: "ai" };
+  }
+  try {
     const json = await res.json();
     const choice = json?.choices?.[0];
     const content = choice?.message?.content;
@@ -65,9 +74,9 @@ export async function analyseDocument(input: {
     } catch {}
     if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
     // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
-    return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "ai" };
+    return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "paid" };
   } catch (err) {
-    console.error("analyseDocument failed:", err instanceof Error ? err.message : err);
-    return { error: "ai" };
+    console.error("analyseDocument: reading the answer failed:", err instanceof Error ? err.message : err);
+    return { error: "paid" };
   }
 }

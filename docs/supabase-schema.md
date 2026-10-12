@@ -81,7 +81,7 @@ One row per upload, written only by `use_upload_quota()`. RLS is on. Since migra
 
 From migration `20261012100000`, `use_upload_quota()` returns the id of the row it recorded, and a second function, `public.upload_allowance()` (security definer, `authenticated` only, anon refused), returns the caller's `user_left`, `user_limit` (10), `shared_left` (of 100) and `next_free_at` (when the next slot frees up: 24 hours after the oldest counted upload of whichever limit is full). It exposes only the caller's own count and the shared total. The Customized Learning page shows these as "Uploads left today".
 
-When the AI read fails (no usable answer), the server gives the upload back by deleting that row with the admin key (`giveBackUpload` in `app/learning/actions.ts`). A failed save and a photo with no readable text are **not** given back: the AI call was already paid for, and giving blank photos back would let them bypass the daily limits. There is deliberately no function users can call to give an upload back.
+When the AI read fails with no paid answer (a network failure or an error status from OpenRouter), the server gives the upload back by deleting that row with the admin key (`giveBackUpload` in `app/learning/actions.ts`). A timeout, a cut-off or unusable answer, a failed save and a photo with no readable text are **not** given back: the AI call may already have been paid for, and giving blank photos back would let them bypass the daily limits. There is deliberately no function users can call to give an upload back.
 
 ### Access rules
 

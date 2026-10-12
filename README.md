@@ -25,7 +25,7 @@ Guests can browse topics and practise without saving. Signed-out visitors who op
 | Input | PDF as a `file` part with the `file-parser` plugin set to the `native` engine; photos as base64 `image_url` parts; Word files read by a small built-in reader and sent as text |
 | Output | Strict JSON schema (`lib/learning/suggestions.ts`): title, the text read, "no grammar" flag, topics with reasons. Topics outside the catalogue are dropped |
 | Cost | About $0.0005 for a one-page worksheet, up to about $0.002 for several textbook pages (both measured on 2026-10-12; see `docs/testing.md`). Each document card shows the model, tokens and cost from OpenRouter's response |
-| Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload is given back only if the AI call fails; a failed save or a photo with no readable text still counts), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
+| Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload is given back only if no paid AI answer came back: a network failure or an error from OpenRouter. A timeout, a cut-off or unusable answer, a failed save or a photo with no readable text still counts), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
 
 Details and the OpenRouter references: [`docs/openrouter-multimodal.md`](docs/openrouter-multimodal.md).
 
