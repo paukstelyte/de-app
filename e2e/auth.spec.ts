@@ -17,7 +17,7 @@ test("a wrong password says so, keeps the email and clears the password; the rig
   await expect(page).toHaveURL(/\/learning$/);
 });
 
-test("sign-up: passwords that don't match are caught before anything is sent, and the email stays", async ({ page }) => {
+test("sign-up: passwords that don't match say so, and the email stays", async ({ page }) => {
   await page.goto("/auth/sign-up");
   await page.getByLabel("Email").fill("new-learner@example.test");
   await page.getByLabel(/^Password/).fill("abcdefg1");
@@ -27,13 +27,14 @@ test("sign-up: passwords that don't match are caught before anything is sent, an
   await expect(page.getByLabel("Email")).toHaveValue("new-learner@example.test");
 });
 
-test("sign-up with an email that already has an account says so", async ({ page }) => {
+test("sign-up with an email that already has an account: the friendly message, or a neutral success page", async ({ page }) => {
   const user = await newUser();
   await page.goto("/auth/sign-up");
   await page.getByLabel("Email").fill(user.email);
   await page.getByLabel(/^Password/).fill("abcdefg1");
   await page.getByLabel("Repeat password").fill("abcdefg1");
   await page.getByRole("button", { name: "Sign up", exact: true }).click();
-  // Supabase may instead pretend success to avoid revealing which emails exist; either is fine here.
-  await expect(page.getByText("An account with this email already exists. Try logging in.").or(page.getByText(/check your email/i))).toBeVisible();
+  // The local Supabase answers "User already registered", shown as our friendly message. A project set to hide
+  // which emails exist answers as if sign-up worked instead; that is fine too.
+  await expect(page.getByText("An account with this email already exists. Try logging in.").or(page.getByRole("heading", { name: /check your email/i }))).toBeVisible();
 });

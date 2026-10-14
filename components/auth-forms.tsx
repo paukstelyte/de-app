@@ -54,6 +54,7 @@ function Field({ label, hint, ...input }: { label: string; hint?: string } & Com
   );
 }
 
+/** Hidden while the form is busy (callers pass null), so a repeated error is announced again. */
 function ErrorText({ error }: { error: string | null }) {
   return error ? (
     <p role="alert" className="text-sm text-red-600 dark:text-red-400">
@@ -70,7 +71,7 @@ const FRIENDLY_ERRORS: Record<string, string> = {
 };
 
 type FormState = { error: string | null; email: string };
-type Call = (form: FormData) => Promise<{ error: Error | string | null }>;
+type Call = (form: FormData) => Promise<{ error: Error | null }>;
 const field = (form: FormData, name: string) => String(form.get(name) ?? "");
 
 /** Runs a Supabase auth call as the form's action. React tracks the pending state. React also
@@ -79,10 +80,13 @@ function useAuthForm(call: Call, onSuccess: () => void) {
   return useActionState(
     async (_: FormState, form: FormData): Promise<FormState> => {
       const email = field(form, "email");
-      const { error } = await call(form);
-      if (!error) onSuccess();
-      const message = typeof error === "string" ? error : error && (FRIENDLY_ERRORS[error.message] ?? error.message);
-      return { error: message, email };
+      try {
+        const { error } = await call(form);
+        if (!error) onSuccess();
+        return { error: error && (FRIENDLY_ERRORS[error.message] ?? error.message), email };
+      } catch {
+        return { error: "Something went wrong — please try again.", email }; // e.g. no connection
+      }
     },
     { error: null, email: "" },
   );
@@ -131,7 +135,7 @@ export function LoginForm({ next }: { next: string }) {
         <Link href="/auth/forgot-password" className={`-mt-2 self-end text-xs ${linkClass}`}>
           Forgot your password?
         </Link>
-        <ErrorText error={state.error} />
+        <ErrorText error={isLoading ? null : state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Logging in…" : "Log in"}
         </button>
@@ -151,7 +155,7 @@ export function SignUpForm() {
   const router = useRouter();
   const [state, signUp, isLoading] = useAuthForm(
     async (form) => {
-      if (field(form, "password") !== field(form, "repeat")) return { error: "Passwords do not match." };
+      if (field(form, "password") !== field(form, "repeat")) return { error: new Error("Passwords do not match.") };
       return createClient().auth.signUp({
         email: field(form, "email"),
         password: field(form, "password"),
@@ -167,7 +171,7 @@ export function SignUpForm() {
         <Field label="Email" name="email" type="email" required autoComplete="email" defaultValue={state.email} />
         <Field label="Password" name="password" type="password" {...NEW_PASSWORD} />
         <Field label="Repeat password" name="repeat" type="password" required autoComplete="new-password" />
-        <ErrorText error={state.error} />
+        <ErrorText error={isLoading ? null : state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Creating account…" : "Sign up"}
         </button>
@@ -212,7 +216,7 @@ export function ForgotPasswordForm() {
     <AuthCard title="Reset your password" description="Enter your email and we'll send you a reset link.">
       <form action={sendLink} className="flex flex-col gap-4">
         <Field label="Email" name="email" type="email" required autoComplete="email" defaultValue={state.email} />
-        <ErrorText error={state.error} />
+        <ErrorText error={isLoading ? null : state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Sending…" : "Send reset link"}
         </button>
@@ -237,7 +241,7 @@ export function UpdatePasswordForm() {
     <AuthCard title="Choose a new password">
       <form action={save} className="flex flex-col gap-4">
         <Field label="New password" name="password" type="password" {...NEW_PASSWORD} />
-        <ErrorText error={state.error} />
+        <ErrorText error={isLoading ? null : state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Saving…" : "Save new password"}
         </button>
