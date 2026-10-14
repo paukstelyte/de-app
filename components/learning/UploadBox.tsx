@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { analyseUpload } from "@/app/learning/actions";
 import { MAX_DOCUMENTS, freeAtLabel, type Allowance } from "@/lib/learning/allowance";
 import { createClient } from "@/lib/supabase/client";
@@ -26,10 +26,9 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
   // Chosen files wait here for "Read" so a wrong pick doesn't use up an upload.
   const [selection, setSelection] = useState<Selection | null>(null);
 
-  function clearSelection() {
-    selection?.files.forEach((f) => f.preview && URL.revokeObjectURL(f.preview));
-    setSelection(null);
-  }
+  // Photo previews hold the file in memory until released: let go of them when the choice changes or the box closes.
+  useEffect(() => () => selection?.files.forEach((f) => f.preview && URL.revokeObjectURL(f.preview)), [selection]);
+  const clearSelection = () => setSelection(null);
 
   function onFiles(list: FileList | null) {
     clearSelection();
