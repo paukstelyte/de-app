@@ -19,7 +19,7 @@ export type User = { id: string; email: string; password: string };
 /** A fresh, confirmed user that exists only in the local database, so tests never share data. */
 export async function newUser(): Promise<User> {
   const email = `e2e-${randomUUID()}@example.test`;
-  const password = `pw-${randomUUID()}`;
+  const password = `Pw-${randomUUID()}`; // meets the password rule: 10+ characters, upper, lower, digit
   const { data, error } = await admin().auth.admin.createUser({ email, password, email_confirm: true });
   if (error || !data.user) throw error ?? new Error("createUser failed");
   return { id: data.user.id, email, password };

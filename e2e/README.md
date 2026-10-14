@@ -21,7 +21,7 @@ npm run test:e2e      # Playwright: builds the app into .next-e2e, starts it wit
 npm run db:stop       # when you're done (or leave it running between runs)
 ```
 
-Before each run, `e2e/global-setup.ts` clears the local upload counter (all of it, including uploads from your own manual testing on the local database), so earlier runs can't use up the app-wide limit of 100 uploads a day. `npm run test:e2e` fails straight away with a clear message if the local Supabase isn't running, and refuses any
+Before each run, `e2e/global-setup.ts` clears the local upload counter (all of it, including uploads from your own manual testing on the local database), so earlier runs can't use up the app-wide limit of 100 uploads a day. The local auth server reads `supabase/config.toml` only when it starts: after changing it, run `npm run db:stop && npm run db:start`. `npm run test:e2e` fails straight away with a clear message if the local Supabase isn't running, and refuses any
 Supabase URL that isn't on `127.0.0.1`/`localhost`. A failed test keeps a trace: open the report with
 `npx playwright show-report` and click the trace to replay it step by step.
 
@@ -34,7 +34,7 @@ $0.0005, so run it before merging a change to the prompt, the AI request or the 
 | Spec | What it checks |
 |---|---|
 | `learning.spec.ts` | Login redirects; the review step (nothing uploaded or counted until "Read"); PDF, HEIC and Word uploads saved with their topics and focus; an unreadable photo, an invalid AI answer and a no-grammar document each handled as their own outcome; `.doc` and 6 photos refused without using an upload; uploaded files deleted; focus add/remove; deleting a document; a second user sees none of it |
-| `auth.spec.ts` | Login and sign-up forms: plain-words errors (wrong password, passwords that don't match, an existing account), the email kept after an error, the password cleared |
+| `auth.spec.ts` | Login and sign-up forms: plain-words errors (wrong password, passwords that don't match, an existing account), the email kept after an error, the password cleared; the password rule (10+ characters, upper, lower, digit) in the browser and on the server |
 | `faults.spec.ts` | A failed database read shows "Couldn't load … Try again", never the empty state, and recovers (runs last, alone) |
 | `saving.spec.ts` | A failed answer save shows "N answers not saved · Retry" without blocking practice; Retry saves it exactly once, even when the first try reached the server; the logged-out case |
 | `exercises.spec.ts` | Guest rounds, mistakes rounds, Next 10, 404s, keyboard (Enter, arrows), auto-advance and its setting, phone width, answers saved and accuracy shown when logged in |
