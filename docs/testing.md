@@ -4,6 +4,9 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 
 ## Summary
 
+**2026-10-14: the test tooling changed (PR #20).** The `bash e2e/*.sh` scripts and the two print-only SQL checks were replaced by Playwright Test specs (`e2e/*.spec.ts`, with a fake OpenRouter) and pgTAP tests (`supabase/tests/database/`), which run on a throwaway local Supabase (`npm run db:start`, see [`e2e/README.md`](../e2e/README.md)). **The new suites have not been run yet**: the machine had no OrbStack/Docker when the PR was merged. Until their first run is recorded here, the results below are from the old scripts on 2026-10-12, before that PR's changes. `npm test` on PR #20: **171 / 171 pass**, plus `tsc`, lint and a production build.
+
+
 | Suite | What it covers | Latest result |
 |---|---|---|
 | `npm test` | Unit tests: upload rules, AI answer parsing, Word reader (incl. zip-bomb cap), focus list, usage display, answer checking, and validation of all 81 exercise files | **158 / 158 pass** (2026-10-12) |
