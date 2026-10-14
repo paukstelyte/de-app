@@ -76,6 +76,9 @@ can be referred to ("fix #3").
 
 After the severity sections, add:
 
+- **Supabase Security Advisor:** the Supabase scanner's Advisor section as it is (one line per
+  dashboard item: real problem → finding #N, or intended and why), so the report can be matched
+  with the dashboard's Security Advisor list.
 - **Checked and fine:** one combined, de-duplicated list from all three scanners.
 - **Not checked:** anything a scanner couldn't verify (e.g. not logged in to the Vercel CLI,
   protected preview), with the reason.

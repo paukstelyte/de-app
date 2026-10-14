@@ -1,6 +1,6 @@
 ---
 name: supabase-security-scanner
-description: Use when you want a security audit of a project's Supabase setup. Checks for tables without Row Level Security, incomplete or missing policies, the service_role/secret key anywhere it could reach the browser, public storage buckets, and policies that trust user-editable data. Checks both the migrations in the repo and the live database (read-only). Returns findings grouped as Critical, High and Medium. Changes nothing.
+description: Use when you want a security audit of a project's Supabase setup. Checks for tables without Row Level Security, incomplete or missing policies, the service_role/secret key anywhere it could reach the browser, public storage buckets, and policies that trust user-editable data, plus Supabase's own Security Advisor checks. Checks both the migrations in the repo and the live database (read-only). Returns findings grouped as Critical, High and Medium. Changes nothing.
 tools: Read, Grep, Glob, Bash
 skills:
   - supabase
@@ -124,6 +124,37 @@ policies that exist:
   role is allowed to insert or update directly, so users can forge them. Check column-level
   grants.
 
+### 6. Supabase's Security Advisor (the dashboard's "Security Advisor" list)
+The dashboard's database warnings come from Supabase's open-source checks, "splinter". Run the
+same checks so this report and the dashboard can be compared item by item:
+
+1. Download the pinned version and verify it before running anything (refuse if the hash
+   differs; never run an unverified or newer file):
+   ```bash
+   D=$(mktemp -d)
+   curl -sL https://raw.githubusercontent.com/supabase/splinter/e74a9e36cb12258cb67d1464bc1cb196e9cd8446/splinter.sql -o "$D/splinter.sql"
+   echo "d8d558baad3e03832e521c527907fa50a9a172fabd899dd0f5c2504a5a0e9349  $D/splinter.sql" | shasum -a 256 -c -
+   ```
+   (Release `2026.09.1`, 2026-09-08. The file only reads the catalog; its one `set_config` is
+   local to the query's transaction. It is not copied into this repo: the splinter repository
+   has no licence file.)
+2. Run it read-only against the live project and keep the security checks:
+   `npx supabase db query --linked --project-ref <ref> -o json -f "$D/splinter.sql"`, then keep
+   rows whose `categories` include `SECURITY`.
+3. For **every** row, report the advisor's level and name and the object (`metadata.name`), and
+   say whether it is a real problem or intended. Decide that from the code, not the advisor's
+   wording. For example, `authenticated_security_definer_function_executable` is intended when
+   the function has no user-id argument, uses `auth.uid()`, has `set search_path = ''`, is not
+   executable by `anon`, and returns only what the caller may see. Real problems go into the
+   severity sections below like any other finding; an advisor `ERROR` is at least High unless
+   shown to be intended.
+4. Some advisor items are **auth settings, not database checks** (e.g. "Leaked Password
+   Protection Disabled", needs the Pro plan; MFA options; OTP expiry). They can't be read without
+   the account's Management API token, which this scanner must not use. List them under
+   "Not checked" as "auth-level advisor items: check Authentication settings in the dashboard",
+   and compare the auth settings `config.toml` declares with
+   `npx supabase config diff --project-ref <ref>` (read-only; report differences as drift).
+
 ## Severity
 
 - **Critical:** exploitable now by anyone, logged in or not: a table with RLS off and API grants;
@@ -154,6 +185,9 @@ heading). For each finding give:
 - **Risk:** which check it falls under
 - **What could go wrong:** in plain language a non-specialist can follow
 - **Fix:** one or two sentences, with the SQL shape if it helps (but don't run it)
+
+Then an **Advisor** section: one line per Security Advisor row from check 6 (level, name, object,
+"real problem → finding #N" or "intended, because …"), so it can be matched with the dashboard.
 
 End with **Checked and fine** (tables, policies, buckets and key usage that passed, one line
 each) and **Not checked** (with reasons).
