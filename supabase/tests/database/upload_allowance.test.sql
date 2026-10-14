@@ -3,7 +3,7 @@
 -- visitors. Runs on the local throwaway database (npm run test:db); rolled back at the end.
 begin;
 create extension if not exists pgtap with schema extensions;
-select plan(11);
+select plan(13);
 
 insert into auth.users (id, email, aud, role) values
   ('00000000-0000-0000-0000-00000000000a', 'a@example.test', 'authenticated', 'authenticated'),
@@ -15,9 +15,9 @@ set local role authenticated;
 select results_eq('select user_left, user_limit, next_free_at from public.upload_allowance()',
   $$values (10, 10, null::timestamptz)$$, 'a fresh learner has 10 of 10 uploads and no wait');
 select cmp_ok(public.use_upload_quota(), '>', 0::bigint, 'use_upload_quota returns the new row id');
-select public.use_upload_quota() from generate_series(1, 2);
+select lives_ok('select public.use_upload_quota() from generate_series(1, 2)', 'two more uploads');
 select is((select user_left from public.upload_allowance()), 7, 'after 3 uploads, 7 are left');
-select public.use_upload_quota() from generate_series(1, 7);
+select lives_ok('select public.use_upload_quota() from generate_series(1, 7)', 'seven more uploads');
 select is((select user_left from public.upload_allowance()), 0, 'after 10 uploads, none are left');
 select ok((select next_free_at between now() + interval '23 hours' and now() + interval '24 hours' from public.upload_allowance()),
   'after 10 uploads, the next one frees up about 24 hours later');

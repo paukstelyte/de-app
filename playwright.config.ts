@@ -28,6 +28,7 @@ const appEnv: Record<string, string> = {
   NEXT_PUBLIC_SUPABASE_URL: process.env.E2E_SUPABASE_URL!,
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: process.env.E2E_SUPABASE_PUBLISHABLE_KEY!,
   SUPABASE_SECRET_KEY: process.env.E2E_SUPABASE_SECRET_KEY!,
+  E2E: "1",
   NEXT_DIST_DIR: ".next-e2e", // its own build, so `npm run build` / `npm run dev` output is left alone
   ...(realAI
     ? {} // OPENROUTER_API_KEY comes from .env.local, which Next loads

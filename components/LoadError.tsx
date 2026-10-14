@@ -9,7 +9,7 @@ export function LoadError({ what, onRetry }: { what: string; onRetry?: () => voi
   const [pending, start] = useTransition();
   return (
     <div role="alert" className="panel flex flex-wrap items-center justify-between gap-3 text-sm">
-      <p>Couldn&apos;t load {what} just now. Nothing was lost.</p>
+      <p>Couldn&apos;t load {what} just now.</p>
       <button
         type="button"
         disabled={pending}

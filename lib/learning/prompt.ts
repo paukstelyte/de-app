@@ -1,6 +1,7 @@
 // The instructions for reading an uploaded document. Sent as the system message;
 // the document itself goes in a separate user message as untrusted content.
-// Change PROMPT_VERSION whenever the wording changes, so results can be compared.
+// Change PROMPT_VERSION whenever the wording changes. It isn't stored yet: saving it with each
+// document (to compare prompt versions) is part of the planned evaluation step.
 import { TOPICS } from "@/lib/grammar/topics";
 
 export const PROMPT_VERSION = "2026-10-14.1";

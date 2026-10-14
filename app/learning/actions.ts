@@ -18,10 +18,10 @@ const ERRORS = {
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
   pdf: "Couldn't open this PDF. Save it again, or upload photos of the pages.",
   unreadablePhoto: "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.",
-  unreadable: "We couldn't read any text in this document. If it's a scan, try a clearer copy or a photo. This upload still counts.",
+  unreadable: "We couldn't read any text in this PDF. If it's a scan, try a clearer copy or a photo. This upload still counts.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
   paid: "Couldn't read this document. Nothing was saved, and this upload still counts. Try a shorter part of it.",
-  invalid: "The AI's answer for this document couldn't be used. Nothing was saved, and this upload still counts. Please try again.",
+  invalid: "The AI's answer for this document couldn't be used. Nothing was saved, and this upload still counts. Trying again usually works.",
   generic: "Something went wrong — please try again.",
 };
 
@@ -56,7 +56,7 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
       files.push({ name: path.split("/").pop()!, mime: mimeFor(path)!, data: Buffer.from(await blob.arrayBuffer()) });
     }
     if (kind === "pdf") {
-      const pages = await pdfPageCount(files[0].data);
+      const pages = pdfPageCount(files[0].data);
       if (pages === null) return { error: ERRORS.pdf };
       if (pages > MAX_PDF_PAGES) return { error: ERRORS.pdfPages };
     }
@@ -72,7 +72,8 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
 
     const result = await analyseDocument({ kind, files, docxText });
     if ("error" in result) {
-      if (result.error === "unreadable") return { error: kind === "images" ? ERRORS.unreadablePhoto : ERRORS.unreadable };
+      // A Word file always has text (checked above), so "no text" from the model is a bad answer there.
+      if (result.error === "unreadable") return { error: kind === "images" ? ERRORS.unreadablePhoto : kind === "pdf" ? ERRORS.unreadable : ERRORS.invalid };
       if (result.error !== "ai") return { error: ERRORS[result.error] };
       await giveBackUpload(usageId, userId);
       return { error: ERRORS.ai };

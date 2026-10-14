@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { SaveResult } from "@/lib/attempts";
 
 type Send = (clientId: string) => Promise<SaveResult>;
@@ -17,8 +17,7 @@ export function useAnswerSaver() {
   async function trySend({ id, send }: Pending): Promise<boolean> {
     try {
       const result = await send(id);
-      if (result.ok) setLoggedOut(false);
-      else if (result.error === "logged-out") setLoggedOut(true);
+      setLoggedOut(!result.ok && result.error === "logged-out");
       return result.ok || result.error === "invalid";
     } catch {
       return false; // network error: it may or may not have been saved; the id makes a retry safe either way
@@ -42,7 +41,16 @@ export function useAnswerSaver() {
     setRetrying(false);
   }
 
-  return { count: unsaved.length, loggedOut, retrying, save, retry };
+  // Leaving the page would lose answers that haven't saved yet, so the browser asks first.
+  const count = unsaved.length;
+  useEffect(() => {
+    if (count === 0) return;
+    const warn = (e: BeforeUnloadEvent) => e.preventDefault();
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [count]);
+
+  return { count, loggedOut, retrying, save, retry };
 }
 
 /** A small line under the exercise: how many answers didn't save, and a Retry. Hidden when all saved. */

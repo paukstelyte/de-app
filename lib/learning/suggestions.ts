@@ -6,13 +6,15 @@ import { z } from "zod";
 export const MAX_TEXT = 8000;
 const MAX_TOPICS = 6;
 
-const SuggestionSchema = z.strictObject({
+// z.object: the JSON schema sent to the model still forbids extra keys (additionalProperties: false),
+// but an answer with one is accepted with the extra key dropped, rather than wasted.
+const SuggestionSchema = z.object({
   slug: z.string().describe("A slug from the topic list, exactly as given"),
   reason: z.string().describe("One line quoting the document"),
   fromMistake: z.boolean().describe("True only if the document shows a clear correction mark on this topic"),
 });
 
-const AnswerSchema = z.strictObject({
+const AnswerSchema = z.object({
   title: z.string().describe("Short title for the document, max 80 characters"),
   extractedText: z.string().describe("The text read from the document, max 8000 characters; empty if none"),
   noGrammar: z.boolean().describe("True if the text contains no German grammar to practise"),

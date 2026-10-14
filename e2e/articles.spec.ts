@@ -1,21 +1,33 @@
 // der · die · das: the level picker, keyboard play, waiting after mistakes, Restart, the
 // rules page and phone width (guest only; logged-in saving is in saving.spec.ts).
+import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
 import { noHorizontalScroll } from "./support";
+
+// The word list, so each card is answered on purpose (right or wrong), never by luck.
+const DECK: { noun: string; article: string; exception: string }[] = JSON.parse(
+  readFileSync(new URL("../lib/flashcards/data/seed.json", import.meta.url), "utf8"),
+);
+const card = (noun: string) => DECK.find((c) => c.noun === noun)!;
 
 const picker = (page: Page) => page.locator("fieldset");
 const badge = (page: Page) => page.locator("[data-card-level]");
 const noun = (page: Page) => page.locator("[data-card-level]").locator("xpath=..").locator("p").first();
 
-/** Answers "der" on fresh cards until one is wrong (a right one moves on by itself). */
-async function getAWrongAnswer(page: Page) {
-  for (let i = 0; i < 10; i++) {
-    const before = await noun(page).textContent();
-    await page.getByRole("button", { name: "der", exact: true }).click();
-    if (await page.getByText("Not quite.").isVisible()) return;
-    await expect(noun(page)).not.toHaveText(before!);
-  }
-  throw new Error("ten 'der' cards in a row were right");
+/** Answers the card on screen wrong on purpose; it then waits for a click or Enter. */
+async function answerWrong(page: Page) {
+  const { article } = card((await noun(page).textContent())!);
+  await page.getByRole("button", { name: article === "der" ? "die" : "der", exact: true }).click();
+  await expect(page.getByText("Not quite.")).toBeVisible();
+}
+/** Answers the card on screen right, and moves on: by itself, or with Enter on a card with an exception note. */
+async function answerRightAndMoveOn(page: Page) {
+  const before = (await noun(page).textContent())!;
+  const { article, exception } = card(before);
+  await page.getByRole("button", { name: article, exact: true }).click();
+  await expect(page.getByText("Correct!")).toBeVisible();
+  if (exception) await page.keyboard.press("Enter");
+  await expect(noun(page)).not.toHaveText(before);
 }
 
 test.beforeEach(async ({ page }) => {
@@ -31,10 +43,7 @@ test("the level picker: A · B · C · All, All by default, C gives only C1/C2 c
   await expect(picker(page).locator("[aria-pressed=true]")).toHaveText("C");
   for (let i = 0; i < 5; i++) {
     await expect(badge(page)).toHaveText(/^C[12]$/);
-    const before = await noun(page).textContent();
-    await page.keyboard.press("Enter"); // the first answer button is focused
-    if (await page.getByText("Not quite.").isVisible()) await page.keyboard.press("Enter");
-    await expect(noun(page)).not.toHaveText(before!);
+    await answerRightAndMoveOn(page);
   }
 });
 
@@ -46,16 +55,16 @@ test("arrow keys choose, Enter picks, and the next card comes without a Continue
   await page.keyboard.press("ArrowLeft");
   await page.keyboard.press("ArrowLeft");
   await expect(page.getByRole("button", { name: "das", exact: true })).toBeFocused();
-  const before = await noun(page).textContent();
+  const before = (await noun(page).textContent())!;
   await page.keyboard.press("Enter");
-  await expect(page.getByText(/^(Correct!|Not quite\.)$/)).toBeVisible();
+  await expect(page.getByText(card(before).article === "das" ? "Correct!" : "Not quite.")).toBeVisible();
   await expect(page.getByRole("button", { name: /continue/i })).toHaveCount(0);
-  if (await page.getByText("Not quite.").isVisible()) await page.keyboard.press("Enter");
-  await expect(noun(page)).not.toHaveText(before!);
+  if (card(before).article !== "das" || card(before).exception) await page.keyboard.press("Enter");
+  await expect(noun(page)).not.toHaveText(before);
 });
 
 test("a wrong answer waits for a click or Enter; Restart starts over", async ({ page }) => {
-  await getAWrongAnswer(page);
+  await answerWrong(page);
   const before = await noun(page).textContent();
   await page.waitForTimeout(2500);
   await expect(noun(page)).toHaveText(before!);
@@ -63,7 +72,7 @@ test("a wrong answer waits for a click or Enter; Restart starts over", async ({ 
   await page.locator("body").click({ position: { x: 5, y: 5 } });
   await expect(noun(page)).not.toHaveText(before!);
 
-  await getAWrongAnswer(page);
+  await answerWrong(page);
   const next = await noun(page).textContent();
   await page.keyboard.press("Enter");
   await expect(noun(page)).not.toHaveText(next!);
@@ -73,7 +82,7 @@ test("a wrong answer waits for a click or Enter; Restart starts over", async ({ 
 });
 
 test("changing the level mid-round starts a fresh round from the new level", async ({ page }) => {
-  await getAWrongAnswer(page);
+  await answerWrong(page);
   await page.keyboard.press("Enter");
   await picker(page).getByRole("button", { name: /^Level A/ }).click();
   await expect(page.getByText(/Card 1 of 30/i)).toBeVisible();

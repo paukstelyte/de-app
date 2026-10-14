@@ -21,6 +21,9 @@ test("documents and focus that can't be read show \"Couldn't load\" with Try aga
   } finally {
     sql("alter table public.learning_focus_offline rename to learning_focus");
   }
-  await page.getByRole("button", { name: "Try again" }).click();
-  await expect(page.getByText("Nothing to practise yet.")).toBeVisible();
+  // The database API refreshes its table list in the background, so the first retry may still fail.
+  await expect(async () => {
+    await page.getByRole("button", { name: "Try again" }).click();
+    await expect(page.getByText("Nothing to practise yet.")).toBeVisible({ timeout: 2_000 });
+  }).toPass({ timeout: 20_000 });
 });

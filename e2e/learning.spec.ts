@@ -138,7 +138,10 @@ test("focus buttons, deleting a document, and a second user sees none of it", as
   const otherPage = await (await browser.newContext()).newPage();
   await logIn(otherPage, other);
   await expect(otherPage.getByText("Lektion 7")).toBeHidden();
-  await expect(focus(otherPage).locator('a[href^="/topics/"]')).toHaveCount(2); // only the two help links
+  await expect(docs(otherPage)).toHaveCount(0);
+  for (const slug of ["prepositions-dative", "dative-case", "modal-verbs"]) {
+    await expect(focus(otherPage).locator(`a[href="/topics/${slug}"]`)).toHaveCount(0);
+  }
 
   await docs(page).first().getByRole("button", { name: "Delete" }).click();
   await docs(page).first().getByRole("button", { name: "Yes, delete it" }).click();

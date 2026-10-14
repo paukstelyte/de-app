@@ -8,8 +8,10 @@ import { readUsage, type Usage } from "@/lib/learning/usage";
 // One fixed model (agreed): reads PDFs and photos itself, about $0.0004 per document.
 export const ANALYSIS_MODEL = "google/gemini-2.5-flash-lite";
 const KNOWN = new Set(TOPICS.map((t) => t.slug));
-// Tests point this at a local fake that returns saved answers; production always uses OpenRouter.
-const OPENROUTER_URL = `${process.env.OPENROUTER_BASE_URL ?? "https://openrouter.ai/api/v1"}/chat/completions`;
+// The browser tests point OPENROUTER_BASE_URL at a local fake (e2e/mock-openrouter.mjs). Only an address on
+// this machine is accepted, so a stray setting on a server can never send the API key anywhere else.
+const testUrl = process.env.OPENROUTER_BASE_URL;
+const OPENROUTER_URL = `${testUrl && /^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(testUrl) ? testUrl : "https://openrouter.ai/api/v1"}/chat/completions`;
 
 export async function analyseDocument(input: {
   kind: UploadKind;
