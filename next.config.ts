@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const dev = process.env.NODE_ENV === "development";
 // The browser tests (E2E=1, set by playwright.config.ts) run the app over plain http against a local Supabase.
-const e2e = process.env.E2E === "1";
+const e2e = process.env.E2E === "1" && !process.env.VERCEL; // never on a Vercel deployment
 // Vercel's comment toolbar on preview deployments loads from vercel.live.
 const vercelLive = process.env.VERCEL_ENV === "preview" ? " https://vercel.live" : "";
 

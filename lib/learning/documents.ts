@@ -1,5 +1,7 @@
-// Reading uploaded Word and PDF files on the server, each within a hard memory cap:
+// Reading uploaded Word and PDF files on the server, each within hard memory and work caps:
 // mammoth reads Word text after our zip-bomb guard; PDF pages are counted here.
+// Only app/learning/actions.ts imports it. No "server-only" marker, so Node's unit tests can load it;
+// it holds no secrets.
 import { inflateRawSync, inflateSync } from "node:zlib";
 import mammoth from "mammoth";
 
@@ -10,6 +12,7 @@ import mammoth from "mammoth";
 // (jszip/lib/zipEntries.js) and refuses anything JSZip could read differently: zip64
 // markers, data before the zip, or a central directory that doesn't end at its end record.
 const MAX_UNZIPPED = 20 * 1024 * 1024;
+const MAX_ENTRIES = 500; // a .docx has about 10-30; many entries could unpack the same data over and over
 const MAX16 = 0xffff;
 const MAX32 = 0xffffffff;
 
@@ -25,10 +28,12 @@ export function docxWithinLimits(buf: Buffer): boolean {
     if (fields16.includes(MAX16) || cdSize === MAX32 || cdOffset === MAX32) return false; // zip64: JSZip would switch formats
     if (cdOffset + cdSize !== eocd) return false; // JSZip would shift every offset
     const count = fields16[3];
+    if (count > MAX_ENTRIES) return false;
 
     let ptr = cdOffset;
     let found = 0;
     let total = 0;
+    let compressedTotal = 0;
     // Like JSZip: read entries for as long as the central-directory signature is there.
     while (ptr + 46 <= eocd && buf.readUInt32LE(ptr) === 0x02014b50) {
       const method = buf.readUInt16LE(ptr + 10);
@@ -37,6 +42,8 @@ export function docxWithinLimits(buf: Buffer): boolean {
       const nameLen = buf.readUInt16LE(ptr + 28);
       const local = buf.readUInt32LE(ptr + 42);
       if (compressed === MAX32 || size === MAX32 || local === MAX32) return false; // zip64 sizes
+      compressedTotal += compressed;
+      if (found >= MAX_ENTRIES || compressedTotal > buf.length) return false; // entries sharing (re-reading) the same data
       if (buf.readUInt32LE(local) !== 0x04034b50) return false;
       const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
       const data = buf.subarray(start, start + compressed);
@@ -69,6 +76,8 @@ export async function readDocxText(buf: Buffer): Promise<string | null> {
 // stream with no size limit while it parses, so a 300 KB PDF could take 300 MB of memory
 // (checked in review). This counter unpacks only object streams, with a hard cap.
 const MAX_PDF_UNPACKED = 50 * 1024 * 1024;
+const MAX_PDF_STREAMS = 20_000; // real 20-page PDFs have a few hundred; more is refused
+const OBJ_LOOKBACK = 4096; // an object stream's dictionary sits right before its "stream" keyword
 const pageObjects = (text: string) => text.match(/\/Type\s*\/Page(?![A-Za-z])/g)?.length ?? 0;
 
 /** The number of pages in a PDF, including pages stored in compressed object streams (PDF 1.5+),
@@ -79,9 +88,13 @@ export function pdfPageCount(buf: Buffer): number | null {
   if (!text.slice(0, 1024).includes("%PDF-")) return null;
   let pages = pageObjects(text);
   let budget = MAX_PDF_UNPACKED;
+  let streams = 0;
   for (const m of text.matchAll(/stream\r?\n/g)) {
     if (text.slice(m.index - 3, m.index) === "end") continue;
-    const dict = text.slice(text.lastIndexOf(" obj", m.index), m.index);
+    if (++streams > MAX_PDF_STREAMS) return null;
+    // Look back a fixed distance only, so the work stays proportional to the file size.
+    const before = text.slice(Math.max(0, m.index - OBJ_LOOKBACK), m.index);
+    const dict = before.slice(before.lastIndexOf(" obj") + 1);
     if (!/\/Type\s*\/ObjStm/.test(dict) || !/\/FlateDecode/.test(dict)) continue;
     try {
       const unpacked = inflateSync(buf.subarray(m.index + m[0].length), { maxOutputLength: budget });

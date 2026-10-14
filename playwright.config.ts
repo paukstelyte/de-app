@@ -9,18 +9,20 @@ const PORT = 3100;
 const MOCK_PORT = 3199;
 
 function localSupabase() {
-  if (process.env.E2E_SUPABASE_URL) return; // already read (workers inherit it)
-  let status;
-  try {
-    status = JSON.parse(execFileSync("npx", ["supabase", "status", "-o", "json"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }));
-  } catch {
-    throw new Error("The local Supabase isn't running. Start it with `npm run db:start` (needs OrbStack or Docker).");
+  if (!process.env.E2E_SUPABASE_URL) {
+    let status;
+    try {
+      status = JSON.parse(execFileSync("npx", ["supabase", "status", "-o", "json"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }));
+    } catch {
+      throw new Error("The local Supabase isn't running. Start it with `npm run db:start` (needs OrbStack or Docker).");
+    }
+    process.env.E2E_SUPABASE_URL = status.API_URL;
+    process.env.E2E_SUPABASE_PUBLISHABLE_KEY = status.PUBLISHABLE_KEY ?? status.ANON_KEY;
+    process.env.E2E_SUPABASE_SECRET_KEY = status.SECRET_KEY ?? status.SERVICE_ROLE_KEY;
   }
-  const url: string = status.API_URL;
-  if (!/^http:\/\/(127\.0\.0\.1|localhost):/.test(url)) throw new Error(`Refusing to test against ${url}: tests only run on the local Supabase.`);
-  process.env.E2E_SUPABASE_URL = url;
-  process.env.E2E_SUPABASE_PUBLISHABLE_KEY = status.PUBLISHABLE_KEY ?? status.ANON_KEY;
-  process.env.E2E_SUPABASE_SECRET_KEY = status.SECRET_KEY ?? status.SERVICE_ROLE_KEY;
+  // Checked every time, however the URL was set: tests use the secret key, so they must never reach the live project.
+  const url = process.env.E2E_SUPABASE_URL!;
+  if (!/^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(url)) throw new Error(`Refusing to test against ${url}: tests only run on the local Supabase.`);
 }
 localSupabase();
 
