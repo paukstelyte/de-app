@@ -1,8 +1,8 @@
 import { useSyncExternalStore } from "react";
 
 /** A small choice remembered in this browser (localStorage), shared by every component that reads it.
- * `parse` turns the stored text into a valid choice; `fallback` is used on the server, where there is
- * no localStorage, and when storage is blocked (e.g. private mode). */
+ * `parse` turns the stored text into a valid choice; it runs inside a try, so it may read other keys too.
+ * `fallback` is used on the server, where there is no localStorage, and when storage is blocked. */
 export function storedChoice<T extends string>(key: string, parse: (stored: string | null) => T, fallback: T) {
   const listeners = new Set<() => void>();
   const subscribe = (listener: () => void) => {
@@ -20,7 +20,7 @@ export function storedChoice<T extends string>(key: string, parse: (stored: stri
     try {
       window.localStorage.setItem(key, next);
     } catch {
-      // Blocked storage: the choice can't be kept, and readers keep seeing what was stored before.
+      // Storage full or blocked: the choice isn't kept. Readers see what was stored before, or the fallback.
     }
     listeners.forEach((l) => l());
   }
