@@ -56,6 +56,27 @@ test("choosing files only shows them; nothing is uploaded or counted until Read"
   expect(await filesInBucket(user)).toBe(0);
 });
 
+test("photo previews show, and new ones replace them after Choose again, with no errors", async ({ page }, info) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
+  const user = await newUser();
+  await logIn(page, user);
+  const previews = page.getByLabel("Chosen files").locator("img");
+  const loaded = () => previews.evaluateAll((imgs) => imgs.every((img) => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0));
+  await (await uploadInput(page)).setInputFiles([markedPhoto(info.outputPath("a.png"), ""), markedPhoto(info.outputPath("b.png"), "")]);
+  await expect(previews).toHaveCount(2);
+  await expect.poll(loaded).toBe(true);
+  await page.getByRole("button", { name: "Choose again" }).click();
+  await expect(previews).toHaveCount(0);
+  await (await uploadInput(page)).setInputFiles(markedPhoto(info.outputPath("c.png"), ""));
+  await expect(previews).toHaveCount(1);
+  await expect.poll(loaded).toBe(true);
+  await page.goto("/topics"); // leave with files chosen: the box closes and releases its previews
+  await page.goBack();
+  expect(errors).toEqual([]);
+});
+
 test("a Word file shows the note about corrections before reading", async ({ page }) => {
   const user = await newUser();
   await logIn(page, user);

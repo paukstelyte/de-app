@@ -1,38 +1,10 @@
 "use client";
-import { useEffect, useRef, useSyncExternalStore } from "react";
-import { advanceChoice, advanceDelay, clickContinues, keyContinues, type AdvanceChoice } from "./answer-keys";
-
-const STORAGE_KEY = "de-app:advance";
-const listeners = new Set<() => void>();
-
-function read(): AdvanceChoice {
-  try {
-    return advanceChoice(window.localStorage.getItem(STORAGE_KEY));
-  } catch {
-    return advanceChoice(null);
-  }
-}
+import { useEffect, useRef } from "react";
+import { advanceChoice, advanceDelay, clickContinues, keyContinues } from "./answer-keys";
+import { storedChoice } from "./storedChoice";
 
 /** The learner's choice for moving on after a correct answer, remembered per browser. */
-export function useAdvanceChoice(): [AdvanceChoice, (choice: AdvanceChoice) => void] {
-  const choice = useSyncExternalStore(
-    (listener) => {
-      listeners.add(listener);
-      return () => listeners.delete(listener);
-    },
-    read,
-    () => advanceChoice(null), // server: localStorage doesn't exist
-  );
-  function setChoice(next: AdvanceChoice) {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, next);
-    } catch {
-      // Blocked storage (e.g. private mode): the choice lasts until the page is left.
-    }
-    listeners.forEach((l) => l());
-  }
-  return [choice, setChoice];
-}
+export const useAdvanceChoice = storedChoice("de-app:advance", advanceChoice, advanceChoice(null));
 
 /** After an answer: when `autoAdvance` is set (a correct answer) it moves on by itself after the learner's chosen
  * delay, unless they chose to wait; any answer moves on with a click anywhere (outside links, buttons and fields)

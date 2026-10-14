@@ -17,11 +17,6 @@ Waiting for real worksheets (the owner is collecting them; personal details remo
 
 Related, visible to learners: the Grammar Topics cards count that list and show "1 exercise", although each practice page has 30. Worth fixing on its own if the label bothers anyone.
 
-## Small leftovers from the PR #20 review
-
-- One shared hook for values remembered in the browser: the level band (`lib/flashcards/level.ts`) and the auto-advance choice (`lib/useAdvance.ts`) repeat the same pattern.
-- Release photo-preview URLs if the upload box closes while files are chosen (`components/learning/UploadBox.tsx`). Minor.
-
 ## Only when needed
 
 - **Stats in SQL:** progress pages read a user's whole answer history (`lib/attempts.ts`). Move the summary into a database view or function once histories reach tens of thousands of answers. A new view needs RLS and the anon revoke.
