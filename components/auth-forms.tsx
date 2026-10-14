@@ -13,9 +13,10 @@ const primaryButton =
 const secondaryButton =
   "flex w-full items-center justify-center gap-2 rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-100 disabled:opacity-60 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800";
 const linkClass = "underline underline-offset-4";
-// Matches the server rule (supabase/config.toml: 10+ characters, lower- and upper-case letters and digits).
+// Matches the server rule (supabase/config.toml: 10+ characters, lower- and upper-case letters and digits; Supabase
+// counts only A-Z, a-z and 0-9, and length in bytes, so the browser is the same or slightly stricter).
 // Supabase's leaked-password check needs the Pro plan, so a longer, mixed password is the free defence.
-const PASSWORD_RULE = "At least 10 characters, with upper- and lower-case letters and a number.";
+const PASSWORD_RULE = "At least 10 characters, with upper- and lower-case letters (A–Z, a–z; umlauts and ß don't count) and a number.";
 const NEW_PASSWORD = {
   required: true,
   minLength: 10,
@@ -84,7 +85,9 @@ function useAuthForm(call: Call, onSuccess: () => void) {
       try {
         const { error } = await call(form);
         if (!error) onSuccess();
-        return { error: error && (FRIENDLY_ERRORS[error.message] ?? error.message), email };
+        // A password the server refuses as weak gets the plain rule, not Supabase's list of allowed characters.
+        const weak = error && "code" in error && error.code === "weak_password";
+        return { error: error && (weak ? PASSWORD_RULE : FRIENDLY_ERRORS[error.message] ?? error.message), email };
       } catch {
         return { error: "Something went wrong — please try again.", email }; // e.g. no connection
       }

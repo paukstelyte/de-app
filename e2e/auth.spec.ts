@@ -39,12 +39,12 @@ test("sign-up with an email that already has an account: the friendly message, o
   await expect(page.getByText("An account with this email already exists. Try logging in.").or(page.getByRole("heading", { name: /check your email/i }))).toBeVisible();
 });
 
-test("sign-up refuses a password without upper- and lower-case letters and a number, or under 10 characters", async ({ page }) => {
+test("sign-up refuses a password without upper- and lower-case letters (A–Z, a–z) and a number, or under 10 characters", async ({ page }) => {
   await page.goto("/auth/sign-up");
   await page.getByLabel("Email").fill("weak-password@example.test");
   const password = page.getByLabel(/^Password/);
-  await expect(page.getByText("At least 10 characters, with upper- and lower-case letters and a number.")).toBeVisible();
-  for (const weak of ["abcdefgh12", "ABCDEFGH12", "Abcdefghij", "Abcdef12"]) {
+  await expect(page.getByText("At least 10 characters, with upper- and lower-case letters (A–Z, a–z; umlauts and ß don't count) and a number.")).toBeVisible();
+  for (const weak of ["abcdefgh12", "ABCDEFGH12", "Abcdefghij", "Abcdef12", "ÄBCDEFGHä1"]) {
     await password.fill(weak);
     expect(await password.evaluate((el: HTMLInputElement) => el.validity.valid), weak).toBe(false);
   }
@@ -52,13 +52,13 @@ test("sign-up refuses a password without upper- and lower-case letters and a num
   expect(await password.evaluate((el: HTMLInputElement) => el.validity.valid)).toBe(true);
 });
 
-test("the server refuses a weak password even if the browser check is skipped", async ({ page }) => {
+test("the server refuses a weak password even if the browser check is skipped, with the plain rule as the message", async ({ page }) => {
   await page.goto("/auth/sign-up");
   await page.locator("form").evaluate((form: HTMLFormElement) => (form.noValidate = true));
   await page.getByLabel("Email").fill("weak-server@example.test");
   await page.getByLabel(/^Password/).fill("abcdefgh12");
   await page.getByLabel("Repeat password").fill("abcdefgh12");
   await page.getByRole("button", { name: "Sign up", exact: true }).click();
-  await expect(page.getByRole("alert").filter({ hasText: /password/i })).toBeVisible();
+  await expect(page.getByRole("alert").filter({ hasText: /^At least 10 characters, with upper- and lower-case letters/ })).toBeVisible();
   await expect(page).toHaveURL(/\/auth\/sign-up$/);
 });

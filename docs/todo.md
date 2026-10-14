@@ -21,5 +21,6 @@ Related, visible to learners: the Grammar Topics cards count that list and show 
 
 - **Stats in SQL:** progress pages read a user's whole answer history (`lib/attempts.ts`). Move the summary into a database view or function once histories reach tens of thousands of answers. A new view needs RLS and the anon revoke.
 - **CSP without `'unsafe-inline'` scripts:** per-request nonces via `proxy.ts` (`next.config.ts`), at the cost of rendering every page on request.
+- **CAPTCHA on sign-in and sign-up:** Supabase's built-in Cloudflare Turnstile support (free) would slow down password guessing spread over many addresses; today only the per-address rate limit does. Leaked-password protection would need the Pro plan.
 - **Email deliverability:** a custom sending domain instead of the Gmail sender on Brevo's free plan.
 - **App-wide upload cap:** 100 uploads a day for everyone protects the AI budget, but about 10 accounts can use it up. Raise it with the budget.

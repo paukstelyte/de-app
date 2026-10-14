@@ -21,7 +21,7 @@ npm run test:e2e      # Playwright: builds the app into .next-e2e, starts it wit
 npm run db:stop       # when you're done (or leave it running between runs)
 ```
 
-Before each run, `e2e/global-setup.ts` clears the local upload counter (all of it, including uploads from your own manual testing on the local database), so earlier runs can't use up the app-wide limit of 100 uploads a day. `npm run test:e2e` fails straight away with a clear message if the local Supabase isn't running, and refuses any
+Before each run, `e2e/global-setup.ts` clears the local upload counter (all of it, including uploads from your own manual testing on the local database), so earlier runs can't use up the app-wide limit of 100 uploads a day. The local auth server reads `supabase/config.toml` only when it starts: after changing it, run `npm run db:stop && npm run db:start`. `npm run test:e2e` fails straight away with a clear message if the local Supabase isn't running, and refuses any
 Supabase URL that isn't on `127.0.0.1`/`localhost`. A failed test keeps a trace: open the report with
 `npx playwright show-report` and click the trace to replay it step by step.
 
