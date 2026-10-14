@@ -6,7 +6,6 @@ import { CONFIRM_WORD } from "@/lib/account";
 
 export const metadata = { title: "Account" };
 
-
 export default async function AccountPage() {
   const supabase = await createClient();
   const { data } = await supabase.auth.getClaims();

@@ -106,7 +106,7 @@ export function ArticlesGame({
         </div>
 
         <div className="border-t border-[var(--line)] pt-4">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">How to use</h2>
+          <h2 className="section-heading">How to use</h2>
           <ul className="mt-3 list-disc space-y-2 pl-4 text-xs leading-5 text-zinc-600 dark:text-zinc-400">
             <li>Choose a level, then pick der, die or das. The card flips to show the rule behind the answer.</li>
             <li>A correct answer moves on by itself; after a mistake, or on a card with an exception note, click anywhere or press Enter. Use ← and → to choose, Enter to pick.</li>

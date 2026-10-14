@@ -25,7 +25,6 @@ async function isInFocus(supabase: Awaited<ReturnType<typeof createClient>>, slu
   return data?.kind === "added";
 }
 
-
 export default async function TopicPage({ params }: PageProps<"/topics/[slug]">) {
   const topic = getTopic((await params).slug);
   if (!topic) notFound();

@@ -38,8 +38,7 @@ export function recordAnswer(id: string, wasCorrect: boolean): void {
   listeners.forEach((listener) => listener());
 }
 
-/** The deck with this browser's guest streaks. Only /articles imports it,
- * so only that page downloads the word list. */
+/** The deck with this browser's guest streaks (browser components only). */
 export function useFlashcards(): Flashcard[] {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

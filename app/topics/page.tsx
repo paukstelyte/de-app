@@ -8,7 +8,6 @@ import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Grammar Topics" };
 
-
 export default async function TopicsPage() {
   // Accuracy per topic from one pass over the logged-in user's answers; guests get none.
   const { data } = await (await createClient()).auth.getClaims();

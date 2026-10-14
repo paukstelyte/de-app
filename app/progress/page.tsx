@@ -13,7 +13,6 @@ const CARDS = new Map(loadFlashcards().map((c) => [c.id, c]));
 const RULE_TITLES = new Map(rules.map((r) => [r.id, r.title]));
 const TROUBLE_SHOWN = 30;
 
-
 export default async function ProgressPage() {
   const progress = await getArticlesProgress();
   if (!progress) redirect("/login?next=/progress");
