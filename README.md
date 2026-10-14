@@ -126,6 +126,7 @@ Security scans (`/security-scan`, `/security-scan-changed`) run with three scann
 
 - Recommendation quality isn't measured yet: an evaluation set of human-reviewed worksheets (clean, corrected, ambiguous, unreadable) is the next step (see [`docs/todo.md`](docs/todo.md)). Until then, the "mistake" labels on teacher corrections are untested.
 - Neat handwriting is read well, but the AI still guesses unclear words (it never wrote `[?]` in testing) and can keep crossed-out words. Teacher correction marks on handwritten pages are untested. A photo with no readable text is refused and not saved.
+- Passwords must be at least 10 characters with upper- and lower-case letters and a number (`supabase/config.toml`, the same rule in the sign-up form). Supabase's check against passwords leaked in data breaches ("Leaked Password Protection", flagged by the Security Advisor) needs the Pro plan, so it is off. Existing accounts keep their passwords until they change them. "Continue with Google" needs no password.
 - Emails are sent through Brevo's free plan (300/day) from a Gmail sender, so some may land in spam. A custom domain would fix that.
 - Stats are computed from a user's whole answer history on each page load. That's fine for thousands of answers; move it into SQL if histories get much larger.
 - The 100-uploads-a-day app-wide cap protects the AI budget but can be used up by about 10 accounts.

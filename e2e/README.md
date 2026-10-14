@@ -34,7 +34,7 @@ $0.0005, so run it before merging a change to the prompt, the AI request or the 
 | Spec | What it checks |
 |---|---|
 | `learning.spec.ts` | Login redirects; the review step (nothing uploaded or counted until "Read"); PDF, HEIC and Word uploads saved with their topics and focus; an unreadable photo, an invalid AI answer and a no-grammar document each handled as their own outcome; `.doc` and 6 photos refused without using an upload; uploaded files deleted; focus add/remove; deleting a document; a second user sees none of it |
-| `auth.spec.ts` | Login and sign-up forms: plain-words errors (wrong password, passwords that don't match, an existing account), the email kept after an error, the password cleared |
+| `auth.spec.ts` | Login and sign-up forms: plain-words errors (wrong password, passwords that don't match, an existing account), the email kept after an error, the password cleared; the password rule (10+ characters, upper, lower, digit) in the browser and on the server |
 | `faults.spec.ts` | A failed database read shows "Couldn't load … Try again", never the empty state, and recovers (runs last, alone) |
 | `saving.spec.ts` | A failed answer save shows "N answers not saved · Retry" without blocking practice; Retry saves it exactly once, even when the first try reached the server; the logged-out case |
 | `exercises.spec.ts` | Guest rounds, mistakes rounds, Next 10, 404s, keyboard (Enter, arrows), auto-advance and its setting, phone width, answers saved and accuracy shown when logged in |
