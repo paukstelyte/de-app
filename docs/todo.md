@@ -11,11 +11,11 @@ Waiting for real worksheets (the owner is collecting them; personal details remo
 - **Record per document:** prompt version (`PROMPT_VERSION` in `lib/learning/prompt.ts` already exists, not stored yet), response time and outcome, next to the stored model, tokens and cost. No raw documents in logs.
 - **Learner correction:** let a learner mark a suggested mistake as "not my mistake", which removes the mistake boost for that topic in "Your focus now".
 
-## Simplifications deferred from the 2026-10-14 code audit
+## Open question: one practice link per topic
 
-It changes behaviour, so it needs its own PR.
+`topics.json` stores each topic's practice as a list (`exercises`), and every topic has exactly one item. Storing a single link instead would remove about 10 lines from the sync script and the 5 places that read it. Nothing is broken, so the owner decided (2026-10-14) to leave it as is unless it starts to affect code quality, or until it's clear whether any topic will get a second practice set (e.g. basic and advanced), in which case the list is the right shape.
 
-- **One practice link per topic:** `topics.json` stores `exercises` as a list, but every topic has exactly one. Store a single link; update the sync script and the 5 pages that read it. Never rename a slug.
+Related, visible to learners: the Grammar Topics cards count that list and show "1 exercise", although each practice page has 30. Worth fixing on its own if the label bothers anyone.
 
 ## Small leftovers from the PR #20 review
 
