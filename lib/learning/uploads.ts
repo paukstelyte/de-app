@@ -23,6 +23,9 @@ const MIME_BY_EXT: Record<string, { mime: string; kind: "pdf" | "docx" | "image"
   heif: { mime: "image/heif", kind: "image" },
 };
 
+/** The file picker's `accept` list: the same extensions the checks allow. */
+export const ACCEPT = Object.keys(MIME_BY_EXT).map((ext) => `.${ext}`).join(",");
+
 const extOf = (name: string) => name.toLowerCase().match(/\.([a-z0-9]+)$/)?.[1] ?? "";
 
 /** The MIME type for a file name, decided by its extension (browsers often leave HEIC blank). */

@@ -19,15 +19,11 @@ export async function generateMetadata({ params }: PageProps<"/topics/[slug]">) 
   return { title: topic ? topic.title : "Topic not found" };
 }
 
-const pillPrimary =
-  "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
 // A topic counts as "in focus" here if added by hand; upload-only topics show "Add", which pins them.
 async function isInFocus(supabase: Awaited<ReturnType<typeof createClient>>, slug: string) {
   const { data } = await supabase.from("learning_focus").select("kind").eq("topic_slug", slug).maybeSingle();
   return data?.kind === "added";
 }
-
-const heading = "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
 
 export default async function TopicPage({ params }: PageProps<"/topics/[slug]">) {
   const topic = getTopic((await params).slug);
@@ -66,13 +62,13 @@ export default async function TopicPage({ params }: PageProps<"/topics/[slug]">)
       </div>
 
       <section className="flex flex-col gap-4 border border-[var(--line)] bg-[var(--paper)] p-5 shadow-[8px_8px_0_var(--accent)] sm:p-6">
-        <h2 className={heading}>Practise</h2>
+        <h2 className="section-heading">Practise</h2>
         {topic.exercises?.length ? (
           <ul className="flex flex-col gap-3">
             {topic.exercises.map((ex) => (
               <li key={ex.href} className="flex flex-wrap items-center justify-between gap-3">
                 <span className="font-semibold">{ex.title}</span>
-                <Link href={ex.href} className={pillPrimary}>Start</Link>
+                <Link href={ex.href} className="pill-primary">Start</Link>
               </li>
             ))}
           </ul>

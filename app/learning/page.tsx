@@ -15,8 +15,6 @@ import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Customized Learning" };
 const TOPIC_MAP = Object.fromEntries(TOPICS.map((t) => [t.slug, t]));
-const heading = "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
-const pillPrimary = "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
 
 export default async function LearningPage() {
   const supabase = await createClient();
@@ -51,7 +49,7 @@ export default async function LearningPage() {
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-start">
         <UploadBox userId={userId} modelSlug={ANALYSIS_MODEL} allowance={allowance} />
         <section className="flex flex-col gap-3" aria-labelledby="focus-title">
-          <h2 id="focus-title" className={heading}>Your focus now</h2>
+          <h2 id="focus-title" className="section-heading">Your focus now</h2>
           {isEmpty ? (
             <ol className="flex flex-col gap-2 text-sm text-zinc-600 dark:text-zinc-400">
               <li><b>1.</b> Upload a textbook page, worksheet, notes or homework.</li>
@@ -62,7 +60,7 @@ export default async function LearningPage() {
           ) : (
             <>
               {practiceSlugs.length > 0 && (
-                <Link href="/learning/practice" className={`${pillPrimary} self-start`}>
+                <Link href="/learning/practice" className="pill-primary self-start">
                   Practise my focus ({practiceSlugs.length} {practiceSlugs.length === 1 ? "topic" : "topics"})
                 </Link>
               )}
@@ -73,7 +71,7 @@ export default async function LearningPage() {
       </div>
       {!!docs?.length && (
         <section className="flex flex-col gap-3" aria-labelledby="docs-title">
-          <h2 id="docs-title" className={heading}>Your documents ({docs.length})</h2>
+          <h2 id="docs-title" className="section-heading">Your documents ({docs.length})</h2>
           <DocumentList docs={docs} topics={TOPIC_MAP} />
         </section>
       )}

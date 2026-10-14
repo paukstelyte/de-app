@@ -6,10 +6,6 @@ import { CONFIRM_WORD } from "@/lib/account";
 
 export const metadata = { title: "Account" };
 
-const panel = "border border-[var(--line)] bg-[var(--paper)] p-5 sm:p-6";
-const heading =
-  "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
-
 export default async function AccountPage() {
   const supabase = await createClient();
   const { data } = await supabase.auth.getClaims();
@@ -23,16 +19,16 @@ export default async function AccountPage() {
         <h1 className="text-4xl font-bold leading-none tracking-[-0.06em] sm:text-5xl">Account</h1>
       </div>
 
-      <section className={`${panel} flex flex-wrap items-center justify-between gap-4`}>
+      <section className="panel flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h2 className={heading}>Logged in as</h2>
+          <h2 className="section-heading">Logged in as</h2>
           <p className="mt-1 text-sm">{email}</p>
         </div>
         <LogoutButton />
       </section>
 
-      <section className={`${panel} flex flex-col gap-4 border-red-300 dark:border-red-900`}>
-        <h2 className={heading}>Delete account</h2>
+      <section className="panel flex flex-col gap-4 border-red-300 dark:border-red-900">
+        <h2 className="section-heading">Delete account</h2>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           This permanently deletes your account and every answer you&apos;ve saved, including your
           progress, trouble words, your Customized Learning documents and focus list. It can&apos;t be undone.

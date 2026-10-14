@@ -19,7 +19,7 @@ export function parseAllowance(data: unknown, documents: number): Allowance | nu
 /** "at 14:20" for later today, "tomorrow at 02:15" otherwise (the reader's own clock). */
 export function freeAtLabel(iso: string, now: Date = new Date()): string {
   const at = new Date(iso);
-  const time = `${String(at.getHours()).padStart(2, "0")}:${String(at.getMinutes()).padStart(2, "0")}`;
+  const time = at.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
   const sameDay = at.toDateString() === now.toDateString();
   return sameDay ? `at ${time}` : `tomorrow at ${time}`;
 }

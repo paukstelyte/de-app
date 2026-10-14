@@ -8,8 +8,6 @@ import { createClient } from "@/lib/supabase/server";
 
 export const metadata = { title: "Grammar Topics" };
 
-const heading = "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
-
 export default async function TopicsPage() {
   // Accuracy per topic from one pass over the logged-in user's answers; guests get none.
   const { data } = await (await createClient()).auth.getClaims();
@@ -25,7 +23,7 @@ export default async function TopicsPage() {
     <div className="flex flex-col gap-10">
       <div>
         <div className="mb-4 h-2 w-12 bg-[var(--accent)]" />
-        <p className={heading}>German grammar · A1–C2</p>
+        <p className="section-heading">German grammar · A1–C2</p>
         <h1 className="mt-3 text-3xl font-bold leading-none tracking-[-0.06em] sm:text-4xl">Grammar Topics</h1>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-zinc-600 dark:text-zinc-400">
           All {TOPICS.length} grammar topics from beginner (A1) to proficient (C2). Open a topic to read

@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 const label = "text-xs font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
-const pillPrimary = "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
 const pillGhost = "inline-flex items-center rounded-full border border-[var(--line)] px-5 py-2.5 text-sm font-medium";
 const card = "flex h-full flex-col gap-3 border border-[var(--line)] bg-[var(--paper)] p-6 transition-transform hover:-translate-y-0.5";
 
@@ -34,7 +33,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
           <li><b>3. Practise</b><br />Work through the suggested topics and track your progress.</li>
         </ol>
         <div className="flex flex-wrap gap-3">
-          <Link href="/auth/sign-up" className={pillPrimary}>Sign up</Link>
+          <Link href="/auth/sign-up" className="pill-primary">Sign up</Link>
           <Link href="/login?next=/learning" className={pillGhost}>Log in</Link>
         </div>
       </section>
