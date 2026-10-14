@@ -13,9 +13,8 @@ Waiting for real worksheets (the owner is collecting them; personal details remo
 
 ## Simplifications deferred from the 2026-10-14 code audit
 
-Each changes behaviour, so each needs its own PR.
+It changes behaviour, so it needs its own PR.
 
-- **Login and sign-up forms:** use React's `useActionState` instead of our own loading and error state (`components/auth-forms.tsx`). Keep the email field filled after a wrong password.
 - **One practice link per topic:** `topics.json` stores `exercises` as a list, but every topic has exactly one. Store a single link; update the sync script and the 5 pages that read it. Never rename a slug.
 
 ## Small leftovers from the PR #20 review
