@@ -45,7 +45,7 @@ export default async function PracticePage({ params }: PageProps<"/topics/[slug]
         <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-2">
           <h1 className="text-3xl font-bold leading-tight tracking-[-0.05em] sm:text-4xl">{topic.title}</h1>
           {/* Every set on this page is new; der·die·das (/articles) doesn't use it. */}
-          <span className="rounded-full border border-amber-500 bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900 dark:border-amber-400 dark:bg-amber-400/15 dark:text-amber-200">
+          <span className="test-mode-badge">
             This exercise is still in test mode
           </span>
         </div>

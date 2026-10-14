@@ -9,9 +9,6 @@ import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle, sp
 import type { ChoiceItem, ExerciseItem, OrderItem, TypeItem } from "@/lib/exercises/types";
 
 const card = "border border-[var(--line)] bg-[var(--paper)] shadow-[8px_8px_0_var(--accent)]";
-const pill = "inline-flex items-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40";
-const pillPrimary = `${pill} bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white`;
-const pillSecondary = `${pill} border border-zinc-300 text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800`;
 const tile = "rounded-lg border px-3 py-2 text-base font-medium transition-colors";
 const tileIdle = "border-zinc-300 text-zinc-800 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800";
 const good = "border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300";
@@ -28,13 +25,12 @@ type Result = { item: SessionItem; correct: boolean };
 const noop = () => () => {};
 const useMounted = () => useSyncExternalStore(noop, () => true, () => false);
 
-export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/topics/${slug}`, practiceHref = `/topics/${slug}/practice`, topicTitles }: {
+export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/topics/${slug}`, topicTitles }: {
   slug: string;
   title: string;
   items: SessionItem[];
   loggedIn: boolean;
   backHref?: string;
-  practiceHref?: string;
   /** Set for mixed rounds: shows each question's topic and saves the answer under it. */
   topicTitles?: Record<string, string>;
 }) {
@@ -69,17 +65,17 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
         <p id="round-score" role="status" className="text-sm text-zinc-600 dark:text-zinc-400">You got {score} of {round.length}</p>
         <div className="flex flex-wrap justify-center gap-3">
           {misses.length > 0 && (
-            <button type="button" autoFocus aria-describedby="round-score" onClick={() => start(misses, "mistakes")} className={pillPrimary}>
+            <button type="button" autoFocus aria-describedby="round-score" onClick={() => start(misses, "mistakes")} className="pill-primary">
               Practise my mistakes ({misses.length})
             </button>
           )}
-          <button type="button" autoFocus={misses.length === 0} aria-describedby={misses.length === 0 ? "round-score" : undefined} onClick={() => start(makeRound(items), "normal")} className={misses.length ? pillSecondary : pillPrimary}>
+          <button type="button" autoFocus={misses.length === 0} aria-describedby={misses.length === 0 ? "round-score" : undefined} onClick={() => start(makeRound(items), "normal")} className={misses.length ? "pill-secondary" : "pill-primary"}>
             Next {ROUND_SIZE} →
           </button>
         </div>
         <Link href={backHref} className="text-sm underline underline-offset-2">Back to {title}</Link>
         {!loggedIn && (
-          <Link href={`/login?next=${practiceHref}`} className="text-sm underline underline-offset-2">Log in to save your progress</Link>
+          <Link href={`/login?next=/topics/${slug}/practice`} className="text-sm underline underline-offset-2">Log in to save your progress</Link>
         )}
       </div>
     );
@@ -193,7 +189,7 @@ function TypeView({ item, answered, onAnswer }: ViewProps<TypeItem>) {
           </>
         }
       />
-      {!answered && <button type="submit" disabled={!value.trim()} className={`self-start ${pillPrimary}`}>Check</button>}
+      {!answered && <button type="submit" disabled={!value.trim()} className="self-start pill-primary">Check</button>}
     </form>
   );
 }
@@ -233,8 +229,8 @@ function OrderView({ item, answered, onAnswer }: ViewProps<OrderItem>) {
             ))}
           </div>
           <div className="flex flex-wrap gap-3">
-            {placed.length === words.length && <button type="button" autoFocus onClick={() => onAnswer(sentence)} className={pillPrimary}>Check</button>}
-            <button type="button" disabled={!placed.length} onClick={() => { setPlaced([]); refocus(); }} className={pillSecondary}>Clear</button>
+            {placed.length === words.length && <button type="button" autoFocus onClick={() => onAnswer(sentence)} className="pill-primary">Check</button>}
+            <button type="button" disabled={!placed.length} onClick={() => { setPlaced([]); refocus(); }} className="pill-secondary">Clear</button>
           </div>
         </>
       )}

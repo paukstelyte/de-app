@@ -6,7 +6,7 @@ import { analyseUpload } from "@/app/learning/actions";
 import { MAX_DOCUMENTS, freeAtLabel, type Allowance } from "@/lib/learning/allowance";
 import { createClient } from "@/lib/supabase/client";
 import { listUserUploads } from "@/lib/learning/storage";
-import { BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
+import { ACCEPT, BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
 import { formatModel } from "@/lib/learning/usage";
 
 /** The wait time in the reader's own timezone: empty on the server and during hydration, then filled in. */
@@ -14,8 +14,6 @@ const noSubscribe = () => () => {};
 function useFreeAt(iso: string | null): string {
   return useSyncExternalStore(noSubscribe, () => (iso ? freeAtLabel(iso) : ""), () => "");
 }
-
-const ACCEPT = ".pdf,.docx,.jpg,.jpeg,.png,.webp,.heic,.heif";
 
 export function UploadBox({ userId, modelSlug, allowance }: { userId: string; modelSlug: string; allowance: Allowance | null }) {
   const router = useRouter();

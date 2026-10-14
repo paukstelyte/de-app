@@ -1,11 +1,9 @@
+import type { Level } from "../grammar/topics";
+
+export type { Level };
 export type Article = "der" | "die" | "das";
 
 export const ARTICLES: Article[] = ["der", "die", "das"];
-
-export const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
-export type Level = (typeof LEVELS)[number];
-
-export type FlashcardStatus = "needs-practice" | "unplayed";
 
 /** A built-in card (from `data/seed.json`) plus this browser's guest streak. */
 export interface Flashcard {
@@ -20,6 +18,6 @@ export interface Flashcard {
 
 const STREAK_TO_CLASSIFY = 2;
 
-export function getFlashcardStatus(card: Flashcard): FlashcardStatus {
-  return card.incorrectStreak >= STREAK_TO_CLASSIFY ? "needs-practice" : "unplayed";
+export function needsPractice(card: Flashcard): boolean {
+  return card.incorrectStreak >= STREAK_TO_CLASSIFY;
 }

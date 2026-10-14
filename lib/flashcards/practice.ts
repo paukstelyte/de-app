@@ -1,5 +1,5 @@
 import { shuffle } from "@/lib/exercises/check";
-import { getFlashcardStatus, type Flashcard } from "./types";
+import { needsPractice, type Flashcard } from "./types";
 
 export const ROUND_SIZE = 30;
 
@@ -9,9 +9,8 @@ export const ROUND_SIZE = 30;
  * as the "needs practice" group. */
 export function buildPracticeOrder(cards: Flashcard[], priorityIds?: string[]): string[] {
   const priority = priorityIds && new Set(priorityIds);
-  const needsPractice = (c: Flashcard) =>
-    priority ? priority.has(c.id) : getFlashcardStatus(c) === "needs-practice";
-  return [...shuffle(cards.filter(needsPractice)), ...shuffle(cards.filter((c) => !needsPractice(c)))]
+  const isPriority = (c: Flashcard) => (priority ? priority.has(c.id) : needsPractice(c));
+  return [...shuffle(cards.filter(isPriority)), ...shuffle(cards.filter((c) => !isPriority(c)))]
     .slice(0, ROUND_SIZE)
     .map((c) => c.id);
 }

@@ -13,11 +13,6 @@ const CARDS = new Map(loadFlashcards().map((c) => [c.id, c]));
 const RULE_TITLES = new Map(rules.map((r) => [r.id, r.title]));
 const TROUBLE_SHOWN = 30;
 
-const pillPrimary =
-  "inline-flex items-center rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white";
-const panel = "border border-[var(--line)] bg-[var(--paper)] p-5 sm:p-6";
-const heading =
-  "text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400";
 
 export default async function ProgressPage() {
   const progress = await getArticlesProgress();
@@ -36,7 +31,7 @@ export default async function ProgressPage() {
         <h2 className="text-2xl font-bold tracking-[-0.04em]">{topic.title}</h2>
 
         {overall.total === 0 ? (
-          <div className={`${panel} text-sm text-zinc-600 dark:text-zinc-400`}>
+          <div className="panel text-sm text-zinc-600 dark:text-zinc-400">
             No answers yet.{" "}
             <Link href={topic.exercises![0].href} className="underline underline-offset-2">
               Play a round
@@ -52,11 +47,11 @@ export default async function ProgressPage() {
               ))}
             </div>
 
-            <div className={panel}>
+            <div className="panel">
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <h3 className={heading}>Trouble words ({trouble.length})</h3>
+                <h3 className="section-heading">Trouble words ({trouble.length})</h3>
                 {trouble.length > 0 && (
-                  <a href="/articles?mode=mistakes" className={pillPrimary}>
+                  <a href="/articles?mode=mistakes" className="pill-primary">
                     Practise my mistakes
                   </a>
                 )}
@@ -90,8 +85,8 @@ export default async function ProgressPage() {
               )}
             </div>
 
-            <div className={panel}>
-              <h3 className={heading}>Accuracy by rule</h3>
+            <div className="panel">
+              <h3 className="section-heading">Accuracy by rule</h3>
               <p className="mt-2 text-xs text-zinc-500">Weakest first. Tap a rule to read it.</p>
               <ul className="mt-4 flex flex-col divide-y divide-[var(--line)]">
                 {[...byRule]

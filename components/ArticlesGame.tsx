@@ -4,15 +4,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo } from "react";
 import { recordAttempt } from "@/app/articles/actions";
-import { useFlashcards } from "@/lib/flashcards/context";
-import { ARTICLES, getFlashcardStatus, type Article } from "@/lib/flashcards/types";
+import { recordAnswer, useFlashcards } from "@/lib/flashcards/store";
+import { ARTICLES, needsPractice, type Article } from "@/lib/flashcards/types";
 import { useBand } from "@/lib/flashcards/level";
 import { BANDS, BAND_LABELS, inBand, type Band } from "@/lib/flashcards/bands";
 import { LevelBadge } from "@/components/LevelBadge";
 import { ROUND_SIZE } from "@/lib/flashcards/practice";
 import { usePracticeSession } from "@/lib/flashcards/usePracticeSession";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
-import { StatusBadge } from "@/components/StatusBadge";
 import { RULE_TEXT_BY_ID } from "@/lib/flashcards/storage";
 import { CORRECT_STREAK_TO_CLEAR, percent } from "@/lib/progress";
 import { useAdvance } from "@/lib/useAdvance";
@@ -35,13 +34,8 @@ function getArticleButtonStyle(isCorrectAnswer: boolean, isWrongChoice: boolean)
   return buttonMuted;
 }
 
-const pill = "inline-flex items-center rounded-full px-5 py-2.5 text-sm font-medium transition-colors";
-const pillPrimary =
-  `${pill} bg-zinc-900 text-white hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white`;
 const sideLink =
   "border-b border-zinc-900 pb-0.5 font-medium text-zinc-900 transition-colors hover:border-[var(--accent-deep)] hover:text-[var(--accent-deep)] dark:border-zinc-100 dark:text-zinc-100";
-const pillSecondary =
-  `${pill} border border-zinc-300 text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800`;
 
 export function ArticlesGame({
   loggedIn,
@@ -53,7 +47,7 @@ export function ArticlesGame({
   mistakesOnly: boolean;
 }) {
   const router = useRouter();
-  const { cards, recordAnswer } = useFlashcards();
+  const cards = useFlashcards();
   const [band, setBand] = useBand();
   // Rounds draw only from the chosen band ("Practise my mistakes" ignores
   // it: a missed word is worth practising whatever its level).
@@ -166,7 +160,7 @@ export function ArticlesGame({
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
               Every word you&apos;ve missed has since been answered right twice in a row.
             </p>
-            <a href="/articles" className={pillPrimary}>
+            <a href="/articles" className="pill-primary">
               Back to practice
             </a>
           </div>
@@ -191,21 +185,21 @@ export function ArticlesGame({
                 <button
                   type="button"
                   onClick={startRecap}
-                  className={pillPrimary}
+                  className="pill-primary"
                 >
                   Learn from your mistakes ({wrongThisPass.length})
                 </button>
               )}
               {mistakesOnly ? (
                 !troubleIds?.length ? (
-                  <a href="/articles" className={pillPrimary}>
+                  <a href="/articles" className="pill-primary">
                     All cleared — back to practice
                   </a>
                 ) : (
                 // Full page load, so the round is rebuilt from the freshly saved list.
                 <a
                   href="/articles?mode=mistakes"
-                  className={wrongThisPass.length > 0 ? pillSecondary : pillPrimary}
+                  className={wrongThisPass.length > 0 ? "pill-secondary" : "pill-primary"}
                 >
                   Practise my mistakes again ({troubleIds.length})
                 </a>
@@ -214,7 +208,7 @@ export function ArticlesGame({
               <button
                 type="button"
                 onClick={nextRound}
-                className={wrongThisPass.length > 0 ? pillSecondary : pillPrimary}
+                className={wrongThisPass.length > 0 ? "pill-secondary" : "pill-primary"}
               >
                 Next {ROUND_SIZE} words →
               </button>
@@ -311,7 +305,7 @@ function Game({
   /** Logged-in only: the badge reflects the saved trouble list, not browser streaks. */
   troubleIds?: string[];
 }) {
-  const { cards } = useFlashcards();
+  const cards = useFlashcards();
   const card = cards.find((c) => c.id === cardId);
   const answersRef = useArrowKeys<HTMLDivElement>();
   useAdvance(chosen !== null, !!card && chosen === card.article && !card.exception, onAdvance);
@@ -391,13 +385,11 @@ function Game({
               >
                 {isCorrect ? "Correct!" : "Not quite."}
               </p>
-              <StatusBadge
-                status={
-                  troubleIds
-                    ? troubleIds.includes(card.id) ? "needs-practice" : "unplayed"
-                    : getFlashcardStatus(card)
-                }
-              />
+              {(troubleIds ? troubleIds.includes(card.id) : needsPractice(card)) && (
+                <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
+                  Needs practice
+                </span>
+              )}
             </div>
 
             <div className="text-left">

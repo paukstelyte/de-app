@@ -5,13 +5,10 @@ import { useState, useTransition } from "react";
 import { deleteDocument } from "@/app/learning/actions";
 import { LevelBadge } from "@/components/LevelBadge";
 import type { GrammarTopic } from "@/lib/grammar/topics";
-import type { Suggestion } from "@/lib/learning/suggestions";
+import type { loadFocus } from "@/lib/learning/load-focus";
 import { formatCost, formatModel } from "@/lib/learning/usage";
 
-type Doc = {
-  id: number; title: string; created_at: string; extracted_text: string; no_grammar: boolean; suggestions: Suggestion[];
-  model: string | null; prompt_tokens: number | null; completion_tokens: number | null; cost_usd: number | string | null;
-};
+type Doc = Awaited<ReturnType<typeof loadFocus>>["documents"][number];
 
 /** "Read by Gemini 2.5 Flash Lite · 3,120 tokens · about $0.0004"; older documents saved before this was recorded show nothing. */
 function usageLine(doc: Doc): string | null {
