@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState, type ComponentProps, type FormEvent, type ReactNode } from "react";
+import { useActionState, useState, type ComponentProps, type ReactNode } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { GoogleIcon } from "@/components/google-icon";
 
@@ -69,24 +69,29 @@ const FRIENDLY_ERRORS: Record<string, string> = {
   "User already registered": "An account with this email already exists. Try logging in.",
 };
 
-/** Runs a Supabase auth call with shared loading/error state. */
-function useAuthAction() {
-  const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  async function run(action: () => Promise<{ error: Error | null }>, onSuccess?: () => void) {
-    setIsLoading(true);
-    setError(null);
-    const { error } = await action();
-    setIsLoading(false);
-    if (error) setError(FRIENDLY_ERRORS[error.message] ?? error.message);
-    else onSuccess?.();
-  }
-  return { error, setError, isLoading, run };
+type FormState = { error: string | null; email: string };
+type Call = (form: FormData) => Promise<{ error: Error | string | null }>;
+const field = (form: FormData, name: string) => String(form.get(name) ?? "");
+
+/** Runs a Supabase auth call as the form's action. React tracks the pending state. React also
+ * clears the form after an action, so the email comes back in the state and refills the field. */
+function useAuthForm(call: Call, onSuccess: () => void) {
+  return useActionState(
+    async (_: FormState, form: FormData): Promise<FormState> => {
+      const email = field(form, "email");
+      const { error } = await call(form);
+      if (!error) onSuccess();
+      const message = typeof error === "string" ? error : error && (FRIENDLY_ERRORS[error.message] ?? error.message);
+      return { error: message, email };
+    },
+    { error: null, email: "" },
+  );
 }
 
 /** Google creates the account on first use, so this one button serves both
  * log in and sign up. */
-function GoogleButton({ next, onError }: { next: string; onError: (message: string) => void }) {
+function GoogleButton({ next }: { next: string }) {
+  const [error, setError] = useState<string | null>(null);
   async function handleGoogle() {
     const { error } = await createClient().auth.signInWithOAuth({
       provider: "google",
@@ -95,46 +100,42 @@ function GoogleButton({ next, onError }: { next: string; onError: (message: stri
       },
     });
     // On success the browser is already on its way to Google.
-    if (error) onError(error.message);
+    setError(error?.message ?? null);
   }
   return (
-    <button type="button" onClick={handleGoogle} className={secondaryButton}>
-      <GoogleIcon className="size-4" />
-      Continue with Google
-    </button>
+    <>
+      <button type="button" onClick={handleGoogle} className={secondaryButton}>
+        <GoogleIcon className="size-4" />
+        Continue with Google
+      </button>
+      <ErrorText error={error} />
+    </>
   );
 }
 
 export function LoginForm({ next }: { next: string }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const { error, setError, isLoading, run } = useAuthAction();
-
-  function handleLogin(e: FormEvent) {
-    e.preventDefault();
-    run(
-      () => createClient().auth.signInWithPassword({ email, password }),
-      // A full page load, not router.push: the client router may still hold a
-      // "redirect to /login" it prefetched for this page while logged out (e.g.
-      // a nav link to a protected page), which would bounce the user straight back.
-      // `next` is already limited to this site by safeRedirectPath.
-      () => window.location.assign(next),
-    );
-  }
+  const [state, logIn, isLoading] = useAuthForm(
+    (form) => createClient().auth.signInWithPassword({ email: field(form, "email"), password: field(form, "password") }),
+    // A full page load, not router.push: the client router may still hold a
+    // "redirect to /login" it prefetched for this page while logged out (e.g.
+    // a nav link to a protected page), which would bounce the user straight back.
+    // `next` is already limited to this site by safeRedirectPath.
+    () => window.location.assign(next),
+  );
 
   return (
     <AuthCard title="Log in" description="Log in to save your answers and practise your own mistakes.">
-      <form onSubmit={handleLogin} className="flex flex-col gap-4">
-        <Field label="Email" type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <Field label="Password" type="password" required autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <form action={logIn} className="flex flex-col gap-4">
+        <Field label="Email" name="email" type="email" required autoComplete="email" defaultValue={state.email} />
+        <Field label="Password" name="password" type="password" required autoComplete="current-password" />
         <Link href="/auth/forgot-password" className={`-mt-2 self-end text-xs ${linkClass}`}>
           Forgot your password?
         </Link>
-        <ErrorText error={error} />
+        <ErrorText error={state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Logging in…" : "Log in"}
         </button>
-        <GoogleButton next={next} onError={setError} />
+        <GoogleButton next={next} />
       </form>
       <p className="mt-6 text-center text-sm">
         No account yet?{" "}
@@ -148,36 +149,29 @@ export function LoginForm({ next }: { next: string }) {
 
 export function SignUpForm() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [repeat, setRepeat] = useState("");
-  const { error, setError, isLoading, run } = useAuthAction();
-
-  function handleSignUp(e: FormEvent) {
-    e.preventDefault();
-    if (password !== repeat) return setError("Passwords do not match.");
-    run(
-      () =>
-        createClient().auth.signUp({
-          email,
-          password,
-          options: { emailRedirectTo: `${window.location.origin}/auth/confirm` }, // see supabase/templates
-        }),
-      () => router.push("/auth/sign-up-success"),
-    );
-  }
+  const [state, signUp, isLoading] = useAuthForm(
+    async (form) => {
+      if (field(form, "password") !== field(form, "repeat")) return { error: "Passwords do not match." };
+      return createClient().auth.signUp({
+        email: field(form, "email"),
+        password: field(form, "password"),
+        options: { emailRedirectTo: `${window.location.origin}/auth/confirm` }, // see supabase/templates
+      });
+    },
+    () => router.push("/auth/sign-up-success"),
+  );
 
   return (
     <AuthCard title="Sign up" description="Track your progress and practise the words you get wrong.">
-      <form onSubmit={handleSignUp} className="flex flex-col gap-4">
-        <Field label="Email" type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <Field label="Password" type="password" {...NEW_PASSWORD} value={password} onChange={(e) => setPassword(e.target.value)} />
-        <Field label="Repeat password" type="password" required autoComplete="new-password" value={repeat} onChange={(e) => setRepeat(e.target.value)} />
-        <ErrorText error={error} />
+      <form action={signUp} className="flex flex-col gap-4">
+        <Field label="Email" name="email" type="email" required autoComplete="email" defaultValue={state.email} />
+        <Field label="Password" name="password" type="password" {...NEW_PASSWORD} />
+        <Field label="Repeat password" name="repeat" type="password" required autoComplete="new-password" />
+        <ErrorText error={state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Creating account…" : "Sign up"}
         </button>
-        <GoogleButton next="/learning" onError={setError} />
+        <GoogleButton next="/learning" />
       </form>
       <p className="mt-4 text-center text-xs text-zinc-500">
         See what we store and how to delete it:{" "}
@@ -196,20 +190,14 @@ export function SignUpForm() {
 }
 
 export function ForgotPasswordForm() {
-  const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
-  const { error, isLoading, run } = useAuthAction();
-
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    run(
-      () =>
-        createClient().auth.resetPasswordForEmail(email, {
-          redirectTo: `${window.location.origin}/auth/confirm`, // see supabase/templates
-        }),
-      () => setSent(true),
-    );
-  }
+  const [state, sendLink, isLoading] = useAuthForm(
+    (form) =>
+      createClient().auth.resetPasswordForEmail(field(form, "email"), {
+        redirectTo: `${window.location.origin}/auth/confirm`, // see supabase/templates
+      }),
+    () => setSent(true),
+  );
 
   if (sent) {
     return (
@@ -222,9 +210,9 @@ export function ForgotPasswordForm() {
 
   return (
     <AuthCard title="Reset your password" description="Enter your email and we'll send you a reset link.">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <Field label="Email" type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <ErrorText error={error} />
+      <form action={sendLink} className="flex flex-col gap-4">
+        <Field label="Email" name="email" type="email" required autoComplete="email" defaultValue={state.email} />
+        <ErrorText error={state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Sending…" : "Send reset link"}
         </button>
@@ -240,22 +228,16 @@ export function ForgotPasswordForm() {
 
 export function UpdatePasswordForm() {
   const router = useRouter();
-  const [password, setPassword] = useState("");
-  const { error, isLoading, run } = useAuthAction();
-
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    run(
-      () => createClient().auth.updateUser({ password }),
-      () => router.push("/learning"),
-    );
-  }
+  const [state, save, isLoading] = useAuthForm(
+    (form) => createClient().auth.updateUser({ password: field(form, "password") }),
+    () => router.push("/learning"),
+  );
 
   return (
     <AuthCard title="Choose a new password">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <Field label="New password" type="password" {...NEW_PASSWORD} value={password} onChange={(e) => setPassword(e.target.value)} />
-        <ErrorText error={error} />
+      <form action={save} className="flex flex-col gap-4">
+        <Field label="New password" name="password" type="password" {...NEW_PASSWORD} />
+        <ErrorText error={state.error} />
         <button type="submit" disabled={isLoading} className={primaryButton}>
           {isLoading ? "Saving…" : "Save new password"}
         </button>
