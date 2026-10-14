@@ -54,6 +54,8 @@ Add for each scanner:
 - **Supabase:** focus on changed migrations, `supabase/config.toml`, and changed code that uses
   Supabase clients, RPCs or keys. It may run read-only queries against the live database to
   check the tables, policies, grants and functions those migrations create.
+  Always run its check 6 (the Security Advisor checks) for the whole project: it is quick, and
+  the report has a "Supabase Security Advisor" section.
 - **Next.js:** focus on changed pages, layouts, server actions, route handlers, `proxy.ts`,
   client components and env var usage in the changed files.
 - **Vercel:** focus on how the changes affect the deployment: changed `next.config.*`,
