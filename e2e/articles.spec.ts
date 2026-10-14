@@ -1,12 +1,13 @@
 // der · die · das: the level picker, keyboard play, waiting after mistakes, Restart, the
 // rules page and phone width (guest only; logged-in saving is in saving.spec.ts).
+import { resolve } from "node:path";
 import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
-import { noHorizontalScroll } from "./support";
+import { feedback, moveOn, noHorizontalScroll } from "./support";
 
 // The word list, so each card is answered on purpose (right or wrong), never by luck.
 const DECK: { noun: string; article: string; exception: string }[] = JSON.parse(
-  readFileSync(new URL("../lib/flashcards/data/seed.json", import.meta.url), "utf8"),
+  readFileSync(resolve("lib/flashcards/data/seed.json"), "utf8"),
 );
 const card = (noun: string) => DECK.find((c) => c.noun === noun)!;
 
@@ -14,19 +15,21 @@ const picker = (page: Page) => page.locator("fieldset");
 const badge = (page: Page) => page.locator("[data-card-level]");
 const noun = (page: Page) => page.locator("[data-card-level]").locator("xpath=..").locator("p").first();
 
+const changed = (page: Page, before: string) => () => expect(noun(page)).not.toHaveText(before, { timeout: 1_000 });
+
 /** Answers the card on screen wrong on purpose; it then waits for a click or Enter. */
 async function answerWrong(page: Page) {
   const { article } = card((await noun(page).textContent())!);
   await page.getByRole("button", { name: article === "der" ? "die" : "der", exact: true }).click();
-  await expect(page.getByText("Not quite.")).toBeVisible();
+  await expect(feedback(page, "Not quite.")).toBeVisible();
 }
 /** Answers the card on screen right, and moves on: by itself, or with Enter on a card with an exception note. */
 async function answerRightAndMoveOn(page: Page) {
   const before = (await noun(page).textContent())!;
   const { article, exception } = card(before);
   await page.getByRole("button", { name: article, exact: true }).click();
-  await expect(page.getByText("Correct!")).toBeVisible();
-  if (exception) await page.keyboard.press("Enter");
+  await expect(feedback(page, "Correct!")).toBeVisible();
+  if (exception) await moveOn(page, "Enter", changed(page, before));
   await expect(noun(page)).not.toHaveText(before);
 }
 
@@ -57,9 +60,9 @@ test("arrow keys choose, Enter picks, and the next card comes without a Continue
   await expect(page.getByRole("button", { name: "das", exact: true })).toBeFocused();
   const before = (await noun(page).textContent())!;
   await page.keyboard.press("Enter");
-  await expect(page.getByText(card(before).article === "das" ? "Correct!" : "Not quite.")).toBeVisible();
+  await expect(feedback(page, card(before).article === "das" ? "Correct!" : "Not quite.")).toBeVisible();
   await expect(page.getByRole("button", { name: /continue/i })).toHaveCount(0);
-  if (card(before).article !== "das" || card(before).exception) await page.keyboard.press("Enter");
+  if (card(before).article !== "das" || card(before).exception) await moveOn(page, "Enter", changed(page, before));
   await expect(noun(page)).not.toHaveText(before);
 });
 
@@ -69,21 +72,20 @@ test("a wrong answer waits for a click or Enter; Restart starts over", async ({ 
   await page.waitForTimeout(2500);
   await expect(noun(page)).toHaveText(before!);
   await expect(page.getByText("Tap or click anywhere, or press Enter to continue")).toBeVisible();
-  await page.locator("body").click({ position: { x: 5, y: 5 } });
-  await expect(noun(page)).not.toHaveText(before!);
+  await moveOn(page, "click", changed(page, before!));
 
   await answerWrong(page);
   const next = await noun(page).textContent();
-  await page.keyboard.press("Enter");
-  await expect(noun(page)).not.toHaveText(next!);
+  await moveOn(page, "Enter", changed(page, next!));
 
   await page.getByRole("button", { name: "Restart" }).click();
   await expect(page.getByText(/Card 1 of 30/i)).toBeVisible();
 });
 
 test("changing the level mid-round starts a fresh round from the new level", async ({ page }) => {
+  const wrong = (await noun(page).textContent())!;
   await answerWrong(page);
-  await page.keyboard.press("Enter");
+  await moveOn(page, "Enter", changed(page, wrong));
   await picker(page).getByRole("button", { name: /^Level A/ }).click();
   await expect(page.getByText(/Card 1 of 30/i)).toBeVisible();
   await expect(badge(page)).toHaveText(/^A[12]$/);

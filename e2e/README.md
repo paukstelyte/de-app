@@ -7,6 +7,9 @@ Supabase CLI, never the live project, so tests can create users and data freely 
 ## Setup (once)
 
 1. Install [OrbStack](https://orbstack.dev) (or Docker Desktop) and open it. The Supabase CLI uses it to run the local database.
+   On macOS, allow it to read the project folder when asked (System Settings → Privacy & Security → Files and Folders →
+   OrbStack → Documents Folder, if the project is in Documents); without that, `npm run test:db` hangs with no output.
+   If a terminal says `docker: command not found`, open a new terminal window after installing.
 2. `npx playwright install chromium` downloads the browser Playwright drives.
 
 ## Run

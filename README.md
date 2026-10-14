@@ -84,7 +84,7 @@ Every table with user data has row-level security with owner-only policies, and 
 | `npm run test:db` | Database tests (pgTAP, `supabase/tests/database/`): one user can't read, change or delete another user's documents, focus list, answers, upload counter or files; the upload allowance; answer ids counted once |
 | `npm run test:e2e` | Browser tests (Playwright Test, `e2e/*.spec.ts`) with a fake OpenRouter: every upload kind and outcome, the review step, focus, a **second user can't see the first user's documents**, failed reads and saves with retry, practice pages, keyboard, auto-advance setting, der · die · das, phone width with the keyboard open. A failed test keeps a trace (`npx playwright show-report`) |
 | `npm run test:smoke` | The one test with the real model (about $0.0005): the Lektion 7 PDF gets dative topics. Run it before merging a change to the prompt, the AI request or the answer schema |
-| `npm run db:types` | After a migration: regenerate `lib/supabase/database.types.ts` from the local database |
+| `npm run db:types` | Once a migration is applied to the live project: regenerate `lib/supabase/database.types.ts` from it (formatted output; `--local` works too but prints unformatted code) |
 
 How to run them, and what each test checks: [`e2e/README.md`](e2e/README.md). Latest results: [`docs/testing.md`](docs/testing.md).
 

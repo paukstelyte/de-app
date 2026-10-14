@@ -1,7 +1,7 @@
 // Grammar practice pages (/topics/<slug>/practice): guest rounds, mistakes rounds, the keyboard,
 // auto-advance and its setting, phone width, and answers saved for logged-in learners.
 import { expect, test, type Page } from "@playwright/test";
-import { answer, attemptCount, logIn, newUser, noHorizontalScroll, questionNumber } from "./support";
+import { answer, attemptCount, feedback, logIn, moveOn, newUser, nextQuestion, noHorizontalScroll, questionNumber } from "./support";
 
 const HINT = "Tap or click anywhere, or press Enter to continue";
 const continueButton = (page: Page) => page.getByRole("button", { name: /continue/i });
@@ -15,7 +15,8 @@ async function reachType(page: Page, slug: string, type: "choice" | "type" | "or
       if (await isType(page, type)) return;
       const n = await questionNumber(page);
       await answer(page, slug, "right");
-      await expect.poll(() => questionNumber(page).catch(() => 0)).not.toBe(n);
+      await expect.poll(() => questionNumber(page)).not.toBe(n);
+      if (n === 10) break; // round over: start a new one
     }
   }
   throw new Error(`no ${type} item reached on ${slug}`);
@@ -49,9 +50,9 @@ test("a guest round: 3 wrong and 7 right, the mistakes round, then Next 10; noth
     const wrong = i <= 3;
     types.add(await answer(page, slug, wrong ? "wrong" : "right"));
     if (wrong) {
-      await expect(page.getByText("Not quite.")).toBeVisible();
-      await expect(page.getByText("Answer:")).toBeVisible();
-      await page.locator("body").click({ position: { x: 5, y: 5 } }); // a wrong answer waits for a click
+      await expect(feedback(page, "Not quite.")).toBeVisible();
+      await expect(page.locator("p:not(.sr-only)", { hasText: /^Answer:/ })).toBeVisible();
+      await moveOn(page, "click", nextQuestion(page, i)); // a wrong answer waits for a click
     }
   }
   await expect(page.getByText("Round complete!")).toBeVisible();
@@ -75,18 +76,18 @@ test("type item: Enter submits, a right answer moves on by itself, a wrong one w
   const n = await questionNumber(page);
   await answer(page, "simple-past", "right");
   await expect(continueButton(page)).toHaveCount(0);
-  await expect.poll(() => questionNumber(page).catch(() => n + 1)).toBe(n + 1);
+  await expect.poll(() => questionNumber(page)).toBe(n < 10 ? n + 1 : 0); // 0: the round is over
 
   await reachType(page, "simple-past", "type");
   const m = await questionNumber(page);
   await page.locator("input[aria-label]").fill("xxx");
   await page.keyboard.press("Enter");
-  await expect(page.getByText("Not quite.")).toBeVisible();
+  await expect(feedback(page, "Not quite.")).toBeVisible();
   await expect(page.getByText(HINT)).toBeVisible();
   await page.waitForTimeout(2500); // longer than the auto-advance delay
   expect(await questionNumber(page)).toBe(m);
   await page.keyboard.press("Enter");
-  await expect.poll(() => questionNumber(page).catch(() => m + 1)).toBe(m + 1);
+  await expect.poll(() => questionNumber(page)).toBe(m < 10 ? m + 1 : 0);
 });
 
 test("choice item: arrow keys move between options and Enter picks; order item: arrows move between tiles", async ({ page }) => {
@@ -99,7 +100,7 @@ test("choice item: arrow keys move between options and Enter picks; order item: 
   await page.keyboard.press("ArrowLeft");
   await expect(options.last()).toBeFocused();
   await page.keyboard.press("Enter");
-  await expect(page.getByText(/^(Correct!|Not quite\.)$/)).toBeVisible();
+  await expect(feedback(page, "either")).toBeVisible();
   await expect(continueButton(page)).toHaveCount(0);
 
   await reachType(page, "separable-verbs", "order");
@@ -110,8 +111,7 @@ test("choice item: arrow keys move between options and Enter picks; order item: 
   const n = await questionNumber(page);
   await answer(page, "separable-verbs", "wrong");
   await expect(page.getByText(HINT)).toBeVisible();
-  await page.locator("body").click({ position: { x: 5, y: 5 } });
-  await expect.poll(() => questionNumber(page).catch(() => n + 1)).toBe(n + 1);
+  await moveOn(page, "click", nextQuestion(page, n));
 });
 
 test("the auto-advance setting: 'when I click or press Enter' keeps a right answer on screen", async ({ page }) => {
@@ -123,7 +123,7 @@ test("the auto-advance setting: 'when I click or press Enter' keeps a right answ
   await page.waitForTimeout(2500);
   expect(await questionNumber(page)).toBe(n);
   await page.keyboard.press("Enter");
-  await expect.poll(() => questionNumber(page).catch(() => n + 1)).toBe(n + 1);
+  await expect.poll(() => questionNumber(page)).toBe(n < 10 ? n + 1 : 0); // 0: the round is over
   // The choice is remembered in this browser.
   await page.reload();
   await expect(page.getByLabel("After a correct answer, go on")).toHaveValue("off");

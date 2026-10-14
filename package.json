@@ -11,7 +11,7 @@
     "test": "node --no-warnings --test \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\"",
     "db:start": "supabase start -x studio,realtime,edge-runtime,logflare,vector,imgproxy,mailpit,postgres-meta,supavisor",
     "db:stop": "supabase stop",
-    "db:types": "supabase gen types typescript --local --schema public > lib/supabase/database.types.ts",
+    "db:types": "supabase gen types typescript --project-id cenzahkgbbnmgzikxvsz --schema public > lib/supabase/database.types.ts",
     "test:db": "supabase test db",
     "test:e2e": "playwright test",
     "test:smoke": "E2E_REAL_AI=1 playwright test"

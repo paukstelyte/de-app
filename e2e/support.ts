@@ -1,5 +1,6 @@
 // Shared helpers for the browser tests: throwaway users on the local Supabase, logging in,
 // and answering exercises from the exercise data (right or deliberately wrong).
+import { resolve } from "node:path";
 import { randomUUID } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
@@ -32,6 +33,15 @@ export async function logIn(page: Page, user: User, next = "/learning") {
   await expect(page).toHaveURL(new RegExp(`${next}$`));
 }
 
+/** The upload box, once React has taken over the page (a file picked before that would be ignored). */
+export async function uploadInput(page: Page) {
+  await page.waitForFunction(() => {
+    const input = document.querySelector("#learning-upload");
+    return !!input && Object.keys(input).some((k) => k.startsWith("__reactProps"));
+  });
+  return page.locator("#learning-upload");
+}
+
 /** How many answers a user has saved (optionally for one topic). */
 export async function attemptCount(userId: string, topic?: string) {
   let q = admin().from("attempts").select("id", { count: "exact", head: true }).eq("user_id", userId);
@@ -41,12 +51,30 @@ export async function attemptCount(userId: string, topic?: string) {
   return count ?? 0;
 }
 
+/** Visible answer feedback ("Correct!", "Not quite."), not the hidden screen-reader announcement of it. */
+export const feedback = (page: Page, text: "Correct!" | "Not quite." | "either") =>
+  page.locator("p:not(.sr-only)").filter({ hasText: text === "either" ? /^(Correct!|Not quite\.)$/ : new RegExp(`^${text.replace(".", "\\.")}$`) });
+
+/** Moves past an answered question with Enter or a click on empty space. The page starts listening a moment after
+ * the answer shows, so the action repeats until `moved` passes; it never repeats once the page has moved on. */
+export async function moveOn(page: Page, how: "Enter" | "click", moved: () => Promise<void>) {
+  await expect(async () => {
+    if (how === "Enter") await page.keyboard.press("Enter");
+    else await page.locator("body").click({ position: { x: 5, y: 5 } });
+    await moved();
+  }).toPass({ intervals: [100, 250, 500], timeout: 10_000 });
+}
+
+/** The next question is on screen (or the round is over after the last one). */
+export const nextQuestion = (page: Page, n: number) => () =>
+  expect(n < 10 ? page.getByText(new RegExp(`Question ${n + 1} of`)) : page.getByText("Round complete!")).toBeVisible({ timeout: 1_000 });
+
 export async function noHorizontalScroll(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 }
 
 const items = (slug: string): ExerciseItem[] =>
-  JSON.parse(readFileSync(new URL(`../lib/exercises/data/${slug}.json`, import.meta.url), "utf8")).items;
+  JSON.parse(readFileSync(resolve(`lib/exercises/data/${slug}.json`), "utf8")).items;
 const flat = (s: string) => s.replace(/\s+/g, "");
 
 /** Which item is on screen: a type item by its input label, an order item by its words, a choice item by its sentence. */
@@ -86,12 +114,12 @@ export async function answer(page: Page, slug: string, mode: "right" | "wrong"):
     for (const w of order) await pool.getByRole("button", { name: w, exact: true }).and(page.locator(":enabled")).first().click();
     await page.getByRole("button", { name: "Check" }).click();
   }
-  await expect(page.getByText(/^(Correct!|Not quite\.)$/)).toBeVisible();
+  await expect(feedback(page, "either")).toBeVisible();
   return item.type;
 }
 
-/** The "Question 3 of 10" number on screen. */
+/** The "Question 3 of 10" number on screen, or 0 when there is none (e.g. the round is over). Doesn't wait. */
 export async function questionNumber(page: Page) {
-  const line = await page.getByText(/Question \d+ of \d+/).first().textContent();
-  return Number(line!.match(/Question (\d+)/)![1]);
+  const lines = await page.getByText(/Question \d+ of \d+/).allTextContents();
+  return Number(lines[0]?.match(/Question (\d+)/)?.[1] ?? 0);
 }

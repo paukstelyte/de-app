@@ -1,8 +1,9 @@
 // Every practice page opens as a guest, shows its first question and logs no errors.
+import { resolve } from "node:path";
 import { readdirSync } from "node:fs";
 import { expect, test } from "@playwright/test";
 
-const slugs = readdirSync(new URL("../lib/exercises/data/", import.meta.url)).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
+const slugs = readdirSync(resolve("lib/exercises/data")).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
 
 for (const slug of slugs) {
   test(`/topics/${slug}/practice shows question 1 with no console errors`, async ({ page }) => {

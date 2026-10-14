@@ -38,7 +38,7 @@ One JSON file per topic (81 files; noun-gender uses `/articles`), 30 items each,
 ## Tech Stack (fixed)
 
 * Next.js (App Router)
-* TypeScript, with database types generated from the schema (`lib/supabase/database.types.ts`, `npm run db:types` after a migration) and passed to every Supabase client
+* TypeScript, with database types generated from the schema (`lib/supabase/database.types.ts`, `npm run db:types` once a migration is live) and passed to every Supabase client
 * Tailwind CSS 4
 * Supabase (auth: email+password and Google; Postgres with RLS; Storage for uploads in transit) for logged-in users' data
 * OpenRouter for the AI model (server-side only)

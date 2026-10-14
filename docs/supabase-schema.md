@@ -113,7 +113,7 @@ The AI tutor chat (`chat_usage`, `chat_messages`, `use_chat_quota`, `save_chat_t
 
 ## Tests
 
-`npm run test:db` runs the pgTAP tests in `supabase/tests/database/` on the throwaway local database (`npm run db:start`): privacy between two users on every table and the upload folder, the upload allowance, and answer ids. Each test file runs in a transaction that is rolled back. After a migration, also run `npm run db:types` so `lib/supabase/database.types.ts` matches the schema.
+`npm run test:db` runs the pgTAP tests in `supabase/tests/database/` on the throwaway local database (`npm run db:start`): privacy between two users on every table and the upload folder, the upload allowance, and answer ids. Each test file runs in a transaction that is rolled back. Once a migration is applied to the live project, run `npm run db:types` so `lib/supabase/database.types.ts` matches the schema.
 
 ## Checking access
 

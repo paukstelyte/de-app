@@ -1,7 +1,7 @@
 // Answers that fail to save are shown under the exercise with a Retry, practice carries on,
 // and a retried answer is counted exactly once (each answer has its own id).
 import { expect, test, type Page } from "@playwright/test";
-import { answer, attemptCount, logIn, newUser } from "./support";
+import { answer, attemptCount, logIn, moveOn, newUser, nextQuestion } from "./support";
 
 /** Server actions are POSTs to the page with a Next-Action header. */
 const isSave = (method: string, headers: Record<string, string>) => method === "POST" && !!headers["next-action"];
@@ -39,7 +39,7 @@ test("an answer that never reached the server is saved by Retry", async ({ page 
   await logIn(page, user, "/topics/modal-verbs/practice");
   await failSaves(page, 2, false);
   await answer(page, "modal-verbs", "wrong");
-  await page.keyboard.press("Enter");
+  await moveOn(page, "Enter", nextQuestion(page, 1));
   await answer(page, "modal-verbs", "right");
   await expect(page.getByText("2 answers not saved.")).toBeVisible();
   expect(await attemptCount(user.id)).toBe(0);

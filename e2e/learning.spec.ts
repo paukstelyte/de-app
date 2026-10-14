@@ -1,11 +1,12 @@
 // Customized Learning: login redirects, the review step before an upload, every upload kind
 // and outcome (with the fake OpenRouter), the upload counter, files deleted, focus buttons,
 // deleting documents, and a second user seeing none of it.
+import { resolve } from "node:path";
 import { copyFileSync, appendFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
-import { admin, logIn, newUser, type User } from "./support";
+import { admin, logIn, newUser, type User, uploadInput } from "./support";
 
-const FX = new URL("./fixtures/", import.meta.url).pathname;
+const FX = resolve("e2e/fixtures") + "/";
 const docs = (page: Page) => page.locator("section[aria-labelledby=docs-title] > ul > li");
 const focus = (page: Page) => page.locator("section[aria-labelledby=focus-title]");
 
@@ -20,7 +21,7 @@ async function filesInBucket(user: User) {
 /** Picks files in the upload box, checks the review step lists them, then reads them. */
 async function upload(page: Page, files: string[]) {
   await page.goto("/learning");
-  await page.locator("#learning-upload").setInputFiles(files);
+  await (await uploadInput(page)).setInputFiles(files);
   const chosen = page.getByLabel("Chosen files");
   for (const f of files) await expect(chosen).toContainText(f.split("/").pop()!);
   await chosen.getByRole("button", { name: /^Read / }).click();
@@ -46,7 +47,7 @@ test("signed-out visitors are sent to login, and logging in lands on Customized 
 test("choosing files only shows them; nothing is uploaded or counted until Read", async ({ page }) => {
   const user = await newUser();
   await logIn(page, user);
-  await page.locator("#learning-upload").setInputFiles(`${FX}lektion7.pdf`);
+  await (await uploadInput(page)).setInputFiles(`${FX}lektion7.pdf`);
   await expect(page.getByLabel("Chosen files")).toContainText("lektion7.pdf");
   await expect(page.getByText("Reading uses 1 of your uploads.")).toBeVisible();
   await page.getByRole("button", { name: "Choose again" }).click();
@@ -58,7 +59,7 @@ test("choosing files only shows them; nothing is uploaded or counted until Read"
 test("a Word file shows the note about corrections before reading", async ({ page }) => {
   const user = await newUser();
   await logIn(page, user);
-  await page.locator("#learning-upload").setInputFiles(`${FX}lektion7.docx`);
+  await (await uploadInput(page)).setInputFiles(`${FX}lektion7.docx`);
   await expect(page.getByText(/Word files are read as plain text/)).toBeVisible();
 });
 
@@ -109,10 +110,10 @@ test("a document with text but no grammar is saved as such", async ({ page }, in
 test("a .doc file and 6 photos are refused in the browser, using no upload and no storage", async ({ page }, info) => {
   const user = await newUser();
   await logIn(page, user);
-  await page.locator("#learning-upload").setInputFiles(`${FX}old.doc`);
+  await (await uploadInput(page)).setInputFiles(`${FX}old.doc`);
   await expect(page.getByText("Please upload a PDF, Word (.docx), JPG, PNG, WebP or HEIC file.")).toBeVisible();
   const six = [1, 2, 3, 4, 5, 6].map((i) => markedPhoto(info.outputPath(`p${i}.png`), ""));
-  await page.locator("#learning-upload").setInputFiles(six);
+  await (await uploadInput(page)).setInputFiles(six);
   await expect(page.getByText("Upload at most 5 photos at a time.")).toBeVisible();
   expect(await uploadsUsed(user)).toBe(0);
   expect(await filesInBucket(user)).toBe(0);
@@ -131,6 +132,7 @@ test("focus buttons, deleting a document, and a second user sees none of it", as
 
   await page.goto("/topics/modal-verbs");
   await page.getByRole("button", { name: "Add to my focus" }).click();
+  await expect(page.getByText("In your focus ·")).toBeVisible(); // saved before leaving the page
   await page.goto("/learning");
   await expect(focus(page).locator('a[href="/topics/modal-verbs"]')).toBeVisible();
 
