@@ -88,7 +88,7 @@ Run and report each result:
 1. `npm run sync:exercises`
 2. `npm test`
 3. `npm run lint`
-4. With `npm run dev` running: `bash e2e/all-practice-pages.sh` (needs `playwright-cli`).
+4. With the local Supabase running (`npm run db:start`): `npx playwright test practice-pages` (every practice page shows question 1 with no console errors).
 
 Fix anything that fails before going on.
 

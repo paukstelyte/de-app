@@ -1,14 +1,49 @@
 "use client";
-import { useEffect, useRef } from "react";
-import { ADVANCE_DELAY_MS, clickContinues, keyContinues } from "./answer-keys";
+import { useEffect, useRef, useSyncExternalStore } from "react";
+import { advanceChoice, advanceDelay, clickContinues, keyContinues, type AdvanceChoice } from "./answer-keys";
 
-/** After an answer: a correct one moves on by itself after ADVANCE_DELAY_MS; any answer moves on with a click
- * anywhere (outside links, buttons and fields) or Enter. Listeners start on the next tick, so the click or key
- * press that gave the answer never counts; everything is cleared when the question changes, so it never advances twice.
- * Callers must reset `answered` to false between questions (the effect re-arms only when it changes). */
-export function useAdvance(answered: boolean, correct: boolean, next: () => void): void {
+const STORAGE_KEY = "de-app:advance";
+const listeners = new Set<() => void>();
+
+function read(): AdvanceChoice {
+  try {
+    return advanceChoice(window.localStorage.getItem(STORAGE_KEY));
+  } catch {
+    return advanceChoice(null);
+  }
+}
+
+/** The learner's choice for moving on after a correct answer, remembered per browser. */
+export function useAdvanceChoice(): [AdvanceChoice, (choice: AdvanceChoice) => void] {
+  const choice = useSyncExternalStore(
+    (listener) => {
+      listeners.add(listener);
+      return () => listeners.delete(listener);
+    },
+    read,
+    () => advanceChoice(null), // server: localStorage doesn't exist
+  );
+  function setChoice(next: AdvanceChoice) {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, next);
+    } catch {
+      // Blocked storage (e.g. private mode): the choice lasts until the page is left.
+    }
+    listeners.forEach((l) => l());
+  }
+  return [choice, setChoice];
+}
+
+/** After an answer: when `autoAdvance` is set (a correct answer) it moves on by itself after the learner's chosen
+ * delay, unless they chose to wait; any answer moves on with a click anywhere (outside links, buttons and fields)
+ * or Enter. Listeners start on the next tick, so the click or key press that gave the answer never counts; everything
+ * is cleared when the question changes, so it never advances twice. Callers must reset `answered` to false between
+ * questions (the effect re-arms only when it changes). Returns true while it waits for a click or Enter. */
+export function useAdvance(answered: boolean, autoAdvance: boolean, next: () => void): boolean {
   const nextRef = useRef(next);
   useEffect(() => { nextRef.current = next; });
+  const delay = advanceDelay(useAdvanceChoice()[0]);
+  const auto = autoAdvance && delay !== null;
   useEffect(() => {
     if (!answered) return;
     let done = false;
@@ -21,13 +56,14 @@ export function useAdvance(answered: boolean, correct: boolean, next: () => void
       document.addEventListener("click", onClick);
       document.addEventListener("keydown", onKey);
     }, 0);
-    const auto = correct ? setTimeout(go, ADVANCE_DELAY_MS) : undefined;
+    const timer = auto ? setTimeout(go, delay!) : undefined;
     return () => {
       done = true;
       clearTimeout(start);
-      clearTimeout(auto);
+      clearTimeout(timer);
       document.removeEventListener("click", onClick);
       document.removeEventListener("keydown", onKey);
     };
-  }, [answered, correct]);
+  }, [answered, auto, delay]);
+  return answered && !auto;
 }

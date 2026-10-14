@@ -3,13 +3,14 @@ import { redirect } from "next/navigation";
 import { DocumentList } from "@/components/learning/DocumentList";
 import { FocusList } from "@/components/learning/FocusList";
 import { UploadBox } from "@/components/learning/UploadBox";
+import { LoadError } from "@/components/LoadError";
 import { ANALYSIS_MODEL } from "@/lib/learning/analyse";
 import { getAllAttempts } from "@/lib/attempts";
 import { TOPICS } from "@/lib/grammar/topics";
 import { EXERCISE_SETS } from "@/lib/exercises/sets";
 import { practiceTopics } from "@/lib/learning/focus-practice";
 import { parseAllowance } from "@/lib/learning/allowance";
-import { loadFocus } from "@/lib/learning/load-focus";
+import { loadDocumentsAndFocus } from "@/lib/learning/load-focus";
 import { topicProgress } from "@/lib/learning/progress";
 import { createClient } from "@/lib/supabase/server";
 
@@ -33,15 +34,18 @@ export default async function LearningPage() {
   // proxy.ts sends signed-out visitors to /login; this is a second guard.
   if (!userId) redirect("/login?next=/learning");
 
-  const [{ documents: docs, focus }, attempts, { data: allowanceRow }] = await Promise.all([
-    loadFocus(supabase, { withDocuments: true }),
+  const [loaded, attempts, { data: allowanceRow }] = await Promise.all([
+    loadDocumentsAndFocus(supabase),
     getAllAttempts(),
     supabase.rpc("upload_allowance"),
   ]);
-  const allowance = parseAllowance(allowanceRow, docs?.length ?? 0);
+  const docs = loaded.ok ? loaded.documents : [];
+  const focus = loaded.ok ? loaded.focus : [];
+  // Without the document count the upload box can't show the document limit, so it shows no allowance.
+  const allowance = loaded.ok ? parseAllowance(allowanceRow, docs.length) : null;
   const practiceSlugs = practiceTopics(focus.map((f) => f.slug), EXERCISE_SETS);
   const progress = topicProgress(attempts);
-  const isEmpty = !docs?.length && focus.length === 0;
+  const isEmpty = docs.length === 0 && focus.length === 0;
 
   return (
     <div className="flex flex-col gap-10">
@@ -50,7 +54,9 @@ export default async function LearningPage() {
         <UploadBox userId={userId} modelSlug={ANALYSIS_MODEL} allowance={allowance} />
         <section className="flex flex-col gap-3" aria-labelledby="focus-title">
           <h2 id="focus-title" className="section-heading">Your focus now</h2>
-          {isEmpty ? (
+          {!loaded.ok ? (
+            <LoadError what="your focus list and documents" />
+          ) : isEmpty ? (
             <ol className="flex flex-col gap-2 text-sm text-zinc-600 dark:text-zinc-400">
               <li><b>1.</b> Upload a textbook page, worksheet, notes or homework.</li>
               <li><b>2.</b> We read it and pick the grammar topics it covers, and any mistakes.</li>
@@ -69,7 +75,7 @@ export default async function LearningPage() {
           )}
         </section>
       </div>
-      {!!docs?.length && (
+      {docs.length > 0 && (
         <section className="flex flex-col gap-3" aria-labelledby="docs-title">
           <h2 id="docs-title" className="section-heading">Your documents ({docs.length})</h2>
           <DocumentList docs={docs} topics={TOPIC_MAP} />

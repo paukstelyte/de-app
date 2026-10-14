@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { recordAttempt } from "@/app/articles/actions";
 import { recordAnswer, useFlashcards } from "@/lib/flashcards/store";
-import { ARTICLES, needsPractice, type Article } from "@/lib/flashcards/types";
+import { ARTICLES, needsPractice, type Article, type Flashcard } from "@/lib/flashcards/types";
 import { useBand } from "@/lib/flashcards/level";
 import { BANDS, BAND_LABELS, inBand, type Band } from "@/lib/flashcards/bands";
+import { AdvanceSetting } from "@/components/AdvanceSetting";
 import { LevelBadge } from "@/components/LevelBadge";
+import { UnsavedAnswers, useAnswerSaver } from "@/components/UnsavedAnswers";
 import { ROUND_SIZE } from "@/lib/flashcards/practice";
 import { usePracticeSession } from "@/lib/flashcards/usePracticeSession";
 import { formatRuleText } from "@/lib/flashcards/ruleFormatting";
@@ -37,24 +39,22 @@ function getArticleButtonStyle(isCorrectAnswer: boolean, isWrongChoice: boolean)
 const sideLink =
   "border-b border-zinc-900 pb-0.5 font-medium text-zinc-900 transition-colors hover:border-[var(--accent-deep)] hover:text-[var(--accent-deep)] dark:border-zinc-100 dark:text-zinc-100";
 
-export function ArticlesGame({
-  loggedIn,
-  troubleIds,
-  mistakesOnly,
-}: {
-  loggedIn: boolean;
-  troubleIds?: string[];
-  mistakesOnly: boolean;
-}) {
-  const router = useRouter();
+type GameProps = { loggedIn: boolean; troubleIds?: string[]; mistakesOnly: boolean };
+
+export function ArticlesGame(props: GameProps) {
   const cards = useFlashcards();
+  // The deck is read from this browser, so the first render has no cards. The practice
+  // session mounts again once they arrive, and builds its first deck then.
+  return <Practice key={cards.length > 0 ? "ready" : "loading"} cards={cards} {...props} />;
+}
+
+function Practice({ cards, loggedIn, troubleIds, mistakesOnly }: GameProps & { cards: Flashcard[] }) {
+  const router = useRouter();
   const [band, setBand] = useBand();
   // Rounds draw only from the chosen band ("Practise my mistakes" ignores
   // it: a missed word is worth practising whatever its level).
-  const levelCards = useMemo(
-    () => cards.filter((c) => inBand(c.level, band)),
-    [cards, band],
-  );
+  const levelCards = cards.filter((c) => inBand(c.level, band));
+  const saver = useAnswerSaver();
   const {
     queue,
     effectiveIndex,
@@ -75,8 +75,8 @@ export function ArticlesGame({
     (id, article, wasCorrect) => {
       // Logged-in answers go to the account only, never to this browser's guest
       // streaks, so the next person on a shared computer starts clean.
-      // Fire-and-forget: a failed save must never block the game.
-      if (loggedIn) recordAttempt(id, article).catch(console.error);
+      // Saved in the background: a failed save never blocks the game; it shows up under the card with a Retry.
+      if (loggedIn) saver.save((clientId) => recordAttempt(id, article, clientId));
       else recordAnswer(id, wasCorrect);
     },
     troubleIds,
@@ -146,7 +146,7 @@ export function ArticlesGame({
             value={band}
             onChange={(next) => {
               setBand(next);
-              nextRound(); // start a fresh round from the new word pool
+              nextRound(cards.filter((c) => inBand(c.level, next))); // a fresh round from the new word pool
             }}
           />
         )}
@@ -207,7 +207,7 @@ export function ArticlesGame({
               ) : (
               <button
                 type="button"
-                onClick={nextRound}
+                onClick={() => nextRound()}
                 className={wrongThisPass.length > 0 ? "pill-secondary" : "pill-primary"}
               >
                 Next {ROUND_SIZE} words →
@@ -231,9 +231,13 @@ export function ArticlesGame({
             troubleIds={loggedIn ? troubleIds ?? [] : undefined}
           />
         )}
+        {/* mt-2 clears the card's 8px offset shadow. */}
+        <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
+          <AdvanceSetting />
+          <UnsavedAnswers saver={saver} />
+        </div>
         {!mistakesOnly && (
-          // mt-2 clears the card's 8px offset shadow.
-          <section className="mt-2 grid grid-cols-3 gap-px border border-[var(--line)] bg-[var(--line)]">
+          <section className="grid grid-cols-3 gap-px border border-[var(--line)] bg-[var(--line)]">
             <Stat label="Decks played" value={decksPlayed} />
             <Stat label="Mistakes fixed" value={mistakesLearned} />
             <Stat
@@ -308,11 +312,11 @@ function Game({
   const cards = useFlashcards();
   const card = cards.find((c) => c.id === cardId);
   const answersRef = useArrowKeys<HTMLDivElement>();
-  useAdvance(chosen !== null, !!card && chosen === card.article && !card.exception, onAdvance);
+  // A correct answer moves on by itself, unless the card has an exception note to read.
+  const waits = useAdvance(chosen !== null, !!card && chosen === card.article && !card.exception, onAdvance);
   if (!card) return null;
 
   const isCorrect = chosen === card.article;
-  const waits = !!chosen && (!isCorrect || !!card.exception); // otherwise a correct answer moves on by itself
 
   return (
     <div className="flex flex-col gap-3">

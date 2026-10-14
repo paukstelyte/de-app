@@ -50,3 +50,8 @@ scripts/levels/*.txt
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
 .playwright/
+
+# Playwright test runner output
+/playwright-report/
+/test-results/
+/.next-e2e/

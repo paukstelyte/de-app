@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const dev = process.env.NODE_ENV === "development";
+// The browser tests run the app over plain http against a local Supabase.
+const localSupabase = process.env.NEXT_PUBLIC_SUPABASE_URL?.startsWith("http://") ?? false;
 // Vercel's comment toolbar on preview deployments loads from vercel.live.
 const vercelLive = process.env.VERCEL_ENV === "preview" ? " https://vercel.live" : "";
 
@@ -20,12 +22,16 @@ const csp = [
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
-  ...(dev ? [] : ["upgrade-insecure-requests"]),
+  ...(dev || localSupabase ? [] : ["upgrade-insecure-requests"]),
 ].join("; ");
 
 const nextConfig: NextConfig = {
   // Don't advertise the framework in an X-Powered-By header.
   poweredByHeader: false,
+  // The browser tests build into their own folder (see playwright.config.ts).
+  distDir: process.env.NEXT_DIST_DIR ?? ".next",
+  // React Compiler memoizes components automatically, so the code needs no useMemo/useCallback.
+  reactCompiler: true,
   async headers() {
     return [
       {

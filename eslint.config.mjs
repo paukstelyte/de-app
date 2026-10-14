@@ -12,8 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Third-party agent skills (npx skills add); not our code.
-    ".agents/**",
+    // Playwright output.
+    "playwright-report/**",
+    "test-results/**",
   ]),
 ]);
 

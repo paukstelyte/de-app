@@ -1,79 +1,48 @@
-# End-to-end checks
+# Browser and database tests
 
-Browser checks for Customized Learning, driven by [playwright-cli](https://www.npmjs.com/package/@playwright/cli)
-(`npm install -g @playwright/cli`). `learning.sh` prints one line per check and ends with
-`RESULT: PASS` or `RESULT: FAIL` (exit code 0 or 1).
+The browser tests use [Playwright Test](https://playwright.dev/docs/intro) (`@playwright/test`), the database tests use
+[pgTAP](https://pgtap.org) through `supabase test db`. Both run against a **throwaway local Supabase** started with the
+Supabase CLI, never the live project, so tests can create users and data freely and leave nothing behind.
 
-| Check | What it verifies |
-|---|---|
-| Guest and login | Guest `/learning` and `/learning/practice` are redirected to `/login?next=…`; logging in lands on `/learning`; `/` redirects there |
-| PDF, HEIC photo, Word | Each upload creates a "Lektion 7" document with `prepositions-dative` / `dative-case`, listed under "Your focus now" |
-| Blank image | "We couldn't read any text in this photo…" message, no document saved, upload counter goes up by one (it still counts) |
-| Storage | After every upload the `learning-uploads` bucket is empty (read-only SQL, printed with its result) |
-| Focus | "Remove from my focus" hides a topic; "Add to my focus" on `/topics/modal-verbs` adds it |
-| Delete | A deleted document is gone after reload |
-| Other user | The second account sees none of the first account's documents or focus |
-| Rejections | A `.doc` file and 6 photos show the plain error messages and use no quota or storage |
+## Setup (once)
+
+1. Install [OrbStack](https://orbstack.dev) (or Docker Desktop) and open it. The Supabase CLI uses it to run the local database.
+2. `npx playwright install chromium` downloads the browser Playwright drives.
 
 ## Run
 
-Start the app (`npm run dev`), then pass two test accounts in the environment. Never commit
-their passwords; this repository is public. The SQL checks use the linked Supabase project
-(`npx supabase db query --linked`; set `SUPABASE_PROJECT_REF` to override the project).
-
 ```bash
-export E2E_MAIN_EMAIL=…  E2E_MAIN_PASSWORD=…    # the tester: must be a disposable test account (documents deleted at the end)
-export E2E_OTHER_EMAIL=… E2E_OTHER_PASSWORD=…   # second account; only read
-bash e2e/learning.sh
+npm run db:start      # starts the local Supabase and applies every migration (first time: a few minutes of downloads)
+npm run test:db       # pgTAP: privacy between users, the upload allowance, answer ids (about 10 s)
+npm run test:e2e      # Playwright: builds the app into .next-e2e, starts it with a fake OpenRouter, runs every spec
+npm run db:stop       # when you're done (or leave it running between runs)
 ```
 
-Instead of exporting them each time, put the four variables in a `.env.e2e` file in the repo root. It is
-git-ignored (`.env*` in `.gitignore`), `e2e/lib.sh` loads it automatically, and it should be readable only by you
-(`chmod 600 .env.e2e`). Never paste the passwords into a chat, a commit or a doc.
+`npm run test:e2e` fails straight away with a clear message if the local Supabase isn't running, and refuses any
+Supabase URL that isn't on `127.0.0.1`/`localhost`. A failed test keeps a trace: open the report with
+`npx playwright show-report` and click the trace to replay it step by step.
 
-Set `BASE=https://…` to run against another deployment.
+`npm run test:smoke` runs the one **real-model** test (`smoke.real.spec.ts`): it uploads the Lektion 7 PDF and checks the
+real `google/gemini-2.5-flash-lite` suggests dative topics. It uses `OPENROUTER_API_KEY` from `.env.local` and costs about
+$0.0005, so run it before merging a change to the prompt, the AI request or the answer schema, not on every change.
 
-## Cost and side effects
+## What's covered
 
-- Each run makes **4 real AI analyses** (about $0.0005 each) and uses 4 of the main account's
-  10 uploads per day, so run it at most twice a day. The `.doc` and 6-photo checks are rejected
-  in the browser and cost nothing.
-- Documents the run creates are deleted through the page. The page cannot delete focus rows, so
-  the main account keeps two "removed" rows (`modal-verbs` and the topic removed in the focus check).
-- `fixtures/` holds only the German sample text "Lektion 7: Präpositionen mit Dativ …" (plus a one-line
-  English `old.doc` placeholder); the 6 photos are copies of `blank.png` made in a temp folder at run time.
+| Spec | What it checks |
+|---|---|
+| `learning.spec.ts` | Login redirects; the review step (nothing uploaded or counted until "Read"); PDF, HEIC and Word uploads saved with their topics and focus; an unreadable photo, an invalid AI answer and a no-grammar document each handled as their own outcome; `.doc` and 6 photos refused without using an upload; uploaded files deleted; focus add/remove; deleting a document; a second user sees none of it |
+| `faults.spec.ts` | A failed database read shows "Couldn't load … Try again", never the empty state, and recovers (runs last, alone) |
+| `saving.spec.ts` | A failed answer save shows "N answers not saved · Retry" without blocking practice; Retry saves it exactly once, even when the first try reached the server; the logged-out case |
+| `exercises.spec.ts` | Guest rounds, mistakes rounds, Next 10, 404s, keyboard (Enter, arrows), auto-advance and its setting, phone width, answers saved and accuracy shown when logged in |
+| `articles.spec.ts` | der · die · das: level picker, keyboard, waiting after mistakes, Restart, level change and refresh mid-round, old saved level, `/rules`, phone width |
+| `mobile.spec.ts` | Phone width with the on-screen keyboard open (a short viewport): the upload review buttons and the auto-advance setting stay reachable |
+| `practice-pages.spec.ts` | All 81 practice pages show question 1 with no console errors |
+| `smoke.real.spec.ts` | The real model, end to end (only with `npm run test:smoke`) |
 
-## Grammar practice (`exercises.sh`)
+## The fake OpenRouter
 
-Checks the `/topics/<slug>/practice` pages: guest links and 404s, a full guest round (3 wrong, 7 right;
-"Practise my mistakes (3)"; "Next 10"; all three item types), no rows written for guests, answers saved
-to `public.attempts` when logged in (and "Your accuracy so far" on the topic page and the `/topics` card),
-no horizontal scroll at 390px, Enter to submit on a type item, no Continue button, correct answers moving on by themselves (wrong ones waiting for a click or Enter), and ← / → on choice and word-order items (51 checks). The right and wrong answers
-come from `lib/exercises/data/<slug>.json`. No AI is involved, so it costs nothing.
-
-```bash
-export E2E_MAIN_EMAIL=…  E2E_MAIN_PASSWORD=…    # same accounts as above (the OTHER pair is only needed by lib.sh)
-export E2E_OTHER_EMAIL=… E2E_OTHER_PASSWORD=…
-bash e2e/exercises.sh                            # about 3 minutes
-```
-
-Side effect: each run adds 2 `modal-verbs` rows to the main account's `public.attempts` (they stay).
-
-## Every practice page loads (`all-practice-pages.sh`)
-
-Opens all `/topics/<slug>/practice` pages (one per file in `lib/exercises/data/`) as a guest and checks each
-shows "Question 1 of 10" with an answer control and no console errors. No accounts, no AI, nothing saved.
-
-```bash
-bash e2e/all-practice-pages.sh                   # about 2 minutes
-```
-
-## Level picker (`articles.sh`)
-
-Checks the der · die · das level picker as a guest: A · B · C · All with All as the default, a level badge on each card,
-band C giving only C1/C2 cards (answered by keyboard), an old saved level converted, the new rules on `/rules`, and no
-horizontal scroll at 390px. Also: ← / → move between der · die · das, a wrong answer waits, a click anywhere or Enter continues, and Restart still restarts (33 checks). No accounts, no AI, nothing saved.
-
-```bash
-bash e2e/articles.sh                             # about 1 minute
-```
+`mock-openrouter.mjs` answers the app's AI request so tests are free and repeatable, and it rejects requests that break
+the integration rules: instructions not in a system message, the document not in its own user message, a non-strict
+schema, or a PDF without the native file parser. A marker inside an uploaded file picks the answer: `MOCK:BLANK` (no
+readable text), `MOCK:INVALID` (topics outside the catalogue), `MOCK:NOGRAMMAR`; anything else gets the Lektion 7 dative
+answer. `fixtures/` holds only the German sample "Lektion 7: Präpositionen mit Dativ …", a blank PNG and a one-line `old.doc`.

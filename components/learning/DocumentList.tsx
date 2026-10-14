@@ -5,10 +5,9 @@ import { useState, useTransition } from "react";
 import { deleteDocument } from "@/app/learning/actions";
 import { LevelBadge } from "@/components/LevelBadge";
 import type { GrammarTopic } from "@/lib/grammar/topics";
-import type { loadFocus } from "@/lib/learning/load-focus";
+import type { LearningDocument as Doc } from "@/lib/learning/load-focus";
 import { formatCost, formatModel } from "@/lib/learning/usage";
 
-type Doc = Awaited<ReturnType<typeof loadFocus>>["documents"][number];
 
 /** "Read by Gemini 2.5 Flash Lite · 3,120 tokens · about $0.0004"; older documents saved before this was recorded show nothing. */
 function usageLine(doc: Doc): string | null {
