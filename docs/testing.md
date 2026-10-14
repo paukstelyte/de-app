@@ -4,6 +4,18 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 
 ## Summary
 
+**2026-10-14: the test tooling changed (PR #20).** The `bash e2e/*.sh` scripts and the two print-only SQL checks were replaced by Playwright Test specs (`e2e/*.spec.ts`, with a fake OpenRouter) and pgTAP tests (`supabase/tests/database/`). Both run on a throwaway local Supabase (`npm run db:start`, see [`e2e/README.md`](../e2e/README.md)). Results on 2026-10-14, branch `reviewer-feedback`:
+
+| Suite | Result |
+|---|---|
+| `npm test` (unit) | **171 / 171 pass** |
+| `npm run test:db` (pgTAP: privacy between users 19, upload allowance 13, answer ids 4) | **36 / 36 pass** |
+| `npm run test:e2e` (Playwright: every spec, fake OpenRouter) | **113 / 113 pass**, twice in a row; the app tests also passed 3 times over with `--repeat-each=3` |
+| `npm run test:smoke` (the real `google/gemini-2.5-flash-lite` reads the Lektion 7 PDF and suggests dative topics) | **1 / 1 pass** (about $0.0005) |
+
+The first runs found only test bugs, not app bugs: Playwright loads the specs as CommonJS (no `import.meta`); "Correct!" and "Answer:" also appear in the hidden screen-reader announcement; the tests pressed Enter in the instant before the page starts listening for it (no person is that fast; the tests now retry until the card moves on); and a file picked before React had taken over the upload box was ignored (the tests now wait for that). The tables below are the older results from the replaced scripts (2026-10-12).
+
+
 | Suite | What it covers | Latest result |
 |---|---|---|
 | `npm test` | Unit tests: upload rules, AI answer parsing, Word reader (incl. zip-bomb cap), focus list, usage display, answer checking, and validation of all 81 exercise files | **158 / 158 pass** (2026-10-12) |

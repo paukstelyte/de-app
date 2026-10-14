@@ -4,7 +4,7 @@ Word content (nouns, rules, levels) is **not** in the database. It's static JSON
 
 ## `public.attempts`
 
-One row per answer a logged-in user gives, for every topic. Stats, trouble words and "Practise my mistakes" are all derived from it. Migrations: `20261005120000_create_attempts.sql` (table and RLS) and `20261005150000_harden_attempts.sql` (limits, rate limit, privileges).
+One row per answer a logged-in user gives, for every topic. Stats, trouble words and "Practise my mistakes" are all derived from it. Migrations: `20261005120000_create_attempts.sql` (table and RLS), `20261005150000_harden_attempts.sql` (limits, rate limit, privileges) and `20261014100000_attempts_client_id.sql` (answer ids).
 
 | Column | Type | Notes |
 |---|---|---|
@@ -13,7 +13,8 @@ One row per answer a logged-in user gives, for every topic. Stats, trouble words
 | `topic` | `text` | e.g. `articles`; one value per grammar topic |
 | `item_id` | `text` | Id within the topic's built-in data, e.g. `seed-12`. These ids are frozen: never renumber them. |
 | `answer` | `text` | What the user picked, e.g. `die` |
-| `correct` | `boolean` | Decided **on the server** (`app/articles/actions.ts`), never trusted from the browser |
+| `correct` | `boolean` | Decided **on the server** (`app/articles/actions.ts`, `app/topics/[slug]/practice/actions.ts`), never trusted from the browser |
+| `client_id` | `uuid`, nullable | The id the browser gave this answer. A retried save sends the same id; the unique index `(user_id, client_id)` refuses the copy (`23505`), which the server treats as "already saved", so an answer is never counted twice. Older rows have none (NULLs don't clash) |
 | `created_at` | `timestamptz` | Defaults to `now()` |
 
 Index: `(user_id, topic, created_at)`, which matches how the app reads a user's history.
@@ -109,6 +110,10 @@ The AI tutor chat (`chat_usage`, `chat_messages`, `use_chat_quota`, `save_chat_t
 1. `alter table … enable row level security;` plus policies written `to authenticated`.
 2. `revoke all on <table> from anon;`, and `grant` `authenticated` only what the app uses. New tables, sequences and functions start with **no** privileges for `anon` or `authenticated` (default privileges, `20261007120000_close_default_privileges.sql`), so a table nobody granted is unusable rather than wide open. Still revoke explicitly. Never grant `truncate`: it ignores RLS.
 3. A DELETE or UPDATE with no matching policy **succeeds with 0 rows changed** instead of erroring, so check affected rows when it matters.
+
+## Tests
+
+`npm run test:db` runs the pgTAP tests in `supabase/tests/database/` on the throwaway local database (`npm run db:start`): privacy between two users on every table and the upload folder, the upload allowance, and answer ids. Each test file runs in a transaction that is rolled back. Once a migration is applied to the live project, run `npm run db:types` so `lib/supabase/database.types.ts` matches the schema.
 
 ## Checking access
 

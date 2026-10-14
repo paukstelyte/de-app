@@ -4,8 +4,8 @@ import { revalidatePath } from "next/cache";
 import { getTopic } from "@/lib/grammar/topics";
 import { MAX_DOCUMENTS } from "@/lib/learning/allowance";
 import { analyseDocument } from "@/lib/learning/analyse";
-import { extractDocxText } from "@/lib/learning/docx";
-import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, photoUnreadable, validateSelection } from "@/lib/learning/uploads";
+import { pdfPageCount, readDocxText } from "@/lib/learning/documents";
+import { BUCKET, MAX_FILE_BYTES, MAX_PDF_PAGES, mimeFor, ownedPaths, validateSelection } from "@/lib/learning/uploads";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 
@@ -16,13 +16,16 @@ const ERRORS = {
   docLimit: `You've reached the limit of ${MAX_DOCUMENTS} saved documents. Delete some to upload new ones.`,
   pdfPages: `This PDF has more than ${MAX_PDF_PAGES} pages. Please upload a shorter part.`,
   docx: "Couldn't read this Word file. Save it as PDF and upload that.",
+  pdf: "Couldn't open this PDF. Save it again, or upload photos of the pages.",
   unreadablePhoto: "We couldn't read any text in this photo. Try a sharper photo in good light, or write a little larger.",
+  unreadable: "We couldn't read any text in this PDF. If it's a scan, try a clearer copy or a photo. This upload still counts.",
   ai: "Couldn't read this document right now. Nothing was saved — please try again.",
   paid: "Couldn't read this document. Nothing was saved, and this upload still counts. Try a shorter part of it.",
+  invalid: "The AI's answer for this document couldn't be used. Nothing was saved, and this upload still counts. Trying again usually works.",
   generic: "Something went wrong — please try again.",
 };
 
-/** Gives an upload back only when the AI read failed with no paid answer (see analyseDocument). A paid but unusable answer, a failed save and an unreadable photo are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
+/** Gives an upload back only when the AI read failed with no paid answer (see analyseDocument). A paid but unusable answer, a failed save and an unreadable document are NOT given back: the AI call was paid, and giving blank photos back would bypass the daily spend limit. Admin key, server only: users can't refund themselves. */
 async function giveBackUpload(id: number, userId: string) {
   const admin = createAdminClient();
   if (!admin) return;
@@ -52,11 +55,12 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
       if (error || !blob || blob.size > MAX_FILE_BYTES) return { error: ERRORS.files };
       files.push({ name: path.split("/").pop()!, mime: mimeFor(path)!, data: Buffer.from(await blob.arrayBuffer()) });
     }
-    // ponytail: counts uncompressed page objects only; PDFs storing pages in compressed object streams pass uncounted (cost still capped by 10 MB + daily quota). Inflate FlateDecode streams if long PDFs become a problem.
-    if (kind === "pdf" && (files[0].data.toString("latin1").match(/\/Type\s*\/Page(?!s)/g)?.length ?? 0) > MAX_PDF_PAGES) {
-      return { error: ERRORS.pdfPages };
+    if (kind === "pdf") {
+      const pages = pdfPageCount(files[0].data);
+      if (pages === null) return { error: ERRORS.pdf };
+      if (pages > MAX_PDF_PAGES) return { error: ERRORS.pdfPages };
     }
-    const docxText = kind === "docx" ? extractDocxText(files[0].data) ?? undefined : undefined;
+    const docxText = kind === "docx" ? (await readDocxText(files[0].data)) ?? undefined : undefined;
     if (kind === "docx" && !docxText) return { error: ERRORS.docx };
 
     // Check the document limit before spending an AI call; the database trigger stays as the backstop.
@@ -68,14 +72,13 @@ export async function analyseUpload(paths: unknown): Promise<{ id: number; noGra
 
     const result = await analyseDocument({ kind, files, docxText });
     if ("error" in result) {
-      if (result.error === "paid") return { error: ERRORS.paid };
+      // A Word file always has text (checked above), so "no text" from the model is a bad answer there.
+      if (result.error === "unreadable") return { error: kind === "images" ? ERRORS.unreadablePhoto : kind === "pdf" ? ERRORS.unreadable : ERRORS.invalid };
+      if (result.error !== "ai") return { error: ERRORS[result.error] };
       await giveBackUpload(usageId, userId);
-      return { error: result.error === "unreadable" ? ERRORS.docx : ERRORS.ai };
+      return { error: ERRORS.ai };
     }
     const a = result.analysis;
-    if (photoUnreadable(kind, a.extractedText)) {
-      return { error: ERRORS.unreadablePhoto };
-    }
     // Saved with the admin key: users can't insert documents themselves, so a document always
     // comes from a real, counted AI read. Pinned to the caller's own id.
     const admin = createAdminClient();

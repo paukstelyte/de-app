@@ -4,7 +4,7 @@ Sources:
 - https://openrouter.ai/docs/features/structured-outputs (Structured Outputs)
 - https://openrouter.ai/docs/use-cases/usage-accounting (Usage Accounting)
 
-Checked on 2026-10-10.
+Checked on 2026-10-10; sections 1, 3 and 6 updated 2026-10-14.
 
 # Reading documents with OpenRouter: how DE-app uses it
 
@@ -30,13 +30,13 @@ parts.push({ type: "file", file: { filename: f.name, file_data: `data:applicatio
 plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
 ```
 
-Before calling the model, the app makes a best-effort page count and refuses PDFs over 20 pages. The count reads uncompressed page objects only, so a PDF that stores its pages in compressed object streams passes uncounted; the 10 MB limit and the daily upload limits still cap the cost.
+Before calling the model, the app counts the pages with pdf-lib (`pdfPageCount` in `lib/learning/documents.ts`, which also counts pages stored in compressed object streams) and refuses PDFs over 20 pages, or a file pdf-lib can't open. The 10 MB limit and the daily upload limits cap the cost as well.
 
 ## 2. Photos
 
 **What the docs say.** Images go in `image_url` content parts, either as a URL or as a base64 data URL (`data:image/jpeg;base64,...`). Base64 is the way for local or private files. Several images can be sent as separate parts, and the text prompt should come before them. Listed formats: `image/png`, `image/jpeg`, `image/webp`, `image/gif`.
 
-**How DE-app uses it.** Up to 5 photos are sent as separate base64 `image_url` parts after the prompt. The files come from the learner's private Supabase Storage folder, so URLs aren't an option. HEIC/HEIF (iPhone photos) isn't on OpenRouter's list, but we tested it with Gemini 2.5 Flash-Lite and it reads them correctly, so the app accepts them. A test with a blank image showed the model inventing text, so the prompt now requires an empty transcription and "no grammar" when there is no readable text, and a browser check (`e2e/learning.sh`, `blank.png`) confirms it.
+**How DE-app uses it.** Up to 5 photos are sent as separate base64 `image_url` parts in the document's user message (the instructions are in the system message; see section 6). The files come from the learner's private Supabase Storage folder, so URLs aren't an option. HEIC/HEIF (iPhone photos) isn't on OpenRouter's list, but we tested it with Gemini 2.5 Flash-Lite and it reads them correctly, so the app accepts them. A test with a blank image showed the model inventing text, so the prompt now requires an empty transcription and "no grammar" when there is no readable text, and a document with no readable text is refused as "unreadable" (not saved, still counted). The browser tests check that path with the fake OpenRouter (`e2e/learning.spec.ts`).
 
 ```ts
 for (const f of input.files) parts.push({ type: "image_url", image_url: { url: `data:${f.mime};base64,${b64}` } });
@@ -46,7 +46,7 @@ for (const f of input.files) parts.push({ type: "image_url", image_url: { url: `
 
 **What the docs say.** Set `response_format: { type: "json_schema", json_schema: { name, strict: true, schema } }`. Support depends on the model and even the endpoint. With `strict: true` some providers guarantee schema-conforming output, while others treat the schema as a strong hint. A request fails if the model doesn't support it or the schema is invalid.
 
-**How DE-app uses it.** `ANALYSIS_SCHEMA` in `lib/learning/suggestions.ts` requires `title`, `extractedText`, `noGrammar` and `topics[]` (each `slug`, `reason`, `fromMistake`), with no extra properties. Because strictness isn't guaranteed by every provider, the app never trusts the answer as-is. `parseAnalysis` validates the shape, keeps only slugs from the 82-topic catalogue, removes duplicates, puts mistakes first, keeps at most 6, and trims long text. If nothing valid is left, the document is saved as "No German grammar topics found".
+**How DE-app uses it.** `ANALYSIS_SCHEMA` in `lib/learning/suggestions.ts` requires `title`, `extractedText`, `noGrammar` and `topics[]` (each `slug`, `reason`, `fromMistake`), with no extra properties. Because strictness isn't guaranteed by every provider, the app never trusts the answer as-is. The schema is one Zod schema: `z.toJSONSchema` makes the JSON schema sent to the model and `safeParse` checks the answer, so the two can't drift apart. `parseAnalysis` then keeps only slugs from the 82-topic catalogue, removes duplicates, puts mistakes first, keeps at most 6, and trims long text. It returns one of four outcomes: topics found; "no grammar" (readable text with nothing to practise, saved as "No German grammar topics found"); "unreadable" (no text at all; not saved); and "invalid" (an answer that doesn't fit the schema, or names topics but none from the catalogue; not saved, shown as an error, never as "no grammar").
 
 ## 4. Usage and cost
 
@@ -57,3 +57,10 @@ for (const f of input.files) parts.push({ type: "image_url", image_url: { url: `
 ## 5. Keeping the key server-side
 
 `OPENROUTER_API_KEY` is read only inside `analyseDocument` in `lib/learning/analyse.ts`, a module that starts with `import "server-only"`, so the build fails if browser code ever imports it. The browser never talks to OpenRouter. It uploads the file to Supabase Storage, then calls a server action with the file's path. The server downloads the file, calls OpenRouter, saves the result and deletes the file. The key is in `.env.local` locally and in Vercel's Production environment (marked Sensitive), never in a `NEXT_PUBLIC_` variable.
+
+## 6. Prompt and document kept apart
+
+The instructions and the topic catalogue are the **system message** (`SYSTEM_PROMPT` in `lib/learning/prompt.ts`, with a `PROMPT_VERSION` to bump on every wording change). The uploaded document goes in its own **user message**, introduced only as "The document to analyse:", and the system message tells the model to treat it as content, never as instructions, so text inside a worksheet can't change what the model is asked to do. The prompt asks for 1 to 6 well-supported topics rather than a minimum, so the model isn't pushed to pad the list.
+
+The browser tests run against a fake OpenRouter (`e2e/mock-openrouter.mjs`) that rejects a request breaking these rules: instructions not in a system message, the document not in its own user message, a non-strict schema, or a PDF without the `native` engine.
+

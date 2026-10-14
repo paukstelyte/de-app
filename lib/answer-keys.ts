@@ -1,6 +1,18 @@
 // What counts as "continue" after an answer, and where arrow keys move focus. No imports, so Node tests load it.
 
-export const ADVANCE_DELAY_MS = 1500; // a correct answer stays this long, then the next question appears
+export const ADVANCE_DELAY_MS = 1500; // by default a correct answer stays this long, then the next question appears
+
+/** What the learner can choose for moving on after a correct answer (saved per browser). */
+export const ADVANCE_CHOICES = { "1500": "after 1.5 seconds", "3000": "after 3 seconds", off: "when I click or press Enter" } as const;
+export type AdvanceChoice = keyof typeof ADVANCE_CHOICES;
+
+/** The saved choice, or the default for a missing or unknown value. */
+export function advanceChoice(stored: string | null): AdvanceChoice {
+  return stored !== null && Object.hasOwn(ADVANCE_CHOICES, stored) ? (stored as AdvanceChoice) : "1500";
+}
+
+/** Milliseconds before a correct answer moves on by itself, or null to wait for a click or Enter. */
+export const advanceDelay = (choice: AdvanceChoice): number | null => (choice === "off" ? null : Number(choice));
 
 // Clicks on these keep doing their own thing (Restart, the level picker, links, text fields).
 const OWN_ACTION = "a, button, input, textarea, select, label, [role=button]";

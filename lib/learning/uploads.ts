@@ -11,6 +11,8 @@ type FileInfo = { name: string; size: number };
 
 export const UPLOAD_NOTE =
   "Textbook pages, worksheets, notes (typed or neatly handwritten) or homework. Don't upload documents with personal details.";
+/** Word files are read as plain text, so the teacher's colours and crossed-out corrections are lost. */
+export const WORD_NOTE = "Word files are read as plain text: if your teacher's corrections matter, upload a PDF or photos instead.";
 
 const MIME_BY_EXT: Record<string, { mime: string; kind: "pdf" | "docx" | "image" }> = {
   pdf: { mime: "application/pdf", kind: "pdf" },
@@ -50,10 +52,6 @@ export function storagePath(userId: string, batchId: string, index: number, file
   return `${userId}/${batchId}/${index}.${extOf(fileName)}`;
 }
 
-/** A photo upload the model read no text from at all (blank, blurred, unreadable handwriting) isn't saved. */
-export function photoUnreadable(kind: UploadKind, extractedText: string): boolean {
-  return kind === "images" && extractedText.trim() === "";
-}
 
 /** The browser's list of uploaded paths is untrusted: 1–5 paths, all inside the
  * caller's own folder, with an allowed extension and no tricks. */

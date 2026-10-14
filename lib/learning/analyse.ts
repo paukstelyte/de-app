@@ -1,5 +1,6 @@
 import "server-only"; // reads OPENROUTER_API_KEY
 import { TOPICS } from "@/lib/grammar/topics";
+import { SYSTEM_PROMPT } from "@/lib/learning/prompt";
 import { ANALYSIS_SCHEMA, parseAnalysis, type Analysis } from "@/lib/learning/suggestions";
 import type { UploadKind } from "@/lib/learning/uploads";
 import { readUsage, type Usage } from "@/lib/learning/usage";
@@ -7,33 +8,30 @@ import { readUsage, type Usage } from "@/lib/learning/usage";
 // One fixed model (agreed): reads PDFs and photos itself, about $0.0004 per document.
 export const ANALYSIS_MODEL = "google/gemini-2.5-flash-lite";
 const KNOWN = new Set(TOPICS.map((t) => t.slug));
-const CATALOGUE = TOPICS.map((t) => `${t.slug} | ${t.level} | ${t.title}`).join("\n");
-
-const PROMPT = `You help a learner of German. Read the attached document (a textbook page, worksheet, notes or homework). It may be printed, typed or handwritten, and a photo may be sideways or upside down: read it in the right orientation.
-1. extractedText: transcribe the document's text (max 8000 characters). Leave out crossed-out words. Write [?] for a word you can't read. If there is no readable text, use "" and never invent text.
-2. noGrammar: true if there is no readable text or the document contains no German grammar.
-3. topics: 3 to 6 grammar topics the learner should practise, chosen ONLY from this list (use the slug exactly):
-${CATALOGUE}
-Base topics ONLY on what is in the document. Words in another colour, underlined or boxed are emphasis (what the learner marked as important): rank those topics higher, but they are NOT mistakes. Only clear correction marks (a word crossed out and rewritten, a tick or cross, a correction in the margin) are mistakes: put those topics first and set fromMistake to true. For each topic give a one-line reason that quotes the document.
-4. title: a short title for the document, for example "Textbook p. 34: dative prepositions".`;
+// The browser tests point OPENROUTER_BASE_URL at a local fake (e2e/mock-openrouter.mjs). Only an address on
+// this machine is accepted, so a stray setting on a server can never send the API key anywhere else.
+const testUrl = process.env.OPENROUTER_BASE_URL;
+const OPENROUTER_URL = `${testUrl && /^http:\/\/(127\.0\.0\.1|localhost):\d+$/.test(testUrl) ? testUrl : "https://openrouter.ai/api/v1"}/chat/completions`;
 
 export async function analyseDocument(input: {
   kind: UploadKind;
   files: { name: string; mime: string; data: Buffer }[];
   docxText?: string;
-}): Promise<{ analysis: Analysis; usage: Usage } | { error: "ai" | "paid" | "unreadable" }> {
-  // "ai": no paid answer (no key, network failure, error status), so the upload is given back.
-  // "paid": OpenRouter may have charged (timeout, cut-off or unusable answer), so the upload counts.
+}): Promise<{ analysis: Analysis; usage: Usage } | { error: "ai" | "paid" | "invalid" | "unreadable" }> {
+  // "ai": no paid answer (no key, nothing to send, network failure, error status), so the upload is given back.
+  // The rest came after a paid answer, so the upload counts: "paid" (timeout or cut-off),
+  // "invalid" (an answer that doesn't fit the schema or names no catalogue topic),
+  // "unreadable" (the model found no text: blank or blurred photo, empty scan).
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) {
     console.error("analyseDocument: OPENROUTER_API_KEY is not set");
     return { error: "ai" };
   }
-  if (input.kind !== "docx" && input.files.length === 0) return { error: "unreadable" };
-  const parts: object[] = [{ type: "text", text: PROMPT }];
+  if (input.kind === "docx" ? !input.docxText?.trim() : input.files.length === 0) return { error: "ai" };
+  // The uploaded material is untrusted: it goes in its own user message, never mixed into the instructions.
+  const parts: object[] = [{ type: "text", text: "The document to analyse:" }];
   if (input.kind === "docx") {
-    if (!input.docxText?.trim()) return { error: "unreadable" };
-    parts.push({ type: "text", text: `Document text:\n${input.docxText.slice(0, 20000)}` });
+    parts.push({ type: "text", text: input.docxText!.slice(0, 20000) });
   } else if (input.kind === "pdf") {
     const f = input.files[0];
     parts.push({ type: "file", file: { filename: f.name, file_data: `data:application/pdf;base64,${f.data.toString("base64")}` } });
@@ -42,12 +40,12 @@ export async function analyseDocument(input: {
   }
   let res: Response;
   try {
-    res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    res = await fetch(OPENROUTER_URL, {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json", "X-Title": "DE-app" },
       body: JSON.stringify({
         model: ANALYSIS_MODEL,
-        messages: [{ role: "user", content: parts }],
+        messages: [{ role: "system", content: SYSTEM_PROMPT }, { role: "user", content: parts }],
         response_format: { type: "json_schema", json_schema: ANALYSIS_SCHEMA },
         // PDFs: read natively by the model; never fall back to the paid OCR engine.
         plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
@@ -68,13 +66,14 @@ export async function analyseDocument(input: {
     const json = await res.json();
     const choice = json?.choices?.[0];
     const content = choice?.message?.content;
-    let analysis: Analysis | null = null;
+    let parsed: ReturnType<typeof parseAnalysis> = "invalid";
     try {
-      analysis = typeof content === "string" ? parseAnalysis(JSON.parse(content), KNOWN) : null;
+      if (typeof content === "string") parsed = parseAnalysis(JSON.parse(content), KNOWN);
     } catch {}
-    if (!analysis) console.error("analyseDocument: unexpected answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
+    if (parsed === "invalid") console.error("analyseDocument: unusable answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
+    if (typeof parsed === "string") return { error: parsed };
     // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
-    return analysis ? { analysis, usage: readUsage(json, ANALYSIS_MODEL) } : { error: "paid" };
+    return { analysis: parsed, usage: readUsage(json, ANALYSIS_MODEL) };
   } catch (err) {
     console.error("analyseDocument: reading the answer failed:", err instanceof Error ? err.message : err);
     return { error: "paid" };

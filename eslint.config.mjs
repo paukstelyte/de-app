@@ -9,11 +9,13 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    ".next-e2e/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Third-party agent skills (npx skills add); not our code.
-    ".agents/**",
+    // Playwright output.
+    "playwright-report/**",
+    "test-results/**",
   ]),
 ]);
 

@@ -6,7 +6,7 @@ import { analyseUpload } from "@/app/learning/actions";
 import { MAX_DOCUMENTS, freeAtLabel, type Allowance } from "@/lib/learning/allowance";
 import { createClient } from "@/lib/supabase/client";
 import { listUserUploads } from "@/lib/learning/storage";
-import { ACCEPT, BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, mimeFor, storagePath, validateSelection } from "@/lib/learning/uploads";
+import { ACCEPT, BUCKET, MAX_FILE_MB, MAX_PHOTOS, UPLOAD_NOTE, WORD_NOTE, mimeFor, storagePath, validateSelection, type UploadKind } from "@/lib/learning/uploads";
 import { formatModel } from "@/lib/learning/usage";
 
 /** The wait time in the reader's own timezone: empty on the server and during hydration, then filled in. */
@@ -15,15 +15,36 @@ function useFreeAt(iso: string | null): string {
   return useSyncExternalStore(noSubscribe, () => (iso ? freeAtLabel(iso) : ""), () => "");
 }
 
+// Browsers can't show HEIC photos, so those are listed by name only.
+const previewable = (file: File) => /^image\/(jpeg|png|webp)$/.test(file.type);
+
+type Selection = { kind: UploadKind; files: { file: File; preview: string | null }[] };
+
 export function UploadBox({ userId, modelSlug, allowance }: { userId: string; modelSlug: string; allowance: Allowance | null }) {
   const router = useRouter();
   const [status, setStatus] = useState<{ kind: "idle" | "busy" | "error" | "done"; text: string }>({ kind: "idle", text: "" });
+  // Chosen files wait here for "Read" so a wrong pick doesn't use up an upload.
+  const [selection, setSelection] = useState<Selection | null>(null);
 
-  async function onFiles(list: FileList | null) {
+  function clearSelection() {
+    selection?.files.forEach((f) => f.preview && URL.revokeObjectURL(f.preview));
+    setSelection(null);
+  }
+
+  function onFiles(list: FileList | null) {
+    clearSelection();
     const files = [...(list ?? [])];
+    if (files.length === 0) return;
     const check = validateSelection(files);
     if ("error" in check) return setStatus({ kind: "error", text: check.error });
+    setStatus({ kind: "idle", text: "" });
+    setSelection({ kind: check.kind, files: files.map((file) => ({ file, preview: previewable(file) ? URL.createObjectURL(file) : null })) });
+  }
 
+  async function read() {
+    if (!selection) return;
+    const files = selection.files.map((f) => f.file);
+    clearSelection();
     setStatus({ kind: "busy", text: "Uploading…" });
     const storage = createClient().storage.from(BUCKET);
     // Self-heal: drop files left behind by a closed tab or crash (the bucket caps a folder at 5).
@@ -68,6 +89,25 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
         <span className="text-zinc-500">PDF, DOCX, JPG, PNG, WebP or HEIC · up to {MAX_FILE_MB} MB each</span>
         <input id="learning-upload" type="file" accept={ACCEPT} multiple className="sr-only" disabled={status.kind === "busy" || blocked} aria-describedby={blocked ? "allowance-note" : undefined} onChange={(e) => { onFiles(e.target.files); e.target.value = ""; }} />
       </label>
+      {selection && (
+        <div className="flex flex-col gap-3 border border-[var(--line)] p-3" aria-label="Chosen files">
+          <ul className="flex flex-wrap gap-2">
+            {selection.files.map(({ file, preview }, i) => (
+              <li key={i} className="flex max-w-full items-center gap-2 text-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element -- a local preview of the learner's own file */}
+                {preview && <img src={preview} alt="" className="h-16 w-16 border border-[var(--line)] object-cover" />}
+                <span className="break-all">{file.name}</span>
+              </li>
+            ))}
+          </ul>
+          {selection.kind === "docx" && <p className="text-xs text-zinc-600 dark:text-zinc-400">{WORD_NOTE}</p>}
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={read} className="pill-primary">Read {selection.kind === "images" && selection.files.length > 1 ? "these photos" : "this document"}</button>
+            <button type="button" onClick={clearSelection} className="pill-secondary">Choose again</button>
+          </div>
+          <p className="text-xs text-zinc-500">Reading uses 1 of your uploads.</p>
+        </div>
+      )}
       {allowance && (
         <div className="flex flex-col gap-2 border-t border-[var(--line)] pt-4 text-xs">
           <div className="flex items-baseline justify-between gap-3">

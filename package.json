@@ -8,23 +8,38 @@
     "start": "next start",
     "lint": "eslint",
     "sync:exercises": "node scripts/sync-exercises.mjs",
-    "test": "node --no-warnings --test \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\""
+    "test": "node --no-warnings --test \"lib/**/*.test.mjs\" \"scripts/**/*.test.mjs\"",
+    "db:start": "supabase start -x studio,realtime,edge-runtime,logflare,vector,imgproxy,mailpit,postgres-meta,supavisor",
+    "db:stop": "supabase stop",
+    "db:types": "supabase gen types typescript --project-id cenzahkgbbnmgzikxvsz --schema public > lib/supabase/database.types.ts",
+    "test:db": "supabase test db",
+    "test:e2e": "playwright test",
+    "test:smoke": "E2E_REAL_AI=1 playwright test"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.2",
+    "mammoth": "^1.13.0",
     "next": "16.3.8",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "pdf-lib": "^1.17.1",
+    "supabase": "^2.120.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

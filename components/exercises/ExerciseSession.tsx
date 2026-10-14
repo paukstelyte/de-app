@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useSyncExternalStore, type ReactNode } from "react";
 import { recordExerciseAnswer } from "@/app/topics/[slug]/practice/actions";
+import { AdvanceSetting } from "@/components/AdvanceSetting";
+import { UnsavedAnswers, useAnswerSaver } from "@/components/UnsavedAnswers";
 import { useAdvance } from "@/lib/useAdvance";
 import { useArrowKeys } from "@/lib/useArrowKeys";
 import { ROUND_SIZE, correctAnswer, isCorrect, makeRound, normalise, shuffle, spell } from "@/lib/exercises/check";
@@ -42,7 +44,8 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
   const [answered, setAnswered] = useState<Answered | null>(null);
   const [results, setResults] = useState<Result[]>([]);
   const atEnd = index >= round.length;
-  useAdvance(!atEnd && answered !== null, !!answered?.correct, () => { setAnswered(null); setIndex((i) => i + 1); });
+  const saver = useAnswerSaver();
+  const waiting = useAdvance(!atEnd && answered !== null, !!answered?.correct, () => { setAnswered(null); setIndex((i) => i + 1); });
 
   if (!mounted) return <div aria-hidden className={`min-h-[380px] ${card}`} />;
 
@@ -77,6 +80,7 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
         {!loggedIn && (
           <Link href={`/login?next=/topics/${slug}/practice`} className="text-sm underline underline-offset-2">Log in to save your progress</Link>
         )}
+        <UnsavedAnswers saver={saver} />
       </div>
     );
   }
@@ -87,8 +91,8 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
     const correct = isCorrect(item, a);
     setAnswered({ answer: a, correct });
     setResults((rs) => [...rs, { item, correct }]);
-    // Fire-and-forget: a failed save must never block the exercise.
-    if (loggedIn) recordExerciseAnswer(item.topic ?? slug, item.id, a).catch(console.error);
+    // Saved in the background: a failed save never blocks the exercise; it shows up under the card with a Retry.
+    if (loggedIn) saver.save((clientId) => recordExerciseAnswer(item.topic ?? slug, item.id, a, clientId));
   }
 
   const solution = item.type === "order" ? correctAnswer(item) : fill(item.prompt, correctAnswer(item));
@@ -105,7 +109,8 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
         {item.type === "type" && <TypeView key={key} item={item} {...view} />}
         {item.type === "order" && <OrderView key={key} item={item} {...view} />}
         <p role="status" className="sr-only">
-          {answered && (answered.correct ? "Correct!" : `Not quite. Correct answer: ${solution}. Press Enter to continue.`)}
+          {answered && (answered.correct ? "Correct!" : `Not quite. Correct answer: ${solution}.`)}
+          {waiting && " Press Enter to continue."}
         </p>
         {answered && (
           <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-5">
@@ -126,9 +131,14 @@ export function ExerciseSession({ slug, title, items, loggedIn, backHref = `/top
               <p className="text-sm">Check the capital letters.</p>
             )}
             <p className="text-sm text-zinc-700 dark:text-zinc-300">{item.explanation}</p>
-            {!answered.correct && <p className="text-xs text-zinc-500 dark:text-zinc-400">Tap or click anywhere, or press Enter to continue</p>}
+            {waiting && <p className="text-xs text-zinc-500 dark:text-zinc-400">Tap or click anywhere, or press Enter to continue</p>}
           </div>
         )}
+      </div>
+      {/* mt-2 clears the card's 8px offset shadow. */}
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
+        <AdvanceSetting />
+        <UnsavedAnswers saver={saver} />
       </div>
     </div>
   );
