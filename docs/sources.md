@@ -17,6 +17,8 @@ Reference material to consult while building this app.
 - https://openrouter.ai/docs/guides/overview/multimodal/image-understanding — sending photos as base64 `image_url` parts.
 - https://openrouter.ai/docs/features/structured-outputs — `response_format` with a strict JSON schema.
 - https://openrouter.ai/docs/use-cases/usage-accounting — token counts and cost in every response.
+- https://openrouter.ai/docs/features/provider-routing — `provider.zdr` (zero data retention) and `data_collection`.
+- https://openrouter.ai/privacy — OpenRouter's privacy policy: no training on API inputs, standard contractual clauses for transfers out of the EU (section 9).
 
 How the app applies these: [`openrouter-multimodal.md`](openrouter-multimodal.md).
 
@@ -24,3 +26,8 @@ How the app applies these: [`openrouter-multimodal.md`](openrouter-multimodal.md
 
 - https://supabase.com/docs/guides/database/postgres/row-level-security — row-level security policies (every user-data table is owner-only).
 - https://supabase.com/docs/guides/storage/security/access-control — Storage policies (each learner's private upload folder).
+
+## Privacy
+
+- https://vercel.com/docs/plans/hobby — Hobby plan limits, including 1 hour of runtime logs (the privacy page's "1 hour").
+- https://docs.cloud.google.com/vertex-ai/generative-ai/docs/data-governance — Vertex AI data governance: no training on customer data, and what zero data retention needs.

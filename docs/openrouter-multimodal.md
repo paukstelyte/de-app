@@ -66,7 +66,7 @@ The instructions and the topic catalogue are the **system message** (`SYSTEM_PRO
 
 **What the docs say.** The `provider` object controls routing. `zdr: true` restricts a request to zero-data-retention endpoints; `data_collection: "deny"` (default `"allow"`) restricts it to providers that don't store or train on data. Source: [Provider routing](https://openrouter.ai/docs/features/provider-routing). OpenRouter itself doesn't train on API inputs and relies on standard contractual clauses for transfers out of the EU ([privacy policy](https://openrouter.ai/privacy), section 9).
 
-**How DE-app uses it.** Every request sends `provider: { zdr: true }`, which is stricter than `data_collection: "deny"`. Checked on 2026-10-15: `google/gemini-2.5-flash-lite` still routes (to Google), and the real-model smoke test passes with it. The privacy page promises this, so never remove it.
+**How DE-app uses it.** Every request sends `provider: { zdr: true }`, which is stricter than `data_collection: "deny"`. Checked on 2026-10-15: `google/gemini-2.5-flash-lite` still routes (to Google), and the real-model smoke test passes with it. The privacy page promises this, so never remove it. Zero data retention covers the model provider; OpenRouter itself keeps prompts only if "input/output logging" is on in the account's privacy settings, so keep it off. OpenRouter errors are logged as status and error code only, since the message can quote the document.
 
 The browser tests run against a fake OpenRouter (`e2e/mock-openrouter.mjs`) that rejects a request breaking these rules: instructions not in a system message, the document not in its own user message, a non-strict schema, a PDF without the `native` engine, or a request without `provider.zdr`.
 

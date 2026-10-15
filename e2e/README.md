@@ -48,6 +48,6 @@ $0.0005, so run it before merging a change to the prompt, the AI request or the 
 
 `mock-openrouter.mjs` answers the app's AI request so tests are free and repeatable, and it rejects requests that break
 the integration rules: instructions not in a system message, the document not in its own user message, a non-strict
-schema, or a PDF without the native file parser. A marker inside an uploaded file picks the answer: `MOCK:BLANK` (no
+schema, a PDF without the native file parser, or a request without zero data retention (`provider.zdr`). A marker inside an uploaded file picks the answer: `MOCK:BLANK` (no
 readable text), `MOCK:INVALID` (topics outside the catalogue), `MOCK:NOGRAMMAR`; anything else gets the Lektion 7 dative
 answer. `fixtures/` holds only the German sample "Lektion 7: Präpositionen mit Dativ …", a blank PNG and a one-line `old.doc`.
