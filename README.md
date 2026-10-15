@@ -14,7 +14,7 @@ Live: https://de-app-six.vercel.app
 
 **Why AI is the core.** The catalogue and exercises are generic. The AI is what connects them to *your* lessons: it reads your own material and decides what you should practise now. Without it the app wouldn't know what you're learning.
 
-Guests can browse topics and practise without saving. Signed-out visitors who open Customized Learning, Progress or Account are sent to the login page.
+Guests can browse topics and practise without saving. Signed-out visitors who open Customized Learning, Progress or Account are sent to the login page. On **Account** you can download everything saved in your account as a JSON file, or delete the account. The **Privacy** page (linked in the footer) says what is stored, why, which services receive it, how long it's kept and your rights.
 
 ## The AI feature
 
@@ -83,7 +83,7 @@ Every table with user data has row-level security with owner-only policies, and 
 | `npm run sync:exercises` | After editing `lib/exercises/data/*.json`: regenerate `lib/exercises/sets.ts` and the practice links |
 | `npm run db:start` / `npm run db:stop` | Start or stop a throwaway local Supabase with every migration applied (needs OrbStack or Docker). The database and browser tests run only against it, never the live project |
 | `npm run test:db` | Database tests (pgTAP, `supabase/tests/database/`): one user can't read, change or delete another user's documents, focus list, answers, upload counter or files; the upload allowance; answer ids counted once |
-| `npm run test:e2e` | Browser tests (Playwright Test, `e2e/*.spec.ts`) with a fake OpenRouter: every upload kind and outcome, the review step, focus, a **second user can't see the first user's documents**, failed reads and saves with retry, practice pages, keyboard, auto-advance setting, der · die · das, phone width with the keyboard open. A failed test keeps a trace (`npx playwright show-report`) |
+| `npm run test:e2e` | Browser tests (Playwright Test, `e2e/*.spec.ts`) with a fake OpenRouter: every upload kind and outcome, the review step, focus, a **second user can't see the first user's documents**, failed reads and saves with retry, Download my data and account deletion, practice pages, keyboard, auto-advance setting, der · die · das, phone width with the keyboard open. A failed test keeps a trace (`npx playwright show-report`) |
 | `npm run test:smoke` | The one test with the real model (about $0.0005): the Lektion 7 PDF gets dative topics. Run it before merging a change to the prompt, the AI request or the answer schema |
 | `npm run db:types` | Once a migration is applied to the live project: regenerate `lib/supabase/database.types.ts` from it (formatted output; `--local` works too but prints unformatted code) |
 
@@ -134,4 +134,5 @@ The `eu-ai-act-compliance` agent ([`.claude/agents/eu-ai-act-compliance.md`](.cl
 - Passwords must be at least 10 characters with upper- and lower-case letters and a number (`supabase/config.toml`, the same rule in the sign-up form). Supabase's check against passwords leaked in data breaches ("Leaked Password Protection", flagged by the Security Advisor) needs the Pro plan, so it is off. Existing accounts keep their passwords until they change them. "Continue with Google" needs no password.
 - Emails are sent through Brevo's free plan (300/day) from a Gmail sender, so some may land in spam. A custom domain would fix that.
 - Stats are computed from a user's whole answer history on each page load. That's fine for thousands of answers; move it into SQL if histories get much larger.
+- The privacy page and the AI labels follow two automated first-pass audits (the `gdpr-compliance` and `eu-ai-act-compliance` agents), not a lawyer's review (see [`docs/todo.md`](docs/todo.md)).
 - The 100-uploads-a-day app-wide cap protects the AI budget but can be used up by about 10 accounts.
