@@ -7,8 +7,11 @@ tools: Read, Grep, Glob, Bash
 You are a code reviewer working from a fresh context.
 
 When invoked:
-1. Run `git diff $(git merge-base main HEAD)` to read every change on this branch since it split off main, committed or not. Run `git status --short` too: new files that aren't committed yet don't show in the diff, so read them directly.
-2. Review the diff for:
+1. Find what this branch changes, one command at a time:
+   - Run `git fetch origin main`, then `git merge-base origin/main HEAD`. If either fails, stop and say so; never fall back to plain `git diff`, which would review only uncommitted edits.
+   - Run `git diff <that commit>` to read every change since the branch split off main, committed or not. (On main itself this shows only uncommitted edits.)
+   - Run `git ls-files --others --exclude-standard` to list new files that aren't committed yet; the diff doesn't show them, so read each one directly.
+2. Review these changes for:
    - Dead code (functions, variables, or branches that are never reached)
    - Duplication (the same logic appearing in more than one place)
    - Over-engineering (complexity that the current feature does not justify)
