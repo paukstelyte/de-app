@@ -17,6 +17,12 @@ Waiting for real worksheets (the owner is collecting them; personal details remo
 
 Related, visible to learners: the Grammar Topics cards count that list and show "1 exercise", although each practice page has 30. Worth fixing on its own if the label bothers anyone.
 
+## Privacy and AI Act follow-ups (from PR #30)
+
+- **Legal review:** the privacy page and the AI labels follow two first-pass agent audits (`gdpr-compliance`, `eu-ai-act-compliance`), not a lawyer. Have them checked before any real launch.
+- **Exact log periods:** the privacy page says Vercel keeps request logs for 1 hour (Hobby plan); Supabase's and Brevo's own log periods aren't stated yet.
+- **Screenshot:** `docs/screenshots/customized-learning.png` still shows the old "Read by …" label; retake it next time a real document is read.
+
 ## Only when needed
 
 - **Stats in SQL:** progress pages read a user's whole answer history (`lib/attempts.ts`). Move the summary into a database view or function once histories reach tens of thousands of answers. A new view needs RLS and the anon revoke.

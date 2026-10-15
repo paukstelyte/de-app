@@ -26,6 +26,7 @@ Guests can browse topics and practise without saving. Signed-out visitors who op
 | Input | PDF as a `file` part with the `file-parser` plugin set to the `native` engine (pages counted with pdf-lib first); photos as base64 `image_url` parts; Word files read with mammoth (after a zip-bomb size guard) and sent as text |
 | Output | Strict JSON schema from one Zod schema (`lib/learning/suggestions.ts`): title, the text read, "no grammar" flag, 1–6 topics with reasons. Four outcomes: topics found, no grammar, unreadable (not saved, still counts) and an invalid answer (not saved, still counts; never shown as "no grammar"). Topics outside the catalogue are dropped |
 | Cost | About $0.0005 for a one-page worksheet, up to about $0.002 for several textbook pages (both measured on 2026-10-12; see `docs/testing.md`). Each document card shows the model, tokens and cost from OpenRouter's response |
+| Data retention | Requests set `provider: { zdr: true }`: OpenRouter sends documents only to providers that keep no copy (Google, for this model). Uploaded files are deleted from Supabase Storage after every analysis |
 | Limits | 10 uploads per learner and 100 for everyone in any 24 hours (an upload is given back only if no paid AI answer came back: a network failure or an error from OpenRouter. A timeout, a cut-off or unusable answer, a failed save or a photo with no readable text still counts), 200 saved documents per learner, at most 5 files in a learner's upload folder (all enforced by the database) |
 
 Details and the OpenRouter references: [`docs/openrouter-multimodal.md`](docs/openrouter-multimodal.md).
@@ -34,7 +35,7 @@ Details and the OpenRouter references: [`docs/openrouter-multimodal.md`](docs/op
 
 ## Optional task
 
-**Showing which model read each document and how many tokens it used.** Every saved document records the model, prompt and completion tokens and cost from OpenRouter's response (`lib/learning/usage.ts`, stored per document), and the card shows them: "Read by Gemini 2.5 Flash Lite · 3,568 tokens · about $0.0005". The upload box also names the model before you upload.
+**Showing which model read each document and how many tokens it used.** Every saved document records the model, prompt and completion tokens and cost from OpenRouter's response (`lib/learning/usage.ts`, stored per document), and the card shows them: "AI-suggested by Gemini 2.5 Flash Lite · 3,568 tokens · about $0.0005" (the screenshot above predates the "AI-suggested" wording). The upload box also names the model before you upload.
 
 Built with Next.js (App Router), TypeScript, Tailwind CSS 4, Supabase (auth, Postgres with row-level security, Storage) and OpenRouter, deployed on Vercel.
 
@@ -120,7 +121,7 @@ The `eu-ai-act-compliance` agent ([`.claude/agents/eu-ai-act-compliance.md`](.cl
 | `components/exercises/ExerciseSession.tsx` | The practice round UI |
 | `components/UnsavedAnswers.tsx`, `components/AdvanceSetting.tsx`, `components/LoadError.tsx` | Unsaved-answer note with Retry, the auto-advance setting, and the "Couldn't load · Try again" message |
 | `app/articles/`, `components/ArticlesGame.tsx` | der · die · das flashcards |
-| `app/progress/`, `app/account/`, `app/login`, `app/auth/*` | Progress, account (log out, delete account), login, sign-up, password reset, callbacks |
+| `app/progress/`, `app/account/`, `app/login`, `app/auth/*` | Progress, account (log out, download my data, delete account), login, sign-up, password reset, callbacks |
 | `lib/supabase/` | Browser, server, admin and proxy Supabase clients, typed with the generated `database.types.ts`; `proxy.ts` sends signed-out visitors away from `/learning`, `/progress` and `/account` |
 | `supabase/` | Migrations, auth config, email templates, database tests (`tests/database/`, pgTAP) |
 | `e2e/` | Browser tests (Playwright Test), the fake OpenRouter and fixtures |

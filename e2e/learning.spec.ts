@@ -94,7 +94,7 @@ for (const file of ["lektion7.pdf", "lektion7.heic", "lektion7.docx"]) {
     await expect(docs(page).first()).toContainText("Lektion 7");
     await expect(docs(page).first().locator('a[href="/topics/prepositions-dative"]')).toBeVisible();
     await expect(focus(page).locator('a[href="/topics/prepositions-dative"]')).toBeVisible();
-    await expect(docs(page).first()).toContainText("Read by Gemini 2.5 Flash Lite");
+    await expect(docs(page).first()).toContainText("AI-suggested by Gemini 2.5 Flash Lite");
     expect(await uploadsUsed(user)).toBe(1);
     expect(await filesInBucket(user)).toBe(0);
   });

@@ -29,7 +29,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         </div>
         <ol className="grid gap-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400 sm:grid-cols-3 sm:gap-6">
           <li><b>1. Upload</b><br />A textbook page, worksheet, notes or homework.</li>
-          <li><b>2. We read it</b><br />We pick the grammar topics it covers.</li>
+          <li><b>2. AI reads it</b><br />An AI model picks the grammar topics it covers.</li>
           <li><b>3. Practise</b><br />Work through the suggested topics and track your progress.</li>
         </ol>
         <div className="flex flex-wrap gap-3">

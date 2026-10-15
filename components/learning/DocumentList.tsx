@@ -9,12 +9,12 @@ import type { LearningDocument as Doc } from "@/lib/learning/load-focus";
 import { formatCost, formatModel } from "@/lib/learning/usage";
 
 
-/** "Read by Gemini 2.5 Flash Lite · 3,120 tokens · about $0.0004"; older documents saved before this was recorded show nothing. */
-function usageLine(doc: Doc): string | null {
-  if (!doc.model) return null;
+/** "AI-suggested by Gemini 2.5 Flash Lite · 3,120 tokens · about $0.0004"; documents saved before the model was recorded say "AI-suggested". */
+function usageLine(doc: Doc): string {
+  if (!doc.model) return "AI-suggested";
   const tokens = (doc.prompt_tokens ?? 0) + (doc.completion_tokens ?? 0);
   const cost = formatCost(doc.cost_usd === null ? null : Number(doc.cost_usd));
-  return [`Read by ${formatModel(doc.model)}`, tokens > 0 ? `${tokens.toLocaleString("en-GB")} tokens` : null, cost && (cost.startsWith("under") ? cost : `about ${cost}`)].filter(Boolean).join(" · ");
+  return [`AI-suggested by ${formatModel(doc.model)}`, tokens > 0 ? `${tokens.toLocaleString("en-GB")} tokens` : null, cost && (cost.startsWith("under") ? cost : `about ${cost}`)].filter(Boolean).join(" · ");
 }
 const date = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
@@ -31,14 +31,13 @@ function DocumentItem({ doc, topics }: { doc: Doc; topics: Record<string, Gramma
   const [error, setError] = useState("");
   const [pending, start] = useTransition();
   const known = doc.suggestions.filter((s) => topics[s.slug]);
-  const usage = usageLine(doc);
   return (
     <li className="flex flex-col gap-3 border border-[var(--line)] bg-[var(--paper)] p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h3 className="font-semibold">{doc.title}</h3>
         <span className="text-xs text-zinc-500">{date(doc.created_at)}</span>
       </div>
-      {usage && <p className="text-xs text-zinc-500" title={doc.model ?? undefined}>{usage}</p>}
+      <p className="text-xs text-zinc-500" title={doc.model ?? undefined}>{usageLine(doc)}</p>
       {doc.no_grammar || known.length === 0 ? (
         <p className="text-sm text-zinc-600 dark:text-zinc-400">No German grammar topics found in this document.</p>
       ) : (
@@ -55,7 +54,7 @@ function DocumentItem({ doc, topics }: { doc: Doc; topics: Record<string, Gramma
       )}
       {doc.extracted_text && (
         <details className="text-sm">
-          <summary className="cursor-pointer text-zinc-500">What I read</summary>
+          <summary className="cursor-pointer text-zinc-500">Text read by AI (may contain errors)</summary>
           <p className="mt-2 whitespace-pre-wrap text-zinc-700 dark:text-zinc-300">{doc.extracted_text}</p>
         </details>
       )}

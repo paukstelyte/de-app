@@ -27,6 +27,16 @@ export default async function AccountPage() {
         <LogoutButton />
       </section>
 
+      <section className="panel flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 className="section-heading">Your data</h2>
+          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+            Everything we store about you (account, answers, Customized Learning), as a JSON file.
+          </p>
+        </div>
+        <a href="/account/export" download className="pill-secondary">Download my data</a>
+      </section>
+
       <section className="panel flex flex-col gap-4 border-red-300 dark:border-red-900">
         <h2 className="section-heading">Delete account</h2>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">

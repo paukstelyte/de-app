@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { analyseUpload } from "@/app/learning/actions";
@@ -124,7 +125,9 @@ export function UploadBox({ userId, modelSlug, allowance }: { userId: string; mo
       )}
       <p className="text-xs leading-5 text-zinc-500">{UPLOAD_NOTE}</p>
       <p className="text-xs text-zinc-500">
-        Documents are read by <b>{formatModel(modelSlug)}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter.
+        An AI model, <b>{formatModel(modelSlug)}</b> <span className="font-mono">({modelSlug})</span> via OpenRouter, reads
+        your document and suggests topics. AI can make mistakes, so check its suggestions.{" "}
+        <Link href="/privacy" className="underline underline-offset-2">How we handle your data</Link>
       </p>
       {status.text && (
         <p role={status.kind === "error" ? "alert" : "status"} className={`text-sm ${status.kind === "error" ? "text-red-600 dark:text-red-400" : status.kind === "done" ? "text-green-700 dark:text-green-400" : ""}`}>

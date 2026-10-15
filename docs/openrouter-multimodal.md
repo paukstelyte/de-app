@@ -62,5 +62,11 @@ for (const f of input.files) parts.push({ type: "image_url", image_url: { url: `
 
 The instructions and the topic catalogue are the **system message** (`SYSTEM_PROMPT` in `lib/learning/prompt.ts`, with a `PROMPT_VERSION` to bump on every wording change). The uploaded document goes in its own **user message**, introduced only as "The document to analyse:", and the system message tells the model to treat it as content, never as instructions, so text inside a worksheet can't change what the model is asked to do. The prompt asks for 1 to 6 well-supported topics rather than a minimum, so the model isn't pushed to pad the list.
 
-The browser tests run against a fake OpenRouter (`e2e/mock-openrouter.mjs`) that rejects a request breaking these rules: instructions not in a system message, the document not in its own user message, a non-strict schema, or a PDF without the `native` engine.
+## 7. Zero data retention
+
+**What the docs say.** The `provider` object controls routing. `zdr: true` restricts a request to zero-data-retention endpoints; `data_collection: "deny"` (default `"allow"`) restricts it to providers that don't store or train on data. Source: [Provider routing](https://openrouter.ai/docs/features/provider-routing). OpenRouter itself doesn't train on API inputs and relies on standard contractual clauses for transfers out of the EU ([privacy policy](https://openrouter.ai/privacy), section 9).
+
+**How DE-app uses it.** Every request sends `provider: { zdr: true }`, which is stricter than `data_collection: "deny"`. Checked on 2026-10-15: `google/gemini-2.5-flash-lite` still routes (to Google), and the real-model smoke test passes with it. The privacy page promises this, so never remove it.
+
+The browser tests run against a fake OpenRouter (`e2e/mock-openrouter.mjs`) that rejects a request breaking these rules: instructions not in a system message, the document not in its own user message, a non-strict schema, a PDF without the `native` engine, or a request without `provider.zdr`.
 
