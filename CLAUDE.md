@@ -110,7 +110,7 @@ The app does not use embeddings or RAG.
 - Before writing a parser, validator, protocol client or other non-trivial helper, check for a well-established library first: ask the DeepWiki MCP (`ask_wiki_question`) how candidate libraries handle the job and its edge cases (limits, malformed input, security), and confirm the claim in the library's source. Prefer the library when it is at least as safe and removes real code; keep our own code when it is safer (e.g. a size limit the library lacks), and say why.
 - npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too)
 - when giving me technical option or asking me to install anything, explain in simple words why it's needed and what it would allow you to do
-- after major changes or new feature get implemented, update documentation and do the cleanup of old code
+- After a new feature or major change (anything that adds, renames or removes a file, function, component, route, table, setting, env var, script or rule, or changes what the user sees), run `/docs-sync` before the code review: it updates the documentation and removes the old code the change left unused.
 
 ## Do Not
 
