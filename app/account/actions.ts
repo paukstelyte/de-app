@@ -3,7 +3,7 @@
 import { redirect } from "next/navigation";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
-import { CONFIRM_WORD } from "@/lib/account";
+import { CONFIRM_WORD, CONTACT } from "@/lib/account";
 import { BUCKET } from "@/lib/learning/uploads";
 import { listUserUploads } from "@/lib/learning/storage";
 
@@ -11,6 +11,8 @@ import { listUserUploads } from "@/lib/learning/storage";
  * them (`on delete cascade` on user_id → auth.users). Files in the `learning-uploads`
  * bucket have no foreign key, so they are removed here first; if that fails, the account
  * is kept so the user can try again, rather than leaving files nobody can delete. */
+const NOT_DELETED = `Something went wrong — your account was not deleted. Please try again, or write to ${CONTACT}.`;
+
 export async function deleteAccount(_prev: string | null, formData: FormData) {
   if (formData.get("confirm") !== CONFIRM_WORD) return `Type ${CONFIRM_WORD} to confirm.`;
 
@@ -31,12 +33,12 @@ export async function deleteAccount(_prev: string | null, formData: FormData) {
     }
   } catch (e) {
     console.error("deleteAccount: upload cleanup failed:", e instanceof Error ? e.message : "unknown");
-    return "Something went wrong — your account was not deleted. Please try again.";
+    return NOT_DELETED;
   }
   const { error } = await admin.auth.admin.deleteUser(userId);
   if (error) {
     console.error("deleteAccount failed:", error.message);
-    return "Something went wrong — your account was not deleted. Please try again.";
+    return NOT_DELETED;
   }
 
   await supabase.auth.signOut(); // clears the now-orphaned session cookies

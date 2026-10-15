@@ -61,9 +61,9 @@ export async function analyseDocument(input: {
     return { error: err instanceof Error && err.name === "TimeoutError" ? "paid" : "ai" };
   }
   if (!res.ok) {
-    // Only the code and message: error metadata (e.g. a moderation refusal) can quote the document.
+    // Only the status and error code: the message and metadata can quote the document.
     const body = await res.json().catch(() => null);
-    console.error("analyseDocument: OpenRouter", res.status, body?.error?.code, String(body?.error?.message ?? "").slice(0, 200));
+    console.error("analyseDocument: OpenRouter", res.status, body?.error?.code);
     return { error: "ai" };
   }
   try {
@@ -74,7 +74,7 @@ export async function analyseDocument(input: {
     try {
       if (typeof content === "string") parsed = parseAnalysis(JSON.parse(content), KNOWN);
     } catch {}
-    if (parsed === "invalid") console.error("analyseDocument: unusable answer, finish_reason:", choice?.finish_reason, "error:", json?.error?.code, String(json?.error?.message ?? "").slice(0, 200));
+    if (parsed === "invalid") console.error("analyseDocument: unusable answer, finish_reason:", choice?.finish_reason, "error code:", json?.error?.code);
     if (typeof parsed === "string") return { error: parsed };
     // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
     return { analysis: parsed, usage: readUsage(json, ANALYSIS_MODEL) };

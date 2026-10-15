@@ -27,3 +27,38 @@ No critical issues. Both agents' frontmatter is valid and matches the other agen
 - EU AI Act: point the agent at code signals (`openrouter`, model slugs, `lib/learning/analyse.ts`) and say a disclosure must say "AI" in plain words; the upload box and document list name the model ("Gemini 2.5 Flash Lite … via OpenRouter") but not the word "AI".
 - EU AI Act: the description doesn't say "not legal advice" (the body does).
 - Both: no rule says when to run them; a CLAUDE.md line (e.g. before release) is optional.
+
+---
+
+# Pre-merge checks: GDPR and AI Act fixes (commit 4fbf5d8)
+
+After the two agents were added, they were run on the app; the owner chose which of their suggestions to implement, and they were added to this PR.
+
+- **Checks run:** chosen by `/pre-merge`: the reviewer and all three security scanners (app code, code using Supabase, and `lib/learning/analyse.ts`, which reads env vars).
+- **Results:** no critical, high or medium findings from any of them. Security Advisor: only the two intended SECURITY DEFINER warnings. Config drift: none. No secrets in the branch's commits. `google/gemini-2.5-flash-lite` is on OpenRouter's zero-data-retention list.
+
+## Findings and what was done
+
+### Warning (reviewer)
+1. **"Upload counts are removed once more than 2 days old" was only true when someone uploads.** *Fixed:* the privacy page says they're cleared out at the next upload by anyone.
+2. **"Everything we store about you" overclaimed** (sign-in IPs sit in the auth provider's logs). *Fixed:* "Everything saved in your account", also in CLAUDE.md.
+3. **Privacy claims that depend on vendors.** *Fixed:* "expire on those providers' own schedules" (not "short"); the transfer paragraph now covers Google as well as OpenRouter. *For the owner:* keep OpenRouter's "input/output logging" setting off (added to `docs/todo.md`); the 1-hour Vercel log claim matches the Hobby plan.
+4. **The new "deletion stops" path has no test.** *Not done:* the local setup can't make storage fail on purpose; recorded in `docs/todo.md`.
+5. **A user whose deletion keeps failing had no way out.** *Fixed:* the message adds "or write to <contact email>".
+
+### Low (scanners)
+- **The OpenRouter error message could still quote the document** (reviewer, Next.js, Vercel). *Fixed:* only the status and error code are logged.
+- **"Servers in Dublin" didn't mention edge servers** (Vercel). *Fixed:* the app runs in Dublin; requests first pass through Vercel's nearest edge server, which may be outside the EU.
+- **No rate limit on Download my data** (Next.js). *Kept:* users can only read their own rows; add a throttle if abused.
+- **Leftover upload files aren't listed in the export** (Supabase). *Kept:* files are deleted after every analysis, so normally there are none.
+
+### Suggestion (reviewer)
+- `learning_upload_usage` paging now orders by `id`. *Done.*
+- `supabase/config.toml` `max_rows` has a comment tying it to `PAGE_SIZE`. *Done.*
+- The guest test asserts the login redirect (307) only; the always-true "other email" check was removed. *Done.*
+- The repeated "not deleted" message is one constant; the contact email is shared from `lib/account.ts`. *Done.*
+- UploadBox's leftover clean-up now skips everything if any listing fails (before: only that folder). *Kept:* rare, and the next upload tries again.
+- Consent as the basis for reading documents is debatable. *Recorded* for the legal review in `docs/todo.md`.
+
+## Checks after the fixes
+`npx tsc --noEmit`, lint, `npm test` 175/175, `e2e/account.spec.ts` + `e2e/learning.spec.ts` 15/15. Before the fixes: the full `npm run test:e2e` 122/122, `npm run test:db` passed, `npm run test:smoke` 1/1 with zero data retention on.

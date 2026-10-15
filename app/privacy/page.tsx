@@ -1,9 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { CONTACT } from "@/lib/account";
 
 export const metadata = { title: "Privacy" };
-
-const CONTACT = "egle.pauk.ai@gmail.com";
 
 export default function PrivacyPage() {
   return (
@@ -88,8 +87,9 @@ export default function PrivacyPage() {
             documents and, briefly, uploaded files, on servers in Ireland (EU).
           </li>
           <li>
-            <strong>Vercel</strong>: hosts the website (servers in Dublin, Ireland) and keeps technical
-            request logs, including IP addresses, for 1 hour.
+            <strong>Vercel</strong>: hosts the website. The app runs on servers in Dublin, Ireland;
+            each request first passes through Vercel&rsquo;s nearest edge server, which may be outside
+            the EU. Vercel keeps technical request logs, including IP addresses, for 1 hour.
           </li>
           <li>
             <strong>Brevo</strong>: sends the sign-up confirmation and password-reset emails, so it
@@ -107,20 +107,21 @@ export default function PrivacyPage() {
           </li>
         </ul>
         <p>
-          OpenRouter is a US company, so uploaded documents leave the EU. OpenRouter protects this
-          transfer with the European Commission&rsquo;s standard contractual clauses (GDPR Art. 46).
+          OpenRouter is a US company, and OpenRouter and Google may process uploaded documents
+          outside the EU (in the USA). OpenRouter protects the transfer with the European
+          Commission&rsquo;s standard contractual clauses (GDPR Art. 46).
         </p>
       </Section>
 
       <Section title="Keeping and deleting your data">
         <p>
-          Uploaded files are deleted straight after reading. Upload counts are removed once they are
-          more than 2 days old. Everything else is kept for as long as you have an account. You can
+          Uploaded files are deleted straight after reading. Upload counts older than 2 days are
+          cleared out the next time anyone uploads. Everything else is kept for as long as you have an account. You can
           delete your account at any time on the{" "}
           <Link href="/account" className="underline underline-offset-2">Account</Link> page: this
           immediately and permanently removes your account, every answer you saved, your Customized
           Learning documents and focus list. Copies in our providers&rsquo; technical logs (request,
-          sign-in and email logs) expire on their own short schedules.
+          sign-in and email logs) expire on those providers&rsquo; own schedules.
         </p>
       </Section>
 

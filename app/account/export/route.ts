@@ -20,7 +20,7 @@ export async function GET() {
           .range(from, to),
       ),
       readAllPages((from, to) => supabase.from("learning_focus").select("topic_slug, kind, updated_at").order("topic_slug").range(from, to)),
-      readAllPages((from, to) => supabase.from("learning_upload_usage").select("created_at").order("created_at").range(from, to)),
+      readAllPages((from, to) => supabase.from("learning_upload_usage").select("created_at").order("id").range(from, to)),
     ]);
     const data = {
       exportedAt: new Date().toISOString(),

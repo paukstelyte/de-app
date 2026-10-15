@@ -31,7 +31,7 @@ export default async function AccountPage() {
         <div>
           <h2 className="section-heading">Your data</h2>
           <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-            Everything we store about you (account, answers, Customized Learning), as a JSON file.
+            Everything saved in your account (account details, answers, Customized Learning), as a JSON file.
           </p>
         </div>
         <a href="/account/export" download className="pill-secondary">Download my data</a>

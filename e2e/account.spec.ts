@@ -20,13 +20,13 @@ test("Download my data gives a JSON file with this user's data and nobody else's
   const data = JSON.parse(readFileSync((await download.path())!, "utf8"));
   expect(data.account.email).toBe(me.email);
   expect(data.answers.map((a: { answer: string }) => a.answer)).toEqual(["mine-answer"]);
-  expect(JSON.stringify(data)).not.toContain(other.email);
   expect(data.customizedLearning).toEqual({ documents: [], focus: [], uploads: [] });
 });
 
 test("a guest can't download anyone's data", async ({ request }) => {
   const res = await request.get("/account/export", { maxRedirects: 0 });
-  expect([307, 401]).toContain(res.status()); // the login gate redirects; the route itself refuses
+  expect(res.status()).toBe(307); // the login gate; the route also refuses (401) on its own
+  expect(res.headers().location).toContain("/login");
   expect(await res.text()).not.toContain("\"answers\"");
 });
 

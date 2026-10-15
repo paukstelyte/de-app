@@ -1,6 +1,9 @@
 /** What the user must type to confirm deleting their account. */
 export const CONFIRM_WORD = "DELETE";
 
+/** Where users write about their data (privacy page, failed account deletion). */
+export const CONTACT = "egle.pauk.ai@gmail.com";
+
 /** Rows per request when exporting: the API returns at most 1000 rows at a time (`max_rows`). */
 export const PAGE_SIZE = 1000;
 
