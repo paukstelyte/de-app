@@ -106,6 +106,8 @@ Security scans (`/security-scan`, `/security-scan-changed`) run with three scann
 
 The `gdpr-compliance` agent ([`.claude/agents/gdpr-compliance.md`](.claude/agents/gdpr-compliance.md)) is a first-pass GDPR check: it maps where personal data is collected, stored and sent, compares that with the privacy policy, and checks data export, account deletion and logging. It is run on request, edits nothing, and is not legal advice.
 
+The `eu-ai-act-compliance` agent ([`.claude/agents/eu-ai-act-compliance.md`](.claude/agents/eu-ai-act-compliance.md)) is a first-pass EU AI Act check: it finds the app's AI features, classifies its risk tier and checks the Article 50 transparency duties (telling users they're dealing with AI, labelling AI-generated content, flagging deepfakes). It is run on request, edits nothing, and is not legal advice.
+
 ## Project layout
 
 | Path | What's there |
