@@ -104,9 +104,9 @@ The app does not use embeddings or RAG.
 - Keep the design clean and conscise througout pages
 - Every new Supabase table needs RLS policies and the anon-access revoke (see `docs/supabase-schema.md`).
 - All secrets should live in *env files
-- Changes go through a feature branch and a pull request; run the `ai-code-reviewer` agent on the PR before merging and save its report in `docs/reviews/` (skip it for prose-only docs: `*.md` outside `.claude/`, except `CLAUDE.md`). `/pre-merge` runs the reviewer and the security scanners the changed files need.
+- Changes go through a feature branch and a pull request; run the `ai-code-reviewer` agent on the PR before merging and save its report in `docs/reviews/` (skip it for prose-only docs, as defined in `/pre-merge`). `/pre-merge` runs the reviewer and the security scanners the changed files need.
 - Before merging, suggest needed usability tests with Playwright
-- Propose security scans: `/security-scan` weekly to confirm the whole codebase is clean, and `/security-scan-changed` on every feature branch and pull request (through `/pre-merge`, with only the scanners the changed files need), to catch new problems before they merge into main.
+- Propose security scans: `/security-scan` weekly to confirm the whole codebase is clean, and `/security-scan-changed` through `/pre-merge` on every pull request whose changed files need it, to catch new problems before they merge into main.
 - Before writing a parser, validator, protocol client or other non-trivial helper, check for a well-established library first: ask the DeepWiki MCP (`ask_wiki_question`) how candidate libraries handle the job and its edge cases (limits, malformed input, security), and confirm the claim in the library's source. Prefer the library when it is at least as safe and removes real code; keep our own code when it is safer (e.g. a size limit the library lacks), and say why.
 - npm only resolves package versions published at least 7 days ago (set in `.npmrc`, and in the user `~/.npmrc` so global installs are covered too)
 - when giving me technical option or asking me to install anything, explain in simple words why it's needed and what it would allow you to do

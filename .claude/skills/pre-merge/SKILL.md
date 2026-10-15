@@ -20,33 +20,37 @@ asking the owner. Run git commands one per call (no `&&` chains).
 
 ## Step 2: Pick the checks
 
-Put every changed file in the first row that matches it:
+Put every changed file (deleted ones too) in the first row that matches it:
 
 | Files | Reviewer | Supabase | Next.js | Vercel |
 |---|---|---|---|---|
-| Prose: `*.md` and images outside `.claude/`, except `CLAUDE.md` | – | – | – | – |
-| Instructions: `.claude/**`, `CLAUDE.md` | ✓ | – | – | – |
-| Data: `lib/exercises/data/*`, `lib/flashcards/data/*`, `lib/grammar/topics.json`, `lib/exercises/sets.ts` | ✓ | – | – | – |
-| Tests and local tools: `e2e/**`, `supabase/tests/**`, `**/*.test.mjs`, `scripts/**`, `playwright.config.ts` | ✓ | – | – | – |
-| Database: `supabase/**` (other), `lib/supabase/**` | ✓ | ✓ | – | – |
+| Prose: `*.md` outside `.claude/`, except any `CLAUDE.md` or `AGENTS.md`; images under `docs/` | – | – | – | – |
+| Reviewer only: `.claude/**`, `CLAUDE.md`, `AGENTS.md`; data (`lib/exercises/data/*`, `lib/flashcards/data/*`, `lib/grammar/topics.json`, `lib/exercises/sets.ts`); tests and local tools (`e2e/**`, `supabase/tests/**`, `**/*.test.mjs`, `scripts/**`, `playwright.config.ts`) | ✓ | – | – | – |
+| Database: `supabase/**` (other) | ✓ | ✓ | – | – |
+| Supabase clients: `lib/supabase/**` (the login gate, the secret-key client) | ✓ | ✓ | ✓ | ✓ |
 | Deployment: `next.config.*`, `proxy.ts`, `vercel.json`, `.env.example`, `package.json`, `package-lock.json`, `.npmrc`, `.nvmrc`, `.gitignore` | ✓ | – | ✓ | ✓ |
 | App code: `app/**`, `components/**`, `lib/**` (other), `public/**` | ✓ | if the file mentions `supabase`, `.from(` or `.rpc(` | ✓ | – |
 | Anything else | ✓ | ✓ | ✓ | ✓ |
+
+Then, for every changed file that isn't prose: if it reads `process.env`, add Vercel (env vars
+must be set and scoped there; test files also run in the Vercel build).
 
 The checks to run are every ✓ from any changed file. Tell the owner in one line before starting,
 e.g. "Running: reviewer + Next.js scanner (app code changed; no database or deployment files)."
 If the owner says "run everything", run the reviewer and all three scanners.
 
 Prose only (no ✓ at all): say "Skipped: prose only", put that line in the PR description, and go
-to step 5.
+to step 5. This table is the definition of "prose-only" that CLAUDE.md refers to.
 
 ## Step 3: Run them in parallel
 
 In a single message, launch:
-- the `ai-code-reviewer` agent, with the PR number, the branch, and the commands from step 1 to
-  read the changes;
-- the chosen scanners, by following `.claude/commands/security-scan-changed.md` with the
-  arguments `only: <the chosen scanners>`.
+- the `ai-code-reviewer` agent, with the PR number, the branch, the commands from step 1 to
+  read the changes, and the AI rules and security rules from CLAUDE.md to check (and, if
+  `.claude/settings*.json` changed, its permission and hook changes);
+- the chosen scanners, if any, by following `.claude/commands/security-scan-changed.md` with the
+  arguments `only: <supabase, nextjs, vercel: the chosen ones>`. If no scanner was chosen,
+  launch the reviewer alone.
 
 Wait for all of them.
 

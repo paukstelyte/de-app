@@ -31,9 +31,13 @@ current directory isn't inside a repo, ask which project to scan).
 If the branch is the main branch itself, or there are no changed files, say so and stop: there
 is nothing to scan.
 
-## Step 2: Dispatch all three scanners in parallel
+## Step 2: Dispatch the scanners in parallel
 
-In a **single message**, launch these three subagents with the Agent tool so they run at the
+By default run all three. If the arguments say `only: <names>` (as `/pre-merge` does; names are
+`supabase`, `nextjs`, `vercel`), run just those and show the others as "– not run (not needed for
+these files)" on the report's Scanners line. Decide this before launching anything.
+
+In a **single message**, launch the chosen subagents with the Agent tool so they run at the
 same time:
 
 1. `supabase-security-scanner`
@@ -55,16 +59,14 @@ Add for each scanner:
   Supabase clients, RPCs or keys. It may run read-only queries against the live database to
   check the tables, policies, grants and functions those migrations create.
   Always run its check 6 (the Security Advisor checks) for the whole project: it is quick, and
-  the report has a "Supabase Security Advisor" section.
+  the report has a "Supabase Security Advisor" section. When the Supabase scanner isn't chosen,
+  that section says "Not run: no Supabase files changed".
 - **Next.js:** focus on changed pages, layouts, server actions, route handlers, `proxy.ts`,
   client components and env var usage in the changed files.
 - **Vercel:** focus on how the changes affect the deployment: changed `next.config.*`,
   `vercel.json`, `proxy.ts`, `.gitignore` and `.env.example`; any env var the changed code reads
   that must be set (and scoped / marked Sensitive) in Vercel; and secrets committed in this
   branch's commits only (`git log -p $BASE..HEAD`, printing commit hashes and file names only).
-
-If the arguments say `only: <scanners>` (as `/pre-merge` does), launch just those and mark the
-others "Not run: not needed for these files" in the report.
 
 If one of the three subagents doesn't exist, run the others, say which one was missing, and
 mark that part "Not checked". Wait until all of them have finished before writing the report.
@@ -84,7 +86,7 @@ mark that part "Not checked". Wait until all of them have finished before writin
 # Security scan of changed files: <project>, <branch> vs <main>, <date>
 
 Scanned: <n> changed files across <n> commits (+ <n> uncommitted)   Deleted: <n>
-Scanners: Supabase ✓, Next.js ✓, Vercel ✓   (mark any that failed or were missing)
+Scanners: Supabase ✓, Next.js ✓, Vercel ✓   (mark any that failed, were missing or weren't chosen)
 Totals: <n> critical · <n> high · <n> medium · <n> low
 
 ## Critical
