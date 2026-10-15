@@ -63,6 +63,9 @@ Add for each scanner:
   that must be set (and scoped / marked Sensitive) in Vercel; and secrets committed in this
   branch's commits only (`git log -p $BASE..HEAD`, printing commit hashes and file names only).
 
+If the arguments say `only: <scanners>` (as `/pre-merge` does), launch just those and mark the
+others "Not run: not needed for these files" in the report.
+
 If one of the three subagents doesn't exist, run the others, say which one was missing, and
 mark that part "Not checked". Wait until all of them have finished before writing the report.
 
