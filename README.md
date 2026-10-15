@@ -102,7 +102,7 @@ Each change goes through a feature branch and a GitHub pull request. The `ai-cod
 - PR #6 Tidy up: safer theme toggle, shared helpers, accurate limit messages: [report](docs/reviews/pr-6-refactor-cleanup.md)
 - Later PRs: one report per PR in [`docs/reviews/`](docs/reviews/) (`pr-<number>-<topic>.md`).
 
-Security scans (`/security-scan`, `/security-scan-changed`) run with three scanner agents (Supabase, Next.js, Vercel).
+Security scans (`/security-scan`, `/security-scan-changed`) run with three scanner agents (Supabase, Next.js, Vercel). The Supabase scanner also runs the same database checks as the dashboard's **Security Advisor** (Supabase's open-source "splinter" checks, a pinned and hash-checked version, read-only) and says for each item whether it's a real problem or intended. `upload_allowance()` and `use_upload_quota()` are SECURITY DEFINER on purpose (the advisor warns about every such function signed-in users can call): they count the shared daily limit across all users and are the only way to write the upload counter, so learners can't forge or reset it. Auth-only advisor items (e.g. leaked-password protection, which needs the Pro plan) are checked in the dashboard.
 
 ## Project layout
 
