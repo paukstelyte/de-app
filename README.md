@@ -92,7 +92,7 @@ How to run them, and what each test checks: [`e2e/README.md`](e2e/README.md). La
 
 ## How changes are made
 
-Each change goes through a feature branch and a GitHub pull request. The `ai-code-reviewer` agent ([`.claude/agents/ai-code-reviewer.md`](.claude/agents/ai-code-reviewer.md)) reviews the PR before it's merged. It reads the diff in a fresh context and reports dead code, duplication, over-engineering and silent behaviour changes as Critical / Warning / Suggestion. Each review request also listed the course's AI and security rules to check, and the reports record those checks. Its report is saved in [`docs/reviews/`](docs/reviews/) and posted on the PR:
+Each change goes through a feature branch and a GitHub pull request. After a feature or major change, `/docs-sync` ([`.claude/skills/docs-sync/SKILL.md`](.claude/skills/docs-sync/SKILL.md)) updates the docs the branch made out of date and removes the code it left unused, on the same branch. The `ai-code-reviewer` agent ([`.claude/agents/ai-code-reviewer.md`](.claude/agents/ai-code-reviewer.md)) reviews the PR before it's merged. It reads the diff in a fresh context and reports dead code, duplication, over-engineering and silent behaviour changes as Critical / Warning / Suggestion. Each review request also listed the course's AI and security rules to check, and the reports record those checks. Its report is saved in [`docs/reviews/`](docs/reviews/) and posted on the PR:
 
 - PR #1 Show the AI model and cost of each document: [report](docs/reviews/pr-1-model-and-cost.md)
 - PR #2 Add Practise my focus and send signed-out visitors to login: [report](docs/reviews/pr-2-practise-my-focus.md)
