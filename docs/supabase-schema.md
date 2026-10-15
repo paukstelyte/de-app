@@ -33,7 +33,7 @@ Limits. A logged-in user can bypass the app and call the database API directly, 
 | Server admin key | ✅ (bypasses RLS) | ✅ | ✅. Only used to delete a user. |
 
 - Policies use `(select auth.uid()) = user_id`. Wrapping it in `select` means it's evaluated once per query, not once per row.
-- History is append-only. Deleting an account (`app/account/actions.ts` → `auth.admin.deleteUser`) removes the user's rows through the cascade.
+- History is append-only. Deleting an account (`app/account/actions.ts` → `auth.admin.deleteUser`) removes the user's rows through the cascade. Their leftover uploaded files are removed first; if that fails, the account isn't deleted and the user is asked to try again.
 
 ## Customized Learning
 

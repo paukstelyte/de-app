@@ -4,6 +4,8 @@ How DE-app is tested, and the latest results. Commands are run from the repo roo
 
 ## Summary
 
+**2026-10-15 (PR #30: GDPR and AI Act fixes):** `npm test` **175 / 175**, `npm run test:db` **36 / 36**, `npm run test:e2e` **122 / 122** (new `account.spec.ts`), `npm run test:smoke` **1 / 1** with zero-data-retention routing on.
+
 **2026-10-14: the test tooling changed (PR #20).** The `bash e2e/*.sh` scripts and the two print-only SQL checks were replaced by Playwright Test specs (`e2e/*.spec.ts`, with a fake OpenRouter) and pgTAP tests (`supabase/tests/database/`). Both run on a throwaway local Supabase (`npm run db:start`, see [`e2e/README.md`](../e2e/README.md)). Results on 2026-10-14, branch `reviewer-feedback`:
 
 | Suite | Result |

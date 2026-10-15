@@ -49,6 +49,8 @@ export async function analyseDocument(input: {
         response_format: { type: "json_schema", json_schema: ANALYSIS_SCHEMA },
         // PDFs: read natively by the model; never fall back to the paid OCR engine.
         plugins: [{ id: "file-parser", pdf: { engine: "native" } }],
+        // Only providers that keep no copy of the document (zero data retention); the privacy page says so.
+        provider: { zdr: true },
         max_tokens: 6000,
       }),
       signal: AbortSignal.timeout(90_000),
@@ -59,7 +61,9 @@ export async function analyseDocument(input: {
     return { error: err instanceof Error && err.name === "TimeoutError" ? "paid" : "ai" };
   }
   if (!res.ok) {
-    console.error("analyseDocument: OpenRouter", res.status, (await res.text().catch(() => "")).slice(0, 300));
+    // Only the status and error code: the message and metadata can quote the document.
+    const body = await res.json().catch(() => null);
+    console.error("analyseDocument: OpenRouter", res.status, body?.error?.code);
     return { error: "ai" };
   }
   try {
@@ -70,7 +74,7 @@ export async function analyseDocument(input: {
     try {
       if (typeof content === "string") parsed = parseAnalysis(JSON.parse(content), KNOWN);
     } catch {}
-    if (parsed === "invalid") console.error("analyseDocument: unusable answer, finish_reason:", choice?.finish_reason, "error:", JSON.stringify(json?.error)?.slice(0, 300));
+    if (parsed === "invalid") console.error("analyseDocument: unusable answer, finish_reason:", choice?.finish_reason, "error code:", json?.error?.code);
     if (typeof parsed === "string") return { error: parsed };
     // OpenRouter always includes usage (tokens, cost) in the response; no request option needed.
     return { analysis: parsed, usage: readUsage(json, ANALYSIS_MODEL) };

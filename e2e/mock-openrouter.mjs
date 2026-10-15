@@ -44,6 +44,7 @@ function problem(body) {
   if (body.response_format?.json_schema?.strict !== true) return "the answer schema must be strict";
   const hasPdf = user.content.some((p) => p.type === "file");
   if (hasPdf && body.plugins?.[0]?.pdf?.engine !== "native") return "PDFs must use the native file-parser engine";
+  if (body.provider?.zdr !== true) return "documents must only go to zero-data-retention providers";
   return null;
 }
 

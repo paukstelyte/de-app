@@ -59,7 +59,7 @@ export default async function LearningPage() {
           ) : isEmpty ? (
             <ol className="flex flex-col gap-2 text-sm text-zinc-600 dark:text-zinc-400">
               <li><b>1.</b> Upload a textbook page, worksheet, notes or homework.</li>
-              <li><b>2.</b> We read it and pick the grammar topics it covers, and any mistakes.</li>
+              <li><b>2.</b> An AI model reads it and picks the grammar topics it covers, and any mistakes.</li>
               <li><b>3.</b> Practise those topics and watch your progress here.</li>
               <li className="pt-2">Or start now: <Link href="/topics" className="underline underline-offset-2">Grammar Topics</Link> · <Link href="/articles" className="underline underline-offset-2">der · die · das</Link></li>
             </ol>
